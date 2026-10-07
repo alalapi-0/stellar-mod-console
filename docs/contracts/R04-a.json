@@ -1,0 +1,67 @@
+{
+  "contract_id": "stellar-mod-console/R04-a/v1",
+  "version": 1,
+  "lane": "GOVERNED",
+  "authority": "Active user Goal; actual global and project AGENTS.md v9; read-only r04_governor CREATE_TASK",
+  "baseline_commit": "48b1d237f4fe643741e104b4b3c44003634384ac",
+  "objective": "Construct and verify a fresh project-private prefix/configuration skeleton and closed filesystem probe harness; deny host Steam/cloud IPC and network; produce evidence for a later runtime-launch decision. Original Goal and A01-A14 unchanged.",
+  "protected_boundaries": [
+    "Game, installed MODs, source archives/downloads, prior MOD workspace, real Steam prefix/saves/backups, Steam userdata/settings/credentials/sessions/cloud and other tasks remain unchanged.",
+    "No whole-prefix copy, clone, reflink, writable bind to protected data, save migration, account/session copy, credential lookup, Steam userdata reuse or real-prefix fallback.",
+    "No write probes on actual protected paths. Use disposable owned equivalent canaries and inspect actual mount/views.",
+    "Host Steam/cloud filesystem/abstract sockets, runtime directories, shared memory and inherited environment references absent or inaccessible.",
+    "Network, display/audio/input/GPU and compositor/X11/Wayland endpoints closed.",
+    "No third-party binaries/assets/MOD contents/account metadata/private paths/secrets in public files.",
+    "All mutation confined to selected repository; private mutation confined to .local/r04."
+  ],
+  "authorized_effects": [
+    "Root may create source under src/testing, tests/test_isolation.py, this contract, docs/evidence/R04.json and PROJECT_STATE.json.",
+    "Root may construct new private skeleton and disposable CLI probe processes under .local/r04.",
+    "No Proton, Steam, game, display, GPU or network launch under v1. A successor contract must freeze any later launch boundary.",
+    "After exact review and Governor approval, normal sanitized source commit/push to impl/mod-console and remote verification."
+  ],
+  "excluded_effects": [
+    "Game installation/source-prefix mutation",
+    "Steam/account/cloud configuration change",
+    "Proton/Steam/game runtime launch",
+    "Release/Nexus/binary publication",
+    "Main merge/force push",
+    "Other task control"
+  ],
+  "acceptance": {
+    "C01": "Record frozen contract, baseline, ownership, reproducible checks/recovery/evidence and cumulative budget.",
+    "C02": "Only create new owned private root; refuse pre-existing, non-owned, unresolved, overlapping or symlink-escaping targets.",
+    "C03": "Canonical writable root disjoint from protected roots; actual protected host paths absent or read-only; only private owned subtree writable on host.",
+    "C04": "Complete construction manifest: no copied real prefix, saves, Steam userdata/accounts/sessions/cookies, assets or MOD binaries.",
+    "C05": "Disposable write succeeds in owned subtree; protected canary rejects writes; mount/view checks establish actual protected read-only/absent, Steam/cloud IPC/network/device absence.",
+    "C06": "Strip/reject inherited session/compatdata/runtime paths and variables; missing prerequisite refuses with no unisolated fallback.",
+    "C07": "Root reproduces targeted tests and one end-to-end probe; record commands/exits/versions and failures; previous capability-only probe insufficient.",
+    "C08": "Exact current protected save and relevant configuration preimages unchanged, without credential value access/recording.",
+    "C09": "Public evidence sanitized; Proton/game/Steam launch, save/cloud behavior and loader/runtime compatibility explicitly NOT_RUN.",
+    "C10": "PROJECT_STATE.json sole state with stable task ID, pointers, cumulative attempts/failure fingerprint, partial status and one next action.",
+    "C11": "Root registers exact semantic candidate and private-evidence digest excluding decision metadata; fresh read-only Judge PASS followed by Governor decision.",
+    "C12": "No final R04/R05 or A01-A14 completion credit from isolation capabilities."
+  },
+  "ownership": {
+    "writer": "Root",
+    "read_only_roles": [
+      "Governor",
+      "Fresh Judge"
+    ],
+    "paths": [
+      "src/testing/",
+      "tests/test_isolation.py",
+      "docs/contracts/R04-a.json",
+      "docs/evidence/R04.json",
+      "PROJECT_STATE.json",
+      ".local/r04/"
+    ]
+  },
+  "evidence_plan": "Private paths/manifests/raw results/preimages in .local/r04; public aggregate/digests/commands/exit codes in docs/evidence/R04.json. Register exact hashes excluding state and decision metadata.",
+  "recovery": "Stop exact owned disposable probe on failure; replace/remove only owned candidate material; check concurrent edits before restoring exact tracked preimage; unexpected protected/Steam IPC access stops route; preserve fingerprint and compare preimages without broad rollback.",
+  "budget": {
+    "explicit_task_budget": null,
+    "scope": "All discovery/construction/repair/validation/roles/closure cumulative under existing unbudgeted native Goal; no reset."
+  },
+  "implementation_adaptive": "Paths/APIs/tests/cleanup remain adaptive within frozen dimensions; no speculative orchestration or display/GPU mechanisms."
+}

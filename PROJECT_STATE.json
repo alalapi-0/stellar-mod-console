@@ -15,9 +15,9 @@
   "goal_mode_started": true,
   "implementation_started": true,
   "phase": "P1",
-  "current_round": "R02-b",
-  "round_status": "PARTIAL_EXACT_PREREQUISITES_AND_REFERENCE_CORRECTION",
-  "next_round": "R04-a isolated current-profile and loader experiment",
+  "current_round": "R04-a",
+  "round_status": "PARTIAL_ISOLATION_ACCEPTED_SYNC_PENDING",
+  "next_round": "R04-a isolation preparation and gate",
   "protected": [
     "Existing game files and saves",
     "Original MOD packages and downloads",
@@ -238,7 +238,7 @@
     "A11": {
       "status": "PARTIAL",
       "evidence": "docs/evidence/R01.json",
-      "note": "Read-only preimages, 8 prefix saves and 3 in-loader save backups protected; deployment/uninstall integrity and isolated runtime tests NOT_RUN"
+      "note": "R01 protected preimages retained; R04-a empty private skeleton and closed negative harness 26/26 root checks, 22 hashes/1330 metadata items preserved. Actual Proton/game/save/cloud/deployment tests still NOT_RUN."
     },
     "A12": {
       "status": "PARTIAL",
@@ -293,13 +293,43 @@
         "target": "R03-a synthetic UTOC reader",
         "failure_class": "17-byte magic constant; first test exit 1",
         "resolution": "Resolved against primary layout + actual bytes; 11 tests and independent retoc comparison pass"
+      },
+      {
+        "target": "bubblewrap setup",
+        "relevant_version": "v1 before explicit --unshare-user",
+        "failure_class": "ARGUMENT_REFUSAL",
+        "method": "fixed negative probe",
+        "exit": 1,
+        "cause": "--disable-userns requires explicit --unshare-user",
+        "resolution": "Added mandatory --unshare-user; no user namespace fallback",
+        "round": "R04-a"
+      },
+      {
+        "target": "environment allowlist",
+        "relevant_version": "v1 with explicit user namespace",
+        "failure_class": "VALIDATOR_EXPECTATION",
+        "method": "fixed negative probe",
+        "exit": 1,
+        "cause": "bubblewrap creates PWD after clearenv",
+        "resolution": "Observed environment names and checked PWD == /work, allowing only that private path",
+        "round": "R04-a"
+      },
+      {
+        "target": "nested user namespace check",
+        "relevant_version": "v1 with private PWD validation",
+        "failure_class": "VALIDATOR_ERRNO_EXPECTATION",
+        "method": "fixed negative probe",
+        "exit": 1,
+        "cause": "Linux reports ENOSPC for bubblewrap namespace-local user namespace limit",
+        "resolution": "Observed unshare result -1/errno 28 and official v0.11.1 implementation; retain denial requirement and record errno",
+        "round": "R04-a"
       }
     ],
     "token_cost_telemetry": {
-      "native_goal_tokens_observed": 588240,
-      "source": "get_goal at R02-b closure, updatedAt 1791371410",
+      "native_goal_tokens_observed": 808023,
+      "source": "native get_goal during R04-a validation",
       "coverage": "Cumulative tokens reported by native active Goal; not hand-estimated or per-code-unit",
-      "native_goal_time_seconds_observed": 3318,
+      "native_goal_time_seconds_observed": 4189,
       "active_execution_time": "UNAVAILABLE; wall time does not prove active minutes",
       "cost": "UNAVAILABLE",
       "budget": "No explicit token budget; native remainingTokens null"
@@ -311,7 +341,7 @@
       "baseline_tokens_observed": 289664,
       "checkpoint": "R03-a closure",
       "reason": "Material candidates, new first-time checks and completed delivery units; no equivalent unresolved retries",
-      "next_checkpoint": "No new health review triggered at R03-c: new candidate, passing checks and actionable prerequisite evidence; evaluate only at a future eligible checkpoint.",
+      "next_checkpoint": "No new Goal health trigger at R04-a: three distinct setup/validator failures were diagnosed and changed; final 7 tests and 26 checks passed. No equivalent no-progress/review-repair loop.",
       "cooldown_rule": "75,000 additional tokens or 30 directly evidenced active minutes; newly accepted milestone resets no-progress facts"
     }
   },
@@ -342,35 +372,24 @@
       "state": "DISCOVERY_VERIFIED; sources unchanged; runtime and repair not accepted"
     }
   ],
-  "next_action": "R04-a: GOVERNED isolation contract for private test prefix/config view, exact save/host-IPC boundaries and original directory protection; build and review concrete candidate, then baseline cold-start and loader experiments only when the isolation gate passes. Continue unknown per-file prerequisites independently.",
+  "next_action": "Finish R04-a source sync and exact remote verification, then R04-b successor contract for fresh private Proton prefix Windows CLI bootstrap without game/display/GPU/Steam/network exposure.",
   "updated_on": "2026-10-07",
   "execution": {
     "owner_thread": "01a115db-7ff8-70c1-8122-cdc330aaf5c5",
-    "lane": "DIRECT",
+    "lane": "GOVERNED",
     "owned_paths": [
-      "src/catalog/",
-      "tests/test_inventory.py",
-      "docs/evidence/",
+      "src/testing/",
+      "tests/test_isolation.py",
+      "docs/evidence/R04.json",
+      "docs/contracts/R04-a.json",
       "PROJECT_STATE.json",
-      ".local/",
-      "README.md",
-      "src/catalog/README.md",
-      "tests/README.md",
-      "data/author_requirements.json",
-      "src/catalog/dependencies.py",
-      "tests/test_dependencies.py",
-      "src/policy/static.py",
-      "src/policy/README.md",
-      "tests/test_static_policy.py",
-      "src/policy/resources.py",
-      "tests/test_resources.py",
-      "src/policy/interfaces.py",
-      "tests/test_interfaces.py"
+      ".local/r04/"
     ],
-    "external_scope": "Downloads, game and prior MOD workspace read-only for R01-R03; no save or game launch",
-    "entry_preimage": "df96585d2726c5b9c71a48311622551852f8b93a; clean worktree; GitHub branch matched",
-    "acceptance": "Bind critical requirements to exact archive/entry hashes and author release assets; correct physical-to-virtual asset namespace and reclassify all 256 previously unmatched installed refs; leave real missing/runtime unknowns explicit",
-    "next_evidence": "docs/evidence/R02.json and .local/r02/prerequisites.json; R03 reference correction"
+    "external_scope": "R04-a/v1 construction and negative probes only; Proton/Steam/game unlaunched. Protected external source paths read-only/absent; private writes only .local/r04; authorized source sync after review.",
+    "entry_preimage": "48b1d237f4fe643741e104b4b3c44003634384ac; clean worktree; sole exact-cwd native task found; other current task scopes differ",
+    "acceptance": "Governor contract, concrete private-prefix/config-view isolation candidate, negative filesystem/host-IPC checks, exact preserved preimages, fresh Judge and Governor decision. Runtime launch only under accepted separate launch scope.",
+    "next_evidence": "Normal commit/push accepted exact candidate; verify GitHub commit",
+    "contract": "docs/contracts/R04-a.json"
   },
   "rounds": {
     "R01": {
@@ -419,9 +438,13 @@
       "interface_checks": ".local/r03/interface-checks.json"
     },
     "R04": {
-      "status": "NOT_STARTED_RUNTIME",
-      "preparation": "Kernel read-only/writable subtree capability probe exit 0 on disposable owned marker; .local/r04/protection-probe.json",
-      "remaining": "Private prefix/config construction, source licenses, Steam host-IPC/save protection and actual game/Proton tests"
+      "status": "PARTIAL_ISOLATION_ACCEPTED_SYNC_PENDING",
+      "preparation": "Root 7 targeted tests and 26/26 negative checks; 22 hashes and 1330 game metadata items preserved; empty private prefix only",
+      "remaining": "Source sync; successor contract and initialized private Proton prefix, private writable config/log view and actual game/loader tests",
+      "lane": "GOVERNED",
+      "contract": "docs/contracts/R04-a.json",
+      "evidence": "docs/evidence/R04.json",
+      "private_evidence": ".local/r04/construction-checks.json"
     }
   },
   "progress": {
@@ -435,12 +458,24 @@
     "last_closed": "R02-b",
     "remaining_round_estimate": null,
     "forecast_confidence": "unknown; no final end-to-end acceptance throughput; incomplete prerequisites and heterogeneous remaining work",
-    "previous_goal_turn": "PROGRESS: R03-c exhaustive interface snapshot and source delivery verified. R02-b found physical/virtual namespace mismatch and is correcting exact reference evidence.",
+    "previous_goal_turn": "PROGRESS: R02-b exact prerequisite bindings, virtual reference correction and original protection capability probe verified; GitHub closure 48b1d237f4fe643741e104b4b3c44003634384ac confirmed.",
     "total_closed_units_including_planning": 7,
     "changes": {
       "evidence_correction": "222 prior unmatched references were a physical/virtual namespace matching error; remaining 34 retained. Page prerequisites no longer presented as exact-file evidence",
       "execution": "Four exact README bindings, official loader digest match, 175 PAK indexes and disposable filesystem protection probe verified; no A01-A14 final acceptance awarded",
       "scope": "unchanged; 14 original outcomes and all 450 relevant candidate records retained"
     }
+  },
+  "governance": {
+    "contract": "docs/contracts/R04-a.json",
+    "governor": "r04_governor",
+    "registration": ".local/r04/registration.json",
+    "judge": "PASS",
+    "decision": "APPROVE",
+    "identity_rule": "Semantic candidate hashes public source/contract/evidence, excluding review metadata and state. State has separate exact hash at review. Acceptance/decision/sync metadata does not change candidate semantics.",
+    "semantic_candidate_sha256": "3ca8ca1b498979ef934dd5012bcf30454ab2439d08b6b0e576d6ba67cf67b9a2",
+    "state_sha256_at_review": "7d3e2163e6fc4eb7776f327ed4b7b8fd57bb4012c6dde551669440e5ca23bd11",
+    "evidence": "docs/evidence/R04.json",
+    "approval_scope": "R04-a/v1 skeleton/negative harness source delivery only; runtime launches need successor contract"
   }
 }

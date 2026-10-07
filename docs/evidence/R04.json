@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "round": "R04-a",
+  "status": "ROOT_VERIFIED_ISOLATION_CANDIDATE_REVIEW_PENDING",
+  "lane": "GOVERNED",
+  "contract": "docs/contracts/R04-a.json",
+  "baseline_commit": "48b1d237f4fe643741e104b4b3c44003634384ac",
+  "scope": "Fresh empty private prefix/configuration skeleton; fixed Python probe; original sources referenced by read-only binds. No Proton, Steam or game launched.",
+  "construction": {
+    "new_owned_target_only": true,
+    "copied_external_files": 0,
+    "prefix_state": "EMPTY_SKELETON_NOT_INITIALIZED",
+    "configuration_state": "EMPTY_SKELETON_NO_MOD_SELECTION",
+    "manifest_complete_at_construction": true,
+    "real_prefix_or_save_seed_copied": false
+  },
+  "checks": {
+    "targeted_tests": {
+      "command": "python3 -B -m unittest discover -s tests -p test_isolation.py -v",
+      "exit": 0,
+      "passed": 7,
+      "required": 7
+    },
+    "end_to_end": {
+      "command": "python3 -B -m src.testing.isolation --context .local/r04/context.json",
+      "exit": 0,
+      "passed": 26,
+      "required": 26
+    },
+    "diff_check_exit": 0,
+    "python": "Python 3.14.4",
+    "bubblewrap": "bubblewrap 0.11.1"
+  },
+  "verified_capabilities": [
+    "Private construction refuses pre-existing/overlapping/symlink/non-owner targets and shared inode contents",
+    "Original game and Proton source mounts read-only; original host home/Steam/config paths absent",
+    "Only project-private work subtree exposed writable on host; separate mount/user/PID/network/IPC namespaces and no effective capabilities",
+    "Disposable canary create/modify/delete/rename and symlink writes rejected; own write succeeded",
+    "Host filesystem Unix, abstract Unix and loopback TCP disposable listeners inaccessible; TEST-NET outbound attempt ENETUNREACH; no default route",
+    "Nested user namespace creation denied with ENOSPC using namespace-local bubblewrap limit",
+    "Inherited environment closed; PWD is bubblewrap-created private work directory",
+    "Host runtime/shared memory, display/GPU/input/audio devices absent"
+  ],
+  "preservation": {
+    "hashed_protected_preimages": 22,
+    "hashes_and_metadata_unchanged": true,
+    "matches_original_R01_hashes": 22,
+    "game_tree_metadata_items": 1330,
+    "game_tree_metadata_unchanged": true,
+    "credential_values_read": false
+  },
+  "attempts": {
+    "end_to_end_candidates": 4,
+    "resolved_failures": [
+      {
+        "target": "bubblewrap setup",
+        "relevant_version": "v1 before explicit --unshare-user",
+        "failure_class": "ARGUMENT_REFUSAL",
+        "method": "fixed negative probe",
+        "exit": 1,
+        "cause": "--disable-userns requires explicit --unshare-user",
+        "resolution": "Added mandatory --unshare-user; no user namespace fallback"
+      },
+      {
+        "target": "environment allowlist",
+        "relevant_version": "v1 with explicit user namespace",
+        "failure_class": "VALIDATOR_EXPECTATION",
+        "method": "fixed negative probe",
+        "exit": 1,
+        "cause": "bubblewrap creates PWD after clearenv",
+        "resolution": "Observed environment names and checked PWD == /work, allowing only that private path"
+      },
+      {
+        "target": "nested user namespace check",
+        "relevant_version": "v1 with private PWD validation",
+        "failure_class": "VALIDATOR_ERRNO_EXPECTATION",
+        "method": "fixed negative probe",
+        "exit": 1,
+        "cause": "Linux reports ENOSPC for bubblewrap namespace-local user namespace limit",
+        "resolution": "Observed unshare result -1/errno 28 and official v0.11.1 implementation; retain denial requirement and record errno"
+      }
+    ]
+  },
+  "private_evidence": {
+    ".local/r04/context.json": "0b76d72accbc5eea0ddb0847ffc6e70ea6a56c190a6b3d36a1d49905a760f578",
+    ".local/r04/preimages-before.json": "06377663f4a6261fd3c2093ce69317265ef1367cb01ae3f02f117ae315bec77f",
+    ".local/r04/preimages-after.json": "dc17a77fa2df64769b02fecff36f796c40a2ace44e20c913a24d977f7af86d63",
+    ".local/r04/checks.json": "06f1577ea60aed041700851767f696f51f78d91e057320ff542baa7e01a6d3cd",
+    ".local/r04/construction-checks.json": "0478912a8e5ae3ad2c92e4ab02e931c882f4c1ec3080d3c8a868b154725932e5"
+  },
+  "probe_evidence_sha256": "699682375133ec6de5fd7c1b8eae471e478340d6531e627de585cea8237a61f4",
+  "construction_manifest_sha256": "9093f29a04f32a664d296a57ffb711f3235c29c015cdda00c0021789d5ca740f",
+  "references": [
+    "https://github.com/ValveSoftware/Proton/blob/experimental_11.0/proton",
+    "https://raw.githubusercontent.com/containers/bubblewrap/v0.11.1/bubblewrap.c",
+    "https://partner.steamgames.com/doc/features/cloud?l=english&language=english"
+  ],
+  "runtime_acceptance": {
+    "Proton": "NOT_RUN",
+    "Steam": "NOT_RUN",
+    "game": "NOT_RUN",
+    "real_save_behavior": "NOT_RUN",
+    "cloud_behavior": "NOT_RUN",
+    "loader_compatibility": "NOT_RUN",
+    "MOD_runtime_compatibility": "NOT_RUN",
+    "R04": "INCOMPLETE",
+    "R05": "NOT_RUN",
+    "final_A01_A14_accepted": 0
+  },
+  "limits": [
+    "Skeleton is not an initialized working Proton prefix",
+    "Read-only sources may need private writable configuration/log views in a successor contract",
+    "Display/GPU/Steam IPC exposure is not authorized by v1",
+    "This capability evidence does not establish gameplay, ABI/signatures, CNS/Kittens/ATOOL or RandomSwitch compatibility"
+  ],
+  "next_action": "Fresh Judge of registered exact candidate, then Governor decision; after accepted source delivery propose successor contract for isolated fresh-prefix CLI bootstrap before any game launch."
+}
