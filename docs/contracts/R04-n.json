@@ -1,0 +1,83 @@
+{
+  "contract_id": "stellar-mod-console/R04-n/v1",
+  "lane": "GOVERNED",
+  "authority": "Active user-authorized Goal continuation; global/project AGENTS.md risk-driven engineering policy v9; Root-recorded R04-n admission at baseline cdc4eb34af06e6bbdc25552392bbc42b8085e167.",
+  "lineage": "New bounded successor unit after accepted R04-m. R04-j remains closed as NESTED_DRY_HOST_DENIAL_CLASSIFIED and must not be retried unchanged. All historical attempts, protected-input counts, and the original A01-A14 denominator remain cumulative.",
+  "objective": "Prepare and, only after exact fresh review and Governor approval, execute one supported Flatpak developer-sandbox pre-authentication proof using /usr/bin/flatpak 1.16.6, the installed org.freedesktop.Platform/x86_64/25.08 deployment, its default-selected installed NVIDIA extension, and only a self-authored probe. Determine whether the distinct `flatpak build --runtime` boundary works under unchanged host policy or identify the exact prerequisite or host denial. This is a Flatpak boundary proof, not a Steam or game proof.",
+  "coherent_outcome": {
+    "artifacts": "Self-authored source, synthetic tests, exact command registration, private preflight/result/postflight evidence, sanitized public evidence, and one precise next action.",
+    "allowed_results": ["FLATPAK_RUNTIME_BOUNDARY_PROVED_WITH_DEFAULT_NVIDIA_EXTENSION", "FLATPAK_BASE_BOUNDARY_PROVED_NVIDIA_EXTENSION_NOT_PROVED", "FLATPAK_SUPPORTED_PREREQUISITE_MISSING", "FLATPAK_HOST_DENIAL_CLASSIFIED", "PROBE_FAILED_UNCLASSIFIED"],
+    "meaning": "Only the first result proves this exact Flatpak 25.08 sandbox and default NVIDIA-extension mount for the self-authored probe. None proves or authorizes Steam installation, the current Steam 26.08 prerequisite, client launch, login, DRM, Cloud, Proton, pressure-vessel, game launch, MOD compatibility, display, input, or save isolation."
+  },
+  "frozen_dimensions": {
+    "objective": "One distinct supported Flatpak build-command runtime-boundary proof or precise refusal.",
+    "protected_boundaries": [
+      "Steam, client installations and userdata, account/session material, Proton and pressure-vessel, game files and originals, MOD sources, downloads, prefixes, saves, Cloud state, other tasks, and user processes remain unread and unchanged.",
+      "No credentials, tokens, cookies, login state, account identifiers, Cloud payloads, save contents, original game contents, browser sessions, or third-party application code may be read, copied, mounted, executed, emitted, or inferred.",
+      "No app/runtime/SDK install, update, repair, remote operation, override, permission mutation, export, build-finish, package-manager action, authentication, activation, upload, download, or network request.",
+      "No sysctl, AppArmor, namespace policy, global Flatpak, Git, Codex, HOME, or host configuration change.",
+      "Do not set HOME, FLATPAK_USER_DIR, XDG_DATA_HOME, XDG_CONFIG_HOME, or XDG_RUNTIME_DIR. Do not use `--with-appdir`. The probe app deployment path and its ~/.var/app path must remain absent.",
+      "No direct /usr/bin/bwrap command, payload-spawned bwrap, nested user namespace, nested sandbox, or fallback to R04-j. Flatpak's own single sandbox implementation is the route under test.",
+      "No `flatpak run`; installed application state is outside scope. No invented `flatpak build --sandbox` option.",
+      "No host filesystem, home, display, Wayland, X11, audio, input, GPU device, USB, KVM, D-Bus, Steam IPC, SSH agent, GPG agent, PCSC, CUPS, or external network exposure.",
+      "The current Steam Flatpak manifest's 26.08 requirement is not satisfied by the installed 25.08 Platform and must remain an explicit later prerequisite."
+    ],
+    "authorized_external_effects": [
+      "Root may create, replace, refactor, consolidate, or recoverably remove task-owned source, tests, documentation, contract/evidence, and ignored outputs under the registered owned paths.",
+      "Root may perform read-only exact metadata/stat/hash checks on /usr/bin/flatpak, the named Platform and NVIDIA runtime deployments, their active links and metadata, applicable public man pages and policy source, and exact nonexistence checks for the probe app paths.",
+      "Synthetic tests may exercise only owned fixtures and mocked command construction; they may not launch Flatpak or bwrap.",
+      "After a fresh Judge PASS on the exact registered prelaunch candidate and a separate Governor execution decision, Root may run one fresh `flatpak build-init` and one fresh `flatpak build --runtime` attempt for the fixed self-authored probe. No manual metadata fabrication or patching fallback is allowed if supported build-init refuses.",
+      "Per-process TMPDIR or XDG_CACHE_HOME may point only into the fresh owned output tree if the exact reviewed candidate needs them. Other HOME/XDG installation or session variables remain unchanged.",
+      "Kernel namespace/process state and Flatpak instance state under the existing XDG runtime directory may exist transiently during the attempt, but must be registered, bounded to the owned process, and absent afterward. Every durable output must be inside .local/r04/route-prerequisites.",
+      "After post-execution fresh Judge PASS and Governor approval, normal authorized source commit/push and exact remote verification remain allowed."
+    ],
+    "acceptance_criteria": {
+      "C01": "Persist this contract, baseline, ownership, exact pre/post gates, evidence plan, recovery, cumulative budget facts, and unchanged original acceptance denominator.",
+      "C02": "Use a fresh owner-only, symlink-free, hardlink-free, non-reused subtree under .local/r04/route-prerequisites. Refuse path traversal, special files, changed ancestors, overlaps, pre-existing result targets, and concurrent metadata changes before subprocess launch.",
+      "C03": "Register exact Flatpak 1.16.6 executable identity; Platform/x86_64/25.08 active deployment and metadata digest d02891b938f979b23d23e532d1c7200d31d7d996a079ff3718a7703fc8b0fd27; default-selected org.freedesktop.Platform.GL.nvidia-595-91-07/x86_64/1.4 deployment identity; and the self-authored payload digest.",
+      "C04": "Use Flatpak build-init only to create the fresh build directory. It may reference the installed Platform as the non-building probe's SDK operand and runtime operand because the subsequent command is `build --runtime`; prohibit writable-sdk, sdk-extension, base, var initialization, update, extensions, remotes, downloads, and manual metadata fallback. A refusal is FLATPAK_SUPPORTED_PREREQUISITE_MISSING, not permission to install an SDK.",
+      "C05": "The exact build command must include `--runtime`, `--readonly`, `--die-with-parent`, `--unshare=network`, `--unshare=ipc`, explicit denial of every supported socket and device class, reset/denial of host and home filesystem access, a fixed sandbox cwd, fixed self-authored command and arguments, and no bind mount, arbitrary command, environment tail, filesystem grant, or fallback.",
+      "C06": "The payload may execute only the installed Platform runtime shell and self-authored probe. It must establish its exact runtime context, separate network/IPC/process boundary evidence, read-only /app and /var behavior, absence of the synthetic host-only sentinel, absence of host HOME contents and protected routes, absence of D-Bus/display/audio/input/GPU-device exposure, and absence of writable unregistered paths.",
+      "C07": "A full success additionally requires a metadata-derived marker from the default-mounted NVIDIA extension at its expected runtime mount point without executing NVIDIA binaries or exposing GPU devices. If the base sandbox passes but this marker is absent or ambiguous, report the dedicated partial result.",
+      "C08": "All payload output is bounded structured data written by the Root collector under .local/r04/route-prerequisites. No secret, account, save, original-game, host-path, raw environment, PID, socket address, or third-party binary content may enter public evidence.",
+      "C09": "Synthetic regressions cover command/environment/filesystem injection, missing denial flags, unsupported options, reused/symlinked/hardlinked paths, unexpected metadata, output races, HOME/XDG redirection, with-appdir, direct/nested bwrap, non-self-authored payloads, ambiguous stderr, timeout, residue, and false success or denial classification.",
+      "C10": "Root independently registers and reproduces all non-runtime checks, exact candidate identity, command vector, environment allowlist, preimages, expected output set, and probe-app-path absence. A fresh read-only Judge must PASS the exact candidate before execution; Governor approval is then required.",
+      "C11": "Execute at most one exact reviewed attempt. Unsupported build-init, host-policy refusal, base success without NVIDIA proof, full success, timeout, and code/argument defects remain distinct. Unknown or mixed diagnostics are PROBE_FAILED_UNCLASSIFIED. No automatic retry or raw-bwrap diagnostic fallback.",
+      "C12": "Postflight proves the named runtime deployments and metadata unchanged; probe app and ~/.var/app paths absent; no Flatpak installation/config/override/permission changes; no durable output outside the owned tree; no owned process, namespace, socket, or transient Flatpak instance residue; and all prior protected game/save/account evidence unchanged without reopening their contents.",
+      "C13": "Public evidence preserves A01-A14 and actual cold-start/game/UI/save/Cloud/runtime gates unchanged. It must state that Platform 25.08 differs from the current Steam manifest's 26.08 prerequisite."
+    },
+    "applicable_budget": "No explicit numeric budget exists. Discovery, construction, tests, Root validation, Judge/Governor reviews, the single execution attempt, closure, and delivery consume the same cumulative native Goal budget. The recorded 6,049,046 native tokens and 25,656 wall-clock seconds are telemetry, not a resettable allowance or inferred active time. Root must retain validation and closure headroom and stop at any actual budget boundary with an exact resume point."
+  },
+  "ownership": {
+    "writer": "Root only",
+    "owned_paths": ["PROJECT_STATE.json", "docs/contracts/R04-n.json", "docs/evidence/R04-n.json", "src/testing/README.md", "src/testing/flatpak_probe.py", "tests/test_flatpak_probe.py", ".local/r04/route-prerequisites/"],
+    "adaptive_scope": "Root may replace, refactor, move, consolidate, or recoverably delete superseded task-owned implementation and fixtures while frozen dimensions remain unchanged. No compatibility scaffolding, backup copies, dead paths, or retention of superseded generated work is required.",
+    "reviewers": "Governor and Judge are strictly read-only."
+  },
+  "evidence_plan": {
+    "private": "Exact executable/runtime identities, active-link targets, source and payload hashes, fresh-directory manifest, fixed commands/environment, preflight, bounded stdout/stderr classification, namespace and denial checks, output inventory, postflight, and retained failures under .local/r04/route-prerequisites.",
+    "public": "Sanitized versions/digests, result class, check counts/exits, supported-route limits, known 25.08 versus 26.08 mismatch, failures, NOT_RUN scope, and exact next prerequisite. No private host paths, account/save/original content, process identifiers, raw environment, or raw diagnostic bodies.",
+    "identity": "Root registers exact semantic source/tests/README/contract/evidence candidate and private evidence map; PROJECT_STATE.json is hashed separately. Review decisions, sync metadata, and next-action metadata do not alter unchanged semantic identity."
+  },
+  "recovery": {
+    "preexecution": "Reject changed or ambiguous inputs, unsupported command shapes, missing denial flags, non-fresh paths, runtime identity drift, absent output exclusivity, or external-state uncertainty before launching Flatpak.",
+    "runtime": "On timeout or error, terminate and wait only for the exact owned process/session; do not signal existing Flatpak, Steam, game, or user processes. Preserve the bounded failure result and inspect only owned/transient identities.",
+    "filesystem": "Retain evidence needed for diagnosis. Rebuild or recoverably remove only fresh task-owned outputs after ownership and concurrent-change checks. Never restore, delete, chmod, remount, or overwrite installed runtimes or original data.",
+    "route_failure": "A supported-prerequisite failure requires a fresh owner decision before installing a matching SDK or exact Steam-relevant 26.08 runtime. A host denial requires a changed supported route or host-state change under new governance; it does not authorize AppArmor/sysctl changes or R04-j repetition."
+  },
+  "review_sequence": [
+    "Root implements and validates the non-runtime candidate and registers exact evidence.",
+    "Fresh read-only Judge evaluates C01-C10 on the exact candidate.",
+    "Governor decides whether the exact single Flatpak attempt may run.",
+    "Root runs at most one approved attempt and completes C11-C13.",
+    "Fresh post-execution Judge evaluates the exact result candidate.",
+    "Governor decides closure and source-delivery eligibility.",
+    "Root alone updates canonical state and performs authorized source sync."
+  ],
+  "current_permission_assessment": "The preparation candidate is admissible. No runtime execution is approved by this response. The exact Flatpak attempt requires fresh Judge PASS and a new Governor decision. Steam/client/game/authentication/Cloud/runtime installation and host-policy changes remain outside authority.",
+  "minimum_future_owner_prerequisites": [
+    "If build-init refuses the Platform-as-SDK runtime probe, explicit authority to install or otherwise provide a verified matching org.freedesktop.Sdk/x86_64/25.08 is required; manual metadata fabrication is not an accepted substitute.",
+    "For Steam relevance, provide or authorize the exact currently required 26.08 Flatpak runtime and separately review the Steam app manifest's broad permissions.",
+    "Any Steam app installation, genuine owner login, activation, client concurrency, Cloud behavior, or game execution needs its own exact candidate, fresh review, and applicable owner authorization."
+  ]
+}

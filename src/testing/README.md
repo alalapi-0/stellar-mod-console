@@ -213,3 +213,28 @@ socket 长度、基础设备节点和错误分类失败及前像均保留；没�
 此结果只关闭当前嵌套路线调查，不证明内层隔离、Steam 或游戏可用，也不
 授权修改系统命名空间策略。后续真实客户端须重新建立可用边界；当前主机
 条件不变时不重复该路线。
+
+## R04-n：Flatpak 路线准备与暂停恢复点
+
+只读调查确认本机 Flatpak 为 1.16.6，已有 Platform/x86_64/25.08；默认用户和
+系统安装中未发现 Steam 部署，也未发现对应应用数据目录。所读取的上游 master
+Steam manifest 声明 26.08，并共享网络、IPC、全部设备及部分媒体路径。这只是
+源码快照，不代表选定稳定发行或本机已满足 Steam 条件；默认权限不能直接用作
+保护原数据的测试边界。
+
+新 [R04-n/v1 契约](../../docs/contracts/R04-n.json) 定义单独的自有
+`flatpak build --runtime` 探针：引用已安装运行库、使用自有 files/var 目录并
+拒绝主机目录、网络、设备和 socket。不得使用 `--with-appdir`、不存在于 build
+文档中的 `--sandbox`、直接/嵌套 bwrap 或已安装应用的 `flatpak run`。
+Platform 作为非编译探针的 SDK 操作数仍须由真正的 `build-init` 接受；失败则
+保留缺前置结果，不能手写 metadata 或自动安装 SDK 绕过。
+
+已安装 AppArmor 规则表明 bwrap 子进程能力受约束，Steam/Flatpak 有单独的
+userns 规则；读取已加载规则列表返回权限拒绝，因此没有确认上次拒绝的唯一原因。
+主机策略未变，也未重试 R04-j。新 Linux 用户或新前缀也不能单独隔离同一个
+Steam 账户的 Cloud；合法客户端、许可、首次激活、Cloud 和游戏存档仍待分别验收。
+
+用户要求本轮收尾后暂停。当前仅保存契约与只读准备证据，探针代码、测试、
+build-init/build 和真实客户端均未执行，R04-n 尚未完成。恢复后沿用同一契约，
+先实现并登记准确候选，复核后取得新鲜 Judge PASS 与 Governor 的执行批准，
+才允许一次限定实验。实际暂停与当前进度以 PROJECT_STATE.json 和原生 Goal 为准。

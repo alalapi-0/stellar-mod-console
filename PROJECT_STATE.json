@@ -15,8 +15,8 @@
   "goal_mode_started": true,
   "implementation_started": true,
   "phase": "P1",
-  "current_round": "R04-m",
-  "round_status": "COMPLETE_R04-m_PINNED_CONFIGURATION_EVIDENCE_AND_SOURCE_DELIVERY; FULL_GOAL_PARTIAL",
+  "current_round": "R04-n",
+  "round_status": "PREPARATION_ACCEPTED_PENDING_SOURCE_DELIVERY_AND_NATIVE_PAUSE; R04-n_UNFINISHED",
   "next_round": "R04-n",
   "protected": [
     "Existing game files and saves",
@@ -32,7 +32,12 @@
       "new public GitHub repository initialization and sync"
     ],
     "future_implementation": "AUTHORIZED: active user Goal objective, 2026-10-07; R01 onward, source sync each round; exact release remains gated",
-    "specific_binary_release": "Review the candidate and obtain channel/version authorization at R30"
+    "specific_binary_release": "Review the candidate and obtain channel/version authorization at R30",
+    "pause_request": {
+      "source": "Direct user: 这一轮结束后先暂停",
+      "timing": "After preparation evidence review and normal source sync; no new runtime experiment",
+      "resume": "Requires explicit user resume; sameR04-n/v1"
+    }
   },
   "inputs": {
     "snapshot": "R01 original569 frozen source basis plus R01-inc1 added25; old snapshots/failures retained",
@@ -476,7 +481,7 @@
     "visibility": "PUBLIC_VERIFIED",
     "initial_branch": "main",
     "implementation_branch_policy": "Separate implementation branch; push each round; no automatic merge",
-    "sync_status": "VERIFIED R04-m source f5299c98b6b8dbd93ab9039a6bee3081b97e07be exactly matches GitHub branch API. Final closure HEAD identity uses Git and remote ref.",
+    "sync_status": "R04-n preparation review and source-only Governor approval complete; source commit/push pending, unitunfinished, nativepause pending after delivery.",
     "head_identity": "Use git HEAD and the remote ref; do not store a self-referential commit hash",
     "branch": "impl/mod-console",
     "verified_content_commits": {
@@ -840,13 +845,36 @@
         "method": "Indexed round on all heterogeneous historical attempt records",
         "exit": 1,
         "resolution": "Evidence preparation failed in memory before any evidence write. Use optional round lookup, retaining every historical record and current failures. No implementation/input/runtime effect."
+      },
+      {
+        "round": "R04-n",
+        "phase": "READONLY_ROUTE_DISCOVERY",
+        "failures": [
+          {
+            "check": "assumed launcher/doc paths",
+            "class": "FILE_NOT_FOUND",
+            "resolution": "dpkg file list established /usr/games/steam and compressed README.Debian.gz; no launch/install"
+          },
+          {
+            "check": "assumed private registration.json",
+            "class": "FILE_NOT_FOUND",
+            "resolution": "existing candidate/prelaunch artifacts enumerated; no outputs replaced"
+          },
+          {
+            "check": "loaded AppArmor profiles",
+            "class": "PERMISSION_DENIED_ERRNO13",
+            "resolution": "No escalation or policy change; installed policy source remains distinct from loaded runtime profile"
+          }
+        ],
+        "runtime_attempts": 0,
+        "resolution": "Actual package paths discovered; loaded policy remains unverified without escalation; no route retry or install. Preparation checkpoint pending review."
       }
     ],
     "token_cost_telemetry": {
-      "native_goal_tokens_observed": 6049046,
-      "source": "Native get_goal at R04-m source verification; cumulative only",
+      "native_goal_tokens_observed": 6460428,
+      "source": "Native get_goal at R04-n preparation checkpoint; cumulative only; no budget reset",
       "coverage": "Native cumulative Goal tokens/time only; per-role and cost unavailable; active time not inferred",
-      "native_goal_time_seconds_observed": 25656,
+      "native_goal_time_seconds_observed": 27339,
       "active_execution_time": "UNAVAILABLE; wall time does not prove active minutes",
       "cost": "UNAVAILABLE",
       "budget": "No explicit token budget; native remainingTokens null"
@@ -883,10 +911,10 @@
     },
     {
       "scope": "Runtime game tests",
-      "reason": "Private-client plan retained; exact nestedbwrap route refused before inner payload despite31outerchecksPASS. Host settings unchanged. R04-k/l/m static loader/key/config evidence accepted; actualSteam/account/activation/ABI/Cloud/game/save isolation remains unestablished.",
-      "state": "GAME_NOT_RUN; CLASSIFIED_NESTED_ROUTE_REFUSAL_ACCEPTED",
-      "evidence": "docs/evidence/R04-j.json",
-      "next": "Evaluate supported private-client/game isolation prerequisites and alternatives to reach real cold-start testing; prepare GOVERNED admission before security/runtime effects. Keep source-grounded config overwrite/save/media/startup declarations as test requirements, preserve original saves/account/settings, and do not change host policy or retry the refused nested route under unchanged conditions."
+      "reason": "Current R04-j route refusal retained. R04-n read-only assessment found installedFlatpak1.16.6/Platform25.08; defaultSteam deployments absent; upstreammaster Steam manifest26.08/broadpermissions not admitted. Fresh Governor contract defines distinct own Flatpak build-runtime proof, no runtime approval; user pause before implementation. Loaded AppArmor profile list unavailableerrno13, installedpolicy only. Steam/account/Cloud/game/save isolation remains unestablished.",
+      "state": "UNFINISHED_PREPARATION; RUNTIME_NOT_GRANTED; USER_PAUSE_AFTER_DELIVERY",
+      "evidence": "docs/evidence/R04-n.json",
+      "next": "Resume R04-n/v1 after explicit user resume: implement and register the fixed self-authored Flatpak build --runtime candidate; reproduce prelaunch checks, fresh Judge PASS and Governor execution approval before the single probe. No Steam/game/auth/Cloud/install or host policy effect. Do not retry the unchanged R04-j route."
     },
     {
       "scope": "Original CNS configuration and declared assets",
@@ -895,29 +923,27 @@
       "evidence": "docs/evidence/R03-inc1.json"
     }
   ],
-  "next_action": "Evaluate supported private-client/game isolation prerequisites and alternatives to reach real cold-start testing; prepare GOVERNED admission before security/runtime effects. Keep source-grounded config overwrite/save/media/startup declarations as test requirements, preserve original saves/account/settings, and do not change host policy or retry the refused nested route under unchanged conditions.",
+  "next_action": "Resume R04-n/v1 after explicit user resume: implement and register the fixed self-authored Flatpak build --runtime candidate; reproduce prelaunch checks, fresh Judge PASS and Governor execution approval before the single probe. No Steam/game/auth/Cloud/install or host policy effect. Do not retry the unchanged R04-j route.",
   "updated_on": "2026-10-08",
   "execution": {
     "owner_thread": "01a115db-7ff8-70c1-8122-cdc330aaf5c5",
-    "lane": "REVIEWED",
-    "lane_reason": "Pinned static target/precedence evidence affects shared previews and distinguishes game-save references, script configuration writes and screenshot moves. Recoverable own code/data; fresh independent Judge; no runtime or protected effects.",
+    "lane": "GOVERNED",
+    "lane_reason": "Admission of a distinct Flatpak runtime/process/filesystem boundary before any executable probe; original credentials/account/Cloud/save/host policies remain protected. Governor may narrow to read-only assessment if no safe .local-only proof exists.",
     "owned_paths": [
-      "src/policy/configuration_evidence.json",
-      "src/policy/interfaces.py",
-      "src/policy/profiles.py",
-      "tests/test_interfaces.py",
-      "tests/test_profiles.py",
-      "src/policy/README.md",
-      "docs/evidence/R04-m.json",
       "PROJECT_STATE.json",
-      ".local/r04/config-targets/"
+      "docs/contracts/R04-n.json",
+      "docs/evidence/R04-n.json",
+      "src/testing/README.md",
+      "src/testing/flatpak_probe.py",
+      "tests/test_flatpak_probe.py",
+      ".local/r04/route-prerequisites/"
     ],
-    "entry_preimage": "a46fe7b107faf86fcb633b4f4b596a475381a3e1; State SHA256 e02afc87418d8e77f242f964809e0c1f85a59695ee0c34f182d0ed72bae45904",
-    "execution_source": "Native Goal continuation after exact R04-l remote delivery",
-    "acceptance": "Inspect all15distinct Lua IO source identities covering36documents/92call declarations on original619document/306Lua/1deferral basis. Add digest-pinned, source-grounded path/precedence/startup-write facts to existing interface evidence and shared whole-package previews; do not resolve runtime targets or assign ownership. Evidence missing/stale/contradictory must not silently attach; preserve unknowns, queries, whole/component scope and can_apply false. Meaningful focused/regression and real CLI checks, fresh Judge and exact normal source delivery. OriginalA01-A14 remains0/14.",
-    "external_scope": "Only exact MOD Lua and archive text read in memory, original metadata and public documentation read-only; no game/client/third-party code execution, protected save/account/Steam content reads or changes, third-party copies, route retry, host policy changes or deployment. Normal source sync authorized.",
-    "next_evidence": "R04-n supported legitimate isolation prerequisites/route admission; no game/client/Cloud/save acceptance yet",
-    "result": "PASS_STATIC_UNIT_ONLY;15IOidentities/36documents/92calls plus1startupsource;31tests/12Rootchecks/2CLI/freshJudgePASS. Source f5299c98b6b8dbd93ab9039a6bee3081b97e07be exactly verified on GitHub; actual targets/ownership/runtime unverified; original0/14."
+    "entry_preimage": "cdc4eb34af06e6bbdc25552392bbc42b8085e167; State SHA256 e033d19c278840935c30f01ef2c3d6c0ded6d1300e2d2a55dfee735974ee6b89",
+    "execution_source": "Native Goal continuation after unchanged user-organization status recheck; prior goal turn NO_PROGRESS toward new end-to-end acceptance",
+    "acceptance": "R04-n/v1 retained unchanged. This stopping checkpoint accepts only contract/read-only preparation record, not C02-C13 or probe/game completion. User pause after source delivery; resume same unit.",
+    "external_scope": "Preparation files and read-only current evidence only; no new runtime effects. Source sync remains authorized after preparation review/Governor decision.",
+    "next_evidence": "Governor contract: exact distinct Flatpak build sandbox viability or read-only route assessment; never unchanged R04-j nested retry",
+    "result": "PREPARATION_REVIEW_PASS_AND_SOURCE_APPROVED_ONLY; 12Rootpreparationchecks/3actualpreservationchecks; runtimeNOT_GRANTED; R04-nunfinished."
   },
   "rounds": {
     "R01": {
@@ -991,7 +1017,16 @@
         "R04-l",
         "R04-m"
       ],
-      "sync": "VERIFIED R04-m content f5299c98b6b8dbd93ab9039a6bee3081b97e07be exactly matched GitHub branch API"
+      "sync": "VERIFIED R04-m content f5299c98b6b8dbd93ab9039a6bee3081b97e07be exactly matched GitHub branch API",
+      "pending_unit": {
+        "id": "R04-n",
+        "phase": "PREPARATION_ACCEPTED_PENDING_SOURCE_DELIVERY",
+        "contract": "docs/contracts/R04-n.json",
+        "evidence": "docs/evidence/R04-n.json",
+        "runtime_execution_gate": "NOT_GRANTED",
+        "closed": false,
+        "pause_request": "user after bounded round closure/source sync"
+      }
     },
     "R01-inc1": {
       "status": "COMPLETE_STATIC_ORGANIZATION_AND_REQUIREMENTS",
@@ -1014,26 +1049,37 @@
     "last_closed": "R04-m",
     "remaining_round_estimate": null,
     "forecast_confidence": "unknown; no final end-to-end acceptance throughput; incomplete prerequisites and heterogeneous remaining work",
-    "previous_goal_turn": "PROGRESS: R04-m source f5299c98b6b8dbd93ab9039a6bee3081b97e07be verified on GitHub; digest-pinned15IO+1startup identities/92calls/38annotateddocs, shared config4vs2fields/save-media/startup blockers;31tests/12Rootchecks/2CLI/473previews/freshJudgePASS. Original619documents/306Lua/1deferral and0/14 retained;22closedunitsincludingplanning. Next real isolation prerequisites/route admission.",
+    "previous_goal_turn": "PROGRESS_PREPARATION_ONLY: R04-n current supported-route evidence and exact governed futureFlatpakbuild-runtime contract reviewed. No runtime/implementation/tests; original0/14 and22closedunits retained. Explicit user pause after verified delivery; sameunfinishedR04-n on resume.",
     "total_closed_units_including_planning": 22,
     "changes": {
-      "execution": "Existing interface builder and shared preview now carry source-pinned target/precedence/startup-write declarations and distinct isolation/multiple-writer blockers; no deployment or runtime application.",
-      "evidence": "All15IOidentities/36documents/92call instances and1supporting source grounded;473previews, raw4vs2config writers distinct from installed5;31tests/2CLI/12Rootchecks/freshJudgePASS,1384metadata unchanged. Four preparatory/validator failures retained with corrected methods.",
-      "scope": "FullA01-A14 remains0/14; original594source/591download/25increment and619document basis unchanged. Completion/remaining percentage and remaining-round forecast unknown."
+      "execution": "No runtime or new final acceptance; R04-n contract/admission prepared only. R04-n remains unfinished and not counted.",
+      "evidence": "Fresh supported route facts: Flatpak1.16.6/Platform25.08, no defaultSteam deployment/appdata, observedmaster26.08 mismatch and broadpermissions; installedpolicy distinct from unavailableloadedstate;1384metadata/11systemfiles/sysctlsunchanged.",
+      "scope": "OriginalA01-A14 and closed22/21execution/1planning unchanged; explicit user pause changes scheduling only."
     },
     "remaining_percentage": null
   },
   "governance": {
-    "lane": "REVIEWED",
-    "registration": ".local/r04/config-targets/registration.json",
-    "judge": "r04_m_configuration_judge",
-    "decision": "PASS_EXACT_STATIC_CANDIDATE",
-    "evidence": "docs/evidence/R04-m.json",
-    "semantic_candidate": "c758a964f5aef187b8c05c7b4312c1686f1e215fcfe1032bf7c50842d619971c",
-    "identity_rule": "Exact seven-file semantic map and separate State hash; review/progress/sync metadata outside candidate identity",
-    "previous_accepted": "docs/evidence/R04-l.json",
-    "approval_scope": "Static source declarations/shared preview and authorized normal source sync only; no game/security/runtime effect",
-    "judge_report": ".local/r04/config-targets/judge.json",
-    "judge_report_sha256": "0608b0b1e93bcc82db8a59f8b3f3edb56178232c5fa72ee177798d2a00b0cff1"
+    "lane": "GOVERNED",
+    "unit": "R04-n",
+    "decision": "APPROVE_SOURCE_PREPARATION_ONLY; RUNTIME_NOT_GRANTED; UNIT_UNFINISHED",
+    "previous_accepted": "docs/evidence/R04-m.json",
+    "entry": ".local/r04/route-prerequisites/entry.json",
+    "contract": "docs/contracts/R04-n.json",
+    "contract_status": "ACTIVE_UNFINISHED",
+    "phase": "PREPARATION_ACCEPTED_PENDING_SOURCE_DELIVERY",
+    "runtime_execution_gate": "NOT_GRANTED",
+    "result": "NONE_PREPARATION_ONLY",
+    "resume_contract_id": "stellar-mod-console/R04-n/v1",
+    "governor": "r04_n_route_governor",
+    "evidence": "docs/evidence/R04-n.json",
+    "registration": ".local/r04/route-prerequisites/registration.json",
+    "semantic_candidate": "30c36dd4661266868c13351d1a0a4c7e6e3fb6062cf7ac8f9ace688f5ac86c2d",
+    "judge": "r04_n_preparation_judge",
+    "judge_report": ".local/r04/route-prerequisites/judge.json",
+    "judge_report_sha256": "5d410e53e645204f3900c23be227c8a5836caeecd357ab92cddb8727a8cde774",
+    "governor_report": ".local/r04/route-prerequisites/governor.json",
+    "governor_report_sha256": "8e187b378e1c41951314dcd4ab4771822fd43be20703a96246badfbcd67847df",
+    "identity_rule": "Exact three-file semantic map plus private evidence and separate State hash. Review/sync/pause scheduling metadata outside content identity.",
+    "source_approval_identity_correction": "Truncated63character hash corrected to exact64 before any Git effect; semanticcandidate unchanged"
   }
 }

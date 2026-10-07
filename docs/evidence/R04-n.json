@@ -1,0 +1,123 @@
+{
+  "unit": "R04-n",
+  "phase": "PREPARATION_ONLY_PENDING_JUDGE",
+  "contract": "docs/contracts/R04-n.json",
+  "contract_status": "ACTIVE_UNFINISHED",
+  "result": "NONE_PREPARATION_ONLY",
+  "runtime_execution_gate": "NOT_GRANTED",
+  "scope": "Read-only supported-route assessment and Governor-defined future proof; user requested pause after bounded closure. No probe implementation, Flatpak build-init/build, Steam/game or namespace execution.",
+  "baseline": "cdc4eb34af06e6bbdc25552392bbc42b8085e167",
+  "facts": {
+    "installed_flatpak": "1.16.6-1",
+    "installed_platform_ref": "org.freedesktop.Platform/x86_64/25.08",
+    "platform_metadata_sha256": "d02891b938f979b23d23e532d1c7200d31d7d996a079ff3718a7703fc8b0fd27",
+    "public_policy_source": "Installed bwrap policy strips child capabilities; Steam/Flatpak have named unconfined userns profiles. Loaded profile listing deniederrno13; runtime cause unproven.",
+    "unchanged_namespace_parameters": {
+      "apparmor_restrict_unprivileged_userns": 1,
+      "unprivileged_userns_clone": 1,
+      "max_user_namespaces": 242816
+    },
+    "default_steam_flatpak_deployment_and_appdata_presence_count": 0,
+    "upstream_master_manifest_runtime": "26.08",
+    "upstream_master_manifest_sha256": "f2c057c0d62cf6025bb5a8dae23577d2c6425c36c44ba90d27573896c994efd4",
+    "upstream_path_commit_observed": "951b5fa848e07b07114464aa211c071018116f79",
+    "commit_to_manifest_bytes_binding": "NOT_VERIFIED; branch bytes and commits API fetched separately",
+    "manifest_scope": "Observed upstream master source snapshot, not an installed/selected stable release or current host requirement. Installed25.08 cannot satisfy this observed26.08 declaration.",
+    "default_permissions": "Observed upstream master shares network/IPC, deviceall and media paths; not admitted as a protected test environment.",
+    "supported_build_route": "Installed flatpak build man documents --runtime/--readonly and owned files/var mounts; omit --with-appdir. No invented build --sandbox option, direct/nested bwrap or flatpak run.",
+    "separate_uid": "Original HOME mode0750; traversal by an unrelated UID not assumed. Steam API client/game must share OS context; Linux UID alone does not separate Steam-account Cloud."
+  },
+  "root_checks": {
+    "actual_metadata_and_byte_checks": 3,
+    "passed": 3,
+    "scope": [
+      "1384original source/installed metadata match frozen inventory",
+      "11fixed public system file bytes match entry",
+      "three namespace parameters match entry"
+    ],
+    "action_trace": {
+      "runtime_launches": 0,
+      "protected_content_reads": 0,
+      "new_accounts_or_installs": 0,
+      "host_policy_effects": 0,
+      "unchanged_nested_route_retries": 0
+    },
+    "not_rerun": "24 opaque protected hashes and full1330game metadata proof from earlier unit not rerun; current1384metadata is narrower and does not replace it."
+  },
+  "discovery_failures_retained": [
+    {
+      "check": "assumed launcher/doc paths",
+      "class": "FILE_NOT_FOUND",
+      "resolution": "dpkg file list established /usr/games/steam and compressed README.Debian.gz; no launch/install"
+    },
+    {
+      "check": "assumed private registration.json",
+      "class": "FILE_NOT_FOUND",
+      "resolution": "existing candidate/prelaunch artifacts enumerated; no outputs replaced"
+    },
+    {
+      "check": "loaded AppArmor profiles",
+      "class": "PERMISSION_DENIED_ERRNO13",
+      "resolution": "No escalation or policy change; installed policy source remains distinct from loaded runtime profile"
+    }
+  ],
+  "contract_acceptance": {
+    "C01": "ROOT_VERIFIED_PREPARATION_RECORD",
+    "C02": "NOT_RUN_OR_PENDING",
+    "C03": "NOT_RUN_OR_PENDING",
+    "C04": "NOT_RUN_OR_PENDING",
+    "C05": "NOT_RUN_OR_PENDING",
+    "C06": "NOT_RUN_OR_PENDING",
+    "C07": "NOT_RUN_OR_PENDING",
+    "C08": "NOT_RUN_OR_PENDING",
+    "C09": "NOT_RUN_OR_PENDING",
+    "C10": "NOT_RUN_OR_PENDING",
+    "C11": "NOT_RUN_OR_PENDING",
+    "C12": "NOT_RUN_OR_PENDING",
+    "C13": "NOT_RUN_OR_PENDING"
+  },
+  "tests": "NOT_RUN; no new executable implementation or probe exists",
+  "new_original_acceptances": 0,
+  "goal_acceptance": {
+    "accepted": 0,
+    "required": 14
+  },
+  "round_accounting": {
+    "closed_units": 22,
+    "execution_closed": 21,
+    "planning_closed": 1,
+    "R04_n": "UNFINISHED_NOT_COUNTED",
+    "completion_percent": null,
+    "remaining_percent": null,
+    "remaining_round_estimate": null,
+    "forecast_confidence": "unknown"
+  },
+  "source_urls": [
+    {
+      "url": "https://github.com/ValveSoftware/steam-runtime/blob/master/doc/steamlinuxruntime-known-issues.md",
+      "supports": "Default sharing and Flatpak/userns requirements; Valve does not officially support community Steam package"
+    },
+    {
+      "url": "https://partner.steamgames.com/doc/sdk/api",
+      "supports": "Client/same-OS-context/licensed-account initialization and installed-library RestartApp routing"
+    },
+    {
+      "url": "https://partner.steamgames.com/doc/features/cloud",
+      "supports": "Steam-account cloud namespace, client synchronization before/after sessions; UID/prefix alone insufficient"
+    },
+    {
+      "url": "https://docs.flatpak.org/en/latest/flatpak-command-reference.html",
+      "supports": "User installation env; per-app data; no-session-bus/sandbox/spawn semantics"
+    },
+    {
+      "url": "https://github.com/flathub/com.valvesoftware.Steam/blob/master/com.valvesoftware.Steam.yml",
+      "supports": "Observed26.08 and default permissions; source snapshot only"
+    },
+    {
+      "url": "https://github.com/flatpak/flatpak/blob/1.16.6/app/flatpak-builtins-build-init.c",
+      "supports": "Governor primary-source admission basis; installed Platform-as-SDK must be accepted by supported build-init or refused, not manually fabricated"
+    }
+  ],
+  "user_pause": "Direct user: finish this round then pause. Finish evidence/review/source sync only; no new runtime experiment. Native pause will follow remote verification.",
+  "next_action": "Resume R04-n/v1 after explicit user resume: implement and register the fixed self-authored Flatpak build --runtime candidate; reproduce prelaunch checks, fresh Judge PASS and Governor execution approval before the single probe. No Steam/game/auth/Cloud/install or host policy effect. Do not retry the unchanged R04-j route."
+}
