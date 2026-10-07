@@ -1,11 +1,11 @@
 {
   "unit": "R04-n",
-  "phase": "PREPARATION_ONLY_PENDING_JUDGE",
+  "phase": "IMPLEMENTATION_CANDIDATE_PENDING_PRELAUNCH_JUDGE",
   "contract": "docs/contracts/R04-n.json",
   "contract_status": "ACTIVE_UNFINISHED",
-  "result": "NONE_PREPARATION_ONLY",
+  "result": "NONE_RUNTIME_NOT_RUN",
   "runtime_execution_gate": "NOT_GRANTED",
-  "scope": "Read-only supported-route assessment and Governor-defined future proof; user requested pause after bounded closure. No probe implementation, Flatpak build-init/build, Steam/game or namespace execution.",
+  "scope": "Self-authored flatpak_probe and synthetic tests. No build-init, build, Steam, game, account, Cloud, or host-policy effect.",
   "baseline": "cdc4eb34af06e6bbdc25552392bbc42b8085e167",
   "facts": {
     "installed_flatpak": "1.16.6-1",
@@ -63,20 +63,25 @@
   ],
   "contract_acceptance": {
     "C01": "ROOT_VERIFIED_PREPARATION_RECORD",
-    "C02": "NOT_RUN_OR_PENDING",
-    "C03": "NOT_RUN_OR_PENDING",
-    "C04": "NOT_RUN_OR_PENDING",
-    "C05": "NOT_RUN_OR_PENDING",
-    "C06": "NOT_RUN_OR_PENDING",
-    "C07": "NOT_RUN_OR_PENDING",
-    "C08": "NOT_RUN_OR_PENDING",
-    "C09": "NOT_RUN_OR_PENDING",
-    "C10": "NOT_RUN_OR_PENDING",
-    "C11": "NOT_RUN_OR_PENDING",
-    "C12": "NOT_RUN_OR_PENDING",
-    "C13": "NOT_RUN_OR_PENDING"
+    "C02": "SYNTHETIC_PASS_FRESH_TREE_LINK_REUSE_REFUSAL",
+    "C03": "PARTIAL_PINS_PRESENT_NVIDIA_DEPLOYMENT_NOT_REREAD",
+    "C04": "SYNTHETIC_COMMAND_PASS_BUILD_INIT_NOT_RUN",
+    "C05": "SYNTHETIC_COMMAND_PASS_BUILD_NOT_RUN",
+    "C06": "PAYLOAD_AND_CLASSIFIER_PRESENT_SANDBOX_NOT_RUN",
+    "C07": "CLASSIFIER_PRESENT_NVIDIA_MARKER_NOT_OBSERVED",
+    "C08": "SYNTHETIC_OUTPUT_RACE_PASS_NO_PUBLIC_SECRET",
+    "C09": "EIGHT_SYNTHETIC_TESTS_PASS",
+    "C10": "NOT_RUN_PENDING_FRESH_JUDGE",
+    "C11": "NOT_RUN",
+    "C12": "NOT_RUN",
+    "C13": "PARTIAL_25_08_VERSUS_26_08_RETAINED_RUNTIME_NOT_RUN"
   },
-  "tests": "NOT_RUN; no new executable implementation or probe exists",
+  "tests": {
+    "command": "python3 -B -m unittest tests.test_flatpak_probe -v",
+    "passed": 8,
+    "failed": 0,
+    "flatpak_or_bwrap_launches": 0
+  },
   "new_original_acceptances": 0,
   "goal_acceptance": {
     "accepted": 0,
@@ -118,6 +123,6 @@
       "supports": "Governor primary-source admission basis; installed Platform-as-SDK must be accepted by supported build-init or refused, not manually fabricated"
     }
   ],
-  "user_pause": "Direct user: finish this round then pause. Finish evidence/review/source sync only; no new runtime experiment. Native pause will follow remote verification.",
-  "next_action": "Resume R04-n/v1 after explicit user resume: implement and register the fixed self-authored Flatpak build --runtime candidate; reproduce prelaunch checks, fresh Judge PASS and Governor execution approval before the single probe. No Steam/game/auth/Cloud/install or host policy effect. Do not retry the unchanged R04-j route."
+  "user_pause": "Lifted for Cursor by direct execution of EXECUTION_PROMPT.md. Codex Goal remains paused.",
+  "next_action": "Fresh read-only prelaunch Judge on this implementation candidate, then Governor execution approval, before one build-init/build. No Steam/game/auth/Cloud/install or host-policy effect."
 }

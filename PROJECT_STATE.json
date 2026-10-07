@@ -16,7 +16,7 @@
   "implementation_started": true,
   "phase": "P1",
   "current_round": "R04-n",
-  "round_status": "PAUSED_UNFINISHED_R04-n_PREPARATION_DELIVERED; NATIVE_PAUSE_CONFIRMED; CURSOR_HANDOFF_READY_NOT_STARTED",
+  "round_status": "R04-n_IMPLEMENTATION_CANDIDATE_PENDING_PRELAUNCH_JUDGE",
   "next_round": "R04-n",
   "protected": [
     "Existing game files and saves",
@@ -37,14 +37,14 @@
       "source": "Direct user: 这一轮结束后先暂停",
       "timing": "After preparation evidence review and normal source sync; no new runtime experiment",
       "resume": "Requires explicit user resume; sameR04-n/v1",
-      "scheduling_state": "PAUSED_UNFINISHED",
+      "scheduling_state": "CURSOR_RESUME_OF_SAME_R04-n",
       "native_control": "Native get_goal confirmed paused at Cursor-handoff entry; 6,537,229 cumulative tokens and 27,546 native Goal elapsed seconds. Codex Goal is not resumed by this documentation request.",
       "effects_after_pause": "No Codex implementation, dispatch, tests, runtime, authentication, installs or host changes. Direct 2026-10-08 user request separately authorizes bounded Cursor handoff documentation/state and normal source sync only; Cursor execution requires direct user submission there."
     },
     "cursor_handoff": {
       "requested_on": "2026-10-08",
       "source": "Direct user: remaining unfinished objective is handed to Cursor; prepare directly executable Goal+Loop prompt, 20-hour window rules, and every-round GitHub delivery.",
-      "status": "READY_NOT_STARTED",
+      "status": "STARTED",
       "prompt": "EXECUTION_PROMPT.md",
       "pre_handoff_head": "68570eac329aa8ccc595882e6f0918e3eaffe570",
       "lane": "DIRECT",
@@ -57,12 +57,13 @@
         "PROJECT_STATE.json"
       ],
       "codex_native_goal": "PAUSED_VERIFIED",
-      "cursor_goal_loop": "NOT_STARTED_BY_CODEX; actual native activation/deduplication required when user executes prompt in Cursor",
+      "cursor_goal_loop": "GOAL_CREATED; LOOP_PID_39296 sentinel AGENT_LOOP_TICK_stellar_mod_console interval 5m",
       "cursor_resume": "Direct user submission in Cursor resumes same stellar-mod-console/R04-n/v1 after ownership/current-evidence check; preparation approval is not runtime approval.",
       "admin_window": {
         "requested_hours": 20,
-        "status": "NOT_OPENED_BY_CODEX",
-        "backend": "No qualified general 20-hour backend registered in this project; verify current backend, prepare bounded reviewed capability if needed, then user-local terminal authentication. Window cannot replace human validation."
+        "status": "WINDOW_NOT_OPENED",
+        "waiting": "WAITING_FOR_LOCAL_AUTH",
+        "backend": "No qualified restricted 20-hour backend is registered. sudo cache is not a window. R04-n does not authorize installing a host backend."
       },
       "validation": "PASS: document activation/window/manual-gate/contract/A01-A14/Git checks, JSON parse, required document references and exact diff whitespace checks. All original acceptance/counters and frozen R04-n governance unchanged. No implementation or runtime tests run.",
       "delivery": "VERIFIED content commit cd1f89d9a739fd579117c64e7b2c19cb6db3b9e2 equals GitHub impl/mod-console API ref. Final metadata commit identity is checked from Git HEAD and exact remote ref after push, without self-reference.",
@@ -945,9 +946,9 @@
     {
       "scope": "Runtime game tests",
       "reason": "Current R04-j route refusal retained. R04-n read-only assessment found installedFlatpak1.16.6/Platform25.08; defaultSteam deployments absent; upstreammaster Steam manifest26.08/broadpermissions not admitted. Fresh Governor contract defines distinct own Flatpak build-runtime proof, no runtime approval; user pause before implementation. Loaded AppArmor profile list unavailableerrno13, installedpolicy only. Steam/account/Cloud/game/save isolation remains unestablished.",
-      "state": "UNFINISHED_PREPARATION; RUNTIME_NOT_GRANTED; USER_PAUSE_AFTER_DELIVERY",
+      "state": "IMPLEMENTATION_CANDIDATE; RUNTIME_NOT_GRANTED",
       "evidence": "docs/evidence/R04-n.json",
-      "next": "Await explicit user resume; then continue the same unfinished stellar-mod-console/R04-n/v1: implement/register exact self-authored Flatpak candidate, fresh prelaunch Judge PASS and Governor execution approval before one probe. No Steam/game/auth/Cloud/install/host-policy effects or unchangedR04-jretry."
+      "next": "Fresh prelaunch Judge PASS and Governor execution approval before one Flatpak probe. No Steam/game/auth/Cloud/install/host-policy effects."
     },
     {
       "scope": "Original CNS configuration and declared assets",
@@ -956,7 +957,7 @@
       "evidence": "docs/evidence/R03-inc1.json"
     }
   ],
-  "next_action": "Await direct user execution of EXECUTION_PROMPT.md in Cursor; Codex remains paused. Cursor must verify native Goal+Loop and prepare/qualify the requested 20-hour admin window without replacing human gates or blocking independent nonprivileged R04-n preparation. Continue unchanged stellar-mod-console/R04-n/v1: implement/register candidate, fresh Judge PASS and Governor execution approval before one probe. No unchanged R04-j retry or implicit Steam/game/auth/Cloud/install/host-policy authority.",
+  "next_action": "Fresh read-only Judge on the R04-n implementation candidate, then Governor approval, before one flatpak build-init/build. 20-hour admin window is WINDOW_NOT_OPENED; non-privileged work continues.",
   "updated_on": "2026-10-08",
   "execution": {
     "owner_thread": "01a115db-7ff8-70c1-8122-cdc330aaf5c5",
@@ -972,11 +973,11 @@
       ".local/r04/route-prerequisites/"
     ],
     "entry_preimage": "cdc4eb34af06e6bbdc25552392bbc42b8085e167; State SHA256 e033d19c278840935c30f01ef2c3d6c0ded6d1300e2d2a55dfee735974ee6b89",
-    "execution_source": "Native Goal continuation after unchanged user-organization status recheck; prior goal turn NO_PROGRESS toward new end-to-end acceptance",
-    "acceptance": "R04-n/v1 retained unchanged. This stopping checkpoint accepts only contract/read-only preparation record, not C02-C13 or probe/game completion. User pause after source delivery; resume same unit.",
+    "execution_source": "Direct Cursor execution of EXECUTION_PROMPT.md",
+    "acceptance": "R04-n/v1 unfinished. C02-C09 synthetic or partial only. C10-C12 not run. Original A01-A14 unchanged.",
     "external_scope": "Preparation files and read-only current evidence only; no new runtime effects. Source sync remains authorized after preparation review/Governor decision.",
     "next_evidence": "Governor contract: exact distinct Flatpak build sandbox viability or read-only route assessment; never unchanged R04-j nested retry",
-    "result": "Preparation-only record reviewed and source-delivered as 8fe60cd0e0ba50b225b708b3a015acf623137e2a; runtimeNOT_GRANTED; R04-nunfinished; userrequestedpause."
+    "result": "Implementation candidate and 8 synthetic tests pass. Flatpak was not launched. Runtime NOT_GRANTED."
   },
   "rounds": {
     "R01": {
@@ -1053,7 +1054,7 @@
       "sync": "VERIFIED R04-m content f5299c98b6b8dbd93ab9039a6bee3081b97e07be exactly matched GitHub branch API",
       "pending_unit": {
         "id": "R04-n",
-        "phase": "PAUSED_UNFINISHED",
+        "phase": "IMPLEMENTATION_CANDIDATE_PENDING_PRELAUNCH_JUDGE",
         "contract": "docs/contracts/R04-n.json",
         "evidence": "docs/evidence/R04-n.json",
         "runtime_execution_gate": "NOT_GRANTED",
@@ -1083,12 +1084,12 @@
     "last_closed": "R04-m",
     "remaining_round_estimate": null,
     "forecast_confidence": "unknown; no final end-to-end acceptance throughput; incomplete prerequisites and heterogeneous remaining work",
-    "previous_goal_turn": "PROGRESS_PREPARATION_ONLY: governed R04-n supported-route facts and stopping checkpoint reviewed/source-delivered as 8fe60cd0e0ba50b225b708b3a015acf623137e2a. R04-nunfinished/unexecuted;0/14 and22closedunits preserved. Userpause after finalmetadata delivery; explicitresume required.",
+    "previous_goal_turn": "R04-n remains open. Cursor added the self-authored probe and 8 passing synthetic tests. No new closed unit and no final acceptance.",
     "total_closed_units_including_planning": 22,
     "changes": {
-      "execution": "No runtime or new final acceptance; R04-n contract/admission prepared only. R04-n remains unfinished and not counted.",
-      "evidence": "Fresh supported route facts: Flatpak1.16.6/Platform25.08, no defaultSteam deployment/appdata, observedmaster26.08 mismatch and broadpermissions; installedpolicy distinct from unavailableloadedstate;1384metadata/11systemfiles/sysctlsunchanged.",
-      "scope": "OriginalA01-A14 and closed22/21execution/1planning unchanged; explicit user pause changes scheduling only."
+      "execution": "Probe module and synthetic tests added inside unfinished R04-n. Flatpak/build/Steam/game not run. Closed-unit count unchanged.",
+      "evidence": "C02-C09 recorded as synthetic or partial. NVIDIA deployment digest not re-read. Runtime gate remains NOT_GRANTED.",
+      "scope": "Original A01-A14 denominator unchanged. 20-hour window requested and not opened."
     },
     "remaining_percentage": null
   },
@@ -1100,14 +1101,16 @@
     "entry": ".local/r04/route-prerequisites/entry.json",
     "contract": "docs/contracts/R04-n.json",
     "contract_status": "ACTIVE_UNFINISHED",
-    "phase": "PAUSED_UNFINISHED",
+    "phase": "IMPLEMENTATION_CANDIDATE_PENDING_PRELAUNCH_JUDGE",
     "runtime_execution_gate": "NOT_GRANTED",
-    "result": "NONE_PREPARATION_ONLY",
+    "result": "NONE_RUNTIME_NOT_RUN",
     "resume_contract_id": "stellar-mod-console/R04-n/v1",
     "governor": "r04_n_route_governor",
     "evidence": "docs/evidence/R04-n.json",
     "registration": ".local/r04/route-prerequisites/registration.json",
-    "semantic_candidate": "30c36dd4661266868c13351d1a0a4c7e6e3fb6062cf7ac8f9ace688f5ac86c2d",
+    "preparation_semantic_candidate": "30c36dd4661266868c13351d1a0a4c7e6e3fb6062cf7ac8f9ace688f5ac86c2d",
+    "implementation_semantic_candidate": "5c5426a50df7fac5bf516e794ecdd0c8a2248614fc896e1ed3294b80d2f247e7",
+    "implementation_registration": ".local/r04/route-prerequisites/implementation.json",
     "judge": "r04_n_preparation_judge",
     "judge_report": ".local/r04/route-prerequisites/judge.json",
     "judge_report_sha256": "5d410e53e645204f3900c23be227c8a5836caeecd357ab92cddb8727a8cde774",

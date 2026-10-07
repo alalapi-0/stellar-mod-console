@@ -234,7 +234,16 @@ userns 规则；读取已加载规则列表返回权限拒绝，因此没有确�
 主机策略未变，也未重试 R04-j。新 Linux 用户或新前缀也不能单独隔离同一个
 Steam 账户的 Cloud；合法客户端、许可、首次激活、Cloud 和游戏存档仍待分别验收。
 
-用户要求本轮收尾后暂停。当前仅保存契约与只读准备证据，探针代码、测试、
-build-init/build 和真实客户端均未执行，R04-n 尚未完成。恢复后沿用同一契约，
-先实现并登记准确候选，复核后取得新鲜 Judge PASS 与 Governor 的执行批准，
-才允许一次限定实验。实际暂停与当前进度以 PROJECT_STATE.json 和原生 Goal 为准。
+Cursor 接手后沿用同一 `R04-n/v1`。自有 `flatpak_probe` 只构造固定的
+`build-init` 与 `build --runtime` 命令：Platform 同时作为 SDK 与 runtime
+操作数，显式拒绝已安装 man 页列出的全部 socket 与 device，并拒绝 host/home
+文件系统。探针脚本随模块发布，测试不启动 Flatpak 或 bwrap。没有新鲜 Judge
+PASS 与 Governor `APPROVE_FLATPAK_PROBE` 时，入口拒绝执行。
+
+```sh
+python3 -B -m unittest tests.test_flatpak_probe -v
+```
+
+8 项合成测试已通过。build-init、build、Steam、游戏、账号、Cloud 与主机策略
+均未执行。Platform 25.08 仍不等于上游 Steam manifest 的 26.08。R04-n 尚未
+完成；一次实验仍须先复核精确候选。
