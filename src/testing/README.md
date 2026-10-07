@@ -110,4 +110,33 @@ Xalia 等冻结 Proton 内部辅助程序仍只在本次私有显示内运行，
 
 这证明 Windows D3D12 离屏设备/清屏/复制可用。GPU 窗口呈现、中文字体、
 真实 Steam/游戏/存档/Cloud、加载器/MOD 组合和游戏内控制台仍须各自验收。
+
+## Steam 发布方 Cloud 声明
+
+`cloud_plan` 只读提取指定 `appcache/appinfo.vdf` 中剑星的公开名称、启动声明、
+安装目录名称和 UFS 配置。输入为规范化绝对路径，拒绝链接祖先、特殊文件和
+并发变化；输出限定在本仓库 `.local/r04/cloud-plan/` 的新 JSON 文件。
+
+```sh
+python3 -B -m src.testing.cloud_plan \
+  --cache /path/to/Steam/appcache/appinfo.vdf \
+  --output .local/r04/cloud-plan/publisher.json
+python3 -B -m unittest discover -s tests -p 'test_cloud_plan.py' -v
+```
+
+这是隔离路线的前置调查工具，没有游戏或客户端启动入口。它支持有界 v40/v41
+结构，以无缓冲精确读取跳过所有应用的令牌及头部哈希、全部无关应用内容；
+不会读取、复制或计算整个缓存的哈希。未知格式、敏感字段、重复键、越界、
+危险声明路径和源变化都会拒绝结果。原缓存和 Steam 账号配置不修改。
+账号标识在字符串、键名及支持的整数/浮点表示中都拒绝输出；公开容量和文件
+数量等普通数值仍保留。回归覆盖有界 v40/v41 的精确读取和这些数值表示。
+
+当前缓存声明三条 `*.sav` 规则，涉及 Documents 和 AppData/Local 两个存档根。
+原 22 个哈希前像继续保留，其中包括 AppData/Local 的 6 个存档、2 个 Cloud 元数据
+文件和游戏目录内的 3 个存档备份。此轮另外登记 Documents 的 2 个 Demo 存档哈希，
+保护总数为 24；同目录另一个 Cloud 元数据文件只记录文件元数据，不读取其内容。
+这两个实际存档根共 8 个 `.sav` 文件。发布方声明、实际游戏使用的
+路径和客户端同步行为分开记录：发现 UFS 不证明运行时调用或安全隔离；没有 UFS
+也不能断言游戏不使用 Cloud API。只创建新游戏前缀仍不能隔离现有 Steam 客户端
+的写入与同步。实际游戏、Cloud、账号隔离、加载器和 MOD 兼容保持未验收。
 R04-f 的许可、输入哈希、失败与当前成功事实见 `docs/evidence/R04-f.json`。

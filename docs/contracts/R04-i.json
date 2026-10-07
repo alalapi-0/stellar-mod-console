@@ -1,0 +1,44 @@
+{
+  "contract": "stellar-mod-console/R04-i/v1",
+  "lane": "GOVERNED",
+  "objective": "Self-authored bounded read-only publisher-metadata extractor for Steam app3489700, current appinfo.vdf v41, refining legitimate local/Cloud save-isolation route feasibility; no launch or protected configuration effects.",
+  "outcome": "Ignored private allowlisted metadata projection and sanitized route report: publisher declaration vs inference, supported/unsupported/indeterminate; actual game/Cloud/save isolation/ABI/UI/gameplay/product NOT_RUN.",
+  "protected": [
+    "Steam/game/MOD/packages/saves/cache/Proton/account/session/activation read-only",
+    "Only designated appcache/appinfo.vdf; no account/user/session/credential caches",
+    "Never request token/header-hash byte ranges; seek all non-target payloads",
+    "No whole-cache read/hash/buffer/copy/dump; no third-party code/assets/binaries/saves copied",
+    "Extractor cannot execute subprocess/shell/environment/dynamic code/network or traverse/discover arbitrary paths"
+  ],
+  "acceptance": {
+    "C01": "Fixed app3489700; requiredv41 and boundedv40 synthetic layouts",
+    "C02": "O_NOFOLLOW regular explicitsizebound; pre/postfstat dev/ino/mode/size/mtime_ns/ctime_ns and pathidentity unchanged or refuse",
+    "C03": "Instrumented requestedoffset audit proves token/hashranges and nontargetpayload neverread; structuralrecords/publickeytable/singletargetpayload only",
+    "C04": "RecognizedKVtypes; strictlength/offset/nesting/count/total bounds; refuseunknown/truncated/unresolvedkeys/terminators/duplicateapp/exportpath/sensitive material",
+    "C05": "Onlycommon.name/config.launch/config.installdir/ufs plusminimalpublicfacts emitted; nootherfields/rawbytes/unrelatedtablekeys/localaccountID/token/headerhash/hostsensitivepath",
+    "C06": "Badmagic/version/size/type/missing/duplicate/keys/traversal/links/nonregular/oversize/concurrentreplacement/timestamp-sizechange negatives",
+    "C07": "Actual gated read producesignored privateprojection/sanitizedevidence; failure noacceptedprojection",
+    "C08": "ReconcileR04-c; declaredmetadata not effectiveCloud/account/activation/DRM/ABI/savepaths or safelaunch proof",
+    "C09": "Root reproduces tests,exactcandidate/preimages/protectedmetadata; hash ownsource/tests/derivedevidence only; freshreadonlyJudge thenGovernor closure"
+  },
+  "ownership": {
+    "writer": "Root",
+    "paths": [
+      "src/testing/cloud_plan.py",
+      "tests/test_cloud_plan.py",
+      "src/testing/README.md",
+      "docs/contracts/R04-i.json",
+      "docs/evidence/R04-i.json",
+      "PROJECT_STATE.json",
+      ".local/r04/cloud-plan/"
+    ],
+    "reviewers": "read-only; no descendants"
+  },
+  "authorized_external_effects": [
+    "Read-only public docs/network outsideextractor",
+    "Normal accepted source sync impl/mod-console; exactremoteverify; noforcemainmerge/release/deploy/accountCloudsessionactivation effects"
+  ],
+  "review": "Root registers exact semantic source/contract/tests/evidence/derivedoutput identity and separateStatehash; fresh Judge review; fresh Governor closure before source sync. No runtime launch authority in this contract.",
+  "recovery": "Abort malformed/ambiguous/link/change; discard only ownedderivedoutput; registeredprojectpreimages only after concurrentchecks. Cache/game/saves/Proton/account data neverrecovery targets.",
+  "budget": "No explicit tokenbudget; native cumulative accounting and attempts retained; no reset"
+}

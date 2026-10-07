@@ -15,9 +15,9 @@
   "goal_mode_started": true,
   "implementation_started": true,
   "phase": "P1",
-  "current_round": "R04-h",
-  "round_status": "COMPLETE_CURRENT_INSTALLED_BYTE_PROFILE_MAPPING; FULL_GOAL_PARTIAL",
-  "next_round": "R04-i",
+  "current_round": "R04-i",
+  "round_status": "COMPLETE_R04-i_BOUNDED_PUBLIC_CLOUD_DECLARATIONS_AND_PROTECTION; FULL_GOAL_PARTIAL",
+  "next_round": "R04-j",
   "protected": [
     "Existing game files and saves",
     "Original MOD packages and downloads",
@@ -281,6 +281,26 @@
       "historic_runtime_log_version": "3.0.1 Beta #0 / d3d1004",
       "scope": "Do not conflate distributionlabels/exactbytes/historiclog. ABI/modules/currentgame runtime not accepted.",
       "evidence": "docs/evidence/R04-h.json"
+    },
+    "cloud_save_protection": {
+      "evidence": "docs/evidence/R04-i.json",
+      "private_publisher": ".local/r04/cloud-plan/publisher.json",
+      "publisher_sha256": "9b298dcbfc37fdb03bd6ba17b30b6d62db91a5d5189d5fa3b6f9c5656bdfe996",
+      "declared_save_patterns": 3,
+      "declared_root_categories": [
+        "Documents",
+        "AppData/Local"
+      ],
+      "original_prefix_artifacts": 8,
+      "original_prefix_sav_files": 6,
+      "original_prefix_cloud_metadata_files": 2,
+      "newly_protected_documents_demo_sav_files": 2,
+      "original_hashes_retained": 22,
+      "current_hashes": 24,
+      "private_added_protection": ".local/r04/cloud-plan/save-protection-addition.json",
+      "added_protection_sha256": "01f2068ed9fd264122ac8ae1df9cf9b306cd778bb6178433ccaa047b7a5a9789",
+      "actual_sync": "NOT_RUN",
+      "real_save_isolation": "NOT_ESTABLISHED"
     }
   },
   "milestones": {
@@ -400,7 +420,7 @@
     "visibility": "PUBLIC_VERIFIED",
     "initial_branch": "main",
     "implementation_branch_policy": "Separate implementation branch; push each round; no automatic merge",
-    "sync_status": "VERIFIED organization content3cbdaade7cd6d71c255476ac99fc52b3f89c07ef matched GitHub branch; R04-h also delivered. Closure metadata follows normal push.",
+    "sync_status": "PENDING exact R04-i source push; freshJudge/Governor approved; priororganization/source deliveries retained",
     "head_identity": "Use git HEAD and the remote ref; do not store a self-referential commit hash",
     "branch": "impl/mod-console",
     "verified_content_commits": {
@@ -621,25 +641,60 @@
         "target": "Primarypinnedupstreamsource",
         "failure_class": "WRONG_ORGANIZATION_404",
         "resolution": "Actual UE4SS-REorganization/full d3d10044commit resolved; onlyreadprimarypages, no sourcecopied."
+      },
+      {
+        "round": "R04-i",
+        "target": "Cache path argument",
+        "failure_class": "WRONG_GUESSED_CANONICAL_CACHE_PATH",
+        "method": "Conventional .local/share path guess",
+        "exit": 1,
+        "resolution": "Use registered canonical context path; exact readexit0, no sourcechange"
+      },
+      {
+        "round": "R04-i",
+        "target": "Save-root protection coverage verifier",
+        "failure_class": "PREFIX_COUNT_AND_LEGACY_NAMESPACE_ASSUMPTIONS",
+        "method": "Two failed equality/count assertions",
+        "exits": [
+          1,
+          1
+        ],
+        "resolution": "Inspect actualnamespace:6prefixsav+2Cloudmetadata,3installedbackups,2legacyDemo saves; addtwo legitimate protection hashes, no datachanged"
+      },
+      {
+        "round": "R04-i",
+        "target": "First fresh Judge C04/C05 output invariant",
+        "relevant_version": "e2aa6ba58313f8fddb5ec9ee6ef791df6c45e600cd3cda2851e430b510d5e4ce",
+        "failure_class": "NUMERIC_ACCOUNT_ID_NOT_FILTERED",
+        "method": "String-only sensitive value validation with supported64-bit integers",
+        "resolution": "Root numeric/key guard and v40/v41 uint64/int64/float32 regression;10tests,actualrepairedCLIexit0 unchangedprojection/protectedinputs; fresh review required",
+        "evidence": "docs/evidence/R04-i.json"
+      },
+      {
+        "round": "R04-i",
+        "target": "Closure metadata field lookup",
+        "failure_class": "BLOCKERS_KEY_INSTEAD_OF_EXISTING_BLOCKING_ITEMS",
+        "exit": 1,
+        "resolution": "Firstscript failed before any state write; frozen state hash unchanged. Existing blocking_items field inspected and used; no source/candidate/evidence change."
       }
     ],
     "token_cost_telemetry": {
-      "native_goal_tokens_observed": 3117116,
-      "source": "Native get_goal at organization follow-up closure,updatedAt1791384738",
-      "coverage": "Cumulative tokens/time reported by native Goal; per-role and cost coverage unavailable; no manual token estimate",
-      "native_goal_time_seconds_observed": 16646,
+      "native_goal_tokens_observed": 3965030,
+      "source": "Native get_goal at R04-i closure,updatedAt1791386055",
+      "coverage": "Native cumulative Goal tokens/time; per-role and cost unavailable; no manual estimate",
+      "native_goal_time_seconds_observed": 17964,
       "active_execution_time": "UNAVAILABLE; wall time does not prove active minutes",
       "cost": "UNAVAILABLE",
       "budget": "No explicit token budget; native remainingTokens null"
     },
-    "execution_units_closed": 16,
+    "execution_units_closed": 17,
     "health_checkpoint": {
       "first_250k_rebaseline_completed": true,
       "status": "HEALTHY",
       "baseline_tokens_observed": 289664,
       "checkpoint": "R03-a closure",
-      "reason": "Material installed-byte/profile provenance and4of5already-equivalent-loader finding reduces change surface. Actual CLI/test diagnosis fixed, no unchanged runtime retry or equivalent no-progress loop.",
-      "next_checkpoint": "Prepare a bounded legitimate Steam/game/local-and-Cloud-save isolation candidate, using current byte-identical DLLs rather than reinstalling4equivalent loader cores. Inspect game-specific public Cloud configuration if decision-relevant; require new governed contract before protected session/client effects and exact owner authority for account/Cloud/activation changes. Do not launch real game until protection established; continue exact transformed/source/ABI prerequisite work independently.",
+      "reason": "New3publisherCloudrules and2legacyDemo save preimages reduce unresolved protection surface. Numeric-ID defect repaired with newregression/repairedliveCLI/freshPASS; no unchanged runtime retry or no-progress loop.",
+      "next_checkpoint": "Prepare a concrete legitimate private Steam-client/game/local-and-Cloud-save isolation candidate using3publisher rules/24protected hashes. Establish filesystem/IPC/process/GPU/input, installed-executable restart and client-mediated Cloud write/upload boundaries; require legitimate owner authentication and exact authority for protected session/account/Cloud/activation effects. No real game launch until isolation accepted; continue current ABI/resource work independently and preserve4already-identical loader core pairs.",
       "cooldown_rule": "75,000 additional tokens or 30 directly evidenced active minutes; newly accepted milestone resets no-progress facts"
     }
   },
@@ -661,10 +716,10 @@
     },
     {
       "scope": "Runtime game tests",
-      "reason": "Currentinstalled790filebytebaseline/activation/171containers established;4of5loadercorepairsalreadyidentical. WindowsGPUprerequisiteaccepted. ExactlegitimateSteam/game/local-and-Cloudsave isolation remainsunestablished, actualCloudmechanism/effectiveactivation/ABI unproved; no protected setting/session/activation changes.",
+      "reason": "3cachedpublisherCloud rules and24protected preimages established; safe privateSteam-client/game/local/Cloud/session/activation route unestablished. Currentbyte/activation evidence and WindowsGPU prerequisite accepted; actualABI/MOD/UI notproven.",
       "state": "GAME_NOT_RUN; CURRENT_BYTE_PROFILE_AND_WINDOWS_GPU_ACCEPTED",
-      "evidence": "docs/evidence/R04-h.json",
-      "next": "Prepare a bounded legitimate Steam/game/local-and-Cloud-save isolation candidate, using current byte-identical DLLs rather than reinstalling4equivalent loader cores. Inspect game-specific public Cloud configuration if decision-relevant; require new governed contract before protected session/client effects and exact owner authority for account/Cloud/activation changes. Do not launch real game until protection established; continue exact transformed/source/ABI prerequisite work independently."
+      "evidence": "docs/evidence/R04-i.json",
+      "next": "Prepare a concrete legitimate private Steam-client/game/local-and-Cloud-save isolation candidate using3publisher rules/24protected hashes. Establish filesystem/IPC/process/GPU/input, installed-executable restart and client-mediated Cloud write/upload boundaries; require legitimate owner authentication and exact authority for protected session/account/Cloud/activation effects. No real game launch until isolation accepted; continue current ABI/resource work independently and preserve4already-identical loader core pairs."
     },
     {
       "scope": "Original CNS configuration and declared assets",
@@ -673,45 +728,27 @@
       "evidence": "docs/evidence/R03-inc1.json"
     }
   ],
-  "next_action": "Prepare a bounded legitimate Steam/game/local-and-Cloud-save isolation candidate, using current byte-identical DLLs rather than reinstalling4equivalent loader cores. Inspect game-specific public Cloud configuration if decision-relevant; require new governed contract before protected session/client effects and exact owner authority for account/Cloud/activation changes. Do not launch real game until protection established; continue exact transformed/source/ABI prerequisite work independently.",
-  "updated_on": "2026-10-07",
+  "next_action": "Prepare a concrete legitimate private Steam-client/game/local-and-Cloud-save isolation candidate using3publisher rules/24protected hashes. Establish filesystem/IPC/process/GPU/input, installed-executable restart and client-mediated Cloud write/upload boundaries; require legitimate owner authentication and exact authority for protected session/account/Cloud/activation effects. No real game launch until isolation accepted; continue current ABI/resource work independently and preserve4already-identical loader core pairs.",
+  "updated_on": "2026-10-08",
   "execution": {
     "owner_thread": "01a115db-7ff8-70c1-8122-cdc330aaf5c5",
-    "lane": "DIRECT",
-    "lane_reason": "Read-only exact installed files, activation markers and source/resource metadata; self-authored mapper and private reports only. No runtime/settings/deployment effects; old governed launch gates untouched.",
+    "lane": "GOVERNED",
+    "lane_reason": "Read-only publisher-cache extraction with precise skipping of mixed header access-token bytes; protected session/Cloud/save boundaries require an independently set contract. No runtime/configuration action admitted.",
     "owned_paths": [
-      "src/policy/installed.py",
-      "tests/test_installed.py",
-      "src/policy/README.md",
-      "docs/evidence/R04-h.json",
+      "src/testing/cloud_plan.py",
+      "tests/test_cloud_plan.py",
+      "src/testing/README.md",
+      "docs/contracts/R04-i.json",
+      "docs/evidence/R04-i.json",
       "PROJECT_STATE.json",
-      ".local/r04/installed-profile/"
+      ".local/r04/cloud-plan/"
     ],
-    "entry_preimage": "c72bca60e4d9256d4d1eb6d225508d41c12d15d1; clean same root task; state sha256 e4014b5226d3869f8f0e119138ad04c2c79e4c66b04430bd067ac6e858547b3d",
-    "acceptance": "Exact current owned/read-only mod/loader namespace snapshot, activation directives and marker evidence, package-entry hash/converted-container provenance, protection boundaries and source-vs-installed impacts. Missing/changed/ambiguous information stays blocked; no static-to-runtime compatibility claim.",
-    "external_scope": "Original game/MOD/Downloads/Steam/prefix/saves and old evidence read-only. Necessary game MOD activation/root declarations read. No Steamaccount/Cloud/session/credential config values read/change, no copies of third-party assets/source/binaries, no game/client/process launch or stop. Normal source sync authorized.",
-    "execution_source": "Native Goal continuation after R04-g exact remote c72bca6 closure",
-    "next_evidence": "Prepare a bounded legitimate Steam/game/local-and-Cloud-save isolation candidate, using current byte-identical DLLs rather than reinstalling4equivalent loader cores. Inspect game-specific public Cloud configuration if decision-relevant; require new governed contract before protected session/client effects and exact owner authority for account/Cloud/activation changes. Do not launch real game until protection established; continue exact transformed/source/ABI prerequisite work independently.",
-    "result": "Accepted currentbyteprofile:790files/25,197,560,482B rehashed;780source rows/171container groups/108exactraw signatures;16directives7enabled4markers.4of5loadercorepairs identical,9sameDLLs/1different.10tests/Root15checks,22hashes/1330metadata/fullgameset preserved; no compatibility/deployment/runtime acceptance.",
-    "organization_followup": {
-      "lane": "DIRECT",
-      "owner_thread": "01a115db-7ff8-70c1-8122-cdc330aaf5c5",
-      "owned_paths": [
-        "docs/REUSE.md",
-        "docs/UI_SPEC.md",
-        "docs/evidence/R01-inc1.json",
-        "PROJECT_STATE.json",
-        ".local/r02/inc1/organization-refresh.json"
-      ],
-      "entry_preimage": "f2452b0a66e79e5ac8bae4d4aec0548f95062a5d",
-      "execution_source": "Current user: organize newly downloaded MODs and management references; small game-internal application with isolated incompatible configurations, categories and original-MOD traceability.",
-      "acceptance": "Every existing25increment archive represented once in a readable category/purpose/source table; management reference roles distinct; actual591download set and594source stamps checked; existing requirements/profile semantics preserved. No new assets/deployment/runtime claim.",
-      "exclusions": "Downloads/game/Steam/MOD packages/read-only; no external tools/game launch, no account/settings changes; original14acceptance and counts unchanged.",
-      "next_evidence": "Exact25row coverage,23newcanonical+2aliases,source hashes/stamps,current directoryset,primary manager author descriptions and exact documentation diff.",
-      "result": "All25increment archive rows/20appearance4physics1gameplay,23newcanonical2aliases,5managementreferences; current591file set/594source stamps unchanged; requirements only, runtime/UI NOT_RUN.",
-      "evidence": "docs/evidence/R01-inc1.json:organization_followup",
-      "source_delivery": "VERIFIED exact3cbdaade7cd6d71c255476ac99fc52b3f89c07ef via GitHub branch API"
-    }
+    "entry_preimage": "aabcfd9567de630b7b48cd977c1d57d3148ab159; state SHA256 069168f41d6e3de93e0b2c124dfaaf24f2a9fc9be9b11db24b53b49d0d971704",
+    "execution_source": "Native Goal continuation after delivered R04-h and organization follow-up",
+    "acceptance": "Governor-defined bounded public game Cloud/launch declaration extraction, skipped token bytes, protected originals unchanged, exact route feasibility conclusion; no game/client/account/Cloud effect.",
+    "external_scope": "Source sync authorized on impl/mod-console; public docs/network read. Original Steam/game/cache/config/MOD/saves read-only. No credentials/header-token reads/copies, no game/client launch/stop, no settings/network change, no login/activation/DRM/API substitution.",
+    "next_evidence": "Prepare a concrete legitimate private Steam-client/game/local-and-Cloud-save isolation candidate using3publisher rules/24protected hashes. Establish filesystem/IPC/process/GPU/input, installed-executable restart and client-mediated Cloud write/upload boundaries; require legitimate owner authentication and exact authority for protected session/account/Cloud/activation effects. No real game launch until isolation accepted; continue current ABI/resource work independently and preserve4already-identical loader core pairs.",
+    "result": "R04-i accepted for source:17Rootchecks/10tests,repairedliveCLI same3publisherCloudrules,239header/238otherpayload skips;original22+2Demo=24protectedhashes,1330gamemetadata unchanged. FreshJudgePASS/GovernorAPPROVE; originalnumericguardfailure retained. Runtime and final acceptance unchanged."
   },
   "rounds": {
     "R01": {
@@ -762,14 +799,14 @@
       "increment_evidence": "docs/evidence/R03-inc1.json"
     },
     "R04": {
-      "status": "PARTIAL_CURRENT_BYTE_PROFILE_AND_WINDOWS_GPU_ACCEPTED; GAME_AND_MOD_COMBINATIONS_NOT_RUN",
-      "preparation": "R04-b private prefix/fixed CLI accepted; R04-c3PE images/79static dependencies; R04-d real NVIDIA offscreen Vulkan clear/transfer/exact4096-byte readback passed,23namespace+12Rootchecks,all protected inputs unchanged; R04-e own Windows diagnostic executes,2headless graphics failures retained,27boundary/11Rootchecks each,5tests pass; D3D12 not accepted; R04-f acceptedWindowsD3D12_12_0/NVIDIA32x32clear/copy/exact4096readback,privateX5/5,3x29boundary,Root22/22,7tests; R04-g rawwhole-vs-component/configurationpreview473sources/5loadercandidates,18exclusions/18replacements,10+2tests/Root9checks; R04-h current790filebyteprofile/780sourcebindings/171installedcontainers108exactrawmatches,16declared7enabled4markers,4of5loadercorepairsidentical,10tests/Root15checks",
-      "remaining": "Legitimate isolatedSteam/game/local/Cloud route; current/new ABI/scripts/settings/resource/body and63transformed-or-nonidenticalcontainers/196unresolvedfiles. Actualcoldstart/rollback/gameplay/UI/fonts/input/window/performance remainNOT_RUN",
+      "status": "PARTIAL_CURRENT_BYTE_PROFILE_WINDOWS_GPU_AND_CACHED_CLOUD_FACTS_ACCEPTED; GAME_AND_MOD_COMBINATIONS_NOT_RUN",
+      "preparation": "R04-b private prefix/fixed CLI accepted; R04-c3PE images/79static dependencies; R04-d real NVIDIA offscreen Vulkan clear/transfer/exact4096-byte readback passed,23namespace+12Rootchecks,all protected inputs unchanged; R04-e own Windows diagnostic executes,2headless graphics failures retained,27boundary/11Rootchecks each,5tests pass; D3D12 not accepted; R04-f acceptedWindowsD3D12_12_0/NVIDIA32x32clear/copy/exact4096readback,privateX5/5,3x29boundary,Root22/22,7tests; R04-g rawwhole-vs-component/configurationpreview473sources/5loadercandidates,18exclusions/18replacements,10+2tests/Root9checks; R04-h current790filebyteprofile/780sourcebindings/171installedcontainers108exactrawmatches,16declared7enabled4markers,4of5loadercorepairsidentical,10tests/Root15checks; R04-i boundedpubliccache3Cloudrules/239headersskipped/24protectedhashes,10tests/Root17checks,freshJudge/Governor accepted; firstnumericoutputguardFAIL repaired",
+      "remaining": "Legitimate isolatedSteam-client/game/local/Cloud route; currentABI/scripts/settings/resource/body and transformed/nonidentical/unresolvedfiles. Actualcoldstart/rollback/gameplay/UI/fonts/input/window/performance NOT_RUN",
       "lane": "PER_UNIT",
       "contract": "docs/contracts/R04-b.json",
-      "evidence": "docs/evidence/R04-h.json",
-      "private_evidence": ".local/r04/installed-profile/verification.json",
-      "closed_unit": "R04-h",
+      "evidence": "docs/evidence/R04-i.json",
+      "private_evidence": ".local/r04/cloud-plan/verification.json",
+      "closed_unit": "R04-i",
       "closed_units": [
         "R04-a",
         "R04-b",
@@ -778,9 +815,10 @@
         "R04-e",
         "R04-f",
         "R04-g",
-        "R04-h"
+        "R04-h",
+        "R04-i"
       ],
-      "sync": "VERIFIED R04-h content612646ebc14dcd6206d31471c32e18716008e3e1 matched GitHub branch"
+      "sync": "PENDING approved R04-i source push and exact remote verification"
     },
     "R01-inc1": {
       "status": "COMPLETE_STATIC_ORGANIZATION_AND_REQUIREMENTS",
@@ -799,29 +837,32 @@
     "completion_percent": null,
     "reason": "A01-A14 heterogeneous end-to-end results; no final result accepted yet",
     "planning_rounds": 1,
-    "execution_rounds_closed": 16,
-    "last_closed": "R04-h",
+    "execution_rounds_closed": 17,
+    "last_closed": "R04-i",
     "remaining_round_estimate": null,
     "forecast_confidence": "unknown; no final end-to-end acceptance throughput; incomplete prerequisites and heterogeneous remaining work",
-    "previous_goal_turn": "PROGRESS: R04-h delivered; current25increment archive/user-flow organization clarified and source3cbdaad verified remotely; Skin Suit Shields corrected from author page. Same17closed units, originalA01-A14final0/14, no duplicate increment. NextR04-i save-protection candidate.",
-    "total_closed_units_including_planning": 17,
+    "previous_goal_turn": "PROGRESS: R04-i boundedpublisher extraction and24save/input protection accepted after numericguardrepair. Organization follow-up already delivered, not counted again; fullA01-A14final0/14.",
+    "total_closed_units_including_planning": 18,
     "changes": {
-      "execution": "Currentinstalled snapshot/source candidates/container namespace/activation and5loaderimpact plans implemented and actuallyverified. Final14end-to-endacceptance unchanged.",
-      "evidence": "4of5candidate loadercorepairs already match currentbytes, so upgrade need cannot be inferred from archive/versionlabels.196source-unresolvedfiles/66historical-onlybindings remainvisible; originalraw rules not promoted to installed compatibility.",
-      "scope": "No fullobjective or original14denominator change; completion/remaining percentages and forecast unknown"
+      "execution": "Bounded publisher extractor/route evidence accepted with17Rootchecks/10tests/newfreshJudgePASS/Governor approval; no actual game/MOD/UI result.",
+      "evidence": "3declaredCloud patterns,6originalsav+2metadata distinguished from2legacyDemo savs now protected;24hashes/1330gamemetadata unchanged. Numeric-ID guard failure repaired and retained.",
+      "scope": "Original fullobjective/A01-A14 denominator unchanged; final0/14,completion/remaining percentages and forecast unknown."
     },
     "remaining_percentage": null
   },
   "governance": {
-    "contract": "docs/contracts/R04-b.json",
-    "governor": "r04_governor",
-    "registration": ".local/r04/bootstrap-post-registration.json",
-    "judge": "r04_b_postlaunch_judge PASS E01-E13",
-    "decision": "r04_governor APPROVE_SOURCE_DELIVERY",
-    "identity_rule": "Semantic candidate hashes public source/contract/evidence, excluding review metadata and state. State has separate exact hash at review. Acceptance/decision/sync metadata does not change candidate semantics.",
-    "evidence": "docs/evidence/R04-b.json",
-    "approval_scope": "Private prefix/fixed CLI accepted; sanitized source sync approved; no remaining runtime launch approval",
-    "semantic_candidate_sha256": "c8a7ebb755b7a74efe7fd5c51b7a8353211c5f67dec7a872f8d51406cea03990",
-    "state_sha256_at_review": "ef729864408aa7b469acd73d346928a51e6e041129fecd2cc6468e29278c2c61"
+    "contract": "docs/contracts/R04-i.json",
+    "governor": "r04_i_governor",
+    "registration": ".local/r04/cloud-plan/registration.json",
+    "judge": "r04_i_repaired_judge PASS C01-C09;8authorizedpure-memorytests; exact18files/state verified",
+    "decision": "r04_i_governor APPROVE_SOURCE_DELIVERY",
+    "evidence": "docs/evidence/R04-i.json",
+    "approval_scope": "Bounded publicpublisher metadata extractor/protection correction and sanitized source sync only; no runtime/session/account/Cloud/activation effect",
+    "previous_bootstrap_evidence": "docs/evidence/R04-b.json",
+    "identity_rule": "Exact file map hashed without state; separateStatehash; review/syncmetadata outside semantic identity",
+    "failed_candidate": "e2aa6ba58313f8fddb5ec9ee6ef791df6c45e600cd3cda2851e430b510d5e4ce",
+    "semantic_candidate_sha256": "f5dc6769e03240e297e23d53f05f860be0c179243ca8eeec81c17276c87e192b",
+    "state_sha256_at_review": "18df8ddfeb3b0154684a7585dcadbd19200d5598f5d0715ed9e096fe2ca15d06",
+    "first_judge": "r04_i_judge FAIL C04/C05 numeric-account ID filter gap; repaired and retained"
   }
 }

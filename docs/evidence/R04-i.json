@@ -1,0 +1,214 @@
+{
+  "unit": "R04-i",
+  "lane": "GOVERNED",
+  "contract": "docs/contracts/R04-i.json",
+  "baseline_commit": "aabcfd9567de630b7b48cd977c1d57d3148ab159",
+  "scope": "Self-authored guarded public publisher-cache projection, save-root protection correction and legitimate route feasibility; no runtime/settings/deployment",
+  "candidate": {
+    "source_sha256": {
+      "src/testing/cloud_plan.py": "b3ddd3f995340af0912b07841b046eae09c76c7504452b6d9cb2f81428428afe",
+      "tests/test_cloud_plan.py": "6aed59d76d6fcb41c1f08fb4d8cf68e30d6e6dc5132280a47d953da196e80cf4",
+      "src/testing/README.md": "a3d8a248607c6cf5943f72ac3a6fe87bbde238abd2e70cdab6d84a8c59a3de4f"
+    },
+    "cache_format": 41,
+    "appid": 3489700,
+    "publisher_output_fields": [
+      "common.name",
+      "config.installdir",
+      "config.launch",
+      "ufs"
+    ],
+    "input_identity": "Exact pre/postfd/path dev/inode/mode/size/mtime_ns/ctime_ns recorded privately; cache bytes/token/headerhash never copied/wholehashed",
+    "stringtable": "Public key names read; unrelated names never emitted",
+    "token_and_nontarget_boundary": "Unbuffered requested-range reads; structural entry records then seek past entire60B reserved header and nontarget payload. Synthetic v40/v41 forbiddeninterval auditing rejects any request.",
+    "sensitive_output_guard": "String and key identifiers plus all supported numeric representations refused; quotas/maxnumfiles retained. v40/v41 AuditStream uint64/int64/float32/key-string regression."
+  },
+  "publisher_declarations": {
+    "common": {
+      "name": "Stellar Blade™"
+    },
+    "config": {
+      "installdir": "StellarBlade",
+      "launch": {
+        "0": {
+          "arguments": "-DistributionPlatform=Steam",
+          "description": "Shipping Build",
+          "description_loc": {
+            "english": "Shipping Build"
+          },
+          "executable": "SB.exe"
+        }
+      }
+    },
+    "ufs": {
+      "maxnumfiles": 20,
+      "quota": 600000000,
+      "savefiles": {
+        "0": {
+          "path": "Documents/StellarBlade/{64BitSteamID}",
+          "pattern": "*.sav",
+          "root": "WindowsHome"
+        },
+        "1": {
+          "path": "SB/Saved/SaveGames/{64BitSteamID}",
+          "pattern": "*.sav",
+          "root": "WinAppDataLocal"
+        },
+        "2": {
+          "path": "SB/Saved/SaveGames",
+          "pattern": "*.sav",
+          "root": "WinAppDataLocal"
+        }
+      }
+    }
+  },
+  "root_validation": {
+    "checks": {
+      "actual_cli_exit0": true,
+      "live_fixed_app3489700": true,
+      "live_format41": true,
+      "publisher_name_Stellar_Blade": true,
+      "launch_SBexe_and_Steam_distribution_declared": true,
+      "only_allowed_projection_fields": true,
+      "239_reserved_headers_skipped": true,
+      "238_other_payloads_skipped": true,
+      "no_reserved_header_read_request": true,
+      "no_other_payload_read_request": true,
+      "cache_same_exact_prepost_identity": true,
+      "3_declared_save_patterns": true,
+      "2_known_roots_8savs_all_now_protected": true,
+      "22hashes_1330metadata_unchanged": true,
+      "2added_legacy_demo_hashes_3metadata_unchanged": true,
+      "no_launch_application_or_save_isolation_claim": true,
+      "source_matches_registered_live_candidate": true
+    },
+    "passed": 17,
+    "required": 17,
+    "tests": {
+      "cloud_plan": 10,
+      "exit": 0
+    },
+    "root_cli_exit": 0,
+    "cache_hash": "NOT_COMPUTED; wholecache notread/copied",
+    "current_save_roots": {
+      "documents_sav": 2,
+      "local_sav": 6
+    },
+    "protection": {
+      "original_hashes": 22,
+      "original_game_metadata": 1330,
+      "added_legacy_demo_hashes": 2,
+      "added_legacy_metadata": 3,
+      "current_hashes_total": 24,
+      "installed_backups_preserved": 3
+    },
+    "scope": "Publicpublisher cache and exact known save-root metadata only; no Cloud/account/session configuration read or change; no game/client/Proton launch/stop",
+    "failures_retained": [
+      "first-failure.json: wrong conventional cache path, no cache read; canonical context path fixed",
+      "verification-first-failure.json:2namespace/legacy assumptions exposed2Demo savs missing from earlierprotect baseline; unchanged6prefix savs+2metadata and3installedbackups preserved",
+      "review-failure.json: first fresh Judge FAIL numeric-account identifier emission; repaired numeric/key checks and v40/v41 regression,10tests; no actual live leak or protected mutation"
+    ],
+    "runtime_and_full_acceptance": "NOT_RUN; A01-A14final0/14",
+    "live_source_sha256": {
+      "src/testing/cloud_plan.py": "b3ddd3f995340af0912b07841b046eae09c76c7504452b6d9cb2f81428428afe",
+      "tests/test_cloud_plan.py": "6aed59d76d6fcb41c1f08fb4d8cf68e30d6e6dc5132280a47d953da196e80cf4",
+      "src/testing/README.md": "a3d8a248607c6cf5943f72ac3a6fe87bbde238abd2e70cdab6d84a8c59a3de4f"
+    },
+    "repaired_cli": "cli-result.json; publisher-repaired.json equals original publisher.json exactly; protected pre/post hashes and metadata rechecked"
+  },
+  "corrections": {
+    "old_prefix_artifact_count": 8,
+    "old_prefix_sav_count": 6,
+    "old_prefix_cloud_metadata_count": 2,
+    "installed_save_backups": 3,
+    "documents_demo_savs_previously_not_in22hashbaseline": 2,
+    "original_baseline_hashes_retained": 22,
+    "added_save_hashes": 2,
+    "current_hashes": 24,
+    "new_cloud_metadata_content_read": false,
+    "old_claim_correction": "Earlier8prefix entries were not8sav files; twoDocumentsDemo saves require additional protection; cache declarations do not prove sync/runtime use."
+  },
+  "route_results": {
+    "privateprefix_with_existing_client": "INDETERMINATE feasibility; UNSUPPORTED as isolation guarantee",
+    "private_authenticated_client": "INDETERMINATE; legitimate owner authentication, Cloud/local/activation/session boundaries require concrete latercandidate and authority",
+    "read_only_ABI_resource_work": "SUPPORTED bounded independent work",
+    "can_launch_game": false,
+    "can_apply": false
+  },
+  "failures_retained": [
+    {
+      "class": "WRONG_GUESSED_CANONICAL_CACHE_PATH",
+      "actual_exit": 1,
+      "diagnosis": "Wrong conventional host path despite recorded canonical context; no cache bytes read. Corrected actualargument to registered context; exit0, source unchanged."
+    },
+    {
+      "class": "PREFIX_COUNT_AND_LEGACY_ROOT_NAMESPACE_ASSUMPTIONS",
+      "verifier_exits": [
+        1,
+        1
+      ],
+      "diagnosis": "Compared8actualroot savs againstall baselineprotected saves, then assumed8originalprefix entries allsav. Actualinspection proved original6sav+2Cloudmetadata,3installedbackups and2additionalDemo savs. Validator separated namespaces;2newsave preimages added; no source repair/writes."
+    },
+    {
+      "class": "FRESH_JUDGE_NUMERIC_ACCOUNT_ID_FILTER_GAP",
+      "candidate": "e2aa6ba58313f8fddb5ec9ee6ef791df6c45e600cd3cda2851e430b510d5e4ce",
+      "outcome": "FAIL",
+      "criteria": [
+        "C04",
+        "C05"
+      ],
+      "diagnosis": "Supported uint64/int64 emitted synthetic account identifiers because validation only examined strings; first7memory tests passed but missed this representation. Actual private live projection did not leak.",
+      "repair": "Numeric-range and public-key guard; uint64/int64/float32/key cases across v40/v41,ordinary quotas retained; actual repaired CLI exit0,same projection,protected24hashes/1330metadata unchanged."
+    }
+  ],
+  "protection": {
+    "original22hashes_1330gamemetadata_unchanged": true,
+    "added2Demo_hashes_3rootmetadata_unchanged": true,
+    "all8current_root_savs_hashprotected": true,
+    "source_game_save_account_setting_writes": 0,
+    "Steam_game_Proton_launches_or_stops": 0,
+    "credentials_header_tokens_reads_or_copies": 0,
+    "third_party_code_or_assets_copied": 0,
+    "cache_whole_read_hash_or_dump": false
+  },
+  "private_evidence": {
+    ".local/r04/cloud-plan/cli-result.json": "b3367c017531758ff7563a611752669a7510a562354dc133d8c1e869325e2418",
+    ".local/r04/cloud-plan/context.json": "779ba202dc8a206045bf2b8a6d7894315c20723e7f3b766ee32ccdf4c9eddb82",
+    ".local/r04/cloud-plan/first-failure.json": "7a359f77468b41368a8720dab6e1e62e2f852d2920a43172dd3209e12408bf5e",
+    ".local/r04/cloud-plan/protected-after.json": "686d8cab6a9f422f7fa3ec970f2ed8fb91a36f103c7bc84d1ce259c040ec01ec",
+    ".local/r04/cloud-plan/protected-before.json": "686d8cab6a9f422f7fa3ec970f2ed8fb91a36f103c7bc84d1ce259c040ec01ec",
+    ".local/r04/cloud-plan/publisher-repaired.json": "9b298dcbfc37fdb03bd6ba17b30b6d62db91a5d5189d5fa3b6f9c5656bdfe996",
+    ".local/r04/cloud-plan/publisher.json": "9b298dcbfc37fdb03bd6ba17b30b6d62db91a5d5189d5fa3b6f9c5656bdfe996",
+    ".local/r04/cloud-plan/review-failure.json": "4148aef2e0c4f2a09ec5705e8e7fad99b4a15330e962bb31b68e473d70019b5e",
+    ".local/r04/cloud-plan/route-candidate.json": "f4883993f86330fd018a21f8be2ba2ec13b3181763ad355619d13fcbe93e96cd",
+    ".local/r04/cloud-plan/save-protection-addition.json": "01f2068ed9fd264122ac8ae1df9cf9b306cd778bb6178433ccaa047b7a5a9789",
+    ".local/r04/cloud-plan/save-root-observation.json": "f4fc7fd379324886c0c96a0b49445784aa402056fc6852bcd9d29780f7576e95",
+    ".local/r04/cloud-plan/verification-first-failure.json": "447bda16519cf5e9fb3908f9d7e73d133ade939f82debcfac6c64ed0b4e69ef1",
+    ".local/r04/cloud-plan/verification.json": "2263fe7183f98a350a8dc4a67a2b9c1464b080434df53d0dfb180cc1a4fe3d16"
+  },
+  "sources": [
+    {
+      "title": "Steam Cloud mechanisms and client synchronization",
+      "url": "https://partner.steamgames.com/doc/features/cloud"
+    },
+    {
+      "title": "Steam API initialization/restart",
+      "url": "https://partner.steamgames.com/doc/api/steam_api"
+    },
+    {
+      "title": "AppInfo format implemented/documented upstream",
+      "url": "https://github.com/ValveResourceFormat/SteamAppInfo/blob/master/README.md"
+    },
+    {
+      "title": "KeyValues binary type definitions",
+      "url": "https://github.com/ValveResourceFormat/ValveKeyValue/blob/master/ValveKeyValue/ValveKeyValue/KeyValues1/KV1BinaryNodeType.cs"
+    }
+  ],
+  "limits": [
+    "Cachedpublishermetadata not server-current or runtime Cloud proof",
+    "Current6savplus2newDemo and3installedbackups are protected; no save isolation established",
+    "Steamaccount/session/authentication/activation/Cloud changes not authorized here; no DRM/API substitution",
+    "ABI/loader/MOD/UI/gameplay/window/input/performance/install/rollback remainNOT_RUN; originalA01-A14 final0/14"
+  ],
+  "result": "ROOT_VERIFIED_17CHECKS_10TESTS; first fresh Judge numeric guard FAIL repaired; new fresh Judge/Governor pending; fullGoal partial"
+}
