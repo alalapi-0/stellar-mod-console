@@ -66,9 +66,8 @@ FORBIDDEN_ENV = ('HOME', 'FLATPAK_USER_DIR', 'XDG_DATA_HOME', 'XDG_CONFIG_HOME',
 BASE_CHECKS = ('app_readonly', 'var_readonly', 'usr_readonly', 'etc_readonly', 'home_readonly',
                'ephemeral_only', 'sentinel_absent', 'host_home_absent', 'protected_routes_absent',
                'dbus_absent', 'display_absent', 'audio_absent', 'input_absent', 'gpu_device_absent',
-               'network_unshared', 'ipc_unshared', 'network_namespace_separate',
-               'ipc_namespace_separate', 'pid_namespace_separate', 'capabilities_dropped',
-               'process_separated', 'runtime_context_exact', 'unregistered_writes_denied')
+               'network_unshared', 'ipc_unshared',                'network_namespace_separate', 'ipc_namespace_separate', 'pid_namespace_separate',
+               'posix_ipc_absent', 'capabilities_dropped', 'process_separated', 'runtime_context_exact', 'unregistered_writes_denied')
 PAYLOAD_KEYS = BASE_CHECKS + ('nvidia_marker_present', 'nvidia_marker_ambiguous')
 PROBE_SCRIPT = r"""#!/bin/sh
 # R04N_SELF_AUTHORED_PROBE
@@ -148,6 +147,13 @@ if [ -d /dev/mqueue ]; then
   done
   if [ "$mq" != 0 ]; then ipc=no; fi
 fi
+posix_ipc=yes
+if [ -d /dev/shm ]; then
+  for entry in /dev/shm/* /dev/shm/.[!.]* /dev/shm/..?*; do
+    if [ -e "$entry" ] || [ -L "$entry" ]; then posix_ipc=no; fi
+  done
+fi
+if [ "$posix_ipc" != yes ]; then ipc=no; fi
 preimage=${R04N_NS_PREIMAGE:-/app/ns.preimage}
 nsdir=${R04N_NS_DIR:-/proc/self/ns}
 net_ns=no
@@ -230,7 +236,7 @@ for base in /usr/lib/x86_64-linux-gnu/GL /usr/lib/GL; do
     fi
   fi
 done
-printf '%s\n' "{\"app_readonly\":$(yes $(denied /app)),\"var_readonly\":$(yes $(denied /var)),\"usr_readonly\":$(yes $(denied /usr)),\"etc_readonly\":$(yes $(denied /etc)),\"home_readonly\":$(yes $(denied /home)),\"ephemeral_only\":$(yes $tmp_ok),\"sentinel_absent\":$(yes $sentinel),\"host_home_absent\":$(yes $host_home),\"protected_routes_absent\":$(yes $routes),\"dbus_absent\":$(yes $dbus),\"display_absent\":$(yes $display),\"audio_absent\":$(yes $audio),\"input_absent\":$(yes $input),\"gpu_device_absent\":$(yes $gpu),\"network_unshared\":$(yes $network),\"ipc_unshared\":$(yes $ipc),\"network_namespace_separate\":$(yes $net_ns),\"ipc_namespace_separate\":$(yes $ipc_ns),\"pid_namespace_separate\":$(yes $pid_ns),\"capabilities_dropped\":$(yes $caps),\"process_separated\":$(yes $process_separated),\"runtime_context_exact\":$(yes $runtime_exact),\"unregistered_writes_denied\":$(yes $writes),\"nvidia_marker_present\":$(yes $nvidia),\"nvidia_marker_ambiguous\":$(yes $ambiguous)}"
+printf '%s\n' "{\"app_readonly\":$(yes $(denied /app)),\"var_readonly\":$(yes $(denied /var)),\"usr_readonly\":$(yes $(denied /usr)),\"etc_readonly\":$(yes $(denied /etc)),\"home_readonly\":$(yes $(denied /home)),\"ephemeral_only\":$(yes $tmp_ok),\"sentinel_absent\":$(yes $sentinel),\"host_home_absent\":$(yes $host_home),\"protected_routes_absent\":$(yes $routes),\"dbus_absent\":$(yes $dbus),\"display_absent\":$(yes $display),\"audio_absent\":$(yes $audio),\"input_absent\":$(yes $input),\"gpu_device_absent\":$(yes $gpu),\"network_unshared\":$(yes $network),\"ipc_unshared\":$(yes $ipc),\"network_namespace_separate\":$(yes $net_ns),\"ipc_namespace_separate\":$(yes $ipc_ns),\"pid_namespace_separate\":$(yes $pid_ns),\"posix_ipc_absent\":$(yes $posix_ipc),\"capabilities_dropped\":$(yes $caps),\"process_separated\":$(yes $process_separated),\"runtime_context_exact\":$(yes $runtime_exact),\"unregistered_writes_denied\":$(yes $writes),\"nvidia_marker_present\":$(yes $nvidia),\"nvidia_marker_ambiguous\":$(yes $ambiguous)}"
 """
 
 
@@ -369,15 +375,32 @@ def namespace_preimage_bytes():
     return ('\n'.join(lines) + '\n').encode()
 
 
+def namespace_preimage_map():
+    found = {}
+    for line in namespace_preimage_bytes().decode().splitlines():
+        kind, value = line.split(' ', 1)
+        found[kind] = value
+    return found
+
+
 def tree_pin(paths):
     rows = []
     for path in paths:
         path = Path(path)
         st = path.lstat()
-        if stat.S_ISLNK(st.st_mode):
-            raise Refused('PROFILE_LINK_OR_OWNER')
+        if stat.S_ISLNK(st.st_mode) or not (stat.S_ISDIR(st.st_mode) or stat.S_ISREG(st.st_mode)):
+            raise Refused('PROFILE_SPECIAL')
+        if stat.S_ISREG(st.st_mode) and st.st_nlink != 1:
+            raise Refused('PROFILE_SPECIAL')
         rows.append((str(path), st.st_dev, st.st_ino, st.st_mode, st.st_size, st.st_mtime_ns))
     return tuple(rows)
+
+
+def pin_tree(root):
+    root = Path(root)
+    paths = [root]
+    paths.extend(sorted(root.rglob('*'), key=lambda item: item.as_posix()))
+    return tree_pin(paths)
 
 
 def assert_tree_pin(pin):
@@ -477,10 +500,25 @@ def collect_process(proc, timeout, limit):
     return outcome
 
 
+APP_PATH_SUFFIXES = (
+    '.local/share/flatpak/app/' + APP_ID,
+    '.local/share/flatpak/overrides/' + APP_ID,
+    '.var/app/' + APP_ID,
+    '.cache/flatpak/' + APP_ID,
+    '/var/lib/flatpak/app/' + APP_ID,
+    '/var/lib/flatpak/overrides/' + APP_ID,
+)
+
+
 def app_paths(home):
     home = Path(home)
-    return (home / '.local/share/flatpak/app' / APP_ID, Path('/var/lib/flatpak/app') / APP_ID,
-            home / '.var/app' / APP_ID)
+    paths = []
+    for suffix in APP_PATH_SUFFIXES:
+        paths.append(Path(suffix) if suffix.startswith('/') else home / suffix)
+    runtime = Path(f'/run/user/{os.getuid()}')
+    for name in ('app', '.flatpak', 'flatpak'):
+        paths.append(runtime / name / APP_ID)
+    return tuple(paths)
 
 
 def assert_app_paths_absent(home):
@@ -731,7 +769,9 @@ def registration_document():
                                   RUNTIME_NAME, BRANCH],
             'build_vector': build_command_unchecked(BUILD_DIR_TOKEN),
             'environment_allowlist': list(ENV_ALLOWLIST + ENV_OPTIONAL),
-            'namespace_preimage_keys': ['net', 'ipc', 'pid'],
+            'namespace_preimage': namespace_preimage_map(),
+            'probe_app_paths': [str(path) for path in app_paths(os.environ['HOME'])],
+            'tmpdir': str(BASE / 'probe-tmp'),
             'expected_payload_keys': list(PAYLOAD_KEYS),
             'postflight_keys': ['deployments_unchanged', 'app_paths_absent', 'flatpak_config_unchanged',
                                 'outside_output_absent', 'owned_process_absent', 'instance_residue_absent',
@@ -794,6 +834,10 @@ def claim_attempt(root):
         raise Refused('ATTEMPT_REUSED') from error
     with os.fdopen(fd, 'wb') as stream:
         stream.write(body)
+    temporary = BASE / 'probe-tmp'
+    if temporary.exists() or temporary.is_symlink():
+        raise Refused('ATTEMPT_REUSED')
+    temporary.mkdir(mode=0o700)
 
 
 def node_stamp(path):
@@ -805,11 +849,113 @@ def node_stamp(path):
     return ('present', st.st_dev, st.st_ino, st.st_mode, st.st_size, st.st_mtime_ns)
 
 
+def content_digest(path):
+    try:
+        fd = os.open(path, os.O_RDONLY | os.O_NOFOLLOW)
+    except OSError:
+        return 'unreadable'
+    with os.fdopen(fd, 'rb') as stream:
+        st = os.fstat(fd)
+        if not stat.S_ISREG(st.st_mode):
+            return 'not-regular'
+        if st.st_size > OUTPUT_LIMIT:
+            return 'large'
+        return hashlib.file_digest(stream, 'sha256').hexdigest()
+
+
+def entry_stamp(root, path):
+    rel = '.' if path == root else path.relative_to(root).as_posix()
+    try:
+        st = path.lstat()
+    except OSError:
+        return (rel, 'absent')
+    if stat.S_ISLNK(st.st_mode):
+        return (rel, 'symlink')
+    if stat.S_ISDIR(st.st_mode):
+        return (rel, 'dir')
+    if stat.S_ISREG(st.st_mode):
+        return (rel, 'file', content_digest(path))
+    return (rel, 'special')
+
+
+def full_scan(root, depth=6, limit=128):
+    root = Path(root)
+    if not root.exists() and not root.is_symlink():
+        return ('absent',)
+    paths = [root]
+    if root.is_dir() and not root.is_symlink():
+        for child in root.rglob('*'):
+            if len(child.relative_to(root).parts) <= depth:
+                paths.append(child)
+    if len(paths) > limit:
+        return ('unbounded',)
+    return tuple(entry_stamp(root, path) for path in paths)
+
+
+def marker_scan(root):
+    root = Path(root)
+    if not root.is_dir() or root.is_symlink():
+        return ('absent',)
+    rows = []
+    try:
+        children = list(root.rglob('*'))
+    except OSError:
+        return ('unbounded',)
+    for child in children:
+        rel = child.relative_to(root).as_posix()
+        if len(Path(rel).parts) > 6:
+            continue
+        if APP_ID in rel or 'flatpak' in rel or 'r04n' in rel:
+            rows.append(entry_stamp(root, child))
+            if len(rows) > 128:
+                return ('unbounded',)
+    return tuple(rows)
+
+
+def watch_spec(home):
+    home = Path(home)
+    runtime = Path(f'/run/user/{os.getuid()}')
+    return (
+        (Path('/tmp'), 'marker'),
+        (runtime / '.flatpak', 'all'),
+        (runtime / 'flatpak', 'all'),
+        (runtime / 'app', 'marker'),
+        (home / '.var/app', 'all'),
+        (home / '.cache/flatpak', 'all'),
+        (home / '.local/share/flatpak/app', 'all'),
+        (BASE / 'probe-tmp', 'all'),
+    )
+
+
+def scan_root(root, mode):
+    if mode == 'marker':
+        return marker_scan(root)
+    return full_scan(root)
+
+
+def residue_inventory(home):
+    return tuple((str(root), scan_root(root, mode)) for root, mode in watch_spec(home))
+
+
+def contains_unbounded(value):
+    if value == ('unbounded',):
+        return True
+    if isinstance(value, tuple):
+        return any(contains_unbounded(item) for item in value)
+    return False
+
+
+def inventories_unchanged(current, previous):
+    if contains_unbounded(current) or contains_unbounded(previous):
+        return False
+    return current == previous
+
+
 def flatpak_state(home):
     home = Path(home)
     relative = ('.local/share/flatpak/overrides', '.local/share/flatpak/repo/config',
-                '.config/flatpak', '.local/share/flatpak/db', '.cache/flatpak')
-    return tuple(node_stamp(home / name) for name in relative)
+                '.config/flatpak', '.local/share/flatpak/db')
+    return tuple(full_scan(home / name) for name in relative)
 
 
 def protected_state(home):
@@ -818,20 +964,10 @@ def protected_state(home):
     return tuple(node_stamp(home / name) for name in relative)
 
 
-def names_contain_app(root):
-    root = Path(root)
-    if not root.is_dir():
-        return False
-    try:
-        children = list(root.iterdir())
-    except OSError:
-        return True
-    return any(APP_ID in child.name for child in children)
-
-
 def capture_preflight(home):
     return {'app_paths_absent': not any(path.exists() or path.is_symlink() for path in app_paths(home)),
-            'flatpak_state': flatpak_state(home), 'protected': protected_state(home)}
+            'flatpak_state': flatpak_state(home), 'protected': protected_state(home),
+            'residue': residue_inventory(home)}
 
 
 def postflight(home, preflight, proc=None):
@@ -847,10 +983,10 @@ def postflight(home, preflight, proc=None):
         owned_absent = proc.poll() is not None and (proc.pid <= 0 or not Path(f'/proc/{proc.pid}').exists())
     return {'deployments_unchanged': deployments_unchanged,
             'app_paths_absent': not any(path.exists() or path.is_symlink() for path in app_paths(home)),
-            'flatpak_config_unchanged': flatpak_state(home) == preflight['flatpak_state'],
-            'outside_output_absent': not names_contain_app('/tmp'),
+            'flatpak_config_unchanged': inventories_unchanged(flatpak_state(home), preflight['flatpak_state']),
+            'outside_output_absent': inventories_unchanged(residue_inventory(home), preflight['residue']),
             'owned_process_absent': owned_absent,
-            'instance_residue_absent': not names_contain_app(f'/run/user/{os.getuid()}'),
+            'instance_residue_absent': inventories_unchanged(residue_inventory(home), preflight['residue']),
             'protected_stamps_unchanged': protected_state(home) == preflight['protected']}
 
 
@@ -870,13 +1006,18 @@ def record(home, preflight, stage, fine, build_started, proc=None, distinction=N
     report = postflight(home, preflight, proc)
     outcome, mapped = published(fine)
     distinction = distinction or mapped
-    if not report_clean(report) and outcome in SUCCESS_RESULTS:
+    if not report_clean(report):
+        prior = distinction or outcome
         outcome = 'PROBE_FAILED_UNCLASSIFIED'
-        distinction = distinction or 'POSTFLIGHT'
+        distinction = 'POSTFLIGHT'
+    else:
+        prior = None
     body = {'outcome': outcome, 'stage': stage, 'build_started': build_started, 'postflight': report,
             'platform_25_08_is_not_steam_26_08': True}
     if distinction:
         body['distinction'] = distinction
+    if prior:
+        body['prior_classification'] = prior
     write_result(BASE, body)
     return outcome
 
@@ -912,12 +1053,15 @@ def execute(root, home, popen=subprocess.Popen, init_timeout=60, build_timeout=3
             raise Refused('COMMAND_SHAPE')
         if manifest['payload_sha256'] != payload_digest():
             raise Refused('PAYLOAD_IDENTITY')
-        preflight = capture_preflight(home)
-        if not preflight['app_paths_absent']:
+        if any(path.exists() or path.is_symlink() for path in app_paths(home)):
             raise Refused('APP_PATH_RESIDUE')
         env = launch_environment(None)
         assert_ready(root, snapshot, digest)
         claim_attempt(root)
+        env['TMPDIR'] = registration_document()['tmpdir']
+        preflight = capture_preflight(home)
+        if not preflight['app_paths_absent']:
+            raise Refused('APP_PATH_RESIDUE')
         assert_ready(root, snapshot, digest)
         proc = popen(init_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, env=env,
                      start_new_session=True, close_fds=True)
@@ -936,8 +1080,13 @@ def execute(root, home, popen=subprocess.Popen, init_timeout=60, build_timeout=3
         if not files.is_dir() or files.is_symlink():
             return record(home, preflight, 'build-init', 'FLATPAK_SUPPORTED_PREREQUISITE_MISSING', False, held,
                           'FILES_DIRECTORY_ABSENT')
-        payload_pin = install_payload(files, root)
-        assert_ready(root, snapshot, digest, (payload_pin,))
+        try:
+            pin_tree(build_dir)
+            install_payload(files, root)
+            build_pin = pin_tree(build_dir)
+            assert_ready(root, snapshot, digest, (build_pin,))
+        except Refused as error:
+            return record(home, preflight, 'build-init', 'PROBE_FAILED_UNCLASSIFIED', True, held, str(error))
         proc = popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, env=env,
                      start_new_session=True, close_fds=True)
         build = collect_process(proc, build_timeout, OUTPUT_LIMIT)

@@ -2,6 +2,7 @@ import io
 import json
 import os
 from pathlib import Path
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -377,6 +378,10 @@ class FlatpakProbeTests(unittest.TestCase):
         self.assertIn('/proc/sysvipc/shm', text)
         self.assertIn('/proc/sysvipc/msg', text)
         self.assertIn('/dev/mqueue', text)
+        self.assertIn('/dev/shm', text)
+        self.assertEqual(set(document['namespace_preimage']), {'net', 'ipc', 'pid'})
+        self.assertTrue(all(value.isdigit() for value in document['namespace_preimage'].values()))
+        self.assertIn(probe.APP_ID, document['probe_app_paths'][0])
         self.assertEqual(probe.pinned_identity()['platform_commit'], probe.PINNED_PLATFORM_COMMIT)
 
     def test_namespace_preimage_must_differ(self):
@@ -414,6 +419,7 @@ class FlatpakProbeTests(unittest.TestCase):
         self.assertEqual(str(reused.exception), 'ATTEMPT_REUSED')
         self.assertEqual(calls, ['build-init'])
         (self.scope / 'attempt.json').unlink()
+        shutil.rmtree(self.scope / 'probe-tmp')
         seen = {'n': 0}
 
         def drift(*args):
@@ -442,3 +448,94 @@ class FlatpakProbeTests(unittest.TestCase):
         self.assertEqual(str(collision.exception), 'RESULT_PUBLICATION_COLLISION')
         self.assertEqual(calls, ['build-init'])
         self.assertTrue((self.scope / 'attempt.json').is_file())
+
+    def test_build_tree_special_and_later_failure_still_record_postflight(self):
+        self.arm()
+        calls = []
+
+        def popen(args, **kwargs):
+            calls.append(args[1])
+            files = self.root / 'build' / 'files'
+            files.mkdir()
+            os.mkfifo(files / 'bad')
+            return Done(0)
+
+        self.assertEqual(self.launch(popen), 'PROBE_FAILED_UNCLASSIFIED')
+        result = json.loads((self.scope / 'result.json').read_text())
+        self.assertEqual(result['distinction'], 'PROFILE_SPECIAL')
+        self.assertIn('app_paths_absent', result['postflight'])
+        self.assertEqual(calls, ['build-init'])
+        (self.scope / 'result.json').unlink()
+        (self.scope / 'attempt.json').unlink()
+        shutil.rmtree(self.scope / 'probe-tmp')
+        shutil.rmtree(self.root / 'build')
+        (self.root / 'build').mkdir(mode=0o700)
+
+        def init_only(args, **kwargs):
+            calls.append(args[1])
+            (self.root / 'build' / 'files').mkdir()
+            return Done(0)
+
+        calls.clear()
+        with patch.object(probe, 'install_payload', side_effect=probe.Refused('PAYLOAD_IDENTITY')):
+            self.assertEqual(self.launch(init_only), 'PROBE_FAILED_UNCLASSIFIED')
+        result = json.loads((self.scope / 'result.json').read_text())
+        self.assertEqual(result['distinction'], 'PAYLOAD_IDENTITY')
+        self.assertEqual(calls, ['build-init'])
+
+    def test_second_launch_drift_nested_residue_and_config_bytes(self):
+        self.arm()
+        calls = []
+        seen = {'n': 0}
+
+        def popen(args, **kwargs):
+            calls.append(args[1])
+            (self.root / 'build' / 'files').mkdir()
+            return Done(0, payload(), b'')
+
+        def drift(*args):
+            seen['n'] += 1
+            if seen['n'] >= 3:
+                raise probe.Refused('PLATFORM_IDENTITY')
+            return probe.pinned_identity()
+
+        with patch.object(probe, 'read_deployments', side_effect=drift):
+            outcome = probe.execute(self.root, self.home, popen=popen)
+        self.assertEqual(outcome, 'PROBE_FAILED_UNCLASSIFIED')
+        self.assertEqual(calls, ['build-init'])
+        result = json.loads((self.scope / 'result.json').read_text())
+        self.assertEqual(result['prior_classification'], 'PLATFORM_IDENTITY')
+        (self.scope / 'result.json').unlink()
+        (self.scope / 'attempt.json').unlink()
+        shutil.rmtree(self.scope / 'probe-tmp')
+        shutil.rmtree(self.root / 'build')
+        (self.root / 'build').mkdir(mode=0o700)
+
+        watch = self.base / 'watch'
+        watch.mkdir()
+        config = self.home / '.config' / 'flatpak'
+        config.mkdir(parents=True)
+        (config / 'settings').write_text('before')
+
+        def spec(home):
+            return ((watch, 'all'), (probe.BASE / 'probe-tmp', 'all'))
+
+        def mutate(args, **kwargs):
+            calls.append(args[1])
+            if args[1] == 'build-init':
+                (self.root / 'build' / 'files').mkdir()
+                return Done(0)
+            (watch / 'nested').mkdir()
+            (watch / 'nested' / 'random-name').write_text('residue')
+            (config / 'settings').write_text('after')
+            return Done(0, payload(), b'')
+
+        calls.clear()
+        with patch.object(probe, 'watch_spec', spec):
+            outcome = self.launch(mutate)
+        self.assertEqual(outcome, 'PROBE_FAILED_UNCLASSIFIED')
+        result = json.loads((self.scope / 'result.json').read_text())
+        self.assertEqual(result['distinction'], 'POSTFLIGHT')
+        self.assertFalse(result['postflight']['flatpak_config_unchanged'])
+        self.assertFalse(result['postflight']['outside_output_absent'])
+        self.assertEqual(calls, ['build-init', 'build'])
