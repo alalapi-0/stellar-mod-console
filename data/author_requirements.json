@@ -1,0 +1,186 @@
+{
+  "schema_version": 1,
+  "purpose": "R02 author discovery references; no enabling decisions, no redistribution grants",
+  "binding": "Mod IDs/versions from filenames are hints. Exact downloaded README evidence is identified separately; page permissions conservatively block copying. All exact-file requirements remain visible unknowns.",
+  "mods": {
+    "1662": {
+      "name": "ATOOL",
+      "page_version": "6.1",
+      "url": "https://www.nexusmods.com/stellarblade/mods/1662",
+      "checked_on": "2026-10-07",
+      "requirements": [
+        {
+          "target": "loader:chrisr0:3.1.0-6",
+          "relation": "required"
+        }
+      ],
+      "page_permissions": {
+        "upload": "forbidden",
+        "modification": "author_permission_required",
+        "source_or_binary_copy": "not_authorized"
+      },
+      "note": "Exact 6.1 archive README also specifies FText constructor signature rename; Better Jiggle patch is conditional, not a Kittens compatibility promise."
+    },
+    "2603": {
+      "name": "RandomSwitchCNSSuit",
+      "page_version": "page 1.4.1; local archive hint 1.7.0",
+      "url": "https://www.nexusmods.com/stellarblade/mods/2603",
+      "checked_on": "2026-10-07",
+      "requirements": [
+        {
+          "target": "mod:1496",
+          "relation": "required"
+        },
+        {
+          "target": "loader:chrisr0:3.1.0-6",
+          "relation": "required"
+        }
+      ],
+      "page_permissions": {
+        "upload": "forbidden",
+        "modification": "author_permission_required",
+        "source_or_binary_copy": "not_authorized"
+      },
+      "note": "Downloaded README links exact loader tag. Page version differs from download hint; verify exact file identity before enabling. Randomiser integration is optional and needs a single outfit writer."
+    },
+    "1959": {
+      "name": "SB Control Center",
+      "page_version": "2.2.0",
+      "url": "https://www.nexusmods.com/stellarblade/mods/1959",
+      "checked_on": "2026-10-07",
+      "requirements": [
+        {
+          "target": "runtime:7zip:windows",
+          "relation": "required"
+        }
+      ],
+      "page_permissions": {
+        "upload": "forbidden",
+        "modification": "author_permission_required",
+        "source_or_binary_copy": "not_authorized"
+      },
+      "note": "Desktop manager; no in-game embedding proof. Exact bundled/runtime presence and write behavior NOT_RUN."
+    },
+    "199": {
+      "name": "Simple UE MOD Manager",
+      "page_version": "1.6.4",
+      "url": "https://www.nexusmods.com/stellarblade/mods/199",
+      "checked_on": "2026-10-07",
+      "requirements": [],
+      "page_permissions": {
+        "upload": "forbidden",
+        "modification": "author_permission_required",
+        "source_or_binary_copy": "not_authorized"
+      },
+      "note": "Nexus page has no requirements section. Linked upstream now names UE-Game-ModManager; current upstream requirements cannot prove old single-EXE ABI or license."
+    },
+    "1627": {
+      "name": "JiggleGUI",
+      "page_version": "1.0",
+      "url": "https://www.nexusmods.com/stellarblade/mods/1627",
+      "checked_on": "2026-10-07",
+      "requirements": [
+        {
+          "target": "mod:1397",
+          "relation": "required"
+        }
+      ],
+      "page_permissions": {
+        "upload": "forbidden",
+        "modification": "author_permission_required",
+        "source_or_binary_copy": "not_authorized"
+      },
+      "note": "Edits Eve Jiggle Updater Lua settings and auto-saves; F1 applies in game. Do not target active Kittens scripts."
+    },
+    "1496": {
+      "name": "CNS",
+      "page_version": "2.2",
+      "url": "https://www.nexusmods.com/stellarblade/mods/1496",
+      "checked_on": "2026-10-07",
+      "requirements": [
+        {
+          "target": "loader:chrisr0:3.1.0-6",
+          "relation": "author tested build 6; runtime verification required"
+        }
+      ],
+      "page_permissions": {
+        "upload": "forbidden",
+        "modification": "author_permission_required",
+        "source_or_binary_copy": "not_authorized"
+      },
+      "note": "Author documents live UI, custom config format and DLC restrictions. Current installed loader differs; source presence is not compatibility."
+    },
+    "2205": {
+      "name": "SpeedMasterEve",
+      "page_version": "1.0.9",
+      "url": "https://www.nexusmods.com/stellarblade/mods/2205",
+      "checked_on": "2026-10-07",
+      "requirements": [
+        {
+          "target": "loader:chrisr0:3.1.0-6",
+          "relation": "author tested build 6; runtime verification required"
+        }
+      ],
+      "page_permissions": {
+        "upload": "forbidden",
+        "modification": "author_permission_required",
+        "source_or_binary_copy": "not_authorized"
+      },
+      "note": "Movement/time dilation; config overwrite during author installation. Current core must preserve custom settings and arbitrate movement writes."
+    },
+    "2269": {
+      "name": "FlyingEve",
+      "page_version": "1.1.4",
+      "url": "https://www.nexusmods.com/stellarblade/mods/2269",
+      "checked_on": "2026-10-07",
+      "requirements": [
+        {
+          "target": "loader:chrisr0:3.1.0-6",
+          "relation": "author loader link; exact ABI unverified"
+        }
+      ],
+      "page_permissions": {
+        "upload": "forbidden",
+        "modification": "author_permission_required",
+        "source_or_binary_copy": "not_authorized"
+      },
+      "note": "Boosted jump and safe landing change difficulty. Author suggests chunk23 variant for some compatibility failures, not simultaneous variants."
+    },
+    "3782": {
+      "name": "ESAP",
+      "page_version": "UNVERIFIED",
+      "url": "https://www.nexusmods.com/stellarblade/mods/3782",
+      "checked_on": "2026-10-07",
+      "requirements": [],
+      "page_permissions": {
+        "status": "PERMISSION_UNKNOWN"
+      },
+      "note": "Public page returns adult-content-disabled gate. Local archive contains ESAP_P triplet with no README; relationship to SEAP unknown. Do not alter account preferences or infer dependencies."
+    }
+  },
+  "dependency_nodes": [
+    {
+      "id": "loader:chrisr0:3.1.0-6",
+      "status": "CANDIDATE_PRESENT_NOT_RUNTIME_VERIFIED",
+      "sha256": "7c221c66f84ace0cfbb83130197572c455066a513fe315f3797b1da7f965931c",
+      "source": "https://github.com/Chrisr0/RE-UE4SS/releases/tag/3.1.0-6",
+      "active": "Existing 3.0.1 Beta #0 hash baseline preserved; no upgrade performed"
+    },
+    {
+      "id": "mod:1496",
+      "status": "CURRENT_DEKCNS_ACTIVE_STATIC; candidate runtime combination NOT_RUN",
+      "version": "2.2 author page; installed config/loader preimages recorded"
+    },
+    {
+      "id": "mod:1397",
+      "status": "JIGGLEUPDATE_INSTALLED_DISABLED",
+      "active": false,
+      "reason": "Current mods.txt disables JiggleUpdate and enables KittensJiggleMod; matching version needs verification"
+    },
+    {
+      "id": "runtime:7zip:windows",
+      "status": "RUNTIME_PRESENCE_UNKNOWN",
+      "reason": "System libarchive used for discovery does not prove Windows desktop tool dependency"
+    }
+  ]
+}

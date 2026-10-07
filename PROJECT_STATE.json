@@ -15,9 +15,9 @@
   "goal_mode_started": true,
   "implementation_started": true,
   "phase": "P1",
-  "current_round": "R01",
-  "round_status": "COMPLETE_STATIC_SNAPSHOT",
-  "next_round": "R02",
+  "current_round": "R02",
+  "round_status": "PARTIAL_DISCOVERY",
+  "next_round": "R03",
   "protected": [
     "Existing game files and saves",
     "Original MOD packages and downloads",
@@ -104,7 +104,41 @@
         "protected_save_backup": 3
       }
     },
-    "save_isolation": "NOT_ESTABLISHED; runtime tests NOT_RUN"
+    "save_isolation": "NOT_ESTABLISHED; runtime tests NOT_RUN",
+    "catalog_summary": {
+      "input_references": 569,
+      "canonical_records": 542,
+      "content_aliases": 27,
+      "relevant_candidate_records": 450,
+      "kinds": {
+        "container_mod": 306,
+        "other_game_historical": 39,
+        "cns_content": 101,
+        "engine_configuration": 2,
+        "loader_bundle": 5,
+        "unrelated_loose_download": 11,
+        "windows_tool_or_runtime": 10,
+        "lua_mod": 10,
+        "asi_loader_or_plugin": 2,
+        "lua_mod_with_content": 5,
+        "movie_replacement": 3,
+        "image_or_splash_asset": 4,
+        "unpacked_unreal_resource": 2,
+        "incomplete_download": 42
+      },
+      "unknown_exact_file_requirements": 450,
+      "permission_unknown": 434,
+      "page_restrictions_recorded": 16,
+      "redistribution_grants": 0,
+      "dependency_nodes": 454,
+      "dangling_references": 0,
+      "archive_container_groups": 729,
+      "incomplete_or_nonstandard_containers": 0,
+      "runtime_compatibility": "NOT_RUN",
+      "cleanup": "NOT_APPLIED; all original paths retained"
+    },
+    "private_catalog": ".local/r02/catalog.json",
+    "catalog_sha256": "f526e185662ef0666905d0a5354d75f3a730cdf4e4a2d9288a96d5e4b3182453"
   },
   "milestones": {
     "M1": {
@@ -195,7 +229,7 @@
     },
     "A12": {
       "status": "PARTIAL",
-      "note": "R00 verified; R01 verified locally, remote synchronization pending; subsequent rounds remain required"
+      "note": "R00 and R01 remote refs verified; future rounds remain required"
     },
     "A13": {
       "status": "NOT_RUN",
@@ -221,7 +255,7 @@
     "visibility": "PUBLIC_VERIFIED",
     "initial_branch": "main",
     "implementation_branch_policy": "Separate implementation branch; push each round; no automatic merge",
-    "sync_status": "R01 candidate verified; commit/push pending remote check",
+    "sync_status": "R01 verified; R02-a candidate locally verified pending commit/push",
     "head_identity": "Use git HEAD and the remote ref; do not store a self-referential commit hash"
   },
   "cumulative": {
@@ -234,7 +268,8 @@
         "resolution": "RESOLVED using repository-local token-free configuration and existing OS keyring; global configuration unchanged"
       }
     ],
-    "token_cost_telemetry": "UNAVAILABLE; no invented budget or usage"
+    "token_cost_telemetry": "UNAVAILABLE; no invented budget or usage",
+    "execution_units_closed": 2
   },
   "blocking_items": [
     {
@@ -246,9 +281,19 @@
       "scope": "Public redistribution",
       "reason": "UE Mod Hub restricted source; Nexus MOD permissions unknown; independent adapters/legal external dependencies only",
       "state": "REUSE_BOUNDARY_IDENTIFIED"
+    },
+    {
+      "scope": "ESAP exact requirements/permissions",
+      "reason": "Public author page returns adult-content-disabled gate; local file has no README; source relation to SEAP unknown",
+      "state": "AUTHOR_EVIDENCE_UNAVAILABLE; no account settings changed"
+    },
+    {
+      "scope": "Runtime game tests",
+      "reason": "8 prefix saves and 3 in-loader backups are real progress; no isolated test save/config established",
+      "state": "NOT_RUN; do not roll back personal saves"
     }
   ],
-  "next_action": "Verify R01 remote sync, then R02: exact duplicate aliases, author requirements/permissions and explicit unresolved dependency nodes.",
+  "next_action": "Sync and verify R02-a; continue bounded R03-a known variant/file/writer conflicts using frozen hashes while R02 exact-author discovery remains incomplete.",
   "updated_on": "2026-10-07",
   "execution": {
     "owner_thread": "01a115db-7ff8-70c1-8122-cdc330aaf5c5",
@@ -261,12 +306,15 @@
       ".local/",
       "README.md",
       "src/catalog/README.md",
-      "tests/README.md"
+      "tests/README.md",
+      "data/author_requirements.json",
+      "src/catalog/dependencies.py",
+      "tests/test_dependencies.py"
     ],
     "external_scope": "Downloads, game and prior MOD workspace read-only for R01-R03; no save or game launch",
     "entry_preimage": "aafc4b0fcf94bdc73b8e6810971281953f945fe9; clean worktree; GitHub main matched",
-    "acceptance": "R01: exhaustive source ownership + SHA-256, archive results, current activation/build, protected-save boundary; no compatibility claim",
-    "next_evidence": ".local/r01/inventory.json; sanitized docs/evidence/R01.json"
+    "acceptance": "R02: content-identical aliases, dependency nodes with explicit unknown/missing state, source-scoped permission facts; no cleanup or install",
+    "next_evidence": ".local/r02/catalog.json and docs/evidence/R02.json"
   },
   "rounds": {
     "R01": {
@@ -275,7 +323,16 @@
       "evidence": "docs/evidence/R01.json",
       "source_manifest": ".local/r01/inventory.json",
       "acceptance": "Full hashes, applicable decode, each source assigned one visible category; unknown candidates retained",
-      "sync": "Commit/push required; verify exact remote ref after writing this state"
+      "sync": "VERIFIED GitHub impl/mod-console == local ec98f6a34387c96c297f4ac49a2a39a6bcea5f49"
+    },
+    "R02": {
+      "status": "PARTIAL",
+      "lane": "DIRECT",
+      "evidence": "docs/evidence/R02.json",
+      "private_catalog": ".local/r02/catalog.json",
+      "closed_unit": "R02-a",
+      "remaining": "Complete exact-file prerequisites/permissions; no unknown moved out of denominator",
+      "sync": "Pending R02-a commit/push verification"
     }
   },
   "progress": {
@@ -285,10 +342,10 @@
     "completion_percent": null,
     "reason": "A01-A14 heterogeneous end-to-end results; no final result accepted yet",
     "planning_rounds": 1,
-    "execution_rounds_closed": 1,
-    "last_closed": "R01",
+    "execution_rounds_closed": 2,
+    "last_closed": "R02-a",
     "remaining_round_estimate": null,
-    "forecast_confidence": "unknown; no comparable accepted throughput",
+    "forecast_confidence": "unknown; heterogeneous discovery work and no final acceptance throughput",
     "previous_goal_turn": "No durable implementation or live wait evidence in entry state; revalidated and executed R01"
   }
 }

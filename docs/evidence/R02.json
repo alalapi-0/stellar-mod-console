@@ -1,0 +1,133 @@
+{
+  "round": "R02-a",
+  "scope": "Content alias ownership, physical metadata/containers and critical author requirements/permissions; full R02 remains partial",
+  "candidate_sha256": "eb81aafbc8831911383bffe4f510217b24e31b1c40cdd29d16e05b5ecca701e3",
+  "facts_sha256": "6c8ba21498a9cb8fa55cd1e7d563fce6eb893b60e81c6f1b27440cd22ef3a3a2",
+  "private_catalog_sha256": "f526e185662ef0666905d0a5354d75f3a730cdf4e4a2d9288a96d5e4b3182453",
+  "input_inventory_sha256": "852632f279958778ec7766e31b2189ae8ae5e5d98aec8797bab0ebaacdf579a8",
+  "summary": {
+    "input_references": 569,
+    "canonical_records": 542,
+    "content_aliases": 27,
+    "relevant_candidate_records": 450,
+    "kinds": {
+      "container_mod": 306,
+      "other_game_historical": 39,
+      "cns_content": 101,
+      "engine_configuration": 2,
+      "loader_bundle": 5,
+      "unrelated_loose_download": 11,
+      "windows_tool_or_runtime": 10,
+      "lua_mod": 10,
+      "asi_loader_or_plugin": 2,
+      "lua_mod_with_content": 5,
+      "movie_replacement": 3,
+      "image_or_splash_asset": 4,
+      "unpacked_unreal_resource": 2,
+      "incomplete_download": 42
+    },
+    "unknown_exact_file_requirements": 450,
+    "permission_unknown": 434,
+    "page_restrictions_recorded": 16,
+    "redistribution_grants": 0,
+    "dependency_nodes": 454,
+    "dangling_references": 0,
+    "archive_container_groups": 729,
+    "incomplete_or_nonstandard_containers": 0,
+    "runtime_compatibility": "NOT_RUN",
+    "cleanup": "NOT_APPLIED; all original paths retained"
+  },
+  "author_sources": [
+    {
+      "url": "https://www.nexusmods.com/stellarblade/mods/1662",
+      "page_version": "6.1",
+      "checked_on": "2026-10-07",
+      "status": "READ_AUTHOR_PAGE"
+    },
+    {
+      "url": "https://www.nexusmods.com/stellarblade/mods/2603",
+      "page_version": "page 1.4.1; local archive hint 1.7.0",
+      "checked_on": "2026-10-07",
+      "status": "READ_AUTHOR_PAGE"
+    },
+    {
+      "url": "https://www.nexusmods.com/stellarblade/mods/1959",
+      "page_version": "2.2.0",
+      "checked_on": "2026-10-07",
+      "status": "READ_AUTHOR_PAGE"
+    },
+    {
+      "url": "https://www.nexusmods.com/stellarblade/mods/199",
+      "page_version": "1.6.4",
+      "checked_on": "2026-10-07",
+      "status": "READ_AUTHOR_PAGE"
+    },
+    {
+      "url": "https://www.nexusmods.com/stellarblade/mods/1627",
+      "page_version": "1.0",
+      "checked_on": "2026-10-07",
+      "status": "READ_AUTHOR_PAGE"
+    },
+    {
+      "url": "https://www.nexusmods.com/stellarblade/mods/1496",
+      "page_version": "2.2",
+      "checked_on": "2026-10-07",
+      "status": "READ_AUTHOR_PAGE"
+    },
+    {
+      "url": "https://www.nexusmods.com/stellarblade/mods/2205",
+      "page_version": "1.0.9",
+      "checked_on": "2026-10-07",
+      "status": "READ_AUTHOR_PAGE"
+    },
+    {
+      "url": "https://www.nexusmods.com/stellarblade/mods/2269",
+      "page_version": "1.1.4",
+      "checked_on": "2026-10-07",
+      "status": "READ_AUTHOR_PAGE"
+    },
+    {
+      "url": "https://www.nexusmods.com/stellarblade/mods/3782",
+      "page_version": "UNVERIFIED",
+      "checked_on": "2026-10-07",
+      "status": "GATED_PAGE"
+    }
+  ],
+  "exact_archive_readme_evidence": [
+    {
+      "source_sha256": "639f153e9fc7f5f66d1e9553b3b8444a71847202529627bf0906380168364cb9",
+      "readme_sha256": "549e2ef31b97baf57d71551002c6428ee68a02f022421c0cf4e46323dc906e8f",
+      "finding": "Exact downloaded README requires Chrisr0 loader 3.1.0-6; ATOOL also specifies FText signature rename"
+    },
+    {
+      "source_sha256": "02dfc1c46a96924e9986f2177f178efdac7ba73ea13eb79ba368f01a1b785227",
+      "readme_sha256": "0d9322b2664549c2366236edc4277d80f16d039ea44b851eb21cd6f614c09aa9",
+      "finding": "Exact downloaded README requires Chrisr0 loader 3.1.0-6; ATOOL also specifies FText signature rename"
+    }
+  ],
+  "checks": [
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "exit": 0,
+      "tests": 9,
+      "scope": "Inventory and synthetic alias/partial/dangling graph/triplet negative cases"
+    },
+    {
+      "command": "python3 -m src.catalog.dependencies --inventory .local/r01/inventory.json --facts data/author_requirements.json --output .local/r02/catalog.json",
+      "exit": 0,
+      "scope": "All 569 inputs assigned once; version hints separated from evidence; all unresolved prerequisites/permissions visible"
+    },
+    {
+      "check": "Root live source stamps, exhaustive aliases, no permission grants or runtime success, 9 source-page statuses",
+      "exit": 0
+    }
+  ],
+  "remaining": [
+    "450 relevant distinct content candidates still need complete exact-file prerequisite verification; these are not 450 distinct MODs",
+    "434 candidates have unknown permissions; 16 have page restrictions, none granted redistribution",
+    "Body/texture/DLC and actual loader ABI unresolved; source presence does not satisfy runtime dependencies",
+    "ESAP author page gated; source/relationship to SEAP unknown",
+    "No cleanup, runtime, install, GUI or compatibility evidence"
+  ],
+  "closure": "PARTIAL_R02; keep original scope and continue per-source discovery and independent known conflict analysis"
+}
