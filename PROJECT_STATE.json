@@ -65,7 +65,7 @@
         "backend": "No qualified general 20-hour backend registered in this project; verify current backend, prepare bounded reviewed capability if needed, then user-local terminal authentication. Window cannot replace human validation."
       },
       "validation": "PASS: document activation/window/manual-gate/contract/A01-A14/Git checks, JSON parse, required document references and exact diff whitespace checks. All original acceptance/counters and frozen R04-n governance unchanged. No implementation or runtime tests run.",
-      "delivery": "PENDING_HANDOFF_SOURCE_SYNC; normal impl/mod-console commit/push and exact GitHub ref verification only",
+      "delivery": "VERIFIED content commit cd1f89d9a739fd579117c64e7b2c19cb6db3b9e2 equals GitHub impl/mod-console API ref. Final metadata commit identity is checked from Git HEAD and exact remote ref after push, without self-reference.",
       "original_acceptance": "0/14; 22 closed units (21 execution + 1 planning); R04-n unfinished and uncounted"
     }
   },
@@ -511,7 +511,7 @@
     "visibility": "PUBLIC_VERIFIED",
     "initial_branch": "main",
     "implementation_branch_policy": "Separate implementation branch; push each round; no automatic merge",
-    "sync_status": "VERIFIED R04-n preparation 8fe60cd0e0ba50b225b708b3a015acf623137e2a equals GitHub branch API. R04-nunfinished; final pause metadata HEAD identity uses Git and exact remote ref.",
+    "sync_status": "VERIFIED R04-n preparation 8fe60cd0e0ba50b225b708b3a015acf623137e2a and Cursor handoff cd1f89d9a739fd579117c64e7b2c19cb6db3b9e2 equal GitHub branch API at their source deliveries. R04-n remains unfinished and Codex Goal paused; final closure identity uses Git HEAD/exact remote ref.",
     "head_identity": "Use git HEAD and the remote ref; do not store a self-referential commit hash",
     "branch": "impl/mod-console",
     "verified_content_commits": {
