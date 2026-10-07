@@ -1,0 +1,191 @@
+{
+  "schema_version": 1,
+  "task_id": "stellar-mod-console-2026-10-07",
+  "objective": "完整管理用户新旧剑星 MOD，建立安全互斥兼容配置与快捷键游戏内统一控制台，完成个人使用验收并准备可供其他玩家使用的开源发行。",
+  "authority": {
+    "global_policy": "risk-driven engineering policy v9",
+    "global_source": "Resolve the effective user-global AGENTS.md on the execution host",
+    "canonical_state": "PROJECT_STATE.json",
+    "plan": "docs/ROADMAP.md",
+    "owner": "root",
+    "scope": "This Projects repository; external game/mod paths are referenced, not relocated",
+    "r00_lane": "DIRECT"
+  },
+  "mode": "planning_only",
+  "goal_mode_started": false,
+  "implementation_started": false,
+  "phase": "P0",
+  "current_round": "R00",
+  "round_status": "validated_ready_to_sync",
+  "next_round": "R01",
+  "protected": [
+    "Existing game files and saves",
+    "Original MOD packages and downloads",
+    "Steam/account/credential settings",
+    "Other tasks and sibling repositories",
+    "Unlicensed third-party code and assets"
+  ],
+  "authorization": {
+    "r00": [
+      "read-only discovery",
+      "planning documents and non-executable skeleton",
+      "new public GitHub repository initialization and sync"
+    ],
+    "future_implementation": "Requires the subsequent user execution instruction; this planning turn does not run the prompt",
+    "specific_binary_release": "Review the candidate and obtain channel/version authorization at R30"
+  },
+  "inputs": {
+    "snapshot": "R00 read-only discovery; R01 must freeze complete hashes",
+    "current_game_build": "24463856",
+    "installed_loader_log_version": "3.0.1 Beta #0 / d3d1004",
+    "download_files": 566,
+    "complete_archive_or_exe_candidates": 508,
+    "historical_stellar_paths_and_sizes_matching": 336,
+    "other_game_historical_matches": 39,
+    "unmatched_candidates": 133,
+    "incomplete_downloads": 42,
+    "other_files_to_classify": 16,
+    "complete_hashes_verified": "NOT_RUN except one duplicate loader sample",
+    "prior_startup_seconds": 143,
+    "prior_startup_status": "PASS_STARTUP_INITIALIZATION",
+    "new_mod_compatibility": "NOT_RUN",
+    "private_path_config": ".local/paths.json",
+    "historical_evidence": "External workspace references in .local/discovery.json"
+  },
+  "milestones": {
+    "M1": {
+      "status": "NOT_STARTED",
+      "acceptance": [
+        "A01",
+        "A02",
+        "A03",
+        "A04",
+        "A05",
+        "A06",
+        "A07",
+        "A08",
+        "A09",
+        "A10",
+        "A11",
+        "A12",
+        "A14"
+      ]
+    },
+    "M2": {
+      "status": "NOT_STARTED",
+      "acceptance": [
+        "A01",
+        "A02",
+        "A03",
+        "A04",
+        "A05",
+        "A06",
+        "A07",
+        "A08",
+        "A09",
+        "A10",
+        "A11",
+        "A12",
+        "A13",
+        "A14"
+      ],
+      "release_authorization": "PENDING_EXACT_CANDIDATE"
+    }
+  },
+  "acceptance": {
+    "A01": {
+      "status": "NOT_RUN",
+      "note": "No implementation evidence in R00"
+    },
+    "A02": {
+      "status": "NOT_RUN",
+      "note": "No implementation evidence in R00"
+    },
+    "A03": {
+      "status": "NOT_RUN",
+      "note": "No implementation evidence in R00"
+    },
+    "A04": {
+      "status": "NOT_RUN",
+      "note": "No implementation evidence in R00"
+    },
+    "A05": {
+      "status": "NOT_RUN",
+      "note": "No implementation evidence in R00"
+    },
+    "A06": {
+      "status": "NOT_RUN",
+      "note": "No implementation evidence in R00"
+    },
+    "A07": {
+      "status": "NOT_RUN",
+      "note": "No implementation evidence in R00"
+    },
+    "A08": {
+      "status": "NOT_RUN",
+      "note": "No implementation evidence in R00"
+    },
+    "A09": {
+      "status": "NOT_RUN",
+      "note": "No implementation evidence in R00"
+    },
+    "A10": {
+      "status": "NOT_RUN",
+      "note": "No implementation evidence in R00"
+    },
+    "A11": {
+      "status": "NOT_RUN",
+      "note": "No implementation evidence in R00"
+    },
+    "A12": {
+      "status": "NOT_RUN",
+      "note": "R00 bootstrap is a prerequisite; future round synchronization remains required"
+    },
+    "A13": {
+      "status": "NOT_RUN",
+      "note": "No implementation evidence in R00"
+    },
+    "A14": {
+      "status": "NOT_RUN",
+      "note": "No implementation evidence in R00"
+    }
+  },
+  "r00_acceptance": {
+    "location_and_scope": "VERIFIED_PROJECTS",
+    "read_only_discovery": "VERIFIED_WITH_LIMITS",
+    "phases_and_rounds": "VERIFIED_8_PHASES_31_ROUNDS",
+    "execution_prompt": "VERIFIED_WRITTEN_NOT_RUN",
+    "non_executable_skeleton": "VERIFIED_23_PUBLIC_TEXT_FILES",
+    "public_candidate_review": "VERIFIED_ROOT: JSON, local links, R00-R30 coverage, no assets/secrets/private paths; planning-only scope reviewed",
+    "github_sync": "PENDING",
+    "game_mod_mutations": "NONE"
+  },
+  "delivery": {
+    "repository": "https://github.com/alalapi-0/stellar-mod-console",
+    "visibility": "PUBLIC_REQUESTED",
+    "initial_branch": "main",
+    "implementation_branch_policy": "Separate implementation branch; push each round; no automatic merge",
+    "sync_status": "PENDING",
+    "head_identity": "Use git HEAD and the remote ref; do not store a self-referential commit hash"
+  },
+  "cumulative": {
+    "planning_rounds_completed": 0,
+    "implementation_rounds_completed": 0,
+    "attempts": [],
+    "token_cost_telemetry": "UNAVAILABLE; no invented budget or usage"
+  },
+  "blocking_items": [
+    {
+      "scope": "New MOD enablement",
+      "reason": "Loader ABI, same-target variants and unknown APIs must be resolved in R01–R07",
+      "state": "NOT_TESTED"
+    },
+    {
+      "scope": "Public redistribution",
+      "reason": "UE Mod Hub restricted source; Nexus MOD permissions unknown; independent adapters/legal external dependencies only",
+      "state": "REUSE_BOUNDARY_IDENTIFIED"
+    }
+  ],
+  "next_action": "Validate and publish the R00 planning candidate, then stop; only the subsequent execution turn starts R01.",
+  "updated_on": "2026-10-07"
+}

@@ -1,0 +1,10 @@
+{
+  "schema_status": "planned_not_implemented",
+  "paths": {
+    "downloads": "/path/to/Downloads",
+    "game": "/path/to/steamapps/common/StellarBlade",
+    "existing_mod_workspace": "/path/to/game/stellar-blade-mods",
+    "tools": "/path/to/optional-tools"
+  },
+  "note": "Copy to ignored .local/paths.json and set your own paths; no assets are imported into this repository."
+}
