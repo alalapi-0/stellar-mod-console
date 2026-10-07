@@ -15,9 +15,9 @@
   "goal_mode_started": true,
   "implementation_started": true,
   "phase": "P1",
-  "current_round": "R04-b",
-  "round_status": "COMPLETE_BOUNDED_PRIVATE_CLI_UNIT",
-  "next_round": "R04-c",
+  "current_round": "R04-c",
+  "round_status": "COMPLETE_READONLY_RUNTIME_PREREQUISITES",
+  "next_round": "R04-d",
   "protected": [
     "Existing game files and saves",
     "Original MOD packages and downloads",
@@ -339,15 +339,15 @@
       }
     ],
     "token_cost_telemetry": {
-      "native_goal_tokens_observed": 1741808,
-      "source": "native get_goal at R04-b closure checkpoint, updatedAt1791375331",
+      "native_goal_tokens_observed": 1891003,
+      "source": "native get_goal at R04-c closure checkpoint,updatedAt1791376114",
       "coverage": "Cumulative tokens/time reported by native Goal; per-role and cost coverage unavailable; no manual token estimate",
-      "native_goal_time_seconds_observed": 7239,
+      "native_goal_time_seconds_observed": 8022,
       "active_execution_time": "UNAVAILABLE; wall time does not prove active minutes",
       "cost": "UNAVAILABLE",
       "budget": "No explicit token budget; native remainingTokens null"
     },
-    "execution_units_closed": 8,
+    "execution_units_closed": 9,
     "health_checkpoint": {
       "first_250k_rebaseline_completed": true,
       "status": "HEALTHY",
@@ -376,8 +376,10 @@
     },
     {
       "scope": "Runtime game tests",
-      "reason": "8 real-prefix saves and3in-loader backups remain protected. R04-b fresh private prefix/fixed Windows CLI is verified; isolated writable game configuration/save behavior and game/Steam/cloud/display/GPU runtime remain unestablished.",
-      "state": "NOT_RUN; do not roll back personal saves"
+      "reason": "8 real-prefix saves and3in-loader backups remain protected. Private prefix/CLI accepted; Shipping imports Steam restart/init and RemoteStorage016, existing client/Cloud metadata present. Fresh prefix alone cannot prove Cloud/local progress protection or stop Steam relaunch of installed game. No account/Cloud/session/activation changes authorized.",
+      "state": "GAME_NOT_RUN; exact legitimate protected runtime route required",
+      "evidence": "docs/evidence/R04-c.json",
+      "next": "Prepare exact legitimate isolated client/game/display route; owner approval only if protected account/Cloud settings must change"
     },
     {
       "scope": "Original CNS configuration and declared assets",
@@ -385,25 +387,22 @@
       "state": "DISCOVERY_VERIFIED; sources unchanged; runtime and repair not accepted"
     }
   ],
-  "next_action": "Begin R04-c read-only investigation and freeze an isolated actual-game route covering display/GPU/fonts, Steam interfaces, writable game config and save/cloud protection; no game launch before corresponding exact gate.",
+  "next_action": "Execute bounded self-authored native headless Vulkan clear/transfer/readback in a newly admitted private namespace without Steam/game/display/input/network; continue preparing exact legitimate game/save/Cloud route.",
   "updated_on": "2026-10-07",
   "execution": {
     "owner_thread": "01a115db-7ff8-70c1-8122-cdc330aaf5c5",
-    "lane": "GOVERNED",
+    "lane": "DIRECT",
     "owned_paths": [
       "src/testing/",
-      "tests/test_isolation.py",
-      "tests/test_bootstrap.py",
-      "docs/contracts/R04-b.json",
-      "docs/evidence/R04-b.json",
+      "tests/test_runtime_probe.py",
+      "docs/evidence/R04-c.json",
       "PROJECT_STATE.json",
       ".local/r04/"
     ],
-    "external_scope": "Exact private prefix/fixed CLI only after fresh prelaunch Judge and Governor approval; postlaunch review required before source sync. No Steam/game/real prefix/save/client session authority.",
-    "entry_preimage": "fa91293403d1e339d0715dad5e5ee67e983c49a1; clean worktree; sole exact-cwd native task verified",
-    "acceptance": "Fresh private Proton prefix and fixed Windows CLI sentinel proof under continued closed namespace; exact launch candidate must be reviewed before bootstrap; actual game/Steam/cloud/loader acceptance remains NOT_RUN",
-    "next_evidence": "R04-c actual-game isolation prerequisites/route/contract; R04-b launch approvals consumed",
-    "contract": "docs/contracts/R04-b.json"
+    "external_scope": "Read-only game/Steam/runtime/display/GPU discovery and project-local source/evidence only; no game/Steam/proton/display launch, account/config/device mutation or credential values; further runtime effects require risk admission/contract",
+    "entry_preimage": "48327705c1f975386ea3ac55fd65f91c000c9dd3; cleanworktree; exact native owner task confirmed; other tasks outside repo and game maintenance task currently idle",
+    "acceptance": "Concrete game/runtime/Steam/save/cloud prerequisites from current installed files, and next feasible safely owned runtime step; keep original A01-A14 unchanged",
+    "next_evidence": "Self-authored bounded native headless Vulkan clear/transfer/readback; separate admission and namespace, no use of closed R04-b launch approvals"
   },
   "rounds": {
     "R01": {
@@ -452,19 +451,20 @@
       "interface_checks": ".local/r03/interface-checks.json"
     },
     "R04": {
-      "status": "PARTIAL_PRIVATE_BOOTSTRAP_ONLY",
-      "preparation": "R04-b private prefix/fixed CLI passed after one diagnosed delimiter failure;14 tests32pre/31postchecks;2191 nonfollowing entries/no unknown copy;22hashes1330game metadata/fullProton source preserved",
-      "remaining": "Actual isolated game baseline/coldstart, current/new loader/combination tests; Steam/display/GPU/font/save/cloud boundaries need separate exact route evidence",
-      "lane": "GOVERNED",
+      "status": "PARTIAL_RUNTIME_PREREQUISITES_ONLY",
+      "preparation": "Private prefix/CLI accepted in R04-b; R04-c parsed3 installed PE images,57+28 main import descriptors/79names, current Steam/Cloud/display/GPU prerequisites; no game/GPU runtime yet",
+      "remaining": "Native GPU/display and exact legitimate game/Steam launch isolation; actual loader/MOD/coldstart/save/Cloud baseline remains NOT_RUN",
+      "lane": "PER_UNIT",
       "contract": "docs/contracts/R04-b.json",
-      "evidence": "docs/evidence/R04-b.json",
+      "evidence": "docs/evidence/R04-c.json",
       "private_evidence": ".local/r04/bootstrap-post-registration.json",
-      "closed_unit": "R04-b",
+      "closed_unit": "R04-c",
       "closed_units": [
         "R04-a",
-        "R04-b"
+        "R04-b",
+        "R04-c"
       ],
-      "sync": "VERIFIED R04-b GitHub impl/mod-console == local b6f06143be519ccbfe759f611783e0aa21ae03f3"
+      "sync": "PENDING_R04_C_PUSH"
     }
   },
   "progress": {
@@ -474,16 +474,16 @@
     "completion_percent": null,
     "reason": "A01-A14 heterogeneous end-to-end results; no final result accepted yet",
     "planning_rounds": 1,
-    "execution_rounds_closed": 8,
-    "last_closed": "R04-b",
+    "execution_rounds_closed": 9,
+    "last_closed": "R04-c",
     "remaining_round_estimate": null,
     "forecast_confidence": "unknown; no final end-to-end acceptance throughput; incomplete prerequisites and heterogeneous remaining work",
-    "previous_goal_turn": "PROGRESS: R04-b private Proton prefix/fixed Windows CLI accepted after diagnosed delimiter failure;14tests32pre31postchecks,2191entryprovenance/protection verified, GitHubcontent b6f06143be519ccbfe759f611783e0aa21ae03f3 exact. Full A01-A14 unchanged0/14.",
-    "total_closed_units_including_planning": 9,
+    "previous_goal_turn": "PROGRESS: R04-c read-only runtime prerequisite unit closed;3 actual PE images,6 reader checks,79 dependency names, exact Steam/Cloud/relaunch boundary and headless GPU route identified. Full A01-A14 unchanged0/14.",
+    "total_closed_units_including_planning": 10,
     "changes": {
-      "execution": "Fresh private prefix and fixed Windows write/readback/wineserver teardown passed; actual game/Steam/save/cloud/loader/MOD/UI runtime NOT_RUN",
-      "evidence": "63-file fresh postJudge PASS and Governor APPROVE_SOURCE_DELIVERY;1873 sourcebindings/6notices, all protected/runtime preimages unchanged; firstfailed event retained",
-      "scope": "Original A01-A14/450 relevant candidate records unchanged; no final fullGoal outcome accepted"
+      "execution": "Added bounded read-only PE dependency inspection; actual game/Steam/GPU/display execution remains NOT_RUN",
+      "evidence": "Current22 protected hashes,complete1330 game entry set/stamps,5613 Proton regular stamps and1896 links unchanged",
+      "scope": "Original A01-A14 and450 relevant catalog records unchanged"
     },
     "remaining_percentage": null
   },

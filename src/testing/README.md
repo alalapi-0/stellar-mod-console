@@ -34,3 +34,13 @@ python3 -B -m unittest discover -s tests -p 'test_bootstrap.py' -v
 Wine 的 `Z:` 指向隔离命名空间根目录。主机侧清单使用不跟随链接的遍历，
 不能在主机上解析前缀链接。前缀/CLI 证据不表示 Steam、游戏、存档、云同步、
 加载器或任何 MOD 组合已验收。
+
+R04-c 的 `runtime_probe` 只读解析 PE32/PE32+ 普通与延迟导入，不加载任何
+DLL，不启动应用。损坏、未终止、无法映射或读取期间改变的文件会拒绝输出
+依赖结论。导入表和静态文件位置不能证明 DLL 搜索顺序或运行时兼容；
+API-set 名称也不能仅凭缺少同名文件判定缺库。
+
+```sh
+python3 -B -m src.testing.runtime_probe /absolute/referenced/image.exe
+python3 -B -m unittest discover -s tests -p 'test_runtime_probe.py' -v
+```

@@ -1,0 +1,125 @@
+{
+  "unit": "R04-c",
+  "lane": "DIRECT",
+  "baseline_commit": "48327705c1f975386ea3ac55fd65f91c000c9dd3",
+  "scope": "Read-only installed PE dependencies, referenced runtime locations and current host prerequisites; no runtime launch",
+  "game_build": "24463856",
+  "reader": {
+    "images": 3,
+    "normal_descriptors": 57,
+    "delay_descriptors": 28,
+    "unique_dll_names": 79,
+    "image_bits": 64,
+    "concurrent_changes": "REFUSED",
+    "runtime_resolution": "NOT_RUN"
+  },
+  "static_requirements": {
+    "graphics": [
+      "dxgi.dll",
+      "d3d9.dll",
+      "d3d11.dll",
+      "d3d12.dll (delay)"
+    ],
+    "steam_symbols": 14,
+    "steam_restart_imported": true,
+    "steam_remote_storage_interface_versions": [
+      "STEAMREMOTESTORAGE_INTERFACE_VERSION016"
+    ],
+    "denuvo_string_present": true,
+    "eos_delay_symbols": 235,
+    "not_found_by_filename": {
+      "api_set_contracts": 13,
+      "delay_libraries": [
+        "SimulatedRealityCore.dll",
+        "SimulatedRealityDisplays.dll",
+        "SimulatedRealityDirectX.dll",
+        "SimulatedRealityFaceTrackers.dll"
+      ]
+    },
+    "api_set_resolution": "NOT_RUN; absence of a same-named file is not evidence of a missing implementation",
+    "optional_delay_library_invocation": "NOT_RUN; do not declare launch incompatible from names alone"
+  },
+  "host": {
+    "gpu": "NVIDIA GeForce RTX 5070 Ti, 595.91.07, 16303 MiB",
+    "existing_steam_client_sessions": 1,
+    "cloud_metadata_present": true,
+    "display_environment_present": true,
+    "private_display_tools_available": false,
+    "native_vulkan_header_and_gcc_available": true,
+    "mingw_cross_compiler_available": false,
+    "gpu_execution": "NOT_RUN"
+  },
+  "root_validation": {
+    "tests": {
+      "passed": 6,
+      "required": 6,
+      "exit": 0
+    },
+    "images_parsed": {
+      "passed": 3,
+      "required": 3,
+      "exit": 0
+    },
+    "protected_hashes": 22,
+    "complete_game_non_directory_entries": 1330,
+    "proton_regular_metadata_entries": 5613,
+    "proton_link_entries": 1896,
+    "checks": {
+      "hashed_unchanged": true,
+      "game_tree_metadata_unchanged": true,
+      "complete_game_entry_set_unchanged": true,
+      "proton_regular_metadata_unchanged": true,
+      "proton_links_unchanged": true
+    },
+    "credential_values_read": false,
+    "game_steam_proton_display_launched": false
+  },
+  "route_conclusions": {
+    "fresh_prefix_only": "Does not prove Cloud API/account isolation or prevent Steam relaunch of the installed game",
+    "cloud_methods": "Steam Cloud API and Auto-Cloud; actual mechanism/invocation remains unproved",
+    "steam_init": "Existing legitimate client is required by the documented API; no client/session/activation copy or DRM patch is allowed",
+    "next_independent_runtime_step": "Bounded self-authored headless native Vulkan clear/transfer/readback in a separate private namespace, with fixed GPU device exposure and no Steam/game/display/input/network access",
+    "actual_game_launch": "NOT_RUN; exact legitimate client/launch route and local/cloud progress protection remain required"
+  },
+  "sources": [
+    {
+      "title": "PE format",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/debug/pe-format"
+    },
+    {
+      "title": "Windows API sets",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/apiindex/windows-apisets"
+    },
+    {
+      "title": "Steam API initialization/restart",
+      "url": "https://partner.steamgames.com/doc/api/steam_api"
+    },
+    {
+      "title": "Steam Cloud",
+      "url": "https://partner.steamgames.com/doc/features/cloud"
+    }
+  ],
+  "private_evidence": [
+    {
+      "path": ".local/r04/runtime-route/imports.json",
+      "sha256": "9b4fcb92a1dd2a4f073c4870540025db06ee2a0fe5021330a4b578258685d3bb"
+    },
+    {
+      "path": ".local/r04/runtime-route/dependencies.json",
+      "sha256": "346c2948b083f096faf2773a0a5a0a178f9ae7683909ba9855e5f66a672cb513"
+    },
+    {
+      "path": ".local/r04/runtime-route/binary-markers.json",
+      "sha256": "5799eaf2ee6239c6c5e0cfed58d23c5c1d6f5844c27e281a3372ec2ca60fb27e"
+    },
+    {
+      "path": ".local/r04/runtime-route/environment.json",
+      "sha256": "e643be830c4b4ff3b563b6a6feb154633d83551fdf4e248922bc9949907b8cfd"
+    },
+    {
+      "path": ".local/r04/runtime-route/protected-after.json",
+      "sha256": "3a63049f8800b15dc2c1b802c4c1f80c49aced31ccfe0b572f7df241c8789287"
+    }
+  ],
+  "product_acceptance": "A01-A14 unchanged; no final result accepted"
+}
