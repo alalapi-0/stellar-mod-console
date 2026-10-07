@@ -15,6 +15,7 @@ import stat
 import struct
 import subprocess
 import sys
+import time
 import uuid
 
 DEVICES = ('/dev/nvidia0', '/dev/nvidiactl', '/dev/nvidia-uvm')
@@ -30,6 +31,10 @@ ENVIRONMENT = {'PATH': '/usr/bin:/bin', 'HOME': '/home/test', 'LC_ALL': 'C.UTF-8
     'PROTON_DISABLE_NVAPI': '1', 'WINEDEBUG': '-all,+loaddll,+vulkan',
     'WINEDLLOVERRIDES': 'dxgi,d3d12,d3d12core=n',
     'DXVK_LOG_LEVEL': 'info', 'DXVK_LOG_PATH': '/work/logs', 'VKD3D_DEBUG': 'warn'}
+ENVIRONMENT.update(DISPLAY=':99', XAUTHORITY='/control/Xauthority', DXVK_CONFIG_FILE='/control/dxvk.conf')
+DISPLAY_COMMAND = ('/virtual-xserver', ':99', '-screen', '0', '640x480x24',
+                   '-nolisten', 'tcp', '-auth', '/control/Xauthority', '-noreset', '-fp', 'built-ins',
+                   '-extension', 'GLX')
 COMMANDS = (
     ('/usr/bin/python3', '-B', '/proton/proton', 'getcompatpath', '/work'),
     ('/usr/bin/python3', '-B', '/proton/proton', 'runinprefix', 'Z:\\probe.exe'),
@@ -42,6 +47,54 @@ def sha(path):
 
 def save(path, value):
     path.write_text(json.dumps(value, indent=2) + '\n')
+
+
+def create_test_authority(path):
+    """New provider-format test credential; never import or print host credentials."""
+    fields = [b'', b'99', b'MIT-MAGIC-COOKIE-1', os.urandom(16)]
+    record = struct.pack('>H', 65535) + b''.join(struct.pack('>H', len(v)) + v for v in fields)
+    descriptor = os.open(path, os.O_WRONLY | os.O_CREAT | os.O_EXCL | os.O_NOFOLLOW, 0o600)
+    with os.fdopen(descriptor, 'wb') as stream: stream.write(record)
+
+
+def start_private_display(report):
+    log = open('/work/logs/xvfb.log', 'w')
+    child = subprocess.Popen(DISPLAY_COMMAND, stdin=subprocess.DEVNULL, stdout=log, stderr=log,
+        close_fds=True, env=dict(os.environ), start_new_session=True)
+    log.close()
+    report['command'] = DISPLAY_COMMAND; report['namespace_pid'] = child.pid
+    try:
+        deadline = time.monotonic() + 5
+        while time.monotonic() < deadline and child.poll() is None:
+            if Path('/tmp/.X11-unix/X99').exists():
+                ready = subprocess.run(['/usr/bin/xdpyinfo', '-display', ':99'],
+                    capture_output=True, text=True, stdin=subprocess.DEVNULL, timeout=1)
+                if ready.returncode == 0: break
+            time.sleep(0.05)
+        else: raise RuntimeError('Private display did not become ready within5seconds')
+        unauthorized = subprocess.run(['/usr/bin/xdpyinfo', '-display', ':99'],
+            capture_output=True, text=True, stdin=subprocess.DEVNULL, timeout=2,
+            env=dict(os.environ, XAUTHORITY='/tmp/no-authority'))
+        report['checks'] = {'authorized_client_ready': ready.returncode == 0,
+            'fixed_screen': '640x480 pixels' in ready.stdout, 'server_alive': child.poll() is None,
+            'unauthorized_client_denied': unauthorized.returncode != 0,
+            'no_tcp_listener': len(Path('/proc/net/tcp').read_text().splitlines()) == 1 and
+                               len(Path('/proc/net/tcp6').read_text().splitlines()) == 1}
+        if not all(report['checks'].values()): raise RuntimeError('Private display prerequisite failed')
+        return child
+    except Exception:
+        stop_private_display(child, report)
+        raise
+
+
+def stop_private_display(child, report):
+    if child.poll() is None:
+        os.killpg(child.pid, signal.SIGTERM)
+        try: child.wait(timeout=5)
+        except subprocess.TimeoutExpired:
+            os.killpg(child.pid, signal.SIGKILL); child.wait(timeout=5)
+    report['reaped'] = child.poll() is not None
+    report['exit'] = child.returncode
 
 
 def collect_owned_child(child, timeout):
@@ -123,7 +176,7 @@ def build(root):
             'binary_sha256': sha(binary), 'pe': image, 'stub_dll_removed': not dll.exists()}
 
 
-def boundary(expected):
+def boundary(expected, display_running=False):
     from probe import cannot_connect, rejected
     marker = Path('/protected-canary/marker.txt'); before = marker.read_bytes()
     Path('/work/write-canary').write_text('fixed Windows prerequisite\n')
@@ -137,17 +190,20 @@ def boundary(expected):
     namespaces = {k: os.readlink('/proc/self/ns/' + k) for k in expected['namespaces']}
     checks['namespaces_separate'] = all(namespaces[k] != v for k, v in expected['namespaces'].items())
     checks['host_protected_paths_absent'] = all(not Path(p).exists() for p in expected['protected_roots'])
-    checks['game_client_display_input_audio_absent'] = all(not Path(p).exists() for p in
-        ['/game', '/steam', '/compatdata', '/tmp/.X11-unix', '/dev/dri', '/dev/input', '/dev/snd', '/dev/nvidia-modeset'])
+    checks['game_client_host_input_audio_absent'] = all(not Path(p).exists() for p in
+        ['/game', '/steam', '/compatdata', '/run/user', '/dev/dri', '/dev/input', '/dev/snd', '/dev/nvidia-modeset'])
+    sockets = Path('/tmp/.X11-unix')
+    checks['only_expected_private_display'] = (sorted(p.name for p in sockets.iterdir()) if sockets.exists() else []) == (['X99'] if display_running else [])
     checks['fake_client_empty'] = not list(Path('/work/fake-steam').iterdir())
     checks['fixed_gpu_devices_only'] = set(str(p) for p in Path('/dev').glob('nvidia*')) == set(DEVICES)
     checks['device_identities'] = all(stat.S_ISCHR(Path(p).stat().st_mode) and
         [os.major(Path(p).stat().st_rdev), os.minor(Path(p).stat().st_rdev)] == expected['devices'][p] for p in DEVICES)
     mounts = {f[4]: f[5].split(',') for f in (l.split() for l in Path('/proc/self/mountinfo').read_text().splitlines())}
     checks['readonly_sources'] = all('ro' in mounts.get(p, []) for p in
-        ['/usr', '/lib', '/lib64', '/bin', '/sys', '/proton', '/probe.exe', '/d3d12_probe.py', '/probe.py', '/protected-canary'])
+        ['/usr', '/lib', '/lib64', '/bin', '/sys', '/proton', '/probe.exe', '/d3d12_probe.py', '/probe.py', '/protected-canary', '/virtual-xserver', '/control'])
     checks['readonly_nested_sys'] = all('ro' in v for p, v in mounts.items() if p.startswith('/sys/'))
     checks['fixed_masks'] = all('ro' in mounts.get(p, []) and not list(Path(p).iterdir()) for p in MASKS)
+    checks['own_graphics_config_exact'] = Path('/control/dxvk.conf').read_text() == 'dxgi.hideNvidiaGpu = False\n'
     checks['private_lock'] = 'rw' in mounts.get('/proton/dist.lock', [])
     checks['private_shm'] = 'rw' in mounts.get('/dev/shm', [])
     checks['environment_exact'] = dict(os.environ) == dict(ENVIRONMENT, PWD='/work')
@@ -172,9 +228,15 @@ def inner(expected):
     report = {'before': boundary(expected), 'steps': [], 'passed': False}
     if not all(report['before']['checks'].values()):
         print(json.dumps(report)); return 1
+    display = None
     try:
         if list(Path('/work/compatdata').iterdir()) or Path('/work/readback.rgba').exists():
             raise ValueError('No prefix/output reuse')
+        report['display'] = {}
+        display = start_private_display(report['display'])
+        report['display_boundary'] = boundary(expected, display_running=True)
+        if not all(report['display_boundary']['checks'].values()):
+            raise RuntimeError('Boundary changed after private display startup')
         for args, timeout in zip(COMMANDS, [40, 20, 15]):
             env = dict(os.environ)
             if args == COMMANDS[-1]: env['WINEPREFIX'] = '/work/compatdata/pfx'
@@ -186,6 +248,7 @@ def inner(expected):
                 raise RuntimeError('Fixed Windows step timeout; owned namespace teardown required')
             if child.returncode and args != COMMANDS[1]: raise RuntimeError('Fixed prerequisite failed')
         report['windows'] = json.loads(report['steps'][1]['stdout'])
+        stop_private_display(display, report['display']); display = None
         report['remaining_namespace_pids'] = sorted(int(p.name) for p in Path('/proc').iterdir()
             if p.name.isdecimal() and int(p.name) not in [1, os.getpid()])
         report['after'] = boundary(expected)
@@ -194,6 +257,8 @@ def inner(expected):
             not report['remaining_namespace_pids'] and all(report['after']['checks'].values()))
     except Exception as error:
         report['error'] = str(error)
+    finally:
+        if display is not None: stop_private_display(display, report['display'])
     print(json.dumps(report)); return 0 if report['passed'] else 1
 
 
@@ -205,6 +270,12 @@ def main():
     parent = private / 'd3d12'; owned_ancestors(parent)
     context = json.loads((private / 'context.json').read_text())
     preflight = json.loads((private / 'bootstrap-preflight.json').read_text())
+    virtual = json.loads((private / 'graphics/runtime.json').read_text())
+    virtual_binary = Path(virtual['binary']); owned_ancestors(virtual_binary.parent)
+    if (virtual_binary.is_symlink() or not virtual_binary.is_file() or
+            virtual_binary.stat().st_uid != os.getuid() or
+            sha(virtual_binary) != virtual['binary_sha256'] or sha(Path(virtual['notice'])) != virtual['notice_sha256']):
+        raise ValueError('Fixed licensed private display runtime changed')
     runtime = Path(context['readonly_sources']['proton']).resolve(strict=True)
     if str(runtime) != preflight['runtime_root']: raise ValueError('Runtime differs from frozen preflight')
     verify_runtime(preflight)
@@ -219,6 +290,8 @@ def main():
     (root / 'work/proton-dist.lock').write_bytes(b'')
     (root / 'control/passwd').write_text(f'test:x:{os.getuid()}:{os.getgid()}:Private test:/home/test:/bin/sh\n')
     (root / 'control/group').write_text(f'test:x:{os.getgid()}:\n')
+    create_test_authority(root / 'control/Xauthority')
+    (root / 'control/dxvk.conf').write_text('dxgi.hideNvidiaGpu = False\n')
     for name in ['LICENSE', 'LICENSE.OFL', 'PATENTS.AV1']:
         (root / 'work/notices' / name).write_bytes((runtime / name).read_bytes())
     reference = json.loads((private / 'gpu/47d28f1adf0f4483b326a81b63f9a1cf/protected-after.json').read_text())
@@ -245,12 +318,15 @@ def main():
             '--die-with-parent', '--cap-drop', 'ALL', '--clearenv']
         for p in ['/usr', '/lib', '/lib64', '/bin', '/sys', '/etc/ld.so.cache']:
             args += ['--ro-bind', str(Path(p).resolve(strict=True)), p]
-        args += ['--proc','/proc','--dev','/dev','--tmpfs','/tmp','--tmpfs','/run','--dir','/run/test',
+        args += ['--proc','/proc','--dev','/dev','--tmpfs','/tmp','--dir','/tmp/.X11-unix',
+            '--tmpfs','/run','--dir','/run/test',
             '--tmpfs','/dev/shm','--bind',str(root / 'work'),'/work',
             '--bind',str(root / 'work/home'),'/home/test','--ro-bind',str(runtime),'/proton',
             '--bind',str(root / 'work/proton-dist.lock'),'/proton/dist.lock',
             '--ro-bind',str(root / 'control/passwd'),'/etc/passwd',
             '--ro-bind',str(root / 'control/group'),'/etc/group',
+            '--ro-bind',str(root / 'control'),'/control',
+            '--ro-bind',str(virtual_binary),'/virtual-xserver',
             '--ro-bind',str(root / 'protected'),'/protected-canary',
             '--ro-bind',str(root / 'probe.exe'),'/probe.exe',
             '--ro-bind',str(Path(__file__).resolve()),'/d3d12_probe.py',
@@ -261,6 +337,7 @@ def main():
         args += ['--chdir','/work','--remount-ro','/','--','/usr/bin/python3','-B',
                  '/d3d12_probe.py','--inner',json.dumps(expected)]
         registration.update(command=args,devices=devices,driver_icd_sha256=sha(Path(DRIVER)),
+            virtual_display_binary_sha256=virtual['binary_sha256'],virtual_display_notice_sha256=virtual['notice_sha256'],
             runtime_manifest_sha256=sha(private / 'bootstrap-preflight.json'),protected_before_sha256=sha(root / 'protected-before.json'))
         save(root / 'inputs.json',registration)
         if protected_snapshot(before) != before: raise ValueError('Protected inputs changed before launch')

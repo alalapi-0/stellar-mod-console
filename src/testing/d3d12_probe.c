@@ -95,7 +95,10 @@ __attribute__((ms_abi,noreturn)) void entry(void) {
         (device,&readback,0,&buf,0x400,0,&resource_iid,&buffer));
     DescriptorDesc hd={2,1,0,0};
     CHECK(12,CALL(device,14,HR,const DescriptorDesc *,const Guid *,Handle *)(device,&hd,&heap_iid,&heap));
-    CpuHandle cpu=CALL(heap,9,CpuHandle)(heap);
+    /* Windows COM ABI returns this structure through an explicit output pointer. */
+    CpuHandle cpu={0};
+    CALL(heap,9,CpuHandle *,CpuHandle *)(heap,&cpu);
+    if(!cpu.ptr) goto cleanup;
     CALL(device,20,void,Handle,const void *,CpuHandle)(device,texture,0,cpu);
     float color[4]={16.0f/255.0f,32.0f/255.0f,64.0f/255.0f,1.0f};
     CALL(list,48,void,CpuHandle,const float *,U,const void *)(list,cpu,color,0,0);

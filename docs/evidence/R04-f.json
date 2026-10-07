@@ -1,0 +1,450 @@
+{
+  "unit": "R04-f",
+  "lane": "DIRECT",
+  "baseline_commit": "6fd103ddbc411665ef274b26c237ff71e7440c1e",
+  "status": "ACCEPTED_FIXED_PRIVATE_WINDOWS_D3D12_PREREQUISITE; FULL_GOAL_PARTIAL",
+  "scope": "Fixed self-authored PE under frozen read-only Proton and3ordinary GPU devices, new private memory display/auth provider store/prefix/PID/network namespace. No host desktop/input/audio, game/client/account/Cloud/activation/save/global configuration effects.",
+  "source": {
+    "c_sha256": "1f84bb3e2fddec328bdef5a44bf500b679d04abf2035573697cbd5b5214acafb",
+    "launcher_sha256": "a61274dc5c5932e832689c704c10136079cfceed965fcd2b208c037656cebd4d",
+    "tests_sha256": "435cebfec7e19585d3c97c8cccebe651a9dbe73ae89865f1ece917b0d644f817",
+    "pe_sha256": "afc9c53369c032a2186e59a4e08701d945ddf1986a4eeca1d4cc06858762ef91",
+    "pe_bytes": 12172,
+    "own_code": true,
+    "copied_third_party_source_headers_or_assets": 0,
+    "windows_sdk_or_new_system_install": false,
+    "current_source_matches_executed_candidate": true
+  },
+  "private_display_runtime": {
+    "package": "xvfb",
+    "version": "2:21.1.22-1ubuntu1.2",
+    "architecture": "amd64",
+    "url": "https://jp.archive.ubuntu.com/ubuntu/pool/universe/x/xorg-server/xvfb_21.1.22-1ubuntu1.2_amd64.deb",
+    "deb_sha256": "fac5e03c7a40668d475178efb85dc63b4b391b020e0e9f499a729d2b62466fe8",
+    "deb_bytes": 898612,
+    "binary_sha256": "0f3651d7115c354cdef742a1ad609d874e4dbae651bae2976e061aeeaf4042c8",
+    "notice_sha256": "4cc0447a22635c7b2f1a93fec4aa94f1970fadeb72a063de006b51cf4963a06f",
+    "installed": false,
+    "package_scripts_executed": false,
+    "dependency_check": "ldd exit0,no missing shared libraries; existing xserver-common/x11-xkb-utils verified"
+  },
+  "display": {
+    "fixed": "Xvfb :99,640x480x24,noTCP,private authority,GLX absent",
+    "authorized_client_ready": true,
+    "unauthorized_client_denied": true,
+    "private_test_credential": "Generated into binary provider store with mode0600; real credential/session/auth values never read/copied/printed; store not hashed/copied into output evidence",
+    "checks_passed": 5,
+    "checks_required": 5,
+    "host_display_or_auth_imported": false,
+    "display_process_reaped": true
+  },
+  "actual_windows_d3d12": {
+    "passed": true,
+    "stage": 22,
+    "hresult_u32": 0,
+    "last_error": 0,
+    "vendor_id": 4318,
+    "device_id": 11269,
+    "minimum_feature_level": 49152,
+    "row_pitch": 256,
+    "footprint_bytes": 8064,
+    "readback_bytes": 4096,
+    "gpu": "NVIDIA GeForce RTX5070Ti",
+    "driver": "595.91.07",
+    "pci_identity_crosschecked": true,
+    "texture_extent": [
+      32,
+      32
+    ],
+    "format": "DXGI_FORMAT_R8G8B8A8_UNORM",
+    "rgba": [
+      16,
+      32,
+      64,
+      255
+    ],
+    "exact_host_readback": true,
+    "root_readback_sha256": "8c56c5d8331e422056113ccb261834b7a8da0071e5654418a93c64e0329b87d0",
+    "maximum_gpu_fence_seconds": 2,
+    "actual_total_gpu_memory": "NOT_MEASURED",
+    "presentation": "NOT_RUN"
+  },
+  "root_validation": {
+    "passed": 22,
+    "required": 22,
+    "checks": {
+      "exact4096_bytes": true,
+      "actual_windows_success": true,
+      "nvidia_identity_matches_host": true,
+      "strict_original_gpu_identity": true,
+      "real_requested_feature_level_12_0": true,
+      "footprint_pitch_and_size": true,
+      "all_pre_mid_post_boundaries": true,
+      "display_auth_and_network": true,
+      "display_reaped": true,
+      "namespace_children_reaped": true,
+      "exact_owned_namespace_empty": true,
+      "parent_reaped": true,
+      "protected_hashes_unchanged": true,
+      "game_metadata_unchanged": true,
+      "complete_game_entries_unchanged": true,
+      "proton_full_identity_reverified": true,
+      "own_pe_hash_matches": true,
+      "private_authority_provider_mode": true,
+      "fixed_xvfb_binary_identity": true,
+      "no_real_game_save_copy": true,
+      "current_c_matches_runtime_candidate": true,
+      "current_launcher_matches_runtime_candidate": true
+    },
+    "boundaries": {
+      "before": [
+        29,
+        29
+      ],
+      "display_boundary": [
+        29,
+        29
+      ],
+      "after": [
+        29,
+        29
+      ]
+    },
+    "protected_hashed_items": 22,
+    "complete_game_non_directory_metadata": 1330,
+    "runtime_regular_files_hashed_and_metadata_reverified": 5613,
+    "runtime_symlink_targets_reverified": 1896,
+    "owned_namespace_remaining_pids": [],
+    "unresolved_namespace_identities": [],
+    "preexisting_unreadable_processes_excluded_by_kernel_start_time": 3
+  },
+  "actual_launches": [
+    {
+      "private_profile_id": "324357bb75f5469fae54c31103536f71",
+      "launcher_sha256": "aa5544a4c4e13722f163aaa995296a794caa461ad00cff973972af74ab76fae6",
+      "c_sha256": "6d16869beb35b2f47dc2d8c403072ba89ba62a36a239bc938af36a7d385959ac",
+      "binary_sha256": "886a5afa84fcae7d444c67e449d161d107e9a460f6fe7342ecec33062a298158",
+      "exit": 1,
+      "boundary_before": [
+        28,
+        28
+      ],
+      "display_checks": null,
+      "display_reaped": true,
+      "windows": null,
+      "error": "Private display did not become ready within5seconds",
+      "parent_reaped": true,
+      "protected_inputs_unchanged": true,
+      "exact_readback": false
+    },
+    {
+      "private_profile_id": "74367196cf2d4d61ace6a4fbfd7dcc44",
+      "launcher_sha256": "ac7f796f7ead693cbfca3ecf27ef01204ead4123d1620f94ca9f8e6cb09e8b15",
+      "c_sha256": "6d16869beb35b2f47dc2d8c403072ba89ba62a36a239bc938af36a7d385959ac",
+      "binary_sha256": "886a5afa84fcae7d444c67e449d161d107e9a460f6fe7342ecec33062a298158",
+      "exit": 1,
+      "boundary_before": [
+        28,
+        28
+      ],
+      "display_checks": {
+        "authorized_client_ready": true,
+        "fixed_screen": true,
+        "server_alive": true,
+        "unauthorized_client_denied": true,
+        "no_tcp_listener": true
+      },
+      "display_reaped": true,
+      "windows": {
+        "passed": false,
+        "stage": 4,
+        "hresult_u32": 2289696770,
+        "last_error": 203,
+        "vendor_id": 4098,
+        "device_id": 29663,
+        "minimum_feature_level": 49152,
+        "row_pitch": 0,
+        "footprint_bytes": 0,
+        "readback_bytes": 0
+      },
+      "error": null,
+      "parent_reaped": true,
+      "protected_inputs_unchanged": true,
+      "exact_readback": false
+    },
+    {
+      "private_profile_id": "06fc71c16d0a42c591480c820c49488c",
+      "launcher_sha256": "a61274dc5c5932e832689c704c10136079cfceed965fcd2b208c037656cebd4d",
+      "c_sha256": "6d16869beb35b2f47dc2d8c403072ba89ba62a36a239bc938af36a7d385959ac",
+      "binary_sha256": "886a5afa84fcae7d444c67e449d161d107e9a460f6fe7342ecec33062a298158",
+      "exit": 1,
+      "boundary_before": [
+        29,
+        29
+      ],
+      "display_checks": {
+        "authorized_client_ready": true,
+        "fixed_screen": true,
+        "server_alive": true,
+        "unauthorized_client_denied": true,
+        "no_tcp_listener": true
+      },
+      "display_reaped": true,
+      "windows": null,
+      "error": "Expecting value: line 1 column 1 (char 0)",
+      "parent_reaped": true,
+      "protected_inputs_unchanged": true,
+      "exact_readback": false
+    },
+    {
+      "private_profile_id": "721b5c146d2b419d8bdaa4568e1e9c3a",
+      "launcher_sha256": "a61274dc5c5932e832689c704c10136079cfceed965fcd2b208c037656cebd4d",
+      "c_sha256": "1f84bb3e2fddec328bdef5a44bf500b679d04abf2035573697cbd5b5214acafb",
+      "binary_sha256": "afc9c53369c032a2186e59a4e08701d945ddf1986a4eeca1d4cc06858762ef91",
+      "exit": 0,
+      "boundary_before": [
+        29,
+        29
+      ],
+      "display_checks": {
+        "authorized_client_ready": true,
+        "fixed_screen": true,
+        "server_alive": true,
+        "unauthorized_client_denied": true,
+        "no_tcp_listener": true
+      },
+      "display_reaped": true,
+      "windows": {
+        "passed": true,
+        "stage": 22,
+        "hresult_u32": 0,
+        "last_error": 0,
+        "vendor_id": 4318,
+        "device_id": 11269,
+        "minimum_feature_level": 49152,
+        "row_pitch": 256,
+        "footprint_bytes": 8064,
+        "readback_bytes": 4096
+      },
+      "error": null,
+      "parent_reaped": true,
+      "protected_inputs_unchanged": true,
+      "exact_readback": true
+    }
+  ],
+  "retained_failures": [
+    {
+      "target": "Private helper preflight",
+      "failure": "Relative owned-ancestor target, then regular executable passed to directory-ancestor validator",
+      "resolution": "Absolute owned directory validation plus separate non-symlink/regular-file/owner/hash checks; failures occur before runtime effects"
+    },
+    {
+      "target": "Initial private virtual display",
+      "failure": "Xvfb GLX/NVIDIA EGL crash and private X socket directory missing",
+      "resolution": "Create private socket directory; disable irrelevant GLX on memory display only, preserve real Vulkan/D3D12 verification"
+    },
+    {
+      "target": "NVIDIA adapter check",
+      "failure": "DXVK native log finds NVIDIA while default no-NVAPI DXGI identity reportsAMD1002/73df; strict probe rejects",
+      "resolution": "Task-local read-only dxgi.hideNvidiaGpu=False, no custom PCI fields or global/game changes; strict actualNVIDIA/PCI identity retained"
+    },
+    {
+      "target": "Windows COM descriptor handle",
+      "failure": "Own PE exits5without structured stdout after actual resources initialize; incorrect by-value8byte struct return",
+      "resolution": "Pinned primary Microsoft header explicitly defines Windows vtable output-pointer signature; self-authored call corrected, actual D3D12 clear/copy/byte proof passes. Previous result parse error retained as secondary diagnosis."
+    }
+  ],
+  "runtime_outputs": "Non-following private work manifest retained. Licensed Wine prefix, own canary/readback,3private Xvfb/DXVK logs, generated fontconfig/NVIDIA caches; no real game/session/save copy. Bundled Xalia helper uses original read-only Proton path (SHA6067b47b758d115c008f50f8c652e31537eb4bbaae6ce8e9d694362ad5271c6e), not a copied/reused user UI.",
+  "validation": {
+    "command": "python3 -B -m unittest discover -s tests -p 'test_d3d12_probe.py' -v",
+    "passed": 7,
+    "required": 7,
+    "git_diff_check": "PASS"
+  },
+  "sources": [
+    {
+      "title": "Primary Windows descriptor-heap ABI; explicit _WIN32 output pointer",
+      "url": "https://github.com/microsoft/DirectX-Headers/blob/adbd6f3ba40795c46a8d0f33af00bcb57ff0f0a4/include/directx/d3d12.h"
+    },
+    {
+      "title": "DXVK native-vendor hiding option",
+      "url": "https://github.com/doitsujin/dxvk/blob/master/dxvk.conf"
+    },
+    {
+      "title": "X.Org virtual memory display",
+      "url": "https://xorg.freedesktop.org/releases/X11R6.8.2/doc/Xvfb.1.html"
+    },
+    {
+      "title": "Exact Ubuntu Xvfb package verified against installed APT metadata",
+      "url": "https://jp.archive.ubuntu.com/ubuntu/pool/universe/x/xorg-server/xvfb_21.1.22-1ubuntu1.2_amd64.deb"
+    }
+  ],
+  "private_evidence": [
+    {
+      "path": ".local/r04/d3d12/324357bb75f5469fae54c31103536f71/compile.json",
+      "sha256": "7cbbcd94186c39292c50a032a14c1f246b5da6f3af5a4c172049837612007ed2"
+    },
+    {
+      "path": ".local/r04/d3d12/324357bb75f5469fae54c31103536f71/inputs.json",
+      "sha256": "261ef1a686f1e656bcf8dcf999f1cf7471fbd1cc0923705ad2f5b69c650da524"
+    },
+    {
+      "path": ".local/r04/d3d12/324357bb75f5469fae54c31103536f71/result.json",
+      "sha256": "e17599302c04e78c67776cb448b6f8d9ec4d5d017b71b533da5544234af74226"
+    },
+    {
+      "path": ".local/r04/d3d12/324357bb75f5469fae54c31103536f71/host-checks.json",
+      "sha256": "a06d957342a2945a643036e77c11e0f9889b34fde896a73d47063d0fa66e3176"
+    },
+    {
+      "path": ".local/r04/d3d12/324357bb75f5469fae54c31103536f71/protected-before.json",
+      "sha256": "6921c2a111098563bcf9f6360ff8fc0bb97ee3138aa116b6563fb437a32628dc"
+    },
+    {
+      "path": ".local/r04/d3d12/324357bb75f5469fae54c31103536f71/protected-after.json",
+      "sha256": "6921c2a111098563bcf9f6360ff8fc0bb97ee3138aa116b6563fb437a32628dc"
+    },
+    {
+      "path": ".local/r04/d3d12/324357bb75f5469fae54c31103536f71/outputs.json",
+      "sha256": "cae8d38de7ea53f41c524f00a3e7fe01a37bdf9da85b1953c5a5b40f7988b3cf"
+    },
+    {
+      "path": ".local/r04/d3d12/324357bb75f5469fae54c31103536f71/work/logs/xvfb.log",
+      "sha256": "16098bb804dd62d817004d57f863cc0b4c9bad97d797107468f6c476800380b0"
+    },
+    {
+      "path": ".local/r04/d3d12/74367196cf2d4d61ace6a4fbfd7dcc44/compile.json",
+      "sha256": "cc8a889ed7dd8bf5c00533bb43121dae873781d4c1d3f56248786e6cf7fd179c"
+    },
+    {
+      "path": ".local/r04/d3d12/74367196cf2d4d61ace6a4fbfd7dcc44/inputs.json",
+      "sha256": "47d86b35e15cc1e8139be5f565bdbeb2875ce05f37d65e7c0c6a685eee492cda"
+    },
+    {
+      "path": ".local/r04/d3d12/74367196cf2d4d61ace6a4fbfd7dcc44/result.json",
+      "sha256": "a1e01e7d25cc0ebf7fd5610ca39dec10e395631b529a58d35a5ecd37fd13263c"
+    },
+    {
+      "path": ".local/r04/d3d12/74367196cf2d4d61ace6a4fbfd7dcc44/host-checks.json",
+      "sha256": "f86d8c1623cb61de4be3505650bc368ca1fe968118591bb3ab4bc2c04a79109a"
+    },
+    {
+      "path": ".local/r04/d3d12/74367196cf2d4d61ace6a4fbfd7dcc44/protected-before.json",
+      "sha256": "6921c2a111098563bcf9f6360ff8fc0bb97ee3138aa116b6563fb437a32628dc"
+    },
+    {
+      "path": ".local/r04/d3d12/74367196cf2d4d61ace6a4fbfd7dcc44/protected-after.json",
+      "sha256": "6921c2a111098563bcf9f6360ff8fc0bb97ee3138aa116b6563fb437a32628dc"
+    },
+    {
+      "path": ".local/r04/d3d12/74367196cf2d4d61ace6a4fbfd7dcc44/outputs.json",
+      "sha256": "03cecbd8e67afa055b9c3e5e36dd83bf33003e1ce0b9bd3a580772732a532d8e"
+    },
+    {
+      "path": ".local/r04/d3d12/74367196cf2d4d61ace6a4fbfd7dcc44/work/logs/xalia_dxgi.log",
+      "sha256": "a09298b21e21ceb7803fb0f2167717b9c5a65a7b08b34bec1e12bcbb1919d509"
+    },
+    {
+      "path": ".local/r04/d3d12/74367196cf2d4d61ace6a4fbfd7dcc44/work/logs/probe_dxgi.log",
+      "sha256": "926abfa05e6994ebcb0e6a43ba564904f95cf345c734f193e50cf567c035e183"
+    },
+    {
+      "path": ".local/r04/d3d12/74367196cf2d4d61ace6a4fbfd7dcc44/work/logs/xvfb.log",
+      "sha256": "87e9572cf030493a1f7ba83d385129046b224374ca1414911674b30fc44276d7"
+    },
+    {
+      "path": ".local/r04/d3d12/06fc71c16d0a42c591480c820c49488c/compile.json",
+      "sha256": "505ba68c560852a49f87f72f8aeb56304b33cd94542c2689e223c3430df58518"
+    },
+    {
+      "path": ".local/r04/d3d12/06fc71c16d0a42c591480c820c49488c/inputs.json",
+      "sha256": "f7d6669651281e3d394a108ae7351781c8cc9410ed891a9e44568992e9fe5a13"
+    },
+    {
+      "path": ".local/r04/d3d12/06fc71c16d0a42c591480c820c49488c/result.json",
+      "sha256": "c5ddd4203124fa5042de997995ca69c5605ec71659747b1a9e646989b86571c7"
+    },
+    {
+      "path": ".local/r04/d3d12/06fc71c16d0a42c591480c820c49488c/host-checks.json",
+      "sha256": "c5ae6a0cc569f15d9d7b87bb5aa1b25a1e383e2d2c30c92e55344bc903735bdf"
+    },
+    {
+      "path": ".local/r04/d3d12/06fc71c16d0a42c591480c820c49488c/protected-before.json",
+      "sha256": "6921c2a111098563bcf9f6360ff8fc0bb97ee3138aa116b6563fb437a32628dc"
+    },
+    {
+      "path": ".local/r04/d3d12/06fc71c16d0a42c591480c820c49488c/protected-after.json",
+      "sha256": "6921c2a111098563bcf9f6360ff8fc0bb97ee3138aa116b6563fb437a32628dc"
+    },
+    {
+      "path": ".local/r04/d3d12/06fc71c16d0a42c591480c820c49488c/outputs.json",
+      "sha256": "7c02a496ccd45e45b5b7f3663bfc7714b67ba1590aec8261c7ab894fc86d9e4c"
+    },
+    {
+      "path": ".local/r04/d3d12/06fc71c16d0a42c591480c820c49488c/work/logs/xalia_dxgi.log",
+      "sha256": "31246015c6085b2f0a65c6df7337ae4f40686c82e0526d41d2b86232728840d6"
+    },
+    {
+      "path": ".local/r04/d3d12/06fc71c16d0a42c591480c820c49488c/work/logs/probe_dxgi.log",
+      "sha256": "bc766d6234cd2b01e378971c9c0c7bb25f5f0e2c37e73f6176f602cff07dfdeb"
+    },
+    {
+      "path": ".local/r04/d3d12/06fc71c16d0a42c591480c820c49488c/work/logs/xvfb.log",
+      "sha256": "87e9572cf030493a1f7ba83d385129046b224374ca1414911674b30fc44276d7"
+    },
+    {
+      "path": ".local/r04/d3d12/721b5c146d2b419d8bdaa4568e1e9c3a/compile.json",
+      "sha256": "1b8afa091ed1a4f3779e6fda68a4244f56c489da5ff25ce158ac362a95e54ded"
+    },
+    {
+      "path": ".local/r04/d3d12/721b5c146d2b419d8bdaa4568e1e9c3a/inputs.json",
+      "sha256": "a8f3a6105f377f589de8295c7913e19f78480427c9b5f68e3457e700347bb8ba"
+    },
+    {
+      "path": ".local/r04/d3d12/721b5c146d2b419d8bdaa4568e1e9c3a/result.json",
+      "sha256": "c5f0184c95c8cd41b091b2d10ac832055b487893e2c2a09fa4c5de0cc85966dd"
+    },
+    {
+      "path": ".local/r04/d3d12/721b5c146d2b419d8bdaa4568e1e9c3a/host-checks.json",
+      "sha256": "d8610d311dc293e2e63416dc29994c4acb645756a3736a0ba85e1b16251b4e27"
+    },
+    {
+      "path": ".local/r04/d3d12/721b5c146d2b419d8bdaa4568e1e9c3a/protected-before.json",
+      "sha256": "6921c2a111098563bcf9f6360ff8fc0bb97ee3138aa116b6563fb437a32628dc"
+    },
+    {
+      "path": ".local/r04/d3d12/721b5c146d2b419d8bdaa4568e1e9c3a/protected-after.json",
+      "sha256": "6921c2a111098563bcf9f6360ff8fc0bb97ee3138aa116b6563fb437a32628dc"
+    },
+    {
+      "path": ".local/r04/d3d12/721b5c146d2b419d8bdaa4568e1e9c3a/outputs.json",
+      "sha256": "03646d85e914babb6a94cfb354c816da089030ee742fc99dd1b5b689289c31b1"
+    },
+    {
+      "path": ".local/r04/d3d12/721b5c146d2b419d8bdaa4568e1e9c3a/work/logs/xalia_dxgi.log",
+      "sha256": "31246015c6085b2f0a65c6df7337ae4f40686c82e0526d41d2b86232728840d6"
+    },
+    {
+      "path": ".local/r04/d3d12/721b5c146d2b419d8bdaa4568e1e9c3a/work/logs/probe_dxgi.log",
+      "sha256": "bc766d6234cd2b01e378971c9c0c7bb25f5f0e2c37e73f6176f602cff07dfdeb"
+    },
+    {
+      "path": ".local/r04/d3d12/721b5c146d2b419d8bdaa4568e1e9c3a/work/logs/xvfb.log",
+      "sha256": "87e9572cf030493a1f7ba83d385129046b224374ca1414911674b30fc44276d7"
+    },
+    {
+      "path": ".local/r04/d3d12/721b5c146d2b419d8bdaa4568e1e9c3a/root-verification.json",
+      "sha256": "1c1c9df56bce2dcf0b39bd996dc49714a5e7ebca939638e752b3b0af51e51cb1"
+    },
+    {
+      "path": ".local/r04/graphics/runtime.json",
+      "sha256": "163016abec63382a743d068b59b4cbdcd8cdf8939f21d102201560a8188836f6"
+    },
+    {
+      "path": ".local/r04/graphics/COPYRIGHT",
+      "sha256": "4cc0447a22635c7b2f1a93fec4aa94f1970fadeb72a063de006b51cf4963a06f"
+    }
+  ],
+  "product_acceptance": "Original A01-A14and473relevant targets unchanged,0/14final results accepted. Offscreen Windows GPU prerequisite is accepted; real window presentation/font/input/performance/game/Steam/saves/Cloud/loader/MOD/UI acceptance remains required.",
+  "next_action": "Prepare exact legitimate Steam/game/display route with local and Cloud progress isolation, using accepted Windows graphics prerequisite. Preserve original/new MOD unknown resource,body,DLC/loader requirements. No real account/Cloud/session/activation setting changes without exact authority."
+}

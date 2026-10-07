@@ -6,7 +6,7 @@ import sys
 import tempfile
 import unittest
 
-from src.testing.d3d12_probe import build, validate_image, collect_owned_child
+from src.testing.d3d12_probe import build, validate_image, collect_owned_child, create_test_authority
 
 
 class WindowsProbeTests(unittest.TestCase):
@@ -57,6 +57,21 @@ class WindowsProbeTests(unittest.TestCase):
         self.assertTrue(result['timeout'])
         self.assertIn('owned diagnostic', result['stdout'])
         self.assertIsNotNone(child.poll())
+
+    def test_test_authority_is_private_fresh_and_refuses_reuse(self):
+        path = self.root / 'test-authority'
+        create_test_authority(path)
+        self.assertEqual(path.stat().st_mode & 0o777, 0o600)
+        self.assertFalse(path.is_symlink())
+        self.assertIn(b'MIT-MAGIC-COOKIE-1', path.read_bytes())
+        with self.assertRaises(FileExistsError): create_test_authority(path)
+        path.unlink()
+
+    def test_test_authority_refuses_symlink_target(self):
+        original = self.root / 'protected-fixture'; original.write_bytes(b'original')
+        link = self.root / 'authority-link'; link.symlink_to(original)
+        with self.assertRaises(FileExistsError): create_test_authority(link)
+        self.assertEqual(original.read_bytes(), b'original')
 
 
 if __name__ == '__main__': unittest.main()
