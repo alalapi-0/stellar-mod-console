@@ -400,7 +400,7 @@
     "visibility": "PUBLIC_VERIFIED",
     "initial_branch": "main",
     "implementation_branch_policy": "Separate implementation branch; push each round; no automatic merge",
-    "sync_status": "PENDING current organization documentation follow-up; prior R04-h content612646e and closuref2452b0 both verified remotely",
+    "sync_status": "VERIFIED organization content3cbdaade7cd6d71c255476ac99fc52b3f89c07ef matched GitHub branch; R04-h also delivered. Closure metadata follows normal push.",
     "head_identity": "Use git HEAD and the remote ref; do not store a self-referential commit hash",
     "branch": "impl/mod-console",
     "verified_content_commits": {
@@ -420,7 +420,8 @@
       "R04-f": "aba37ea95b244e96fa88b85d0de2e7c2eb09a906",
       "R04-g": "118800a63a75369a286a8a80293093ecb60dbbdc",
       "R04-h": "612646ebc14dcd6206d31471c32e18716008e3e1"
-    }
+    },
+    "verified_organization_followup_commit": "3cbdaade7cd6d71c255476ac99fc52b3f89c07ef"
   },
   "cumulative": {
     "planning_rounds_completed": 1,
@@ -623,10 +624,10 @@
       }
     ],
     "token_cost_telemetry": {
-      "native_goal_tokens_observed": 2965053,
-      "source": "Native get_goal at R04-h closure preparation,updatedAt1791384014",
+      "native_goal_tokens_observed": 3117116,
+      "source": "Native get_goal at organization follow-up closure,updatedAt1791384738",
       "coverage": "Cumulative tokens/time reported by native Goal; per-role and cost coverage unavailable; no manual token estimate",
-      "native_goal_time_seconds_observed": 15923,
+      "native_goal_time_seconds_observed": 16646,
       "active_execution_time": "UNAVAILABLE; wall time does not prove active minutes",
       "cost": "UNAVAILABLE",
       "budget": "No explicit token budget; native remainingTokens null"
@@ -708,7 +709,8 @@
       "exclusions": "Downloads/game/Steam/MOD packages/read-only; no external tools/game launch, no account/settings changes; original14acceptance and counts unchanged.",
       "next_evidence": "Exact25row coverage,23newcanonical+2aliases,source hashes/stamps,current directoryset,primary manager author descriptions and exact documentation diff.",
       "result": "All25increment archive rows/20appearance4physics1gameplay,23newcanonical2aliases,5managementreferences; current591file set/594source stamps unchanged; requirements only, runtime/UI NOT_RUN.",
-      "evidence": "docs/evidence/R01-inc1.json:organization_followup"
+      "evidence": "docs/evidence/R01-inc1.json:organization_followup",
+      "source_delivery": "VERIFIED exact3cbdaade7cd6d71c255476ac99fc52b3f89c07ef via GitHub branch API"
     }
   },
   "rounds": {
@@ -801,7 +803,7 @@
     "last_closed": "R04-h",
     "remaining_round_estimate": null,
     "forecast_confidence": "unknown; no final end-to-end acceptance throughput; incomplete prerequisites and heterogeneous remaining work",
-    "previous_goal_turn": "PROGRESS: R04-h delivered and current25increment archive/user-flow organization clarified; Skin Suit Shields category corrected from author page. Same17closed units, originalA01-A14final0/14, no duplicate increment.",
+    "previous_goal_turn": "PROGRESS: R04-h delivered; current25increment archive/user-flow organization clarified and source3cbdaad verified remotely; Skin Suit Shields corrected from author page. Same17closed units, originalA01-A14final0/14, no duplicate increment. NextR04-i save-protection candidate.",
     "total_closed_units_including_planning": 17,
     "changes": {
       "execution": "Currentinstalled snapshot/source candidates/container namespace/activation and5loaderimpact plans implemented and actuallyverified. Final14end-to-endacceptance unchanged.",
