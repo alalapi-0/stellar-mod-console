@@ -16,7 +16,7 @@
   "implementation_started": true,
   "phase": "P1",
   "current_round": "R04-k",
-  "round_status": "COMPLETE_R04-k_STATIC_LOADER_INTERFACE; SOURCE_SYNC_PENDING; FULL_GOAL_PARTIAL",
+  "round_status": "COMPLETE_R04-k_STATIC_LOADER_INTERFACE_AND_SOURCE_DELIVERY; FULL_GOAL_PARTIAL",
   "next_round": "R04-l",
   "protected": [
     "Existing game files and saves",
@@ -440,7 +440,7 @@
     "visibility": "PUBLIC_VERIFIED",
     "initial_branch": "main",
     "implementation_branch_policy": "Separate implementation branch; push each round; no automatic merge",
-    "sync_status": "PENDING R04-k normal source commit/push and exact GitHub branch verification",
+    "sync_status": "VERIFIED R04-k source a127c9848b34488fc55b9c7b038280cc41241d4b exactly matches GitHub branch API. Final closure HEAD identity uses Git and remote ref.",
     "head_identity": "Use git HEAD and the remote ref; do not store a self-referential commit hash",
     "branch": "impl/mod-console",
     "verified_content_commits": {
@@ -461,7 +461,8 @@
       "R04-g": "118800a63a75369a286a8a80293093ecb60dbbdc",
       "R04-h": "612646ebc14dcd6206d31471c32e18716008e3e1",
       "R04-i": "7ce27eb37df188ea82ed4a2eaa2623aa296a5cb4",
-      "R04-j": "f361d5735b5f3416a101e06385b13f1f456cf964"
+      "R04-j": "f361d5735b5f3416a101e06385b13f1f456cf964",
+      "R04-k": "a127c9848b34488fc55b9c7b038280cc41241d4b"
     },
     "verified_organization_followup_commit": "3cbdaade7cd6d71c255476ac99fc52b3f89c07ef"
   },
@@ -772,10 +773,10 @@
       }
     ],
     "token_cost_telemetry": {
-      "native_goal_tokens_observed": 5334137,
-      "source": "Native get_goal at R04-k local static closure",
+      "native_goal_tokens_observed": 5372424,
+      "source": "Native get_goal at R04-k source verification",
       "coverage": "Native cumulative Goal tokens/time only; per-role and cost unavailable; active time not inferred",
-      "native_goal_time_seconds_observed": 22497,
+      "native_goal_time_seconds_observed": 22708,
       "active_execution_time": "UNAVAILABLE; wall time does not prove active minutes",
       "cost": "UNAVAILABLE",
       "budget": "No explicit token budget; native remainingTokens null"
@@ -843,7 +844,7 @@
     "acceptance": "Frozen installed2cores and distinct1candidate revalidated and statically inspected; PE exports cross-checked with existing independent binary tool; pinned primary-source API evidence clearly separated from installed/runtime identity; targeted tests and exact source delivery.",
     "external_scope": "Read-only exact game-loader/source-package references and public upstream documentation; ordinary source commit/push authorized. No game/client/MOD execution, deployment, session/credentials/save reads or copies, global changes or namespace-route retry.",
     "next_evidence": "Complete: docs/evidence/R04-k.json; directRoot9/9,12parser+7relatedregression tests, twoindependentexactexport crosschecks, real --exports CLIexit0.",
-    "result": "PASS_STATIC_UNIT_ONLY; current2frozencores/distinct1candidate/62Lua identities;65externalstampsunchanged; no protected runtime effect. Source sync pending."
+    "result": "PASS_STATIC_UNIT_ONLY; current2frozencores/distinct1candidate/62Lua identities;65externalstampsunchanged; no protected runtime effect. Source verified on GitHub: a127c9848b34488fc55b9c7b038280cc41241d4b."
   },
   "rounds": {
     "R01": {
@@ -915,7 +916,7 @@
         "R04-j",
         "R04-k"
       ],
-      "sync": "PENDING R04-k local static candidate; do not infer remote delivery."
+      "sync": "VERIFIED R04-k content a127c9848b34488fc55b9c7b038280cc41241d4b exactly matched GitHub branch API"
     },
     "R01-inc1": {
       "status": "COMPLETE_STATIC_ORGANIZATION_AND_REQUIREMENTS",
@@ -938,7 +939,7 @@
     "last_closed": "R04-k",
     "remaining_round_estimate": null,
     "forecast_confidence": "unknown; no final end-to-end acceptance throughput; incomplete prerequisites and heterogeneous remaining work",
-    "previous_goal_turn": "PROGRESS: R04-k frozen2cores/distinct1candidate staticexports verified,2independentcrosschecks,62Luaidentities and pinned48registrations;12+7tests/Root9checksPASS. ActualABI/Luabindings/game/UI unaccepted; fullA01-A14remains0/14.20closedunitsincludingplanning; source sync pending.",
+    "previous_goal_turn": "PROGRESS: R04-k frozen2cores/distinct1candidate staticexports verified,2independentcrosschecks,62Luaidentities and pinned48registrations;12+7tests/Root9checksPASS. ActualABI/Luabindings/game/UI unaccepted; fullA01-A14remains0/14.20closedunitsincludingplanning; source a127c9848b34488fc55b9c7b038280cc41241d4b verified on GitHub. Next installedkeybinding/configownership.",
     "total_closed_units_including_planning": 20,
     "changes": {
       "execution": "Add optionalPEexports to existingreader; verify current core interfaces and distinctcandidate; no deployment/runtime capability accepted.",
