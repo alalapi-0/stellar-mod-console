@@ -16,7 +16,7 @@
   "implementation_started": true,
   "phase": "P1",
   "current_round": "R04-n",
-  "round_status": "PREPARATION_ACCEPTED_PENDING_SOURCE_DELIVERY_AND_NATIVE_PAUSE; R04-n_UNFINISHED",
+  "round_status": "PAUSED_UNFINISHED_R04-n_PREPARATION_DELIVERED; NATIVE_PAUSE_PENDING_AFTER_FINAL_REMOTE_VERIFY",
   "next_round": "R04-n",
   "protected": [
     "Existing game files and saves",
@@ -36,7 +36,10 @@
     "pause_request": {
       "source": "Direct user: 这一轮结束后先暂停",
       "timing": "After preparation evidence review and normal source sync; no new runtime experiment",
-      "resume": "Requires explicit user resume; sameR04-n/v1"
+      "resume": "Requires explicit user resume; sameR04-n/v1",
+      "scheduling_state": "PAUSED_UNFINISHED",
+      "native_control": "Invoke native update_goal(paused) only after final metadata commit remote verification; native tool result is authoritative",
+      "effects_after_pause": "No dispatch, tests, runtime, installs, host changes, Git or goal work until explicit user resume"
     }
   },
   "inputs": {
@@ -481,7 +484,7 @@
     "visibility": "PUBLIC_VERIFIED",
     "initial_branch": "main",
     "implementation_branch_policy": "Separate implementation branch; push each round; no automatic merge",
-    "sync_status": "R04-n preparation review and source-only Governor approval complete; source commit/push pending, unitunfinished, nativepause pending after delivery.",
+    "sync_status": "VERIFIED R04-n preparation 8fe60cd0e0ba50b225b708b3a015acf623137e2a equals GitHub branch API. R04-nunfinished; final pause metadata HEAD identity uses Git and exact remote ref.",
     "head_identity": "Use git HEAD and the remote ref; do not store a self-referential commit hash",
     "branch": "impl/mod-console",
     "verified_content_commits": {
@@ -507,7 +510,10 @@
       "R04-l": "788c58de618a3230cf1e06c7463204e82da4dd51",
       "R04-m": "f5299c98b6b8dbd93ab9039a6bee3081b97e07be"
     },
-    "verified_organization_followup_commit": "3cbdaade7cd6d71c255476ac99fc52b3f89c07ef"
+    "verified_organization_followup_commit": "3cbdaade7cd6d71c255476ac99fc52b3f89c07ef",
+    "verified_preparation_commits": {
+      "R04-n": "8fe60cd0e0ba50b225b708b3a015acf623137e2a"
+    }
   },
   "cumulative": {
     "planning_rounds_completed": 1,
@@ -914,7 +920,7 @@
       "reason": "Current R04-j route refusal retained. R04-n read-only assessment found installedFlatpak1.16.6/Platform25.08; defaultSteam deployments absent; upstreammaster Steam manifest26.08/broadpermissions not admitted. Fresh Governor contract defines distinct own Flatpak build-runtime proof, no runtime approval; user pause before implementation. Loaded AppArmor profile list unavailableerrno13, installedpolicy only. Steam/account/Cloud/game/save isolation remains unestablished.",
       "state": "UNFINISHED_PREPARATION; RUNTIME_NOT_GRANTED; USER_PAUSE_AFTER_DELIVERY",
       "evidence": "docs/evidence/R04-n.json",
-      "next": "Resume R04-n/v1 after explicit user resume: implement and register the fixed self-authored Flatpak build --runtime candidate; reproduce prelaunch checks, fresh Judge PASS and Governor execution approval before the single probe. No Steam/game/auth/Cloud/install or host policy effect. Do not retry the unchanged R04-j route."
+      "next": "Await explicit user resume; then continue the same unfinished stellar-mod-console/R04-n/v1: implement/register exact self-authored Flatpak candidate, fresh prelaunch Judge PASS and Governor execution approval before one probe. No Steam/game/auth/Cloud/install/host-policy effects or unchangedR04-jretry."
     },
     {
       "scope": "Original CNS configuration and declared assets",
@@ -923,7 +929,7 @@
       "evidence": "docs/evidence/R03-inc1.json"
     }
   ],
-  "next_action": "Resume R04-n/v1 after explicit user resume: implement and register the fixed self-authored Flatpak build --runtime candidate; reproduce prelaunch checks, fresh Judge PASS and Governor execution approval before the single probe. No Steam/game/auth/Cloud/install or host policy effect. Do not retry the unchanged R04-j route.",
+  "next_action": "Await explicit user resume; then continue the same unfinished stellar-mod-console/R04-n/v1: implement/register exact self-authored Flatpak candidate, fresh prelaunch Judge PASS and Governor execution approval before one probe. No Steam/game/auth/Cloud/install/host-policy effects or unchangedR04-jretry.",
   "updated_on": "2026-10-08",
   "execution": {
     "owner_thread": "01a115db-7ff8-70c1-8122-cdc330aaf5c5",
@@ -943,7 +949,7 @@
     "acceptance": "R04-n/v1 retained unchanged. This stopping checkpoint accepts only contract/read-only preparation record, not C02-C13 or probe/game completion. User pause after source delivery; resume same unit.",
     "external_scope": "Preparation files and read-only current evidence only; no new runtime effects. Source sync remains authorized after preparation review/Governor decision.",
     "next_evidence": "Governor contract: exact distinct Flatpak build sandbox viability or read-only route assessment; never unchanged R04-j nested retry",
-    "result": "PREPARATION_REVIEW_PASS_AND_SOURCE_APPROVED_ONLY; 12Rootpreparationchecks/3actualpreservationchecks; runtimeNOT_GRANTED; R04-nunfinished."
+    "result": "Preparation-only record reviewed and source-delivered as 8fe60cd0e0ba50b225b708b3a015acf623137e2a; runtimeNOT_GRANTED; R04-nunfinished; userrequestedpause."
   },
   "rounds": {
     "R01": {
@@ -1020,12 +1026,13 @@
       "sync": "VERIFIED R04-m content f5299c98b6b8dbd93ab9039a6bee3081b97e07be exactly matched GitHub branch API",
       "pending_unit": {
         "id": "R04-n",
-        "phase": "PREPARATION_ACCEPTED_PENDING_SOURCE_DELIVERY",
+        "phase": "PAUSED_UNFINISHED",
         "contract": "docs/contracts/R04-n.json",
         "evidence": "docs/evidence/R04-n.json",
         "runtime_execution_gate": "NOT_GRANTED",
         "closed": false,
-        "pause_request": "user after bounded round closure/source sync"
+        "pause_request": "user after bounded round closure/source sync",
+        "preparation_source_commit": "8fe60cd0e0ba50b225b708b3a015acf623137e2a"
       }
     },
     "R01-inc1": {
@@ -1049,7 +1056,7 @@
     "last_closed": "R04-m",
     "remaining_round_estimate": null,
     "forecast_confidence": "unknown; no final end-to-end acceptance throughput; incomplete prerequisites and heterogeneous remaining work",
-    "previous_goal_turn": "PROGRESS_PREPARATION_ONLY: R04-n current supported-route evidence and exact governed futureFlatpakbuild-runtime contract reviewed. No runtime/implementation/tests; original0/14 and22closedunits retained. Explicit user pause after verified delivery; sameunfinishedR04-n on resume.",
+    "previous_goal_turn": "PROGRESS_PREPARATION_ONLY: governed R04-n supported-route facts and stopping checkpoint reviewed/source-delivered as 8fe60cd0e0ba50b225b708b3a015acf623137e2a. R04-nunfinished/unexecuted;0/14 and22closedunits preserved. Userpause after finalmetadata delivery; explicitresume required.",
     "total_closed_units_including_planning": 22,
     "changes": {
       "execution": "No runtime or new final acceptance; R04-n contract/admission prepared only. R04-n remains unfinished and not counted.",
@@ -1066,7 +1073,7 @@
     "entry": ".local/r04/route-prerequisites/entry.json",
     "contract": "docs/contracts/R04-n.json",
     "contract_status": "ACTIVE_UNFINISHED",
-    "phase": "PREPARATION_ACCEPTED_PENDING_SOURCE_DELIVERY",
+    "phase": "PAUSED_UNFINISHED",
     "runtime_execution_gate": "NOT_GRANTED",
     "result": "NONE_PREPARATION_ONLY",
     "resume_contract_id": "stellar-mod-console/R04-n/v1",
