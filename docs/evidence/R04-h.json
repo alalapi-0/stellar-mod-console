@@ -1,0 +1,154 @@
+{
+  "unit": "R04-h",
+  "lane": "DIRECT",
+  "baseline_commit": "c72bca60e4d9256d4d1eb6d225508d41c12d15d1",
+  "scope": "Current installed bytes, raw-source candidates, transformed namespace, activation declarations and loader impact; no runtime/deployment",
+  "candidate": {
+    "source_sha256": {
+      "src/policy/installed.py": "149573ac10e4d1fa7d8ce41ab970053bb214d0dee2323a0af57436eb7162cfa5",
+      "tests/test_installed.py": "fffb4bf1d3b2c4a1da282bdaba524c3b4932e05a4650bfc558235ec0986cb232"
+    },
+    "input_sha256": {
+      "inventory": "30e537b4bbed7a843915f9aba07d7671b65d76128ade462622f0c43274b06f01",
+      "catalog": "aa80bbcdfd63ed26e30f361e819de3454e28614ca3b20d15e57296d225a39ad5",
+      "resources": "9bb1cd843348ca35df5915dc3b26d9c0caddfc51adb2599a3ce527ea005ba1f0",
+      "history": "8f1774e792a1a7610e49cb3f0db5a2820a5737fefb1fe926a572cbde89f5250d"
+    },
+    "installed_namespace": "Current paths and files independently retained; never substituted with raw component IDs",
+    "mapping": "Exact file SHA256+size yields all source candidates; empty bytes are common, history folder/hash bindings are claims, unmatched files remain unresolved. No source association assigns write ownership.",
+    "container_binding": "Complete currentfile-hash signature matches exact raw component when available. InstalledTOC metadata is hash-bound; stored chunk hash/payload/body/layout/override/runtime compatibility remain qualified, not newly accepted.",
+    "activation": "mods.txt declaration order+disabled/enabled, bothLua/C++ entry paths, enabled markers, root override and game-specific evidence. Effective activation/runtime remains NOT_VERIFIED",
+    "loader_plan": "Core2DLL-only comparison; preserve all other files and do not auto-select bundled scripts/settings/content. All can_apply=false, no application or rollback effect."
+  },
+  "root_validation": {
+    "checks": {
+      "three_frozen_discovery_inputs_match": true,
+      "all_790_current_byte_hashes_match_inventory": true,
+      "all_790_metadata_still_current": true,
+      "kinds_780_mod_7_original_3_save_backup_preserved": true,
+      "all_780_mod_artifacts_mapped_once": true,
+      "171_installed_containers_complete_and_bound": true,
+      "108_complete_raw_byte_signatures_match": true,
+      "16_activation_directives_7_enabled_4_markers_recorded": true,
+      "default_loader_root_declared_no_override_in_snapshot": true,
+      "originals_saves_absent_from_source_mapping": true,
+      "five_loader_plans_9_identical_core_files_1_different": true,
+      "594_original_increment_source_stamps_unchanged": true,
+      "22_protected_hashes_1330_metadata_unchanged": true,
+      "complete_game_non_directory_set_unchanged": true,
+      "all_metadata_inputs_still_match_snapshot": true
+    },
+    "passed": 15,
+    "required": 15,
+    "tests": {
+      "installed": 10,
+      "exit": 0
+    },
+    "actual_cli_exit": 0,
+    "installed_bytes_rehashed": 25197560482,
+    "installed_files_rehashed": 790,
+    "installed_kinds": {
+      "installed_mod_or_loader": 780,
+      "protected_original": 7,
+      "protected_save_backup": 3
+    },
+    "source_mapping": {
+      "EXACT_SOURCE_ENTRY_BYTES": 513,
+      "SOURCE_UNRESOLVED": 196,
+      "COMMON_EMPTY_BYTES": 5,
+      "HISTORICAL_TRANSFORM_BINDING_ONLY": 66
+    },
+    "source_mapping_total": 780,
+    "containers": 171,
+    "exact_raw_container_bytes": 108,
+    "other_installed_containers": 63,
+    "activation_directives": 16,
+    "declared_enabled": 7,
+    "enable_markers": 4,
+    "default_loader_root_declaration": true,
+    "effective_activation": "NOT_VERIFIED",
+    "core_files_compared": 10,
+    "same_core_file_bytes": 9,
+    "different_core_file_bytes": 1,
+    "entire_unchanged_loader_pairs": 4,
+    "separate_loader_candidates": 5,
+    "protected_hashes": 22,
+    "protected_game_metadata": 1330,
+    "complete_game_entry_set_unchanged": true,
+    "raw_archive_source_stamps_unchanged": 594,
+    "raw_source_archives_rehashed": "NOT_RUN this unit; accepted inventory hashes/entrymetadata reused with currentstampguards",
+    "no_game_or_steam_or_mod_process_launched_or_stopped": true,
+    "no_Steam_account_Cloud_session_credential_config_read_or_change": true,
+    "no_assets_source_or_binary_copied": true
+  },
+  "loader_version_conclusion": {
+    "current_dwmapi_sha256": "a30732477f2d7134b712aa1d295ebdf2f1b5a9dd46a10b6ce494819cba1774fa",
+    "current_UE4SS_sha256": "f3f0229e8d046824c6d71db256f1c9bbbda9652a193643c28fa4e6c329e17670",
+    "label_vs_runtime": "Archive/release naming, current exact binary hash and historic runtime log are separate evidence. No version/ABI/activation is accepted from package names.",
+    "four_candidate_core_pairs": "Byte-identical current DLLs; do not replace unchanged core binaries to test their surrounding package configuration. Scripts/settings can differ and remain unverified.",
+    "different_candidate_core_pairs": 1
+  },
+  "failures_retained": [
+    {
+      "class": "EXPLICIT_RECORDED_LOG_FILTER_MISMATCH",
+      "version": "e95af788a902ccb25673097de7e99a1277dac566bb7f00a054685c9389177a13",
+      "actual_exit": 1,
+      "diagnosis": "All790recorded hashes matched before namespace refusal;4explicitlyrecorded UnrealPak logs incorrectly excluded by generic logfilter. No extraMODs or missingactualfiles.",
+      "repair": "Include every explicitlyrecorded log/dmp; ignore only unrecorded transient logs/dumps. Keep unexpectedMOD/change/link refusal. Corrected candidate CLI exits0."
+    },
+    {
+      "class": "TWO_TEST_METHOD_BOUNDARY_PATCH_ERRORS",
+      "diagnosis": "Fixtures inserted at repeated mid-method context left another test tail in new method; NameError/UnboundLocalError, no runtime effects.",
+      "repair": "Repair complete method boundaries;10tests pass without weakening assertions."
+    },
+    {
+      "class": "PRIMARY_SOURCE_ORGANIZATION_URL_NOT_FOUND",
+      "repair": "Use actual UE4SS-RE organization and pinned full commit; no unchanged fetch or code import."
+    }
+  ],
+  "private_evidence": [
+    {
+      "path": ".local/r04/installed-profile/first-failure.json",
+      "sha256": "f1544bbbb51930a6475eef908a22d2cfea4346ffce6338a8733cd22d55c1ce3a"
+    },
+    {
+      "path": ".local/r04/installed-profile/protected-after.json",
+      "sha256": "6921c2a111098563bcf9f6360ff8fc0bb97ee3138aa116b6563fb437a32628dc"
+    },
+    {
+      "path": ".local/r04/installed-profile/protected-before.json",
+      "sha256": "6921c2a111098563bcf9f6360ff8fc0bb97ee3138aa116b6563fb437a32628dc"
+    },
+    {
+      "path": ".local/r04/installed-profile/snapshot.json",
+      "sha256": "8f80b0b7aaa55f8bfef26bdbdf7b760f14e7a6bde28af76da33d17edbbf274f1"
+    },
+    {
+      "path": ".local/r04/installed-profile/verification.json",
+      "sha256": "0ecde6ff082b852f1e6f1a9a5f9a4e4688b7885e8d3ad116a84db3fee1dabb53"
+    }
+  ],
+  "not_run": [
+    "Actual game/local/Cloud save isolation and legitimate client launch",
+    "Loader ABI and current/new MOD combinations",
+    "Transformed namespace reproduction/body/resource/override behavior",
+    "Coldstart, readsave/gameplay, deployment, rollback and restoration",
+    "In-game UI/keyboard/controller/Chinese/font/window presentation/performance",
+    "M1/M2 final acceptance and release"
+  ],
+  "sources": [
+    {
+      "title": "Lua mod loading declaration",
+      "url": "https://docs.ue4ss.com/guides/creating-a-lua-mod.html"
+    },
+    {
+      "title": "C++ entry/enable marker documentation",
+      "url": "https://github.com/UE4SS-RE/RE-UE4SS/blob/main/docs/guides/installing-a-c%2B%2B-mod.md"
+    },
+    {
+      "title": "Pinned historical-log commit directory resolver; binary build provenance/ABI not inferred",
+      "url": "https://github.com/UE4SS-RE/RE-UE4SS/blob/d3d10044d12566b869de56164bdaf5dbf36067b8/UE4SS/src/UE4SSProgram.cpp"
+    }
+  ],
+  "product_acceptance": "Original A01-A14 final0/14; full Goal remains active"
+}

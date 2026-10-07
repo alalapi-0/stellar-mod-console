@@ -65,3 +65,35 @@ python3 -B -m unittest discover -s tests -p 'test_profiles.py' -v
 每个候选的 `can_apply` 都是 `false`，不把静态预览当作 R10 的完整运行控制器。
 这里的空基线和原包候选也不是当前安装的已转换配置，不能用于替换真实游戏。
 固定当前安装命名空间、真实 Steam/存档隔离、冷启动与恢复仍须单独验证。
+
+R04-h 核对当前安装配置，分别记录原包和安装后命名空间：
+
+```sh
+python3 -B -m src.policy.installed --inventory .local/r01/inc1/inventory.json --catalog .local/r02/inc1/catalog.json --resources .local/r03/inc1/resources.json --history /path/to/remaining-package-installation-results.json --game /path/to/StellarBlade --output .local/r04/installed-profile/my-snapshot.json
+python3 -B -m unittest discover -s tests -p 'test_installed.py' -v
+```
+
+以上路径占位符须按私有配置替换。实际本机命令和路径保留在忽略目录的核对记录中；
+其他玩家须提供自己的路径和输入，这还不是可移植安装器。
+检查重新读取全部已登记安装文件的字节哈希，并核对 MOD 根目录的文件集合。
+已登记的包内日志仍核对和保留，仅未登记的运行日志/转储不进入 MOD 目标集。
+缺文件、内容变化、链接、大小写目标碰撞或未登记 MOD 文件会拒绝生成快照。
+
+`mods.txt` 的顺序、启用/停用声明、Lua/C++ 入口和 `enabled.txt` 都分别记录；
+实际加载与两种入口的优先关系仍为 `NOT_VERIFIED`，不能只改一条声明就声称停用。
+加载器目录覆盖和游戏专用目录也单独记录，非默认目录未映射时保持未知。
+此处依据[加载入口文档](https://github.com/UE4SS-RE/RE-UE4SS/blob/main/docs/guides/installing-a-c%2B%2B-mod.md)
+和历史日志所报提交的[目录解析源码](https://github.com/UE4SS-RE/RE-UE4SS/blob/d3d10044d12566b869de56164bdaf5dbf36067b8/UE4SS/src/UE4SSProgram.cpp)
+确定检查范围；没有由标签或源码页面认定本机二进制 ABI、运行版本或行为通过。
+
+已核对 790 个文件：780 个 MOD/加载器项、7 个原文件、3 个存档备份。
+后两类不进入来源选择或加载器替换计划。171 套安装后的容器分别成组；108 套
+完整文件哈希与原包组件相同，其余保持安装命名空间，不能沿用原包互斥规则。
+字节相同只能列出来源候选；空文件、历史转换目录关系和未知来源各有状态，
+都不授予写入权或证明兼容。转换后的身体/资源/载入顺序仍须实测。
+
+5 套加载器包的核心 DLL 对比发现：4 套的 `dwmapi.dll` 与 `UE4SS.dll` 都与
+当前安装字节一致，另 1 套只有 `UE4SS.dll` 不同。因此不能按包名/发行标签
+直接判断需要升级；整包里的脚本与设置仍可能不同，未随核心 DLL 自动选择。
+所有计划仍为 `can_apply: false`，不会写游戏、复制资产、覆盖配置或启动进程。
+10 项回归和 Root 的 15 项核对通过；本轮数据见 `docs/evidence/R04-h.json`。
