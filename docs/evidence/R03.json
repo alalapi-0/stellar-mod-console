@@ -1,0 +1,100 @@
+{
+  "round": "R03-a",
+  "scope": "Raw source component/identifier coverage and proven exclusive groups; full R03 still partial",
+  "candidate_sha256": "080423ef00dde799fa9716a3355996ec964687a24ca77889d5f9b20cc5405e6d",
+  "private_graph_sha256": "55ed3649496b90856773773ec9c93a124804e744333a9b06a64de2f24cc76482",
+  "catalog_sha256": "f526e185662ef0666905d0a5354d75f3a730cdf4e4a2d9288a96d5e4b3182453",
+  "inventory_sha256": "852632f279958778ec7766e31b2189ae8ae5e5d98aec8797bab0ebaacdf579a8",
+  "summary": {
+    "variants_and_loader_components": 734,
+    "exclusive_groups": 5,
+    "toc_identifiers_indexed": 729,
+    "identifier_deferrals": 0,
+    "container_overlap_groups": 135,
+    "overlapping_chunk_ids": 1533,
+    "runtime_compatibility": "NOT_RUN"
+  },
+  "known_selection_checks": {
+    "known_group_checks": [
+      {
+        "group": "atool-6.1",
+        "members": 3,
+        "all_pairs": "REJECTED_STATIC",
+        "single_member": "NO_KNOWN_STATIC_VIOLATION; NOT_VERIFIED"
+      },
+      {
+        "group": "flying-1.1.4",
+        "members": 2,
+        "all_pairs": "REJECTED_STATIC",
+        "single_member": "NO_KNOWN_STATIC_VIOLATION; NOT_VERIFIED"
+      },
+      {
+        "group": "keyhole-og-1714",
+        "members": 3,
+        "all_pairs": "REJECTED_STATIC",
+        "single_member": "NO_KNOWN_STATIC_VIOLATION; NOT_VERIFIED"
+      },
+      {
+        "group": "speed-1.0.9",
+        "members": 2,
+        "all_pairs": "REJECTED_STATIC",
+        "single_member": "NO_KNOWN_STATIC_VIOLATION; NOT_VERIFIED"
+      },
+      {
+        "group": "ue4ss-loader",
+        "members": 5,
+        "all_pairs": "REJECTED_STATIC",
+        "single_member": "NO_KNOWN_STATIC_VIOLATION; NOT_VERIFIED"
+      }
+    ],
+    "bad_pair_cases": 18,
+    "single_cases": 15,
+    "independent_retoc": {
+      "version": "0.1.5 external read-only CLI",
+      "binary_sha256": "aa649cd8751a212ee946fa9c27f883770a9d67ca8d5f0b0c76ad856f44cf5eab",
+      "info_exit": 0,
+      "list_exit": 0,
+      "utoc_hash_matches_frozen_source": true,
+      "container_and_chunk_ids_match": true,
+      "chunks": 10
+    }
+  },
+  "layout_source": {
+    "url": "https://github.com/trumank/retoc/blob/v0.1.5/retoc/src/lib.rs",
+    "git_blob_sha": "7d33a555d6904f89eddc27b502c18f09df15e25f",
+    "use": "Reference field layout only; independent Python reader; no upstream source copied"
+  },
+  "checks": [
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "exit": 0,
+      "tests": 11,
+      "scope": "Input integrity/alias prerequisites and static policy/TOC negative cases"
+    },
+    {
+      "command": "python3 -m src.policy.static --catalog .local/r02/catalog.json --inventory .local/r01/inventory.json --output .local/r03/conflicts.json",
+      "exit": 0,
+      "scope": "All 729 archive IoStore identifier indexes, ZIP/RAR/7Z; frozen entry hashes verified; no resource extraction"
+    },
+    {
+      "check": "Root exact live negative/single-member cases, current keyhole UTOC hash and independent external retoc info/list comparison",
+      "exit": 0
+    }
+  ],
+  "resolved_failure": {
+    "target": "Synthetic UTOC header negative test",
+    "class": "Wrong 17-byte magic constant (extra NUL)",
+    "first_exit": 1,
+    "diagnosis": "Primary v0.1.5 layout and actual ATOOL header use exactly 16 bytes",
+    "repair": "Removed extra NUL; negative test and actual identifiers match independent retoc"
+  },
+  "remaining": [
+    "135 Container overlap groups and 1533 overlapping chunk identifiers are observations, not hard-conflict or compatibility decisions",
+    "Resource paths/payload hashes, body/material/physics dependencies, CNS identities and ordered override applicability require R03-b",
+    "Current converted/installed namespace cannot inherit the raw graph; historical 42 shared-resource decisions not promoted",
+    "Writer/hotkey ownership, ESAP/SEAP relationship, runtime scene/save isolation, and all operation entry points remain unverified",
+    "Known static selection diagnostics never apply or authorize any configuration"
+  ],
+  "game_and_original_mod_mutations": "NONE",
+  "closure": "PARTIAL_R03; R03-a closed, original requirements and deferred acceptance preserved"
+}
