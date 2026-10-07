@@ -1,0 +1,174 @@
+{
+  "unit": "R04-d",
+  "lane": "DIRECT",
+  "baseline_commit": "7c4baad251af9aa751393f689c4c47a576d8cb87",
+  "scope": "Self-authored fixed native Vulkan offscreen clear/transfer/readback; no game, Steam, Proton, display/input/audio/network or account effects",
+  "source": {
+    "c_sha256": "4ad7c452964c9bc8f1ee64d40f3f8e763530f067d2efaaf191b12d1a663dfc86",
+    "launcher_sha256": "b4ccc070971f81379d7786e178f6e54d39ae2b3e3338bab76fd8f833f93a90b2",
+    "private_binary_sha256": "aeef2e59705adc75007dd6b795eb68079cf3da34c13dfd1ff52a27adb677f165",
+    "compile": "Existing gcc -std=c11 -O2 -Wall -Wextra -Werror; linked installed libvulkan; exit0/no warnings"
+  },
+  "actual_native_gpu": {
+    "gpu": "NVIDIA GeForce RTX 5070 Ti",
+    "driver": "595.91.07",
+    "vendor_id": 4318,
+    "device_id": 11269,
+    "pci_identity_crosschecked": true,
+    "physical_device_type": 2,
+    "reported_vulkan_api_version": 4211017,
+    "queue_family": 0,
+    "extent": [
+      32,
+      32
+    ],
+    "format": "VK_FORMAT_R8G8B8A8_UNORM",
+    "rgba": [
+      16,
+      32,
+      64,
+      255
+    ],
+    "bytes_checked": 4096,
+    "own_vulkan_memory_allocation_bytes": 8192,
+    "driver_total_memory": "NOT_MEASURED",
+    "exact_readback": true,
+    "root_independent_readback_sha256": "8c56c5d8331e422056113ccb261834b7a8da0071e5654418a93c64e0329b87d0",
+    "queue_submissions": 1,
+    "runtime_exit": 0,
+    "windows_d3d12_game_resolution": "NOT_RUN"
+  },
+  "namespace": {
+    "devices": {
+      "/dev/nvidia0": [
+        195,
+        0
+      ],
+      "/dev/nvidiactl": [
+        195,
+        255
+      ],
+      "/dev/nvidia-uvm": [
+        506,
+        0
+      ]
+    },
+    "readonly_system_hardware_views": [
+      "/usr",
+      "/lib",
+      "/lib64",
+      "/bin",
+      "/sys",
+      "/etc/ld.so.cache"
+    ],
+    "writable": "Private work/home/cache plus private tmp/run/dev/proc; no host home/run/tmp view",
+    "caps": "ALL_DROPPED",
+    "namespaces": [
+      "mnt",
+      "net",
+      "ipc",
+      "pid",
+      "user"
+    ],
+    "environment": "Fixed allowlist, no host display/Steam/credential/preload values",
+    "boundaries": {
+      "passed": 23,
+      "required": 23,
+      "exit": 0
+    },
+    "limits_seconds": {
+      "gpu_fence": 2,
+      "native_process": 10,
+      "whole_namespace": 20
+    },
+    "owned_parent_reaped": true,
+    "native_child_reaped": true,
+    "process_scope": "Only the exact experiment parent/session; existing Steam/game/other task processes never stopped"
+  },
+  "root_validation": {
+    "passed": 12,
+    "required": 12,
+    "checks": {
+      "exact_generated_cache_pair": true,
+      "no_unknown_work_file": true,
+      "no_symlink_or_shared_inode_output": true,
+      "hashed_unchanged": true,
+      "game_tree_metadata_unchanged": true,
+      "complete_game_entry_set_unchanged": true,
+      "exact_host_readback": true,
+      "owned_parent_reaped": true,
+      "native_child_reaped": true,
+      "gpu_pci_identity_match": true,
+      "proton_regular_metadata_unchanged": true,
+      "proton_links_unchanged": true
+    },
+    "protected_hashes": 22,
+    "complete_game_non_directory_entries": 1330,
+    "proton_regular_metadata_entries": 5613,
+    "proton_link_entries": 1896,
+    "private_outputs": {
+      "constant_canary": 1,
+      "readback": 1,
+      "generated_installed_driver_cache": 2,
+      "cache_total_bytes": 64,
+      "unknown": 0,
+      "real_account_game_save_or_mod_copies": 0
+    }
+  },
+  "retained_failure": {
+    "target": "Initial Root work-file allowlist",
+    "class": "Driver cache pair absent from initial two-output expectation",
+    "runtime_exit": 0,
+    "resolution": "Observed exact private XDG NVIDIA GLCache bin/toc32-byte pair, NVDC header, equal registered hashes; installed595 documentation supports cache path. Classified only these exact two generated outputs; no GPU rerun. Original failed check retained.",
+    "private_failure": ".local/r04/gpu/47d28f1adf0f4483b326a81b63f9a1cf/root-validation-failure.json"
+  },
+  "sources": [
+    {
+      "title": "Vulkan clear",
+      "url": "https://docs.vulkan.org/refpages/latest/refpages/source/vkCmdClearColorImage.html"
+    },
+    {
+      "title": "Vulkan image-to-buffer copy",
+      "url": "https://docs.vulkan.org/refpages/latest/refpages/source/vkCmdCopyImageToBuffer.html"
+    },
+    {
+      "title": "NVIDIA595 shader cache location",
+      "url": "https://download.nvidia.com/XFree86/Linux-x86_64/595.91.07/README/openglenvvariables.html"
+    }
+  ],
+  "private_evidence": [
+    {
+      "path": ".local/r04/gpu/47d28f1adf0f4483b326a81b63f9a1cf/compile.json",
+      "sha256": "bfd33f205039b6fd72f6e7d4fad0fe2f30fd6e30160c9a1d424d802b14831727"
+    },
+    {
+      "path": ".local/r04/gpu/47d28f1adf0f4483b326a81b63f9a1cf/inputs.json",
+      "sha256": "3906ec530ba193431e0fd9f3c807bafb4fc04250a09f3956f8330c5379cb1921"
+    },
+    {
+      "path": ".local/r04/gpu/47d28f1adf0f4483b326a81b63f9a1cf/result.json",
+      "sha256": "63e60dafc366b95e7ae5866de1a4b77cdef19e7e6e129995c7c8f464f484ecea"
+    },
+    {
+      "path": ".local/r04/gpu/47d28f1adf0f4483b326a81b63f9a1cf/host-checks.json",
+      "sha256": "1ebb18284b271c0e2f043b315c5d5f4786dfb5d096505cc17bb24e333e059af4"
+    },
+    {
+      "path": ".local/r04/gpu/47d28f1adf0f4483b326a81b63f9a1cf/work-manifest.json",
+      "sha256": "3e10038beaa2aa083a874d50da7d158c762f75f92534086f9704da62b5921f82"
+    },
+    {
+      "path": ".local/r04/gpu/47d28f1adf0f4483b326a81b63f9a1cf/root-validation-failure.json",
+      "sha256": "6fbac2eae6d23f55cdc7a8870c43cfa2df90ef1da5741c107d22f9fec01b398b"
+    },
+    {
+      "path": ".local/r04/gpu/47d28f1adf0f4483b326a81b63f9a1cf/root-verification.json",
+      "sha256": "6bf71ada5bf50f55a6d9f10cbd6fbc7069550be3aca85fa8260d5a92aa01d3c0"
+    },
+    {
+      "path": ".local/r04/gpu/47d28f1adf0f4483b326a81b63f9a1cf/protected-after.json",
+      "sha256": "3ef89d4ff41a86927a96acebe57d0b2f0b1889e78d11434a102af0b448c73ca9"
+    }
+  ],
+  "product_acceptance": "Original A01-A14 unchanged; native clear/copy only. Windows/D3D12, presentation, font, Steam, saves/Cloud, loader/MOD/game/UI acceptance NOT_RUN."
+}

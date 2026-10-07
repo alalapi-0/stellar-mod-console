@@ -44,3 +44,19 @@ API-set 名称也不能仅凭缺少同名文件判定缺库。
 python3 -B -m src.testing.runtime_probe /absolute/referenced/image.exe
 python3 -B -m unittest discover -s tests -p 'test_runtime_probe.py' -v
 ```
+
+R04-d 的 `gpu_probe` 是独立、自有的原生离屏 Vulkan 实验，使用现有 gcc
+和系统 Vulkan 开发库。每次创建新的私有目录，只暴露三个固定 NVIDIA
+设备与只读系统/硬件视图；不挂载 Steam、游戏、Proton、显示、输入或音频。
+先实测私有命名空间边界，再执行一次 32×32 清屏、GPU 复制和精确回读。
+GPU 等待上限 2 秒，原生子进程 10 秒，整个命名空间 20 秒；超时只结束
+本次拥有的进程。驱动可能在私有 XDG 缓存中生成 GLCache 文件。
+
+```sh
+python3 -B -m src.testing.gpu_probe
+```
+
+结果及原始挂载、设备、源码/二进制身份保存在忽略的 `.local/r04/gpu/`。
+Root 另核对精确回读、PCI 身份、所有输出和保护前像。该证据只证明原生
+Vulkan 离屏清屏/复制可用；Windows/D3D12、窗口呈现、中文字体、Steam、
+存档/云同步、加载器和 MOD 兼容仍需各自的真实验证。

@@ -15,9 +15,9 @@
   "goal_mode_started": true,
   "implementation_started": true,
   "phase": "P1",
-  "current_round": "R04-c",
-  "round_status": "COMPLETE_READONLY_RUNTIME_PREREQUISITES",
-  "next_round": "R04-d",
+  "current_round": "R04-d",
+  "round_status": "COMPLETE_BOUNDED_NATIVE_GPU_PROBE",
+  "next_round": "R04-e",
   "protected": [
     "Existing game files and saves",
     "Original MOD packages and downloads",
@@ -268,7 +268,7 @@
     "visibility": "PUBLIC_VERIFIED",
     "initial_branch": "main",
     "implementation_branch_policy": "Separate implementation branch; push each round; no automatic merge",
-    "sync_status": "VERIFIED R01,R02-a/b,R03-a/b/c,R04-a/b content commits; git HEAD and GitHub branch ref identify closure metadata",
+    "sync_status": "VERIFIED through R04-c content commit; git HEAD and GitHub branch ref identify current metadata",
     "head_identity": "Use git HEAD and the remote ref; do not store a self-referential commit hash",
     "branch": "impl/mod-console",
     "verified_content_commits": {
@@ -279,7 +279,8 @@
       "R03-c": "f0ed872a5944e869e30444bf73e51f676d6ae344",
       "R02-b": "9450d1597674465fed44168499c40552dcd96f1e",
       "R04-a": "6a45ea4844d90713960424a98da47b60840d628c",
-      "R04-b": "b6f06143be519ccbfe759f611783e0aa21ae03f3"
+      "R04-b": "b6f06143be519ccbfe759f611783e0aa21ae03f3",
+      "R04-c": "7c4baad251af9aa751393f689c4c47a576d8cb87"
     }
   },
   "cumulative": {
@@ -336,18 +337,28 @@
         "changed_method": "No-space separator; fresh target/full gate; no expected-byte weakening",
         "status": "RESOLVED_EVENT_2_EXACT_BYTES_PASS",
         "evidence": ".local/r04/bootstrap-failure-1.json"
+      },
+      {
+        "round": "R04-d",
+        "target": "Root private GPU work-file allowlist",
+        "relevant_version": "4ad7c452964c9bc8f1ee64d40f3f8e763530f067d2efaaf191b12d1a663dfc86",
+        "failure_class": "GENERATED_NVIDIA_CACHE_NOT_IN_INITIAL_EXPECTATION",
+        "cause": "Installed595 driver created exact32-byte GLCache bin/toc pair in private XDG cache",
+        "method_change": "Inspect fresh private output identity/header/hash and official cache location; classify exact pair only, no native rerun",
+        "status": "RESOLVED_23_NAMESPACE_12_ROOT_CHECKS_PASS",
+        "evidence": ".local/r04/gpu/47d28f1adf0f4483b326a81b63f9a1cf/root-validation-failure.json"
       }
     ],
     "token_cost_telemetry": {
-      "native_goal_tokens_observed": 1891003,
-      "source": "native get_goal at R04-c closure checkpoint,updatedAt1791376114",
+      "native_goal_tokens_observed": 1958313,
+      "source": "native get_goal at R04-d closure checkpoint,updatedAt1791376666",
       "coverage": "Cumulative tokens/time reported by native Goal; per-role and cost coverage unavailable; no manual token estimate",
-      "native_goal_time_seconds_observed": 8022,
+      "native_goal_time_seconds_observed": 8574,
       "active_execution_time": "UNAVAILABLE; wall time does not prove active minutes",
       "cost": "UNAVAILABLE",
       "budget": "No explicit token budget; native remainingTokens null"
     },
-    "execution_units_closed": 9,
+    "execution_units_closed": 10,
     "health_checkpoint": {
       "first_250k_rebaseline_completed": true,
       "status": "HEALTHY",
@@ -376,9 +387,9 @@
     },
     {
       "scope": "Runtime game tests",
-      "reason": "8 real-prefix saves and3in-loader backups remain protected. Private prefix/CLI accepted; Shipping imports Steam restart/init and RemoteStorage016, existing client/Cloud metadata present. Fresh prefix alone cannot prove Cloud/local progress protection or stop Steam relaunch of installed game. No account/Cloud/session/activation changes authorized.",
+      "reason": "8 real-prefix saves and3in-loader backups protected. Private prefix/CLI and native headless NVIDIA GPU transfer/readback accepted. Shipping imports Steam restart/init and RemoteStorage016 with existing client/Cloud metadata; legitimate Windows/presentation/game launch and local/Cloud progress isolation remain unestablished. No account/Cloud/session/activation changes authorized.",
       "state": "GAME_NOT_RUN; exact legitimate protected runtime route required",
-      "evidence": "docs/evidence/R04-c.json",
+      "evidence": "docs/evidence/R04-d.json",
       "next": "Prepare exact legitimate isolated client/game/display route; owner approval only if protected account/Cloud settings must change"
     },
     {
@@ -387,22 +398,25 @@
       "state": "DISCOVERY_VERIFIED; sources unchanged; runtime and repair not accepted"
     }
   ],
-  "next_action": "Execute bounded self-authored native headless Vulkan clear/transfer/readback in a newly admitted private namespace without Steam/game/display/input/network; continue preparing exact legitimate game/save/Cloud route.",
+  "next_action": "Prepare self-authored Windows/D3D12 device probe and exact private Proton graphics route using existing toolchain; narrow read-only Cloud/legitimate game launch preflight. Do not launch game or change account/Cloud/activation settings.",
   "updated_on": "2026-10-07",
   "execution": {
     "owner_thread": "01a115db-7ff8-70c1-8122-cdc330aaf5c5",
     "lane": "DIRECT",
     "owned_paths": [
-      "src/testing/",
-      "tests/test_runtime_probe.py",
-      "docs/evidence/R04-c.json",
+      "src/testing/gpu_probe.c",
+      "src/testing/gpu_probe.py",
+      "docs/evidence/R04-d.json",
       "PROJECT_STATE.json",
-      ".local/r04/"
+      ".local/r04/gpu/",
+      "src/testing/README.md",
+      "src/testing/probe.py (read-only reused helper; not modified)"
     ],
-    "external_scope": "Read-only game/Steam/runtime/display/GPU discovery and project-local source/evidence only; no game/Steam/proton/display launch, account/config/device mutation or credential values; further runtime effects require risk admission/contract",
-    "entry_preimage": "48327705c1f975386ea3ac55fd65f91c000c9dd3; cleanworktree; exact native owner task confirmed; other tasks outside repo and game maintenance task currently idle",
-    "acceptance": "Concrete game/runtime/Steam/save/cloud prerequisites from current installed files, and next feasible safely owned runtime step; keep original A01-A14 unchanged",
-    "next_evidence": "Self-authored bounded native headless Vulkan clear/transfer/readback; separate admission and namespace, no use of closed R04-b launch approvals"
+    "entry_preimage": "7c4baad251af9aa751393f689c4c47a576d8cb87; clean after R04-c exact remote verification; same sole native owner task",
+    "lane_reason": "Self-authored fixed bounded offscreen GPU computation under ordinary existing device permissions; no account, security configuration, control plane, game, real prefix or display changes. Separate namespace; closed R04-b path and approvals remain untouched.",
+    "external_scope": "Compile owned native probe with existing gcc/Vulkan headers and run it in a new private namespace with fixed existing NVIDIA device nodes; readonly system libraries/hardware view, private work/cache/home, no host Steam/game/display/input/audio/network/IPC; no installs, credentials, original assets or host config writes",
+    "acceptance": "Real NVIDIA hardware executes a bounded32x32 Vulkan clear/image-to-buffer transfer; exact4096-byte RGBA readback succeeds; actual namespace protection and task-owned process teardown verified. This is no Windows/D3D12/game/MOD acceptance.",
+    "next_evidence": "Prepare self-authored Windows/D3D12 device probe with existing toolchain and exact isolated Proton route; separately narrow read-only per-game Cloud setting/legitimate launch preflight; no game or account writes"
   },
   "rounds": {
     "R01": {
@@ -451,20 +465,21 @@
       "interface_checks": ".local/r03/interface-checks.json"
     },
     "R04": {
-      "status": "PARTIAL_RUNTIME_PREREQUISITES_ONLY",
-      "preparation": "Private prefix/CLI accepted in R04-b; R04-c parsed3 installed PE images,57+28 main import descriptors/79names, current Steam/Cloud/display/GPU prerequisites; no game/GPU runtime yet",
-      "remaining": "Native GPU/display and exact legitimate game/Steam launch isolation; actual loader/MOD/coldstart/save/Cloud baseline remains NOT_RUN",
+      "status": "PARTIAL_NATIVE_GPU_ONLY",
+      "preparation": "R04-b private prefix/fixed CLI accepted; R04-c3PE images/79static dependencies; R04-d real NVIDIA offscreen Vulkan clear/transfer/exact4096-byte readback passed,23namespace+12Rootchecks,all protected inputs unchanged",
+      "remaining": "Windows/D3D12/presentation/fonts and exact legitimate Steam/game/save/Cloud route; actual loader/MOD/coldstart/fullbaseline NOT_RUN",
       "lane": "PER_UNIT",
       "contract": "docs/contracts/R04-b.json",
-      "evidence": "docs/evidence/R04-c.json",
-      "private_evidence": ".local/r04/bootstrap-post-registration.json",
-      "closed_unit": "R04-c",
+      "evidence": "docs/evidence/R04-d.json",
+      "private_evidence": ".local/r04/gpu/47d28f1adf0f4483b326a81b63f9a1cf/root-verification.json",
+      "closed_unit": "R04-d",
       "closed_units": [
         "R04-a",
         "R04-b",
-        "R04-c"
+        "R04-c",
+        "R04-d"
       ],
-      "sync": "PENDING_R04_C_PUSH"
+      "sync": "PENDING_R04_D_PUSH"
     }
   },
   "progress": {
@@ -474,15 +489,15 @@
     "completion_percent": null,
     "reason": "A01-A14 heterogeneous end-to-end results; no final result accepted yet",
     "planning_rounds": 1,
-    "execution_rounds_closed": 9,
-    "last_closed": "R04-c",
+    "execution_rounds_closed": 10,
+    "last_closed": "R04-d",
     "remaining_round_estimate": null,
     "forecast_confidence": "unknown; no final end-to-end acceptance throughput; incomplete prerequisites and heterogeneous remaining work",
-    "previous_goal_turn": "PROGRESS: R04-c read-only runtime prerequisite unit closed;3 actual PE images,6 reader checks,79 dependency names, exact Steam/Cloud/relaunch boundary and headless GPU route identified. Full A01-A14 unchanged0/14.",
-    "total_closed_units_including_planning": 10,
+    "previous_goal_turn": "PROGRESS: R04-c installed dependency unit remoteverified; R04-d native NVIDIA GPU actually executed clear/transfer/exact4096-byte readback,23boundary12Rootchecks and protected22hashes/1330game set unchanged. Full A01-A14 unchanged0/14.",
+    "total_closed_units_including_planning": 11,
     "changes": {
-      "execution": "Added bounded read-only PE dependency inspection; actual game/Steam/GPU/display execution remains NOT_RUN",
-      "evidence": "Current22 protected hashes,complete1330 game entry set/stamps,5613 Proton regular stamps and1896 links unchanged",
+      "execution": "Real native hardware clear/transfer/readback accepted; game/Windows-D3D12/Steam/save/Cloud/loader/MOD/UI remains NOT_RUN",
+      "evidence": "23namespace+12Rootchecks; PCI device match,exact4096-byte Root readback; initial private-cache expectation failure retained and narrowed to two generated installed-driver outputs",
       "scope": "Original A01-A14 and450 relevant catalog records unchanged"
     },
     "remaining_percentage": null
