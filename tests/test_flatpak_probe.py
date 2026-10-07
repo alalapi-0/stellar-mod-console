@@ -1,8 +1,9 @@
-import hashlib
+import io
 import json
 import os
 from pathlib import Path
 import subprocess
+import sys
 import tempfile
 import unittest
 from unittest.mock import patch
@@ -10,11 +11,46 @@ from unittest.mock import patch
 from src.testing import flatpak_probe as probe
 
 
-class Completed:
-    def __init__(self, code, out='', err=''):
+class Done:
+    def __init__(self, code, out=b'', err=b''):
         self.returncode = code
-        self.stdout = out
-        self.stderr = err
+        self.stdout = io.BytesIO(out if isinstance(out, bytes) else out.encode())
+        self.stderr = io.BytesIO(err if isinstance(err, bytes) else err.encode())
+        self.pid = -1
+
+    def poll(self):
+        return self.returncode
+
+    def wait(self, timeout=None):
+        return self.returncode
+
+
+class Hang:
+    def __init__(self):
+        self._out_r, self._out_w = os.pipe()
+        self._err_r, self._err_w = os.pipe()
+        self.stdout = os.fdopen(self._out_r, 'rb')
+        self.stderr = os.fdopen(self._err_r, 'rb')
+        self.returncode = None
+        self.pid = -1
+        self.reaped = False
+
+    def poll(self):
+        return self.returncode
+
+    def wait(self, timeout=None):
+        if self.returncode is None:
+            raise subprocess.TimeoutExpired('hang', timeout or 0)
+        return self.returncode
+
+    def terminate_owned(self):
+        self.reaped = True
+        self.returncode = -9
+        for fd in (self._out_w, self._err_w):
+            try:
+                os.close(fd)
+            except OSError:
+                pass
 
 
 def payload(**overrides):
@@ -44,17 +80,17 @@ class FlatpakProbeTests(unittest.TestCase):
         self.tmp.cleanup()
 
     def arm(self):
-        registration = self.scope / 'prelaunch.json'
-        probe.save(registration, {'unit': 'R04-n', 'candidate': 'fixed'})
-        digest = hashlib.sha256(registration.read_bytes()).hexdigest()
-        probe.save(self.scope / 'implementation.json', {
-            'contract_id': probe.CONTRACT,
-            'semantic_candidate': probe.semantic_candidate(),
-        })
+        path = self.scope / 'implementation.json'
+        probe.save(path, probe.registration_document())
+        digest = probe.sha_file(path)
         probe.save(self.scope / 'gate.json', {
             'contract': probe.CONTRACT, 'registration_sha256': digest,
             'judge': 'PASS', 'governor': 'APPROVE_FLATPAK_PROBE'})
         return digest
+
+    def launch(self, popen, **kwargs):
+        with patch.object(probe, 'read_deployments', return_value=probe.pinned_identity()):
+            return probe.execute(self.root, self.home, popen=popen, **kwargs)
 
     def test_closed_commands_deny_sockets_devices_and_host_filesystem(self):
         build = self.root / 'build'
@@ -190,51 +226,105 @@ class FlatpakProbeTests(unittest.TestCase):
     def test_missing_gate_output_reuse_and_init_failure_do_not_build(self):
         calls = []
 
-        def runner(args, timeout, env):
-            calls.append((args, env))
-            return Completed(1, '', probe.PREREQ_EXACT[0])
+        def popen(args, **kwargs):
+            calls.append((args, kwargs['env']))
+            return Done(1, b'', probe.PREREQ_EXACT[0])
 
         with self.assertRaises(probe.Refused):
-            probe.execute(self.root, self.identity, '0' * 64, runner, self.home)
+            self.launch(popen)
         self.assertEqual(calls, [])
         external = self.base / 'external'
         external.write_bytes(b'original')
         output = self.scope / 'result.json'
         output.symlink_to(external)
-        digest = self.arm()
+        self.arm()
         with self.assertRaises(probe.Refused):
-            probe.execute(self.root, self.identity, digest, runner, self.home)
+            self.launch(popen)
         self.assertEqual(external.read_bytes(), b'original')
         self.assertEqual(calls, [])
         output.unlink()
-        outcome = probe.execute(self.root, self.identity, digest, runner, self.home)
+        outcome = self.launch(popen)
         self.assertEqual(outcome, 'FLATPAK_SUPPORTED_PREREQUISITE_MISSING')
         self.assertEqual(len(calls), 1)
         self.assertEqual(calls[0][0][1], 'build-init')
         self.assertEqual(calls[0][1]['HOME'], os.environ['HOME'])
         self.assertNotIn('DISPLAY', calls[0][1])
+        result = json.loads((self.scope / 'result.json').read_text())
+        self.assertTrue(result['postflight_app_paths_absent'])
 
-    def test_timeout_and_residue_never_claim_success(self):
-        digest = self.arm()
+    def test_timeout_reaps_and_residue_never_claims_success(self):
+        self.arm()
+        hang = Hang()
 
-        def timeout(args, timeout_seconds, env):
-            raise subprocess.TimeoutExpired(args, timeout_seconds)
+        def popen(args, **kwargs):
+            return hang
 
-        self.assertEqual(probe.execute(self.root, self.identity, digest, timeout, self.home), 'PROBE_TIMEOUT')
+        self.assertEqual(self.launch(popen, init_timeout=0.2), 'PROBE_TIMEOUT')
+        self.assertTrue(hang.reaped)
+        result = json.loads((self.scope / 'result.json').read_text())
+        self.assertTrue(result['postflight_app_paths_absent'])
         (self.scope / 'result.json').unlink()
 
-        def succeed(args, timeout_seconds, env):
+        def succeed(args, **kwargs):
             if args[1] == 'build-init':
                 (self.root / 'build' / 'files').mkdir()
-                return Completed(0)
+                return Done(0)
             (self.home / '.var' / 'app' / probe.APP_ID).mkdir(parents=True)
-            return Completed(0, payload(), '')
+            return Done(0, payload(), b'')
 
-        self.assertEqual(probe.execute(self.root, self.identity, digest, succeed, self.home),
-                         'PROBE_FAILED_UNCLASSIFIED')
+        self.assertEqual(self.launch(succeed), 'PROBE_FAILED_UNCLASSIFIED')
         result = json.loads((self.scope / 'result.json').read_text())
         self.assertTrue(result['platform_25_08_is_not_steam_26_08'])
+        self.assertFalse(result['postflight_app_paths_absent'])
         self.assertNotEqual(result['outcome'], 'FLATPAK_RUNTIME_BOUNDARY_PROVED_WITH_DEFAULT_NVIDIA_EXTENSION')
+
+    def test_streaming_limit_and_timeout_reap_real_processes(self):
+        huge = subprocess.Popen(
+            [sys.executable, '-c', 'import sys; sys.stdout.buffer.write(b"x"*80000)'],
+            stdout=subprocess.PIPE, stderr=subprocess.PIPE, start_new_session=True)
+        limited = probe.collect_process(huge, 5, 1024)
+        self.assertTrue(limited['exceeded'])
+        self.assertIsNone(limited['stdout'])
+        self.assertIsNotNone(huge.poll())
+        sleeper = subprocess.Popen(
+            [sys.executable, '-c', 'import time; time.sleep(30)'],
+            stdout=subprocess.PIPE, stderr=subprocess.PIPE, start_new_session=True)
+        timed = probe.collect_process(sleeper, 0.2, 1024)
+        self.assertTrue(timed['timed_out'])
+        self.assertIsNotNone(sleeper.poll())
+
+    def test_tree_and_registration_digest_block_launch(self):
+        self.arm()
+        stale = probe.profile_pin(self.root)
+        os.utime(self.root / 'probe.sh', None)
+        calls = []
+
+        def popen(args, **kwargs):
+            calls.append(args)
+
+        with patch.object(probe, 'profile_pin', return_value=stale):
+            with self.assertRaises(probe.Refused) as changed:
+                self.launch(popen)
+        self.assertEqual(str(changed.exception), 'TREE_CHANGED')
+        self.assertEqual(calls, [])
+        (self.scope / 'implementation.json').write_bytes(b'{}\n')
+        with self.assertRaises(probe.Refused):
+            self.launch(popen)
+        self.assertEqual(calls, [])
+        self.arm()
+        gate = json.loads((self.scope / 'gate.json').read_text())
+        gate['registration_sha256'] = '0' * 64
+        probe.save(self.scope / 'gate.json', gate)
+        with self.assertRaises(probe.Refused):
+            self.launch(popen)
+        self.assertEqual(calls, [])
+
+    def test_deployment_reader_binds_real_files_and_rejects_mismatch(self):
+        self.assertEqual(probe.read_deployments(*probe.deployment_paths()), probe.pinned_identity())
+        flatpak = self.base / 'flatpak'
+        flatpak.write_bytes(b'not-the-binary')
+        with self.assertRaises(probe.Refused):
+            probe.read_deployments(flatpak, flatpak, flatpak)
 
     def test_private_mode_ancestor_change_and_registration_binding(self):
         self.scope.chmod(0o755)
@@ -248,17 +338,22 @@ class FlatpakProbeTests(unittest.TestCase):
         self.scope.chmod(0o700)
         calls = []
 
-        def runner(args, timeout, env):
+        def popen(args, **kwargs):
             calls.append(args)
 
-        digest = self.arm()
+        self.arm()
         registration = json.loads((self.scope / 'implementation.json').read_text())
         registration['semantic_candidate'] = '0' * 64
         probe.save(self.scope / 'implementation.json', registration)
         with self.assertRaises(probe.Refused):
-            probe.execute(self.root, self.identity, digest, runner, self.home)
+            self.launch(popen)
         self.assertEqual(calls, [])
+        document = probe.registration_document()
+        self.assertEqual(document['command_prefix'][:2], [probe.FLATPAK, 'build'])
+        self.assertEqual(document['environment_allowlist'][:2], ['HOME', 'PATH'])
+        self.assertIn('nvidia_marker_present', document['expected_payload_keys'])
         text = probe.payload_bytes().decode()
         self.assertIn('/app/sentinel.path', text)
         self.assertIn('/app/nvidia.sha256', text)
+        self.assertIn('/proc/sysvipc/shm', text)
         self.assertIn(probe.PINNED_NVIDIA_SHA, probe.pinned_identity()['nvidia_metadata_sha256'])

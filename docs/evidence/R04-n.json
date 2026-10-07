@@ -1,6 +1,6 @@
 {
   "unit": "R04-n",
-  "phase": "REPAIRED_CANDIDATE_PENDING_FRESH_JUDGE",
+  "phase": "SECOND_REPAIR_PENDING_FRESH_JUDGE",
   "contract": "docs/contracts/R04-n.json",
   "contract_status": "ACTIVE_UNFINISHED",
   "result": "NONE_RUNTIME_NOT_RUN",
@@ -64,21 +64,21 @@
   "contract_acceptance": {
     "C01": "ROOT_VERIFIED_PREPARATION_RECORD",
     "C02": "SYNTHETIC_PASS_PRIVATE_MODE_ANCESTOR_CHANGE",
-    "C03": "PINNED_FLATPAK_PLATFORM_AND_NVIDIA_DEPLOYMENT",
+    "C03": "REAL_DEPLOYMENT_FILES_READ_RUNTIME_NOT_RUN",
     "C04": "SYNTHETIC_COMMAND_PASS_BUILD_INIT_NOT_RUN",
     "C05": "SYNTHETIC_COMMAND_PASS_INCLUDING_HOST_RESET_BUILD_NOT_RUN",
-    "C06": "PAYLOAD_CHECKS_SENTINEL_PATH_RUNTIME_CONTEXT_AND_WRITES_SANDBOX_NOT_RUN",
+    "C06": "PAYLOAD_REQUIRES_TMPFS_AND_SYSVIPC_HEADER_SANDBOX_NOT_RUN",
     "C07": "NVIDIA_MARKER_BOUND_TO_PINNED_DIGEST_NOT_OBSERVED",
-    "C08": "OUTPUT_LIMIT_ENFORCED_SYNTHETIC",
-    "C09": "NINE_SYNTHETIC_TESTS_PASS",
-    "C10": "REGISTRATION_COMMAND_AND_ENV_ALLOWLIST_CHECKED_JUDGE_PENDING",
+    "C08": "BOUNDED_STREAMING_CAPTURE_REAPS_LOCAL_PROCESS_FLATPAK_NOT_RUN",
+    "C09": "TWELVE_TESTS_PASS_FLATPAK_NOT_LAUNCHED",
+    "C10": "REGISTRATION_FILE_DIGEST_COMMAND_ENV_AND_PINS_BOUND_JUDGE_PENDING",
     "C11": "NOT_RUN",
     "C12": "NOT_RUN",
     "C13": "PARTIAL_25_08_VERSUS_26_08_RETAINED_RUNTIME_NOT_RUN"
   },
   "tests": {
     "command": "python3 -B -m unittest tests.test_flatpak_probe -v",
-    "passed": 9,
+    "passed": 12,
     "failed": 0,
     "flatpak_or_bwrap_launches": 0
   },
@@ -124,5 +124,5 @@
     }
   ],
   "user_pause": "Lifted for Cursor by direct execution of EXECUTION_PROMPT.md. Codex Goal remains paused.",
-  "next_action": "Previous prelaunch Judge returned FAIL. Repaired candidate awaits a fresh read-only Judge before any build-init/build."
+  "next_action": "Second prelaunch Judge returned FAIL. This repair binds deployment file reads, tree pins, bounded process collection, and the registration file digest. It awaits a fresh read-only Judge before any build-init/build."
 }

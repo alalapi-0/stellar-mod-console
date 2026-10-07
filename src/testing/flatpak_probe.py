@@ -6,11 +6,15 @@ one build. It is not a Steam, game, login, or bwrap launcher.
 from __future__ import annotations
 
 import hashlib
+import io
 import json
 import os
 from pathlib import Path
+import selectors
+import signal
 import stat
 import subprocess
+import time
 
 from src.testing.isolation import disjoint, owned_ancestors
 
@@ -69,11 +73,9 @@ denied() {
   fi
 }
 tmp_ok=yes
-for spec in "/tmp tmpfs" "/dev/shm tmpfs"; do
-  set -- $spec
-  if ( : > "$1/r04n-write-probe" ) 2>/dev/null; then
-    rm -f "$1/r04n-write-probe"
-    kind=$(awk -v path="$1" '$5==path { for (i=6; i<=NF; i++) if ($i=="-") { print $(i+1); exit } }' /proc/self/mountinfo 2>/dev/null || true)
+for path in /tmp /dev/shm; do
+  if [ -d "$path" ]; then
+    kind=$(awk -v target="$path" '$5==target { for (i=6; i<=NF; i++) if ($i=="-") { print $(i+1); exit } }' /proc/self/mountinfo 2>/dev/null || true)
     if [ "$kind" != tmpfs ]; then tmp_ok=no; fi
   fi
 done
@@ -120,6 +122,12 @@ fi
 if [ -f "$info" ] && grep -E -q 'shared=([^;\n]*;)*network(;|$)' "$info"; then network=no; fi
 ipc=yes
 if [ -f "$info" ] && grep -E -q 'shared=([^;\n]*;)*ipc(;|$)' "$info"; then ipc=no; fi
+if [ ! -r /proc/sysvipc/shm ]; then
+  ipc=no
+else
+  lines=$(wc -l < /proc/sysvipc/shm | tr -d ' ')
+  if [ "$lines" != 1 ]; then ipc=no; fi
+fi
 caps=no
 process_separated=no
 if [ -r /proc/self/status ]; then
@@ -133,8 +141,13 @@ if [ -f "$info" ] && grep -E -q '(^|/)org\.freedesktop\.Platform/x86_64/25\.08($
   runtime_exact=yes
 fi
 writes=yes
-for dir in / /usr /etc /opt /srv /run /dev /sys /proc /app /var /home; do
-  if [ "$(denied "$dir")" != yes ]; then writes=no; fi
+for dir in /* /tmp /dev /dev/shm /run /proc /sys /app /var /home; do
+  if [ -d "$dir" ] && [ "$(denied "$dir")" != yes ]; then
+    case "$dir" in
+      /tmp|/dev/shm) ;;
+      *) writes=no ;;
+    esac
+  fi
 done
 nvidia=no
 ambiguous=no
@@ -193,12 +206,12 @@ def stamp(path):
     return [st.st_dev, st.st_ino, st.st_mode, st.st_size, st.st_mtime_ns, st.st_ctime_ns]
 
 
-def sha_file(path):
+def sha_file(path, single_link=True):
     path = Path(path)
     fd = os.open(path, os.O_RDONLY | os.O_NOFOLLOW | os.O_NONBLOCK)
     with os.fdopen(fd, 'rb', buffering=0) as stream:
         before = os.fstat(stream.fileno())
-        if not stat.S_ISREG(before.st_mode) or before.st_nlink != 1:
+        if not stat.S_ISREG(before.st_mode) or (single_link and before.st_nlink != 1):
             raise Refused('HASH_NOT_REGULAR')
         digest = hashlib.file_digest(stream, 'sha256').hexdigest()
         after = os.fstat(stream.fileno())
@@ -268,6 +281,137 @@ def assert_snapshot(snapshot):
         st = Path(path).lstat()
         if (st.st_dev, st.st_ino, st.st_mode) != (dev, ino, mode) or Path(path).is_symlink():
             raise Refused('ANCESTOR_CHANGED')
+
+
+def deployment_paths(home=None):
+    home = Path(home or os.environ['HOME'])
+    runtime = home / '.local/share/flatpak/runtime'
+    return (Path(FLATPAK),
+            runtime / 'org.freedesktop.Platform/x86_64/25.08/active/metadata',
+            runtime / 'org.freedesktop.Platform.GL.nvidia-595-91-07/x86_64/1.4/active')
+
+
+def read_deployments(flatpak, platform_metadata, nvidia_active):
+    if sha_file(flatpak, single_link=False) != PINNED_FLATPAK_SHA:
+        raise Refused('FLATPAK_IDENTITY')
+    if sha_file(platform_metadata, single_link=False) != PINNED_PLATFORM_SHA:
+        raise Refused('PLATFORM_IDENTITY')
+    active = Path(nvidia_active)
+    if not active.is_symlink():
+        raise Refused('NVIDIA_IDENTITY')
+    if Path(os.readlink(active)).name != PINNED_NVIDIA_COMMIT:
+        raise Refused('NVIDIA_IDENTITY')
+    if sha_file(active / 'metadata', single_link=False) != PINNED_NVIDIA_SHA:
+        raise Refused('NVIDIA_IDENTITY')
+    return pinned_identity()
+
+
+def tree_pin(paths):
+    rows = []
+    for path in paths:
+        path = Path(path)
+        st = path.lstat()
+        if stat.S_ISLNK(st.st_mode):
+            raise Refused('PROFILE_LINK_OR_OWNER')
+        rows.append((str(path), st.st_dev, st.st_ino, st.st_mode, st.st_size, st.st_mtime_ns))
+    return tuple(rows)
+
+
+def assert_tree_pin(pin):
+    for path, dev, ino, mode, size, mtime in pin:
+        current = Path(path)
+        st = current.lstat()
+        if current.is_symlink() or (st.st_dev, st.st_ino, st.st_mode, st.st_size, st.st_mtime_ns) != (dev, ino, mode, size, mtime):
+            raise Refused('TREE_CHANGED')
+
+
+def profile_pin(root):
+    root = Path(root)
+    return tree_pin((root, root / 'build', root / 'probe.sh', root / 'manifest.json', root / SENTINEL_NAME))
+
+
+def reap(proc):
+    if proc.poll() is not None:
+        return proc.returncode
+    killer = getattr(proc, 'terminate_owned', None)
+    if killer is not None:
+        killer()
+        return proc.poll()
+    os.killpg(proc.pid, signal.SIGKILL)
+    return proc.wait(timeout=5)
+
+
+def read_capped(stream, limit):
+    data = bytearray()
+    while len(data) <= limit:
+        block = stream.read(min(4096, limit + 1 - len(data)))
+        if not block:
+            return bytes(data)
+        data.extend(block)
+    return None
+
+
+def _selectable(stream):
+    try:
+        stream.fileno()
+    except (AttributeError, OSError, io.UnsupportedOperation):
+        return False
+    return True
+
+
+def _collect_selectable(proc, timeout, limit):
+    selector = selectors.DefaultSelector()
+    buffers = {'out': bytearray(), 'err': bytearray()}
+    exceeded = False
+    timed_out = False
+    try:
+        selector.register(proc.stdout, selectors.EVENT_READ, 'out')
+        selector.register(proc.stderr, selectors.EVENT_READ, 'err')
+        deadline = time.monotonic() + timeout
+        while selector.get_map():
+            remaining = deadline - time.monotonic()
+            if remaining <= 0:
+                timed_out = True
+                break
+            events = selector.select(remaining)
+            if not events:
+                timed_out = True
+                break
+            for key, _ in events:
+                block = os.read(key.fileobj.fileno(), 4096)
+                if not block:
+                    selector.unregister(key.fileobj)
+                    continue
+                buffers[key.data].extend(block)
+                if len(buffers[key.data]) > limit:
+                    exceeded = True
+                    break
+            if exceeded:
+                break
+    finally:
+        selector.close()
+    if exceeded or timed_out:
+        return {'stdout': None, 'stderr': None, 'exceeded': exceeded, 'timed_out': timed_out}
+    return {'stdout': bytes(buffers['out']), 'stderr': bytes(buffers['err']),
+            'exceeded': False, 'timed_out': False}
+
+
+def collect_process(proc, timeout, limit):
+    if _selectable(proc.stdout) and _selectable(proc.stderr):
+        outcome = _collect_selectable(proc, timeout, limit)
+    else:
+        stdout = read_capped(proc.stdout, limit)
+        stderr = read_capped(proc.stderr, limit)
+        outcome = {'stdout': stdout, 'stderr': stderr,
+                   'exceeded': stdout is None or stderr is None, 'timed_out': False}
+    outcome['code'] = reap(proc)
+    for stream in (getattr(proc, 'stdout', None), getattr(proc, 'stderr', None)):
+        if stream is not None:
+            try:
+                stream.close()
+            except Exception:
+                pass
+    return outcome
 
 
 def app_paths(home):
@@ -501,95 +645,140 @@ def write_result(base, result):
         stream.write('\n')
 
 
+def registration_document():
+    return {'contract_id': CONTRACT, 'semantic_candidate': semantic_candidate(),
+            'flatpak_sha256': PINNED_FLATPAK_SHA, 'platform_metadata_sha256': PINNED_PLATFORM_SHA,
+            'nvidia_metadata_sha256': PINNED_NVIDIA_SHA, 'nvidia_commit': PINNED_NVIDIA_COMMIT,
+            'payload_sha256': payload_digest(),
+            'command_prefix': [FLATPAK, 'build', '--runtime', '--readonly', '--die-with-parent',
+                               '--unshare=network', '--unshare=ipc', '--filesystem=host:reset'],
+            'environment_allowlist': list(ENV_ALLOWLIST + ENV_OPTIONAL),
+            'expected_payload_keys': list(PAYLOAD_KEYS)}
+
+
 def require_registration():
     path = BASE / 'implementation.json'
     if not path.is_file() or path.is_symlink() or path.stat().st_nlink != 1:
         raise Refused('REGISTRATION_REQUIRED')
+    digest = sha_file(path)
     registration = json.loads(path.read_text())
-    if (registration.get('contract_id') != CONTRACT or
-            registration.get('semantic_candidate') != semantic_candidate()):
+    if registration != registration_document():
         raise Refused('REGISTRATION_MISMATCH')
-    return registration
+    return digest
 
 
-def gate_matches(base, registration_sha):
-    path = Path(base) / 'gate.json'
+def gate_matches(digest):
+    path = BASE / 'gate.json'
     if not path.is_file() or path.is_symlink():
         raise Refused('EXACT_FRESH_REVIEW_REQUIRED')
     gate = json.loads(path.read_text())
-    expected = {'contract': CONTRACT, 'registration_sha256': registration_sha,
+    expected = {'contract': CONTRACT, 'registration_sha256': digest,
                 'judge': 'PASS', 'governor': 'APPROVE_FLATPAK_PROBE'}
     if gate != expected:
         raise Refused('EXACT_FRESH_REVIEW_REQUIRED')
+
+
+def exclusive_write(path, data, mode):
+    if os.path.lexists(path):
+        raise Refused('PAYLOAD_REUSE')
+    fd = os.open(path, os.O_WRONLY | os.O_CREAT | os.O_EXCL | os.O_NOFOLLOW, mode)
+    with os.fdopen(fd, 'wb') as stream:
+        stream.write(data)
 
 
 def install_payload(files, root):
     target = files / 'probe.sh'
     sentinel = files / 'sentinel.path'
     nvidia = files / 'nvidia.sha256'
-    for path in (target, sentinel, nvidia):
-        if os.path.lexists(path):
-            raise Refused('PAYLOAD_REUSE')
-    target.write_bytes(payload_bytes())
-    os.chmod(target, 0o500)
-    sentinel.write_text(str(root / SENTINEL_NAME) + '\n')
-    os.chmod(sentinel, 0o400)
-    nvidia.write_text(PINNED_NVIDIA_SHA + '\n')
-    os.chmod(nvidia, 0o400)
+    exclusive_write(target, payload_bytes(), 0o500)
+    exclusive_write(sentinel, (str(root / SENTINEL_NAME) + '\n').encode(), 0o400)
+    exclusive_write(nvidia, (PINNED_NVIDIA_SHA + '\n').encode(), 0o400)
     if sha_file(target) != payload_digest() or nvidia.read_text().strip() != PINNED_NVIDIA_SHA:
         raise Refused('PAYLOAD_IDENTITY')
+    return tree_pin((target, sentinel, nvidia))
 
 
-def execute(root, identity, registration_sha, runner, home):
+def postflight(home, proc=None):
+    if proc is not None:
+        reap(proc)
+    return any(path.exists() or path.is_symlink() for path in app_paths(home))
+
+
+def execute(root, home, popen=subprocess.Popen, init_timeout=60, build_timeout=30):
     root = Path(root)
-    manifest = validate(root)
-    snapshot = ancestor_snapshot(root)
-    require_new_result(BASE)
-    require_registration()
-    gate_matches(BASE, registration_sha)
-    require_identity(identity)
-    build_dir = root / 'build'
-    init_command = build_init_command(build_dir)
-    command = build_command(build_dir)
-    if command != build_command_unchecked(build_dir):
-        raise Refused('COMMAND_SHAPE')
-    if manifest['payload_sha256'] != payload_digest():
-        raise Refused('PAYLOAD_IDENTITY')
-    assert_app_paths_absent(home)
-    env = launch_environment(None)
-    assert_snapshot(snapshot)
+    proc = None
     try:
-        init = runner(init_command, 60, env)
-    except subprocess.TimeoutExpired:
-        write_result(BASE, {'outcome': classify_timeout(), 'stage': 'build-init', 'build_started': False})
-        return classify_timeout()
-    if init.returncode != 0:
-        outcome = classify_init(init.returncode, bounded_stderr(init.stderr))
-        write_result(BASE, {'outcome': outcome, 'stage': 'build-init', 'build_started': False})
+        manifest = validate(root)
+        snapshot = ancestor_snapshot(root)
+        require_new_result(BASE)
+        digest = require_registration()
+        gate_matches(digest)
+        read_deployments(*deployment_paths())
+        build_dir = root / 'build'
+        init_command = build_init_command(build_dir)
+        command = build_command(build_dir)
+        if (command != build_command_unchecked(build_dir) or
+                command[:8] != registration_document()['command_prefix']):
+            raise Refused('COMMAND_SHAPE')
+        if manifest['payload_sha256'] != payload_digest():
+            raise Refused('PAYLOAD_IDENTITY')
+        if postflight(home):
+            raise Refused('APP_PATH_RESIDUE')
+        env = launch_environment(None)
+        assert_snapshot(snapshot)
+        assert_tree_pin(profile_pin(root))
+        proc = popen(init_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, env=env,
+                     start_new_session=True, close_fds=True)
+        init = collect_process(proc, init_timeout, OUTPUT_LIMIT)
+        proc = None
+        residue = postflight(home)
+        if init['timed_out']:
+            write_result(BASE, {'outcome': classify_timeout(), 'stage': 'build-init', 'build_started': False,
+                                'postflight_app_paths_absent': not residue})
+            return classify_timeout()
+        if init['exceeded']:
+            write_result(BASE, {'outcome': 'PROBE_FAILED_UNCLASSIFIED', 'stage': 'build-init',
+                                'build_started': False, 'distinction': 'OUTPUT_LIMIT',
+                                'postflight_app_paths_absent': not residue})
+            return 'PROBE_FAILED_UNCLASSIFIED'
+        if init['code'] != 0:
+            stderr = '' if init['stderr'] is None else init['stderr'].decode('utf-8', 'replace')
+            outcome = classify_init(init['code'], stderr)
+            write_result(BASE, {'outcome': outcome, 'stage': 'build-init', 'build_started': False,
+                                'postflight_app_paths_absent': not residue})
+            return outcome
+        files = build_dir / 'files'
+        if not files.is_dir() or files.is_symlink():
+            write_result(BASE, {'outcome': 'FLATPAK_SUPPORTED_PREREQUISITE_MISSING', 'stage': 'build-init',
+                                'build_started': False, 'distinction': 'FILES_DIRECTORY_ABSENT',
+                                'postflight_app_paths_absent': not residue})
+            return 'FLATPAK_SUPPORTED_PREREQUISITE_MISSING'
+        payload_pin = install_payload(files, root)
+        assert_snapshot(snapshot)
+        assert_tree_pin(payload_pin)
+        proc = popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, env=env,
+                     start_new_session=True, close_fds=True)
+        build = collect_process(proc, build_timeout, OUTPUT_LIMIT)
+        proc = None
+        residue = postflight(home)
+        if build['timed_out']:
+            write_result(BASE, {'outcome': classify_timeout(), 'stage': 'build', 'build_started': True,
+                                'postflight_app_paths_absent': not residue})
+            return classify_timeout()
+        if build['exceeded'] or build['stdout'] is None:
+            write_result(BASE, {'outcome': 'PROBE_FAILED_UNCLASSIFIED', 'stage': 'build', 'build_started': True,
+                                'distinction': 'OUTPUT_LIMIT', 'postflight_app_paths_absent': not residue})
+            return 'PROBE_FAILED_UNCLASSIFIED'
+        stdout = build['stdout'].decode('utf-8', 'replace')
+        stderr = build['stderr'].decode('utf-8', 'replace')
+        outcome = apply_residue(classify_build(build['code'], stdout, stderr), residue)
+        write_result(BASE, {'outcome': outcome, 'stage': 'build', 'build_started': True,
+                            'platform_25_08_is_not_steam_26_08': True,
+                            'postflight_app_paths_absent': not residue})
         return outcome
-    files = build_dir / 'files'
-    if not files.is_dir() or files.is_symlink():
-        write_result(BASE, {'outcome': 'FLATPAK_SUPPORTED_PREREQUISITE_MISSING', 'stage': 'build-init',
-                            'build_started': False, 'distinction': 'FILES_DIRECTORY_ABSENT'})
-        return 'FLATPAK_SUPPORTED_PREREQUISITE_MISSING'
-    install_payload(files, root)
-    assert_snapshot(snapshot)
-    try:
-        build = runner(command, 30, env)
-    except subprocess.TimeoutExpired:
-        write_result(BASE, {'outcome': classify_timeout(), 'stage': 'build', 'build_started': True})
-        return classify_timeout()
-    stdout, stderr = bound_pair(build.stdout, build.stderr)
-    if stdout is None:
-        write_result(BASE, {'outcome': 'PROBE_FAILED_UNCLASSIFIED', 'stage': 'build',
-                            'build_started': True, 'distinction': 'OUTPUT_LIMIT'})
-        return 'PROBE_FAILED_UNCLASSIFIED'
-    outcome = classify_build(build.returncode, stdout, stderr)
-    residue = any(path.exists() or path.is_symlink() for path in app_paths(home))
-    outcome = apply_residue(outcome, residue)
-    write_result(BASE, {'outcome': outcome, 'stage': 'build', 'build_started': True,
-                        'platform_25_08_is_not_steam_26_08': True})
-    return outcome
+    finally:
+        if proc is not None:
+            reap(proc)
 
 
 def bounded_stderr(text):
