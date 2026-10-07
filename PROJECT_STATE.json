@@ -361,7 +361,7 @@
     "visibility": "PUBLIC_VERIFIED",
     "initial_branch": "main",
     "implementation_branch_policy": "Separate implementation branch; push each round; no automatic merge",
-    "sync_status": "R01-inc1 verified; R03-inc1 source/evidence pending exact normal commit/push/remote verification",
+    "sync_status": "VERIFIED R03-inc1 content commit; current closure metadata identity from git HEAD and GitHub branch ref",
     "head_identity": "Use git HEAD and the remote ref; do not store a self-referential commit hash",
     "branch": "impl/mod-console",
     "verified_content_commits": {
@@ -375,7 +375,8 @@
       "R04-b": "b6f06143be519ccbfe759f611783e0aa21ae03f3",
       "R04-c": "7c4baad251af9aa751393f689c4c47a576d8cb87",
       "R04-d": "3760316defe415fb1cce6b883ed439b9c8703c04",
-      "R01-inc1": "696507ab3b5ac0ed222e03fc3cf4191a98a38b5b"
+      "R01-inc1": "696507ab3b5ac0ed222e03fc3cf4191a98a38b5b",
+      "R03-inc1": "b6c9dedac25588aaa87b86fcf0822e8d8f8428ad"
     }
   },
   "cumulative": {
@@ -569,7 +570,7 @@
       "private_graph": ".local/r03/inc1/conflicts.json",
       "closed_unit": "R03-inc1",
       "remaining": "Exact dynamic/configured keybinds and actual property-write ownership, native/Blueprint/desktop-tool interfaces, raw CNS format repair choices, resource/DLC/body prerequisites and real runtime compatibility",
-      "sync": "PENDING_R03_INC1_PUSH",
+      "sync": "VERIFIED R03-inc1 GitHub impl/mod-console == local b6c9dedac25588aaa87b86fcf0822e8d8f8428ad",
       "closed_units": [
         "R03-a",
         "R03-b",
