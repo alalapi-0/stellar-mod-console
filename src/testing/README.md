@@ -60,3 +60,31 @@ python3 -B -m src.testing.gpu_probe
 Root 另核对精确回读、PCI 身份、所有输出和保护前像。该证据只证明原生
 Vulkan 离屏清屏/复制可用；Windows/D3D12、窗口呈现、中文字体、Steam、
 存档/云同步、加载器和 MOD 兼容仍需各自的真实验证。
+
+R04-e 的 `d3d12_probe` 用现有 GCC/binutils 编译自有、无 CRT 的固定 64 位
+Windows 控制台探针。GNU ld 直接把 ELF 目标链接为 PE；临时自有 DLL 仅用于
+生成 KERNEL32 导入库，构建后删除，不进入运行环境。独立 PE 解析器校验
+固定导入、NX、动态基址和控制台类型。没有可配置程序、命令、前缀或环境入口。
+
+```sh
+python3 -B -m src.testing.d3d12_probe
+python3 -B -m unittest discover -s tests -p 'test_d3d12_probe.py' -v
+```
+
+每次使用新私有前缀和上述三个 GPU 设备，不复用 R04-b 的启动批准。
+冻结 Proton 原目录只读，空客户端、私有 home/cache/run/shm、网络与 PID
+隔离在启动前实测。固定 DLL 选择只作用于本次命名空间。前缀准备 40 秒，
+Windows 探针 20 秒，wineserver 等待 15 秒，整个命名空间 90 秒；GPU fence
+最多等待 2 秒。超时结束本次拥有的进程组，最终销毁整个私有 PID 命名空间。
+
+已实测：首个 Windows 探针正常退出并报告 DXGI `0x887a0004`；核对冻结
+Proton 的 `runinprefix` 跳过前缀更新后，固定选择原有 DXVK/vkd3d DLL 在
+新前缀复测。DXVK 初始化有日志，但 Windows 步骤超过 20 秒。两次启动前
+27 项边界检查和 Root 的原始文件/存档保护核对通过；第二次超时后内部检查
+未运行，主机侧保护与命名空间父进程回收另已核实。随后进程组超时修复通过
+真实继承管道子进程的回归检查；修复后的启动器未再次运行 Windows 探针。
+
+因此 D3D12 设备、清屏、复制、精确回读均未验收，继续使用原始失败记录。
+原始前缀、日志、输入身份与输出清单位于 `.local/r04/d3d12/`，公开脱敏事实
+位于 `docs/evidence/R04-e.json`。不把文件存在或原生 Vulkan 成功当作 Windows
+图形证据，也不改变真实游戏、Steam、账户、Cloud、存档或 MOD 配置。

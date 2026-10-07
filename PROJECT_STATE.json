@@ -15,9 +15,9 @@
   "goal_mode_started": true,
   "implementation_started": true,
   "phase": "P1",
-  "current_round": "R03-inc1",
-  "round_status": "COMPLETE_STATIC_INCREMENT; FULL_GOAL_PARTIAL",
-  "next_round": "R04-e",
+  "current_round": "R04-e",
+  "round_status": "COMPLETE_PREREQUISITE_DIAGNOSTIC; WINDOWS_GRAPHICS_NOT_ACCEPTED; FULL_GOAL_PARTIAL",
+  "next_round": "R04-f",
   "protected": [
     "Existing game files and saves",
     "Original MOD packages and downloads",
@@ -361,7 +361,7 @@
     "visibility": "PUBLIC_VERIFIED",
     "initial_branch": "main",
     "implementation_branch_policy": "Separate implementation branch; push each round; no automatic merge",
-    "sync_status": "VERIFIED R03-inc1 content commit; current closure metadata identity from git HEAD and GitHub branch ref",
+    "sync_status": "PENDING R04-e bounded diagnostic source delivery",
     "head_identity": "Use git HEAD and the remote ref; do not store a self-referential commit hash",
     "branch": "impl/mod-console",
     "verified_content_commits": {
@@ -467,25 +467,73 @@
         "method": "Initial metadata match summary counted empty keys",
         "resolution": "Nonempty provider evidence gives0matches and7remaining keys; corrected before authoritative publication",
         "evidence": ".local/r03/inc1/added-pak-checks.json"
+      },
+      {
+        "round": "R04-e",
+        "target": "Own ELF-to-PE build",
+        "version": "GNU binutils2.46",
+        "failure_class": "OBJCOPY_RELOCATED_ELF_SYMBOL_INDEX",
+        "resolution": "2owned conversion shapes fail; direct ld -mi386pep on ELF succeeds; stub-only objcopy works, no install",
+        "evidence": "docs/evidence/R04-e.json"
+      },
+      {
+        "round": "R04-e",
+        "target": "Primary ABI slot extraction/PE compile/validation",
+        "version": "Primary header pinned adbd6f3",
+        "failure_class": "CONDITIONAL_DECLARATIONS_AND_LOCAL_VALIDATOR_ERRORS",
+        "resolution": "Conditional duplicate/empty slot maps fixed before compile; Werror formatting and import dictionary handling repaired; actual PE checks pass",
+        "evidence": "docs/evidence/R04-e.json"
+      },
+      {
+        "round": "R04-e",
+        "target": "First fixed headless Windows DXGI launch",
+        "version": "9ace5908f4372e3f8f67439e97eb77f11b103469de218f3641e5f358690a5e19",
+        "failure_class": "DXGI_ERROR_UNSUPPORTED_0x887a0004",
+        "resolution": "Own PE diagnostic ran; frozen Proton runinprefix skips setup_prefix/native overrides; next fresh namespace chooses original native DLLs",
+        "evidence": "docs/evidence/R04-e.json"
+      },
+      {
+        "round": "R04-e",
+        "target": "Second native-DLL Windows graphics launch",
+        "version": "8a321571fcc1db8b778f8fef69dd97372e7f90c6b1c4aab69c1b9bc5330aae0e",
+        "failure_class": "GRAPHICS_STEP_TIMEOUT_AND_INHERITED_PIPE_COLLECTION_TIMEOUT",
+        "resolution": "20-second graphics plus5-second collector timeout; namespace reaped, originals preserved; exact new-session group collector repaired,5tests pass; no unchanged third graphics launch",
+        "evidence": "docs/evidence/R04-e.json"
+      },
+      {
+        "round": "R04-e",
+        "target": "Root exact owned namespace scan",
+        "version": "2registered private PID namespaces",
+        "failure_class": "PREEXISTING_UNREADABLE_PROCESS_IDENTITIES",
+        "resolution": "3same-owner unreadable processes predate both launches by exact kernel start time; unrelated processes excluded without stopping; owned namespaces empty",
+        "evidence": "docs/evidence/R04-e.json"
+      },
+      {
+        "round": "R04-e",
+        "target": "Canonical closure field",
+        "version": "PROJECT_STATE.json",
+        "failure_class": "LOCAL_SYNC_FIELD_NAME_MISMATCH",
+        "resolution": "Closure preparation used github instead of existing delivery; failed before state write; corrected existing field without a second state record",
+        "evidence": "docs/evidence/R04-e.json"
       }
     ],
     "token_cost_telemetry": {
-      "native_goal_tokens_observed": 2235577,
-      "source": "native get_goal at R03-inc1 closure checkpoint,updatedAt1791378604",
+      "native_goal_tokens_observed": 2445654,
+      "source": "Native get_goal at R04-e closure preparation,updatedAt1791380136",
       "coverage": "Cumulative tokens/time reported by native Goal; per-role and cost coverage unavailable; no manual token estimate",
-      "native_goal_time_seconds_observed": 10512,
+      "native_goal_time_seconds_observed": 12044,
       "active_execution_time": "UNAVAILABLE; wall time does not prove active minutes",
       "cost": "UNAVAILABLE",
       "budget": "No explicit token budget; native remainingTokens null"
     },
-    "execution_units_closed": 12,
+    "execution_units_closed": 13,
     "health_checkpoint": {
       "first_250k_rebaseline_completed": true,
       "status": "HEALTHY",
       "baseline_tokens_observed": 289664,
       "checkpoint": "R03-a closure",
       "reason": "Material candidates, new first-time checks and completed delivery units; no equivalent unresolved retries",
-      "next_checkpoint": "No equivalent no-progress loop: new classifier/index/declared-reference evidence and bounded passing checks delivered. Raw-retoc route ended on prerequisite refusal; temporary match-count defect diagnosed/corrected without asset changes",
+      "next_checkpoint": "Material first-time PE build, actual Windows diagnostic, native-DLL prerequisite and timeout regression delivered; unresolved headless graphics route stopped after2distinct methods. Continue private graphics prerequisite without unchanged retries.",
       "cooldown_rule": "75,000 additional tokens or 30 directly evidenced active minutes; newly accepted milestone resets no-progress facts"
     }
   },
@@ -507,10 +555,10 @@
     },
     {
       "scope": "Runtime game tests",
-      "reason": "8 real-prefix saves and3in-loader backups protected. Private prefix/CLI and native headless NVIDIA GPU transfer/readback accepted. Shipping imports Steam restart/init and RemoteStorage016 with existing client/Cloud metadata; legitimate Windows/presentation/game launch and local/Cloud progress isolation remain unestablished. No account/Cloud/session/activation changes authorized.",
-      "state": "GAME_NOT_RUN; exact legitimate protected runtime route required",
-      "evidence": "docs/evidence/R04-d.json",
-      "next": "Prepare exact legitimate isolated client/game/display route; owner approval only if protected account/Cloud settings must change"
+      "reason": "Real save/loader backups protected. Own private Windows PE diagnostic ran; native DLL selection diagnosed but headless DXVK initialization times out. D3D12/presentation and legitimate isolated Steam/game/local/Cloud progress route remain unestablished; no real account/Cloud/session/activation changes authorized.",
+      "state": "GAME_NOT_RUN; PRIVATE_WINDOWS_GRAPHICS_NOT_ACCEPTED",
+      "evidence": "docs/evidence/R04-e.json",
+      "next": "Resolve private Wine graphics initialization with actual loader diagnostics and a validated private display/runtime route; prepare legitimate game/save/Cloud isolation. Preserve current original/new MOD unknowns; no blind same-state rerun or real account/Cloud changes."
     },
     {
       "scope": "Original CNS configuration and declared assets",
@@ -519,25 +567,27 @@
       "evidence": "docs/evidence/R03-inc1.json"
     }
   ],
-  "next_action": "Prepare self-authored Windows/D3D12 device probe and exact private Proton graphics route with existing toolchain; narrow legitimate game/save/Cloud launch preflight. Preserve7added unresolved resource keys and original unknown prerequisites for subsequent per-version repair; no game/account/Cloud/activation changes",
+  "next_action": "Resolve private Wine graphics initialization with actual loader diagnostics and a validated private display/runtime route; prepare legitimate game/save/Cloud isolation. Preserve current original/new MOD unknowns; no blind same-state rerun or real account/Cloud changes.",
   "updated_on": "2026-10-07",
   "execution": {
     "owner_thread": "01a115db-7ff8-70c1-8122-cdc330aaf5c5",
     "lane": "DIRECT",
-    "lane_reason": "Read-only archive diagnostics and narrowly bounded offline provider/target classification repair; no live game/config/deployment behavior changes",
+    "lane_reason": "Fixed self-authored offscreen PE/device/resource probe under existing ordinary GPU permissions in a fresh private namespace/prefix; no game/client/account/security configuration or global control-plane changes. Closed R04-b launch gate and sources remain untouched",
     "owned_paths": [
-      "src/policy/interfaces.py",
-      "tests/test_interfaces.py",
-      "src/policy/README.md",
-      "docs/evidence/R03-inc1.json",
+      "src/testing/d3d12_probe.c",
+      "src/testing/d3d12_probe.py",
+      "tests/test_d3d12_probe.py",
+      "src/testing/README.md",
+      "docs/evidence/R04-e.json",
       "PROJECT_STATE.json",
-      ".local/r03/inc1/"
+      ".local/r04/d3d12/"
     ],
-    "entry_preimage": "10a8ce5223661c8ea09d01e8b5172cab2c4fedce; clean owned repository; native task listing matches this sole stellar-mod-console task; original/new archives, prior evidence and game read-only",
-    "external_scope": "Read-only original and added archive metadata/scripts and current game metadata; source sync to authorized impl/mod-console. No installation, launch, asset/source redistribution, account/prefix/save/config changes",
-    "acceptance": "New28container identifiers/resource metadata combined with original729; same original5exclusive groups retained; new23included in full473relevant candidate coverage; modules distinguished from preset extensions and exact script-target overlaps visible; missing/unknown/version/body/DLC/runtime limitations and prior failures retained",
-    "execution_source": "Active Goal continuation after user-added25inputs and clarified isolated app/profile/provenance requirements",
-    "next_evidence": "Prepare self-authored Windows/D3D12 device probe and exact private Proton graphics route with existing toolchain; narrow legitimate game/save/Cloud launch preflight. Preserve7added unresolved resource keys and original unknown prerequisites for subsequent per-version repair; no game/account/Cloud/activation changes"
+    "entry_preimage": "85e4ff8c0a2e8b484280c8c42d214e6b8a7501c4; clean repository and same native root task; historical bootstrap/probes and real game/prefix/client/downloads read-only",
+    "external_scope": "Compile only owned fixed PE with existing gcc/binutils; read-only frozen Proton runtime and installed system GPU libraries/device nodes, private home/cache/prefix/work; no Steam/client/game/display/input/audio/network view. No install, original saves/Cloud/session/activation/config changes or arbitrary program launch",
+    "acceptance": "Prove actual Windows PE execution under fixed private Proton; NVIDIA adapter/feature-level and bounded D3D12 clear/copy/exact readback if available; otherwise retain exact prerequisite failure. Namespace protection, process teardown, input/license provenance and real game/save preservation required. No actual game/MOD/UI acceptance",
+    "execution_source": "Active full Goal continuation from R03-inc1 verified source delivery",
+    "next_evidence": "Resolve private Wine graphics initialization with actual loader diagnostics and a validated private display/runtime route; prepare legitimate game/save/Cloud isolation. Preserve current original/new MOD unknowns; no blind same-state rerun or real account/Cloud changes.",
+    "result": "Two fixed Windows graphics attempts retained; own PE diagnostic ran, both launch boundaries/protection passed; native DXVK step timed out. Final bounded group cleanup regression passes, D3D12 acceptance remains unavailable."
   },
   "rounds": {
     "R01": {
@@ -588,21 +638,22 @@
       "increment_evidence": "docs/evidence/R03-inc1.json"
     },
     "R04": {
-      "status": "PARTIAL_NATIVE_GPU_ONLY",
-      "preparation": "R04-b private prefix/fixed CLI accepted; R04-c3PE images/79static dependencies; R04-d real NVIDIA offscreen Vulkan clear/transfer/exact4096-byte readback passed,23namespace+12Rootchecks,all protected inputs unchanged",
+      "status": "PARTIAL_RUNTIME_PREREQUISITE; GAME_AND_MOD_COMBINATIONS_NOT_RUN",
+      "preparation": "R04-b private prefix/fixed CLI accepted; R04-c3PE images/79static dependencies; R04-d real NVIDIA offscreen Vulkan clear/transfer/exact4096-byte readback passed,23namespace+12Rootchecks,all protected inputs unchanged; R04-e own Windows diagnostic executes,2headless graphics failures retained,27boundary/11Rootchecks each,5tests pass; D3D12 not accepted",
       "remaining": "Windows/D3D12/presentation/fonts and exact legitimate Steam/game/save/Cloud route; actual loader/MOD/coldstart/fullbaseline NOT_RUN",
       "lane": "PER_UNIT",
       "contract": "docs/contracts/R04-b.json",
-      "evidence": "docs/evidence/R04-d.json",
-      "private_evidence": ".local/r04/gpu/47d28f1adf0f4483b326a81b63f9a1cf/root-verification.json",
-      "closed_unit": "R04-d",
+      "evidence": "docs/evidence/R04-e.json",
+      "private_evidence": ".local/r04/d3d12/62cc44b643a6482e8083cf263a635224/root-verification.json",
+      "closed_unit": "R04-e",
       "closed_units": [
         "R04-a",
         "R04-b",
         "R04-c",
-        "R04-d"
+        "R04-d",
+        "R04-e"
       ],
-      "sync": "VERIFIED R04-d GitHub impl/mod-console == local 3760316defe415fb1cce6b883ed439b9c8703c04"
+      "sync": "PENDING R04-e source push/exact remote verification"
     },
     "R01-inc1": {
       "status": "COMPLETE_STATIC_ORGANIZATION_AND_REQUIREMENTS",
@@ -621,16 +672,16 @@
     "completion_percent": null,
     "reason": "A01-A14 heterogeneous end-to-end results; no final result accepted yet",
     "planning_rounds": 1,
-    "execution_rounds_closed": 12,
-    "last_closed": "R03-inc1",
+    "execution_rounds_closed": 13,
+    "last_closed": "R04-e",
     "remaining_round_estimate": null,
     "forecast_confidence": "unknown; no final end-to-end acceptance throughput; incomplete prerequisites and heterogeneous remaining work",
-    "previous_goal_turn": "PROGRESS:473relevant candidates/757raw containers indexed;619interface documents preserved;6tests,30Root checks and18bad pairs pass. Module entrypoints/extensions and44script-target overlaps separated. Original/fullGoal0/14 unchanged; new raw retoc crosscheck remains NOT_RUN",
-    "total_closed_units_including_planning": 13,
+    "previous_goal_turn": "PROGRESS: Own64-bit PE built/Windows diagnostic executed;2distinct graphics failures retained,2x27boundaries/11Rootchecks and5tests pass; D3D12 and originalA01-A14unaccepted0/14; source sync pending",
+    "total_closed_units_including_planning": 14,
     "changes": {
-      "execution": "Narrow offline classification repaired; new28UTOCs/28PAKs and full619interfaces analyzed; no final A01-A14 acceptance gain",
-      "evidence": "Original729containers,567documents,5groups and failures retained;17new reference occurrences/7unique keys unresolved. Incorrect temporary PAK match count corrected before publication; raw retoc crosscheck refusal retained separately",
-      "scope": "No new target scope this unit; current473relevant candidate basis and original14requirements retained; percentage decomposition unknown for heterogeneous unweighted outcomes"
+      "execution": "Own Windows probe built/diagnostic executed; native-DLL prerequisite diagnosed and group-timeout regression passes; no final A01-A14 acceptance gain",
+      "evidence": "2graphics failures and protected inputs retained; final cleanup source not Windows-rerun, D3D12 outcome unknown",
+      "scope": "No scope change; original/new473relevant target basis and original14heterogeneous requirements preserved; completion/remaining percentages and forecast unknown"
     },
     "remaining_percentage": null
   },

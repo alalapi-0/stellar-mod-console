@@ -1,0 +1,217 @@
+{
+  "unit": "R04-e",
+  "lane": "DIRECT",
+  "baseline_commit": "85e4ff8c0a2e8b484280c8c42d214e6b8a7501c4",
+  "status": "WINDOWS_PE_DIAGNOSTIC_VERIFIED; WINDOWS_GRAPHICS_NOT_ACCEPTED",
+  "scope": "Fixed self-authored headless Windows probe, existing compiler and frozen Proton, fresh private prefixes/ordinary GPU devices. No real game/client/account/display/input/audio/network or global security configuration effects.",
+  "source": {
+    "c_sha256": "6d16869beb35b2f47dc2d8c403072ba89ba62a36a239bc938af36a7d385959ac",
+    "final_launcher_sha256": "92052d74766097b456b66a47d64f81bef238102be8b815d0d8fbd4bc8b02a4c1",
+    "tests_sha256": "66a86cbc701c5b061b7c541c18f73eae03a0f4b8ee6c15cb9a8b30c83a6907e8",
+    "self_authored_pe_sha256": "886a5afa84fcae7d444c67e449d161d107e9a460f6fe7342ecec33062a298158",
+    "pe_bytes": 12172,
+    "build": "Existing GCC explicit Windows ms_abi/POD sizes; GNU ld i386pep links own ELF directly to console PE; no CRT/Windows SDK/new package. Self-authored temporary export DLL only creates import library, then is removed; never mounted/executed. Independent PE parser and objdump verify 64-bit fixed KERNEL32 imports/NX/dynamic base.",
+    "final_launcher_actual_windows_run": "NOT_RUN after bounded process-group cleanup repair; original two runtime candidates retained by exact hashes"
+  },
+  "actual_launches": [
+    {
+      "private_profile_id": "d55fa0d975ff41a68e1a2125343268db",
+      "launcher_sha256_at_launch": "9ace5908f4372e3f8f67439e97eb77f11b103469de218f3641e5f358690a5e19",
+      "binary_sha256": "886a5afa84fcae7d444c67e449d161d107e9a460f6fe7342ecec33062a298158",
+      "exit": 1,
+      "boundary_before_passed": 27,
+      "boundary_before_required": 27,
+      "boundary_after_passed": 27,
+      "boundary_after_required": 27,
+      "root_checks_passed": 11,
+      "root_checks_required": 11,
+      "windows": {
+        "passed": false,
+        "stage": 2,
+        "hresult_u32": 2289696772,
+        "last_error": 1400,
+        "vendor_id": 0,
+        "device_id": 0,
+        "minimum_feature_level": 49152,
+        "row_pitch": 0,
+        "footprint_bytes": 0,
+        "readback_bytes": 0
+      },
+      "timeout_error": null,
+      "parent_reaped": true,
+      "exact_owned_namespace_remaining_pids": [],
+      "preexisting_unreadable_processes_excluded_by_start_time": 3,
+      "protected_hashes_unchanged": true,
+      "game_metadata_unchanged": true
+    },
+    {
+      "private_profile_id": "62cc44b643a6482e8083cf263a635224",
+      "launcher_sha256_at_launch": "8a321571fcc1db8b778f8fef69dd97372e7f90c6b1c4aab69c1b9bc5330aae0e",
+      "binary_sha256": "886a5afa84fcae7d444c67e449d161d107e9a460f6fe7342ecec33062a298158",
+      "exit": 1,
+      "boundary_before_passed": 27,
+      "boundary_before_required": 27,
+      "boundary_after_passed": 0,
+      "boundary_after_required": 0,
+      "root_checks_passed": 11,
+      "root_checks_required": 11,
+      "windows": null,
+      "timeout_error": "Command '('/usr/bin/python3', '-B', '/proton/proton', 'runinprefix', 'Z:\\\\probe.exe')' timed out after 5 seconds",
+      "parent_reaped": true,
+      "exact_owned_namespace_remaining_pids": [],
+      "preexisting_unreadable_processes_excluded_by_start_time": 3,
+      "protected_hashes_unchanged": true,
+      "game_metadata_unchanged": true
+    }
+  ],
+  "findings": {
+    "first": "Fixed own PE executed and returned stage2/CreateDXGIFactory1 HRESULT0x887a0004; normal private wineserver wait and after-boundary checks passed. This is diagnostic Windows execution, not graphics success.",
+    "diagnosed_loading_prerequisite": "Frozen Proton init_session(update_prefix_files=False) for runinprefix skips setup_prefix, whose DXVK/vkd3d install loop populates native DLL overrides only for that invocation. Native prefix DLL hashes match frozen runtime; registry lacks dxgi/d3d12 native overrides. Fixed local WINEDLLOVERRIDES chosen in next fresh namespace, no real/global settings changed.",
+    "second": "DXVK private log identifies3.1.1-47-g685301564ea3486 and Wine Vulkan entry, logs extension providers/OpenXR then no completed result before20-second Windows timeout. Native graphics initialization failure point remains unresolved; no feature-level/device/clear/copy/readback conclusion.",
+    "timeout_collection": "Original timeout killed the Python launcher only; inherited output pipes caused second5-second communicate timeout and lost step diagnostics. Final code kills the exact new owned session group, retains partial output, and relies on whole private PID namespace teardown. Real inherited-pipe subprocess regression passes; final launcher not rerun against unresolved same graphics state.",
+    "secondary_warnings": "Private prefix reports masked optional AMD contribution, absent machine-id/fontconfig/FreeType discovery. They are retained, not repaired globally, and do not establish the graphics root cause."
+  },
+  "protection": {
+    "hashed_items": 22,
+    "complete_game_non_directory_metadata": 1330,
+    "runtime_regular_files_hashed_and_metadata_reverified": 5613,
+    "runtime_symlinks_reverified": 1896,
+    "boundary_checks_per_launch": 27,
+    "root_checks_per_launch": 11,
+    "both_private_namespaces_reaped": true,
+    "game_or_save_changes": false,
+    "credential_values_read": false,
+    "r04_b_gate_modified_or_reused": false
+  },
+  "bounded_limits_seconds": {
+    "prefix_preparation": 40,
+    "windows_step": 20,
+    "wineserver_wait": 15,
+    "namespace": 90,
+    "gpu_fence_if_reached": 2
+  },
+  "validation": {
+    "command": "python3 -B -m unittest discover -s tests -p 'test_d3d12_probe.py' -v",
+    "passed": 5,
+    "required": 5,
+    "checks": [
+      "actual PE compilation and independent objdump",
+      "unregistered DLL import rejected",
+      "damaged PE rejected",
+      "configurable application rejected before preparation",
+      "owned process-group timeout drains inherited pipes and reaps direct child"
+    ],
+    "git_diff_check": "PASS"
+  },
+  "retained_diagnostic_failures": [
+    "objcopy of relocated ELF body fails; direct PE linker works (stub-only objcopy has no relocations)",
+    "initial interface enumeration double-counted conditional struct-return ABI declarations; empty corrected-extraction maps diagnosed and fixed before GPU compile/launch",
+    "misleading-indentation Werror fixed; PE symbol-dictionary validator corrected before launch",
+    "initial host namespace scan had3permission-denied same-owner processes; exact start times prove they predate both launches, so unrelated processes excluded without control effects"
+  ],
+  "api_facts": {
+    "primary_reference_commit": "adbd6f3ba40795c46a8d0f33af00bcb57ff0f0a4",
+    "directx_header_sha256": "dc55b65d24bf5c83079be5c3c708df8862b1d46308a3c8232886ad6f707932b8",
+    "reference_license": "MIT",
+    "copied_header_or_third_party_source_files": 0,
+    "private_facts_sha256": "3cff9825473ffb7c9ce3e8407596be41b1b0738e098a01b6dc044f25519e7739"
+  },
+  "sources": [
+    {
+      "title": "Microsoft primary ABI definitions",
+      "url": "https://github.com/microsoft/DirectX-Headers/tree/adbd6f3ba40795c46a8d0f33af00bcb57ff0f0a4"
+    },
+    {
+      "title": "D3D12 actual device creation",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/api/d3d12/nf-d3d12-d3d12createdevice"
+    },
+    {
+      "title": "D3D12 copyable footprint sizes and row pitch",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/api/d3d12/nf-d3d12-id3d12device-getcopyablefootprints"
+    },
+    {
+      "title": "DXGI factory1",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/api/dxgi/nf-dxgi-createdxgifactory1"
+    },
+    {
+      "title": "DXGI adapter1 layout",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/api/dxgi/ns-dxgi-dxgi_adapter_desc1"
+    },
+    {
+      "title": "Proton runinprefix/update_prefix_files distinction; local frozen source verified",
+      "url": "https://github.com/ValveSoftware/Proton/blob/experimental_11.0/proton"
+    }
+  ],
+  "private_evidence": [
+    {
+      "path": ".local/r04/d3d12/d55fa0d975ff41a68e1a2125343268db/compile.json",
+      "sha256": "c2833b8b4f9569846b5cc38cce4e6c9149a51cc0e9e0585fcff1d33f89ca3d24"
+    },
+    {
+      "path": ".local/r04/d3d12/d55fa0d975ff41a68e1a2125343268db/inputs.json",
+      "sha256": "b15e170b1ccae56c61a31ffd7b2fc3c3161ac65229ac36848b2f0ac20a93d50f"
+    },
+    {
+      "path": ".local/r04/d3d12/d55fa0d975ff41a68e1a2125343268db/result.json",
+      "sha256": "382f5a04b12059fa675989974ffd7fb76250476da53e2edbc7f5984d64b34902"
+    },
+    {
+      "path": ".local/r04/d3d12/d55fa0d975ff41a68e1a2125343268db/host-checks.json",
+      "sha256": "a6d451180dee94ec0440844e1b35b9d3a6181d4aefa483f4f69b73d8d3e780fb"
+    },
+    {
+      "path": ".local/r04/d3d12/d55fa0d975ff41a68e1a2125343268db/protected-before.json",
+      "sha256": "6921c2a111098563bcf9f6360ff8fc0bb97ee3138aa116b6563fb437a32628dc"
+    },
+    {
+      "path": ".local/r04/d3d12/d55fa0d975ff41a68e1a2125343268db/protected-after.json",
+      "sha256": "6921c2a111098563bcf9f6360ff8fc0bb97ee3138aa116b6563fb437a32628dc"
+    },
+    {
+      "path": ".local/r04/d3d12/d55fa0d975ff41a68e1a2125343268db/outputs.json",
+      "sha256": "f82cd92fd75a1b2de1274d988e4c71974ca3911d0c1aff85a5f1f32281ff9bb2"
+    },
+    {
+      "path": ".local/r04/d3d12/d55fa0d975ff41a68e1a2125343268db/root-verification.json",
+      "sha256": "422ebe781638e72f61ce2af9f1abf6e08bee3a65b517abe12988452e37b04e8c"
+    },
+    {
+      "path": ".local/r04/d3d12/62cc44b643a6482e8083cf263a635224/compile.json",
+      "sha256": "4585612417c0e1ab5e9efb0df52c411b430064bce6f3fa6e4b68730d90b66ffb"
+    },
+    {
+      "path": ".local/r04/d3d12/62cc44b643a6482e8083cf263a635224/inputs.json",
+      "sha256": "6f42e995fb7e1de9e0f839b4497bb1993181348a8ddff140c13f6dcb177e19f1"
+    },
+    {
+      "path": ".local/r04/d3d12/62cc44b643a6482e8083cf263a635224/result.json",
+      "sha256": "2a1d2c16b9959ccc17cd0ac80db470e1751b100a60cbfa269805176d48bfc310"
+    },
+    {
+      "path": ".local/r04/d3d12/62cc44b643a6482e8083cf263a635224/host-checks.json",
+      "sha256": "d5b82caa07c4067c5dbf66eb1874683fcd6bf9301f9c658579c995a551639c13"
+    },
+    {
+      "path": ".local/r04/d3d12/62cc44b643a6482e8083cf263a635224/protected-before.json",
+      "sha256": "6921c2a111098563bcf9f6360ff8fc0bb97ee3138aa116b6563fb437a32628dc"
+    },
+    {
+      "path": ".local/r04/d3d12/62cc44b643a6482e8083cf263a635224/protected-after.json",
+      "sha256": "6921c2a111098563bcf9f6360ff8fc0bb97ee3138aa116b6563fb437a32628dc"
+    },
+    {
+      "path": ".local/r04/d3d12/62cc44b643a6482e8083cf263a635224/outputs.json",
+      "sha256": "065896bc7c6770eaa0639d9e77dfed945ccfa99a652535f579069ed24ba08ac0"
+    },
+    {
+      "path": ".local/r04/d3d12/62cc44b643a6482e8083cf263a635224/root-verification.json",
+      "sha256": "41cca17d8e8f8a2bcb2eb64f6dfa0bd14232d41d87c4efa390513cae42101ff4"
+    },
+    {
+      "path": ".local/r04/d3d12/62cc44b643a6482e8083cf263a635224/work/logs/probe_dxgi.log",
+      "sha256": "8feef6f50d498c02828f136007521abd04a752fbdf80e735a406c6e396259fae"
+    }
+  ],
+  "acceptance_limits": "Original A01-A14 unchanged,0/14accepted. D3D12 device, feature-level, clear/copy/readback, presentation/fonts, Steam, game/saves/Cloud, loader/MOD compatibility and in-game UI NOT_ACCEPTED. Earlier native Vulkan readback stays separate.",
+  "next_action": "Resolve private Wine graphics initialization with actual loader diagnostics and a validated private display/runtime route; prepare legitimate game/save/Cloud isolation. Preserve current original/new MOD unknowns; no blind same-state rerun or real account/Cloud changes."
+}
