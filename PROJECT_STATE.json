@@ -15,9 +15,9 @@
   "goal_mode_started": true,
   "implementation_started": true,
   "phase": "P1",
-  "current_round": "R04-a",
-  "round_status": "PARTIAL_ISOLATION_ACCEPTED_AND_SYNCED",
-  "next_round": "R04-b fresh private Proton prefix CLI bootstrap",
+  "current_round": "R04-b",
+  "round_status": "APPROVED_PRIVATE_CLI_SOURCE_SYNC_PENDING",
+  "next_round": "R04-c",
   "protected": [
     "Existing game files and saves",
     "Original MOD packages and downloads",
@@ -324,13 +324,24 @@
         "cause": "Linux reports ENOSPC for bubblewrap namespace-local user namespace limit",
         "resolution": "Observed unshare result -1/errno 28 and official v0.11.1 implementation; retain denial requirement and record errno",
         "round": "R04-a"
+      },
+      {
+        "round": "R04-b",
+        "attempt": 1,
+        "target": "exact sentinel",
+        "candidate": "a545d53bf335ed0c4ad57bec15f5276349a090412bb1d17fa7c4506e1014dd38",
+        "class": "CMD_ECHO_SEPARATOR_TRAILING_SPACE",
+        "diagnosis": "cmd echo copies whitespace before separator",
+        "changed_method": "No-space separator; fresh target/full gate; no expected-byte weakening",
+        "status": "RESOLVED_EVENT_2_EXACT_BYTES_PASS",
+        "evidence": ".local/r04/bootstrap-failure-1.json"
       }
     ],
     "token_cost_telemetry": {
-      "native_goal_tokens_observed": 972036,
-      "source": "native get_goal at R04-a source delivery, updatedAt 1791372809",
-      "coverage": "Cumulative tokens reported by native active Goal; not hand-estimated or per-code-unit",
-      "native_goal_time_seconds_observed": 4717,
+      "native_goal_tokens_observed": 1710083,
+      "source": "native get_goal at R04-b approved source-delivery checkpoint, updatedAt1791375202",
+      "coverage": "Cumulative tokens/time reported by native Goal; per-role and cost coverage unavailable; no manual token estimate",
+      "native_goal_time_seconds_observed": 7111,
       "active_execution_time": "UNAVAILABLE; wall time does not prove active minutes",
       "cost": "UNAVAILABLE",
       "budget": "No explicit token budget; native remainingTokens null"
@@ -342,7 +353,7 @@
       "baseline_tokens_observed": 289664,
       "checkpoint": "R03-a closure",
       "reason": "Material candidates, new first-time checks and completed delivery units; no equivalent unresolved retries",
-      "next_checkpoint": "No new Goal health trigger at R04-a: three distinct setup/validator failures were diagnosed and changed; final 7 tests and 26 checks passed. No equivalent no-progress/review-repair loop.",
+      "next_checkpoint": "No new Goal health trigger at R04-b: one sentinel delimiter failure diagnosed and changed; new exact private CLI/provenance/preservation checks passed; no equivalent no-progress/review-repair loop. Full final acceptance unchanged.",
       "cooldown_rule": "75,000 additional tokens or 30 directly evidenced active minutes; newly accepted milestone resets no-progress facts"
     }
   },
@@ -364,7 +375,7 @@
     },
     {
       "scope": "Runtime game tests",
-      "reason": "8 real-prefix saves and 3 in-loader backups remain protected. R04-a empty skeleton/negative harness accepted; actual initialized private prefix and writable game configuration/view not yet established.",
+      "reason": "8 real-prefix saves and3in-loader backups remain protected. R04-b fresh private prefix/fixed Windows CLI is verified; isolated writable game configuration/save behavior and game/Steam/cloud/display/GPU runtime remain unestablished.",
       "state": "NOT_RUN; do not roll back personal saves"
     },
     {
@@ -373,7 +384,7 @@
       "state": "DISCOVERY_VERIFIED; sources unchanged; runtime and repair not accepted"
     }
   ],
-  "next_action": "R04-b: obtain successor GOVERNED contract, then initialize a fresh private Proton prefix with fixed Windows CLI write/read proof in the accepted closed namespace. Keep no game/display/GPU/Steam/network access; review exact launch candidate before bootstrap, preserve original saves/configuration, and continue unknown per-file prerequisites independently.",
+  "next_action": "Commit/push verified sanitized R04-b unit and verify GitHub exact commit; then investigate/freeze R04-c isolated game display/GPU/Steam/save route.",
   "updated_on": "2026-10-07",
   "execution": {
     "owner_thread": "01a115db-7ff8-70c1-8122-cdc330aaf5c5",
@@ -381,16 +392,17 @@
     "owned_paths": [
       "src/testing/",
       "tests/test_isolation.py",
-      "docs/evidence/R04.json",
-      "docs/contracts/R04-a.json",
+      "tests/test_bootstrap.py",
+      "docs/contracts/R04-b.json",
+      "docs/evidence/R04-b.json",
       "PROJECT_STATE.json",
       ".local/r04/"
     ],
-    "external_scope": "R04-a/v1 construction and negative probes only; Proton/Steam/game unlaunched. Protected external source paths read-only/absent; private writes only .local/r04; authorized source sync after review.",
-    "entry_preimage": "48b1d237f4fe643741e104b4b3c44003634384ac; clean worktree; sole exact-cwd native task found; other current task scopes differ",
-    "acceptance": "Governor contract, concrete private-prefix/config-view isolation candidate, negative filesystem/host-IPC checks, exact preserved preimages, fresh Judge and Governor decision. Runtime launch only under accepted separate launch scope.",
-    "next_evidence": "R04-b successor contract for a fixed fresh-prefix Windows CLI bootstrap; source game/real-prefix/cloud/session remain protected and game/display/GPU/Steam/network still closed",
-    "contract": "docs/contracts/R04-a.json"
+    "external_scope": "Exact private prefix/fixed CLI only after fresh prelaunch Judge and Governor approval; postlaunch review required before source sync. No Steam/game/real prefix/save/client session authority.",
+    "entry_preimage": "fa91293403d1e339d0715dad5e5ee67e983c49a1; clean worktree; sole exact-cwd native task verified",
+    "acceptance": "Fresh private Proton prefix and fixed Windows CLI sentinel proof under continued closed namespace; exact launch candidate must be reviewed before bootstrap; actual game/Steam/cloud/loader acceptance remains NOT_RUN",
+    "next_evidence": "Fresh postlaunch Judge/Governor closure of exact runtime/source-preservation/provenance evidence",
+    "contract": "docs/contracts/R04-b.json"
   },
   "rounds": {
     "R01": {
@@ -439,13 +451,13 @@
       "interface_checks": ".local/r03/interface-checks.json"
     },
     "R04": {
-      "status": "PARTIAL_RUNTIME_NOT_RUN",
-      "preparation": "Root 7 targeted tests and 26/26 negative checks; 22 hashes and 1330 game metadata items preserved; empty private prefix only",
-      "remaining": "Successor contract; initialized private Proton prefix, private writable config/log view and actual baseline/current/new loader/combination tests",
+      "status": "PARTIAL_PRIVATE_BOOTSTRAP_ONLY",
+      "preparation": "R04-b private prefix/fixed CLI passed after one diagnosed delimiter failure;14 tests32pre/31postchecks;2191 nonfollowing entries/no unknown copy;22hashes1330game metadata/fullProton source preserved",
+      "remaining": "Actual isolated game baseline/coldstart, current/new loader/combination tests; Steam/display/GPU/font/save/cloud boundaries need separate exact route evidence",
       "lane": "GOVERNED",
-      "contract": "docs/contracts/R04-a.json",
-      "evidence": "docs/evidence/R04.json",
-      "private_evidence": ".local/r04/construction-checks.json",
+      "contract": "docs/contracts/R04-b.json",
+      "evidence": "docs/evidence/R04-b.json",
+      "private_evidence": ".local/r04/bootstrap-post-registration.json",
       "closed_unit": "R04-a",
       "closed_units": [
         "R04-a"
@@ -464,7 +476,7 @@
     "last_closed": "R04-a",
     "remaining_round_estimate": null,
     "forecast_confidence": "unknown; no final end-to-end acceptance throughput; incomplete prerequisites and heterogeneous remaining work",
-    "previous_goal_turn": "PROGRESS: R04-a new empty private skeleton/fixed negative harness accepted by fresh Judge and Governor, protected preimages unchanged, exact source commit 6a45ea4844d90713960424a98da47b60840d628c verified on GitHub. Real runtime NOT_RUN.",
+    "previous_goal_turn": "PROGRESS: R04-a accepted empty skeleton/closed negative harness, 7 tests/26 checks, protected preimages preserved, exact GitHub closure fa91293403d1e339d0715dad5e5ee67e983c49a1 verified.",
     "total_closed_units_including_planning": 8,
     "changes": {
       "evidence": "Fresh independent review accepted 7 targeted tests/26 negative checks and preservation of 22 protected hashes/1330 metadata items; 3 resolved distinct failure fingerprints retained",
@@ -474,15 +486,15 @@
     "remaining_percentage": null
   },
   "governance": {
-    "contract": "docs/contracts/R04-a.json",
+    "contract": "docs/contracts/R04-b.json",
     "governor": "r04_governor",
-    "registration": ".local/r04/registration.json",
-    "judge": "PASS",
-    "decision": "APPROVE",
+    "registration": ".local/r04/bootstrap-post-registration.json",
+    "judge": "r04_b_postlaunch_judge PASS E01-E13",
+    "decision": "r04_governor APPROVE_SOURCE_DELIVERY",
     "identity_rule": "Semantic candidate hashes public source/contract/evidence, excluding review metadata and state. State has separate exact hash at review. Acceptance/decision/sync metadata does not change candidate semantics.",
-    "semantic_candidate_sha256": "3ca8ca1b498979ef934dd5012bcf30454ab2439d08b6b0e576d6ba67cf67b9a2",
-    "state_sha256_at_review": "7d3e2163e6fc4eb7776f327ed4b7b8fd57bb4012c6dde551669440e5ca23bd11",
-    "evidence": "docs/evidence/R04.json",
-    "approval_scope": "R04-a/v1 skeleton/negative harness source delivery only; runtime launches need successor contract"
+    "evidence": "docs/evidence/R04-b.json",
+    "approval_scope": "Private prefix/fixed CLI accepted; sanitized source sync approved; no remaining runtime launch approval",
+    "semantic_candidate_sha256": "c8a7ebb755b7a74efe7fd5c51b7a8353211c5f67dec7a872f8d51406cea03990",
+    "state_sha256_at_review": "ef729864408aa7b469acd73d346928a51e6e041129fecd2cc6468e29278c2c61"
   }
 }

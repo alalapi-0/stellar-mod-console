@@ -1,0 +1,231 @@
+{
+  "unit": "R04-b",
+  "contract": "stellar-mod-console/R04-b/v2",
+  "status": "ROOT_VERIFIED_PRIVATE_PREFIX_FIXED_CLI_ONLY_PENDING_POSTREVIEW",
+  "baseline_commit": "fa91293403d1e339d0715dad5e5ee67e983c49a1",
+  "runtime": {
+    "version": "1790839227 experimental-11.0-20261001-x86_64",
+    "regular_files": 5613,
+    "regular_bytes": 1536860083,
+    "symlinks": 1896,
+    "manifest_sha256": "e961f30f65e6dc240848f3ee220253181e2a6d4f11c7b17df16c0d2fc8c78598",
+    "factory_manifest_sha256": "c0b19414e43560438baadb2ebd3c4284258149645034e8d2c2864088a69b7e81",
+    "source_lock_overlay": "private empty lock only"
+  },
+  "provenance": {
+    "approved_files": 1873,
+    "categories": {
+      "factory": 309,
+      "factory-linked-Wine-or-Mono": 1532,
+      "Wine-OpenVR": 2,
+      "font-link": 20,
+      "DXVK-OpenVR": 2,
+      "ICU-68": 6,
+      "Wine-OpenXR": 1,
+      "dxvk-igdext-a2aa5a2": 1
+    },
+    "notices": [
+      {
+        "name": "LICENSE",
+        "sha256": "e4829d4e560bd13d378d47592a15d5c7eb1b9a702279eeea9b2f0fc6e60e0b31",
+        "source": "installed Proton distribution"
+      },
+      {
+        "name": "LICENSE.OFL",
+        "sha256": "93fed46019c38bbe566b479d22148e2e8a1e85ada614accb0211c37b2c61c19b",
+        "source": "installed Proton distribution"
+      },
+      {
+        "name": "PATENTS.AV1",
+        "sha256": "335eca574598bf4ca181b12f708d6669e5a5e78c8e1513e5b35fa1f03901484b",
+        "source": "installed Proton distribution"
+      },
+      {
+        "name": "ICU-68-LICENSE",
+        "sha256": "7915b19db903070778581ae05d8bf4ea241b34a05deb51ca4f5cbb15ea1cbba3",
+        "source": "https://raw.githubusercontent.com/unicode-org/icu/release-68-2/icu4c/LICENSE"
+      },
+      {
+        "name": "LICENSE.md",
+        "sha256": "3ebe2418eb97fed183ace2b20578ec66da56a826ac4651e6c6ede2070efd946c",
+        "source": "https://raw.githubusercontent.com/GameTechDev/dxvk-igdext/a2aa5a2efc39c299dc95968e15786db0cef62acc/LICENSE.md"
+      },
+      {
+        "name": "dxvk-igdext_third-party-programs.md",
+        "sha256": "8f653b9c8e6363f6e5445c91308c9c0cb4d79402fb4afab6666bfb32aa498da3",
+        "source": "https://raw.githubusercontent.com/GameTechDev/dxvk-igdext/a2aa5a2efc39c299dc95968e15786db0cef62acc/dxvk-igdext_third-party-programs.md"
+      }
+    ],
+    "unknown_optional": "AMD contribution masked",
+    "hostdriver": "both NVIDIA Wine DLL aliases masked",
+    "real_client": "empty fake client; no game/Steam/session view",
+    "raw_manifest": ".local/r04/bootstrap-provenance.json"
+  },
+  "root_validation": {
+    "tests": {
+      "passed": 14,
+      "required": 14,
+      "exit": 0
+    },
+    "fixed_dry": {
+      "passed": 32,
+      "required": 32,
+      "exit": 0,
+      "runtime": "NOT_RUN"
+    },
+    "legacy_regression": {
+      "passed": 26,
+      "required": 26,
+      "exit": 0,
+      "runtime": "NOT_RUN"
+    },
+    "protected_hashes": 22,
+    "game_metadata": 1330,
+    "protected_preimages": "UNCHANGED",
+    "proton_source": "UNCHANGED",
+    "postmanifest": {
+      "entries": 2191,
+      "classes": {
+        "Root-or-fixed-probe-metadata": 5,
+        "private-directory": 214,
+        "unchanged-owned-input": 11,
+        "generated-Proton-metadata": 6,
+        "generated-private-path-link": 4,
+        "closed-namespace-Z-mapping": 1,
+        "approved-distribution-link": 1337,
+        "approved-distribution-copy": 580,
+        "fixed-sentinel": 1,
+        "generated-private-Wine-registry": 2,
+        "generated-private-Fontconfig-cache-v9": 29,
+        "generated-private-cache-tag": 1
+      },
+      "unknown": 0,
+      "prohibited_DLL_account_game_save_names": 0,
+      "notices_preserved": true,
+      "fake_client_empty": true,
+      "runtime_source_unchanged": true,
+      "game_complete_non_directory_set_unchanged": true,
+      "nonfollowing_traversal": true
+    }
+  },
+  "fixed_sequence": {
+    "commands": [
+      [
+        "/usr/bin/python3",
+        "-B",
+        "/proton/proton",
+        "getcompatpath",
+        "/work"
+      ],
+      [
+        "/usr/bin/python3",
+        "-B",
+        "/proton/proton",
+        "runinprefix",
+        "C:\\windows\\system32\\cmd.exe",
+        "/d",
+        "/c",
+        "echo STELLAR_R04_B_SENTINEL>C:\\stellar-r04-bootstrap.txt&&type C:\\stellar-r04-bootstrap.txt"
+      ],
+      [
+        "/proton/files/bin/wineserver",
+        "-w"
+      ]
+    ],
+    "timeouts_seconds": [
+      40,
+      15,
+      15
+    ],
+    "sentinel_sha256": "9de3cc87be5a8ff47d5c351329867f6bc4f57d5e56edab6002f5a5dbb66e7235"
+  },
+  "runtime_execution": {
+    "event": 2,
+    "launch_candidate": "10d02ba96d537006f617fb9756f91319693e151643144e786d66deb1d3fca662",
+    "steps": [
+      {
+        "command": [
+          "/usr/bin/python3",
+          "-B",
+          "/proton/proton",
+          "getcompatpath",
+          "/work"
+        ],
+        "exit": 0
+      },
+      {
+        "command": [
+          "/usr/bin/python3",
+          "-B",
+          "/proton/proton",
+          "runinprefix",
+          "C:\\windows\\system32\\cmd.exe",
+          "/d",
+          "/c",
+          "echo STELLAR_R04_B_SENTINEL>C:\\stellar-r04-bootstrap.txt&&type C:\\stellar-r04-bootstrap.txt"
+        ],
+        "exit": 0
+      },
+      {
+        "command": [
+          "/proton/files/bin/wineserver",
+          "-w"
+        ],
+        "exit": 0
+      }
+    ],
+    "overall_exit": 0,
+    "sentinel_bytes_match": true,
+    "windows_stdout_match": true,
+    "compatpath_match": true,
+    "private_processes_remaining": 0,
+    "host_namespace_reaped": true,
+    "before_checks": {
+      "passed": 32,
+      "required": 32
+    },
+    "after_checks": {
+      "passed": 31,
+      "required": 31
+    },
+    "scope": "Fresh private Proton prefix and fixed Windows CLI only; no game/Steam/loader/MOD/UI/save/cloud acceptance"
+  },
+  "failures": [
+    {
+      "attempt": 1,
+      "class": "CMD_ECHO_SEPARATOR_TRAILING_SPACE",
+      "steps_exit": [
+        0,
+        0,
+        0
+      ],
+      "overall_exit": 1,
+      "required": "constant CRLF",
+      "actual": "constant space CRLF",
+      "repair": "Remove whitespace surrounding command separator; preserve exact expected bytes",
+      "preservation": "all source/protected preimages unchanged, before32/after31 isolation checks passed, namespace reaped, no unknown copies after cache-header classification",
+      "history": ".local/r04/attempt1/",
+      "prefix": "failed profile preserved and never reused",
+      "status": "RESOLVED_BY_EVENT_2; failed event and original exact bytes/exit retained"
+    }
+  ],
+  "not_run": [
+    "Steam/game coldstart",
+    "real save/cloud",
+    "current/new loader",
+    "MOD combinations",
+    "in-game console",
+    "gameplay/controller/visual/performance tests"
+  ],
+  "acceptance": {
+    "accepted": 0,
+    "required": 14,
+    "R04": "PARTIAL"
+  },
+  "private_evidence": ".local/r04/bootstrap-post-registration.json",
+  "warnings": [
+    "Masked optional AMD contribution produces a skipped-copy message; no copied AMD DLL",
+    "Private namespace has no host machine-id",
+    "Fontconfig/default config/FreeType warnings under headless CLI namespace; fonts/UI/game remain NOT_VERIFIED"
+  ]
+}

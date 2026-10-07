@@ -27,8 +27,7 @@ def cannot_connect(family, address):
     return {'denied': False}
 
 
-def main():
-    expected = json.loads(sys.argv[1])
+def inspect(expected):
     checks = {}
     work = Path('/work')
     marker = Path('/protected-canary/marker.txt')
@@ -47,7 +46,7 @@ def main():
     for line in Path('/proc/self/mountinfo').read_text().splitlines():
         fields = line.split()
         mounts[fields[4]] = fields[5].split(',')
-    checks['actual_sources_readonly'] = all('ro' in mounts.get(p, []) for p in ['/game', '/proton'])
+    checks['actual_sources_readonly'] = all('ro' in mounts.get(p, []) for p in expected.get('readonly_mounts', ['/game', '/proton']))
     checks['protected_host_paths_absent'] = all(not Path(p).exists() for p in expected['protected_host_paths'])
     namespaces = {k: os.readlink('/proc/self/ns/' + k) for k in expected['host_namespaces']}
     checks['namespaces_separate'] = all(namespaces[k] != v for k, v in expected['host_namespaces'].items())
@@ -74,20 +73,29 @@ def main():
     blocked = ['SteamAppId', 'SteamGameId', 'STEAM_COMPAT_DATA_PATH', 'STEAM_COMPAT_CLIENT_INSTALL_PATH',
                'DISPLAY', 'WAYLAND_DISPLAY', 'XAUTHORITY', 'DBUS_SESSION_BUS_ADDRESS', 'PULSE_SERVER',
                'LD_PRELOAD', 'LD_LIBRARY_PATH', 'WINEPREFIX', 'SteamVirtualGamepadInfo']
-    checks['host_environment_absent'] = not any(k in os.environ for k in blocked)
+    allowed_environment = expected.get('allowed_environment', {})
+    checks['host_environment_absent'] = not any(k in os.environ for k in blocked if k not in allowed_environment)
     # bubblewrap sets PWD to its private --chdir value after clearing the host environment.
-    checks['environment_allowlist'] = set(os.environ) <= {'PATH', 'HOME', 'LC_ALL', 'TMPDIR', 'XDG_RUNTIME_DIR', 'PWD'}
+    checks['environment_allowlist'] = (dict(os.environ) == allowed_environment if allowed_environment else
+        set(os.environ) <= {'PATH', 'HOME', 'LC_ALL', 'TMPDIR', 'XDG_RUNTIME_DIR', 'PWD'})
     checks['working_directory_private'] = os.getcwd() == '/work' and os.environ.get('PWD') == '/work'
     checks['host_runtime_absent'] = sorted(p.name for p in Path('/run').iterdir()) == ['test']
-    checks['host_shared_memory_absent'] = not Path('/dev/shm').exists() or not list(Path('/dev/shm').iterdir())
+    checks['host_shared_memory_absent'] = ('/dev/shm' in mounts if expected.get('private_shm') else
+        not Path('/dev/shm').exists() or not list(Path('/dev/shm').iterdir()))
     checks['display_devices_absent'] = all(not Path(p).exists() for p in
         ['/tmp/.X11-unix', '/dev/dri', '/dev/nvidia0', '/dev/nvidiactl', '/dev/input', '/dev/snd', '/sys'])
-    checks['prefix_and_profile_empty'] = all(not list(Path('/work/' + p).iterdir()) for p in ['compatdata', 'profile'])
-    print(json.dumps({'checks': checks, 'connections': connections,
+    if expected.get('prefix_empty', True):
+        checks['prefix_and_profile_empty'] = all(not list(Path('/work/' + p).iterdir()) for p in ['compatdata', 'profile'])
+    return {'checks': checks, 'connections': connections,
                       'nested_user_namespace': {'result': nested_result, 'errno': nested_errno},
                       'namespaces': namespaces, 'mounts': mounts,
-                      'runtime': 'NOT_RUN; disposable Python probe only'}, sort_keys=True))
-    return 0 if all(checks.values()) else 1
+                      'runtime': 'Namespace inspection only'}
+
+
+def main():
+    report = inspect(json.loads(sys.argv[1]))
+    print(json.dumps(report, sort_keys=True))
+    return 0 if all(report['checks'].values()) else 1
 
 
 if __name__ == '__main__':

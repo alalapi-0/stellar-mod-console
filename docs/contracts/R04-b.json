@@ -1,0 +1,99 @@
+{
+  "contract_id": "stellar-mod-console/R04-b/v2",
+  "lane": "GOVERNED",
+  "baseline_commit": "fa91293403d1e339d0715dad5e5ee67e983c49a1",
+  "authority": "Active user Goal, global/project AGENTS v9, read-only Governor REVISE_TASK",
+  "lineage": "Supersedes unpersisted/unlaunched R04-b/v1; allow exact licensed distribution initializer files beyond factory template; no attempt/budget/evidence/Goal reset.",
+  "objective": "Initialize one fresh private prefix using exact installed Proton, then fixed cmd.exe sentinel write/read and private wineserver wait in closed namespace. Bootstrap capability only; original A01-A14 unchanged and 0/14.",
+  "protected_boundaries": [
+    "Source game, installed MODs/downloads/prior workspace, real Steam prefix/saves/backups/userdata/accounts/settings/credentials/sessions/cloud and other tasks unchanged and absent.",
+    "Proton distribution, scripts/binaries/template/libraries/contribution/notices/source lock/fixup/version remain read-only and unchanged.",
+    "Only writable overlay on Proton is exact reviewed newly owned dist.lock. No source repair/fixup/cache mutation.",
+    "No real prefix/save/registry/client/userdata/account/session/cookie/token/hostconfig/game/MOD/hostdriver input may seed prefix.",
+    "Approved initializer sources: exact manifested factory template and generic Wine/DXVK/vkd3d/ICU/OpenVR/OpenXR/igdext/runtime files selected by inspected setup_prefix; optional contribution needs exact digest/license binding.",
+    "Every copied/linked distribution item must map to approved source-relative digest/target and notice; generated Wine/Proton items separately identified.",
+    "Optional content without license binding must be masked and cannot be treated as generated or accepted as unknown provenance.",
+    "Read-only empty private directory masks host NVIDIA Wine DLLs at both /usr/lib/x86_64-linux-gnu/nvidia/wine and /lib/x86_64-linux-gnu/nvidia/wine; dry probe proves host _nvngx/nvngx unavailable.",
+    "Empty private fake Steam client; no legacycompat/userdata/localconfig/appcache/client/account files.",
+    "Host Steam filesystem/abstract sockets/shared memory/DBus/runtime/cloud/client/account environment absent/inaccessible.",
+    "No network/display/Wayland/X11/GPU/audio/input/game/hostdevices. Private wineserver IPC and isolated loopback allowed only without host/external reachability.",
+    "Z: maps to closed namespace root only; host evidence never follows/resolves prefix symlinks.",
+    "All writable host paths under exact new .local/r04 profile; no credential inspection/release/Nexus/main merge/force push/production mutation/other task control."
+  ],
+  "source_identity": {
+    "runtime": "experimental-11.0-20261001-x86_64",
+    "regular_files": 5613,
+    "regular_bytes": 1536860083,
+    "symlinks": 1896,
+    "factory_regular_files": 309,
+    "factory_regular_bytes": 39752046,
+    "factory_symlinks": 1578,
+    "factory_external_symlinks": 0,
+    "factory_game_or_session_files": 0,
+    "user_settings_and_legacy_dist": "ABSENT",
+    "fixup_marker": "MATCHES_SOURCE_TIMESTAMP",
+    "notices": [
+      "LICENSE",
+      "LICENSE.OFL",
+      "PATENTS.AV1"
+    ],
+    "limit": "Counts identify candidate; only approved selected initializer sources can be copied."
+  },
+  "authorized_effects": [
+    "Root candidate source/tests/contracts/evidence/state and private .local/r04 construction",
+    "Before prelaunch gate only unit tests and fixed no-Proton probes",
+    "After exact Judge PASS and Governor APPROVE only registered getcompatpath /work, runinprefix fixed cmd.exe sentinel, private wineserver wait",
+    "No user-selected exe/commandtail/env/mount/argv extensions",
+    "Private notices preserved; no runtime binaries/templates/notices published",
+    "After postlaunch Judge PASS and Governor APPROVE sanitized commit/push impl/mod-console and exact remote verification"
+  ],
+  "prelaunch": {
+    "P01": "Persist complete v2 lineage/baseline/ownership/evidence/recovery/two-gate/unbudgeted cumulative contract",
+    "P02": "Full runtime regular hashes/symlinks/factory subset/fixup/version/source lock/notices aggregate identity",
+    "P03": "Exact initialization provenance plan; all possible inputs classified as factory/approved runtime/approved optional/masked optional/unavailable fakeclient/prohibited hostdriver/generated",
+    "P04": "Every approved category bound to notices; unknown optional contribution masked",
+    "P05": "Private applicable notices preserved; public names/digests only",
+    "P06": "Exact fresh unused empty private compatdata/home/client/cache/log/prefix and private lock; disjoint protected roots",
+    "P07": "Tests for fixed commands/sentinel/wait/env/mounts/timeouts and refusal of extras/reuse/changed runtime/overlap/symlink escape",
+    "P08": "Read-only Proton except private lock; game omitted; private writable paths and reviewed system runtime views only",
+    "P09": "Both NVIDIA aliases masked and dry probe proves no host DLL discovery",
+    "P10": "No-Proton exact-plan dry probe: protected absence/read-only source/private writes/closed IPC/net/devices/empty client/masks/env/Z boundary",
+    "P11": "22 protected hashes/1330 game metadata plus sufficient full Proton identity preimages without credential values",
+    "P12": "Register exact source/contract/tests/dry/provenance/license/masks/profile/preimages/vectors and separate state hash; fresh Judge PASS then Governor APPROVE launch event"
+  },
+  "execution": {
+    "E01": "Before launch confirm digests/runtime/preimages/masks/private target/vectors unchanged",
+    "E02": "getcompatpath success and only own private prefix initialized",
+    "E03": "Fixed cmd.exe success; exact sentinel bytes private Windows path/readback/bounded stdout",
+    "E04": "Private wineserver wait complete and exact child identities terminated",
+    "E05": "Non-following complete postmanifest; approved factory/runtime/optional mapped to source and notices, generated separated; masked/fakeclient/hostdriver/session/game/save/unknown copies zero",
+    "E06": "Private notices preserved; no runtime material in Git",
+    "E07": "Record expected prefix symlinks/Z without following; no host access",
+    "E08": "All source runtime/template/lock/fixups/notices/contribution/game/real saves/config preimages unchanged",
+    "E09": "NVIDIA masks retained; no hostdriver DLL, client stays empty and no legacycompat/userdata/appcache/account copied",
+    "E10": "No hostSteam/cloudIPC/externalroute/display/GPU/audio/input/game/credential/sessionenv/realclient access",
+    "E11": "Sanitized evidence with versions/identities/provenance/masks/commands/exits/sentinel/notices/preservation/failures/limits; raw manifests private",
+    "E12": "Bootstrap/CLI only; Steam/game/save/cloud/loader/MOD/coldstart/gameplay/R05 NOT_RUN; R04 partial and A01-A14 0/14",
+    "E13": "Sole state retains cumulative attempts/telemetry/pointers/partialstatus/one next action"
+  },
+  "review_pattern": "Fresh Judge + Governor approve each exact prelaunch event. Reconfirm identity immediately before execute. Register executed source/evidence/private/state; fresh Judge + Governor decide closure before source delivery. Failed diagnostic unit may be reviewed honestly; changed/uncertain route returns through launch gate; no blind retry. Contract revision only for frozen dimension change.",
+  "ownership": {
+    "writer": "Root",
+    "read_only": [
+      "Governor",
+      "fresh Judges"
+    ],
+    "paths": [
+      "src/testing/",
+      "tests/test_isolation.py",
+      "tests/test_bootstrap.py",
+      "docs/contracts/R04-b.json",
+      "docs/evidence/R04-b.json",
+      "PROJECT_STATE.json",
+      ".local/r04/"
+    ],
+    "R04_a": "Preserve behavior and passing tests"
+  },
+  "recovery": "Timeout/failure stops exact owned namespace/process tree with private teardown; no broad process match. Preserve failure and compact manifest; failed generated prefix never accepted. Unexpected protected/IPC/hostdriver/credential/unlicensed/unknowncopy/network access stops route, no auto restore/retry. Source fixup need is failed prerequisite, never writable source permission.",
+  "budget": "No explicit token budget. All phases/roles/failures remain cumulative under active native Goal; no reset."
+}
