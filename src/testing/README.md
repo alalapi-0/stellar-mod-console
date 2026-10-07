@@ -244,6 +244,6 @@ PASS 与 Governor `APPROVE_FLATPAK_PROBE` 时，入口拒绝执行。
 python3 -B -m unittest tests.test_flatpak_probe -v
 ```
 
-8 项合成测试已通过。build-init、build、Steam、游戏、账号、Cloud 与主机策略
+9 项合成测试已通过。build-init、build、Steam、游戏、账号、Cloud 与主机策略
 均未执行。Platform 25.08 仍不等于上游 Steam manifest 的 26.08。R04-n 尚未
 完成；一次实验仍须先复核精确候选。

@@ -16,7 +16,7 @@
   "implementation_started": true,
   "phase": "P1",
   "current_round": "R04-n",
-  "round_status": "R04-n_IMPLEMENTATION_CANDIDATE_PENDING_PRELAUNCH_JUDGE",
+  "round_status": "R04-n_REPAIRED_CANDIDATE_PENDING_FRESH_JUDGE",
   "next_round": "R04-n",
   "protected": [
     "Existing game files and saves",
@@ -946,7 +946,7 @@
     {
       "scope": "Runtime game tests",
       "reason": "Current R04-j route refusal retained. R04-n read-only assessment found installedFlatpak1.16.6/Platform25.08; defaultSteam deployments absent; upstreammaster Steam manifest26.08/broadpermissions not admitted. Fresh Governor contract defines distinct own Flatpak build-runtime proof, no runtime approval; user pause before implementation. Loaded AppArmor profile list unavailableerrno13, installedpolicy only. Steam/account/Cloud/game/save isolation remains unestablished.",
-      "state": "IMPLEMENTATION_CANDIDATE; RUNTIME_NOT_GRANTED",
+      "state": "REPAIRED_CANDIDATE_AFTER_JUDGE_FAIL; RUNTIME_NOT_GRANTED",
       "evidence": "docs/evidence/R04-n.json",
       "next": "Fresh prelaunch Judge PASS and Governor execution approval before one Flatpak probe. No Steam/game/auth/Cloud/install/host-policy effects."
     },
@@ -957,7 +957,7 @@
       "evidence": "docs/evidence/R03-inc1.json"
     }
   ],
-  "next_action": "Fresh read-only Judge on the R04-n implementation candidate, then Governor approval, before one flatpak build-init/build. 20-hour admin window is WINDOW_NOT_OPENED; non-privileged work continues.",
+  "next_action": "Fresh read-only Judge on the repaired R04-n candidate. The previous prelaunch Judge returned FAIL. No Flatpak execution until a new PASS and Governor approval.",
   "updated_on": "2026-10-08",
   "execution": {
     "owner_thread": "01a115db-7ff8-70c1-8122-cdc330aaf5c5",
@@ -977,7 +977,7 @@
     "acceptance": "R04-n/v1 unfinished. C02-C09 synthetic or partial only. C10-C12 not run. Original A01-A14 unchanged.",
     "external_scope": "Preparation files and read-only current evidence only; no new runtime effects. Source sync remains authorized after preparation review/Governor decision.",
     "next_evidence": "Governor contract: exact distinct Flatpak build sandbox viability or read-only route assessment; never unchanged R04-j nested retry",
-    "result": "Implementation candidate and 8 synthetic tests pass. Flatpak was not launched. Runtime NOT_GRANTED."
+    "result": "Repaired candidate after prelaunch Judge FAIL. 9 synthetic tests pass. Flatpak was not launched. Runtime NOT_GRANTED."
   },
   "rounds": {
     "R01": {
@@ -1054,7 +1054,7 @@
       "sync": "VERIFIED R04-m content f5299c98b6b8dbd93ab9039a6bee3081b97e07be exactly matched GitHub branch API",
       "pending_unit": {
         "id": "R04-n",
-        "phase": "IMPLEMENTATION_CANDIDATE_PENDING_PRELAUNCH_JUDGE",
+        "phase": "REPAIRED_CANDIDATE_PENDING_FRESH_JUDGE",
         "contract": "docs/contracts/R04-n.json",
         "evidence": "docs/evidence/R04-n.json",
         "runtime_execution_gate": "NOT_GRANTED",
@@ -1101,7 +1101,8 @@
     "entry": ".local/r04/route-prerequisites/entry.json",
     "contract": "docs/contracts/R04-n.json",
     "contract_status": "ACTIVE_UNFINISHED",
-    "phase": "IMPLEMENTATION_CANDIDATE_PENDING_PRELAUNCH_JUDGE",
+    "phase": "REPAIRED_CANDIDATE_PENDING_FRESH_JUDGE",
+    "prelaunch_judge": "FAIL",
     "runtime_execution_gate": "NOT_GRANTED",
     "result": "NONE_RUNTIME_NOT_RUN",
     "resume_contract_id": "stellar-mod-console/R04-n/v1",
@@ -1109,7 +1110,7 @@
     "evidence": "docs/evidence/R04-n.json",
     "registration": ".local/r04/route-prerequisites/registration.json",
     "preparation_semantic_candidate": "30c36dd4661266868c13351d1a0a4c7e6e3fb6062cf7ac8f9ace688f5ac86c2d",
-    "implementation_semantic_candidate": "5c5426a50df7fac5bf516e794ecdd0c8a2248614fc896e1ed3294b80d2f247e7",
+    "implementation_semantic_candidate": "304a3209f8e265af168d9308bd517c13161ad6a200c26dfc8c41e6e49c781471",
     "implementation_registration": ".local/r04/route-prerequisites/implementation.json",
     "judge": "r04_n_preparation_judge",
     "judge_report": ".local/r04/route-prerequisites/judge.json",

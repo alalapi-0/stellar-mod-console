@@ -1,6 +1,6 @@
 {
   "unit": "R04-n",
-  "phase": "IMPLEMENTATION_CANDIDATE_PENDING_PRELAUNCH_JUDGE",
+  "phase": "REPAIRED_CANDIDATE_PENDING_FRESH_JUDGE",
   "contract": "docs/contracts/R04-n.json",
   "contract_status": "ACTIVE_UNFINISHED",
   "result": "NONE_RUNTIME_NOT_RUN",
@@ -63,22 +63,22 @@
   ],
   "contract_acceptance": {
     "C01": "ROOT_VERIFIED_PREPARATION_RECORD",
-    "C02": "SYNTHETIC_PASS_FRESH_TREE_LINK_REUSE_REFUSAL",
-    "C03": "PARTIAL_PINS_PRESENT_NVIDIA_DEPLOYMENT_NOT_REREAD",
+    "C02": "SYNTHETIC_PASS_PRIVATE_MODE_ANCESTOR_CHANGE",
+    "C03": "PINNED_FLATPAK_PLATFORM_AND_NVIDIA_DEPLOYMENT",
     "C04": "SYNTHETIC_COMMAND_PASS_BUILD_INIT_NOT_RUN",
-    "C05": "SYNTHETIC_COMMAND_PASS_BUILD_NOT_RUN",
-    "C06": "PAYLOAD_AND_CLASSIFIER_PRESENT_SANDBOX_NOT_RUN",
-    "C07": "CLASSIFIER_PRESENT_NVIDIA_MARKER_NOT_OBSERVED",
-    "C08": "SYNTHETIC_OUTPUT_RACE_PASS_NO_PUBLIC_SECRET",
-    "C09": "EIGHT_SYNTHETIC_TESTS_PASS",
-    "C10": "NOT_RUN_PENDING_FRESH_JUDGE",
+    "C05": "SYNTHETIC_COMMAND_PASS_INCLUDING_HOST_RESET_BUILD_NOT_RUN",
+    "C06": "PAYLOAD_CHECKS_SENTINEL_PATH_RUNTIME_CONTEXT_AND_WRITES_SANDBOX_NOT_RUN",
+    "C07": "NVIDIA_MARKER_BOUND_TO_PINNED_DIGEST_NOT_OBSERVED",
+    "C08": "OUTPUT_LIMIT_ENFORCED_SYNTHETIC",
+    "C09": "NINE_SYNTHETIC_TESTS_PASS",
+    "C10": "REGISTRATION_COMMAND_AND_ENV_ALLOWLIST_CHECKED_JUDGE_PENDING",
     "C11": "NOT_RUN",
     "C12": "NOT_RUN",
     "C13": "PARTIAL_25_08_VERSUS_26_08_RETAINED_RUNTIME_NOT_RUN"
   },
   "tests": {
     "command": "python3 -B -m unittest tests.test_flatpak_probe -v",
-    "passed": 8,
+    "passed": 9,
     "failed": 0,
     "flatpak_or_bwrap_launches": 0
   },
@@ -124,5 +124,5 @@
     }
   ],
   "user_pause": "Lifted for Cursor by direct execution of EXECUTION_PROMPT.md. Codex Goal remains paused.",
-  "next_action": "Fresh read-only prelaunch Judge on this implementation candidate, then Governor execution approval, before one build-init/build. No Steam/game/auth/Cloud/install or host-policy effect."
+  "next_action": "Previous prelaunch Judge returned FAIL. Repaired candidate awaits a fresh read-only Judge before any build-init/build."
 }

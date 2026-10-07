@@ -37,7 +37,7 @@ class FlatpakProbeTests(unittest.TestCase):
         self.patch.start()
         self.identifier = 'a' * 32
         self.root = probe.construct(self.scope / 'profiles', self.identifier)
-        self.identity = probe.pinned_identity('b' * 64)
+        self.identity = probe.pinned_identity()
 
     def tearDown(self):
         self.patch.stop()
@@ -47,6 +47,10 @@ class FlatpakProbeTests(unittest.TestCase):
         registration = self.scope / 'prelaunch.json'
         probe.save(registration, {'unit': 'R04-n', 'candidate': 'fixed'})
         digest = hashlib.sha256(registration.read_bytes()).hexdigest()
+        probe.save(self.scope / 'implementation.json', {
+            'contract_id': probe.CONTRACT,
+            'semantic_candidate': probe.semantic_candidate(),
+        })
         probe.save(self.scope / 'gate.json', {
             'contract': probe.CONTRACT, 'registration_sha256': digest,
             'judge': 'PASS', 'governor': 'APPROVE_FLATPAK_PROBE'})
@@ -73,6 +77,7 @@ class FlatpakProbeTests(unittest.TestCase):
         for name in ('host', 'home', 'host-os', 'host-etc'):
             self.assertIn('--nofilesystem=' + name, command)
         self.assertEqual(command[-4:], ['--build-dir=/app', str(build), '/bin/sh', '/app/probe.sh'])
+        self.assertIn('--filesystem=host:reset', command)
         self.assertNotIn('--with-appdir', command)
         self.assertNotIn('bwrap', command)
         self.assertTrue((self.root / 'build').is_dir())
@@ -98,7 +103,10 @@ class FlatpakProbeTests(unittest.TestCase):
             probe.build_init_command(Path(build + '/../../tmp'))
         with self.assertRaises(probe.Refused):
             probe.launch_environment({'HOME': '/root', 'XDG_CONFIG_HOME': '/tmp'})
-        self.assertIsNone(probe.launch_environment(None))
+        launched = probe.launch_environment(None)
+        self.assertEqual(launched['HOME'], os.environ['HOME'])
+        self.assertNotIn('DISPLAY', launched)
+        self.assertNotIn('FLATPAK_USER_DIR', launched)
 
     def test_reuse_symlink_hardlink_and_foreign_payload_refused(self):
         with self.assertRaises(probe.Refused):
@@ -132,6 +140,10 @@ class FlatpakProbeTests(unittest.TestCase):
         other['payload_sha256'] = 'd' * 64
         with self.assertRaises(probe.Refused):
             probe.require_identity(other)
+        other = dict(self.identity)
+        other['nvidia_metadata_sha256'] = 'b' * 64
+        with self.assertRaises(probe.Refused):
+            probe.require_identity(other)
         extra = dict(self.identity)
         extra['home'] = '/tmp'
         with self.assertRaises(probe.Refused):
@@ -159,6 +171,8 @@ class FlatpakProbeTests(unittest.TestCase):
         self.assertEqual(probe.classify_build(2, '', 'error: Unknown option --sandbox'),
                          'PROBE_ARGUMENT_DEFECT')
         self.assertEqual(probe.classify_timeout(), 'PROBE_TIMEOUT')
+        self.assertEqual(probe.classify_build(0, 'x' * (probe.OUTPUT_LIMIT + 1), ''),
+                         'PROBE_FAILED_UNCLASSIFIED')
         self.assertEqual(probe.apply_residue(
             'FLATPAK_RUNTIME_BOUNDARY_PROVED_WITH_DEFAULT_NVIDIA_EXTENSION', True),
             'PROBE_FAILED_UNCLASSIFIED')
@@ -176,8 +190,8 @@ class FlatpakProbeTests(unittest.TestCase):
     def test_missing_gate_output_reuse_and_init_failure_do_not_build(self):
         calls = []
 
-        def runner(args, timeout):
-            calls.append(args)
+        def runner(args, timeout, env):
+            calls.append((args, env))
             return Completed(1, '', probe.PREREQ_EXACT[0])
 
         with self.assertRaises(probe.Refused):
@@ -196,18 +210,20 @@ class FlatpakProbeTests(unittest.TestCase):
         outcome = probe.execute(self.root, self.identity, digest, runner, self.home)
         self.assertEqual(outcome, 'FLATPAK_SUPPORTED_PREREQUISITE_MISSING')
         self.assertEqual(len(calls), 1)
-        self.assertEqual(calls[0][1], 'build-init')
+        self.assertEqual(calls[0][0][1], 'build-init')
+        self.assertEqual(calls[0][1]['HOME'], os.environ['HOME'])
+        self.assertNotIn('DISPLAY', calls[0][1])
 
     def test_timeout_and_residue_never_claim_success(self):
         digest = self.arm()
 
-        def timeout(args, timeout_seconds):
+        def timeout(args, timeout_seconds, env):
             raise subprocess.TimeoutExpired(args, timeout_seconds)
 
         self.assertEqual(probe.execute(self.root, self.identity, digest, timeout, self.home), 'PROBE_TIMEOUT')
         (self.scope / 'result.json').unlink()
 
-        def succeed(args, timeout_seconds):
+        def succeed(args, timeout_seconds, env):
             if args[1] == 'build-init':
                 (self.root / 'build' / 'files').mkdir()
                 return Completed(0)
@@ -219,3 +235,30 @@ class FlatpakProbeTests(unittest.TestCase):
         result = json.loads((self.scope / 'result.json').read_text())
         self.assertTrue(result['platform_25_08_is_not_steam_26_08'])
         self.assertNotEqual(result['outcome'], 'FLATPAK_RUNTIME_BOUNDARY_PROVED_WITH_DEFAULT_NVIDIA_EXTENSION')
+
+    def test_private_mode_ancestor_change_and_registration_binding(self):
+        self.scope.chmod(0o755)
+        with self.assertRaises(probe.Refused):
+            probe.validate(self.root)
+        self.scope.chmod(0o700)
+        snapshot = probe.ancestor_snapshot(self.root)
+        self.scope.chmod(0o750)
+        with self.assertRaises(probe.Refused):
+            probe.assert_snapshot(snapshot)
+        self.scope.chmod(0o700)
+        calls = []
+
+        def runner(args, timeout, env):
+            calls.append(args)
+
+        digest = self.arm()
+        registration = json.loads((self.scope / 'implementation.json').read_text())
+        registration['semantic_candidate'] = '0' * 64
+        probe.save(self.scope / 'implementation.json', registration)
+        with self.assertRaises(probe.Refused):
+            probe.execute(self.root, self.identity, digest, runner, self.home)
+        self.assertEqual(calls, [])
+        text = probe.payload_bytes().decode()
+        self.assertIn('/app/sentinel.path', text)
+        self.assertIn('/app/nvidia.sha256', text)
+        self.assertIn(probe.PINNED_NVIDIA_SHA, probe.pinned_identity()['nvidia_metadata_sha256'])

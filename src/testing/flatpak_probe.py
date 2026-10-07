@@ -23,6 +23,13 @@ PLATFORM_REF = 'org.freedesktop.Platform/x86_64/25.08'
 NVIDIA_REF = 'org.freedesktop.Platform.GL.nvidia-595-91-07/x86_64/1.4'
 PINNED_FLATPAK_SHA = '80a4dec2841fb97c6c6cfdf1fa20d09de8d43f6a72ede2fe5090522d2669302f'
 PINNED_PLATFORM_SHA = 'd02891b938f979b23d23e532d1c7200d31d7d996a079ff3718a7703fc8b0fd27'
+PINNED_NVIDIA_SHA = 'cc504b55865933fbd93aee1fd0e2dbbeadef75dc1076c19750b5c14a08733efa'
+PINNED_NVIDIA_COMMIT = '0a0223df301477e0b309653c1629a13d09048c72f8b35b4b20fb73a70d60c355'
+OUTPUT_LIMIT = 65536
+ENV_ALLOWLIST = ('HOME', 'PATH')
+ENV_OPTIONAL = ('LANG', 'LC_ALL', 'LOGNAME', 'USER')
+SEMANTIC_FILES = ('docs/contracts/R04-n.json', 'src/testing/flatpak_probe.py',
+                  'src/testing/README.md', 'tests/test_flatpak_probe.py')
 EXPECTED_VERSION = '1.16.6'
 REPOSITORY = Path(__file__).resolve().parents[2]
 BASE = REPOSITORY / '.local/r04/route-prerequisites'
@@ -45,7 +52,8 @@ FORBIDDEN_ENV = ('HOME', 'FLATPAK_USER_DIR', 'XDG_DATA_HOME', 'XDG_CONFIG_HOME',
 BASE_CHECKS = ('app_readonly', 'var_readonly', 'usr_readonly', 'etc_readonly', 'home_readonly',
                'ephemeral_only', 'sentinel_absent', 'host_home_absent', 'protected_routes_absent',
                'dbus_absent', 'display_absent', 'audio_absent', 'input_absent', 'gpu_device_absent',
-               'network_unshared', 'ipc_unshared', 'capabilities_dropped')
+               'network_unshared', 'ipc_unshared', 'capabilities_dropped', 'process_separated',
+               'runtime_context_exact', 'unregistered_writes_denied')
 PAYLOAD_KEYS = BASE_CHECKS + ('nvidia_marker_present', 'nvidia_marker_ambiguous')
 PROBE_SCRIPT = r"""#!/bin/sh
 # R04N_SELF_AUTHORED_PROBE
@@ -69,7 +77,17 @@ for spec in "/tmp tmpfs" "/dev/shm tmpfs"; do
     if [ "$kind" != tmpfs ]; then tmp_ok=no; fi
   fi
 done
-sentinel=yes
+sentinel=no
+if [ -f /app/sentinel.path ] && [ ! -L /app/sentinel.path ]; then
+  sentinel_path=$(head -c 4096 /app/sentinel.path || true)
+  case "$sentinel_path" in
+    /*) ;;
+    *) sentinel_path= ;;
+  esac
+  if [ -n "$sentinel_path" ] && [ ! -e "$sentinel_path" ] && [ ! -L "$sentinel_path" ]; then
+    sentinel=yes
+  fi
+fi
 for path in /r04n-host-only /app/r04n-host-only /var/r04n-host-only /home/r04n-host-only \
     /run/host/r04n-host-only /usr/r04n-host-only; do
   if [ -e "$path" ] || [ -L "$path" ]; then sentinel=no; fi
@@ -103,18 +121,42 @@ if [ -f "$info" ] && grep -E -q 'shared=([^;\n]*;)*network(;|$)' "$info"; then n
 ipc=yes
 if [ -f "$info" ] && grep -E -q 'shared=([^;\n]*;)*ipc(;|$)' "$info"; then ipc=no; fi
 caps=no
+process_separated=no
 if [ -r /proc/self/status ]; then
   eff=$(awk '/^CapEff:/ { print $2; exit }' /proc/self/status)
   if [ "$eff" = 0000000000000000 ]; then caps=yes; fi
+  nspid=$(awk '/^NSpid:/ { print NF-1; exit }' /proc/self/status)
+  if [ "${nspid:-0}" -ge 2 ]; then process_separated=yes; fi
 fi
+runtime_exact=no
+if [ -f "$info" ] && grep -E -q '(^|/)org\.freedesktop\.Platform/x86_64/25\.08($|[^0-9])' "$info"; then
+  runtime_exact=yes
+fi
+writes=yes
+for dir in / /usr /etc /opt /srv /run /dev /sys /proc /app /var /home; do
+  if [ "$(denied "$dir")" != yes ]; then writes=no; fi
+done
 nvidia=no
 ambiguous=no
+expected=$(head -c 64 /app/nvidia.sha256 2>/dev/null || true)
+if ! printf '%s' "$expected" | grep -E -q '^[0-9a-f]{64}$'; then
+  expected=
+fi
 for base in /usr/lib/x86_64-linux-gnu/GL /usr/lib/GL; do
   dir="$base/nvidia-595-91-07"
   if [ -d "$dir" ] && [ ! -L "$dir" ]; then
     meta="$dir/metadata"
-    if [ -f "$meta" ] && [ ! -L "$meta" ] && head -c 240 "$meta" | grep -q 'org.freedesktop.Platform.GL.nvidia-595-91-07'; then
-      nvidia=yes
+    if [ -f "$meta" ] && [ ! -L "$meta" ] && [ -n "$expected" ]; then
+      size=$(wc -c < "$meta" | tr -d ' ')
+      digest=
+      if [ "${size:-99999}" -le 8192 ]; then
+        digest=$(sha256sum "$meta" | awk '{ print $1; exit }')
+      fi
+      if [ "$digest" = "$expected" ]; then
+        nvidia=yes
+      else
+        ambiguous=yes
+      fi
     else
       ambiguous=yes
     fi
@@ -126,7 +168,7 @@ for base in /usr/lib/x86_64-linux-gnu/GL /usr/lib/GL; do
     fi
   fi
 done
-printf '%s\n' "{\"app_readonly\":$(yes $(denied /app)),\"var_readonly\":$(yes $(denied /var)),\"usr_readonly\":$(yes $(denied /usr)),\"etc_readonly\":$(yes $(denied /etc)),\"home_readonly\":$(yes $(denied /home)),\"ephemeral_only\":$(yes $tmp_ok),\"sentinel_absent\":$(yes $sentinel),\"host_home_absent\":$(yes $host_home),\"protected_routes_absent\":$(yes $routes),\"dbus_absent\":$(yes $dbus),\"display_absent\":$(yes $display),\"audio_absent\":$(yes $audio),\"input_absent\":$(yes $input),\"gpu_device_absent\":$(yes $gpu),\"network_unshared\":$(yes $network),\"ipc_unshared\":$(yes $ipc),\"capabilities_dropped\":$(yes $caps),\"nvidia_marker_present\":$(yes $nvidia),\"nvidia_marker_ambiguous\":$(yes $ambiguous)}"
+printf '%s\n' "{\"app_readonly\":$(yes $(denied /app)),\"var_readonly\":$(yes $(denied /var)),\"usr_readonly\":$(yes $(denied /usr)),\"etc_readonly\":$(yes $(denied /etc)),\"home_readonly\":$(yes $(denied /home)),\"ephemeral_only\":$(yes $tmp_ok),\"sentinel_absent\":$(yes $sentinel),\"host_home_absent\":$(yes $host_home),\"protected_routes_absent\":$(yes $routes),\"dbus_absent\":$(yes $dbus),\"display_absent\":$(yes $display),\"audio_absent\":$(yes $audio),\"input_absent\":$(yes $input),\"gpu_device_absent\":$(yes $gpu),\"network_unshared\":$(yes $network),\"ipc_unshared\":$(yes $ipc),\"capabilities_dropped\":$(yes $caps),\"process_separated\":$(yes $process_separated),\"runtime_context_exact\":$(yes $runtime_exact),\"unregistered_writes_denied\":$(yes $writes),\"nvidia_marker_present\":$(yes $nvidia),\"nvidia_marker_ambiguous\":$(yes $ambiguous)}"
 """
 
 
@@ -175,7 +217,57 @@ def ancestors(path):
 def launch_environment(overrides=None):
     if overrides:
         raise Refused('ENVIRONMENT_REDIRECTION')
-    return None
+    env = {}
+    for name in ENV_ALLOWLIST:
+        if name not in os.environ or not isinstance(os.environ[name], str) or os.environ[name] == '':
+            raise Refused('ENVIRONMENT_ALLOWLIST')
+        env[name] = os.environ[name]
+    for name in ENV_OPTIONAL:
+        value = os.environ.get(name)
+        if value:
+            env[name] = value
+    home = env['HOME']
+    if not home.startswith('/') or '..' in Path(home).parts:
+        raise Refused('ENVIRONMENT_REDIRECTION')
+    for name in ('FLATPAK_USER_DIR', 'XDG_DATA_HOME', 'XDG_CONFIG_HOME', 'XDG_RUNTIME_DIR', 'DISPLAY',
+                 'WAYLAND_DISPLAY', 'DBUS_SESSION_BUS_ADDRESS'):
+        if name in env:
+            raise Refused('ENVIRONMENT_REDIRECTION')
+    return env
+
+
+def semantic_candidate():
+    digest = hashlib.sha256()
+    for rel in SEMANTIC_FILES:
+        data = (REPOSITORY / rel).read_bytes()
+        digest.update(rel.encode() + b'\0' + data + b'\0')
+    return digest.hexdigest()
+
+
+def ancestor_snapshot(path):
+    path = Path(path)
+    if BASE != path and BASE not in path.parents:
+        raise Refused('PROFILE_SCOPE')
+    rows = []
+    current = path
+    while True:
+        if current.is_symlink() or not current.is_dir():
+            raise Refused('DIRECTORY_PERMISSION')
+        st = current.lstat()
+        if st.st_uid != os.getuid() or stat.S_IMODE(st.st_mode) & 0o077:
+            raise Refused('DIRECTORY_PERMISSION')
+        rows.append((str(current), st.st_dev, st.st_ino, st.st_mode))
+        if current == BASE:
+            break
+        current = current.parent
+    return tuple(rows)
+
+
+def assert_snapshot(snapshot):
+    for path, dev, ino, mode in snapshot:
+        st = Path(path).lstat()
+        if (st.st_dev, st.st_ino, st.st_mode) != (dev, ino, mode) or Path(path).is_symlink():
+            raise Refused('ANCESTOR_CHANGED')
 
 
 def app_paths(home):
@@ -206,7 +298,7 @@ def build_init_command(directory):
 def build_command(directory):
     directory = str(require_build_dir(directory))
     command = [FLATPAK, 'build', '--runtime', '--readonly', '--die-with-parent',
-               '--unshare=network', '--unshare=ipc']
+               '--unshare=network', '--unshare=ipc', '--filesystem=host:reset']
     command += ['--nosocket=' + name for name in SOCKETS]
     command += ['--nodevice=' + name for name in DEVICES]
     command += ['--nofilesystem=' + name for name in FILESYSTEM_DENIALS]
@@ -222,8 +314,10 @@ def validate_build_command(command, directory):
     for arg in command:
         if (arg in ('--with-appdir', '--sandbox', '--env') or arg.startswith((
                 '--bind-mount', '--env=', '--env-fd=', '--unset-env', '--share=', '--socket=',
-                '--device=', '--allow=', '--filesystem=', '--metadata=', '--persist=',
+                '--device=', '--allow=', '--metadata=', '--persist=',
                 '--own-name=', '--talk-name=', '--system-', '--a11y-', '--usb=', '--log-'))):
+            raise Refused('FORBIDDEN_OPTION')
+        if arg.startswith('--filesystem=') and arg != '--filesystem=host:reset':
             raise Refused('FORBIDDEN_OPTION')
         if arg == 'bwrap' or arg.endswith('/bwrap'):
             raise Refused('DIRECT_OR_NESTED_BWRAP')
@@ -236,6 +330,8 @@ def validate_build_command(command, directory):
         raise Refused('MISSING_DENIAL')
     if any('--nodevice=' + name not in command for name in DEVICES):
         raise Refused('MISSING_DENIAL')
+    if '--filesystem=host:reset' not in command:
+        raise Refused('MISSING_DENIAL')
     if any('--nofilesystem=' + name not in command for name in FILESYSTEM_DENIALS):
         raise Refused('MISSING_DENIAL')
     if command != build_command_unchecked(directory):
@@ -244,7 +340,7 @@ def validate_build_command(command, directory):
 
 def build_command_unchecked(directory):
     command = [FLATPAK, 'build', '--runtime', '--readonly', '--die-with-parent',
-               '--unshare=network', '--unshare=ipc']
+               '--unshare=network', '--unshare=ipc', '--filesystem=host:reset']
     command += ['--nosocket=' + name for name in SOCKETS]
     command += ['--nodevice=' + name for name in DEVICES]
     command += ['--nofilesystem=' + name for name in FILESYSTEM_DENIALS]
@@ -253,27 +349,26 @@ def build_command_unchecked(directory):
 
 def require_identity(identity):
     required = {'flatpak_version', 'flatpak_sha256', 'platform_ref', 'platform_metadata_sha256',
-                'nvidia_ref', 'nvidia_metadata_sha256', 'payload_sha256'}
+                'nvidia_ref', 'nvidia_commit', 'nvidia_metadata_sha256', 'payload_sha256'}
     if not isinstance(identity, dict) or set(identity) != required:
         raise Refused('UNEXPECTED_METADATA')
     if identity['flatpak_version'] != EXPECTED_VERSION or identity['flatpak_sha256'] != PINNED_FLATPAK_SHA:
         raise Refused('FLATPAK_IDENTITY')
     if identity['platform_ref'] != PLATFORM_REF or identity['platform_metadata_sha256'] != PINNED_PLATFORM_SHA:
         raise Refused('PLATFORM_IDENTITY')
-    if identity['nvidia_ref'] != NVIDIA_REF or len(identity['nvidia_metadata_sha256']) != 64:
-        raise Refused('NVIDIA_IDENTITY')
-    if any(c not in '0123456789abcdef' for c in identity['nvidia_metadata_sha256']):
+    if (identity['nvidia_ref'] != NVIDIA_REF or identity['nvidia_commit'] != PINNED_NVIDIA_COMMIT or
+            identity['nvidia_metadata_sha256'] != PINNED_NVIDIA_SHA):
         raise Refused('NVIDIA_IDENTITY')
     if identity['payload_sha256'] != payload_digest():
         raise Refused('PAYLOAD_IDENTITY')
     return identity
 
 
-def pinned_identity(nvidia_metadata_sha256):
+def pinned_identity():
     return {'flatpak_version': EXPECTED_VERSION, 'flatpak_sha256': PINNED_FLATPAK_SHA,
             'platform_ref': PLATFORM_REF, 'platform_metadata_sha256': PINNED_PLATFORM_SHA,
-            'nvidia_ref': NVIDIA_REF, 'nvidia_metadata_sha256': nvidia_metadata_sha256,
-            'payload_sha256': payload_digest()}
+            'nvidia_ref': NVIDIA_REF, 'nvidia_commit': PINNED_NVIDIA_COMMIT,
+            'nvidia_metadata_sha256': PINNED_NVIDIA_SHA, 'payload_sha256': payload_digest()}
 
 
 def construct(parent, identifier):
@@ -327,6 +422,7 @@ def validate(root):
             raise Refused('PROFILE_NOT_FRESH')
     if (root / 'probe.sh').read_bytes() != payload_bytes():
         raise Refused('PAYLOAD_IDENTITY')
+    ancestor_snapshot(root)
     if not disjoint(root / 'build', root / SENTINEL_NAME):
         raise Refused('SENTINEL_OVERLAP')
     return manifest
@@ -355,7 +451,10 @@ def classify_payload(payload):
 
 def classify_build(exit_code, stdout, stderr):
     stdout = '' if stdout is None else stdout
-    text = '' if stderr is None else stderr.strip()
+    stderr = '' if stderr is None else stderr
+    if len(stdout.encode()) > OUTPUT_LIMIT or len(stderr.encode()) > OUTPUT_LIMIT:
+        return 'PROBE_FAILED_UNCLASSIFIED'
+    text = stderr.strip()
     if text in HOST_EXACT:
         if exit_code == 0 or stdout.strip():
             return 'PROBE_FAILED_UNCLASSIFIED'
@@ -402,6 +501,17 @@ def write_result(base, result):
         stream.write('\n')
 
 
+def require_registration():
+    path = BASE / 'implementation.json'
+    if not path.is_file() or path.is_symlink() or path.stat().st_nlink != 1:
+        raise Refused('REGISTRATION_REQUIRED')
+    registration = json.loads(path.read_text())
+    if (registration.get('contract_id') != CONTRACT or
+            registration.get('semantic_candidate') != semantic_candidate()):
+        raise Refused('REGISTRATION_MISMATCH')
+    return registration
+
+
 def gate_matches(base, registration_sha):
     path = Path(base) / 'gate.json'
     if not path.is_file() or path.is_symlink():
@@ -413,26 +523,48 @@ def gate_matches(base, registration_sha):
         raise Refused('EXACT_FRESH_REVIEW_REQUIRED')
 
 
+def install_payload(files, root):
+    target = files / 'probe.sh'
+    sentinel = files / 'sentinel.path'
+    nvidia = files / 'nvidia.sha256'
+    for path in (target, sentinel, nvidia):
+        if os.path.lexists(path):
+            raise Refused('PAYLOAD_REUSE')
+    target.write_bytes(payload_bytes())
+    os.chmod(target, 0o500)
+    sentinel.write_text(str(root / SENTINEL_NAME) + '\n')
+    os.chmod(sentinel, 0o400)
+    nvidia.write_text(PINNED_NVIDIA_SHA + '\n')
+    os.chmod(nvidia, 0o400)
+    if sha_file(target) != payload_digest() or nvidia.read_text().strip() != PINNED_NVIDIA_SHA:
+        raise Refused('PAYLOAD_IDENTITY')
+
+
 def execute(root, identity, registration_sha, runner, home):
     root = Path(root)
     manifest = validate(root)
+    snapshot = ancestor_snapshot(root)
     require_new_result(BASE)
+    require_registration()
     gate_matches(BASE, registration_sha)
     require_identity(identity)
     build_dir = root / 'build'
     init_command = build_init_command(build_dir)
     command = build_command(build_dir)
+    if command != build_command_unchecked(build_dir):
+        raise Refused('COMMAND_SHAPE')
     if manifest['payload_sha256'] != payload_digest():
         raise Refused('PAYLOAD_IDENTITY')
     assert_app_paths_absent(home)
-    launch_environment(None)
+    env = launch_environment(None)
+    assert_snapshot(snapshot)
     try:
-        init = runner(init_command, 60)
+        init = runner(init_command, 60, env)
     except subprocess.TimeoutExpired:
         write_result(BASE, {'outcome': classify_timeout(), 'stage': 'build-init', 'build_started': False})
         return classify_timeout()
     if init.returncode != 0:
-        outcome = classify_init(init.returncode, init.stderr or '')
+        outcome = classify_init(init.returncode, bounded_stderr(init.stderr))
         write_result(BASE, {'outcome': outcome, 'stage': 'build-init', 'build_started': False})
         return outcome
     files = build_dir / 'files'
@@ -440,23 +572,37 @@ def execute(root, identity, registration_sha, runner, home):
         write_result(BASE, {'outcome': 'FLATPAK_SUPPORTED_PREREQUISITE_MISSING', 'stage': 'build-init',
                             'build_started': False, 'distinction': 'FILES_DIRECTORY_ABSENT'})
         return 'FLATPAK_SUPPORTED_PREREQUISITE_MISSING'
-    target = files / 'probe.sh'
-    if os.path.lexists(target):
-        raise Refused('PAYLOAD_REUSE')
-    target.write_bytes(payload_bytes())
-    if sha_file(target) != payload_digest():
-        raise Refused('PAYLOAD_IDENTITY')
+    install_payload(files, root)
+    assert_snapshot(snapshot)
     try:
-        build = runner(command, 30)
+        build = runner(command, 30, env)
     except subprocess.TimeoutExpired:
         write_result(BASE, {'outcome': classify_timeout(), 'stage': 'build', 'build_started': True})
         return classify_timeout()
-    outcome = classify_build(build.returncode, build.stdout or '', build.stderr or '')
+    stdout, stderr = bound_pair(build.stdout, build.stderr)
+    if stdout is None:
+        write_result(BASE, {'outcome': 'PROBE_FAILED_UNCLASSIFIED', 'stage': 'build',
+                            'build_started': True, 'distinction': 'OUTPUT_LIMIT'})
+        return 'PROBE_FAILED_UNCLASSIFIED'
+    outcome = classify_build(build.returncode, stdout, stderr)
     residue = any(path.exists() or path.is_symlink() for path in app_paths(home))
     outcome = apply_residue(outcome, residue)
     write_result(BASE, {'outcome': outcome, 'stage': 'build', 'build_started': True,
                         'platform_25_08_is_not_steam_26_08': True})
     return outcome
+
+
+def bounded_stderr(text):
+    stdout, stderr = bound_pair('', text)
+    return '' if stderr is None else stderr
+
+
+def bound_pair(stdout, stderr):
+    stdout = '' if stdout is None else stdout
+    stderr = '' if stderr is None else stderr
+    if len(stdout.encode()) > OUTPUT_LIMIT or len(stderr.encode()) > OUTPUT_LIMIT:
+        return None, None
+    return stdout, stderr
 
 
 def main():
