@@ -80,9 +80,97 @@ def lua_tokens(text: str) -> list[tuple[str, str, int]]:
     return tokens
 
 
+def call_prefix(tokens, first):
+    """Only read arguments before an anonymous function, never its body."""
+    args, current, brackets, after_separator = [], [], [], False
+    for value, kind, line in tokens[first:first + 4096]:
+        if value == 'function' and kind == 'name':
+            return args, 'CALLBACK_FUNCTION_PREFIX' if not current and not brackets else 'FUNCTION_EXPRESSION'
+        if value == ')' and kind == 'punct' and not brackets:
+            if not current and args and after_separator:
+                return args, 'INCOMPLETE_ARGUMENT'
+            if current: args.append(current)
+            return args, 'CLOSED'
+        if value == ',' and kind == 'punct' and not brackets:
+            args.append(current); current = []; after_separator = True; continue
+        if kind == 'punct' and value in {'(', '{', '['}: brackets.append(value)
+        elif kind == 'punct' and value in {')', '}', ']'}:
+            if not brackets or brackets.pop() != {')': '(', '}': '{', ']': '['}[value]:
+                return args, 'UNBALANCED'
+        current.append((value, kind, line))
+        after_separator = False
+    return args, 'INCOMPLETE_OR_LIMITED'
+
+
+def candidate_key(argument):
+    """Documented spelling/numeric candidate, never actual Lua table binding."""
+    values = [t[0] for t in argument]
+    if len(argument) == 1 and argument[0][1] == 'number':
+        value = values[0]
+        if not re.fullmatch(r'(?:0[xX][0-9a-fA-F]+|[0-9]+)', value): return None
+        number = int(value, 16 if value.lower().startswith('0x') else 10)
+        return number if 0 <= number <= 255 else None
+    if len(argument) != 3 or values[:2] != ['Key', '.'] or [t[1] for t in argument] != ['name', 'punct', 'name']:
+        return None
+    name = values[2]
+    if len(name) == 1 and ('A' <= name <= 'Z' or '0' <= name <= '9'): return ord(name)
+    if re.fullmatch(r'F(?:[1-9]|1[0-9]|2[0-4])', name): return 111 + int(name[1:])
+    digits = ['ZERO', 'ONE', 'TWO', 'THREE', 'FOUR', 'FIVE', 'SIX', 'SEVEN', 'EIGHT', 'NINE']
+    if name in digits: return 48 + digits.index(name)
+    if name.startswith('NUM_') and name[4:] in digits: return 96 + digits.index(name[4:])
+    return {'INS': 45, 'DEL': 46, 'HOME': 36, 'END': 35, 'SPACE': 32, 'RETURN': 13,
+            'ESCAPE': 27, 'TAB': 9, 'UP_ARROW': 38, 'DOWN_ARROW': 40,
+            'LEFT_ARROW': 37, 'RIGHT_ARROW': 39}.get(name)
+
+
+def candidate_modifiers(argument):
+    """An entire literal list is required; partial/dynamic lists stay unknown."""
+    values = [t[0] for t in argument]
+    if any(kind != ('name' if value in {'ModifierKey', 'SHIFT', 'CONTROL', 'ALT'} else 'punct')
+           for value, kind, _ in argument): return None
+    if values == ['{', '}']: return []
+    if len(values) < 5 or values[0] != '{' or values[-1] != '}': return None
+    contents, result = values[1:-1], []
+    while contents:
+        if len(contents) < 3 or contents[:2] != ['ModifierKey', '.'] or contents[2] not in {'SHIFT', 'CONTROL', 'ALT'}:
+            return None
+        result.append(contents[2]); contents = contents[3:]
+        if contents:
+            if contents[0] != ',': return None
+            contents = contents[1:]
+    return sorted(result) if len(result) == len(set(result)) else None
+
+
+def keybind_semantics(function, scope, args, shape, line):
+    role = ('UNKNOWN_WRAPPER' if scope != 'BARE' else
+            'REGISTER_SPELLING' if function in {'RegisterKeyBind', 'RegisterKeyBindAsync'} else
+            'QUERY_SPELLING' if function == 'IsKeyBindRegistered' else 'UNKNOWN_WRAPPER')
+    count = len(args) + (shape == 'CALLBACK_FUNCTION_PREFIX') if shape in {'CLOSED', 'CALLBACK_FUNCTION_PREFIX'} else None
+    key = candidate_key(args[0]) if args else None
+    modifiers = None
+    if role == 'REGISTER_SPELLING' and count == 2: modifiers = []
+    elif role == 'REGISTER_SPELLING' and count == 3: modifiers = candidate_modifiers(args[1])
+    return {'line': line, 'function': function, 'role': role, 'callee_scope': scope,
+            'argument_shape': shape, 'argument_count': count,
+            'candidate_virtual_key': key, 'candidate_modifiers': modifiers,
+            'chord_status': 'LITERAL_ARGUMENT_CANDIDATE' if role == 'REGISTER_SPELLING' and scope == 'BARE' and
+                            key is not None and modifiers is not None else 'UNRESOLVED',
+            'binding_and_execution': 'UNKNOWN; scope/shadowing/branches/activation/callback types and dispatch not verified'}
+
+
 def lua_evidence(text: str) -> dict:
     tokens = lua_tokens(text)
+    rebound = {value for i, (value, kind, _) in enumerate(tokens[:-1]) if kind == 'name' and
+               (tokens[i + 1][0] == '=' and (i == 0 or tokens[i - 1][0] not in {'.', ':'}) or
+                i > 0 and tokens[i - 1][0] == 'function')}
+    # Include multi-name local declarations; no evaluator or full scope analysis.
+    for i, (value, kind, line) in enumerate(tokens):
+        if value != 'local' or kind != 'name': continue
+        for name, kind, row in tokens[i + 1:i + 32]:
+            if row != line or name not in {',', 'function'} and kind != 'name': break
+            if kind == 'name': rebound.add(name)
     registrations, effects, loads, unresolved, declarations = [], [], [], [], []
+    key_semantics, file_accesses = [], []
     for i, (value, kind, line) in enumerate(tokens):
         if kind == "string":
             for domain, names in DOMAINS.items():
@@ -108,28 +196,12 @@ def lua_evidence(text: str) -> dict:
         declaration = start > 0 and tokens[start - 1][0] == "function"
         is_call = next_value == "(" and not declaration
         if "keybind" in value.lower() and is_call:
-            # Inspect arguments up to callback/function; dynamic expressions stay unknown.
-            args, current, depth = [], [], 0
-            for token in tokens[i + 2:]:
-                v = token[0]
-                if v == "function":
-                    break
-                if v == ")" and depth == 0:
-                    if current:
-                        args.append(current)
-                    break
-                if v == "," and depth == 0:
-                    args.append(current)
-                    current = []
-                    continue
-                if v in {"(", "{", "["}: depth += 1
-                if v in {")", "}", "]"}: depth -= 1
-                current.append(token)
-                if len(current) > 100: break
+            args, shape = call_prefix(tokens, i + 2)
             values = [[t[0] for t in a] for a in args[:4]]
             literal_key = None
             if args and len(args[0]) == 1 and args[0][0][1] == "number":
-                literal_key = "VK:" + str(int(args[0][0][0], 0))
+                number = candidate_key(args[0])
+                if number is not None: literal_key = "VK:" + str(number)
             elif (args and len(args[0]) >= 3 and args[0][-3][0] == "Key"
                   and all(t[1] == "name" if j % 2 == 0 else t[0] == "." for j, t in enumerate(args[0]))):
                 literal_key = "KEY:" + args[0][-1][0]
@@ -137,6 +209,21 @@ def lua_evidence(text: str) -> dict:
                                 if a[j][0] == "ModifierKey" and a[j + 1][0] == "."})
             registrations.append({"line": line, "function": value, "arguments": values, "literal_key": literal_key,
                                   "literal_modifiers": modifiers, "status": "DECLARED_CALLSITE; runtime registration NOT_RUN"})
+            scope = 'QUALIFIED_MEMBER' if start != i else 'LOCAL_OR_REASSIGNED' if value in rebound else 'BARE'
+            key_semantics.append(keybind_semantics(value, scope, args, shape, line))
+        callee = [t[0] for t in tokens[start:i + 1]]
+        if is_call and callee in [['io', '.', 'open'], ['os', '.', 'remove'], ['os', '.', 'rename']]:
+            args, shape = call_prefix(tokens, i + 2)
+            mode = args[1][0][0] if callee[0] == 'io' and len(args) == 2 and len(args[1]) == 1 and args[1][0][1] == 'string' else None
+            if callee[0] == 'os': intent = 'MUTATION_SPELLING'
+            elif shape == 'CLOSED' and len(args) == 1: intent, mode = 'READ_SPELLING', 'r'
+            elif mode is not None and re.fullmatch(r'[rwa]\+?b?', mode):
+                intent = 'WRITE_SPELLING' if mode[0] in 'wa' or '+' in mode else 'READ_SPELLING'
+            else: intent = 'UNKNOWN'
+            file_accesses.append({'line': line, 'function': '.'.join(callee[::2]),
+                                  'arguments': [[t[0] for t in a] for a in args[:3]],
+                                  'argument_shape': shape, 'literal_mode': mode, 'intent': intent,
+                                  'write_ownership': 'UNASSIGNED', 'target_resolution': 'UNVERIFIED; working directory/aliases/branches may differ'})
         if value in {"require", "dofile"} and is_call:
             arg = tokens[i + 2] if i + 2 < len(tokens) else ("", "", line)
             loads.append({"line": line, "function": value, "literal_prefix": arg[0] if arg[1] == "string" else None,
@@ -146,12 +233,16 @@ def lua_evidence(text: str) -> dict:
                 continue
             operation = "SETTER_CALLSITE" if value in SETTERS and is_call else "DIRECT_ASSIGNMENT" if next_value == "=" else "REFERENCE_ONLY"
             effects.append({"domain": domain, "line": line, "symbol": value, "operation": operation})
-        if value == "pcall" and is_call and i + 2 < len(tokens) and "KeyBind" in tokens[i + 2][0]:
-            unresolved.append({"line": line, "reason": "Indirect pcall registration/check; arguments not resolved"})
+        if value == "pcall" and is_call:
+            indirect_args, indirect_shape = call_prefix(tokens, i + 2)
+            if indirect_args and any('keybind' in t[0].lower() for t in indirect_args[0]):
+                unresolved.append({"line": line, "reason": "Indirect pcall registration/check; arguments not resolved"})
+                key_semantics.append(keybind_semantics('pcall', 'INDIRECT', indirect_args[1:], indirect_shape, line))
         if value in {"load", "loadstring"} and is_call:
             unresolved.append({"line": line, "reason": "Dynamically generated Lua; NOT_INSPECTED"})
     return {"keybind_calls": registrations, "effect_evidence": effects, "module_loads": loads,
             "key_configuration_declarations": declarations,
+            "keybind_semantics": key_semantics, "file_accesses": file_accesses,
             "unknowns": unresolved + [{"reason": "Computed keys/properties, wrappers, branches and callback execution require manual/runtime verification"}],
             "scope": "SYNTACTIC_EVIDENCE_ONLY; no effect or registration acceptance"}
 
@@ -325,15 +416,14 @@ def build_interfaces(catalog: dict, inventory: dict, resources: dict) -> dict:
             if re.search(r"(?:^|/)Scripts/main\.lua$", path.replace("\\", "/"), re.I):
                 entrypoints[ns_module].add(provider)
         if analysis["type"] == "lua":
-            for key in analysis["keybind_calls"]:
-                if not key["literal_key"]: continue
-                ident = key["literal_key"]
-                if ident.startswith("KEY:"):
-                    name = ident[4:]
-                    if re.fullmatch(r"F(?:[1-9]|1[0-9]|2[0-4])", name): ident = "VK:" + str(111 + int(name[1:]))
-                    elif len(name) == 1 and ("A" <= name <= "Z" or "0" <= name <= "9"): ident = "VK:" + str(ord(name))
+            for key in analysis["keybind_semantics"]:
+                if key['role'] != 'REGISTER_SPELLING' or key['callee_scope'] != 'BARE' or key['candidate_virtual_key'] is None:
+                    continue
+                ident = 'VK:' + str(key['candidate_virtual_key'])
                 key_reuse[(doc["namespace"], ident)].append({"file": doc["id"], "module": doc["module"], "line": key["line"],
-                      "modifiers": key["literal_modifiers"], "enabled_in_current_mods_txt": enabled.get(doc["module"]) if doc["namespace"] == "installed" else None})
+                      'package': doc['package'], 'sha256': doc['sha256'],
+                      'modifiers': key['candidate_modifiers'], 'chord_status': key['chord_status'],
+                      "enabled_in_current_mods_txt": enabled.get(doc["module"]) if doc["namespace"] == "installed" else None})
             for effect in analysis["effect_evidence"]:
                 domain_overlap[(doc["namespace"], effect["domain"])].append({"file": doc["id"], "module": doc["module"], **effect,
                      "enabled_in_current_mods_txt": enabled.get(doc["module"]) if doc["namespace"] == "installed" else None})
@@ -356,6 +446,9 @@ def build_interfaces(catalog: dict, inventory: dict, resources: dict) -> dict:
         lua = [d for d in subset if d["analysis"]["type"] == "lua"]
         summary[namespace + "_lua"] = {"files": len(lua), "keybind_calls": sum(len(d["analysis"]["keybind_calls"]) for d in lua),
               "literal_key_calls": sum(k["literal_key"] is not None for d in lua for k in d["analysis"]["keybind_calls"]),
+              'keybind_roles': dict(Counter(k['role'] for d in lua for k in d['analysis']['keybind_semantics'])),
+              'literal_chord_candidates': sum(k['chord_status'] == 'LITERAL_ARGUMENT_CANDIDATE' for d in lua for k in d['analysis']['keybind_semantics']),
+              'file_access_spellings': sum(len(d['analysis']['file_accesses']) for d in lua),
               "effect_domain_references": dict(Counter(e["domain"] for d in lua for e in d["analysis"]["effect_evidence"]))}
     return {"schema_version": 1, "documents": documents, "deferred": deferred, "summary": summary,
             "module_providers": [{"namespace": ns, "module": module, "providers": sorted(providers),
@@ -365,7 +458,7 @@ def build_interfaces(catalog: dict, inventory: dict, resources: dict) -> dict:
                                  for (ns, module), providers in module_providers.items()],
             "raw_script_target_overlaps": script_target_overlaps(catalog, inventory),
             "potential_key_reuse": [{"namespace": ns, "key": key, "members": members,
-                                     "rule": "UNKNOWN; modifiers/branches/current enablement and indirect keys need resolution"}
+                                     "rule": "REGISTER_SPELLING_BASE_KEY_CANDIDATES_ONLY; queries excluded; modifier variants/aliases/branches/activation/dispatch unresolved"}
                                     for (ns, key), members in key_reuse.items() if len({m["module"] for m in members}) > 1],
             "domain_overlap_evidence": [{"namespace": ns, "domain": domain, "members": members,
                                          "rule": "UNKNOWN; references are not write ownership or proof of simultaneous execution"}

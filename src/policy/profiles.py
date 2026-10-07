@@ -148,6 +148,35 @@ class ProfilePlanner:
                                     "deployment_mapping": "UNVERIFIED"})
             blockers.append({"type": "script_provider_mapping_unverified", "target": target,
                              "same_bytes": same})
+        keybindings, file_accesses, missing_key_evidence = [], [], []
+        for document in self.interfaces.get('documents', []):
+            if document['namespace'] != 'raw' or document['package'] not in whole or document['analysis']['type'] != 'lua':
+                continue
+            analysis = document['analysis']
+            identity = {k: deepcopy(document[k]) for k in ['id', 'package', 'module', 'sha256']}
+            if 'keybind_semantics' not in analysis or 'file_accesses' not in analysis:
+                missing_key_evidence.append(document['id']); continue
+            # A query never reserves a key. Unknown wrappers remain visible.
+            keybindings.extend({**identity, **deepcopy(call)} for call in analysis['keybind_semantics']
+                               if call['role'] != 'QUERY_SPELLING')
+            file_accesses.extend({**identity, **deepcopy(call)} for call in analysis['file_accesses'])
+        key_groups = {}
+        for call in keybindings:
+            if call['role'] == 'REGISTER_SPELLING' and call['callee_scope'] == 'BARE' and call['candidate_virtual_key'] is not None:
+                key_groups.setdefault(call['candidate_virtual_key'], []).append(call)
+        key_overlaps = [{'candidate_virtual_key': key, 'members': members,
+                         'compatibility': 'UNKNOWN; literal modifiers do not prove disjoint dispatch/branches/activation'}
+                        for key, members in sorted(key_groups.items()) if len(members) > 1]
+        if key_overlaps:
+            blockers.append({'type': 'keybinding_overlap_unverified', 'base_keys': len(key_overlaps)})
+        unresolved_keys = sum(call['chord_status'] == 'UNRESOLVED' for call in keybindings)
+        if unresolved_keys:
+            blockers.append({'type': 'keybinding_expression_unresolved', 'calls': unresolved_keys})
+        writes = sum(call['intent'] != 'READ_SPELLING' for call in file_accesses)
+        if writes:
+            blockers.append({'type': 'configuration_write_target_unverified', 'calls': writes})
+        if missing_key_evidence or whole and 'documents' not in self.interfaces:
+            blockers.append({'type': 'keybinding_and_file_access_evidence_missing', 'documents': missing_key_evidence})
         # No path/layout, body, ABI, runtime or save safety proof is supplied here.
         if refs:
             blockers.append({"type": "application_not_verified",
@@ -164,6 +193,8 @@ class ProfilePlanner:
                 "closure_refs": sorted(visited), "whole_packages": sorted(whole),
                 "components": sorted(components), "source_packages": sorted(packages),
                 "requirements": requirements, "script_overlaps": script_overlaps,
+                'keybinding_evidence': keybindings, 'keybinding_overlaps': key_overlaps,
+                'file_access_evidence': file_accesses,
                 "resource_overlaps": resource_overlaps,
                 "violations": violations, "blockers": blockers, "provenance": provenance,
                 "status": "REJECTED_STATIC" if violations else "REVIEW_REQUIRED" if blockers else

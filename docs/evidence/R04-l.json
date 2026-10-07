@@ -1,0 +1,216 @@
+{
+  "unit": "R04-l",
+  "lane": "REVIEWED",
+  "baseline_commit": "8977df5163f1bb2f791ef171e46f387fd3d112a0",
+  "scope": "Static keybinding and file-access evidence in the existing lexer and shared raw-profile preview. No runtime or deployment authority.",
+  "candidate": {
+    "owned_source_sha256": {
+      "src/policy/interfaces.py": "640f44e2e3c2f4dd63ae995c889ae69eecefad8347ae0367b9ddd8ac755f7fb7",
+      "src/policy/profiles.py": "c71d429cdeddd4c7929ec1fde2be1a3a7554adf33e03e55ea098bbe6d60c6b41",
+      "tests/test_interfaces.py": "a8e481cffed9152c25f8807c9ea78bf6ef4bedc7d6feae1ba0cbff98b6d00910",
+      "tests/test_profiles.py": "399feb63d17db0384aa9b0dd84e216495d941f5c68f86e1b91968eb45036a170",
+      "src/policy/README.md": "384cdfeffd78d50b4c7330a86fab39083fb034af58363318aed1150c78bd5622"
+    },
+    "private_interface_index": ".local/r04/keybindings/interfaces.json",
+    "interface_index_sha256": "97af891f468105bd7b8225d23650686d103bcf9ee18fe03eaf65df92b5dcbcb9",
+    "frozen_source_versions": {
+      ".local/r01/inc1/inventory.json": "30e537b4bbed7a843915f9aba07d7671b65d76128ade462622f0c43274b06f01",
+      ".local/r02/inc1/catalog.json": "aa80bbcdfd63ed26e30f361e819de3454e28614ca3b20d15e57296d225a39ad5",
+      ".local/r03/inc1/conflicts.json": "49cc5d73355e649a9f288887eeb713d1219d643403cef25ff895602f207d90b9",
+      ".local/r03/inc1/resources.json": "9bb1cd843348ca35df5915dc3b26d9c0caddfc51adb2599a3ce527ea005ba1f0",
+      ".local/r03/inc1/interfaces.json": "bddd1e6574e43608b2c8079feaa34ab8df1f1fa5baebc8f91d4678e26b61b31a"
+    },
+    "private_reports_sha256": {
+      ".local/r04/keybindings/validation.json": "e17d9fd0e5024ade2b4364e9f70e68b02a4e765353f295cb1fda9d65368d4138",
+      ".local/r04/keybindings/single-package-checks.json": "a55cb0e4cbda139726efdab7bd1be4600334ff281b19f842c2dbff9436369386",
+      ".local/r04/keybindings/current.json": "702860e3ce5d0b6a260947facf4ad7738bf9a16618fcae2564f044bb4c123081",
+      ".local/r04/keybindings/requested.json": "4bcfcf6e4920a5c49d168ce699c77b46cdab6bd836a636518111e7d25ece7b3b",
+      ".local/r04/keybindings/switch-preview.json": "38ae78d54e518b73202125bfd3b8b4b5c62412aaae96e147dee4ccbd9dc2cd45"
+    }
+  },
+  "root_validation": {
+    "checks": {
+      "five_frozen_discovery_inputs_match": true,
+      "same619document_identities_and306Lua": true,
+      "one_original_deferral_preserved": true,
+      "all_nonLua_analyses_unchanged": true,
+      "all1384source_installed_metadata_stamps_unchanged": true,
+      "all473singlepackage_previews_qualify_scope_queries_ownership": true,
+      "actualCLI_finalcandidate_exactreport_match": true,
+      "actualpair_nine_samebase_key_candidates_remain_UNKNOWN": true,
+      "237raw82installed_legacy_calls_preserved_and_indirect_separate": true,
+      "no_game_save_account_content_mutation_or_runtime": true
+    },
+    "passed": 10,
+    "required": 10,
+    "tests": {
+      "interfaces": {
+        "count": 11,
+        "exit": 0
+      },
+      "profiles": {
+        "count": 14,
+        "exit": 0
+      }
+    },
+    "interfaces_CLI_exit": 0,
+    "profiles_CLI_exit": 0,
+    "metadata_scope": {
+      "sources": 594,
+      "installed": 790,
+      "unchanged": 1384,
+      "original_save_account_content": "NOT_READ",
+      "full_game1330_and_protected24_checks": "NOT_RERUN; previous evidence retained"
+    }
+  },
+  "interface_evidence": {
+    "summary": {
+      "documents": 619,
+      "deferrals": 1,
+      "raw_types": {
+        "cns": 133,
+        "configuration": 31,
+        "lua": 244,
+        "animation_json": 3
+      },
+      "raw_cns": {
+        "files": 133,
+        "rows": 379,
+        "within_file_duplicate_ids": 0,
+        "missing_ids": 0,
+        "strict_format_failures_metadata_recovered": 19
+      },
+      "raw_lua": {
+        "files": 244,
+        "keybind_calls": 237,
+        "literal_key_calls": 185,
+        "keybind_roles": {
+          "REGISTER_SPELLING": 188,
+          "QUERY_SPELLING": 5,
+          "UNKNOWN_WRAPPER": 48
+        },
+        "literal_chord_candidates": 171,
+        "file_access_spellings": 66,
+        "effect_domain_references": {
+          "spring_physics": 79,
+          "camera": 10,
+          "movement": 22,
+          "world_time": 7,
+          "actor_time": 2,
+          "appearance": 1
+        }
+      },
+      "installed_types": {
+        "lua": 62,
+        "configuration": 5,
+        "animation_json": 3,
+        "cns": 138
+      },
+      "installed_cns": {
+        "files": 138,
+        "rows": 389,
+        "within_file_duplicate_ids": 0,
+        "missing_ids": 0,
+        "strict_format_failures_metadata_recovered": 0
+      },
+      "installed_lua": {
+        "files": 62,
+        "keybind_calls": 82,
+        "literal_key_calls": 47,
+        "keybind_roles": {
+          "REGISTER_SPELLING": 37,
+          "UNKNOWN_WRAPPER": 48,
+          "QUERY_SPELLING": 1
+        },
+        "literal_chord_candidates": 33,
+        "file_access_spellings": 26,
+        "effect_domain_references": {
+          "appearance": 1,
+          "world_time": 1,
+          "actor_time": 2,
+          "camera": 6,
+          "spring_physics": 15
+        }
+      }
+    },
+    "same_document_identities": 619,
+    "Lua_sources": 306,
+    "original_deferrals_retained": 1,
+    "nonLua_analysis": "UNCHANGED",
+    "indirect_keybind_calls": {
+      "raw": 4,
+      "installed": 4
+    },
+    "installed_file_access_intents": {
+      "READ_SPELLING": 15,
+      "WRITE_SPELLING": 9,
+      "MUTATION_SPELLING": 1,
+      "UNKNOWN": 1
+    },
+    "installed_nonread_or_unknown_declarations": 11,
+    "enabled_declarations": "mods.txt only; enabled markers and effective process activation unverified"
+  },
+  "shared_preview": {
+    "single_packages_checked": 473,
+    "profiles_with_new_blockers": 14,
+    "whole_pair": {
+      "requested": [
+        "input-35a956e936960d05e774",
+        "input-f08fd378562a89ca3f83"
+      ],
+      "key_overlap_candidates": 9,
+      "known_violations": 0,
+      "blockers": 7,
+      "decision": "REVIEW_REQUIRED",
+      "can_apply": false
+    },
+    "current_profile": "Owned empty raw preview retained; not the installed game configuration",
+    "component_scope": "Container/loader component selection does not imply same-package Lua scripts",
+    "query_scope": "Query spelling is not a key reservation",
+    "overlap_scope": "Same base-key candidates remain UNKNOWN even with different literal modifiers",
+    "write_scope": "All targets UNVERIFIED and write ownership UNASSIGNED; no full file-write inventory",
+    "application": "can_apply remains false; input profiles and actual settings unchanged"
+  },
+  "primary_sources": [
+    {
+      "url": "https://docs.ue4ss.com/lua-api/global-functions/registerkeybind.html",
+      "scope": "Documented overload spellings; actual installed binding and callbacks NOT_RUN"
+    },
+    {
+      "url": "https://docs.ue4ss.com/lua-api/global-functions/iskeybindregistered.html",
+      "scope": "Query spelling; not registration"
+    },
+    {
+      "url": "https://docs.ue4ss.com/lua-api/table-definitions/key.html",
+      "scope": "Limited name candidates, not interpreted table values"
+    },
+    {
+      "url": "https://docs.ue4ss.com/lua-api/table-definitions/modifierkey.html",
+      "scope": "Literal modifier candidates"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes",
+      "scope": "Documented numeric key candidates"
+    },
+    {
+      "url": "https://www.lua.org/manual/5.4/manual.html#pdf-io.open",
+      "scope": "Documented primary mode spellings; installed Lua version and function binding not established"
+    }
+  ],
+  "failures_retained": "No test or CLI failure in R04-l. Historical failure fingerprints and original deferrals remain in PROJECT_STATE.json and prior evidence; counts not reset.",
+  "not_run": [
+    "Metadata only outside the explicit script/config reads; original saves/account content not read.",
+    "std API names/candidates are lexical/source evidence; actual bound functions, callback types, branch exclusivity and effective activation not established.",
+    "No full file-write inventory or write ownership established; aliases/handles/helpers/external tools remain unresolved.",
+    "Input/body/loader/game/local/Cloud/UI/runtime acceptance remain NOT_RUN.",
+    "Actual game/client/auth/activation/Cloud/save isolation remains unestablished. Refused R04-j nested route not retried and host policy not changed.",
+    "Original A01-A14 acceptance remains 0/14. Static declarations are not compatibility, real in-game UI or hot-switch acceptance."
+  ],
+  "result": "ROOT_PASS_STATIC_UNIT; independent exact-candidate review pending; no final game acceptance",
+  "reproduction_commands": [
+    "python3 -B -m unittest discover -s tests -p test_interfaces.py",
+    "python3 -B -m unittest discover -s tests -p test_profiles.py",
+    "python3 -B -m src.policy.interfaces --catalog .local/r02/inc1/catalog.json --inventory .local/r01/inc1/inventory.json --resources .local/r03/inc1/resources.json --output .local/r04/keybindings/interfaces.json",
+    "python3 -B -m src.policy.profiles --catalog .local/r02/inc1/catalog.json --graph .local/r03/inc1/conflicts.json --interfaces .local/r04/keybindings/interfaces.json --current .local/r04/keybindings/current.json --requested .local/r04/keybindings/requested.json --output .local/r04/keybindings/switch-preview.json"
+  ]
+}

@@ -5,6 +5,7 @@ import tempfile
 import unittest
 
 from src.policy.profiles import ProfilePlanner, read_json
+from src.policy.interfaces import lua_evidence
 
 
 def profile(*refs, providers=None):
@@ -13,6 +14,53 @@ def profile(*refs, providers=None):
 
 
 class ProfileTests(unittest.TestCase):
+    def documents(self, scripts):
+        self.interfaces['documents'] = [{'id': package + '::main.lua', 'name': 'main.lua',
+            'namespace': 'raw', 'package': package, 'module': package, 'sha256': 'own-fixture-' + package,
+            'analysis': {'type': 'lua', **lua_evidence(text)}} for package, text in scripts]
+
+    def test_selected_whole_packages_share_key_evidence_but_components_do_not(self):
+        self.documents([('base', 'RegisterKeyBind(Key.F8, callback)'),
+                        ('extension', 'RegisterKeyBind(119, {ModifierKey.CONTROL}, callback)')])
+        original = copy.deepcopy(self.interfaces)
+        leaf = self.planner.inspect(profile('loader1', 'extension'))
+        self.assertEqual([r['package'] for r in leaf['keybinding_evidence']], ['extension'])
+        self.assertEqual(leaf['keybinding_overlaps'], [])
+        whole = self.planner.inspect(profile('base', 'extension'))
+        self.assertEqual(whole['keybinding_overlaps'][0]['candidate_virtual_key'], 119)
+        self.assertTrue(whole['keybinding_overlaps'][0]['compatibility'].startswith('UNKNOWN'))
+        self.assertTrue(any(b['type'] == 'keybinding_overlap_unverified' for b in whole['blockers']))
+        self.assertFalse(whole['violations'])
+        self.assertFalse(whole['can_apply'])
+        self.assertEqual(self.interfaces, original)
+
+    def test_queries_never_reserve_keys_and_unknown_wrappers_remain_visible(self):
+        self.documents([('base', 'IsKeyBindRegistered(Key.F8)'),
+                        ('extension', 'pcall(RegisterKeyBind, config.key, callback)')])
+        report = self.planner.inspect(profile('base', 'extension'))
+        self.assertEqual(len(report['keybinding_evidence']), 1)
+        self.assertEqual(report['keybinding_evidence'][0]['role'], 'UNKNOWN_WRAPPER')
+        self.assertEqual(report['keybinding_overlaps'], [])
+        self.assertTrue(any(b['type'] == 'keybinding_expression_unresolved' for b in report['blockers']))
+
+    def test_write_declarations_add_shared_blockers_without_assigning_ownership(self):
+        self.documents([('base', 'io.open("config.json", "w")'),
+                        ('extension', 'io.open(path, "r")')])
+        report = self.planner.inspect(profile('base', 'extension'))
+        self.assertEqual(len(report['file_access_evidence']), 2)
+        blocker = next(b for b in report['blockers'] if b['type'] == 'configuration_write_target_unverified')
+        self.assertEqual(blocker['calls'], 1)
+        self.assertTrue(all(r['write_ownership'] == 'UNASSIGNED' for r in report['file_access_evidence']))
+        leaf = self.planner.inspect(profile('loader1', 'extension'))
+        self.assertFalse(any(b['type'] == 'configuration_write_target_unverified' for b in leaf['blockers']))
+
+    def test_old_keybind_evidence_is_explicitly_unavailable(self):
+        self.documents([('base', 'RegisterKeyBind(Key.F8, callback)')])
+        del self.interfaces['documents'][0]['analysis']['keybind_semantics']
+        report = self.planner.inspect(profile('base'))
+        self.assertTrue(any(b['type'] == 'keybinding_and_file_access_evidence_missing' for b in report['blockers']))
+        self.assertFalse(report['can_apply'])
+
     def setUp(self):
         def record(key, kind="container_mod", requires=(), mod=None, digest="a"):
             return {"id": key, "kind": kind, "requirements": [{"target": t} for t in requires],

@@ -34,7 +34,38 @@ python3 -m src.policy.interfaces --catalog .local/r02/catalog.json --inventory .
 
 `raw_script_target_overlaps` 比较模块相对路径、准确文件 SHA-256 和大小。归档外层路径及 Windows 分隔符可不同，ASCII 大小写按候选目标归一化；实际安装映射仍需验证。相同字节可保留多个来源，不同字节需要明确文件提供者或覆盖方案；两者都不授予部署权限，也不直接推断崩溃。配置、导入和运行入口后续必须共用同一规则引擎，当前只是只读证据。
 
-Lua 调查使用词法分析，不运行脚本；动态属性、包装函数、条件分支、配置优先级与间接注册保留未知。数字键码仅对常见字母/数字/F 键依照 [Windows 虚拟键码](https://learn.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes)归一化，重叠仍是调查候选；[UE4SS 注册接口](https://docs.ue4ss.com/lua-api/global-functions/registerkeybind.html)的实际运行需按安装版本验证。
+Lua 调查使用词法分析，不运行脚本；动态属性、包装函数、条件分支、配置优先级与间接注册保留未知。已知字面键码按下文限定的名称和 [Windows 虚拟键码](https://learn.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes)归一化，重叠仍是调查候选；[UE4SS 注册接口](https://docs.ue4ss.com/lua-api/global-functions/registerkeybind.html)的实际运行需按安装版本验证。
+
+R04-l 保留原 `keybind_calls` 调查分母，同时增加 `keybind_semantics`：
+直接的注册名称、查询名称和未知包装分别记录；限定成员、局部/重赋值名称及
+`pcall` 间接调用保留未知。查询名称不会被当作键位注册；这个分类不证明真实
+Lua 绑定或回调已运行。配置值读取函数也不能仅凭名称推断为注册函数。
+
+两参数与三参数注册形式分别记录修饰键。只有完整的字面修饰键列表才可形成
+组合候选；动态成员、重复项、部分列表、未结束参数和未知重载均保留未知。
+常用 [Key 名称](https://docs.ue4ss.com/lua-api/table-definitions/key.html) 与 VK
+数字按文档候选归一化，包括数字区、数字小键盘、Insert 和方向键；不执行
+Lua 表来验证对应值。多个声明使用同一主键时，修饰键不同也不证明不会同时
+触发，分支、调用环境、启用与分发行为仍须实测。
+
+`file_accesses` 只记录 `io.open`、`os.remove` 和 `os.rename` 的字面调用形式，
+模式依据 [Lua I/O 文档](https://www.lua.org/manual/5.4/manual.html#pdf-io.open)。
+这不是完整写入清单或安装版本证明。文件句柄写入、自定义保存函数、外部工具、
+工作目录、路径别名和条件执行仍可能改变真实目标；所有写入权保持 `UNASSIGNED`。
+参数名称相同或文件名相同不能证明两个模块写入同一目标，也不授予覆盖权。
+
+共享配置预览只纳入显式选择的整包 Lua 证据；容器/加载器组件不会自动选择
+同包脚本。查询不占键，动态/间接调用、同主键候选和未确定写入目标会加入
+相应待验证项；旧索引缺少这些字段时明确显示证据缺失。当前报告仍为只读，
+不会保存或部署配置，`can_apply` 始终为 false，旧配置保持在预览结果中。
+
+本机 R04-l 重建保留 619 个文档、306 个 Lua 来源身份和原 1 个延期项。
+原包 237/已安装 82 个含 keybind 名称的直接调用仍保留；各有另 4 个间接调用。
+原包有 188 个注册名称、5 个查询名称，已安装有 37 个注册名称、1 个查询名称；
+其余为未知包装。登记 66/26 个文件访问声明，其中已安装有 11 个写入/变更或
+未知模式声明，不能据此证明这些代码当前会执行。`enabled_in_current_mods_txt`
+仅是清单声明，不等于 enabled 标记、加载器实际启用或进程状态。
+当前完整索引和复核结果在忽略的 `.local/r04/keybindings/`；旧索引不覆盖。
 
 原配置的尾逗号只可移除后恢复调查元数据，明确保留严格格式失败；不修改源配置，不授权应用。重复 JSON 键拒绝解析，防止无声丢掉作者声明。顶层记录、声明的变体槽、实际可用选项和运行支持分别统计。
 

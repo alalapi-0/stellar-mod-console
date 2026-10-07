@@ -15,8 +15,8 @@
   "goal_mode_started": true,
   "implementation_started": true,
   "phase": "P1",
-  "current_round": "R04-k",
-  "round_status": "COMPLETE_R04-k_STATIC_LOADER_INTERFACE_AND_SOURCE_DELIVERY; FULL_GOAL_PARTIAL",
+  "current_round": "R04-l",
+  "round_status": "ACCEPTED_R04-l_STATIC_KEYBIND_FILE_ACCESS; SOURCE_DELIVERY_PENDING",
   "next_round": "R04-l",
   "protected": [
     "Existing game files and saves",
@@ -192,8 +192,8 @@
     },
     "private_resource_index": ".local/r03/inc1/resources.json",
     "resource_index_sha256": "9bb1cd843348ca35df5915dc3b26d9c0caddfc51adb2599a3ce527ea005ba1f0",
-    "private_interface_index": ".local/r03/inc1/interfaces.json",
-    "interface_index_sha256": "bddd1e6574e43608b2c8079feaa34ab8df1f1fa5baebc8f91d4678e26b61b31a",
+    "private_interface_index": ".local/r04/keybindings/interfaces.json",
+    "interface_index_sha256": "97af891f468105bd7b8225d23650686d103bcf9ee18fe03eaf65df92b5dcbcb9",
     "interface_summary": {
       "documents": 619,
       "deferrals": 1,
@@ -214,6 +214,13 @@
         "files": 244,
         "keybind_calls": 237,
         "literal_key_calls": 185,
+        "keybind_roles": {
+          "REGISTER_SPELLING": 188,
+          "QUERY_SPELLING": 5,
+          "UNKNOWN_WRAPPER": 48
+        },
+        "literal_chord_candidates": 171,
+        "file_access_spellings": 66,
         "effect_domain_references": {
           "spring_physics": 79,
           "camera": 10,
@@ -240,6 +247,13 @@
         "files": 62,
         "keybind_calls": 82,
         "literal_key_calls": 47,
+        "keybind_roles": {
+          "REGISTER_SPELLING": 37,
+          "UNKNOWN_WRAPPER": 48,
+          "QUERY_SPELLING": 1
+        },
+        "literal_chord_candidates": 33,
+        "file_access_spellings": 26,
         "effect_domain_references": {
           "appearance": 1,
           "world_time": 1,
@@ -321,6 +335,19 @@
       "installed_global_shaped_call_sites": 238,
       "actual_loader_abi_lua_bindings": "NOT_RUN",
       "evidence": "docs/evidence/R04-k.json"
+    },
+    "previous_interface_basis": {
+      "path": ".local/r03/inc1/interfaces.json",
+      "sha256": "bddd1e6574e43608b2c8079feaa34ab8df1f1fa5baebc8f91d4678e26b61b31a",
+      "scope": "Original R03-inc1 interface basis retained; R04-l reuses all619identities and preserves1deferral"
+    },
+    "download_membership_last_recheck": {
+      "unit": "R04-l",
+      "files": 591,
+      "new": 0,
+      "missing": 0,
+      "changed": 0,
+      "scope": "Downloads membership and metadata only; no source content read by this recheck"
     }
   },
   "milestones": {
@@ -440,7 +467,7 @@
     "visibility": "PUBLIC_VERIFIED",
     "initial_branch": "main",
     "implementation_branch_policy": "Separate implementation branch; push each round; no automatic merge",
-    "sync_status": "VERIFIED R04-k source a127c9848b34488fc55b9c7b038280cc41241d4b exactly matches GitHub branch API. Final closure HEAD identity uses Git and remote ref.",
+    "sync_status": "PENDING R04-l source delivery; previous R04-k commit retained",
     "head_identity": "Use git HEAD and the remote ref; do not store a self-referential commit hash",
     "branch": "impl/mod-console",
     "verified_content_commits": {
@@ -825,26 +852,28 @@
       "evidence": "docs/evidence/R03-inc1.json"
     }
   ],
-  "next_action": "Resolve current installed Lua key-binding/configuration ownership and exact argument evidence in the shared conflict engine; retain real client/auth/Cloud/game/save isolation as an unestablished gate and do not repeat the refused nested route under unchanged host conditions.",
+  "next_action": "Complete R04-l keybind/file-access evidence and shared raw-profile blockers; exact review and source sync; real game isolation remains unestablished.",
   "updated_on": "2026-10-08",
   "execution": {
     "owner_thread": "01a115db-7ff8-70c1-8122-cdc330aaf5c5",
-    "lane": "DIRECT",
-    "lane_reason": "Bounded read-only PE export/import and pinned-source Lua registration evidence; self-authored additive parser; no game/DLL loading or protected runtime/security effects.",
+    "lane": "REVIEWED",
+    "lane_reason": "Recoverable shared configuration-preview semantics for keybind query/register/wrapper distinction, unknown modifiers and file-access ownership evidence; fresh read-only Judge for exact candidate. No runtime, deployment or credential/security effects.",
     "owned_paths": [
-      "src/testing/runtime_probe.py",
-      "tests/test_runtime_probe.py",
-      "src/testing/README.md",
-      "docs/evidence/R04-k.json",
+      "src/policy/interfaces.py",
+      "src/policy/profiles.py",
+      "tests/test_interfaces.py",
+      "tests/test_profiles.py",
+      "src/policy/README.md",
+      "docs/evidence/R04-l.json",
       "PROJECT_STATE.json",
-      ".local/r04/loader-interface/"
+      ".local/r04/keybindings/"
     ],
-    "entry_preimage": "a6ea60442c84efc0dd7b2f8e5b2bedbe202ec48c; state SHA256 a6b79aadc73d1261ab547ba8f712a768409754e0cbd2f6fd851983de169707e2",
-    "execution_source": "Native active Goal continuation after verified R04-j source delivery",
-    "acceptance": "Frozen installed2cores and distinct1candidate revalidated and statically inspected; PE exports cross-checked with existing independent binary tool; pinned primary-source API evidence clearly separated from installed/runtime identity; targeted tests and exact source delivery.",
-    "external_scope": "Read-only exact game-loader/source-package references and public upstream documentation; ordinary source commit/push authorized. No game/client/MOD execution, deployment, session/credentials/save reads or copies, global changes or namespace-route retry.",
-    "next_evidence": "Complete: docs/evidence/R04-k.json; directRoot9/9,12parser+7relatedregression tests, twoindependentexactexport crosschecks, real --exports CLIexit0.",
-    "result": "PASS_STATIC_UNIT_ONLY; current2frozencores/distinct1candidate/62Lua identities;65externalstampsunchanged; no protected runtime effect. Source verified on GitHub: a127c9848b34488fc55b9c7b038280cc41241d4b."
+    "entry_preimage": "8977df5163f1bb2f791ef171e46f387fd3d112a0; State SHA256 7299f2e62a49cd17149dcded51bebfe9e0c003c3f925fb017c56a1c766c1600e",
+    "execution_source": "Native Goal continuation after verified R04-k delivery",
+    "acceptance": "Existing lexer and interface builder classify direct registration/query/wrapper scope, preserve complete-vs-unknown key/modifier arguments and file-access declarations; shared planner includes selected whole-package evidence and qualifies unknowns, no query reservation or component-implied scripts. Rebuild original619documents/306Lua basis with frozen identities, retain prior deferrals and final0/14. Meaningful targeted/regression checks, fresh read-only Judge and exact source delivery.",
+    "external_scope": "Exact game/MOD/download references read-only; bounded static archive text reads/public documentation only. No game/client/MOD or third-party code execution, Steam-settings/save/account reads or changes, source/binary/asset copies, namespace-route retry or deployment. Normal source sync authorized.",
+    "next_evidence": "Exact normal source commit/push and GitHub branch SHA verification",
+    "result": "PASS_STATIC_UNIT_ONLY; Root10/10,11interface+14profiletests/2CLI/freshJudgePASS; source delivery pending. Original0/14 remains."
   },
   "rounds": {
     "R01": {
@@ -949,15 +978,17 @@
     "remaining_percentage": null
   },
   "governance": {
-    "contract": "docs/contracts/R04-j.json",
-    "governor": "r04_j_governor",
-    "registration": ".local/r04/client-plan/postlaunch.json",
-    "judge": "r04_j_postlaunch_judge",
-    "decision": "APPROVE_SOURCE_DELIVERY",
-    "evidence": "docs/evidence/R04-j.json",
-    "approval_scope": "Accepted exact classified-refusal evidence/source sync only; no unchanged-host route rerun or protected runtime effects",
-    "identity_rule": "Exactsemanticfilemap/separateStatehash; decision/syncmetadata outsidecontentidentity",
-    "previous_accepted": "docs/evidence/R04-i.json",
-    "semantic_candidate": "79b8bce7ec9912909f6fdabc0a666ad0e07b8005bc5de03c1631e1efb9e95fd3"
+    "lane": "REVIEWED",
+    "registration": ".local/r04/keybindings/registration.json",
+    "judge": "r04_l_keybind_judge",
+    "decision": "PASS_EXACT_STATIC_CANDIDATE",
+    "evidence": "docs/evidence/R04-l.json",
+    "semantic_candidate": "9f7db7cbd810ee92242f87cd34ad54bf9bc82cade935cadb1a228301b1192d94",
+    "identity_rule": "Exact six-file semantic map; separate State hash; review/progress/sync metadata outside candidate identity",
+    "previous_accepted": "docs/evidence/R04-j.json",
+    "previous_contract": "docs/contracts/R04-j.json",
+    "approval_scope": "Static shared-preview unit and authorized source sync only; no runtime or deployment",
+    "judge_report": ".local/r04/keybindings/judge.json",
+    "judge_report_sha256": "26dae89435d27288ab666a124640d3e32f610688e41f289e5ed8d63308caad06"
   }
 }
