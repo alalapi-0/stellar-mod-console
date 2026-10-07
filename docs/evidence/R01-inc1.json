@@ -1,0 +1,143 @@
+{
+  "round": "R01-inc1",
+  "lane": "DIRECT",
+  "scope": "Read-only additional download inventory, content organization, management references and clarified app/profile/category/provenance requirements",
+  "entry_commit": "3760316defe415fb1cce6b883ed439b9c8703c04",
+  "original_basis": {
+    "source_inputs": 569,
+    "relevant_candidate_records": 450,
+    "required_acceptance_results": 14,
+    "accepted_results": 0
+  },
+  "scope_increment": {
+    "download_archives": 25,
+    "bytes_hashed": 836634957,
+    "new_canonical_records": 23,
+    "added_content_aliases": 2,
+    "new_record_types": {
+      "cns_content": 7,
+      "container_mod": 12,
+      "lua_mod": 4
+    },
+    "current_source_inputs": 594,
+    "current_downloads": 591,
+    "current_canonical_records": 565,
+    "current_relevant_candidate_records": 473,
+    "source_records_added_not_new_mod_count": true
+  },
+  "integrity": {
+    "new_archive_sha256_and_regular_entry_decode": "25/25 PASS",
+    "original_source_records": "All569original records retained with identical fields; original snapshot remains unchanged",
+    "original_hashes_rerun": false,
+    "current_source_stamps": "594/594 unchanged",
+    "original_incomplete_downloads": 42,
+    "added_container_groups": 28,
+    "all_added_container_groups_complete": true
+  },
+  "static_interfaces": {
+    "documents": 52,
+    "cns_files": 8,
+    "cns_rows": 8,
+    "lua_files": 44,
+    "metadata_deferrals": 0,
+    "new_strict_cns_format_failures": 1,
+    "original_strict_cns_format_failures": 18,
+    "source_repairs": 0,
+    "jiggle_module_entrypoints": 1,
+    "jiggle_literal_f1_binding": true,
+    "preset_extensions": 3,
+    "preset_files_per_extension": 14,
+    "exact_consumer_version": "UNKNOWN",
+    "pair_shared_file_targets": [
+      7,
+      5,
+      0
+    ],
+    "all_shared_targets_different_bytes": true,
+    "conclusion": "Explicit preset/override plan required; no runtime conflict/crash conclusion",
+    "input_binding": "Fresh direct function analysis against final increment; same52documents; baseline resource presence only"
+  },
+  "management_references": {
+    "general_manager_references": [
+      "SB Mod Manager",
+      "Simple UE MOD Manger",
+      "SB Control Center",
+      "UE Mod Hub"
+    ],
+    "parameter_editor": "Jiggle physics GUI",
+    "in_game_or_automation_capability_references": [
+      "CNS",
+      "ATOOL",
+      "RandomSwitchCNS",
+      "BetterJiggle"
+    ],
+    "author_pages_read": [
+      "https://www.nexusmods.com/stellarblade/mods/199",
+      "https://www.nexusmods.com/stellarblade/mods/1959",
+      "https://www.nexusmods.com/stellarblade/mods/206",
+      "https://www.nexusmods.com/stellarblade/mods/1627"
+    ],
+    "unavailable_author_pages": {
+      "89": "content gate",
+      "1397": "content gate; exact local README used",
+      "1774": "fetch unavailable; exact local preset layouts used"
+    },
+    "runtime_validation": "NOT_RUN",
+    "third_party_copy_or_redistribution_grants": 0
+  },
+  "requirements_recorded": {
+    "app_like_in_game_console": true,
+    "isolated_whole_profiles": true,
+    "functional_categories_separate_from_profiles": true,
+    "original_archive_version_author_source_and_evidence": true,
+    "package_dll_loader_switches": "EXIT/TRANSACTION/COLD_START; not simultaneous incompatible stacks",
+    "actual_ui_or_profile_implementation": "NOT_RUN"
+  },
+  "verification": {
+    "unique_sources": true,
+    "original_source_records_preserved": true,
+    "all_source_stamps_unchanged": true,
+    "downloads_exact_set": true,
+    "added_all_decoded": true,
+    "exactly_once_catalog_ownership": true,
+    "baseline_canonical_records_preserved_except_added_aliases": true,
+    "baseline_dependency_nodes_preserved": true,
+    "added_23_records_2_aliases": true,
+    "28_complete_added_containers": true,
+    "presets_14_each_not_module_entrypoints": true,
+    "preset_overlap_0_5_7_all_differ": true,
+    "original_42_incomplete_retained": true,
+    "interface_summary_52_documents_1_format_failure": true,
+    "22_protected_hashes_unchanged": true,
+    "1330_game_entry_stamps_unchanged": true,
+    "complete_game_file_set_unchanged": true,
+    "interface_fact_binding_refresh_same_documents": true
+  },
+  "private_artifact_sha256": {
+    ".local/r01/inc1/inventory.json": "30e537b4bbed7a843915f9aba07d7671b65d76128ade462622f0c43274b06f01",
+    ".local/r02/inc1/catalog.json": "aa80bbcdfd63ed26e30f361e819de3454e28614ca3b20d15e57296d225a39ad5",
+    ".local/r02/inc1/interfaces.json": "b45327416a3c67bf47f1b69ba6be68c52162d2f2c03e5ee8c03e9dd419e57c5c",
+    ".local/r02/inc1/preset-overlaps.json": "36a424aa624b4f9f70dd838c9f06acaebf68b0590a25c8c8c161b995e0ab38e3",
+    ".local/r02/inc1/organization.json": "c99bcc4d7acf5380420516d04676871e77fd30273a3fd88fe1c9e2e7af8b901d"
+  },
+  "spec_sha256": {
+    "docs/REQUIREMENTS.md": "a51bb9a2f3e9ab9d3962ceaaa734d38f4e162bd5901ceb73aff9564c4e5171af",
+    "docs/ARCHITECTURE.md": "f271d3a2abe681e91eaf6e00bdd06d1628e09161299393c0fe0eea2530811b45",
+    "docs/UI_SPEC.md": "b335e5c400f57ac6dd399600823c365c4bf791d277f7faf0c5a994169ce40a9b",
+    "docs/REUSE.md": "1a518d31becfaa726463094569ae8a43b8dece09e6767556287d87c6f8a75548"
+  },
+  "protection": {
+    "source_writes": 0,
+    "third_party_executions": 0,
+    "game_writes": 0,
+    "save_or_account_setting_changes": 0,
+    "protected_hashes_rechecked": 22,
+    "complete_game_entry_set_and_stamps_rechecked": 1330
+  },
+  "limits": [
+    "Source/type/provenance hints remain explicit; unknown permissions and exact version/body/DLC prerequisites remain unresolved",
+    "Original R03 graph covers450 relevant records;23 added records require graph/resource expansion and actual runtime tests",
+    "Static metadata, author descriptions and requirements do not establish compatibility, UI quality or original A01-A14 acceptance"
+  ],
+  "result": "PASS_INCREMENT_ORGANIZATION_AND_REQUIREMENT_RECORD; FULL_GOAL_PARTIAL"
+}

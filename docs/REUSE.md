@@ -22,6 +22,22 @@
 
 管理库的分类/搜索、配置档切换、冲突原因和前置提示、可读的变更方案、作者更新提醒，均可用自己的模型和代码独立实现。接口适配保持工具责任，功能页融合在统一 UI；不把工具原代码、窗口或主题搬入新产品。
 
+### 本次补充整理的管理能力参考
+
+2026-10-07 只读核对本机包及可访问作者页面；下列页面功能描述不是本机运行验收，也不是可直接移植的接口。此次新增 25 个归档主要是外观/CNS 内容、Jiggle Update 和物理预设，管理器参考来自已有资料库，并没有把每个预设算成新管理器。
+
+| 参考及本机版本 | 可独立借鉴的能力 | 证据与边界 |
+| --- | --- | --- |
+| [SB Mod Manager #89](https://www.nexusmods.com/stellarblade/mods/89)，文件名 2026.8.7.1 | 保留为管理器调查对象，具体能力待核实 | 当前作者页有内容访问门禁；本机包名不能证明功能、接口或许可，不改变账号设置获取内容 |
+| [Simple UE MOD Manger #199](https://www.nexusmods.com/stellarblade/mods/199)，1.6.4 | 导入、分类、启用/停用、预览和自定义名称 | 作者页已核对；桌面工具。上传、修改和资源复用需按作者权限核实 |
+| [SB Control Center #1959](https://www.nexusmods.com/stellarblade/mods/1959)，2.2.0 | 按 Logic/Movie/Generic/CNS 分类，拖入归档并识别目标位置，前置引导 | 作者页描述需 7-Zip 并可处理 CNS/UE4SS 安装；本项目仍需版本闭包、退出事务和前像检查，不直接采用自动加载器升级。作者权限限制仍适用 |
+| [UE Mod Hub #206](https://www.nexusmods.com/stellarblade/mods/206)，下载文件 0.10.10 | 资料库、搜索、来源入口、下载/安装状态及统一导航 | 作者页已核对；本机另有 0.10.69 目录，两者不能混作同一版本验收。上游自定义许可限制仍有效，独立实现交互，不复制源码/主题 |
+| [Jiggle physics GUI #1627](https://www.nexusmods.com/stellarblade/mods/1627)，本机文件名 1.0 | 参数编辑、默认值恢复、参数与实际生效状态区分 | 作者页说明编辑 #1397 的 SpringBoneTweaks.lua，修改后仍需游戏内 F1 重载；不是通用 MOD 管理器，未证明支持 BetterJiggle/Kittens。作者权限限制仍适用 |
+
+CNS 的服装列表、ATOOL 的功能/动画选择、RandomSwitchCNS 的允许集合与自动切换也属于游戏内能力参考。它们的版本、变体、依赖、快捷键和写入权单独记录；调试 GUI、桌面 GUI 和作者描述都不能作为游戏内面板验收。
+
+新增 #1397 包内说明和 Lua 静态分析可对应到准确归档：包含 JiggleUpdate 的 main.lua、默认 SpringBoneTweaks.lua 和 F1 绑定，UE4SS 准确版本仍未知。新增 #1774 三个包各含 14 个编号预设，没有 main.lua；它们是扩展数据，准确消费者版本待核实。10–23 与 17–30 覆盖同一批 7 个目标且字节不同，10–23 与 Replacer 重叠 5 个目标；这要求整套选择或明确覆盖计划，不等于已证明会崩溃。详细原包/文件/hash 对照保存在本机增量清单，不公开第三方原始内容。
+
 [Nexus 文件规范](https://help.nexusmods.com/article/28-file-submission-guidelines)说明文件许可由作者决定；“Nexus 下载”不能成为重新打包授权。用户私有本机按路径使用与公开发行是不同边界。每项复用记录 required_notice、redistribution、modification、license_version 和 source_version；许可未知不进入发行包。
 
 ## 官方接口证据与版本限制
