@@ -75,8 +75,23 @@ class FlatpakProbeTests(unittest.TestCase):
         self.identifier = 'a' * 32
         self.root = probe.construct(self.scope / 'profiles', self.identifier)
         self.identity = probe.pinned_identity()
+        self.watch = self.base / 'watched'
+        self.watch.mkdir()
+
+        def spec(home):
+            return (
+                self.watch,
+                probe.BASE / 'probe-tmp',
+                Path(home) / '.var/app',
+                Path(home) / '.cache/flatpak',
+                Path(home) / '.local/share/flatpak/app',
+            )
+
+        self.watch_patch = patch.object(probe, 'watch_spec', spec)
+        self.watch_patch.start()
 
     def tearDown(self):
+        self.watch_patch.stop()
         self.patch.stop()
         self.tmp.cleanup()
 
@@ -381,7 +396,9 @@ class FlatpakProbeTests(unittest.TestCase):
         self.assertIn('/dev/shm', text)
         self.assertEqual(set(document['namespace_preimage']), {'net', 'ipc', 'pid'})
         self.assertTrue(all(value.isdigit() for value in document['namespace_preimage'].values()))
-        self.assertIn(probe.APP_ID, document['probe_app_paths'][0])
+        self.assertIn(probe.APP_ID, next(iter(document['probe_app_preimage'])))
+        self.assertIn('outcome', document['expected_result_keys'])
+        self.assertTrue(all(isinstance(value, bool) for value in document['probe_app_preimage'].values()))
         self.assertEqual(probe.pinned_identity()['platform_commit'], probe.PINNED_PLATFORM_COMMIT)
 
     def test_namespace_preimage_must_differ(self):
@@ -518,7 +535,7 @@ class FlatpakProbeTests(unittest.TestCase):
         (config / 'settings').write_text('before')
 
         def spec(home):
-            return ((watch, 'all'), (probe.BASE / 'probe-tmp', 'all'))
+            return (watch, probe.BASE / 'probe-tmp')
 
         def mutate(args, **kwargs):
             calls.append(args[1])
@@ -539,3 +556,119 @@ class FlatpakProbeTests(unittest.TestCase):
         self.assertFalse(result['postflight']['flatpak_config_unchanged'])
         self.assertFalse(result['postflight']['outside_output_absent'])
         self.assertEqual(calls, ['build-init', 'build'])
+
+    def test_new_child_after_pin_is_refused_before_second_launch(self):
+        self.arm()
+        calls = []
+        real_pin = probe.pin_tree
+        seen = {'n': 0}
+
+        def popen(args, **kwargs):
+            calls.append(args[1])
+            if args[1] != 'build-init':
+                raise AssertionError('second launch')
+            (self.root / 'build' / 'files').mkdir()
+            return Done(0)
+
+        def pin(path):
+            result = real_pin(path)
+            seen['n'] += 1
+            if seen['n'] == 2:
+                (Path(path) / 'intruder').write_text('x')
+            return result
+
+        with patch.object(probe, 'pin_tree', pin):
+            outcome = self.launch(popen)
+        self.assertEqual(outcome, 'PROBE_FAILED_UNCLASSIFIED')
+        self.assertEqual(calls, ['build-init'])
+        result = json.loads((self.scope / 'result.json').read_text())
+        self.assertEqual(result['distinction'], 'TREE_CHANGED')
+        self.assertIn('postflight', result)
+
+    def test_oserror_after_init_still_writes_result(self):
+        self.arm()
+        def popen(args, **kwargs):
+            if args[1] == 'build-init':
+                (self.root / 'build' / 'files').mkdir()
+                return Done(0)
+            raise OSError('second')
+
+        outcome = self.launch(popen)
+        self.assertEqual(outcome, 'PROBE_FAILED_UNCLASSIFIED')
+        result = json.loads((self.scope / 'result.json').read_text())
+        self.assertEqual(result['distinction'], 'OSError')
+        self.assertIn('postflight', result)
+
+        (self.scope / 'result.json').unlink()
+        (self.scope / 'attempt.json').unlink()
+        shutil.rmtree(self.scope / 'probe-tmp')
+        shutil.rmtree(self.root / 'build')
+        (self.root / 'build').mkdir(mode=0o700)
+
+        def init_only(args, **kwargs):
+            (self.root / 'build' / 'files').mkdir()
+            return Done(0)
+
+        with patch.object(probe, 'install_payload', side_effect=OSError('install')):
+            outcome = self.launch(init_only)
+        result = json.loads((self.scope / 'result.json').read_text())
+        self.assertEqual(result['distinction'], 'OSError')
+        self.assertTrue(result['build_started'])
+
+    def test_collector_and_postflight_exceptions_still_publish(self):
+        self.arm()
+        calls = {'n': 0}
+
+        def collect(proc, timeout, limit):
+            calls['n'] += 1
+            if calls['n'] == 1:
+                (self.root / 'build' / 'files').mkdir()
+                return {'stdout': b'', 'stderr': b'', 'exceeded': False, 'timed_out': False, 'code': 0}
+            raise OSError('collect')
+
+        def popen(args, **kwargs):
+            return Done(0)
+
+        with patch.object(probe, 'collect_process', collect):
+            outcome = self.launch(popen)
+        result = json.loads((self.scope / 'result.json').read_text())
+        self.assertEqual(outcome, 'PROBE_FAILED_UNCLASSIFIED')
+        self.assertEqual(result['distinction'], 'OSError')
+
+        (self.scope / 'result.json').unlink()
+        (self.scope / 'attempt.json').unlink()
+        shutil.rmtree(self.scope / 'probe-tmp')
+        shutil.rmtree(self.root / 'build')
+        (self.root / 'build').mkdir(mode=0o700)
+
+        def succeed(proc, timeout, limit):
+            if not (self.root / 'build' / 'files').exists():
+                (self.root / 'build' / 'files').mkdir()
+            return {'stdout': payload(), 'stderr': b'', 'exceeded': False, 'timed_out': False, 'code': 0}
+
+        with patch.object(probe, 'collect_process', succeed), patch.object(probe, 'postflight', side_effect=OSError('post')):
+            outcome = self.launch(popen)
+        result = json.loads((self.scope / 'result.json').read_text())
+        self.assertEqual(outcome, 'PROBE_FAILED_UNCLASSIFIED')
+        self.assertEqual(result['distinction'], 'POSTFLIGHT')
+        self.assertTrue(result['postflight'])
+
+    def test_scan_fail_closed_includes_unlabeled_names(self):
+        deep = self.base / 'deep'
+        deep.mkdir()
+        node = deep
+        for index in range(8):
+            node = node / f'level{index}'
+            node.mkdir()
+        self.assertEqual(probe.full_scan(deep), ('unbounded',))
+        named = self.base / 'named'
+        named.mkdir()
+        (named / 'random-name').write_text('x')
+        rows = probe.full_scan(named)
+        self.assertTrue(any(row[0] == 'random-name' for row in rows))
+        self.assertTrue(probe.descendants_gone(Done(0)))
+        self.watch_patch.stop()
+        try:
+            self.assertIn(Path('/tmp'), probe.watch_spec(self.home))
+        finally:
+            self.watch_patch.start()

@@ -1,6 +1,6 @@
 {
   "unit": "R04-n",
-  "phase": "FOURTH_FAIL_REPAIR_PENDING_FRESH_JUDGE",
+  "phase": "FIFTH_FAIL_REPAIR_PENDING_FRESH_JUDGE",
   "contract": "docs/contracts/R04-n.json",
   "contract_status": "ACTIVE_UNFINISHED",
   "result": "NONE_RUNTIME_NOT_RUN",
@@ -63,22 +63,22 @@
   ],
   "contract_acceptance": {
     "C01": "ROOT_VERIFIED_PREPARATION_RECORD",
-    "C02": "BUILD_TREE_SPECIAL_FILES_AND_LINKS_REFUSED_BEFORE_SECOND_LAUNCH",
+    "C02": "BUILD_TREE_NEW_CHILDREN_SPECIAL_FILES_AND_LINKS_REFUSED_BEFORE_SECOND_LAUNCH",
     "C03": "PLATFORM_AND_NVIDIA_ACTIVE_COMMITS_REREAD_RUNTIME_NOT_RUN",
     "C04": "SYNTHETIC_COMMAND_PASS_BUILD_INIT_NOT_RUN",
     "C05": "SYNTHETIC_COMMAND_PASS_INCLUDING_HOST_RESET_BUILD_NOT_RUN",
     "C06": "POSIX_SHM_MQUEUE_AND_NAMESPACE_PREIMAGE_SANDBOX_NOT_RUN",
     "C07": "NVIDIA_MARKER_BOUND_TO_PINNED_DIGEST_NOT_OBSERVED",
     "C08": "BOUNDED_STREAMING_CAPTURE_REAPS_LOCAL_PROCESS_FLATPAK_NOT_RUN",
-    "C09": "EIGHTEEN_TESTS_PASS_FLATPAK_NOT_LAUNCHED",
-    "C10": "COMMAND_VECTOR_NAMESPACE_VALUES_AND_APP_PATHS_REGISTERED_JUDGE_PENDING",
-    "C11": "POST_SUBPROCESS_FAILURES_RECORD_RESULT_RUNTIME_NOT_RUN",
-    "C12": "CONTENT_AND_NESTED_POSTFLIGHT_PRESENT_RUNTIME_NOT_RUN",
+    "C09": "TWENTY_TWO_TESTS_PASS_FLATPAK_NOT_LAUNCHED",
+    "C10": "PER_PATH_ABSENCE_RESULT_KEYS_AND_NAMESPACE_VALUES_REGISTERED_JUDGE_PENDING",
+    "C11": "POST_SUBPROCESS_EXCEPTIONS_RECORD_RESULT_RUNTIME_NOT_RUN",
+    "C12": "FAIL_CLOSED_RESIDUE_AND_PROCESS_GROUP_POSTFLIGHT_RUNTIME_NOT_RUN",
     "C13": "PARTIAL_25_08_VERSUS_26_08_RETAINED_RUNTIME_NOT_RUN"
   },
   "tests": {
     "command": "python3 -B -m unittest tests.test_flatpak_probe -v",
-    "passed": 18,
+    "passed": 22,
     "failed": 0,
     "flatpak_or_bwrap_launches": 0
   },
@@ -124,5 +124,5 @@
     }
   ],
   "user_pause": "Lifted for Cursor by direct execution of EXECUTION_PROMPT.md. Codex Goal remains paused.",
-  "next_action": "Fourth prelaunch Judge returned FAIL. This repair pins the whole build tree, checks POSIX shared memory, registers exact namespace and app-path preimages, and records postflight after a first-subprocess failure. It awaits a fresh read-only Judge. Do not request execution approval before that PASS."
+  "next_action": "Fifth prelaunch Judge returned FAIL. This repair rejects new build-tree children, records a classified result when a later exception occurs, registers per-path absence and the result key set, and fail-closes residue scans including unlabeled names. It awaits a fresh read-only Judge. Do not request execution approval before that PASS."
 }

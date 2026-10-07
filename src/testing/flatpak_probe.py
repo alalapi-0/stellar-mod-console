@@ -403,12 +403,19 @@ def pin_tree(root):
     return tree_pin(paths)
 
 
-def assert_tree_pin(pin):
+def assert_tree_pin(pin, mutable=()):
+    pinned = {path for path, *_rest in pin}
+    mutable = {str(path) for path in mutable}
     for path, dev, ino, mode, size, mtime in pin:
         current = Path(path)
         st = current.lstat()
-        if current.is_symlink() or (st.st_dev, st.st_ino, st.st_mode, st.st_size, st.st_mtime_ns) != (dev, ino, mode, size, mtime):
+        if (current.is_symlink() or not (stat.S_ISDIR(st.st_mode) or stat.S_ISREG(st.st_mode)) or
+                (st.st_dev, st.st_ino, st.st_mode, st.st_size, st.st_mtime_ns) != (dev, ino, mode, size, mtime)):
             raise Refused('TREE_CHANGED')
+        if stat.S_ISDIR(st.st_mode) and path not in mutable:
+            for child in current.iterdir():
+                if str(child) not in pinned:
+                    raise Refused('TREE_CHANGED')
 
 
 def profile_pin(root):
@@ -759,6 +766,17 @@ def instantiate(vector, directory):
     return [directory if arg == BUILD_DIR_TOKEN else arg for arg in vector]
 
 
+RESULT_KEYS = ('outcome', 'stage', 'build_started', 'postflight',
+               'platform_25_08_is_not_steam_26_08', 'distinction', 'prior_classification')
+REQUIRED_RESULT_KEYS = {'outcome', 'stage', 'build_started', 'postflight',
+                        'platform_25_08_is_not_steam_26_08'}
+
+
+def app_preimage(home=None):
+    home = Path(home or os.environ['HOME'])
+    return {str(path): not (path.exists() or path.is_symlink()) for path in app_paths(home)}
+
+
 def registration_document():
     return {'contract_id': CONTRACT, 'semantic_candidate': semantic_candidate(),
             'flatpak_sha256': PINNED_FLATPAK_SHA,
@@ -770,9 +788,10 @@ def registration_document():
             'build_vector': build_command_unchecked(BUILD_DIR_TOKEN),
             'environment_allowlist': list(ENV_ALLOWLIST + ENV_OPTIONAL),
             'namespace_preimage': namespace_preimage_map(),
-            'probe_app_paths': [str(path) for path in app_paths(os.environ['HOME'])],
+            'probe_app_preimage': app_preimage(),
             'tmpdir': str(BASE / 'probe-tmp'),
             'expected_payload_keys': list(PAYLOAD_KEYS),
+            'expected_result_keys': list(RESULT_KEYS),
             'postflight_keys': ['deployments_unchanged', 'app_paths_absent', 'flatpak_config_unchanged',
                                 'outside_output_absent', 'owned_process_absent', 'instance_residue_absent',
                                 'protected_stamps_unchanged']}
@@ -882,59 +901,37 @@ def full_scan(root, depth=6, limit=128):
     root = Path(root)
     if not root.exists() and not root.is_symlink():
         return ('absent',)
+    if root.is_symlink() or not root.is_dir():
+        return ('unbounded',) if root.is_symlink() else tuple([entry_stamp(root, root)])
     paths = [root]
-    if root.is_dir() and not root.is_symlink():
-        for child in root.rglob('*'):
-            if len(child.relative_to(root).parts) <= depth:
-                paths.append(child)
-    if len(paths) > limit:
-        return ('unbounded',)
-    return tuple(entry_stamp(root, path) for path in paths)
-
-
-def marker_scan(root):
-    root = Path(root)
-    if not root.is_dir() or root.is_symlink():
-        return ('absent',)
-    rows = []
     try:
         children = list(root.rglob('*'))
     except OSError:
         return ('unbounded',)
     for child in children:
-        rel = child.relative_to(root).as_posix()
-        if len(Path(rel).parts) > 6:
-            continue
-        if APP_ID in rel or 'flatpak' in rel or 'r04n' in rel:
-            rows.append(entry_stamp(root, child))
-            if len(rows) > 128:
-                return ('unbounded',)
-    return tuple(rows)
+        if len(child.relative_to(root).parts) > depth or len(paths) >= limit:
+            return ('unbounded',)
+        paths.append(child)
+    return tuple(entry_stamp(root, path) for path in paths)
 
 
 def watch_spec(home):
     home = Path(home)
     runtime = Path(f'/run/user/{os.getuid()}')
     return (
-        (Path('/tmp'), 'marker'),
-        (runtime / '.flatpak', 'all'),
-        (runtime / 'flatpak', 'all'),
-        (runtime / 'app', 'marker'),
-        (home / '.var/app', 'all'),
-        (home / '.cache/flatpak', 'all'),
-        (home / '.local/share/flatpak/app', 'all'),
-        (BASE / 'probe-tmp', 'all'),
+        Path('/tmp'),
+        runtime / '.flatpak',
+        runtime / 'flatpak',
+        runtime / 'app',
+        home / '.var/app',
+        home / '.cache/flatpak',
+        home / '.local/share/flatpak/app',
+        BASE / 'probe-tmp',
     )
 
 
-def scan_root(root, mode):
-    if mode == 'marker':
-        return marker_scan(root)
-    return full_scan(root)
-
-
 def residue_inventory(home):
-    return tuple((str(root), scan_root(root, mode)) for root, mode in watch_spec(home))
+    return tuple((str(root), full_scan(root)) for root in watch_spec(home))
 
 
 def contains_unbounded(value):
@@ -970,6 +967,41 @@ def capture_preflight(home):
             'residue': residue_inventory(home)}
 
 
+def descendants_gone(proc):
+    if proc is None:
+        return True
+    if proc.poll() is None:
+        return False
+    pid = getattr(proc, 'pid', -1)
+    if not isinstance(pid, int) or pid <= 0:
+        return True
+    if Path(f'/proc/{pid}').exists():
+        return False
+    try:
+        os.killpg(pid, 0)
+    except ProcessLookupError:
+        pass
+    except OSError:
+        return False
+    else:
+        return False
+    try:
+        entries = list(Path('/proc').iterdir())
+    except OSError:
+        return False
+    for entry in entries:
+        if not entry.name.isdigit():
+            continue
+        try:
+            text = (entry / 'status').read_text(errors='replace')
+        except OSError:
+            continue
+        for line in text.splitlines():
+            if line.startswith('PPid:') and line.split()[-1] == str(pid):
+                return False
+    return True
+
+
 def postflight(home, preflight, proc=None):
     if proc is not None:
         reap(proc)
@@ -980,7 +1012,7 @@ def postflight(home, preflight, proc=None):
         deployments_unchanged = False
     owned_absent = True
     if proc is not None:
-        owned_absent = proc.poll() is not None and (proc.pid <= 0 or not Path(f'/proc/{proc.pid}').exists())
+        owned_absent = descendants_gone(proc)
     return {'deployments_unchanged': deployments_unchanged,
             'app_paths_absent': not any(path.exists() or path.is_symlink() for path in app_paths(home)),
             'flatpak_config_unchanged': inventories_unchanged(flatpak_state(home), preflight['flatpak_state']),
@@ -1003,7 +1035,10 @@ def published(fine):
 
 
 def record(home, preflight, stage, fine, build_started, proc=None, distinction=None):
-    report = postflight(home, preflight, proc)
+    try:
+        report = postflight(home, preflight, proc)
+    except Exception:
+        report = {key: False for key in registration_document()['postflight_keys']}
     outcome, mapped = published(fine)
     distinction = distinction or mapped
     if not report_clean(report):
@@ -1018,13 +1053,16 @@ def record(home, preflight, stage, fine, build_started, proc=None, distinction=N
         body['distinction'] = distinction
     if prior:
         body['prior_classification'] = prior
+    allowed = set(registration_document()['expected_result_keys'])
+    if not REQUIRED_RESULT_KEYS <= set(body) <= allowed:
+        raise Refused('UNEXPECTED_METADATA')
     write_result(BASE, body)
     return outcome
 
 
 def assert_ready(root, snapshot, digest, pins=()):
     assert_snapshot(snapshot)
-    assert_tree_pin(profile_pin(root))
+    assert_tree_pin(profile_pin(root), mutable=(root / 'build',) if pins else ())
     for pin in pins:
         assert_tree_pin(pin)
     current = require_registration()
@@ -1085,20 +1123,24 @@ def execute(root, home, popen=subprocess.Popen, init_timeout=60, build_timeout=3
             install_payload(files, root)
             build_pin = pin_tree(build_dir)
             assert_ready(root, snapshot, digest, (build_pin,))
-        except Refused as error:
-            return record(home, preflight, 'build-init', 'PROBE_FAILED_UNCLASSIFIED', True, held, str(error))
-        proc = popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, env=env,
-                     start_new_session=True, close_fds=True)
-        build = collect_process(proc, build_timeout, OUTPUT_LIMIT)
-        held = proc
-        proc = None
-        if build['timed_out']:
-            return record(home, preflight, 'build', classify_timeout(), True, held)
-        if build['exceeded'] or build['stdout'] is None:
-            return record(home, preflight, 'build', 'PROBE_FAILED_UNCLASSIFIED', True, held, 'OUTPUT_LIMIT')
-        stdout = build['stdout'].decode('utf-8', 'replace')
-        stderr = build['stderr'].decode('utf-8', 'replace')
-        return record(home, preflight, 'build', classify_build(build['code'], stdout, stderr), True, held)
+            proc = popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, env=env,
+                         start_new_session=True, close_fds=True)
+            held = proc
+            build = collect_process(proc, build_timeout, OUTPUT_LIMIT)
+            proc = None
+            if build['timed_out']:
+                return record(home, preflight, 'build', classify_timeout(), True, held)
+            if build['exceeded'] or build['stdout'] is None:
+                return record(home, preflight, 'build', 'PROBE_FAILED_UNCLASSIFIED', True, held, 'OUTPUT_LIMIT')
+            stdout = build['stdout'].decode('utf-8', 'replace')
+            stderr = build['stderr'].decode('utf-8', 'replace')
+            return record(home, preflight, 'build', classify_build(build['code'], stdout, stderr), True, held)
+        except Exception as error:
+            if proc is not None:
+                reap(proc)
+                proc = None
+            label = str(error) if isinstance(error, Refused) else type(error).__name__
+            return record(home, preflight, 'build-init', 'PROBE_FAILED_UNCLASSIFIED', True, held, label)
     finally:
         if proc is not None:
             reap(proc)

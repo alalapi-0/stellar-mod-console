@@ -238,18 +238,19 @@ Cursor 接手后沿用同一 `R04-n/v1`。自有 `flatpak_probe` 只构造固定
 `build-init` 与 `build --runtime` 命令：Platform 同时作为 SDK 与 runtime
 操作数，显式拒绝已安装 man 页列出的全部 socket 与 device，并拒绝 host/home
 文件系统。执行前重新读取并核对已安装二进制、Platform 与 NVIDIA 的 active 提交和
-metadata；完整命令向量、命名空间预像数值和探针应用路径写入注册文件。
-`build-init` 之后整棵构建树拒绝链接、硬链接和特殊文件，并在下一次启动前复检。
+metadata；完整命令向量、命名空间预像数值、逐路径缺失预像和完整结果键集写入注册文件。
+`build-init` 之后整棵构建树拒绝链接、硬链接、特殊文件和新出现的子节点，并在下一次启动前复检。
 探针同时要求 `/dev/shm` 没有 POSIX 共享内存或信号量对象。首次子进程之后的
-拒绝仍写入分类结果和回查。回查比对配置文件内容、嵌套残留和实例目录，不读取
-存档内容。没有新鲜 Judge PASS 与 Governor `APPROVE_FLATPAK_PROBE` 时，入口
+任何失败（包括安装、第二次启动、收集和回查异常）仍写入分类结果和回查。回查对
+`/tmp`、运行时实例和 Flatpak 目录做有界全量扫描：超过深度或数量即失败关闭，
+不再按名称丢弃节点，并确认进程组与直接后代已经退出。不读取存档内容。没有新鲜 Judge PASS 与 Governor `APPROVE_FLATPAK_PROBE` 时，入口
 拒绝执行。注册摘要必须等于该文件字节。
 
 ```sh
 python3 -B -m unittest tests.test_flatpak_probe -v
 ```
 
-18 项测试已通过：其中包括构建树特殊文件、第二次启动前的部署漂移、嵌套残留、
-配置内容变化，以及首次子进程后的失败回查。这些测试不启动 Flatpak 或 bwrap。build-init、build、Steam、游戏、账号、
+22 项测试已通过：其中包括构建树新子节点、第二次启动与收集异常、深层与无名残留，
+以及首次子进程后的失败回查。这些测试不启动 Flatpak 或 bwrap。build-init、build、Steam、游戏、账号、
 Cloud 与主机策略均未执行。Platform 25.08 仍不等于上游 Steam manifest 的
 26.08。R04-n 尚未完成；一次实验仍须先复核精确候选。
