@@ -78,6 +78,9 @@ def discover(inventory: dict, facts: dict) -> dict:
         key = row["sha256"] if row["integrity"] in {"DECODED", "EXECUTABLE_NOT_RUN", "NOT_APPLICABLE", "EXCLUDED_OTHER_GAME_NOT_DECODED"} else row["id"]
         by_digest[key].append(row)
     nodes = {n["id"]: dict(n) for n in facts["dependency_nodes"]}
+    exact_facts = {r["archive_sha256"]: r for r in facts.get("exact_file_facts", [])}
+    if len(exact_facts) != len(facts.get("exact_file_facts", [])):
+        raise ValueError("Duplicate exact-file fact binding")
     records = []
     for digest, aliases in sorted(by_digest.items()):
         aliases.sort(key=lambda r: ("historical" not in r, r["path"]))
@@ -87,12 +90,18 @@ def discover(inventory: dict, facts: dict) -> dict:
         excluded = kind in {"incomplete_download", "other_game_historical", "other_game_content", "unrelated_loose_download"}
         hints = filename_hints(Path(row["path"]).name)
         author = facts["mods"].get(str(hints["mod_id"])) if not excluded else None
+        exact = exact_facts.get(row["sha256"]) if not excluded else None
+        if exact and exact["readme_entry_sha256"] not in {e["sha256"] for e in row.get("entries", [])}:
+            raise ValueError("Exact README evidence does not match frozen archive")
         requirements = []
         if parts["cns_configs"] and not excluded:
             requirements.append({"target": "mod:1496", "evidence": "observed CNS config format", "confidence": "FORMAT_REQUIRED_VERSION_UNKNOWN"})
         if author:
             for requirement in author.get("requirements", []):
-                requirements.append(dict(requirement, source=author["url"], confidence="AUTHOR_CLAIM_RUNTIME_NOT_RUN"))
+                requirements.append(dict(requirement, source=author["url"], confidence="AUTHOR_PAGE_CONTEXT_NOT_EXACT_FILE"))
+        if exact:
+            for requirement in exact["requirements"]:
+                requirements.append(dict(requirement, confidence="EXACT_HASHED_README_RUNTIME_NOT_RUN"))
         # Unknown dependency discovery is a node, never an empty list meaning 'no requirements'.
         if not excluded:
             unknown = "requirements:unknown:" + row["id"]
@@ -102,6 +111,7 @@ def discover(inventory: dict, facts: dict) -> dict:
                   "aliases": [{"id": r["id"], "path": r["path"], "historically_referenced": "historical" in r} for r in aliases],
                   "kind": kind, "integrity": row["integrity"], "filename_hints": hints,
                   "components": parts, "requirements": requirements,
+                  "exact_file_evidence": exact,
                   "permission": {"status": "EXCLUDED_NO_PROJECT_COPY" if excluded else
                                  "PAGE_RESTRICTION_RECORDED_EXACT_FILE_NOT_GRANTED" if author and author["page_permissions"].get("upload") == "forbidden" else "PERMISSION_UNKNOWN",
                                  "source": author["url"] if author else None,
@@ -122,6 +132,7 @@ def discover(inventory: dict, facts: dict) -> dict:
                "content_aliases": len(all_inputs) - len(records), "relevant_candidate_records": len(relevant),
                "kinds": dict(Counter(r["kind"] for r in records)),
                "unknown_exact_file_requirements": len(relevant),
+               "records_with_exact_readme_binding": sum(r["exact_file_evidence"] is not None for r in relevant),
                "permission_unknown": sum(r["permission"]["status"] == "PERMISSION_UNKNOWN" for r in relevant),
                "page_restrictions_recorded": sum(r["permission"]["status"] != "PERMISSION_UNKNOWN" for r in relevant),
                "redistribution_grants": 0, "dependency_nodes": len(nodes), "dangling_references": len(dangling),

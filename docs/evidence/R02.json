@@ -129,5 +129,108 @@
     "ESAP author page gated; source/relationship to SEAP unknown",
     "No cleanup, runtime, install, GUI or compatibility evidence"
   ],
-  "closure": "PARTIAL_R02; keep original scope and continue per-source discovery and independent known conflict analysis"
+  "closure": "PARTIAL_R02; exact critical README and loader identity verified; all 450 candidates and unknowns retained",
+  "exact_prerequisite_and_reference_correction": {
+    "unit": "R02-b",
+    "semantic_candidate_sha256": "5eef438175d3bf44723ce1e37ee305523b71a7b0505454061b563aec427c801a",
+    "candidate_files_sha256": {
+      "data/author_requirements.json": "ea61f04ac2f5c4d3c05a91a9972de071ecf3a76827bbd6713ce6391028fecd8a",
+      "src/catalog/dependencies.py": "57418221a5e2cf36db5f90c5635783c65a1e2f6468ddd41120483124518ee17f",
+      "src/catalog/README.md": "762a42520ab94d4b148d6423bb3c6d31896a97840ff9690f2e52238afbbd0a62",
+      "src/policy/interfaces.py": "9d9027ce41d8c403f0c6386cd6a0642e5edf280eb071b79ad4ffddbfa8660b54",
+      "src/policy/resources.py": "fefc5034da05dda2b1dcdc274dee034bfeefdf89b69aae19997a32c347ce581c",
+      "src/policy/README.md": "1a458736ec190a9e2aab4d086cf67c297c61e48264b4dbd6bfdfb204c1b8510d",
+      "tests/test_dependencies.py": "7a168b6815d7270cfc27be6ce47c13953bc65c14bbf409f437692601fe0f1952",
+      "tests/test_interfaces.py": "8a3af4d6f69b1c0d494a163674f78d4379e88d78ff8538105e7ab5b57d69d1bb",
+      "tests/test_resources.py": "19ca59c4530ef54c633cd890c97d42ad515d9eec23b0e3e1830aeae0579e7edf"
+    },
+    "private_prerequisites_sha256": "85e40e60c3c4e410a3e894c2881651f1170e7a9733b9187965837a7dec24a0d7",
+    "updated_catalog_sha256": "cfa06ce7c81aa9f4bcdae74b256dfddafe2316f6380c5a3f33a567418f80c11f",
+    "updated_facts_sha256": "ea61f04ac2f5c4d3c05a91a9972de071ecf3a76827bbd6713ce6391028fecd8a",
+    "summary": {
+      "critical_candidate_records": 22,
+      "exact_readme_bindings": 4,
+      "all_candidate_records_retained": 450,
+      "previous_unmatched_physical_references": 256,
+      "resolved_by_virtual_namespace": 222,
+      "current_unmatched_references": 34,
+      "dlc1_unmatched_reference_occurrences": 33,
+      "other_unmatched_reference_occurrences": 1,
+      "current_reference_presence": {
+        "PRESENT_METADATA_ONLY": 2753,
+        "NOT_FOUND_IN_IOSTORE_DIRECTORY_INDEX": 34
+      }
+    },
+    "loader_release": {
+      "url": "https://github.com/Chrisr0/RE-UE4SS/releases/tag/3.1.0-6",
+      "tag": "3.1.0-6",
+      "asset_sha256": "7c221c66f84ace0cfbb83130197572c455066a513fe315f3797b1da7f965931c",
+      "asset_size": 8029443,
+      "github_asset_digest_matches": true,
+      "frozen_active_loader_sha256": "f3f0229e8d046824c6d71db256f1c9bbbda9652a193643c28fa4e6c329e17670",
+      "candidate_dll_sha256": "f3f0229e8d046824c6d71db256f1c9bbbda9652a193643c28fa4e6c329e17670",
+      "state": "Existing active loader preserved; candidate signature variant and ABI still NOT_RUN"
+    },
+    "pak_verification": {
+      "containers": 175,
+      "entries": 4566,
+      "errors": 0,
+      "unmatched_refs_resolved": 0,
+      "tool_version": "repak 0.2.3",
+      "release_url": "https://github.com/trumank/repak/releases/tag/v0.2.3",
+      "release_archive_sha256": "933bdb8e26f34e8fd70ea50201efca39df041de58aa83b1cd6eb83da124a2046",
+      "binary_sha256": "fce30661c951ce56fd2507a44a1e03637e3ea06a1b7cc8035bd62c0b37dd9457",
+      "license": "Upstream MIT/Apache notices retained with ignored local read-only CLI; no system install or public binary"
+    },
+    "reference_correction": {
+      "previous": 256,
+      "resolved": 222,
+      "remaining": 34,
+      "remaining_DLC_1_occurrences": 33,
+      "other_occurrences": 1,
+      "basis": "Cooked Project/Content maps to Unreal /Game, Engine/plugins kept separate",
+      "runtime_compatibility": "NOT_RUN"
+    },
+    "isolation_capability": {
+      "bubblewrap_version": "bubblewrap 0.11.1",
+      "exit": 0,
+      "read_only_write_rejected": true,
+      "owned_test_subtree_write_succeeded": true,
+      "protected_disposable_marker_unchanged": true,
+      "game_and_actual_saves_touched": false,
+      "scope": "Kernel file-isolation capability on owned sentinel only; isolated Proton/game acceptance NOT_RUN"
+    },
+    "checks": [
+      {
+        "command": "python3 -m unittest discover -s tests",
+        "exit": 0,
+        "tests": 22
+      },
+      {
+        "command": "src.catalog.dependencies -> src.policy.resources -> src.policy.interfaces; src.policy.static",
+        "exit": 0,
+        "scope": "Frozen inputs revalidated; all derivative indexes rebound to updated catalog"
+      },
+      {
+        "check": "Root full hash of downloaded loader compared with fresh GitHub release asset digest; active loader hash unchanged",
+        "exit": 0
+      },
+      {
+        "check": "repak list all 175 current PAKs; whole PAK SHA-256 and stamps stable",
+        "exit": 0
+      },
+      {
+        "check": "bubblewrap read-only root with one writable owned probe subtree",
+        "exit": 0
+      }
+    ],
+    "remaining": [
+      "Exact DLC ownership/download state not inferred from missing files",
+      "One Christmas earring animation Blueprint not present in indexed installed assets; behavior remains unknown",
+      "Body/skeleton/physics, all unknown exact-file prerequisites, desktop manager write effects and full compatibility still unverified",
+      "Isolated prefix, staged configuration, game/Proton test and all GUI/console work remain NOT_RUN"
+    ],
+    "game_download_source_mutations": "NONE",
+    "public_third_party_assets_or_binaries": 0
+  }
 }

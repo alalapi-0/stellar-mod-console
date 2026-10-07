@@ -36,6 +36,20 @@ class DependencyTests(unittest.TestCase):
         self.assertEqual(len(parts["containers"]), 1)
         self.assertEqual(parts["containers"][0]["layout"], "INCOMPLETE_OR_NONSTANDARD")
 
+    def test_exact_readme_requires_archive_and_entry_hashes(self):
+        row = {"id": "one", "path": "/synthetic/a.zip", "sha256": "archive", "integrity": "DECODED",
+               "attribution": "stellar_mod", "entries": [{"path": "readme.txt", "sha256": "readme"}]}
+        exact = {"archive_sha256": "archive", "readme_entry_sha256": "readme", "requirements": [{"target": "loader", "relation": "required"}]}
+        facts = {"mods": {}, "dependency_nodes": [{"id": "loader"}], "exact_file_facts": [exact]}
+        record = discover({"sources": [row]}, facts)["records"][0]
+        self.assertIsNotNone(record["exact_file_evidence"])
+        self.assertTrue(any(r["confidence"] == "UNKNOWN" for r in record["requirements"]))
+        exact["readme_entry_sha256"] = "unrelated"
+        with self.assertRaisesRegex(ValueError, "does not match"):
+            discover({"sources": [row]}, facts)
+        exact["archive_sha256"] = "another-version"
+        self.assertIsNone(discover({"sources": [row]}, facts)["records"][0]["exact_file_evidence"])
+
 
 if __name__ == "__main__":
     unittest.main()

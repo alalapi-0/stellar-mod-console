@@ -33,3 +33,5 @@ python3 -m src.policy.interfaces --catalog .local/r02/catalog.json --inventory .
 Lua 调查使用词法分析，不运行脚本；动态属性、包装函数、条件分支、配置优先级与间接注册保留未知。数字键码仅对常见字母/数字/F 键依照 [Windows 虚拟键码](https://learn.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes)归一化，重叠仍是调查候选；[UE4SS 注册接口](https://docs.ue4ss.com/lua-api/global-functions/registerkeybind.html)的实际运行需按安装版本验证。
 
 原配置的尾逗号只可移除后恢复调查元数据，明确保留严格格式失败；不修改源配置，不授权应用。重复 JSON 键拒绝解析，防止无声丢掉作者声明。顶层记录、声明的变体槽、实际可用选项和运行支持分别统计。
+
+资源依赖采用 Unreal 虚拟路径匹配：不同作者项目的 `Project/Content` 映射到 `/Game`，Engine 和插件保持独立命名空间。原始目录路径仍用于追溯。R02-b 修正了此前仅按物理路径查找造成的 222 条未匹配引用；余下 34 条还没有安装资源证据，不据此推断玩家是否拥有 DLC。路径存在仍不证明身体、骨骼或物理配套。

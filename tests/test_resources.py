@@ -1,7 +1,7 @@
 import struct
 import unittest
 
-from src.policy.resources import NONE, directory_paths, overlaps, toc_resources
+from src.policy.resources import NONE, directory_paths, overlaps, toc_resources, virtual_resource_key
 from src.policy.static import TOC_MAGIC
 
 
@@ -25,6 +25,14 @@ def fixture(cyclic=False):
 
 
 class ResourceTests(unittest.TestCase):
+    def test_cooked_project_roots_map_to_same_game_namespace(self):
+        a = virtual_resource_key("../../../AuthorProject/Content/Suits/Body.uasset")
+        self.assertEqual(a, virtual_resource_key("../../../SB/Content/Suits/Body.uasset"))
+        self.assertEqual(a, "/game/suits/body.uasset")
+        self.assertEqual(virtual_resource_key("../../../Engine/Content/Suits/Body.uasset"), "/engine/suits/body.uasset")
+        self.assertEqual(virtual_resource_key("../../../SB/Plugins/Other/Content/Mesh.uasset"), "/other/mesh.uasset")
+        self.assertIsNone(virtual_resource_key("../../../SB/Binaries/Config.ini"))
+
     def test_real_layout_and_stored_hash_scope(self):
         meta = toc_resources(fixture())
         self.assertEqual(meta["chunks"][0]["path"], "../../../Test.uasset")

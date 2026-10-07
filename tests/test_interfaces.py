@@ -43,7 +43,7 @@ pcall(RegisterKeyBind, keyCode, callback)
         self.assertEqual(doc["records"][0]["declared_data_slots"], 1)
         self.assertEqual(len(doc["records"][0]["references"]), 2)
         self.assertEqual(doc["records"][0]["requirement"], "CheckDLC")
-        self.assertEqual(unreal_asset_key("/Game/Outfit/Mesh.Mesh"), "sb/content/outfit/mesh.uasset")
+        self.assertEqual(unreal_asset_key("/Game/Outfit/Mesh.Mesh"), "/game/outfit/mesh.uasset")
         self.assertIsNone(unreal_asset_key("file:///unrelated"))
         with self.assertRaises(ValueError): cns_evidence(["invalid"])
 

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "purpose": "R02 author discovery references; no enabling decisions, no redistribution grants",
-  "binding": "Mod IDs/versions from filenames are hints. Exact downloaded README evidence is identified separately; page permissions conservatively block copying. All exact-file requirements remain visible unknowns.",
+  "binding": "Page facts are context only. Exact file prerequisites require an archive SHA-256 plus README entry SHA-256 binding. Unknown prerequisites and redistribution grants remain unresolved.",
   "mods": {
     "1662": {
       "name": "ATOOL",
@@ -181,6 +181,114 @@
       "id": "runtime:7zip:windows",
       "status": "RUNTIME_PRESENCE_UNKNOWN",
       "reason": "System libarchive used for discovery does not prove Windows desktop tool dependency"
+    }
+  ],
+  "exact_file_facts": [
+    {
+      "archive_sha256": "02dfc1c46a96924e9986f2177f178efdac7ba73ea13eb79ba368f01a1b785227",
+      "mod_id_hint": 1662,
+      "version_claim_scope": "Exact file content, not all versions on the mod page",
+      "readme_entry_sha256": "0d9322b2664549c2366236edc4277d80f16d039ea44b851eb21cd6f614c09aa9",
+      "requirements": [
+        {
+          "target": "loader:chrisr0:3.1.0-6",
+          "relation": "required",
+          "evidence": "Exact downloaded README names/links this release"
+        }
+      ],
+      "actions": [
+        {
+          "type": "loader_signature_variant",
+          "source_name": "FText_Constructor.lua",
+          "candidate_name": "dFText_Constructor.lua",
+          "state": "AUTHOR_INSTRUCTION; not applied or runtime verified"
+        },
+        {
+          "type": "physics_patch",
+          "state": "Conditional Better Jiggle v1.2-compatible patch; newer Jiggle updater auto-refresh warned; Kittens compatibility remains UNKNOWN"
+        }
+      ],
+      "runtime_compatibility": "NOT_RUN"
+    },
+    {
+      "archive_sha256": "5499a47ecdcc2d9197c0d9e91f746f0bba6029869f175b4672af6ce961a109b8",
+      "mod_id_hint": 1662,
+      "version_claim_scope": "Exact file content, not all versions on the mod page",
+      "readme_entry_sha256": "0d9322b2664549c2366236edc4277d80f16d039ea44b851eb21cd6f614c09aa9",
+      "requirements": [
+        {
+          "target": "loader:chrisr0:3.1.0-6",
+          "relation": "required",
+          "evidence": "Exact downloaded README names/links this release"
+        }
+      ],
+      "actions": [
+        {
+          "type": "loader_signature_variant",
+          "source_name": "FText_Constructor.lua",
+          "candidate_name": "dFText_Constructor.lua",
+          "state": "AUTHOR_INSTRUCTION; not applied or runtime verified"
+        },
+        {
+          "type": "physics_patch",
+          "state": "Conditional Better Jiggle v1.2-compatible patch; newer Jiggle updater auto-refresh warned; Kittens compatibility remains UNKNOWN"
+        }
+      ],
+      "runtime_compatibility": "NOT_RUN"
+    },
+    {
+      "archive_sha256": "639f153e9fc7f5f66d1e9553b3b8444a71847202529627bf0906380168364cb9",
+      "mod_id_hint": 2603,
+      "version_claim_scope": "Exact file content, not all versions on the mod page",
+      "readme_entry_sha256": "549e2ef31b97baf57d71551002c6428ee68a02f022421c0cf4e46323dc906e8f",
+      "requirements": [
+        {
+          "target": "loader:chrisr0:3.1.0-6",
+          "relation": "required",
+          "evidence": "Exact downloaded README names/links this release"
+        },
+        {
+          "target": "mod:1496",
+          "relation": "required",
+          "evidence": "Exact downloaded README"
+        }
+      ],
+      "actions": [
+        {
+          "type": "CNS_refresh_mode",
+          "default": "ordinary mode",
+          "perfect_mode": "Requires CNS callback change and auto-load enabled; NOT_APPLIED",
+          "fake_perfect_mode": "Author warns of game crashes; NOT_VERIFIED",
+          "ownership": "Single outfit-switch owner required; UI pause/resume interaction needs testing"
+        }
+      ],
+      "runtime_compatibility": "NOT_RUN"
+    },
+    {
+      "archive_sha256": "786a99704f63600a3fe788294e03ca48bc91acf254b78cd3ecd70c40805411bd",
+      "mod_id_hint": 1662,
+      "version_claim_scope": "Exact file content, not all versions on the mod page",
+      "readme_entry_sha256": "0d9322b2664549c2366236edc4277d80f16d039ea44b851eb21cd6f614c09aa9",
+      "requirements": [
+        {
+          "target": "loader:chrisr0:3.1.0-6",
+          "relation": "required",
+          "evidence": "Exact downloaded README names/links this release"
+        }
+      ],
+      "actions": [
+        {
+          "type": "loader_signature_variant",
+          "source_name": "FText_Constructor.lua",
+          "candidate_name": "dFText_Constructor.lua",
+          "state": "AUTHOR_INSTRUCTION; not applied or runtime verified"
+        },
+        {
+          "type": "physics_patch",
+          "state": "Conditional Better Jiggle v1.2-compatible patch; newer Jiggle updater auto-refresh warned; Kittens compatibility remains UNKNOWN"
+        }
+      ],
+      "runtime_compatibility": "NOT_RUN"
     }
   ]
 }

@@ -58,6 +58,18 @@ def resource_key(path: str) -> str:
     return "/".join(parts).translate(str.maketrans("ABCDEFGHIJKLMNOPQRSTUVWXYZ", "abcdefghijklmnopqrstuvwxyz"))
 
 
+def virtual_resource_key(path: str) -> str | None:
+    """Cooked project roots share /Game; Engine and plugin mounts stay distinct."""
+    parts = resource_key(path).split("/")
+    if len(parts) >= 3 and parts[1] == "content":
+        root = "engine" if parts[0] == "engine" else "game"
+        return "/" + root + "/" + "/".join(parts[2:])
+    if len(parts) >= 5 and parts[1] == "plugins" and "content" in parts[3:]:
+        index = parts.index("content", 3)
+        return "/" + parts[index - 1] + "/" + "/".join(parts[index + 1:])
+    return None
+
+
 def directory_paths(data: bytes, chunk_count: int) -> tuple[str, dict[int, str]]:
     if not data:
         return "", {}

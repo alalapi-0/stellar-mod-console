@@ -11,6 +11,7 @@ import zipfile
 
 from src.catalog.inventory import emit_json, sha256, stamp
 from src.policy.static import archive_metadata
+from src.policy.resources import virtual_resource_key
 
 EXCLUDED = {"other_game_historical", "other_game_content", "incomplete_download", "unrelated_loose_download"}
 MAX_TEXT = 4 * 1024**2
@@ -162,7 +163,7 @@ def unreal_asset_key(value: str) -> str | None:
         stem = "Engine/Content/" + value[8:].split(".")[0]
     else:
         return None
-    return (stem + ".uasset").lower()
+    return virtual_resource_key(stem + ".uasset")
 
 
 def cns_evidence(data: object) -> dict:
@@ -279,7 +280,8 @@ def build_interfaces(catalog: dict, inventory: dict, resources: dict) -> dict:
     live_resources = defaultdict(list)
     for c in resources["installed"]:
         for chunk in c["metadata"]["chunks"]:
-            if chunk["resource_key"]: live_resources[chunk["resource_key"]].append(c["id"])
+            if chunk["path"] and (key := virtual_resource_key(chunk["path"])):
+                live_resources[key].append(c["id"])
     cns_ids = defaultdict(list)
     module_providers, key_reuse, domain_overlap = defaultdict(set), defaultdict(list), defaultdict(list)
     enabled = {r["module"]: r["enabled"] for r in inventory["activation"]}

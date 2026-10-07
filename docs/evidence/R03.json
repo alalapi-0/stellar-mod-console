@@ -342,5 +342,19 @@
     ],
     "game_or_source_modifications": "NONE",
     "third_party_asset_or_source_files_published": 0
+  },
+  "reference_evidence_correction": {
+    "unit": "R02-b",
+    "previous_R03_c_unmatched_reference_count": 256,
+    "incorrect_assumption": "Physical cooked project root was matched as if always SB",
+    "correction": "Virtual /Game mappings merge different cooked project roots; Engine/plugins retain distinct roots",
+    "resolved_references": 222,
+    "remaining_unmatched": 34,
+    "current_interface_sha256": "ece7c398ae41d6a86bf946837bcc4572fd02273b66065e95de8d93286de3dc8a",
+    "current_resources_sha256": "548b9c9105183d733445e73f1f8cf8982680d772b32f7991c49309f027f632be",
+    "current_graph_sha256": "f2d7d77300e026995df54e449b385c7071441162b675e4076c787718d52a06a9",
+    "updated_catalog_sha256": "cfa06ce7c81aa9f4bcdae74b256dfddafe2316f6380c5a3f33a567418f80c11f",
+    "historical_evidence": "R03-a/b/c hashes identify original reviewed content commits; current derivative indexes rebound to updated catalog",
+    "acceptance_change": "No runtime acceptance awarded or revoked; remaining 34 outside both IoStore and PAK indexes"
   }
 }
