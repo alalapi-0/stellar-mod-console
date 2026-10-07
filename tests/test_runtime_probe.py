@@ -39,7 +39,84 @@ def image(bits=64, delay_va=False):
     return data
 
 
+def exported_image(bits=64):
+    """Own export table: biased ordinal, two aliases, a hole, two forwarders."""
+    data = image(bits)
+    directory = 0x108 if bits == 64 else 0xf8
+    struct.pack_into('<II', data, directory, 0x1200, 0x100)
+    struct.pack_into('<IIHH7I', data, 0x400,
+                     0, 0, 0, 0, 0x1260, 10, 4, 4, 0x1240, 0x1250, 0x1270)
+    struct.pack_into('<4I', data, 0x440, 0x1400, 0, 0x12e0, 0x12f0)
+    struct.pack_into('<4I', data, 0x450, 0x1280, 0x1290, 0x12a0, 0x12b0)
+    struct.pack_into('<4H', data, 0x470, 0, 0, 2, 3)
+    for offset, value in [(0x460, b'own.dll\0'), (0x480, b'Alias\0'),
+                          (0x490, b'Alpha\0'), (0x4a0, b'ByName\0'),
+                          (0x4b0, b'ByOrdinal\0'), (0x4e0, b'OTHER.Call\0'),
+                          (0x4f0, b'OTHER.#27\0')]:
+        data[offset:offset + len(value)] = value
+    return data
+
+
 class RuntimeProbeTests(unittest.TestCase):
+    def test_export_aliases_holes_biased_ordinals_and_forwarders(self):
+        for bits in (32, 64):
+            exports = PEReader(exported_image(bits)).report(include_exports=True)['exports']
+            self.assertEqual(exports['dll'], 'own.dll')
+            self.assertEqual((exports['address_table_entries'], exports['name_pointer_entries']), (4, 4))
+            self.assertEqual(exports['slots'], [
+                {'ordinal': 10, 'rva': 0x1400, 'names': ['Alias', 'Alpha'], 'kind': 'ADDRESS_RVA'},
+                {'ordinal': 11, 'rva': 0, 'names': [], 'kind': 'UNASSIGNED'},
+                {'ordinal': 12, 'rva': 0x12e0, 'names': ['ByName'], 'kind': 'FORWARDER', 'forwarder': 'OTHER.Call'},
+                {'ordinal': 13, 'rva': 0x12f0, 'names': ['ByOrdinal'], 'kind': 'FORWARDER', 'forwarder': 'OTHER.#27'}])
+            self.assertEqual(exports['runtime_resolution'], 'NOT_RUN')
+            self.assertNotIn('exports', PEReader(exported_image(bits)).report())
+
+    def test_absent_exports_are_distinct_from_malformed(self):
+        self.assertIsNone(PEReader(image()).exports())
+        for rva, size in [(0, 40), (0x1200, 0), (0x1200, 39), (0xfffffff0, 40)]:
+            data = exported_image(); struct.pack_into('<II', data, 0x108, rva, size)
+            with self.assertRaises(InvalidImage): PEReader(data).exports()
+
+    def test_export_table_bounds_and_name_indices_refuse(self):
+        mutations = [(0x400, 'I', 1), (0x40c, 'I', 0),
+                     (0x410, 'I', 0xffffffff), (0x414, 'I', 65537),
+                     (0x418, 'I', 65537), (0x41c, 'I', 0),
+                     (0x420, 'I', 0), (0x424, 'I', 0),
+                     (0x41c, 'I', 0x15ff), (0x420, 'I', 0x1600),
+                     (0x424, 'I', 0x15ff), (0x470, 'H', 4),
+                     (0x470, 'H', 1), (0x450, 'I', 0),
+                     (0x450, 'I', 0x1290), (0x454, 'I', 0x1280)]
+        for offset, fmt, value in mutations:
+            data = exported_image(); struct.pack_into('<' + fmt, data, offset, value)
+            with self.assertRaises(InvalidImage, msg=str((offset, value))): PEReader(data).exports()
+
+    def test_ordinal_only_exports_and_more_aliases_than_slots(self):
+        data = exported_image(); struct.pack_into('<I', data, 0x418, 0)
+        report = PEReader(data).exports()
+        self.assertEqual([r['ordinal'] for r in report['slots']], [10, 11, 12, 13])
+        self.assertTrue(all(r['names'] == [] for r in report['slots']))
+        data = exported_image(); struct.pack_into('<I', data, 0x414, 1)
+        struct.pack_into('<4H', data, 0x470, 0, 0, 0, 0)
+        self.assertEqual(PEReader(data).exports()['slots'][0]['names'],
+                         ['Alias', 'Alpha', 'ByName', 'ByOrdinal'])
+
+    def test_forwarder_strings_must_terminate_inside_export_directory(self):
+        # NUL still exists in the section, but beyond the declared export range.
+        data = exported_image(); struct.pack_into('<II', data, 0x108, 0x1200, 0xf9)
+        with self.assertRaises(InvalidImage): PEReader(data).exports()
+        for value in [b'NoDot\0', b'.Call\0', b'OTHER.\0', b'OTHER.#bad\0',
+                      b'OTHER.#65536\0', b'OTHER.\xff\0']:
+            data = exported_image(); data[0x4f0:0x4f0 + len(value)] = value
+            with self.assertRaises(InvalidImage, msg=str(value)): PEReader(data).exports()
+
+    def test_file_export_inspection_preserves_bytes_and_old_report_shape(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            path = Path(temporary) / 'own.dll'; original = bytes(exported_image()); path.write_bytes(original)
+            report = inspect_file(path, include_exports=True)
+            self.assertEqual(report['exports']['dll'], 'own.dll')
+            self.assertEqual(path.read_bytes(), original)
+            self.assertNotIn('exports', inspect_file(path))
+
     def test_32_and_64_bit_name_ordinal_and_delay_imports(self):
         for bits in (32, 64):
             report = PEReader(image(bits)).report()

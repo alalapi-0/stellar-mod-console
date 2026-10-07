@@ -1,0 +1,349 @@
+{
+  "unit": "R04-k",
+  "lane": "DIRECT",
+  "baseline_commit": "a6ea60442c84efc0dd7b2f8e5b2bedbe202ec48c",
+  "scope": "Additive static PE exports in existing bounded reader; exact current2DLL and different1candidate interface evidence; pinned historical Lua registration source. No loading/execution/deployment.",
+  "candidate": {
+    "source_sha256": {
+      "src/testing/runtime_probe.py": "d52becc9bb0859588563dbae5b8ef9ac65ca62cef4f222879512a16f9ef136da",
+      "tests/test_runtime_probe.py": "d409256b4944f1b1c400fe087d5763f7689b9a868c98d15454ce24a6842fd9b7",
+      "src/testing/README.md": "a857b0f7a774a131ded870238c3909fb7d775b5393c04e0dc3a95e71d62309ac"
+    },
+    "inputs_sha256": {
+      ".local/r04/installed-profile/snapshot.json": "8f80b0b7aaa55f8bfef26bdbdf7b760f14e7a6bde28af76da33d17edbbf274f1",
+      ".local/r01/inc1/inventory.json": "30e537b4bbed7a843915f9aba07d7671b65d76128ade462622f0c43274b06f01",
+      ".local/r03/inc1/interfaces.json": "bddd1e6574e43608b2c8079feaa34ab8df1f1fa5baebc8f91d4678e26b61b31a"
+    },
+    "raw_private_report": {
+      "path": ".local/r04/loader-interface/inspection.json",
+      "sha256": "1a15544067af3ad7cd72437b8f25a6d788eaa2d945a29db44f967e2198ec86c2"
+    },
+    "reproduction": {
+      "script": ".local/r04/loader-interface/inspect.py",
+      "sha256": "d8afa8a695a062f5f904e2a771c079345bdecdb73aa6aeb6574571d95404a196",
+      "command": "PYTHONPATH=. python3 -B .local/r04/loader-interface/inspect.py",
+      "persistent_third_party_copy": false
+    }
+  },
+  "root_validation": {
+    "checks": {
+      "three_frozen_private_inputs_match": true,
+      "two_current_core_hashes_match_frozen_identity": true,
+      "one_distinct_candidate_archive_and_entry_hash_match": true,
+      "two_independent_objdump_exact_address_and_name_ordinal_matches": true,
+      "current_proxy_contains_all_three_core_import_names": true,
+      "pinned_source_identity_and_48_literal_registration_spellings": true,
+      "all_62_lua_identities_checked_58_mod_and_4_signature": true,
+      "all_65_exact_external_stamps_unchanged_after_real_cli": true,
+      "real_cli_export_report_equals_direct_reader": true
+    },
+    "passed": 9,
+    "required": 9,
+    "tests": {
+      "runtime_probe": {
+        "count": 12,
+        "new_export_cases": 6,
+        "exit": 0
+      },
+      "d3d12_probe_regression": {
+        "count": 7,
+        "exit": 0
+      }
+    },
+    "actual_cli_exit": 0,
+    "inspection_sha256": "1a15544067af3ad7cd72437b8f25a6d788eaa2d945a29db44f967e2198ec86c2",
+    "code_sha256": {
+      "src/testing/runtime_probe.py": "d52becc9bb0859588563dbae5b8ef9ac65ca62cef4f222879512a16f9ef136da",
+      "tests/test_runtime_probe.py": "d409256b4944f1b1c400fe087d5763f7689b9a868c98d15454ce24a6842fd9b7",
+      "src/testing/README.md": "a857b0f7a774a131ded870238c3909fb7d775b5393c04e0dc3a95e71d62309ac",
+      ".local/r04/loader-interface/inspect.py": "d8afa8a695a062f5f904e2a771c079345bdecdb73aa6aeb6574571d95404a196"
+    },
+    "full_game_metadata_and_save_hashes": "NOT_RERUN; no game/save/account operation or contents read in this static unit"
+  },
+  "loader_interfaces": {
+    "current_proxy": {
+      "sha256": "a30732477f2d7134b712aa1d295ebdf2f1b5a9dd46a10b6ce494819cba1774fa",
+      "named_exports": 143,
+      "address_slots": 198,
+      "unassigned_slots": 55,
+      "normal_import_dlls": 10
+    },
+    "current_ue4ss": {
+      "sha256": "f3f0229e8d046824c6d71db256f1c9bbbda9652a193643c28fa4e6c329e17670",
+      "named_exports": 3208,
+      "normal_import_dlls": 33
+    },
+    "distinct_candidate_ue4ss": {
+      "sha256": "e0cc51ce5b47d5be82194510b0b4b4054dd15ce0322a983655a022f92d27dabe",
+      "bytes": 16173568,
+      "source_package": {
+        "id": "input-7840f3a2b0d93e6af183",
+        "archive_sha256": "1001bfb90dc16a76f585616a1105657c7fdbc48bb749d26c3262a30c61de83eb",
+        "entry": "SB/Binaries/Win64/ue4ss/UE4SS.dll"
+      },
+      "named_exports": 4067,
+      "normal_import_dlls": 29,
+      "independent_objdump_check": "NOT_RUN; archive entry inspected in memory only"
+    },
+    "export_delta": {
+      "current_only": 351,
+      "candidate_only": 1210,
+      "common": 2857,
+      "shared_names_changed_ordinal": 2855,
+      "conclusion": "STATIC_EXPORT_DIFFERENCE_ONLY; not drop-in C++ ABI proof; Lua support/runtime NOT_RUN"
+    },
+    "proxy_import_match": {
+      "required_symbols": [
+        {
+          "name": "DwmIsCompositionEnabled"
+        },
+        {
+          "name": "DwmGetColorizationColor"
+        },
+        {
+          "name": "DwmEnableBlurBehindWindow"
+        }
+      ],
+      "named_symbols_present_in_proxy_table": true,
+      "loaded_dll_path_and_forwarding_implementation": "NOT_RUNTIME_VERIFIED"
+    },
+    "independent_current_core_cross_checks": {
+      "current_proxy": {
+        "exit": 0,
+        "exact_named_ordinals_match": true,
+        "exact_nonzero_address_slots_match": true,
+        "named": 143,
+        "nonzero_slots": 143,
+        "tool": "GNU objdump (GNU Binutils for Ubuntu) 2.46",
+        "output_sha256": "d01f1cc1bcab603f5966840be5c3dca78a3dae8ac5cb219f32d0116c476fd434"
+      },
+      "current_ue4ss": {
+        "exit": 0,
+        "exact_named_ordinals_match": true,
+        "exact_nonzero_address_slots_match": true,
+        "named": 3208,
+        "nonzero_slots": 3208,
+        "tool": "GNU objdump (GNU Binutils for Ubuntu) 2.46",
+        "output_sha256": "8c009ec78969ea2f83d5184e241ea5bffda7b2b298703a6677db854a110e7f68"
+      }
+    },
+    "replacement_applied": false,
+    "C++_ABI_runtime": "NOT_RUN"
+  },
+  "lua_evidence": {
+    "pinned_source": {
+      "commit": "d3d10044d12566b869de56164bdaf5dbf36067b8",
+      "path": "UE4SS/src/Mod/LuaMod.cpp",
+      "url": "https://raw.githubusercontent.com/UE4SS-RE/RE-UE4SS/d3d10044d12566b869de56164bdaf5dbf36067b8/UE4SS/src/Mod/LuaMod.cpp",
+      "sha256": "0f81f5487340b3ca8a2fd6e0585192d7111795f8f2727de9aff65a87cf2922b5",
+      "bytes": 228631,
+      "literal_registration_spellings": 48,
+      "compiled_into_installed_binary": "NOT_ESTABLISHED"
+    },
+    "installed": {
+      "identity_checked": 62,
+      "mod_scripts_lexed": 58,
+      "signature_scripts_not_lexed": 4,
+      "lexical_limit": "Global-shaped spellings may be shadowed/conditional; no Lua execution"
+    },
+    "global_shaped_names_matching_pinned_spellings": 31,
+    "global_shaped_call_sites": 238,
+    "selected_api_matrix": [
+      {
+        "name": "AddToViewport",
+        "pinned_literal_registration_sites": [],
+        "current_binary_null_terminated_string": false,
+        "candidate_binary_null_terminated_string": false,
+        "runtime_support": "NOT_RUN",
+        "installed_global_shaped_call_count": 0
+      },
+      {
+        "name": "CreateWidget",
+        "pinned_literal_registration_sites": [],
+        "current_binary_null_terminated_string": false,
+        "candidate_binary_null_terminated_string": false,
+        "runtime_support": "NOT_RUN",
+        "installed_global_shaped_call_count": 0
+      },
+      {
+        "name": "ExecuteInGameThread",
+        "pinned_literal_registration_sites": [
+          3248
+        ],
+        "current_binary_null_terminated_string": true,
+        "candidate_binary_null_terminated_string": true,
+        "runtime_support": "NOT_RUN",
+        "installed_global_shaped_call_count": 10
+      },
+      {
+        "name": "FindFirstOf",
+        "pinned_literal_registration_sites": [
+          1042
+        ],
+        "current_binary_null_terminated_string": true,
+        "candidate_binary_null_terminated_string": true,
+        "runtime_support": "NOT_RUN",
+        "installed_global_shaped_call_count": 11
+      },
+      {
+        "name": "IsKeyBindRegistered",
+        "pinned_literal_registration_sites": [
+          1145
+        ],
+        "current_binary_null_terminated_string": true,
+        "candidate_binary_null_terminated_string": true,
+        "runtime_support": "NOT_RUN",
+        "installed_global_shaped_call_count": 1
+      },
+      {
+        "name": "LoadAsset",
+        "pinned_literal_registration_sites": [
+          2726
+        ],
+        "current_binary_null_terminated_string": true,
+        "candidate_binary_null_terminated_string": true,
+        "runtime_support": "NOT_RUN",
+        "installed_global_shaped_call_count": 1
+      },
+      {
+        "name": "RegisterEndPlayPostHook",
+        "pinned_literal_registration_sites": [
+          2267
+        ],
+        "current_binary_null_terminated_string": true,
+        "candidate_binary_null_terminated_string": true,
+        "runtime_support": "NOT_RUN",
+        "installed_global_shaped_call_count": 0
+      },
+      {
+        "name": "RegisterHook",
+        "pinned_literal_registration_sites": [
+          699,
+          725,
+          751,
+          3140
+        ],
+        "current_binary_null_terminated_string": true,
+        "candidate_binary_null_terminated_string": true,
+        "runtime_support": "NOT_RUN",
+        "installed_global_shaped_call_count": 3
+      },
+      {
+        "name": "RegisterKeyBind",
+        "pinned_literal_registration_sites": [
+          1325
+        ],
+        "current_binary_null_terminated_string": true,
+        "candidate_binary_null_terminated_string": true,
+        "runtime_support": "NOT_RUN",
+        "installed_global_shaped_call_count": 36
+      },
+      {
+        "name": "RegisterLoadMapPostHook",
+        "pinned_literal_registration_sites": [
+          2100
+        ],
+        "current_binary_null_terminated_string": true,
+        "candidate_binary_null_terminated_string": true,
+        "runtime_support": "NOT_RUN",
+        "installed_global_shaped_call_count": 1
+      },
+      {
+        "name": "StaticConstructObject",
+        "pinned_literal_registration_sites": [
+          1590
+        ],
+        "current_binary_null_terminated_string": true,
+        "candidate_binary_null_terminated_string": true,
+        "runtime_support": "NOT_RUN",
+        "installed_global_shaped_call_count": 5
+      },
+      {
+        "name": "UnregisterHook",
+        "pinned_literal_registration_sites": [
+          1442
+        ],
+        "current_binary_null_terminated_string": true,
+        "candidate_binary_null_terminated_string": true,
+        "runtime_support": "NOT_RUN",
+        "installed_global_shaped_call_count": 2
+      },
+      {
+        "name": "UnregisterKeyBind",
+        "pinned_literal_registration_sites": [],
+        "current_binary_null_terminated_string": false,
+        "candidate_binary_null_terminated_string": false,
+        "runtime_support": "NOT_RUN",
+        "installed_global_shaped_call_count": 0
+      }
+    ],
+    "matrix_scope": "Literal source sites/null-terminated binary strings/lexical call spellings; not interpreted bindings, signature validation or runtime support"
+  },
+  "decisions": [
+    "Keep current cores; one different candidate is not an assumed C++ drop-in replacement. Identical4pairs remain previous R04-h evidence, not newly rehashed this unit.",
+    "Do not design callback cleanup around unestablished UnregisterKeyBind. RegisterHook IDs and target-memory conditions need actual game validation.",
+    "Do not invent CreateWidget/AddToViewport UE4SS globals; reflected class/member paths require game evidence.",
+    "Keep original game/save/account settings and closed nested route unchanged."
+  ],
+  "primary_sources": [
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/debug/pe-format",
+      "scope": "Export ordinal/address/name/forwarder file structure"
+    },
+    {
+      "url": "https://github.com/UE4SS-RE/RE-UE4SS/blob/d3d10044d12566b869de56164bdaf5dbf36067b8/UE4SS/src/Mod/LuaMod.cpp",
+      "scope": "Historical pinned source, not proven binary build provenance"
+    },
+    {
+      "url": "https://docs.ue4ss.com/lua-api/global-functions/registerkeybind.html",
+      "scope": "Current documentation keyboard/focus conditions; installed binding NOT_RUN"
+    },
+    {
+      "url": "https://docs.ue4ss.com/lua-api/global-functions/registerhook.html",
+      "scope": "Current hook documentation loaded target and IDs"
+    },
+    {
+      "url": "https://docs.ue4ss.com/lua-api/global-functions/unregisterhook.html",
+      "scope": "Current hook removal argument documentation"
+    },
+    {
+      "url": "https://docs.ue4ss.com/lua-api/global-functions/executeingamethread.html",
+      "scope": "Current scheduling documentation; actual callback contexts NOT_RUN"
+    }
+  ],
+  "failures_retained": [
+    {
+      "class": "PRIMARY_GITHUB_TREE_WEB_RESTRICTION",
+      "method": "Web reader on pinned tree page",
+      "resolution": "Public primary GitHub tree API plus exact raw commit file; no auth/session changes"
+    },
+    {
+      "class": "NONEXISTENT_SRC_README_DISCOVERY_PATH",
+      "method": "rg explicit src/README.md read-only list returned exit2",
+      "resolution": "Use existing src/testing/README.md; no implementation/test/runtime failure"
+    },
+    {
+      "round": "R04-k",
+      "target": "PROJECT_STATE.json closure delivery projection",
+      "failure_class": "ABSENT_GIT_KEY",
+      "exit": 1,
+      "resolution": "KeyError before anyStatewrite; inspect actualschema and use existing delivery.sync_status.",
+      "input_state_sha256": "d964c85e170ff915f3105e20bd326ccd6d3b43297641de23b3b0d47540e05202"
+    },
+    {
+      "round": "R04-k",
+      "target": "PROJECT_STATE.json closure failure registration",
+      "failure_class": "ABSENT_FAILURES_KEY",
+      "exit": 1,
+      "resolution": "Second KeyError before anyState/evidencewrite; inspect all cumulativeschema keys, use existing cumulative.attempts. New schema-asserting saved projection completes; no count reset or game effect.",
+      "input_state_sha256": "d964c85e170ff915f3105e20bd326ccd6d3b43297641de23b3b0d47540e05202"
+    }
+  ],
+  "not_run": [
+    "Export RVAs do not prove functions, layout/calling convention, C++ ABI, search order or runtime dependencies.",
+    "Source registrations and binary strings do not establish current installed Lua global bindings.",
+    "CreateWidget/AddToViewport are reflection/member candidates, not inferred UE4SS globals.",
+    "All game/client/auth/Cloud/save-isolation/UI/input/controller/performance gates remain unestablished."
+  ],
+  "result": "PASS_STATIC_LOADER_INTERFACE_UNIT_ONLY; A01-A14 remains0/14; actual game/ABI/UI not accepted"
+}

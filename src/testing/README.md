@@ -45,6 +45,42 @@ python3 -B -m src.testing.runtime_probe /absolute/referenced/image.exe
 python3 -B -m unittest discover -s tests -p 'test_runtime_probe.py' -v
 ```
 
+R04-k 在同一个只读解析器中增加可选的 `--exports`，保留导出序号空洞、
+同一序号的多个名称和转发字符串；转发目标不会加载或解析，原导入报告格式
+保持不变。名称指针/序号越界、重复或未排序名称、表截断、超过导出目录边界的
+转发字符串均拒绝。导出地址可能对应代码、数据或绝对值，不能据此声称函数可调用。
+
+```sh
+python3 -B -m src.testing.runtime_probe /absolute/referenced/UE4SS.dll --exports
+```
+
+当前两个核心 DLL 的冻结哈希复核通过；与本机 `objdump` 逐个核对导出名称、
+序号和非零地址一致。当前 UE4SS 有 3,208 个命名导出；唯一不同核心候选有
+4,067 个，其中 2,857 个名称共有，351 个仅当前存在、1,210 个仅候选存在。
+共有名称中 2,855 个序号不同。没有更换 DLL；这些差异意味着不能假定 C++
+插件可直接替换版本，不代表现有 Lua MOD 已被证明不兼容。
+
+私有复核同时对当前 62 个 Lua 文件校验字节身份：58 个 MOD 脚本使用已有
+词法分析器，另外 4 个是引擎签名脚本。历史日志关联的固定提交
+[`d3d10044…`](https://github.com/UE4SS-RE/RE-UE4SS/blob/d3d10044d12566b869de56164bdaf5dbf36067b8/UE4SS/src/Mod/LuaMod.cpp)
+有 48 个字面注册名称；58 个 MOD 脚本出现其中 31 个名称、238 个全局形式
+调用位置。源码注册位置、当前二进制字符串、脚本调用形式是三种静态证据，
+均不证明安装中的实际 Lua 绑定、调用参数正确或回调已运行。
+
+固定源码没有 `UnregisterKeyBind` 注册位置，当前/候选 DLL 中也没有该名称的
+完整零终止字符串。后续不能假定此清理接口可用。`CreateWidget` 和
+`AddToViewport` 同样不能被假定为 UE4SS 全局函数；具体反射对象、类、成员和
+生命周期仍需在真实游戏中验证。
+[快捷键文档](https://docs.ue4ss.com/lua-api/global-functions/registerkeybind.html)
+说明了焦点条件；[Hook 文档](https://docs.ue4ss.com/lua-api/global-functions/registerhook.html)
+要求目标函数已在内存中，注销须保留两个 ID。
+[游戏线程调度](https://docs.ue4ss.com/lua-api/global-functions/executeingamethread.html)
+的文档依据也须与实际回调环境分开验证。当前文档不等于历史 DLL 的精确接口契约。
+
+原始报告与本机复现脚本仅保存在忽略的 `.local/r04/loader-interface/`，公开的
+[R04-k 证据](../../docs/evidence/R04-k.json) 保留脱敏身份和适用范围。
+实际 ABI、加载器初始化、游戏内 UMG、中文、输入恢复与手柄验收仍为 `NOT_RUN`。
+
 R04-d 的 `gpu_probe` 是独立、自有的原生离屏 Vulkan 实验，使用现有 gcc
 和系统 Vulkan 开发库。每次创建新的私有目录，只暴露三个固定 NVIDIA
 设备与只读系统/硬件视图；不挂载 Steam、游戏、Proton、显示、输入或音频。

@@ -1,4 +1,4 @@
-"""Read PE dependencies without loading or executing the inspected image.
+"""Read PE dependencies and optional exports without loading the image.
 
 Import tables describe static requirements, never successful runtime resolution.
 The bounded reader refuses incomplete, ambiguous or unsupported data instead of
@@ -90,16 +90,16 @@ class PEReader:
             raise InvalidImage('RVA read crosses mapped region')
         return self.read(offset, size)
 
-    def string(self, rva):
+    def string(self, rva, *, max_size=4096):
         offset, available = self.mapping(rva)
-        raw = self.read(offset, min(available, 4096))
+        raw = self.read(offset, min(available, max_size))
         end = raw.find(b'\0')
         if end <= 0:
-            raise InvalidImage('empty or unterminated import name')
+            raise InvalidImage('empty or unterminated image string')
         try:
             return raw[:end].decode('ascii')
         except UnicodeDecodeError as error:
-            raise InvalidImage('non-ASCII import name') from error
+            raise InvalidImage('non-ASCII image string') from error
 
     def symbols(self, rva, *, uses_va=False):
         if not rva:
@@ -150,13 +150,66 @@ class PEReader:
                            'symbols': self.symbols(lookup, uses_va=uses_va)})
         raise InvalidImage('unterminated import directory')
 
-    def report(self):
-        return {'machine': hex(self.machine), 'bits': self.bits,
-                'imports': self.imports(1), 'delay_imports': self.imports(13, delay=True),
-                'runtime_resolution': 'NOT_RUN'}
+    def exports(self):
+        """Preserve ordinal holes/aliases; forwarders stay unresolved strings.
+
+        Address RVAs may designate code, data or absolutes. Their presence does
+        not prove a callable function, C++ layout, Lua registration or ABI.
+        """
+        rva, size = self.directories[0] if self.directories else (0, 0)
+        if (rva, size) == (0, 0):
+            return None
+        if not rva or size < 40 or rva + size > 1 << 32:
+            raise InvalidImage('invalid export directory')
+        flags, _, _, _, name, base, count, named, addresses, names, ordinals = (
+            struct.unpack('<IIHH7I', self.at(rva, 40)))
+        if not name or flags or count > 65536 or named > 65536 or (count and base + count - 1 > 0xffffffff):
+            raise InvalidImage('unsupported export directory fields')
+        if (count and not addresses) or (named and (not count or not names or not ordinals)):
+            raise InvalidImage('missing export table')
+        address_data = self.at(addresses, count * 4) if count else b''
+        name_data = self.at(names, named * 4) if named else b''
+        ordinal_data = self.at(ordinals, named * 2) if named else b''
+        slots = []
+        for i, (target,) in enumerate(struct.iter_unpack('<I', address_data)):
+            slot = {'ordinal': base + i, 'rva': target, 'names': [],
+                    'kind': 'ADDRESS_RVA' if target else 'UNASSIGNED'}
+            if rva <= target < rva + size:
+                forwarder = self.string(target, max_size=min(4096, rva + size - target))
+                library, separator, symbol = forwarder.rpartition('.')
+                if not separator or not library or not symbol:
+                    raise InvalidImage('invalid export forwarder')
+                if symbol.startswith('#') and (not symbol[1:].isdigit() or int(symbol[1:]) > 65535):
+                    raise InvalidImage('invalid forwarder ordinal')
+                slot.update(kind='FORWARDER', forwarder=forwarder)
+            slots.append(slot)
+        previous = None
+        for i in range(named):
+            index = struct.unpack_from('<H', ordinal_data, i * 2)[0]
+            if index >= count or slots[index]['kind'] == 'UNASSIGNED':
+                raise InvalidImage('export name refers to absent address')
+            name_rva = struct.unpack_from('<I', name_data, i * 4)[0]
+            if not name_rva:
+                raise InvalidImage('missing export name')
+            public_name = self.string(name_rva)
+            if previous is not None and public_name <= previous:
+                raise InvalidImage('unsorted or duplicate export names')
+            previous = public_name
+            slots[index]['names'].append(public_name)
+        return {'dll': self.string(name), 'ordinal_base': base,
+                'address_table_entries': count, 'name_pointer_entries': named,
+                'slots': slots, 'runtime_resolution': 'NOT_RUN'}
+
+    def report(self, *, include_exports=False):
+        result = {'machine': hex(self.machine), 'bits': self.bits,
+                  'imports': self.imports(1), 'delay_imports': self.imports(13, delay=True),
+                  'runtime_resolution': 'NOT_RUN'}
+        if include_exports:
+            result['exports'] = self.exports()
+        return result
 
 
-def inspect_file(path):
+def inspect_file(path, *, include_exports=False):
     """Read a regular image and refuse a concurrent change during inspection."""
     fd = os.open(path, os.O_RDONLY | os.O_NOFOLLOW)
     try:
@@ -164,7 +217,8 @@ def inspect_file(path):
         if not stat.S_ISREG(before.st_mode) or not 0 < before.st_size <= 1024 ** 3:
             raise InvalidImage('expected a nonempty regular image below 1 GiB')
         with mmap.mmap(fd, 0, access=mmap.ACCESS_READ) as data:
-            report = PEReader(data).report()
+            reader = PEReader(data)
+            report = reader.report(include_exports=True) if include_exports else reader.report()
             report['sha256'] = hashlib.sha256(data).hexdigest()
         after = os.fstat(fd)
         stamp = lambda s: (s.st_dev, s.st_ino, s.st_size, s.st_mtime_ns, s.st_ctime_ns)
@@ -179,8 +233,9 @@ def inspect_file(path):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('image', type=Path)
+    parser.add_argument('--exports', action='store_true', help='include static export slots and unresolved forwarders')
     args = parser.parse_args()
-    print(json.dumps(inspect_file(args.image), indent=2, sort_keys=True))
+    print(json.dumps(inspect_file(args.image, include_exports=args.exports), indent=2, sort_keys=True))
 
 
 if __name__ == '__main__':

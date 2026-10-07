@@ -15,9 +15,9 @@
   "goal_mode_started": true,
   "implementation_started": true,
   "phase": "P1",
-  "current_round": "R04-j",
-  "round_status": "COMPLETE_R04-j_CLASSIFIED_NESTED_REFUSAL_AND_SOURCE_DELIVERY; FULL_GOAL_PARTIAL",
-  "next_round": "R04-k",
+  "current_round": "R04-k",
+  "round_status": "COMPLETE_R04-k_STATIC_LOADER_INTERFACE; SOURCE_SYNC_PENDING; FULL_GOAL_PARTIAL",
+  "next_round": "R04-l",
   "protected": [
     "Existing game files and saves",
     "Original MOD packages and downloads",
@@ -301,6 +301,26 @@
       "added_protection_sha256": "01f2068ed9fd264122ac8ae1df9cf9b306cd778bb6178433ccaa047b7a5a9789",
       "actual_sync": "NOT_RUN",
       "real_save_isolation": "NOT_ESTABLISHED"
+    },
+    "private_loader_interface_index": ".local/r04/loader-interface/inspection.json",
+    "loader_interface_index_sha256": "1a15544067af3ad7cd72437b8f25a6d788eaa2d945a29db44f967e2198ec86c2",
+    "loader_interface_summary": {
+      "static_current_core_images": 2,
+      "static_distinct_candidate_images": 1,
+      "current_ue4ss_named_exports": 3208,
+      "candidate_ue4ss_named_exports": 4067,
+      "common_export_names": 2857,
+      "current_only_export_names": 351,
+      "candidate_only_export_names": 1210,
+      "common_names_changed_ordinal": 2855,
+      "current_lua_files_identity_checked": 62,
+      "current_mod_scripts_lexed": 58,
+      "engine_signature_scripts_not_lexed": 4,
+      "pinned_source_literal_registration_names": 48,
+      "installed_global_shaped_names": 31,
+      "installed_global_shaped_call_sites": 238,
+      "actual_loader_abi_lua_bindings": "NOT_RUN",
+      "evidence": "docs/evidence/R04-k.json"
     }
   },
   "milestones": {
@@ -420,7 +440,7 @@
     "visibility": "PUBLIC_VERIFIED",
     "initial_branch": "main",
     "implementation_branch_policy": "Separate implementation branch; push each round; no automatic merge",
-    "sync_status": "VERIFIED R04-j source f361d5735b5f3416a101e06385b13f1f456cf964 exactly matches GitHub branch API. Final closure HEAD identity uses Git and remote ref.",
+    "sync_status": "PENDING R04-k normal source commit/push and exact GitHub branch verification",
     "head_identity": "Use git HEAD and the remote ref; do not store a self-referential commit hash",
     "branch": "impl/mod-console",
     "verified_content_commits": {
@@ -731,25 +751,43 @@
         "exit": 1,
         "resolution": "All31outerchecksPASS but oldclassifier exactsignatures omitted installed Debian fullstderr. PreserveFAIL/sourcepreimage; strictactualsignature and ambiguous-short/extraerror negatives pass12tests. Freshprofile/review; no systemsetting or automaticretry.",
         "evidence": ".local/r04/client-plan/denial-failure.json"
+      },
+      {
+        "round": "R04-k",
+        "target": "PROJECT_STATE.json closure delivery projection",
+        "failure_class": "ABSENT_GIT_KEY",
+        "exit": 1,
+        "resolution": "KeyError before anyStatewrite; inspect actualschema and use existing delivery.sync_status.",
+        "input_state_sha256": "d964c85e170ff915f3105e20bd326ccd6d3b43297641de23b3b0d47540e05202",
+        "evidence": "docs/evidence/R04-k.json"
+      },
+      {
+        "round": "R04-k",
+        "target": "PROJECT_STATE.json closure failure registration",
+        "failure_class": "ABSENT_FAILURES_KEY",
+        "exit": 1,
+        "resolution": "Second KeyError before anyState/evidencewrite; inspect all cumulativeschema keys, use existing cumulative.attempts. New schema-asserting saved projection completes; no count reset or game effect.",
+        "input_state_sha256": "d964c85e170ff915f3105e20bd326ccd6d3b43297641de23b3b0d47540e05202",
+        "evidence": "docs/evidence/R04-k.json"
       }
     ],
     "token_cost_telemetry": {
-      "native_goal_tokens_observed": 5177118,
-      "source": "Native get_goal at R04-j source closure",
+      "native_goal_tokens_observed": 5334137,
+      "source": "Native get_goal at R04-k local static closure",
       "coverage": "Native cumulative Goal tokens/time only; per-role and cost unavailable; active time not inferred",
-      "native_goal_time_seconds_observed": 21488,
+      "native_goal_time_seconds_observed": 22497,
       "active_execution_time": "UNAVAILABLE; wall time does not prove active minutes",
       "cost": "UNAVAILABLE",
       "budget": "No explicit token budget; native remainingTokens null"
     },
-    "execution_units_closed": 18,
+    "execution_units_closed": 19,
     "health_checkpoint": {
       "first_250k_rebaseline_completed": true,
       "status": "HEALTHY",
       "baseline_tokens_observed": 289664,
       "checkpoint": "R04-j prelaunch repair checkpoint",
-      "reason": "R04-j source milestone accepted after exactrefusalclassification/13postchecks/freshreview. Prior REPLAN recommendation fulfilled; no unchanged-host nestedroute retry. No-progress counts reset by accepted milestone.",
-      "next_checkpoint": "Verify the precise current loader ABI/API against frozen installed byte identities and primary upstream interfaces; keep the classified nested route closed under unchanged host conditions. Real private-client/auth/Cloud/game/save isolation remains unestablished.",
+      "reason": "Accepted R04-k static milestone adds exact export/delta and qualified API evidence with targetedchecks; no same-host nestedroute retry and no final acceptance claim.",
+      "next_checkpoint": "Resolve current installed Lua key-binding/configuration ownership and exact argument evidence in the shared conflict engine; retain real client/auth/Cloud/game/save isolation as an unestablished gate and do not repeat the refused nested route under unchanged host conditions.",
       "cooldown_rule": "75,000 additional tokens or 30 directly evidenced active minutes; newly accepted milestone resets no-progress facts",
       "trigger": "Same bounded checkpoint unaccepted after at least three review-repair candidates",
       "corrective_action": "Close the existing contract on the exact tested namespace-refusal outcome",
@@ -777,7 +815,7 @@
       "reason": "Concrete private-client plan written; current exact nestedbwrap route refused beforeinnerpayload despite31outerchecksPASS. Hostsettings unchanged; actualSteam/account/activation/Cloud/game/save isolation unestablished. IndependentcurrentABI work remains ready.",
       "state": "GAME_NOT_RUN; CLASSIFIED_NESTED_ROUTE_REFUSAL_ACCEPTED",
       "evidence": "docs/evidence/R04-j.json",
-      "next": "Verify the precise current loader ABI/API against frozen installed byte identities and primary upstream interfaces; keep the classified nested route closed under unchanged host conditions. Real private-client/auth/Cloud/game/save isolation remains unestablished."
+      "next": "Resolve current installed Lua key-binding/configuration ownership and exact argument evidence in the shared conflict engine; retain real client/auth/Cloud/game/save isolation as an unestablished gate and do not repeat the refused nested route under unchanged host conditions."
     },
     {
       "scope": "Original CNS configuration and declared assets",
@@ -786,27 +824,26 @@
       "evidence": "docs/evidence/R03-inc1.json"
     }
   ],
-  "next_action": "Verify the precise current loader ABI/API against frozen installed byte identities and primary upstream interfaces; keep the classified nested route closed under unchanged host conditions. Real private-client/auth/Cloud/game/save isolation remains unestablished.",
+  "next_action": "Resolve current installed Lua key-binding/configuration ownership and exact argument evidence in the shared conflict engine; retain real client/auth/Cloud/game/save isolation as an unestablished gate and do not repeat the refused nested route under unchanged host conditions.",
   "updated_on": "2026-10-08",
   "execution": {
     "owner_thread": "01a115db-7ff8-70c1-8122-cdc330aaf5c5",
-    "lane": "GOVERNED",
-    "lane_reason": "Prepare exact legitimate private-client route and verify nested-runtime user/mount namespace capability without losing original data or IPC/network isolation. Prior runtime admission deliberately denies nesteduserns; fresh independent contract required.",
+    "lane": "DIRECT",
+    "lane_reason": "Bounded read-only PE export/import and pinned-source Lua registration evidence; self-authored additive parser; no game/DLL loading or protected runtime/security effects.",
     "owned_paths": [
-      "src/testing/client_plan.py",
-      "tests/test_client_plan.py",
+      "src/testing/runtime_probe.py",
+      "tests/test_runtime_probe.py",
       "src/testing/README.md",
-      "docs/contracts/R04-j.json",
-      "docs/evidence/R04-j.json",
+      "docs/evidence/R04-k.json",
       "PROJECT_STATE.json",
-      ".local/r04/client-plan/"
+      ".local/r04/loader-interface/"
     ],
-    "entry_preimage": "f3c14f2966c051777ee29cf3ff766acd512834a7; state SHA256 309e63d0dd3d3d4791a9e1ccbc85a7de410cdbea6a981379bbb03217bde9b269",
-    "execution_source": "Native Goal continuation after verified R04-i f3c14f2 delivery",
-    "acceptance": "Governor-set bounded fixed self-authored nested-runtime dry probe and concrete private-client candidate; no Steam/game/auth/Cloud effect.",
-    "external_scope": "Originals read-only; no account/session/credentials/cache/Steam launcher/game execution, no binary/asset/save copies, no network or host configuration change. Public documentation read and normal accepted source sync authorized.",
-    "next_evidence": "Fresh Governor contract for required nested runtime capability and retained read-only/absent-protected/network/IPC/process guarantees; then exact reviewed fixed probe.",
-    "result": "ACCEPTED boundedclassifiedhostrefusal:31outerchecks/12synthetic/13RootpostchecksPASS, nestedexit1beforepayload/hostexit0;24hash/1330game+3legacy preserved,ownprocess/socket/nsclosed. No realclient/game/saveisolation. Source verified on GitHub: f361d5735b5f3416a101e06385b13f1f456cf964."
+    "entry_preimage": "a6ea60442c84efc0dd7b2f8e5b2bedbe202ec48c; state SHA256 a6b79aadc73d1261ab547ba8f712a768409754e0cbd2f6fd851983de169707e2",
+    "execution_source": "Native active Goal continuation after verified R04-j source delivery",
+    "acceptance": "Frozen installed2cores and distinct1candidate revalidated and statically inspected; PE exports cross-checked with existing independent binary tool; pinned primary-source API evidence clearly separated from installed/runtime identity; targeted tests and exact source delivery.",
+    "external_scope": "Read-only exact game-loader/source-package references and public upstream documentation; ordinary source commit/push authorized. No game/client/MOD execution, deployment, session/credentials/save reads or copies, global changes or namespace-route retry.",
+    "next_evidence": "Complete: docs/evidence/R04-k.json; directRoot9/9,12parser+7relatedregression tests, twoindependentexactexport crosschecks, real --exports CLIexit0.",
+    "result": "PASS_STATIC_UNIT_ONLY; current2frozencores/distinct1candidate/62Lua identities;65externalstampsunchanged; no protected runtime effect. Source sync pending."
   },
   "rounds": {
     "R01": {
@@ -857,14 +894,14 @@
       "increment_evidence": "docs/evidence/R03-inc1.json"
     },
     "R04": {
-      "status": "PARTIAL_CURRENT_BYTES_WINDOWS_GPU_CLOUD_AND_CLASSIFIED_NESTED_REFUSAL_ACCEPTED; GAME_MOD_ABI_UI_NOT_RUN",
-      "preparation": "R04-b private prefix/fixed CLI accepted; R04-c3PE images/79static dependencies; R04-d real NVIDIA offscreen Vulkan clear/transfer/exact4096-byte readback passed,23namespace+12Rootchecks,all protected inputs unchanged; R04-e own Windows diagnostic executes,2headless graphics failures retained,27boundary/11Rootchecks each,5tests pass; D3D12 not accepted; R04-f acceptedWindowsD3D12_12_0/NVIDIA32x32clear/copy/exact4096readback,privateX5/5,3x29boundary,Root22/22,7tests; R04-g rawwhole-vs-component/configurationpreview473sources/5loadercandidates,18exclusions/18replacements,10+2tests/Root9checks; R04-h current790filebyteprofile/780sourcebindings/171installedcontainers108exactrawmatches,16declared7enabled4markers,4of5loadercorepairsidentical,10tests/Root15checks; R04-i boundedpubliccache3Cloudrules/239headersskipped/24protectedhashes,10tests/Root17checks,freshJudge/Governor accepted; firstnumericoutputguardFAIL repaired",
-      "remaining": "Legitimate isolatedSteam-client/game/local/Cloud route; currentABI/scripts/settings/resource/body and transformed/nonidentical/unresolvedfiles. Actualcoldstart/rollback/gameplay/UI/fonts/input/window/performance NOT_RUN",
+      "status": "PARTIAL_CURRENT_BYTES_STATIC_INTERFACES_AND_CLASSIFIED_NESTED_REFUSAL; GAME_MOD_ABI_UI_NOT_RUN",
+      "preparation": "R04-b private prefix/fixed CLI accepted; R04-c3PE images/79static dependencies; R04-d real NVIDIA offscreen Vulkan clear/transfer/exact4096-byte readback passed,23namespace+12Rootchecks,all protected inputs unchanged; R04-e own Windows diagnostic executes,2headless graphics failures retained,27boundary/11Rootchecks each,5tests pass; D3D12 not accepted; R04-f acceptedWindowsD3D12_12_0/NVIDIA32x32clear/copy/exact4096readback,privateX5/5,3x29boundary,Root22/22,7tests; R04-g rawwhole-vs-component/configurationpreview473sources/5loadercandidates,18exclusions/18replacements,10+2tests/Root9checks; R04-h current790filebyteprofile/780sourcebindings/171installedcontainers108exactrawmatches,16declared7enabled4markers,4of5loadercorepairsidentical,10tests/Root15checks; R04-i boundedpubliccache3Cloudrules/239headersskipped/24protectedhashes,10tests/Root17checks,freshJudge/Governor accepted; firstnumericoutputguardFAIL repaired; R04-j classifiednestedrefusal/31outerchecks/12tests/13postchecksaccepted; R04-k exact2cores+1distinctcandidatePEexports/twoindependentcrosschecks/62Luaidentities/pinned48registrations,12+7tests/Root9checks",
+      "remaining": "Legitimate isolatedSteam-client/game/local/Cloud route; actualABI/Luabindings/scripts/settings/resource/body and transformed/nonidentical/unresolvedfiles. Actualcoldstart/rollback/gameplay/UI/fonts/input/window/performance NOT_RUN",
       "lane": "PER_UNIT",
       "contract": "docs/contracts/R04-b.json",
-      "evidence": "docs/evidence/R04-j.json",
-      "private_evidence": ".local/r04/client-plan/postlaunch.json",
-      "closed_unit": "R04-j",
+      "evidence": "docs/evidence/R04-k.json",
+      "private_evidence": ".local/r04/loader-interface/inspection.json",
+      "closed_unit": "R04-k",
       "closed_units": [
         "R04-a",
         "R04-b",
@@ -875,9 +912,10 @@
         "R04-g",
         "R04-h",
         "R04-i",
-        "R04-j"
+        "R04-j",
+        "R04-k"
       ],
-      "sync": "VERIFIED R04-j content f361d5735b5f3416a101e06385b13f1f456cf964 exactly matched GitHub branch API"
+      "sync": "PENDING R04-k local static candidate; do not infer remote delivery."
     },
     "R01-inc1": {
       "status": "COMPLETE_STATIC_ORGANIZATION_AND_REQUIREMENTS",
@@ -896,16 +934,16 @@
     "completion_percent": null,
     "reason": "A01-A14 heterogeneous end-to-end results; no final result accepted yet",
     "planning_rounds": 1,
-    "execution_rounds_closed": 18,
-    "last_closed": "R04-j",
+    "execution_rounds_closed": 19,
+    "last_closed": "R04-k",
     "remaining_round_estimate": null,
     "forecast_confidence": "unknown; no final end-to-end acceptance throughput; incomplete prerequisites and heterogeneous remaining work",
-    "previous_goal_turn": "PROGRESS: R04-j exact nested refusal/31outerchecks/12tests/13postchecks accepted and source f361d5735b5f3416a101e06385b13f1f456cf964 verified on GitHub. FullA01-A14 0/14,19closedunits including planning. Original game/saves preserved; actualSteam/game/MOD/UI not accepted. Next precise currentloader ABI/API.",
-    "total_closed_units_including_planning": 19,
+    "previous_goal_turn": "PROGRESS: R04-k frozen2cores/distinct1candidate staticexports verified,2independentcrosschecks,62Luaidentities and pinned48registrations;12+7tests/Root9checksPASS. ActualABI/Luabindings/game/UI unaccepted; fullA01-A14remains0/14.20closedunitsincludingplanning; source sync pending.",
+    "total_closed_units_including_planning": 20,
     "changes": {
-      "execution": "Bounded current-host nested route ends at accurately classified refusal with freshpostJudgePASS/Governorapproval; no realSteam/game effect.",
-      "evidence": "31outerchecks,12synthetic tests,13Rootpostchecks;24opaquehash/1330game+3legacy unchanged; process/socket/nsclosed, priorsourcefailures retained.",
-      "scope": "FullA01-A14unchanged; current591downloads match existing594sourcebasis,25increment/23uniquecontents/2aliases alreadyincluded. Completion/remainingpercent and forecastrounds unknown."
+      "execution": "Add optionalPEexports to existingreader; verify current core interfaces and distinctcandidate; no deployment/runtime capability accepted.",
+      "evidence": "Exact32/64fixtures,holes/aliases/forwarders,12parser+7regressiontests,2objdumpcrosschecks/realCLI/65stampsunchanged; pinnedsource/binstrings/lexicalcalls qualify unavailable runtimeproof.",
+      "scope": "FullA01-A14unchanged,accepted0/14; original594sourcebasis/591downloads/25increment unchanged. Completion/remainingpercent and remainingroundforecast unknown."
     },
     "remaining_percentage": null
   },
