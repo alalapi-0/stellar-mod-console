@@ -15,9 +15,9 @@
   "goal_mode_started": true,
   "implementation_started": true,
   "phase": "P1",
-  "current_round": "R03-b",
-  "round_status": "PARTIAL_RESOURCE_NAMESPACE_VERIFIED",
-  "next_round": "R03-c / independent remaining R02-b",
+  "current_round": "R03-c",
+  "round_status": "PARTIAL_CNS_LUA_INTERFACE_EVIDENCE",
+  "next_round": "R02-b critical prerequisite/resource closure; R04 read-only isolation preparation",
   "protected": [
     "Existing game files and saves",
     "Original MOD packages and downloads",
@@ -294,22 +294,22 @@
       }
     ],
     "token_cost_telemetry": {
-      "native_goal_tokens_observed": 400317,
-      "source": "get_goal at R03-b closure, updatedAt 1791370106",
+      "native_goal_tokens_observed": 497843,
+      "source": "get_goal at R03-c closure, updatedAt 1791370745",
       "coverage": "Cumulative tokens reported by native active Goal; not hand-estimated or per-code-unit",
-      "native_goal_time_seconds_observed": 2014,
+      "native_goal_time_seconds_observed": 2653,
       "active_execution_time": "UNAVAILABLE; wall time does not prove active minutes",
       "cost": "UNAVAILABLE",
       "budget": "No explicit token budget; native remainingTokens null"
     },
-    "execution_units_closed": 4,
+    "execution_units_closed": 5,
     "health_checkpoint": {
       "first_250k_rebaseline_completed": true,
       "status": "HEALTHY",
       "baseline_tokens_observed": 289664,
       "checkpoint": "R03-a closure",
       "reason": "Material candidates, new first-time checks and completed delivery units; no equivalent unresolved retries",
-      "next_checkpoint": "No new health review triggered at R03-b: material progress, no equivalent no-progress failures or unaccepted review loop. Evaluate only at a future eligible checkpoint.",
+      "next_checkpoint": "No new health review triggered at R03-c: new candidate, passing checks and actionable prerequisite evidence; evaluate only at a future eligible checkpoint.",
       "cooldown_rule": "75,000 additional tokens or 30 directly evidenced active minutes; newly accepted milestone resets no-progress facts"
     }
   },
@@ -333,9 +333,14 @@
       "scope": "Runtime game tests",
       "reason": "8 prefix saves and 3 in-loader backups are real progress; no isolated test save/config established",
       "state": "NOT_RUN; do not roll back personal saves"
+    },
+    {
+      "scope": "Original CNS configuration and declared assets",
+      "reason": "18 trailing-comma originals require normalization validation; BPearl duplicate MaterialToggles remains ambiguous; 256 current declared references not in IoStore directory index",
+      "state": "DISCOVERY_VERIFIED; sources unchanged; runtime and repair not accepted"
     }
   ],
-  "next_action": "R03-c: index live/archive CNS unique IDs, exact module/property writers and registered/configured hotkeys. Continue R02 exact-file prerequisites/permissions; then establish isolated save/config protection before any R04 game changes or runtime tests.",
+  "next_action": "R02-b: bind critical loader/ATOOL/RandomSwitch/Speed/Flying/body prerequisites to exact input files and investigate 256 installed references outside the IoStore index plus original CNS format issues; then prepare isolated save/config route for R04 before game changes or launches.",
   "updated_on": "2026-10-07",
   "execution": {
     "owner_thread": "01a115db-7ff8-70c1-8122-cdc330aaf5c5",
@@ -356,12 +361,14 @@
       "src/policy/README.md",
       "tests/test_static_policy.py",
       "src/policy/resources.py",
-      "tests/test_resources.py"
+      "tests/test_resources.py",
+      "src/policy/interfaces.py",
+      "tests/test_interfaces.py"
     ],
     "external_scope": "Downloads, game and prior MOD workspace read-only for R01-R03; no save or game launch",
-    "entry_preimage": "fe1d02c79591021ed805ba2d3060c603bebe7cae; clean worktree; GitHub implementation branch matched",
-    "acceptance": "R03-b: exact raw/live resource paths and stored chunk hashes; all applicable containers indexed or explicitly deferred; independent retoc comparison; historical override scope rebound to current files. No runtime compatibility claim.",
-    "next_evidence": "docs/evidence/R03.json and .local/r03/resources.json"
+    "entry_preimage": "9b1c6539d89ac0fde77e8fc6bbbce70b2ed07f8f; clean worktree; GitHub branch matched",
+    "acceptance": "Read-only exact hashed installed/archive CNS identities and declared asset dependencies; syntactic Lua writer/keybind evidence with dynamic coverage gaps; no code execution or runtime compatibility claims",
+    "next_evidence": "docs/evidence/R03.json and .local/r03/interfaces.json"
   },
   "rounds": {
     "R01": {
@@ -386,19 +393,22 @@
       "lane": "DIRECT",
       "evidence": "docs/evidence/R03.json",
       "private_graph": ".local/r03/conflicts.json",
-      "closed_unit": "R03-b",
-      "remaining": "CNS/body/material/physics dependencies and module/property/hotkey write ownership; per-file author prerequisites; historical load order and real compatibility",
-      "sync": "VERIFIED R03-b GitHub impl/mod-console == local e1622020a2acee5cbe151f6ed12a61a80229e814",
+      "closed_unit": "R03-c",
+      "remaining": "Exact dynamic/configured keybinds and actual property-write ownership, native/Blueprint/desktop-tool interfaces, raw CNS format repair choices, resource/DLC/body prerequisites and real runtime compatibility",
+      "sync": "R03-c candidate verified locally; push and remote verification pending",
       "closed_units": [
         "R03-a",
-        "R03-b"
+        "R03-b",
+        "R03-c"
       ],
       "resource_index": ".local/r03/resources.json",
       "resource_checks": [
         ".local/r03/resource-checks.json",
         ".local/r03/historical-resource-checks.json",
         ".local/r03/additional-resource-checks.json"
-      ]
+      ],
+      "interface_index": ".local/r03/interfaces.json",
+      "interface_checks": ".local/r03/interface-checks.json"
     }
   },
   "progress": {
@@ -408,16 +418,16 @@
     "completion_percent": null,
     "reason": "A01-A14 heterogeneous end-to-end results; no final result accepted yet",
     "planning_rounds": 1,
-    "execution_rounds_closed": 4,
-    "last_closed": "R03-b",
+    "execution_rounds_closed": 5,
+    "last_closed": "R03-c",
     "remaining_round_estimate": null,
     "forecast_confidence": "unknown; no final end-to-end acceptance throughput; incomplete prerequisites and heterogeneous remaining work",
-    "previous_goal_turn": "PROGRESS: R01/R02-a/R03-a source candidates and first-time checks passed; remote delivery verified. R03-b now addresses remaining resource namespace evidence.",
-    "total_closed_units_including_planning": 5,
+    "previous_goal_turn": "PROGRESS: R03-b exact resource indices, independent metadata/payload checks and remote delivery verified; R03-c addresses remaining CNS/interface evidence",
+    "total_closed_units_including_planning": 6,
     "changes": {
-      "evidence_correction": "Historical 42 groups now bound to current exact triples and resource bytes; no runtime acceptance changed",
-      "execution": "Resource indices, independent all-installed metadata comparison and 94 actual payload hashes verified; no final A01-A14 acceptance awarded",
-      "scope": "unchanged; original 14 outcomes retained"
+      "evidence_correction": "18 original CNS strict-format failures and one duplicate-key document remain visible; directory presence not upgraded to body compatibility",
+      "execution": "Exhaustive hashed interface inventory, module/key/domain candidates, exact installed CNS IDs and R03 regression checks verified; no final A01-A14 acceptance awarded",
+      "scope": "unchanged; original 14 results retained"
     }
   }
 }

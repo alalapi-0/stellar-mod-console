@@ -96,7 +96,7 @@
     "Known static selection diagnostics never apply or authorize any configuration"
   ],
   "game_and_original_mod_mutations": "NONE",
-  "closure": "PARTIAL_R03; R03-a and R03-b closed; original requirements and runtime acceptance preserved",
+  "closure": "PARTIAL_R03; R03-a, R03-b, R03-c discovery units closed; original objective and all runtime requirements retained",
   "resource_namespace_discovery": {
     "unit": "R03-b",
     "semantic_candidate_sha256": "1384ce539886b876e1b878e6845d70cae7dc1aec1b2efa84538d26140619db56",
@@ -207,5 +207,140 @@
     ],
     "asset_files_retained_or_published": 0,
     "game_mutations": "NONE"
+  },
+  "interface_discovery": {
+    "unit": "R03-c",
+    "semantic_candidate_sha256": "8639c86baa709f4e4e7a6faee2588a8a978d1ded9581088afdb0e74a430a3f1b",
+    "candidate_files_sha256": {
+      "src/policy/interfaces.py": "2bcee609af777cbdd38de775626cb2cff86a95acc2db6d8883de6be4a4e8f56a",
+      "src/policy/static.py": "f2a8e4c7445c8b19a7a482ac6da788454697445a73065e6aa35e78000bfa2b5c",
+      "src/policy/resources.py": "af4796e063fdd9e459000a18ac3fdb4f52f54d9197c11abf01e9718eb70b4337",
+      "tests/test_interfaces.py": "c4860c598e7cccbb61fe6056ebbe803f8c1672bda3bcea6480d5da38c4222098",
+      "src/policy/README.md": "ba1ee00981d3ab03e3e17921b2b7f17e78776611611dd3ae182f117b26ef0396",
+      "tests/README.md": "333124160c30f536640b34dfbe9bdfdf81bd12a017bfba9e9224dbe31c09bbcf"
+    },
+    "private_index_sha256": "f9e73f7b8b9e1feb0710626cbb8cf723cba4384d98c867703b1354a705dc93a7",
+    "private_checks_sha256": "8d8dceb51b25722d1b6182c23debeaee2c825dd8a5fab962dcf11e8e1a06b652",
+    "summary": {
+      "documents": 567,
+      "deferrals": 1,
+      "raw_types": {
+        "cns": 125,
+        "configuration": 31,
+        "lua": 200,
+        "animation_json": 3
+      },
+      "raw_cns": {
+        "files": 125,
+        "rows": 371,
+        "within_file_duplicate_ids": 0,
+        "missing_ids": 0,
+        "strict_format_failures_metadata_recovered": 18
+      },
+      "raw_lua": {
+        "files": 200,
+        "keybind_calls": 236,
+        "literal_key_calls": 184,
+        "effect_domain_references": {
+          "spring_physics": 53,
+          "camera": 10,
+          "movement": 22,
+          "world_time": 7,
+          "actor_time": 2,
+          "appearance": 1
+        }
+      },
+      "installed_types": {
+        "lua": 62,
+        "configuration": 5,
+        "animation_json": 3,
+        "cns": 138
+      },
+      "installed_cns": {
+        "files": 138,
+        "rows": 389,
+        "within_file_duplicate_ids": 0,
+        "missing_ids": 0,
+        "strict_format_failures_metadata_recovered": 0
+      },
+      "installed_lua": {
+        "files": 62,
+        "keybind_calls": 82,
+        "literal_key_calls": 47,
+        "effect_domain_references": {
+          "appearance": 1,
+          "world_time": 1,
+          "actor_time": 2,
+          "camera": 6,
+          "spring_physics": 15
+        }
+      }
+    },
+    "coverage_checks": {
+      "interface_input_documents": 568,
+      "analyzed": 567,
+      "explicitly_deferred": 1,
+      "independent_current_cns_rows": 389,
+      "current_cns_id_sequence_matches": true,
+      "R03_a_b_regression_outputs_identical": true,
+      "current_reference_presence": {
+        "PRESENT_METADATA_ONLY": 2531,
+        "NOT_FOUND_IN_IOSTORE_DIRECTORY_INDEX": 256
+      },
+      "module_provider_overlap_groups": 13,
+      "key_candidate_groups": {
+        "raw": 14,
+        "installed": 4
+      },
+      "configured_key_declarations": 569,
+      "scope": "STATIC only; no runtime compatibility or write ownership accepted"
+    },
+    "format_findings": {
+      "original_configs_with_tail_commas": 18,
+      "action": "Metadata recovered only; originals unchanged and format acceptance not granted",
+      "duplicate_key_document": {
+        "target": "BPearl CNS config",
+        "key": "MaterialToggles",
+        "status": "UNKNOWN; exact configuration parsing deferred"
+      }
+    },
+    "known_domain_candidates": [
+      "EVEExperience / SpeedMasterEve world time",
+      "JiggleUpdate / JiggleUpdate2ATOOL / KittensJiggleMod SpringBone physics",
+      "EVEExperience / UltraCamera / FlyingEve camera references"
+    ],
+    "classification": "Declared calls/references only; simultaneous property writes and runtime registration remain UNKNOWN",
+    "checks": [
+      {
+        "command": "python3 -m unittest discover -s tests",
+        "exit": 0,
+        "tests": 20
+      },
+      {
+        "command": "python3 -m src.policy.interfaces --catalog .local/r02/catalog.json --inventory .local/r01/inventory.json --resources .local/r03/resources.json --output .local/r03/interfaces.json",
+        "exit": 0,
+        "scope": "568 exact hashed documents accounted for; 567 analyzed, 1 explicit deferral"
+      },
+      {
+        "check": "Root independent stock JSON comparison of all installed CNS identity sequences; exhaustive document coverage",
+        "exit": 0,
+        "files": 138,
+        "rows": 389
+      },
+      {
+        "check": "R03-a/b commands rerun after shared archive-reader reuse; raw output hashes unchanged",
+        "exit": 0
+      }
+    ],
+    "remaining": [
+      "Only syntactic Lua evidence; callbacks, indirect/configured binds and dynamic property writes remain unverified",
+      "Asset references matched current directory metadata only; missing indexed paths may exist in PAK/native/generated resources",
+      "No all-mod compatibility or per-body/physics fit accepted; no third-party code executed or copied into public source",
+      "One duplicate-key source configuration, 18 original strict-format failures and 256 installed references outside current IoStore index retained",
+      "Lua wrappers, config precedence, native/DLL/Blueprint writers and Windows desktop tool write behavior remain incomplete",
+      "Body/physics compatibility, exact DLC/author prerequisites, save isolation and real game checks remain unverified"
+    ],
+    "game_or_source_modifications": "NONE",
+    "third_party_asset_or_source_files_published": 0
   }
 }

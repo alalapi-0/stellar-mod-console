@@ -17,8 +17,8 @@ from src.catalog.inventory import emit_json, sha256, stamp
 TOC_MAGIC = b"-==--==--==--==-"
 
 
-def archive_tocs(path: Path) -> dict[str, bytes]:
-    """Read small TOC entries in memory through system libarchive; no extraction."""
+def archive_metadata(path: Path, selected: set[str] | None = None, limit: int = 128 * 1024**2) -> dict[str, bytes]:
+    """Read selected small entries in memory; default is TOCs. No extraction."""
     library = ctypes.util.find_library("archive")
     if not library:
         raise RuntimeError("LIBARCHIVE_UNAVAILABLE")
@@ -54,16 +54,17 @@ def archive_tocs(path: Path) -> dict[str, bytes]:
                 break
             raw = lib.archive_entry_pathname(entry)
             name = raw.decode(errors="replace").replace("\\", "/") if raw else ""
-            if not name.lower().endswith(".utoc"):
+            wanted = name in selected if selected is not None else name.lower().endswith(".utoc")
+            if not wanted:
                 check(lib.archive_read_data_skip(handle))
                 continue
             data = bytearray()
             while n := check(lib.archive_read_data(handle, buffer, len(buffer))):
-                if len(data) + n > 128 * 1024**2:
-                    raise ValueError("TOC_MEMORY_LIMIT_EXCEEDED; identifier index NOT_RUN")
+                if len(data) + n > limit:
+                    raise ValueError("METADATA_MEMORY_LIMIT_EXCEEDED; index NOT_RUN")
                 data.extend(buffer.raw[:n])
             if name in found:
-                raise ValueError("Duplicate TOC entry")
+                raise ValueError("Duplicate selected archive entry")
             found[name] = bytes(data)
     finally:
         lib.archive_read_free(handle)
@@ -110,7 +111,7 @@ def build_graph(catalog: dict, inventory: dict) -> dict:
         archive_error = None
         if path.suffix.lower() != ".zip" and record["components"]["containers"]:
             try:
-                toc_bytes = archive_tocs(path)
+                toc_bytes = archive_metadata(path)
             except (ValueError, OSError, RuntimeError) as error:
                 archive_error = str(error)
         for container in record["components"]["containers"]:

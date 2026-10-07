@@ -10,7 +10,7 @@ import struct
 import zipfile
 
 from src.catalog.inventory import emit_json, sha256, stamp
-from src.policy.static import archive_tocs, toc_identifiers, variant_id
+from src.policy.static import archive_metadata, toc_identifiers, variant_id
 
 NONE = 0xffffffff
 OLD_TYPES = ("Invalid", "InstallManifest", "ExportBundleData", "BulkData", "OptionalBulkData",
@@ -175,7 +175,7 @@ def build_index(catalog: dict, inventory: dict) -> dict:
         source = sources[record["canonical_path"]]
         path = Path(source["path"])
         entries = {e["path"].replace("\\", "/"): e for e in source.get("entries", [])}
-        tocs = archive_tocs(path) if path.suffix.lower() != ".zip" else None
+        tocs = archive_metadata(path) if path.suffix.lower() != ".zip" else None
         for container in record["components"]["containers"]:
             name = container["stem"] + ".utoc"
             ident = variant_id(record, container["stem"])
