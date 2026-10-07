@@ -14,6 +14,45 @@ def profile(*refs, providers=None):
 
 
 class ProfileTests(unittest.TestCase):
+    def test_shared_configuration_target_and_different_declared_fields_remain_blocked(self):
+        self.documents([('base', 'io.open(path, "w")'), ('extension', 'io.open(path, "w")')])
+        for d, keys in zip(self.interfaces['documents'], [['enabled', 'profile', 'hotkeys'], ['enabled', 'profile']]):
+            d['analysis']['file_accesses'][0]['target_evidence'] = {'target_key': 'Mods/Own/config.txt',
+                'declared_write_keys': keys, 'runtime_target': 'UNVERIFIED', 'write_ownership': 'UNASSIGNED'}
+        before = copy.deepcopy(self.interfaces)
+        report = self.planner.inspect(profile('base', 'extension'))
+        target = report['configuration_target_candidates'][0]
+        self.assertEqual(target['writer_packages'], ['base', 'extension'])
+        self.assertEqual([r['keys'] for r in target['declared_write_key_sets']],
+                         [['enabled', 'profile', 'hotkeys'], ['enabled', 'profile']])
+        self.assertTrue(any(b['type'] == 'configuration_target_multiple_writers_unverified' for b in report['blockers']))
+        self.assertFalse(report['violations']); self.assertFalse(report['can_apply'])
+        leaf = self.planner.inspect(profile('loader1', 'extension'))
+        self.assertEqual(leaf['configuration_target_candidates'][0]['writer_packages'], ['extension'])
+        self.assertFalse(any(b['type'] == 'configuration_target_multiple_writers_unverified' for b in leaf['blockers']))
+        self.assertEqual(self.interfaces, before)
+
+    def test_equal_filenames_in_different_module_targets_are_not_collapsed(self):
+        self.documents([('base', 'io.open(path, "w")'), ('extension', 'io.open(path, "w")')])
+        for d in self.interfaces['documents']:
+            d['analysis']['file_accesses'][0]['target_evidence'] = {'target_key': 'Mods/'+d['package']+'/config.txt'}
+        report = self.planner.inspect(profile('base', 'extension'))
+        self.assertEqual(len(report['configuration_target_candidates']), 2)
+        self.assertFalse(any(b['type'] == 'configuration_target_multiple_writers_unverified' for b in report['blockers']))
+
+    def test_save_read_and_startup_write_declarations_require_separate_verification(self):
+        self.documents([('base', 'io.open(path, "rb")'), ('extension', 'local own = true')])
+        self.interfaces['documents'][0]['analysis']['file_accesses'][0]['target_evidence'] = {'data_kind': 'GAME_SAVE', 'target_key': None}
+        self.interfaces['documents'][1]['analysis']['configuration_source_observations'] = [
+            {'kind': 'STARTUP_CONFIG_WRITE_CALL', 'source_lines': [1]}]
+        report = self.planner.inspect(profile('base', 'extension'))
+        self.assertTrue(any(b['type'] == 'save_or_original_media_access_isolation_unverified' for b in report['blockers']))
+        self.assertTrue(any(b['type'] == 'startup_configuration_effects_unverified' for b in report['blockers']))
+        leaf = self.planner.inspect(profile('loader1'))
+        self.assertEqual(leaf['configuration_source_observations'], [])
+        self.assertEqual(leaf['file_access_evidence'], [])
+        self.assertFalse(report['can_apply'])
+
     def documents(self, scripts):
         self.interfaces['documents'] = [{'id': package + '::main.lua', 'name': 'main.lua',
             'namespace': 'raw', 'package': package, 'module': package, 'sha256': 'own-fixture-' + package,

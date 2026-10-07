@@ -1,15 +1,55 @@
 import json
 import hashlib
+import copy
 from pathlib import Path
 import tempfile
 import unittest
 import zipfile
 
-from src.policy.interfaces import analyze_document, build_interfaces, cns_evidence, lua_evidence, unreal_asset_key
+from src.policy.interfaces import analyze_document, build_interfaces, cns_evidence, lua_evidence, read_configuration_evidence, unreal_asset_key
 from src.policy.static import archive_metadata
 
 
 class InterfaceTests(unittest.TestCase):
+    def pinned_fixture(self, data):
+        digest = hashlib.sha256(data).hexdigest()
+        return {digest: {'sha256': digest, 'module_candidate': 'OwnFixture', 'calls': [{'line': 1, 'function': 'io.open',
+            'expected_intent': 'WRITE_SPELLING', 'data_kind': 'MODULE_CONFIGURATION',
+            'target_key': 'Mods/OwnFixture/config.txt', 'source_lines': [1],
+            'runtime_target': 'UNVERIFIED', 'write_ownership': 'UNASSIGNED'}], 'observations': []}}
+
+    def test_configuration_facts_require_exact_bytes_and_do_not_grant_ownership(self):
+        data = b'io.open("config.txt", "w")'
+        facts = self.pinned_fixture(data); original = copy.deepcopy(facts)
+        result = analyze_document(data, 'own.lua', facts, 'OwnFixture')
+        self.assertEqual(result['configuration_evidence_status'], 'DIGEST_PINNED_DECLARATIONS_ONLY')
+        self.assertEqual(result['file_accesses'][0]['target_evidence']['target_key'], 'Mods/OwnFixture/config.txt')
+        self.assertEqual(result['file_accesses'][0]['write_ownership'], 'UNASSIGNED')
+        changed = analyze_document(data + b' -- another version', 'own.lua', facts)
+        self.assertEqual(changed['configuration_evidence_status'], 'NO_PINNED_SOURCE_FACTS')
+        self.assertNotIn('target_evidence', changed['file_accesses'][0])
+        self.assertEqual(facts, original)
+        moved = analyze_document(data, 'own.lua', facts, 'AnotherModule')
+        self.assertIsNone(moved['file_accesses'][0]['target_evidence']['target_key'])
+        self.assertEqual(moved['file_accesses'][0]['target_evidence']['layout_context'], 'MODULE_CONTEXT_UNVERIFIED')
+
+    def test_pinned_call_contradictions_and_ownership_grants_are_rejected(self):
+        data = b'io.open("config.txt", "w")'
+        for field, value in [('line', 2), ('expected_intent', 'READ_SPELLING'),
+                             ('runtime_target', 'RESOLVED'), ('write_ownership', 'OWNED')]:
+            with self.subTest(field=field):
+                facts = self.pinned_fixture(data)
+                next(iter(facts.values()))['calls'][0][field] = value
+                with self.assertRaises(ValueError): analyze_document(data, 'own.lua', facts)
+
+    def test_configuration_database_rejects_duplicate_hashes_and_calls(self):
+        data = b'io.open("config.txt", "w")'; source = next(iter(self.pinned_fixture(data).values()))
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'own-facts.json'
+            for rows in [[source, source], [{**source, 'calls': source['calls'] * 2}]]:
+                path.write_text(json.dumps({'schema_version': 1, 'sources': rows}))
+                with self.assertRaises(ValueError): read_configuration_evidence(path)
+
     def test_keybind_roles_and_whole_modifier_list_are_separate(self):
         evidence = lua_evidence('''IsKeyBindRegistered(Key.F8)
 RegisterKeyBind(Key.F8, {ModifierKey.SHIFT, ModifierKey.CONTROL}, function() end)

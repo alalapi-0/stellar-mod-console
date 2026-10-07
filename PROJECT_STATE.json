@@ -15,8 +15,8 @@
   "goal_mode_started": true,
   "implementation_started": true,
   "phase": "P1",
-  "current_round": "R04-l",
-  "round_status": "COMPLETE_R04-l_STATIC_KEYBIND_FILE_ACCESS_AND_SOURCE_DELIVERY; FULL_GOAL_PARTIAL",
+  "current_round": "R04-m",
+  "round_status": "ACCEPTED_R04-m_PINNED_CONFIGURATION_EVIDENCE; SOURCE_DELIVERY_PENDING",
   "next_round": "R04-m",
   "protected": [
     "Existing game files and saves",
@@ -192,8 +192,8 @@
     },
     "private_resource_index": ".local/r03/inc1/resources.json",
     "resource_index_sha256": "9bb1cd843348ca35df5915dc3b26d9c0caddfc51adb2599a3ce527ea005ba1f0",
-    "private_interface_index": ".local/r04/keybindings/interfaces.json",
-    "interface_index_sha256": "97af891f468105bd7b8225d23650686d103bcf9ee18fe03eaf65df92b5dcbcb9",
+    "private_interface_index": ".local/r04/config-targets/interfaces.json",
+    "interface_index_sha256": "cb534c637f13df9168f212b14c9012b27277c79ea84fcf439c6b282d1536bb68",
     "interface_summary": {
       "documents": 619,
       "deferrals": 1,
@@ -221,6 +221,7 @@
         },
         "literal_chord_candidates": 171,
         "file_access_spellings": 66,
+        "configuration_sources_pinned": 29,
         "effect_domain_references": {
           "spring_physics": 79,
           "camera": 10,
@@ -254,6 +255,7 @@
         },
         "literal_chord_candidates": 33,
         "file_access_spellings": 26,
+        "configuration_sources_pinned": 9,
         "effect_domain_references": {
           "appearance": 1,
           "world_time": 1,
@@ -348,6 +350,12 @@
       "missing": 0,
       "changed": 0,
       "scope": "Downloads membership and metadata only; no source content read by this recheck"
+    },
+    "configuration_target_rules": {
+      "path": "src/policy/configuration_evidence.json",
+      "sha256": "c381e5a7d5173a94698669520b3bd88aa379ef0ddad2afabba6425ff6b8ed7a4",
+      "scope": "16digest-pinned source declarations;15IOidentities/36documents/92calls; no actual target resolution or ownership",
+      "evidence": "docs/evidence/R04-m.json"
     }
   },
   "milestones": {
@@ -402,8 +410,9 @@
     },
     "A03": {
       "status": "PARTIAL",
-      "evidence": "docs/evidence/R04-g.json",
-      "note": "473source rawconfiguration previews; whole/component scope and explicit candidate-provider closure,18knownbadpairsreject and18replacementimpacts verified. Unknown resource/script/ABI/runtime remains blocked; all runtime/UI/import/hotkey/automation/application entries NOT_IMPLEMENTED/NOT_RUN."
+      "evidence": "docs/evidence/R04-m.json",
+      "note": "Original473source previews/18bad-pair and18replacement evidence retained; R04-l/m add shared key/query/modifier and digest-pinned configuration target/save-media/startup blockers. Actual paths/ownership/resource/ABI/runtime unresolved; all UI/import/hotkey/automation/application NOT_IMPLEMENTED/NOT_RUN.",
+      "baseline_evidence": "docs/evidence/R04-g.json"
     },
     "A04": {
       "status": "PARTIAL",
@@ -467,7 +476,7 @@
     "visibility": "PUBLIC_VERIFIED",
     "initial_branch": "main",
     "implementation_branch_policy": "Separate implementation branch; push each round; no automatic merge",
-    "sync_status": "VERIFIED R04-l source 788c58de618a3230cf1e06c7463204e82da4dd51 exactly matches GitHub branch API. Final closure HEAD identity uses Git and remote ref.",
+    "sync_status": "PENDING R04-m source delivery; previous R04-l commit retained",
     "head_identity": "Use git HEAD and the remote ref; do not store a self-referential commit hash",
     "branch": "impl/mod-console",
     "verified_content_commits": {
@@ -798,6 +807,38 @@
         "resolution": "Second KeyError before anyState/evidencewrite; inspect all cumulativeschema keys, use existing cumulative.attempts. New schema-asserting saved projection completes; no count reset or game effect.",
         "input_state_sha256": "d964c85e170ff915f3105e20bd326ccd6d3b43297641de23b3b0d47540e05202",
         "evidence": "docs/evidence/R04-k.json"
+      },
+      {
+        "round": "R04-m",
+        "target": "Native ownership discovery list_threads",
+        "failure_class": "LIMIT_ABOVE_TOOL_MAX50",
+        "method": "Read-only list_threads limit100",
+        "resolution": "Tool returned validation error with actualmax50. Reissued limit50 and confirmed only exact owner thread in this repository; no writer or Git effect."
+      },
+      {
+        "round": "R04-m",
+        "target": "Root final-candidate profile-report comparison",
+        "failure_class": "NONEXISTENT_SWITCH_PREVIEW_METHOD",
+        "method": "Called ProfilePlanner.switch_preview while reproducing exact CLI result",
+        "exit": 1,
+        "relevant_code_sha256": "fdcfdedfe63ec77fee880f786030a3145ada3b408dbffe7a6ae070ad35543e85",
+        "resolution": "Validation stopped before writing final validation or all-package reports. Inspect actual class/CLI method and use its real signature; no runtime or input changes."
+      },
+      {
+        "round": "R04-m",
+        "target": "Root selected raw-pair declared field check",
+        "failure_class": "ASSUMED_INSTALLED_SCHEMA_FOR_DIFFERENT_RAW_SOURCE",
+        "method": "Expected5vs2 fields although selected raw Jiggle digestaf156c declares4vs2; actual CLI/result comparison passed",
+        "exit": 1,
+        "resolution": "Inspect exact requested target/source digests and declared fields; use selected raw4vs2 while keeping installed fa1 source5 as separate evidence. Validator assertion failed before finalreport writes; no input/runtime changes."
+      },
+      {
+        "round": "R04-m",
+        "target": "Public evidence historical-attempt filtering",
+        "failure_class": "ABSENT_ROUND_FIELD_IN_OLDER_ATTEMPT",
+        "method": "Indexed round on all heterogeneous historical attempt records",
+        "exit": 1,
+        "resolution": "Evidence preparation failed in memory before any evidence write. Use optional round lookup, retaining every historical record and current failures. No implementation/input/runtime effect."
       }
     ],
     "token_cost_telemetry": {
@@ -853,28 +894,29 @@
       "evidence": "docs/evidence/R03-inc1.json"
     }
   ],
-  "next_action": "Map exact static configuration read/write targets and precedence for installed and selected raw Lua modules using frozen identities; preserve UNASSIGNED ownership until proven. Real client/auth/activation/Cloud/game/save isolation remains unestablished; do not retry the refused nested route under unchanged host conditions.",
+  "next_action": "Complete R04-m pinned configuration-target audit/shared preview evidence; real isolation gate and original acceptance unchanged.",
   "updated_on": "2026-10-08",
   "execution": {
     "owner_thread": "01a115db-7ff8-70c1-8122-cdc330aaf5c5",
     "lane": "REVIEWED",
-    "lane_reason": "Recoverable shared configuration-preview semantics for keybind query/register/wrapper distinction, unknown modifiers and file-access ownership evidence; fresh read-only Judge for exact candidate. No runtime, deployment or credential/security effects.",
+    "lane_reason": "Pinned static target/precedence evidence affects shared previews and distinguishes game-save references, script configuration writes and screenshot moves. Recoverable own code/data; fresh independent Judge; no runtime or protected effects.",
     "owned_paths": [
+      "src/policy/configuration_evidence.json",
       "src/policy/interfaces.py",
       "src/policy/profiles.py",
       "tests/test_interfaces.py",
       "tests/test_profiles.py",
       "src/policy/README.md",
-      "docs/evidence/R04-l.json",
+      "docs/evidence/R04-m.json",
       "PROJECT_STATE.json",
-      ".local/r04/keybindings/"
+      ".local/r04/config-targets/"
     ],
-    "entry_preimage": "8977df5163f1bb2f791ef171e46f387fd3d112a0; State SHA256 7299f2e62a49cd17149dcded51bebfe9e0c003c3f925fb017c56a1c766c1600e",
-    "execution_source": "Native Goal continuation after verified R04-k delivery",
-    "acceptance": "Existing lexer and interface builder classify direct registration/query/wrapper scope, preserve complete-vs-unknown key/modifier arguments and file-access declarations; shared planner includes selected whole-package evidence and qualifies unknowns, no query reservation or component-implied scripts. Rebuild original619documents/306Lua basis with frozen identities, retain prior deferrals and final0/14. Meaningful targeted/regression checks, fresh read-only Judge and exact source delivery.",
-    "external_scope": "Exact game/MOD/download references read-only; bounded static archive text reads/public documentation only. No game/client/MOD or third-party code execution, Steam-settings/save/account reads or changes, source/binary/asset copies, namespace-route retry or deployment. Normal source sync authorized.",
-    "next_evidence": "R04-m exact configuration paths, source identity and precedence evidence; actual targets and write ownership remain unestablished",
-    "result": "PASS_STATIC_UNIT_ONLY; Root10/10,11interface+14profiletests/2CLI/freshJudgePASS. Source788c58de618a3230cf1e06c7463204e82da4dd51 exactly verified on GitHub; original A01-A14 remains0/14; no game/runtime/deployment effect."
+    "entry_preimage": "a46fe7b107faf86fcb633b4f4b596a475381a3e1; State SHA256 e02afc87418d8e77f242f964809e0c1f85a59695ee0c34f182d0ed72bae45904",
+    "execution_source": "Native Goal continuation after exact R04-l remote delivery",
+    "acceptance": "Inspect all15distinct Lua IO source identities covering36documents/92call declarations on original619document/306Lua/1deferral basis. Add digest-pinned, source-grounded path/precedence/startup-write facts to existing interface evidence and shared whole-package previews; do not resolve runtime targets or assign ownership. Evidence missing/stale/contradictory must not silently attach; preserve unknowns, queries, whole/component scope and can_apply false. Meaningful focused/regression and real CLI checks, fresh Judge and exact normal source delivery. OriginalA01-A14 remains0/14.",
+    "external_scope": "Only exact MOD Lua and archive text read in memory, original metadata and public documentation read-only; no game/client/third-party code execution, protected save/account/Steam content reads or changes, third-party copies, route retry, host policy changes or deployment. Normal source sync authorized.",
+    "next_evidence": "Exact normal source commit/push and GitHub branch SHA verification",
+    "result": "PASS_STATIC_UNIT_ONLY;31tests/12Rootchecks/2CLI/freshJudgePASS; source delivery pending; original0/14 and runtime isolation gate unchanged"
   },
   "rounds": {
     "R01": {
@@ -981,16 +1023,15 @@
   },
   "governance": {
     "lane": "REVIEWED",
-    "registration": ".local/r04/keybindings/registration.json",
-    "judge": "r04_l_keybind_judge",
+    "registration": ".local/r04/config-targets/registration.json",
+    "judge": "r04_m_configuration_judge",
     "decision": "PASS_EXACT_STATIC_CANDIDATE",
-    "evidence": "docs/evidence/R04-l.json",
-    "semantic_candidate": "9f7db7cbd810ee92242f87cd34ad54bf9bc82cade935cadb1a228301b1192d94",
-    "identity_rule": "Exact six-file semantic map; separate State hash; review/progress/sync metadata outside candidate identity",
-    "previous_accepted": "docs/evidence/R04-j.json",
-    "previous_contract": "docs/contracts/R04-j.json",
-    "approval_scope": "Static shared-preview unit and authorized source sync only; no runtime or deployment",
-    "judge_report": ".local/r04/keybindings/judge.json",
-    "judge_report_sha256": "26dae89435d27288ab666a124640d3e32f610688e41f289e5ed8d63308caad06"
+    "evidence": "docs/evidence/R04-m.json",
+    "semantic_candidate": "c758a964f5aef187b8c05c7b4312c1686f1e215fcfe1032bf7c50842d619971c",
+    "identity_rule": "Exact seven-file semantic map and separate State hash; review/progress/sync metadata outside candidate identity",
+    "previous_accepted": "docs/evidence/R04-l.json",
+    "approval_scope": "Static source declarations/shared preview and authorized normal source sync only; no game/security/runtime effect",
+    "judge_report": ".local/r04/config-targets/judge.json",
+    "judge_report_sha256": "0608b0b1e93bcc82db8a59f8b3f3edb56178232c5fa72ee177798d2a00b0cff1"
   }
 }

@@ -148,7 +148,7 @@ class ProfilePlanner:
                                     "deployment_mapping": "UNVERIFIED"})
             blockers.append({"type": "script_provider_mapping_unverified", "target": target,
                              "same_bytes": same})
-        keybindings, file_accesses, missing_key_evidence = [], [], []
+        keybindings, file_accesses, missing_key_evidence, configuration_observations = [], [], [], []
         for document in self.interfaces.get('documents', []):
             if document['namespace'] != 'raw' or document['package'] not in whole or document['analysis']['type'] != 'lua':
                 continue
@@ -160,6 +160,8 @@ class ProfilePlanner:
             keybindings.extend({**identity, **deepcopy(call)} for call in analysis['keybind_semantics']
                                if call['role'] != 'QUERY_SPELLING')
             file_accesses.extend({**identity, **deepcopy(call)} for call in analysis['file_accesses'])
+            configuration_observations.extend({**identity, **deepcopy(row)}
+                for row in analysis.get('configuration_source_observations', []))
         key_groups = {}
         for call in keybindings:
             if call['role'] == 'REGISTER_SPELLING' and call['callee_scope'] == 'BARE' and call['candidate_virtual_key'] is not None:
@@ -177,6 +179,30 @@ class ProfilePlanner:
             blockers.append({'type': 'configuration_write_target_unverified', 'calls': writes})
         if missing_key_evidence or whole and 'documents' not in self.interfaces:
             blockers.append({'type': 'keybinding_and_file_access_evidence_missing', 'documents': missing_key_evidence})
+        target_groups = {}
+        for call in file_accesses:
+            key = call.get('target_evidence', {}).get('target_key')
+            if key:
+                target_groups.setdefault(key, []).append(call)
+        configuration_targets = [{'target_candidate': key, 'members': members,
+            'writer_packages': sorted({m['package'] for m in members if m['intent'] != 'READ_SPELLING'}),
+            'declared_write_key_sets': [{'package': m['package'], 'keys': m['target_evidence']['declared_write_keys']}
+                for m in members if m['intent'] != 'READ_SPELLING' and
+                isinstance(m.get('target_evidence', {}).get('declared_write_keys'), list)],
+            'status': 'EXPECTED_LAYOUT_ONLY; actual targets/activation/aliases/ownership UNVERIFIED'}
+            for key, members in sorted(target_groups.items())]
+        shared_writers = [t for t in configuration_targets if len(t['writer_packages']) > 1]
+        if shared_writers:
+            blockers.append({'type': 'configuration_target_multiple_writers_unverified',
+                             'targets': [t['target_candidate'] for t in shared_writers]})
+        protected_calls = [c for c in file_accesses if c.get('target_evidence', {}).get('data_kind')
+                           in {'GAME_SAVE', 'CALLER_FILE_WITH_SCREENSHOT_USE'}]
+        if protected_calls:
+            blockers.append({'type': 'save_or_original_media_access_isolation_unverified', 'calls': len(protected_calls)})
+        startup = [r for r in configuration_observations if r['kind'] in
+                   {'STARTUP_CONFIG_WRITE_CALL', 'STARTUP_PRESET_MIGRATION_CALL'}]
+        if startup:
+            blockers.append({'type': 'startup_configuration_effects_unverified', 'declarations': len(startup)})
         # No path/layout, body, ABI, runtime or save safety proof is supplied here.
         if refs:
             blockers.append({"type": "application_not_verified",
@@ -195,6 +221,8 @@ class ProfilePlanner:
                 "requirements": requirements, "script_overlaps": script_overlaps,
                 'keybinding_evidence': keybindings, 'keybinding_overlaps': key_overlaps,
                 'file_access_evidence': file_accesses,
+                'configuration_target_candidates': configuration_targets,
+                'configuration_source_observations': configuration_observations,
                 "resource_overlaps": resource_overlaps,
                 "violations": violations, "blockers": blockers, "provenance": provenance,
                 "status": "REJECTED_STATIC" if violations else "REVIEW_REQUIRED" if blockers else

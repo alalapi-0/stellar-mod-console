@@ -1,0 +1,184 @@
+{
+  "schema_version": 1,
+  "scope": "DIGEST_PINNED_SOURCE_DECLARATIONS; NOT_RUNTIME_TARGETS_OR_OWNERSHIP",
+  "target_key_scope": "Expected module layout candidates only. Working directory, script source/empty fallback, aliases, configured paths, runtime IDs, branches and external tools remain unverified. Same filename alone is not a target identity.",
+  "sources": [
+    {
+      "sha256": "943d3ea59345ab804ac46c38573ce20b1bb1e53f851800db2a0fead3edb03ee3",
+      "module_candidate": "BPModLoaderMod",
+      "file_candidate": "main.lua",
+      "calls": [
+        {"line": 29, "function": "io.open", "expected_intent": "READ_SPELLING", "data_kind": "CALLER_FILE_WITH_LOAD_ORDER_USE", "target_key": null, "templates": ["Caller file; observed relative Mods/BPModLoaderMod/load_order.txt consumer"], "source_lines": [28, 29, 36, 37, 54, 55], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED"}
+      ],
+      "observations": []
+    },
+    {
+      "sha256": "365b7e8a803f8ae917f54f6c852854c681e388227dd1f94b0ea3f6fb938b5086",
+      "module_candidate": "ConsoleCommandsMod",
+      "file_candidate": "dump_object.lua",
+      "calls": [
+        {"line": 309, "function": "io.open", "expected_intent": "WRITE_SPELLING", "data_kind": "USER_REQUESTED_DUMP_OUTPUT", "target_key": null, "templates": ["First console-command parameter; conditional .txt substring check"], "source_lines": [289, 290, 308, 309], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED"}
+      ],
+      "observations": []
+    },
+    {
+      "sha256": "a6c51686e582a819a2376ee7e452d7f847d997c32bc3dd9f9814b24d74dff968",
+      "module_candidate": "shared",
+      "file_candidate": "jsbProfi.lua",
+      "calls": [
+        {"line": 71, "function": "io.open", "expected_intent": "UNKNOWN", "data_kind": "PROFILER_CALLER_OUTPUT", "target_key": null, "templates": ["Caller file and method; append mode only when method is absent/false"], "source_lines": [70, 71, 73], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED"}
+      ],
+      "observations": []
+    },
+    {
+      "sha256": "af156c380c49a9c0061f26409e4b3c34c9283151b11f86a53d11c8f3ead21638",
+      "module_candidate": "JiggleUpdate",
+      "file_candidate": "main.lua",
+      "calls": [
+        {"line": 69, "function": "io.open", "expected_intent": "READ_SPELLING", "data_kind": "LUA_PHYSICS_PROFILE", "target_key": "Mods/JiggleUpdate/Scripts/SpringBoneTweaks{index}.lua", "templates": ["Script source directory or empty fallback + SpringBoneTweaks{index}.lua"], "source_lines": [5, 6, 69, 68], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED"},
+        {"line": 80, "function": "io.open", "expected_intent": "READ_SPELLING", "data_kind": "MODULE_CONFIGURATION", "target_key": "Mods/JiggleUpdate/Scripts/config.txt", "templates": ["Script source directory or empty fallback + config.txt"], "source_lines": [5, 6, 80], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED"},
+        {"line": 93, "function": "io.open", "expected_intent": "WRITE_SPELLING", "data_kind": "MODULE_CONFIGURATION", "target_key": "Mods/JiggleUpdate/Scripts/config.txt", "templates": ["Script source directory or empty fallback + config.txt"], "source_lines": [5, 6, 93], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED", "declared_write_keys": ["enabled", "profile", "textcolor", "backgroundcolor"], "replacement_mode_candidate": true},
+        {"line": 301, "function": "io.open", "expected_intent": "READ_SPELLING", "data_kind": "LUA_PHYSICS_PROFILE", "target_key": "Mods/JiggleUpdate/Scripts/SpringBoneTweaks{index}.lua", "templates": ["Script source directory or empty fallback + SpringBoneTweaks{index}.lua"], "source_lines": [5, 6, 301], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED"},
+        {"line": 364, "function": "io.open", "expected_intent": "WRITE_SPELLING", "data_kind": "LUA_PHYSICS_PROFILE", "target_key": "Mods/JiggleUpdate/Scripts/SpringBoneTweaks{index}.lua", "templates": ["Script source directory or empty fallback + SpringBoneTweaks{index}.lua"], "source_lines": [5, 6, 364, 363], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED", "replacement_mode_candidate": true}
+      ],
+      "observations": []
+    },
+    {
+      "sha256": "51ece436d104d37edc234b37c4b5e290d64c6170333548d55eea940b11441b3f",
+      "module_candidate": "JiggleUpdate",
+      "file_candidate": "main.lua",
+      "calls": [
+        {"line": 94, "function": "io.open", "expected_intent": "READ_SPELLING", "data_kind": "LUA_PHYSICS_PROFILE", "target_key": "Mods/JiggleUpdate/Scripts/SpringBoneTweaks{index}.lua", "templates": ["Script source directory or empty fallback + SpringBoneTweaks{index}.lua"], "source_lines": [5, 6, 94, 93], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED"},
+        {"line": 112, "function": "io.open", "expected_intent": "READ_SPELLING", "data_kind": "MODULE_CONFIGURATION", "target_key": "Mods/JiggleUpdate/Scripts/config.txt", "templates": ["Script source directory or empty fallback + config.txt"], "source_lines": [5, 6, 112], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED"},
+        {"line": 127, "function": "io.open", "expected_intent": "WRITE_SPELLING", "data_kind": "MODULE_CONFIGURATION", "target_key": "Mods/JiggleUpdate/Scripts/config.txt", "templates": ["Script source directory or empty fallback + config.txt"], "source_lines": [5, 6, 127], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED", "declared_write_keys": ["enabled", "profile", "textcolor", "backgroundcolor", "LegacyHotkeys"], "replacement_mode_candidate": true},
+        {"line": 349, "function": "io.open", "expected_intent": "READ_SPELLING", "data_kind": "LUA_PHYSICS_PROFILE", "target_key": "Mods/JiggleUpdate/Scripts/SpringBoneTweaks{index}.lua", "templates": ["Script source directory or empty fallback + SpringBoneTweaks{index}.lua"], "source_lines": [5, 6, 349], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED"},
+        {"line": 439, "function": "io.open", "expected_intent": "WRITE_SPELLING", "data_kind": "LUA_PHYSICS_PROFILE", "target_key": "Mods/JiggleUpdate/Scripts/SpringBoneTweaks{index}.lua", "templates": ["Script source directory or empty fallback + SpringBoneTweaks{index}.lua"], "source_lines": [5, 6, 439, 438], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED", "replacement_mode_candidate": true}
+      ],
+      "observations": []
+    },
+    {
+      "sha256": "39c113320bd42e4a713deb4b66f86ae1eb1afb5e5d85294683d15959efa2d29f",
+      "module_candidate": "UltraCamera",
+      "file_candidate": "config.lua",
+      "calls": [
+        {"line": 419, "function": "io.open", "expected_intent": "READ_SPELLING", "data_kind": "MODULE_CONFIGURATION_AND_PRESETS", "target_key": null, "templates": ["Default relative path UE4SS/Mods/UltraCamera/UltraCamera.cfg or cfg.path", "cfg.path + _factory_preset{slot}", "cfg.path + _user_preset{slot}", "cfg.path + _preset{slot}"], "source_lines": [12, 409, 456, 565, 589, 593, 597, 419], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED"},
+        {"line": 530, "function": "io.open", "expected_intent": "WRITE_SPELLING", "data_kind": "MODULE_CONFIGURATION_AND_PRESETS", "target_key": null, "templates": ["Default relative path UE4SS/Mods/UltraCamera/UltraCamera.cfg or cfg.path", "cfg.path + _factory_preset{slot}", "cfg.path + _user_preset{slot}", "cfg.path + _preset{slot}"], "source_lines": [12, 409, 456, 565, 589, 593, 597, 530], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED", "replacement_mode_candidate": true, "declared_write_keys": "SCHEMA_TABLE; not a fixed path or per-target write claim"},
+        {"line": 583, "function": "io.open", "expected_intent": "READ_SPELLING", "data_kind": "MODULE_CONFIGURATION_AND_PRESETS", "target_key": null, "templates": ["Default relative path UE4SS/Mods/UltraCamera/UltraCamera.cfg or cfg.path", "cfg.path + _factory_preset{slot}", "cfg.path + _user_preset{slot}", "cfg.path + _preset{slot}"], "source_lines": [12, 409, 456, 565, 589, 593, 597, 583], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED"},
+        {"line": 614, "function": "io.open", "expected_intent": "READ_SPELLING", "data_kind": "MODULE_CONFIGURATION_AND_PRESETS", "target_key": null, "templates": ["Default relative path UE4SS/Mods/UltraCamera/UltraCamera.cfg or cfg.path", "cfg.path + _factory_preset{slot}", "cfg.path + _user_preset{slot}", "cfg.path + _preset{slot}"], "source_lines": [12, 409, 456, 565, 589, 593, 597, 614], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED"},
+        {"line": 684, "function": "io.open", "expected_intent": "READ_SPELLING", "data_kind": "MODULE_CONFIGURATION_AND_PRESETS", "target_key": null, "templates": ["Default relative path UE4SS/Mods/UltraCamera/UltraCamera.cfg or cfg.path", "cfg.path + _factory_preset{slot}", "cfg.path + _user_preset{slot}", "cfg.path + _preset{slot}"], "source_lines": [12, 409, 456, 565, 589, 593, 597, 684], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED"},
+        {"line": 709, "function": "io.open", "expected_intent": "WRITE_SPELLING", "data_kind": "MODULE_CONFIGURATION_AND_PRESETS", "target_key": null, "templates": ["Default relative path UE4SS/Mods/UltraCamera/UltraCamera.cfg or cfg.path", "cfg.path + _factory_preset{slot}", "cfg.path + _user_preset{slot}", "cfg.path + _preset{slot}"], "source_lines": [12, 409, 456, 565, 589, 593, 597, 709], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED", "append_candidate": "Legacy preset migration marker; conditional path"}
+      ],
+      "observations": [{"kind": "PRESET_PRECEDENCE_AND_MIGRATION", "source_lines": [638, 649, 650, 656, 657, 727, 755, 758, 765, 769], "description": "Declared defaults -> factory -> user overlay; bad factory read fails before user overlay. Conditional legacy migration writes user preset and appends legacy marker. Not executed or transactionally verified."}]
+    },
+    {
+      "sha256": "b4e7699c53dfb919e465bcc515a395f17d0e780098615eccb5f4bfe73f6254fc",
+      "module_candidate": "RandomSwitchCNSSuit",
+      "file_candidate": "scan.lua",
+      "calls": [
+        {"line": 90, "function": "io.open", "expected_intent": "READ_SPELLING", "data_kind": "CNS_CONFIGURATION", "target_key": null, "templates": ["Discovered Content/Paks/~mods variant directory / author .dekcns.json path"], "source_lines": [22, 31, 65, 67, 90], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED"}
+      ],
+      "observations": []
+    },
+    {
+      "sha256": "f80d393544f8fb2e29ba7f151953b6ed1a2e20247be9968b3da2f96f763ce171",
+      "module_candidate": "RandomSwitchCNSSuit",
+      "file_candidate": "scanFavorite.lua",
+      "calls": [
+        {"line": 19, "function": "io.open", "expected_intent": "READ_SPELLING", "data_kind": "GAME_SAVE", "target_key": null, "templates": ["LOCALAPPDATA + SB/Saved/SaveGames/{configured relative directory}/{filename}", "ProjectSavedDir + SaveGames/{runtime account ID}/{filename}", "DekCNS.sav in observed favorites consumer; resolver also receives StellarBladeSave00.sav from scanArchive"], "source_lines": [14, 17, 18, 40, 42, 62, 19], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED"},
+        {"line": 43, "function": "io.open", "expected_intent": "READ_SPELLING", "data_kind": "GAME_SAVE", "target_key": null, "templates": ["LOCALAPPDATA + SB/Saved/SaveGames/{configured relative directory}/{filename}", "ProjectSavedDir + SaveGames/{runtime account ID}/{filename}", "DekCNS.sav in observed favorites consumer; resolver also receives StellarBladeSave00.sav from scanArchive"], "source_lines": [14, 17, 18, 40, 42, 62, 43], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED"},
+        {"line": 67, "function": "io.open", "expected_intent": "READ_SPELLING", "data_kind": "GAME_SAVE", "target_key": null, "templates": ["LOCALAPPDATA + SB/Saved/SaveGames/{configured relative directory}/{filename}", "ProjectSavedDir + SaveGames/{runtime account ID}/{filename}", "DekCNS.sav in observed favorites consumer; resolver also receives StellarBladeSave00.sav from scanArchive"], "source_lines": [14, 17, 18, 40, 42, 62, 67], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED"}
+      ],
+      "observations": []
+    },
+    {
+      "sha256": "ae8f081036c62f821fe5a9ea9de6718200f814ebbd317ab7c8234da0c45d9d2f",
+      "module_candidate": "RandomSwitchCNSSuit",
+      "file_candidate": "scanArchive.lua",
+      "calls": [
+        {"line": 51, "function": "io.open", "expected_intent": "READ_SPELLING", "data_kind": "GAME_SAVE", "target_key": null, "templates": ["Result of scanFavorite save-path resolver for StellarBladeSave00.sav"], "source_lines": [38, 44, 51], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED", "supporting_source": {"sha256": "f80d393544f8fb2e29ba7f151953b6ed1a2e20247be9968b3da2f96f763ce171", "lines": [14, 18, 42]}}
+      ],
+      "observations": []
+    },
+    {
+      "sha256": "f77d4c4f928b8cd744cd500e15d79854f5ba6154770815974c5820cf08af5b98",
+      "module_candidate": "JiggleUpdate",
+      "file_candidate": "main.lua",
+      "calls": [
+        {"line": 74, "function": "io.open", "expected_intent": "READ_SPELLING", "data_kind": "LUA_PHYSICS_PROFILE", "target_key": "Mods/JiggleUpdate/Scripts/SpringBoneTweaks{index}.lua", "templates": ["Script source directory or empty fallback + SpringBoneTweaks{index}.lua"], "source_lines": [5, 6, 74, 73], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED"},
+        {"line": 84, "function": "io.open", "expected_intent": "READ_SPELLING", "data_kind": "MODULE_CONFIGURATION", "target_key": "Mods/JiggleUpdate/Scripts/config.txt", "templates": ["Script source directory or empty fallback + config.txt"], "source_lines": [5, 6, 84], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED"},
+        {"line": 99, "function": "io.open", "expected_intent": "WRITE_SPELLING", "data_kind": "MODULE_CONFIGURATION", "target_key": "Mods/JiggleUpdate/Scripts/config.txt", "templates": ["Script source directory or empty fallback + config.txt"], "source_lines": [5, 6, 99], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED", "declared_write_keys": ["enabled", "profile", "textcolor", "backgroundcolor", "LegacyHotkeys"], "replacement_mode_candidate": true},
+        {"line": 310, "function": "io.open", "expected_intent": "READ_SPELLING", "data_kind": "LUA_PHYSICS_PROFILE", "target_key": "Mods/JiggleUpdate/Scripts/SpringBoneTweaks{index}.lua", "templates": ["Script source directory or empty fallback + SpringBoneTweaks{index}.lua"], "source_lines": [5, 6, 310], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED"},
+        {"line": 370, "function": "io.open", "expected_intent": "WRITE_SPELLING", "data_kind": "LUA_PHYSICS_PROFILE", "target_key": "Mods/JiggleUpdate/Scripts/SpringBoneTweaks{index}.lua", "templates": ["Script source directory or empty fallback + SpringBoneTweaks{index}.lua"], "source_lines": [5, 6, 370, 369], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED", "replacement_mode_candidate": true}
+      ],
+      "observations": []
+    },
+    {
+      "sha256": "c1120672c084c6c1857e34b35b7d5c707199fe0eb7c61460e054c1f900c17af6",
+      "module_candidate": "DekCNS",
+      "file_candidate": "helpers.lua",
+      "calls": [
+        {"line": 25, "function": "io.open", "expected_intent": "READ_SPELLING", "data_kind": "JSON_CALLER_ARGUMENT", "target_key": null, "templates": ["Caller filePath; observed CNS/animation JSON consumers"], "source_lines": [24, 41, 25], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED"},
+        {"line": 42, "function": "io.open", "expected_intent": "WRITE_SPELLING", "data_kind": "JSON_CALLER_ARGUMENT", "target_key": null, "templates": ["Caller filePath; observed CNS/animation JSON consumers"], "source_lines": [24, 41, 42], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED"},
+        {"line": 80, "function": "io.open", "expected_intent": "READ_SPELLING", "data_kind": "CALLER_FILE_WITH_SCREENSHOT_USE", "target_key": null, "templates": ["Caller src/dst; observed main.lua screenshot caller; not an exclusive target"], "source_lines": [77, 80, 82, 91], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED", "supporting_source": {"sha256": "e4b44a7e892cfe95896f4add3730bbc9f6cf2c47035335526a9e415dc813299e", "lines": [925, 938, 939, 941]}},
+        {"line": 82, "function": "io.open", "expected_intent": "WRITE_SPELLING", "data_kind": "CALLER_FILE_WITH_SCREENSHOT_USE", "target_key": null, "templates": ["Caller src/dst; observed main.lua screenshot caller; not an exclusive target"], "source_lines": [77, 80, 82, 91], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED", "supporting_source": {"sha256": "e4b44a7e892cfe95896f4add3730bbc9f6cf2c47035335526a9e415dc813299e", "lines": [925, 938, 939, 941]}},
+        {"line": 91, "function": "os.remove", "expected_intent": "MUTATION_SPELLING", "data_kind": "CALLER_FILE_WITH_SCREENSHOT_USE", "target_key": null, "templates": ["Caller src/dst; observed main.lua screenshot caller; not an exclusive target"], "source_lines": [77, 80, 82, 91], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED", "supporting_source": {"sha256": "e4b44a7e892cfe95896f4add3730bbc9f6cf2c47035335526a9e415dc813299e", "lines": [925, 938, 939, 941]}},
+        {"line": 106, "function": "io.open", "expected_intent": "READ_SPELLING", "data_kind": "SCRIPT_RELATIVE_ARGUMENT", "target_key": null, "templates": ["Helper script source directory + caller filename; caller may contain parent traversal"], "source_lines": [96, 99, 104, 105, 117, 118, 106], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED"},
+        {"line": 119, "function": "io.open", "expected_intent": "WRITE_SPELLING", "data_kind": "SCRIPT_RELATIVE_ARGUMENT", "target_key": null, "templates": ["Helper script source directory + caller filename; caller may contain parent traversal"], "source_lines": [96, 99, 104, 105, 117, 118, 119], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED"}
+      ],
+      "observations": []
+    },
+    {
+      "sha256": "e4b44a7e892cfe95896f4add3730bbc9f6cf2c47035335526a9e415dc813299e",
+      "module_candidate": "DekCNS",
+      "file_candidate": "main.lua",
+      "calls": [
+        {"line": 87, "function": "io.open", "expected_intent": "READ_SPELLING", "data_kind": "GAME_SAVE", "target_key": null, "templates": ["LOCALAPPDATA + SB/Saved/SaveGames/{configured relative path}", "ProjectSavedDir + SaveGames/{runtime account ID}/StellarBladeSave00.sav", "Cached result of save-path resolver"], "source_lines": [82, 85, 86, 108, 110, 136, 87], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED"},
+        {"line": 111, "function": "io.open", "expected_intent": "READ_SPELLING", "data_kind": "GAME_SAVE", "target_key": null, "templates": ["LOCALAPPDATA + SB/Saved/SaveGames/{configured relative path}", "ProjectSavedDir + SaveGames/{runtime account ID}/StellarBladeSave00.sav", "Cached result of save-path resolver"], "source_lines": [82, 85, 86, 108, 110, 136, 111], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED"},
+        {"line": 142, "function": "io.open", "expected_intent": "READ_SPELLING", "data_kind": "GAME_SAVE", "target_key": null, "templates": ["LOCALAPPDATA + SB/Saved/SaveGames/{configured relative path}", "ProjectSavedDir + SaveGames/{runtime account ID}/StellarBladeSave00.sav", "Cached result of save-path resolver"], "source_lines": [82, 85, 86, 108, 110, 136, 142], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED"}
+      ],
+      "observations": []
+    },
+    {
+      "sha256": "1a8f3b0ad328988d1449762709c58d161abf48abcab339140d98bf68fb7fff4a",
+      "module_candidate": "JiggleUpdate2ATOOL",
+      "file_candidate": "main.lua",
+      "calls": [
+        {"line": 12, "function": "io.open", "expected_intent": "READ_SPELLING", "data_kind": "LUA_PHYSICS_PROFILE", "target_key": "Mods/JiggleUpdate/Scripts/SpringBoneTweaks{index}.lua", "templates": ["Own script source directory or empty fallback + ../../JiggleUpdate/Scripts/SpringBoneTweaks{index}.lua"], "source_lines": [4, 5, 12, 11], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED"},
+        {"line": 23, "function": "io.open", "expected_intent": "READ_SPELLING", "data_kind": "MODULE_CONFIGURATION", "target_key": "Mods/JiggleUpdate/Scripts/config.txt", "templates": ["Own script source directory or empty fallback + ../../JiggleUpdate/Scripts/config.txt"], "source_lines": [4, 5, 23], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED"},
+        {"line": 37, "function": "io.open", "expected_intent": "WRITE_SPELLING", "data_kind": "MODULE_CONFIGURATION", "target_key": "Mods/JiggleUpdate/Scripts/config.txt", "templates": ["Own script source directory or empty fallback + ../../JiggleUpdate/Scripts/config.txt"], "source_lines": [4, 5, 37], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED", "declared_write_keys": ["enabled", "profile"], "replacement_mode_candidate": true}
+      ],
+      "observations": [{"kind": "SHARED_CONFIG_REPLACEMENT_CANDIDATE", "source_lines": [5, 37, 39], "description": "Declared target is sibling JiggleUpdate config; replacement writes only enabled and profile, while matching JiggleUpdate sources declare four/five keys. Actual same-file mapping unresolved."}]
+    },
+    {
+      "sha256": "6e13bdf2382d9d4d1447e06145705fa6c127fbc03c45426652cf2b42f67a97fd",
+      "module_candidate": "KittensJiggleMod",
+      "file_candidate": "main.lua",
+      "calls": [
+        {"line": 6435, "function": "io.open", "expected_intent": "READ_SPELLING", "data_kind": "MODULE_CONFIGURATION", "target_key": "Mods/KittensJiggleMod/Scripts/config.txt", "templates": ["Script source directory or empty fallback + config.txt"], "source_lines": [125, 126, 6435], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED"},
+        {"line": 6510, "function": "io.open", "expected_intent": "WRITE_SPELLING", "data_kind": "MODULE_CONFIGURATION", "target_key": "Mods/KittensJiggleMod/Scripts/config.txt", "templates": ["Script source directory or empty fallback + config.txt"], "source_lines": [125, 126, 6510], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED", "declared_write_keys": ["config_schema", "auto_collection", "body_boost", "liveliness", "breast_profile"], "replacement_mode_candidate": true}
+      ],
+      "observations": [{"kind": "STARTUP_CONFIG_WRITE_CALL", "source_lines": [8511, 8512, 8517], "description": "Top-level preset load, config read and saveConfig call; writes when called and opened successfully. Actual script activation/branches unresolved."}]
+    },
+    {
+      "sha256": "fa1a5e68f8b97a4cd050ae59860ee27b2626843f5dbe0122ec261a2b423448d7",
+      "module_candidate": "JiggleUpdate",
+      "file_candidate": "main.lua",
+      "calls": [
+        {"line": 94, "function": "io.open", "expected_intent": "READ_SPELLING", "data_kind": "LUA_PHYSICS_PROFILE", "target_key": "Mods/JiggleUpdate/Scripts/SpringBoneTweaks{index}.lua", "templates": ["Script source directory or empty fallback + SpringBoneTweaks{index}.lua"], "source_lines": [5, 6, 94, 93], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED"},
+        {"line": 112, "function": "io.open", "expected_intent": "READ_SPELLING", "data_kind": "MODULE_CONFIGURATION", "target_key": "Mods/JiggleUpdate/Scripts/config.txt", "templates": ["Script source directory or empty fallback + config.txt"], "source_lines": [5, 6, 112], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED"},
+        {"line": 127, "function": "io.open", "expected_intent": "WRITE_SPELLING", "data_kind": "MODULE_CONFIGURATION", "target_key": "Mods/JiggleUpdate/Scripts/config.txt", "templates": ["Script source directory or empty fallback + config.txt"], "source_lines": [5, 6, 127], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED", "declared_write_keys": ["enabled", "profile", "textcolor", "backgroundcolor", "LegacyHotkeys"], "replacement_mode_candidate": true},
+        {"line": 349, "function": "io.open", "expected_intent": "READ_SPELLING", "data_kind": "LUA_PHYSICS_PROFILE", "target_key": "Mods/JiggleUpdate/Scripts/SpringBoneTweaks{index}.lua", "templates": ["Script source directory or empty fallback + SpringBoneTweaks{index}.lua"], "source_lines": [5, 6, 349], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED"},
+        {"line": 439, "function": "io.open", "expected_intent": "WRITE_SPELLING", "data_kind": "LUA_PHYSICS_PROFILE", "target_key": "Mods/JiggleUpdate/Scripts/SpringBoneTweaks{index}.lua", "templates": ["Script source directory or empty fallback + SpringBoneTweaks{index}.lua"], "source_lines": [5, 6, 439, 438], "runtime_target": "UNVERIFIED", "write_ownership": "UNASSIGNED", "replacement_mode_candidate": true}
+      ],
+      "observations": []
+    },
+    {
+      "sha256": "81fc5d6f7b37101e8fd8c759e60819fe2d654a66eda72d817a290054388561f9",
+      "module_candidate": "UltraCamera",
+      "file_candidate": "main.lua",
+      "calls": [
+      ],
+      "observations": [{"kind": "STARTUP_PRESET_MIGRATION_CALL", "source_lines": [61, 62], "description": "Top-level conditional pcall to config migration; actual require binding, activation and migration execution unverified."}]
+    }
+  ]
+}

@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 from collections import Counter, defaultdict
+from copy import deepcopy
 import hashlib
 import json
 from pathlib import Path
@@ -315,10 +316,54 @@ def json_metadata(text: str) -> tuple[object, bool]:
         return json.loads("".join(result), object_pairs_hook=unique_pairs), False
 
 
-def analyze_document(data: bytes, name: str) -> dict:
+def read_configuration_evidence(path=None) -> dict:
+    path = Path(path) if path is not None else Path(__file__).with_name('configuration_evidence.json')
+    evidence, strict = json_metadata(path.read_text())
+    if not strict or evidence.get('schema_version') != 1 or not isinstance(evidence.get('sources'), list):
+        raise ValueError('Invalid pinned configuration evidence')
+    sources = {}
+    for source in evidence['sources']:
+        digest = source['sha256']
+        if not re.fullmatch('[0-9a-f]{64}', digest) or digest in sources:
+            raise ValueError('Invalid or duplicate configuration source identity')
+        calls = source['calls']
+        if len({(c['line'], c['function']) for c in calls}) != len(calls):
+            raise ValueError('Duplicate configuration call identity')
+        sources[digest] = source
+    return sources
+
+
+def configuration_evidence(data, analysis, sources, module):
+    """Attach curated declarations only to exact bytes and exact IO callsites."""
+    source = sources.get(hashlib.sha256(data).hexdigest())
+    if source is None:
+        return {'configuration_evidence_status': 'NO_PINNED_SOURCE_FACTS',
+                'configuration_source_observations': []}
+    actual = {(c['line'], c['function']): c for c in analysis['file_accesses']}
+    expected = {(c['line'], c['function']): c for c in source['calls']}
+    if len(actual) != len(analysis['file_accesses']) or actual.keys() != expected.keys() or any(
+            actual[key]['intent'] != fact['expected_intent'] for key, fact in expected.items()):
+        raise ValueError('Pinned configuration call evidence contradicts exact source analysis')
+    for key, fact in expected.items():
+        if fact.get('runtime_target') != 'UNVERIFIED' or fact.get('write_ownership') != 'UNASSIGNED':
+            raise ValueError('Static evidence cannot grant target resolution or ownership')
+        target = {k: deepcopy(v) for k, v in fact.items()
+                  if k not in {'line', 'function', 'expected_intent'}}
+        target['layout_context'] = 'MATCHING_MODULE_CANDIDATE' if module == source['module_candidate'] else 'MODULE_CONTEXT_UNVERIFIED'
+        if target.get('target_key') and module != source['module_candidate']:
+            target['expected_layout_target'] = target['target_key']
+            target['target_key'] = None
+        actual[key]['target_evidence'] = target
+    return {'configuration_evidence_status': 'DIGEST_PINNED_DECLARATIONS_ONLY',
+            'configuration_source_observations': deepcopy(source['observations'])}
+
+
+def analyze_document(data: bytes, name: str, configuration_sources=None, module=None) -> dict:
     text = data.decode("utf-8-sig")
     if name.lower().endswith(".lua"):
-        return {"type": "lua", **lua_evidence(text)}
+        analysis = lua_evidence(text)
+        sources = read_configuration_evidence() if configuration_sources is None else configuration_sources
+        return {"type": "lua", **analysis, **configuration_evidence(data, analysis, sources, module)}
     if name.lower().endswith(".dekcns.json"):
         obj, valid = json_metadata(text)
         return {"type": "cns", **cns_evidence(obj), "strict_json_valid": valid,
@@ -362,12 +407,13 @@ def script_target_overlaps(catalog: dict, inventory: dict) -> dict:
 
 def build_interfaces(catalog: dict, inventory: dict, resources: dict) -> dict:
     sources = {r["path"]: r for r in inventory["sources"]}
+    configuration_sources = read_configuration_evidence()
     documents, deferred = [], []
     def inspect(data, name, ident, namespace, digest, module=None, package=None):
         if hashlib.sha256(data).hexdigest() != digest:
             raise ValueError("Frozen text content changed")
         try:
-            analyzed = analyze_document(data, name)
+            analyzed = analyze_document(data, name, configuration_sources, module)
             documents.append({"id": ident, "name": name, "namespace": namespace, "sha256": digest,
                               "module": module, "package": package, "analysis": analyzed})
         except (ValueError, TypeError) as error:
@@ -449,6 +495,7 @@ def build_interfaces(catalog: dict, inventory: dict, resources: dict) -> dict:
               'keybind_roles': dict(Counter(k['role'] for d in lua for k in d['analysis']['keybind_semantics'])),
               'literal_chord_candidates': sum(k['chord_status'] == 'LITERAL_ARGUMENT_CANDIDATE' for d in lua for k in d['analysis']['keybind_semantics']),
               'file_access_spellings': sum(len(d['analysis']['file_accesses']) for d in lua),
+              'configuration_sources_pinned': sum(d['analysis']['configuration_evidence_status'] == 'DIGEST_PINNED_DECLARATIONS_ONLY' for d in lua),
               "effect_domain_references": dict(Counter(e["domain"] for d in lua for e in d["analysis"]["effect_evidence"]))}
     return {"schema_version": 1, "documents": documents, "deferred": deferred, "summary": summary,
             "module_providers": [{"namespace": ns, "module": module, "providers": sorted(providers),
