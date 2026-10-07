@@ -1,0 +1,202 @@
+{
+  "baseline_commit": "f3c14f2966c051777ee29cf3ff766acd512834a7",
+  "boundary_model": {
+    "canary_attempts": "Self-ownedcanary only: write/chmod/rename/unlink/create/bind/rebind/remount-rw/move/unmount; all mustdeny, originalssources never mounted orwrite-tested.",
+    "cleanup": "Exactownedpidfd and outerPIDnamespace death; noexistingprocesssignaling.",
+    "communication": "OwnhostFS/abstractUnix/loopbacklisteners tests; nohostSteampipe/DBus/environment/routes.",
+    "inner": "Exactnestedbwrap; freshNS; inheritedreadonlycanary/distro/code; sameownedwork,privateproc/tmp/run/shm,clearenv+capdrop; furtheruserns disabled.",
+    "outer": "Freshuser/mount/PID/IPC/net/UTS/cgroup; readonlydistroviews; privatework/HOME/tmp/run/shm; noSteam/game/Proton/account sources, no devices/display/input. Payloadcapdrop; nesteduserns admitted onlyforfixednestedprobe."
+  },
+  "client_candidate": {
+    "client_root": "Private HOME/.steam/debian-installation",
+    "credential_copies": 0,
+    "empty_directories": 14,
+    "external_copies": 0,
+    "installed_launcher_package": "steam-installer1:1.0.0.85~ds-2build1, /usr/games/steam publicentry; notsteam-launcher",
+    "installed_nested_runtime": "SteamLinuxRuntime_4 present; actualpressure-vesselNOT_RUN",
+    "later_gates": [
+      "Networkedofficialbootstrap and genuineownerlogin with providercredentialstore; no password/sessioncopied",
+      "Offline requirespriorlogin/gameinitialization; actualfirstactivation/DRM unknown",
+      "Concurrenthostclient/licenseeffects and SteamRestartprivate-libraryroute unverified",
+      "GPU/display/input exactboundary and actualgame tests",
+      "CloudAPI/clientwrites including queuedofflineupload needseparatecontainment/disposal authority; noSteamCloud/accountsettingschange"
+    ],
+    "userdata_prefix": "Freshprivateuserdata/compatdata/prefix; nohostsessionreuse"
+  },
+  "contract": "docs/contracts/R04-j.json",
+  "failures_retained": [
+    {
+      "class": "WRONG_SIBLING_PROFILE_OVERLAP_TEST_FIXTURE",
+      "exit": 1,
+      "resolution": "Firstsyntheticnegative comparednewUUID againstexisting sibling; disjointbydefinition. Correctactualprotectedparent overlapfixture; sourceboundarynotweakened,7testsPASS."
+    },
+    {
+      "class": "ASSUMED_STEAM_LAUNCHER_PACKAGE",
+      "exit": 1,
+      "resolution": "Staticdpkgqueryprovedsteam-launcherabsent; actualownersteam-installer identified, noinstall/runtimelaunch."
+    },
+    {
+      "candidate": "81cc76f02b3eb7f2938acb3a1c7dcd8914789faa9c66587c7148528f5c9601e3",
+      "class": "FIRST_PRELAUNCH_JUDGE_C03_FAIL",
+      "resolution": "Exact fixed result absence checked before listeners/process; exclusive O_NOFOLLOW|O_CREAT|O_EXCL output creation. Existing symlink/hardlink/reuse and actual precheck/open race regressions preserve outside targets and bounded failure evidence. New fresh review required; no dry run yet."
+    },
+    {
+      "class": "ROOT_VERIFIER_EXTRA_METADATA_FIELD",
+      "resolution": "First read-only verification expected identity instead of registered five-field stamp. Corrected exact key without target expansion; no mutation or runtime occurred."
+    },
+    {
+      "class": "READONLY_REVIEWER_CACHE_WRITE",
+      "resolution": "Previous technicalPASS excluded because reviewer accidentally compiled two ignoredcaches. New genuinelyreadonlyJudge PASS resolved processgate; caches notdeleted/restored, registeredfiles unchanged."
+    },
+    {
+      "candidate": "83aa91d5732119b02af24d963538df9507fac4b23efa1e115ce06c12bc902585",
+      "class": "AF_UNIX_PATH_TOO_LONG_BEFORE_SUBPROCESS",
+      "exit": 1,
+      "resolution": "No bwrap/nested/client/game started and noresultwritten; same emptyprofile retained. Fixed short scoped socket plus length/absence guard and exactownedcleanup;11testsPASS. Firstapproval consumed; new exactreview required."
+    },
+    {
+      "CLI_exit": 1,
+      "candidate": "aa3d1f0b2f57db0ba320c75251f18024989527a991e4dd9bf2f04093baa8db59",
+      "class": "MINIMAL_DEVICE_BIND_MOUNTS_OMITTED_FROM_VALIDATOR",
+      "nested_started": false,
+      "outer_checks": {
+        "passed": 28,
+        "required": 30
+      },
+      "resolution": "Observed six fixed char nodes produced by --dev; enumerate only null/zero/full/random/urandom/tty and verify exact type/major/minor. Unknown device/source mounts still reject. New12th regression. Failed profile/result/sourcepreimages preserved; fresh14dirUUID withzero copies, no samecandidate retry.",
+      "root_postchecks": {
+        "passed": 9,
+        "required": 9
+      }
+    },
+    {
+      "CLI_exit": 1,
+      "candidate": "36c23a2bb3989d8af16d2c517992ed8397a1a79c5a960b0458a16e35759854a9",
+      "class": "EXACT_INSTALLED_DENIAL_DIAGNOSTIC_NOT_RECOGNIZED",
+      "nested_exit": 1,
+      "nested_python_started": false,
+      "outer_checks": {
+        "passed": 31,
+        "required": 31
+      },
+      "resolution": "Preserve failed report/source/gate exactly. Strictmatch full observed installedbwrap diagnostic; generic/extraerror messages stillFAIL.12testsPASS. Fresh emptyprofile/newreview required; no retrospectivePASS or unchangedruntime retry.",
+      "root_postchecks": {
+        "passed": 9,
+        "required": 9
+      }
+    }
+  ],
+  "lane": "GOVERNED",
+  "limits": [
+    "Current unchanged-host nested route classifiedrefused; innerboundary/capabilityNOT_PROVED",
+    "Steam/client/auth/activation/Cloud/pressure-vessel/game/MOD/ABI/UI/display-input/saveisolation NOT_RUN",
+    "OriginalfinalA01-A14remains0/14"
+  ],
+  "phase": "POSTPROBE_ROOT_VERIFIED; pending freshpostJudge/Governor source approval",
+  "protection": {
+    "Steam_game_Proton_pressure_vessel_launched": false,
+    "account_Cloud_network_hostsettings_changed": false,
+    "credentials_read_or_copied": false,
+    "game_metadata": 1330,
+    "hashes": 24,
+    "installed_save_backups": 3,
+    "legacy_metadata": 3,
+    "namespace_scan_limits": "Three inaccessible namespace records belong to exact pre-existing processes; starttimes predate captured Steam baseline. Owned parent reaped, no matching accessible owned PID namespace; no nested probe or foreign control.",
+    "original_sources_mounted": false,
+    "save_read_scope": "Existing24opaquehashes only, no parsing/copy/rawemission"
+  },
+  "root_postflight": {
+    "checks": {
+      "1330_metadata_unchanged": true,
+      "24_hashes_unchanged": true,
+      "3_legacy_unchanged": true,
+      "all_executed_file_hashes_unchanged": true,
+      "canary_unchanged": true,
+      "fixed_launcher_bwrap_metadata_unchanged": true,
+      "host_namespace_unchanged": true,
+      "namespace_policy_unchanged": true,
+      "no_owned_namespace_remaining": true,
+      "owned_parent_reaped": true,
+      "preexisting_steam_unchanged": true,
+      "private_outputs_exact": true,
+      "socket_absent": true
+    },
+    "external_copies": 0,
+    "namespace_visibility": "No owned namespace/parent remains; three exact pre-existing uninspectable process identities retained, no unknown new identity",
+    "passed": 13,
+    "private_output_files": 4,
+    "required": 13,
+    "unknown_outputs": 0
+  },
+  "root_preflight": {
+    "checks": {
+      "12_tests_pass": true,
+      "1330game_metadata_match": true,
+      "24_original_hashes_and_metadata_match": true,
+      "3_legacy_metadata_match": true,
+      "existing_host_processes_readonly": true,
+      "fixed_output_absent": true,
+      "fixed_short_socket_absent": true,
+      "fresh_owned_empty_profile": true,
+      "future_client_game_gated": true,
+      "no_real_sources_mounted": true,
+      "outer_nested_command_closed": true,
+      "unknown_device_mounts_refused": true,
+      "zero_copies": true
+    },
+    "passed": 13,
+    "required": 13,
+    "tests": {
+      "exit": 0,
+      "passed": 12,
+      "required": 12
+    }
+  },
+  "runtime_result": {
+    "Steam_client_game_Proton_pressure_vessel_launches": 0,
+    "host_exit": 0,
+    "meaning": "Exact installedbwrap permissionrefusal under current unchanged host; nested capability NOT_PROVED; specific kernel/LSM cause not established",
+    "nested_exit": 1,
+    "nested_python": "NOT_RUN",
+    "outcome": "NESTED_DRY_HOST_DENIAL_CLASSIFIED",
+    "outer_checks": {
+      "passed": 31,
+      "required": 31
+    },
+    "timeout": false,
+    "unchanged_host_retry": "No further nestedroute retry; failed earlier candidates retained"
+  },
+  "scope": "Exact conditionalprivate-client plan and fixed nested namespace dry capability; no real Steam/game/auth/Cloud effect",
+  "sources": [
+    {
+      "title": "SteamOfflineMode requirements",
+      "url": "https://help.steampowered.com/en/faqs/view/0E18-319B-E34B-B2C8"
+    },
+    {
+      "title": "SteamCloud synchronization and offline conflicts",
+      "url": "https://help.steampowered.com/en/faqs/view/68d2-35ab-09a9-7678"
+    },
+    {
+      "title": "SteamRuntime usernamespace and filesystemsharing requirements",
+      "url": "https://github.com/ValveSoftware/steam-runtime/blob/master/doc/steamlinuxruntime-known-issues.md"
+    },
+    {
+      "title": "Installedbubblewrap primary implementation",
+      "url": "https://github.com/containers/bubblewrap/blob/v0.11.1/bubblewrap.c"
+    }
+  ],
+  "unit": "R04-j",
+  "user_organization_recheck": {
+    "date": "2026-10-08",
+    "downloads": 591,
+    "duplicate_sources": 2,
+    "increment_archives": 25,
+    "independent_contents": 23,
+    "management_references": 5,
+    "metadata_changed": 0,
+    "missing": 0,
+    "prior_organization_commit": "3cbdaade7cd6d71c255476ac99fc52b3f89c07ef",
+    "scope": "Existing provenance/category/independent-profile specification retained; no extra increment or duplicate closed round",
+    "unlisted": 0
+  }
+}

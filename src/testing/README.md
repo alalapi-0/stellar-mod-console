@@ -140,3 +140,40 @@ python3 -B -m unittest discover -s tests -p 'test_cloud_plan.py' -v
 也不能断言游戏不使用 Cloud API。只创建新游戏前缀仍不能隔离现有 Steam 客户端
 的写入与同步。实际游戏、Cloud、账号隔离、加载器和 MOD 兼容保持未验收。
 R04-f 的许可、输入哈希、失败与当前成功事实见 `docs/evidence/R04-f.json`。
+
+## 嵌套容器与独立客户端候选
+
+R04-j 的 `client_plan` 创建空的独立客户端目录，固定 HOME、XDG、userdata、
+library、compatdata/prefix、日志和隔离输出范围。它不安装或启动 Steam，不登录，
+不修改 Cloud 或账号设置，也不复制现有客户端、会话、游戏、MOD 或存档。
+
+```sh
+python3 -B -m src.testing.client_plan prepare
+python3 -B -m unittest tests.test_client_plan
+```
+
+固定 dry 入口须有精确登记的新鲜 Judge/Governor 批准；没有通用命令、额外挂载、
+环境或参数入口。测试只挂载系统只读依赖、自有探针和可丢弃的只读 canary，
+真实游戏、Steam、Proton、存档及账号目录都不进入容器。外层允许本次唯一的
+嵌套容器，内层再次禁止更深的用户命名空间；两层 payload 均清空环境并丢弃能力。
+固定修改、删除及挂载逃逸尝试只作用于自有 canary。超时只通过本次 pidfd 回收。
+
+此前禁止嵌套用户命名空间的前缀/GPU 探针继续保留原用途和证据；此次不把它们
+改成游戏启动器。Steam Linux Runtime 需要的命名空间与默认目录共享另行核验。
+嵌套 dry 成功只证明本次边界，具体 pressure-vessel、客户端和游戏仍需实测。
+
+本机安装器在空 HOME 下需要新的官方 bootstrap，不能靠引用二进制就宣称独立
+客户端已就绪。合法登录、首次游戏初始化/激活、同时运行的现有客户端、
+SteamRestart 路由、设备/显示/输入和客户端 Cloud 写入都是后续门禁。离线不能
+被当作云数据隔离；测试状态可能排队等待上传，未有独立审查的处置边界和准确
+授权前不得重新联网或上传。详见 `docs/contracts/R04-j.json` 和当前唯一项目状态。
+
+R04-j 实测外层 31 项检查通过，内层 bubblewrap 在 Python 探针启动前拒绝
+创建用户命名空间；完整诊断按严格规则分类为
+`NESTED_DRY_HOST_DENIAL_CLASSIFIED`，主机步骤退出 0，内层退出 1。
+12 项合成测试和 13 项 Root 后检查通过，24 个保护哈希、1,330 项游戏
+元数据及 3 项旧路径元数据未变，自有进程和 socket 已回收。此前输出竞态、
+socket 长度、基础设备节点和错误分类失败及前像均保留；没有回标为通过。
+此结果只关闭当前嵌套路线调查，不证明内层隔离、Steam 或游戏可用，也不
+授权修改系统命名空间策略。后续真实客户端须重新建立可用边界；当前主机
+条件不变时不重复该路线。

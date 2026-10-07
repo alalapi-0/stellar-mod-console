@@ -1,0 +1,81 @@
+{
+  "contract_id": "stellar-mod-console/R04-j/v1",
+  "lane": "GOVERNED",
+  "authority": "Active userGoal; global/projectAGENTS v9; baselinef3c14f2966c051777ee29cf3ff766acd512834a7",
+  "lineage": "New boundedR04-j afteracceptedR04-i; cumulativeattempts/priorbootstrap/publisher/savefindings and originalA01-A14final0/14 preserved; no prioracceptedcandidate reopened.",
+  "objective": "Concrete exact conditional legitimate privateSteam-client/game/local-and-Cloud-save route; one fixed self-authored nesteduser/mountnamespace DRY capability probe afterexactprelaunchreview. Determine supportedboundary or specific unchanged-host denial. No Steam/client/Proton/pressure-vessel/game/account runtime.",
+  "coherent_outcome": {
+    "artifacts": "Sanitized conditionalroute/emptyprivate skeleton/fixeddryevidence/exactresumption",
+    "allowed_results": [
+      "NESTED_DRY_CAPABILITY_PROVED",
+      "NESTED_DRY_HOST_DENIAL_CLASSIFIED"
+    ],
+    "meaning": "Neither authorizes/proves clientlaunch/authentication/activation/Cloud/pressure-vessel/Proton/game/MOD/GPU/display/input/save isolation."
+  },
+  "protected_boundaries": [
+    "Game790installedfiles/MODsources/downloads/Proton/existingSteamclient-install-userdata-account-session-config-cache/originalprefixes/saves/othertasks read-only unchanged; preserve24protectedhashes/1330gamemetadata/3installedbackups/knownCloudmetadata/R04-hbindings/4identicalloadercorepairs.",
+    "No credential/token/cookie/login/session/account-cache/rawappinfoheader/Cloudpayload/unregistered-save content reads,copies,emission,parsing,inference. Sole exception: exact24R04-i registeredregularfiles may be opened O_NOFOLLOW and streamed opaquely for whole-fileSHA256 with exactpre/postdev,ino,mode,size,mtime_ns,ctime_ns; no bytes/excerpts/decodedvalues/contentderivedfacts beyondSHA persisted. Missing/link/nonregular/replacement/change refuses.",
+    "No Steam/client/game/Proton/pressure-vessel executable launch,login/authentication/activation/accountCloudsetting/upload-download/network/hostIPC/processcontrol/sysctl/AppArmor/globalconfig/loader/game/MOD mutation.",
+    "No thirdparty binary/asset/game/MOD/prefix/save copy. Exactdeclared publiclauncher/bwrap/package metadata only; no accountroottraversal. Staticcontentreads excluded unless separately reviewed.",
+    "Actualgame/save trees nevermounted orused for write/remount/rebind/unmount tests. Allwrite/destructive targets freshdisposablecanaries/emptydirs under .local/r04/client-plan.",
+    "No arbitrarycommand/argumenttail/executable/mount/environment/sourcepath/extrawritablepath/nonisolatedfallback API. Existinguser/client/gameprocesses notstopped/signaled/controlled; cleanup exactownedidentity only.",
+    "No mainmerge/forcepush/Release/Nexus/deployment/publicbinarydelivery."
+  ],
+  "authorized_external_effects": [
+    "Root may create/replaceownedprojectcandidate and ignoredprivate outputs; officialpublicdocsread allowed.",
+    "Read-only lstat/stat/packageversion on exactpredeclaredpubliclauncher/bwrap; no additional contentreads.",
+    "AfterfreshJudgePASS and GovernorAPPROVE_DRY_PROBE execute only exactregistered outer /usr/bin/bwrap plusfixedownPython, one exactnested /usr/bin/bwrap. May create namespaces/privateprocessstate/private temporarymounts/disposablecanaries; networkunsharedexternallyunreachable.",
+    "Afterpostprobe freshJudgePASS/Governorapproval normal sourcecommit/push impl/mod-console andexactremoteverify allowed."
+  ],
+  "ownership": {
+    "writer": "Root only",
+    "owned_paths": [
+      "src/testing/client_plan.py",
+      "tests/test_client_plan.py",
+      "src/testing/README.md",
+      "docs/contracts/R04-j.json",
+      "docs/evidence/R04-j.json",
+      "PROJECT_STATE.json",
+      ".local/r04/client-plan/"
+    ],
+    "adaptive": "OwnedR04-j code/tests/private details mayreplace/refactor/remove under unchangedfrozen dimensions. Existingisolation/bootstrap imports allowed butreadonly.",
+    "reviewers": "Read-only; no descendants."
+  },
+  "acceptance": {
+    "C01": "Persist completev1contract/baseline/ownership/pre-postgates/evidence/recovery/cumulativebudget; originalGoal/denominatorunchanged.",
+    "C02": "Fresh owner-only symlink/hardlink-free disjointempty clientroot/HOME/XDGruntime-cache-config-data/userdata/library/compatdata-prefix/logs/quarantine-disposal; zeroexternal/credentialcopies.",
+    "C03": "Closeddesignatedprivate context/output andfixedplan/dry modes. Rejectunknownkeys/relative-traversal-links-reuse-overlap/owner-inodechanges/extra commands-options-mounts-env/outsideowned targets before subprocess.",
+    "C04": "Registeredouterbwrap freshuser/mount/PID/IPC/network/UTS/cgroup,newsession,die-with-parent,clearallowlistedenv,dropcapsatpayload. Omitsdisable-userns solely for exactnestedprobe; no share-net/hostHOME/run-user/SteamIPC/DBus/display/X11/Wayland/GPU/audio/input/fallback.",
+    "C05": "Onlyfixedreadonlydistributionviews/proc-minimaldev/privatetmp-run-home-work/twofixedprobefiles/syntheticcanaries. Exactfixednestedbwrap distinctuser/mount/PID; no arbitraryarg/bind path.",
+    "C06": "Canaryreadonlyinbothlayers. Afterpayloadcapdrop fixedwrite/chmod/rename/unlink/bind/rebind/remount-rw/move-mount/unmount deniedbyacceptederrnos orremainimmutable/inaccessible. Neverrealsource targets. No CAP_SYS_ADMIN payload granted.",
+    "C07": "Bothlayers: protectedpaths/host-onlysentinel absent; exactwritableallowlist/no unregisteredmountsource; hostFS/abstractUnix/loopback/DBus/SteamIPCunreachable; host-outer-innerNSseparate; noexternalroute.",
+    "C08": "Synthetic-onlytests: construction/commands; command-argument-env-mountinjection/traversal/symlink-hardlink-reuse-overlap/metadataaltered/writablesource/sharednet-IPC/missingnestedisolation/canarylockremoval/honestsuccess-denialclassification. No Steam/gameexecution.",
+    "C09": "Rootreproduce nonruntime/staticchecks; opaque O_NOFOLLOW SHA256/exactpre-postmetadata for SAME24registeredregularfiles and SAME1330gamemetadata; declaredlauncher/bwrapmetadata; existingprocessesuntouched; exact semanticfiles/fixedcommands/fixtures/context/emptyprofile/preimages/separateStatehash; freshJudgePASS thenGovernorAPPROVE_DRY_PROBE.",
+    "C10": "Oneexactdry returnsfullboundarysuccess orprecisehostdenial. Codedefect/malformedargs/unexpectedmount-write/ambiguousstderr/timeouteak/residue/canary-protectedchange FAIL, nothostdenial. Exactcommand/exit-errno/bwrap-kernel/read-onlynamespacepolicy withunchangedsettings; nojournal/dmesg/accountinspection.",
+    "C11": "Concreteconditionalboundarymatrix FS/IPC/process/network/GPU-display-input/installed-executable restart/clientCloud; separateclientroot/userdata/prefix, nocopiedsession; laterownerlogin/priorlogin-gameinit/firstactivation/concurrenthostclient/futuredevices gates. OfflinecanqueueCloud, cachedpublishernotruntime. No privateprofile reconnect/upload before separatelyreviewed containment/disposal andexactauthority.",
+    "C12": "Repeat SAME24 opaquehash/exactmetadata and SAME1330metadata, equalpre-probe; ownedprocess/NSreaped; zero Steam/game/Proton/pressure-vessel/account/Cloud effects/copies; honestNOT_RUN. Rootpostexactregistration/separateStatehash; freshpostJudgePASS/Governorapproval before source."
+  },
+  "evidence_plan": {
+    "public": "Sanitizedcontract/evidence/boundarymatrix/results/checks/exits/counts/failures/NOT_RUN +ownsource/tests/README only; nohostpath/user/account/PID/token/rawsensitive stderr/binaries/privatemountmanifests.",
+    "private": "Context/allowlists/emptymanifest/staticmetadata/fixedvectors/syntheticidentities/protectedpre-post/registrations/rawboundeddry/classifiedfailures/verification.",
+    "identity": "Exactsource/tests/contract/evidence/derivedfilemap, no selfhash; State separate. Review-decision-syncmetadata outside semanticidentity."
+  },
+  "recovery": {
+    "preexecution": "Rejectambiguouspath/inputchange/unregisteredcommand/boundary beforeeffects.",
+    "runtime": "Timeout/error terminate exactownednewsession/group; waitregisteredchildren/NSdisappear; closeownedsockets, retainboundedfailure.",
+    "filesystem": "Onlyfreshownempty/disposableoutputs canrebuildafterownership/concurrentchecks; neverrestore/delete/chmod/remount/overwriteoriginals.",
+    "routefailure": "Verified unchanged-hostdenial closesonlyevidenceunit exactresume; no sysctl/AppArmor/globalchange/weakerboundary/hostsessionIPC/fallback."
+  },
+  "review_sequence": [
+    "Rootverify/registerprelaunch",
+    "FreshreadonlyJudgeC01-C09",
+    "GovernorAPPROVE_DRY_PROBE exactPASS",
+    "Rootonefixeddry+C10-C12",
+    "FreshpostJudge exactcandidate",
+    "Governor sourceapproval",
+    "Rootclosure/state/stage/commit/push/remoteverify"
+  ],
+  "budget": "Noexplicit tokenbudget; discovery/attempts/reviews/execution/closure cumulative nativeGoal, noreset.",
+  "current_permission_assessment": "No missingpermission for thiscontract/emptyskeleton/synthetictests/exactrevieweddry/read-onlymetadata/authorizedsourcesync. Authentication/activation/hostclientshutdown/accountCloudsettings/sessions/networkedclientinstall/realSteam-client-game remain separateconcretecandidate/exactauthority gates.",
+  "clarification": "r04_j_governor REVISE_TASK resolved hash-only exception within existingv1; all otherdimensions unchanged; no CAP_SYS_ADMIN/newsave/auth/runtime authority."
+}
