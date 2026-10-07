@@ -30,6 +30,10 @@ python3 -m src.policy.interfaces --catalog .local/r02/catalog.json --inventory .
 
 在内存读取原包小型脚本/配置，核对冻结哈希，记录 CNS 标识及网格/材质/物理/动画引用、模块提供者、Lua 注册调用、键位声明与可能的功能写入范围。CNS 当前 Lua 查询以配置路径与 UniqueFitID 为组合；跨文件同 ID 不直接判冲突。目录索引存在不证明类型或配套兼容，未找到也可能来自 PAK、DLC 或运行时资源。
 
+`module_providers.providers` 只表示观察到该命名空间的脚本/配置；`entrypoint_providers` 与 `extension_providers` 分开记录直接 `Scripts/main.lua` 入口及其他提供者。编号物理预设不能仅因目录相同就当成完整模块，也不能据此排斥所有扩展。嵌套 `Scripts/helpers/main.lua` 不计作入口；消费者版本、实际写入权和 ABI 仍需确认。
+
+`raw_script_target_overlaps` 比较模块相对路径、准确文件 SHA-256 和大小。归档外层路径及 Windows 分隔符可不同，ASCII 大小写按候选目标归一化；实际安装映射仍需验证。相同字节可保留多个来源，不同字节需要明确文件提供者或覆盖方案；两者都不授予部署权限，也不直接推断崩溃。配置、导入和运行入口后续必须共用同一规则引擎，当前只是只读证据。
+
 Lua 调查使用词法分析，不运行脚本；动态属性、包装函数、条件分支、配置优先级与间接注册保留未知。数字键码仅对常见字母/数字/F 键依照 [Windows 虚拟键码](https://learn.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes)归一化，重叠仍是调查候选；[UE4SS 注册接口](https://docs.ue4ss.com/lua-api/global-functions/registerkeybind.html)的实际运行需按安装版本验证。
 
 原配置的尾逗号只可移除后恢复调查元数据，明确保留严格格式失败；不修改源配置，不授权应用。重复 JSON 键拒绝解析，防止无声丢掉作者声明。顶层记录、声明的变体槽、实际可用选项和运行支持分别统计。

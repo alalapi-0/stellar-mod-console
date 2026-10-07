@@ -1,0 +1,276 @@
+{
+  "round": "R03-inc1",
+  "lane": "DIRECT",
+  "entry_commit": "10a8ce5223661c8ea09d01e8b5172cab2c4fedce",
+  "scope": "Add23canonical records to full473relevant static evidence; distinguish module entrypoints/preset extensions and normalized script targets; no live install/launch",
+  "original_basis": {
+    "source_inputs": 569,
+    "relevant_candidate_records": 450,
+    "original_raw_containers": 729,
+    "required_acceptance": 14,
+    "accepted_required": 0
+  },
+  "current_basis": {
+    "source_inputs": 594,
+    "relevant_candidate_records": 473,
+    "raw_containers": 757,
+    "graph_components": 762,
+    "known_exclusive_groups": 5,
+    "new_containers": 28,
+    "new_resource_chunks": 603,
+    "new_resource_chunk_types": {
+      "ContainerHeader": 28,
+      "ExportBundleData": 346,
+      "BulkData": 229
+    }
+  },
+  "graph_summary": {
+    "variants_and_loader_components": 762,
+    "exclusive_groups": 5,
+    "toc_identifiers_indexed": 757,
+    "identifier_deferrals": 0,
+    "container_overlap_groups": 140,
+    "overlapping_chunk_ids": 1615,
+    "runtime_compatibility": "NOT_RUN"
+  },
+  "resource_summary": {
+    "raw_containers": 757,
+    "installed_containers": 176,
+    "deferrals": 0,
+    "installed_roles": {
+      "installed_mod_or_loader": 171,
+      "protected_original": 5
+    },
+    "raw_chunk_overlap_statuses": {
+      "SAME_STORED_HASH_AND_SIZE": 973,
+      "DIFFERING_STORED_METADATA": 642
+    },
+    "raw_path_overlap_statuses": {
+      "DIFFERING_STORED_METADATA": 427,
+      "SAME_STORED_HASH_AND_SIZE": 951
+    },
+    "installed_chunk_overlap_statuses": {
+      "DIFFERING_STORED_METADATA": 190,
+      "SAME_STORED_HASH_AND_SIZE": 83
+    },
+    "installed_path_overlap_statuses": {
+      "DIFFERING_STORED_METADATA": 68,
+      "SAME_STORED_HASH_AND_SIZE": 89
+    },
+    "installed_mods_only_chunk_overlap_statuses": {
+      "DIFFERING_STORED_METADATA": 44,
+      "SAME_STORED_HASH_AND_SIZE": 90
+    },
+    "installed_mods_only_path_overlap_statuses": {
+      "DIFFERING_STORED_METADATA": 7,
+      "SAME_STORED_HASH_AND_SIZE": 74
+    }
+  },
+  "new_involved_path_overlaps": {
+    "DIFFERING_STORED_METADATA": 36,
+    "SAME_STORED_HASH_AND_SIZE": 66
+  },
+  "interface_summary": {
+    "documents": 619,
+    "deferrals": 1,
+    "raw_types": {
+      "cns": 133,
+      "configuration": 31,
+      "lua": 244,
+      "animation_json": 3
+    },
+    "raw_cns": {
+      "files": 133,
+      "rows": 379,
+      "within_file_duplicate_ids": 0,
+      "missing_ids": 0,
+      "strict_format_failures_metadata_recovered": 19
+    },
+    "raw_lua": {
+      "files": 244,
+      "keybind_calls": 237,
+      "literal_key_calls": 185,
+      "effect_domain_references": {
+        "spring_physics": 79,
+        "camera": 10,
+        "movement": 22,
+        "world_time": 7,
+        "actor_time": 2,
+        "appearance": 1
+      }
+    },
+    "installed_types": {
+      "lua": 62,
+      "configuration": 5,
+      "animation_json": 3,
+      "cns": 138
+    },
+    "installed_cns": {
+      "files": 138,
+      "rows": 389,
+      "within_file_duplicate_ids": 0,
+      "missing_ids": 0,
+      "strict_format_failures_metadata_recovered": 0
+    },
+    "installed_lua": {
+      "files": 62,
+      "keybind_calls": 82,
+      "literal_key_calls": 47,
+      "effect_domain_references": {
+        "appearance": 1,
+        "world_time": 1,
+        "actor_time": 2,
+        "camera": 6,
+        "spring_physics": 15
+      }
+    }
+  },
+  "script_target_overlaps": {
+    "total": 44,
+    "same_source_bytes": 18,
+    "different_source_bytes": 26,
+    "jiggle_namespace": {
+      "all_providers": 10,
+      "entrypoints": 6,
+      "extensions": 4
+    },
+    "exact_incoming_preset_pair_shared_targets": [
+      7,
+      5,
+      0
+    ],
+    "can_apply": false,
+    "rule": "Normalized namespace/target identity is evidence only; exact provider/override/consumer/ABI/body/runtime validation required"
+  },
+  "added_cns_prerequisites": {
+    "new_cns_configs": 8,
+    "new_cns_rows": 8,
+    "declared_references": 118,
+    "reference_statuses": {
+      "OWN_PACKAGE_METADATA_PRESENT": 89,
+      "INSTALLED_METADATA_PRESENT": 12,
+      "NOT_FOUND_IN_CURRENT_IOSTORE_INDEXES": 17
+    },
+    "declared_requirements": {
+      "None": 7,
+      "NikkeDLC": 1
+    },
+    "strict_format_failures": 1,
+    "runtime_compatibility": "NOT_RUN",
+    "unresolved_iostore_reference_occurrences": 17,
+    "unresolved_iostore_distinct_keys": 7,
+    "additional_pak_matches": 0,
+    "unresolved_after_pak_distinct_keys": 7
+  },
+  "pak_metadata": {
+    "added_paks_checked": 28,
+    "decoded_metadata_bytes": 9508,
+    "added_pak_paths": 0,
+    "additional_missing_reference_matches": 0,
+    "unresolved_distinct_reference_keys": 7,
+    "method": "Actual tiny PAK metadata via anonymous in-memory descriptors; no persistent member extraction"
+  },
+  "validation": {
+    "interface_regression_command": "python3 -m unittest discover -s tests -p 'test_interfaces.py' -v",
+    "interface_tests": 6,
+    "interface_test_exit": 0,
+    "full_interface_command": "python3 -B -m src.policy.interfaces --catalog .local/r02/inc1/catalog.json --inventory .local/r01/inc1/inventory.json --resources .local/r03/inc1/resources.json --output .local/r03/inc1/interfaces.json",
+    "full_interface_exit": 0,
+    "increment_build_command": "PYTHONPATH=\"$PWD\" python3 -B .local/r03/inc1/build.py",
+    "increment_build_exit": 0,
+    "composition_checks": {
+      "old_variants_retained": true,
+      "old_5_exclusive_groups_retained": true,
+      "757_unique_raw_resource_ids": true,
+      "old_installed_resource_index_retained": true,
+      "old_raw_resources_retained": true,
+      "762_unique_graph_components": true,
+      "all_new28_identifiers_match_resource_index": true,
+      "no_new_metadata_deferrals": true,
+      "all_known_bad_pairs_rejected": true,
+      "no_conflict_does_not_grant_application": true,
+      "473_relevant_candidate_basis": true,
+      "594_exact_source_coverage": true
+    },
+    "interface_and_preservation_checks": {
+      "all567_original_documents_preserved": true,
+      "all52_added_documents_preserved": true,
+      "old_duplicate_key_deferral_retained": true,
+      "619_unique_documents": true,
+      "19_original_and_added_strict_format_failures_retained": true,
+      "current_installed_interface_summary_unchanged": true,
+      "3_added_presets_only_extensions": true,
+      "new1397_is_entrypoint": true,
+      "all44_target_overlaps_non_authorizing": true,
+      "all3_exact_preset_pairs_reproduced": true,
+      "fresh_full_input_bindings": true,
+      "22_protected_hashes_unchanged": true,
+      "1330_game_entry_stamps_unchanged": true,
+      "complete_game_entry_set_unchanged": true,
+      "source_and_installed_stamps_unchanged": true,
+      "28_new_pak_indexes_checked_in_memory": true,
+      "7_unknown_reference_keys_checked_against_pak_metadata": true,
+      "unresolved_count_uses_nonempty_provider_evidence": true
+    },
+    "known_bad_pairs_rejected": 18,
+    "no_known_violation_does_not_authorize_application": true,
+    "original_installed_toc_hashes_rechecked": 176,
+    "protected_hashes_rechecked": 22,
+    "complete_game_entry_set_and_stamps_rechecked": 1330
+  },
+  "retained_failures": [
+    {
+      "target": "Private increment script import",
+      "class": "MODULE_IMPORT_ROOT_REQUIRED",
+      "resolution": "Use task-local PYTHONPATH for this invocation; no global config change"
+    },
+    {
+      "target": "Raw retoc independent crosscheck",
+      "class": "RETOC_LIST_REQUIRES_UCAS",
+      "exit": 1,
+      "status": "RAW_EXTERNAL_CROSSCHECK_NOT_RUN; original installed v2/v3 comparisons retained; no fake UCAS or asset extraction"
+    },
+    {
+      "target": "Supplemental PAK match count",
+      "class": "EMPTY_DEFAULTDICT_KEYS_COUNTED_AS_MATCHES",
+      "initial_false_match_count": 7,
+      "corrected_actual_match_count": 0,
+      "unresolved_distinct_keys": 7,
+      "resolution": "Count nonempty provider evidence; correction made before canonical-state publication"
+    }
+  ],
+  "preservation": {
+    "original_variants_and_known_rules": "Retained",
+    "original567documents_and_added52documents": "Identical content/analysis fields retained in619document result",
+    "original_duplicate_key_deferral": "Retained1",
+    "strict_format_failures": "Original18 plus new1 remain19; no source repairs",
+    "source_writes": 0,
+    "game_save_account_or_prefix_changes": 0,
+    "third_party_scripts_executed_or_copied": 0
+  },
+  "source_sha256": {
+    "src/policy/interfaces.py": "0c7947fe280b524c83567c363cbcc4c3818f330d00a0f33a7fc5902b31d27c51",
+    "tests/test_interfaces.py": "b5650f4e64e65a102c20764e420ec69fb35625e6b18241c5b2c264a8a8eaab03",
+    "src/policy/README.md": "806d14efecd85c58d28b2ea31bb9fd296125f1a28fb430bcb9c7b6cf6631955d"
+  },
+  "private_evidence_sha256": {
+    ".local/r03/inc1/conflicts.json": "49cc5d73355e649a9f288887eeb713d1219d643403cef25ff895602f207d90b9",
+    ".local/r03/inc1/resources.json": "9bb1cd843348ca35df5915dc3b26d9c0caddfc51adb2599a3ce527ea005ba1f0",
+    ".local/r03/inc1/interfaces.json": "bddd1e6574e43608b2c8079feaa34ab8df1f1fa5baebc8f91d4678e26b61b31a",
+    ".local/r03/inc1/added-prerequisites.json": "702ea29fbe7b2704ac57ad79811e891bfb4f4d83de129269a7eef77af1d4e98a",
+    ".local/r03/inc1/added-pak-checks.json": "bf5d60e2d5e5d9c93e7d75f920ec1dc9c57224087a98100fc0890ef31e0a7bb6",
+    ".local/r03/inc1/build-checks.json": "acab4f8e47cf08955652f3028fcb535adeef08f96e8c1185609afd99278680b5",
+    ".local/r03/inc1/interface-checks.json": "3eb853bf47e6379f3a8e0692afe585e01fae8bfe4f54363553a14d77ed969be5",
+    ".local/r03/inc1/preset-checks.json": "ed210ca07590a51cea0ae90fc5c851c1065ec720bb6f4f3601cf194acd3970e6",
+    ".local/r03/inc1/retoc-crosscheck.json": "6323d820e55ccfbf49af7ca6006a72bfca66d1405b2969be303875b9a76366f6",
+    ".local/r03/inc1/build.py": "eacbbc3978a858b334dd3d5980a7b06bd446b00311f84b01ee2acb7d5805c3bd"
+  },
+  "limits": [
+    "All473relevant records remain runtime NOT_RUN; full engine/all UI-hotkey-import-automatic-recovery-deploy entries NOT_IMPLEMENTED",
+    "Resource stored hashes/path presence do not prove decoded payload equality, load order, body/material/skeleton/physics compatibility or DLC entitlement",
+    "17new reference occurrences across7distinct keys remain outside current IoStore and checked PAK metadata; original34installed-reference findings retained",
+    "Raw added UTOC independent retoc comparison could not run via a metadata-only descriptor; existing parser layout checks and original installed comparisons are not a new raw crosscheck",
+    "Nexus permissions, exact per-version prerequisites and native/Blueprint/tool capabilities remain partial"
+  ],
+  "result": "STATIC_INCREMENT_INDEXED_AND_CLASSIFICATION_REPAIRED; RAW_RETOC_CROSSCHECK_NOT_RUN; FULL_RUNTIME_NOT_RUN"
+}

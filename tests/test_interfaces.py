@@ -1,10 +1,11 @@
 import json
+import hashlib
 from pathlib import Path
 import tempfile
 import unittest
 import zipfile
 
-from src.policy.interfaces import analyze_document, cns_evidence, lua_evidence, unreal_asset_key
+from src.policy.interfaces import analyze_document, build_interfaces, cns_evidence, lua_evidence, unreal_asset_key
 from src.policy.static import archive_metadata
 
 
@@ -67,6 +68,37 @@ pcall(RegisterKeyBind, keyCode, callback)
         self.assertIn("NOT_ACCEPTED", result["format_status"])
         with self.assertRaises(ValueError):
             analyze_document(b'[{"UniqueFitID":"a","UniqueFitID":"b"}]', "bad.dekcns.json")
+
+    def test_preset_namespace_is_not_a_standalone_entrypoint_or_compatibility(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            catalog, inventory = {"records": []}, {"sources": [], "installed": [], "activation": []}
+            files = {
+                "core": {"SB/ue4ss/Mods/Physics/Scripts/main.lua": b'return {}'},
+                "preset_a": {"Physics/Scripts/Tweak17.lua": b'return {value=1}'},
+                "preset_b": {"Mods/physics/scripts/tweak17.lua": b'return {value=2}'},
+                "preset_copy": {"Physics/Scripts/Tweak18.lua": b'return {value=1}'},
+                "preset_copy2": {"Physics/Scripts/Tweak18.lua": b'return {value=1}'},
+                "helper": {"Physics/Scripts/helpers/main.lua": b'return {}'},
+            }
+            for ident, entries in files.items():
+                path = Path(temporary) / (ident + ".zip")
+                with zipfile.ZipFile(path, "w") as z:
+                    for name, data in entries.items(): z.writestr(name, data)
+                catalog["records"].append({"id": ident, "kind": "lua_mod", "canonical_path": str(path)})
+                inventory["sources"].append({"path": str(path), "entries": [
+                    {"path": name, "size": len(data), "sha256": hashlib.sha256(data).hexdigest(),
+                     "regular": True, "safe_path": True} for name, data in entries.items()]})
+            result = build_interfaces(catalog, inventory, {"installed": []})
+            modules = {m["module"].lower(): m for m in result["module_providers"] if m["module"] == "Physics"}
+            self.assertEqual(modules["physics"]["entrypoint_providers"], ["core"])
+            self.assertIn("helper", modules["physics"]["extension_providers"])
+            self.assertIn("preset_a", modules["physics"]["extension_providers"])
+            overlaps = result["raw_script_target_overlaps"]
+            self.assertEqual(set(overlaps), {"mods/physics/scripts/tweak17.lua", "mods/physics/scripts/tweak18.lua"})
+            self.assertEqual(overlaps["mods/physics/scripts/tweak17.lua"]["status"], "DIFFERENT_SOURCE_BYTES")
+            self.assertEqual(overlaps["mods/physics/scripts/tweak18.lua"]["status"], "SAME_SOURCE_BYTES")
+            self.assertTrue(all(g["can_apply"] is False for g in overlaps.values()))
+            self.assertEqual(len(list(Path(temporary).iterdir())), len(files))
 
 
 if __name__ == "__main__": unittest.main()

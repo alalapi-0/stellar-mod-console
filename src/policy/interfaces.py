@@ -240,6 +240,35 @@ def analyze_document(data: bytes, name: str) -> dict:
     return {"type": "configuration", "parameters": pairs, "effect": "UNKNOWN; reader/binding NOT_VERIFIED"}
 
 
+def script_target_overlaps(catalog: dict, inventory: dict) -> dict:
+    """Compare observed module-relative targets, never authorize deployment."""
+    sources = {r["path"]: r for r in inventory["sources"]}
+    targets = defaultdict(list)
+    ascii_lower = str.maketrans("ABCDEFGHIJKLMNOPQRSTUVWXYZ", "abcdefghijklmnopqrstuvwxyz")
+    for record in catalog["records"]:
+        if record["kind"] in EXCLUDED: continue
+        for entry in sources[record["canonical_path"]].get("entries", []):
+            if not entry.get("regular", True) or not entry.get("safe_path", True): continue
+            name = entry["path"].replace("\\", "/")
+            match = re.search(r"(?:^|/)([^/]+)/Scripts/(.+)$", name, re.I)
+            if not match: continue
+            module, tail = match.groups()
+            if any(p in {"", ".", ".."} for p in (module + "/" + tail).split("/")):
+                raise ValueError("Ambiguous module script target")
+            target = ("Mods/" + module + "/Scripts/" + tail).translate(ascii_lower)
+            targets[target].append({"package": record["id"], "entry": entry["path"],
+                                    "sha256": entry["sha256"], "size": entry["size"]})
+    result = {}
+    for target, members in sorted(targets.items()):
+        if len(members) < 2: continue
+        result[target] = {"members": members,
+                          "status": "SAME_SOURCE_BYTES" if len({(m["sha256"], m["size"]) for m in members}) == 1 else "DIFFERENT_SOURCE_BYTES",
+                          "scope": "NORMALIZED_MODULE_SCRIPT_LAYOUT; actual deployment mapping/consumer version unverified",
+                          "runtime_rule": "UNKNOWN; explicit file provider/override plan needed; no crash or compatibility inferred",
+                          "can_apply": False}
+    return result
+
+
 def build_interfaces(catalog: dict, inventory: dict, resources: dict) -> dict:
     sources = {r["path"]: r for r in inventory["sources"]}
     documents, deferred = [], []
@@ -283,12 +312,18 @@ def build_interfaces(catalog: dict, inventory: dict, resources: dict) -> dict:
             if chunk["path"] and (key := virtual_resource_key(chunk["path"])):
                 live_resources[key].append(c["id"])
     cns_ids = defaultdict(list)
-    module_providers, key_reuse, domain_overlap = defaultdict(set), defaultdict(list), defaultdict(list)
+    module_providers, entrypoints = defaultdict(set), defaultdict(set)
+    key_reuse, domain_overlap = defaultdict(list), defaultdict(list)
     enabled = {r["module"]: r["enabled"] for r in inventory["activation"]}
     for doc in documents:
         analysis = doc["analysis"]
         if doc["module"]:
-            module_providers[(doc["namespace"], doc["module"])].add(doc["package"] or doc["module"])
+            ns_module = (doc["namespace"], doc["module"])
+            provider = doc["package"] or doc["module"]
+            module_providers[ns_module].add(provider)
+            path = doc["name"] if doc["namespace"] == "raw" else doc["id"]
+            if re.search(r"(?:^|/)Scripts/main\.lua$", path.replace("\\", "/"), re.I):
+                entrypoints[ns_module].add(provider)
         if analysis["type"] == "lua":
             for key in analysis["keybind_calls"]:
                 if not key["literal_key"]: continue
@@ -324,8 +359,11 @@ def build_interfaces(catalog: dict, inventory: dict, resources: dict) -> dict:
               "effect_domain_references": dict(Counter(e["domain"] for d in lua for e in d["analysis"]["effect_evidence"]))}
     return {"schema_version": 1, "documents": documents, "deferred": deferred, "summary": summary,
             "module_providers": [{"namespace": ns, "module": module, "providers": sorted(providers),
-                                  "rule": "ONE_MODULE_PROVIDER_REQUIRED; exact-file deployment and runtime ABI remain unverified"}
+                                  "entrypoint_providers": sorted(entrypoints[(ns, module)]),
+                                  "extension_providers": sorted(providers - entrypoints[(ns, module)]),
+                                  "rule": "NAMESPACE_FILES_OBSERVED; main.lua entrypoints and extensions are distinct; exact targets/consumer version/runtime ABI require verification"}
                                  for (ns, module), providers in module_providers.items()],
+            "raw_script_target_overlaps": script_target_overlaps(catalog, inventory),
             "potential_key_reuse": [{"namespace": ns, "key": key, "members": members,
                                      "rule": "UNKNOWN; modifiers/branches/current enablement and indirect keys need resolution"}
                                     for (ns, key), members in key_reuse.items() if len({m["module"] for m in members}) > 1],

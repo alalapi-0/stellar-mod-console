@@ -15,9 +15,9 @@
   "goal_mode_started": true,
   "implementation_started": true,
   "phase": "P1",
-  "current_round": "R01-inc1",
-  "round_status": "COMPLETE_INCREMENT_ORGANIZATION; FULL_GOAL_PARTIAL",
-  "next_round": "R03-inc1",
+  "current_round": "R03-inc1",
+  "round_status": "COMPLETE_STATIC_INCREMENT; FULL_GOAL_PARTIAL",
+  "next_round": "R04-e",
   "protected": [
     "Existing game files and saves",
     "Original MOD packages and downloads",
@@ -143,17 +143,16 @@
     "private_catalog": ".local/r02/inc1/catalog.json",
     "catalog_sha256": "aa80bbcdfd63ed26e30f361e819de3454e28614ca3b20d15e57296d225a39ad5",
     "variant_component_summary": {
-      "variants_and_loader_components": 734,
+      "variants_and_loader_components": 762,
       "exclusive_groups": 5,
-      "toc_identifiers_indexed": 729,
+      "toc_identifiers_indexed": 757,
       "identifier_deferrals": 0,
-      "container_overlap_groups": 135,
-      "overlapping_chunk_ids": 1533,
-      "runtime_compatibility": "NOT_RUN",
-      "basis": "Original450 relevant records; added23 not yet covered by full R03 resource/conflict graph"
+      "container_overlap_groups": 140,
+      "overlapping_chunk_ids": 1615,
+      "runtime_compatibility": "NOT_RUN"
     },
-    "private_conflict_graph": ".local/r03/conflicts.json",
-    "conflict_graph_sha256": "55ed3649496b90856773773ec9c93a124804e744333a9b06a64de2f24cc76482",
+    "private_conflict_graph": ".local/r03/inc1/conflicts.json",
+    "conflict_graph_sha256": "49cc5d73355e649a9f288887eeb713d1219d643403cef25ff895602f207d90b9",
     "original_basis": {
       "source_inputs": 569,
       "relevant_candidate_records": 450,
@@ -176,10 +175,74 @@
       }
     ],
     "conflict_graph_scope": {
+      "current_relevant_records": 473,
       "original_relevant_records": 450,
-      "additional_records_pending": 23,
-      "preset_file_overlap_evidence": ".local/r02/inc1/preset-overlaps.json"
-    }
+      "added_canonical_records": 23,
+      "additional_raw_container_index_pending": 0,
+      "full_dependency_write_ownership_rules": "PARTIAL",
+      "runtime_operations": "NOT_IMPLEMENTED",
+      "preset_file_overlap_evidence": ".local/r03/inc1/preset-checks.json"
+    },
+    "private_resource_index": ".local/r03/inc1/resources.json",
+    "resource_index_sha256": "9bb1cd843348ca35df5915dc3b26d9c0caddfc51adb2599a3ce527ea005ba1f0",
+    "private_interface_index": ".local/r03/inc1/interfaces.json",
+    "interface_index_sha256": "bddd1e6574e43608b2c8079feaa34ab8df1f1fa5baebc8f91d4678e26b61b31a",
+    "interface_summary": {
+      "documents": 619,
+      "deferrals": 1,
+      "raw_types": {
+        "cns": 133,
+        "configuration": 31,
+        "lua": 244,
+        "animation_json": 3
+      },
+      "raw_cns": {
+        "files": 133,
+        "rows": 379,
+        "within_file_duplicate_ids": 0,
+        "missing_ids": 0,
+        "strict_format_failures_metadata_recovered": 19
+      },
+      "raw_lua": {
+        "files": 244,
+        "keybind_calls": 237,
+        "literal_key_calls": 185,
+        "effect_domain_references": {
+          "spring_physics": 79,
+          "camera": 10,
+          "movement": 22,
+          "world_time": 7,
+          "actor_time": 2,
+          "appearance": 1
+        }
+      },
+      "installed_types": {
+        "lua": 62,
+        "configuration": 5,
+        "animation_json": 3,
+        "cns": 138
+      },
+      "installed_cns": {
+        "files": 138,
+        "rows": 389,
+        "within_file_duplicate_ids": 0,
+        "missing_ids": 0,
+        "strict_format_failures_metadata_recovered": 0
+      },
+      "installed_lua": {
+        "files": 62,
+        "keybind_calls": 82,
+        "literal_key_calls": 47,
+        "effect_domain_references": {
+          "appearance": 1,
+          "world_time": 1,
+          "actor_time": 2,
+          "camera": 6,
+          "spring_physics": 15
+        }
+      }
+    },
+    "added_prerequisite_evidence": ".local/r03/inc1/added-prerequisites.json"
   },
   "milestones": {
     "M1": {
@@ -233,8 +296,8 @@
     },
     "A03": {
       "status": "PARTIAL",
-      "evidence": "docs/evidence/R03.json",
-      "note": "Five known groups reject all 18 bad pairs statically; all runtime operation entries and complete graph still NOT_RUN"
+      "evidence": "docs/evidence/R03-inc1.json",
+      "note": "Full473relevant static input basis indexed; original5exclusive groups still reject18bad pairs. Entry modules and extensions separated,44script target overlaps visible. Complete policy/runtime operation entries and actual compatibility remain NOT_IMPLEMENTED/NOT_RUN"
     },
     "A04": {
       "status": "PARTIAL",
@@ -298,7 +361,7 @@
     "visibility": "PUBLIC_VERIFIED",
     "initial_branch": "main",
     "implementation_branch_policy": "Separate implementation branch; push each round; no automatic merge",
-    "sync_status": "VERIFIED R01-inc1 content commit; current closure metadata identity from git HEAD and GitHub branch ref",
+    "sync_status": "R01-inc1 verified; R03-inc1 source/evidence pending exact normal commit/push/remote verification",
     "head_identity": "Use git HEAD and the remote ref; do not store a self-referential commit hash",
     "branch": "impl/mod-console",
     "verified_content_commits": {
@@ -379,25 +442,49 @@
         "method_change": "Inspect fresh private output identity/header/hash and official cache location; classify exact pair only, no native rerun",
         "status": "RESOLVED_23_NAMESPACE_12_ROOT_CHECKS_PASS",
         "evidence": ".local/r04/gpu/47d28f1adf0f4483b326a81b63f9a1cf/root-validation-failure.json"
+      },
+      {
+        "round": "R03-inc1",
+        "target": "Private increment script import",
+        "failure_class": "MODULE_IMPORT_ROOT_REQUIRED",
+        "method": "python3 -B .local/r03/inc1/build.py",
+        "resolution": "Task-local PYTHONPATH=\"$PWD\"; complete build exit0; no global change"
+      },
+      {
+        "round": "R03-inc1",
+        "target": "Raw retoc independent crosscheck",
+        "failure_class": "RETOC_LIST_REQUIRES_UCAS",
+        "method": "Exact raw UTOC through memfd; retoc list --path --hash --size",
+        "exit": 1,
+        "resolution": "End this metadata-only route; no unchanged retry, fake UCAS or asset extraction; full new raw external crosscheck NOT_RUN",
+        "evidence": ".local/r03/inc1/retoc-crosscheck.json"
+      },
+      {
+        "round": "R03-inc1",
+        "target": "Supplemental PAK match count",
+        "failure_class": "EMPTY_DEFAULTDICT_KEYS_COUNTED_AS_MATCHES",
+        "method": "Initial metadata match summary counted empty keys",
+        "resolution": "Nonempty provider evidence gives0matches and7remaining keys; corrected before authoritative publication",
+        "evidence": ".local/r03/inc1/added-pak-checks.json"
       }
     ],
     "token_cost_telemetry": {
-      "native_goal_tokens_observed": 2108322,
-      "source": "native get_goal at R01-inc1 closure checkpoint,updatedAt1791377636",
+      "native_goal_tokens_observed": 2235577,
+      "source": "native get_goal at R03-inc1 closure checkpoint,updatedAt1791378604",
       "coverage": "Cumulative tokens/time reported by native Goal; per-role and cost coverage unavailable; no manual token estimate",
-      "native_goal_time_seconds_observed": 9544,
+      "native_goal_time_seconds_observed": 10512,
       "active_execution_time": "UNAVAILABLE; wall time does not prove active minutes",
       "cost": "UNAVAILABLE",
       "budget": "No explicit token budget; native remainingTokens null"
     },
-    "execution_units_closed": 11,
+    "execution_units_closed": 12,
     "health_checkpoint": {
       "first_250k_rebaseline_completed": true,
       "status": "HEALTHY",
       "baseline_tokens_observed": 289664,
       "checkpoint": "R03-a closure",
       "reason": "Material candidates, new first-time checks and completed delivery units; no equivalent unresolved retries",
-      "next_checkpoint": "No new health trigger: new user input organization and material static checks/delivery; no equivalent no-progress failures or unaccepted review-repair loop",
+      "next_checkpoint": "No equivalent no-progress loop: new classifier/index/declared-reference evidence and bounded passing checks delivered. Raw-retoc route ended on prerequisite refusal; temporary match-count defect diagnosed/corrected without asset changes",
       "cooldown_rule": "75,000 additional tokens or 30 directly evidenced active minutes; newly accepted milestone resets no-progress facts"
     }
   },
@@ -426,31 +513,30 @@
     },
     {
       "scope": "Original CNS configuration and declared assets",
-      "reason": "Original18 trailing-comma configurations plus1added configuration and BPearl duplicate MaterialToggles need validation. Original34 declared references remain outside installed indexes; added8CNS rows are static observations only Prior corrected virtual-path mapping resolved222 mismatches; that evidence is retained.",
+      "reason": "Original18 trailing-comma configurations plus1added and original1duplicate MaterialToggles deferral retained. Original34installed-reference findings retained; added17reference occurrences/7distinct keys remain absent from current IoStore and checked PAK metadata. Prior222virtual-path corrections retained. No source repair or runtime compatibility accepted",
       "state": "DISCOVERY_VERIFIED; sources unchanged; runtime and repair not accepted",
-      "evidence": "docs/evidence/R01-inc1.json"
+      "evidence": "docs/evidence/R03-inc1.json"
     }
   ],
-  "next_action": "Extend static resource/dependency/conflict evidence to23added canonical records, preserving original450 graph and failures; then resume exact Windows/D3D12 and legitimate protected game/save/Cloud runtime prerequisites",
+  "next_action": "Prepare self-authored Windows/D3D12 device probe and exact private Proton graphics route with existing toolchain; narrow legitimate game/save/Cloud launch preflight. Preserve7added unresolved resource keys and original unknown prerequisites for subsequent per-version repair; no game/account/Cloud/activation changes",
   "updated_on": "2026-10-07",
   "execution": {
     "owner_thread": "01a115db-7ff8-70c1-8122-cdc330aaf5c5",
     "lane": "DIRECT",
+    "lane_reason": "Read-only archive diagnostics and narrowly bounded offline provider/target classification repair; no live game/config/deployment behavior changes",
     "owned_paths": [
+      "src/policy/interfaces.py",
+      "tests/test_interfaces.py",
+      "src/policy/README.md",
+      "docs/evidence/R03-inc1.json",
       "PROJECT_STATE.json",
-      "docs/REQUIREMENTS.md",
-      "docs/ARCHITECTURE.md",
-      "docs/UI_SPEC.md",
-      "docs/REUSE.md",
-      "docs/evidence/R01-inc1.json",
-      ".local/r01/inc1/",
-      ".local/r02/inc1/"
+      ".local/r03/inc1/"
     ],
-    "entry_preimage": "3760316defe415fb1cce6b883ed439b9c8703c04; R04-d remote==local verified; sole existing root owns repo/state; Downloads/game/old snapshots remain read-only",
-    "external_scope": "Read-only original/new archives and necessary author/reference pages. No extraction to game, third-party code/UI/binary copies, launch, installation, source deletion, account/settings change or global configuration",
-    "acceptance": "All newly downloaded inputs hashed/decoded and counted as an increment, original569/450 denominators and failures retained; new/duplicate/type/version/provenance/requirements/management references visible; user confirmed app-like in-game console with separate compatible profiles and functional categories recorded without claiming incompatible stacks co-load or hot-switch",
-    "execution_source": "User steering 2026-10-07: add newly downloaded MODs/management references; app-like in-game list, provenance and isolated incompatible MOD systems; active full Goal preserved",
-    "next_evidence": "Extend static resource/dependency/conflict evidence to23added canonical records, preserving original450 graph and failures; then resume exact Windows/D3D12 and legitimate protected game/save/Cloud runtime prerequisites"
+    "entry_preimage": "10a8ce5223661c8ea09d01e8b5172cab2c4fedce; clean owned repository; native task listing matches this sole stellar-mod-console task; original/new archives, prior evidence and game read-only",
+    "external_scope": "Read-only original and added archive metadata/scripts and current game metadata; source sync to authorized impl/mod-console. No installation, launch, asset/source redistribution, account/prefix/save/config changes",
+    "acceptance": "New28container identifiers/resource metadata combined with original729; same original5exclusive groups retained; new23included in full473relevant candidate coverage; modules distinguished from preset extensions and exact script-target overlaps visible; missing/unknown/version/body/DLC/runtime limitations and prior failures retained",
+    "execution_source": "Active Goal continuation after user-added25inputs and clarified isolated app/profile/provenance requirements",
+    "next_evidence": "Prepare self-authored Windows/D3D12 device probe and exact private Proton graphics route with existing toolchain; narrow legitimate game/save/Cloud launch preflight. Preserve7added unresolved resource keys and original unknown prerequisites for subsequent per-version repair; no game/account/Cloud/activation changes"
   },
   "rounds": {
     "R01": {
@@ -477,26 +563,28 @@
       "pak_index": ".local/r02/pak-index.json"
     },
     "R03": {
-      "status": "PARTIAL",
+      "status": "PARTIAL_FULL_INCREMENT_STATIC_INDEXED",
       "lane": "DIRECT",
-      "evidence": "docs/evidence/R03.json",
-      "private_graph": ".local/r03/conflicts.json",
-      "closed_unit": "R03-c",
+      "evidence": "docs/evidence/R03-inc1.json",
+      "private_graph": ".local/r03/inc1/conflicts.json",
+      "closed_unit": "R03-inc1",
       "remaining": "Exact dynamic/configured keybinds and actual property-write ownership, native/Blueprint/desktop-tool interfaces, raw CNS format repair choices, resource/DLC/body prerequisites and real runtime compatibility",
-      "sync": "VERIFIED R03-c GitHub impl/mod-console == local f0ed872a5944e869e30444bf73e51f676d6ae344",
+      "sync": "PENDING_R03_INC1_PUSH",
       "closed_units": [
         "R03-a",
         "R03-b",
-        "R03-c"
+        "R03-c",
+        "R03-inc1"
       ],
-      "resource_index": ".local/r03/resources.json",
+      "resource_index": ".local/r03/inc1/resources.json",
       "resource_checks": [
         ".local/r03/resource-checks.json",
         ".local/r03/historical-resource-checks.json",
         ".local/r03/additional-resource-checks.json"
       ],
-      "interface_index": ".local/r03/interfaces.json",
-      "interface_checks": ".local/r03/interface-checks.json"
+      "interface_index": ".local/r03/inc1/interfaces.json",
+      "interface_checks": ".local/r03/inc1/interface-checks.json",
+      "increment_evidence": "docs/evidence/R03-inc1.json"
     },
     "R04": {
       "status": "PARTIAL_NATIVE_GPU_ONLY",
@@ -532,16 +620,16 @@
     "completion_percent": null,
     "reason": "A01-A14 heterogeneous end-to-end results; no final result accepted yet",
     "planning_rounds": 1,
-    "execution_rounds_closed": 11,
-    "last_closed": "R01-inc1",
+    "execution_rounds_closed": 12,
+    "last_closed": "R03-inc1",
     "remaining_round_estimate": null,
     "forecast_confidence": "unknown; no final end-to-end acceptance throughput; incomplete prerequisites and heterogeneous remaining work",
-    "previous_goal_turn": "PROGRESS:25new archives hashed/decoded,23canonical records+2aliases organized,18Root checks PASS; app/whole-profile/category/provenance requirements and management references recorded; originalA01-A14 unchanged0/14",
-    "total_closed_units_including_planning": 12,
+    "previous_goal_turn": "PROGRESS:473relevant candidates/757raw containers indexed;619interface documents preserved;6tests,30Root checks and18bad pairs pass. Module entrypoints/extensions and44script-target overlaps separated. Original/fullGoal0/14 unchanged; new raw retoc crosscheck remains NOT_RUN",
+    "total_closed_units_including_planning": 13,
     "changes": {
-      "execution": "Current source/canonical organization complete; profile/UI implementation and runtime remain NOT_RUN; no final A01-A14 acceptance increment",
-      "evidence": "Original569 source records and542 canonical records preserved;594stamps/22protectedhashes/1330game entries unchanged; old failures retained plus1new CNS format issue",
-      "scope": "User-authorized25additional inputs/23canonical candidates; source569→594,relevant450→473; original14acceptance results retained. Completion-point decomposition unknown for heterogeneous unweighted outcomes"
+      "execution": "Narrow offline classification repaired; new28UTOCs/28PAKs and full619interfaces analyzed; no final A01-A14 acceptance gain",
+      "evidence": "Original729containers,567documents,5groups and failures retained;17new reference occurrences/7unique keys unresolved. Incorrect temporary PAK match count corrected before publication; raw retoc crosscheck refusal retained separately",
+      "scope": "No new target scope this unit; current473relevant candidate basis and original14requirements retained; percentage decomposition unknown for heterogeneous unweighted outcomes"
     },
     "remaining_percentage": null
   },
