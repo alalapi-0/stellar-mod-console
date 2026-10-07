@@ -15,9 +15,9 @@
   "goal_mode_started": true,
   "implementation_started": true,
   "phase": "P1",
-  "current_round": "R04-f",
-  "round_status": "COMPLETE_FIXED_WINDOWS_D3D12_PREREQUISITE; FULL_GOAL_PARTIAL",
-  "next_round": "R04-g",
+  "current_round": "R04-g",
+  "round_status": "COMPLETE_READONLY_RAW_CONFIGURATION_PREVIEW; FULL_GOAL_PARTIAL",
+  "next_round": "R04-h",
   "protected": [
     "Existing game files and saves",
     "Original MOD packages and downloads",
@@ -296,8 +296,8 @@
     },
     "A03": {
       "status": "PARTIAL",
-      "evidence": "docs/evidence/R03-inc1.json",
-      "note": "Full473relevant static input basis indexed; original5exclusive groups still reject18bad pairs. Entry modules and extensions separated,44script target overlaps visible. Complete policy/runtime operation entries and actual compatibility remain NOT_IMPLEMENTED/NOT_RUN"
+      "evidence": "docs/evidence/R04-g.json",
+      "note": "473source rawconfiguration previews; whole/component scope and explicit candidate-provider closure,18knownbadpairsreject and18replacementimpacts verified. Unknown resource/script/ABI/runtime remains blocked; all runtime/UI/import/hotkey/automation/application entries NOT_IMPLEMENTED/NOT_RUN."
     },
     "A04": {
       "status": "PARTIAL",
@@ -361,7 +361,7 @@
     "visibility": "PUBLIC_VERIFIED",
     "initial_branch": "main",
     "implementation_branch_policy": "Separate implementation branch; push each round; no automatic merge",
-    "sync_status": "VERIFIED R04-f content commit; current closure metadata identity from git HEAD and GitHub branch ref",
+    "sync_status": "PENDING R04-g exact source commit and GitHub ref verification",
     "head_identity": "Use git HEAD and the remote ref; do not store a self-referential commit hash",
     "branch": "impl/mod-console",
     "verified_content_commits": {
@@ -545,25 +545,38 @@
         "failure_class": "Own PE exits5without structured stdout after actual resources initialize; incorrect by-value8byte struct return",
         "resolution": "Pinned primary Microsoft header explicitly defines Windows vtable output-pointer signature; self-authored call corrected, actual D3D12 clear/copy/byte proof passes. Previous result parse error retained as secondary diagnosis.",
         "evidence": "docs/evidence/R04-f.json"
+      },
+      {
+        "round": "R04-g",
+        "target": "Private static preview evidence directory",
+        "failure_class": "EXISTING_BOOTSTRAP_DIRECTORY_REFUSED_EXCLUSIVE_MKDIR",
+        "method": "mkdir .local/r04/profiles exist_ok=False; failed before reading/writing test inputs or outputs",
+        "resolution": "Use distinct owned .local/r04/configuration-preview; historical bootstrap profiles preserved"
+      },
+      {
+        "round": "R04-g",
+        "target": "Local metadata/doc helpers",
+        "failure_class": "STATE_OWNER_KEY_NAME_AND_DOCUMENT_PATCH_CONTEXT_MISMATCH",
+        "resolution": "Wrong key read and literal patch refused before intended target effects; corrected actual ownership key and full paragraph context. No acceptance weakening or runtime retry."
       }
     ],
     "token_cost_telemetry": {
-      "native_goal_tokens_observed": 2694142,
-      "source": "Native get_goal at R04-f final source-delivery closure,updatedAt1791381891",
+      "native_goal_tokens_observed": 2828261,
+      "source": "Native get_goal at R04-g closure preparation,updatedAt1791382829",
       "coverage": "Cumulative tokens/time reported by native Goal; per-role and cost coverage unavailable; no manual token estimate",
-      "native_goal_time_seconds_observed": 13799,
+      "native_goal_time_seconds_observed": 14737,
       "active_execution_time": "UNAVAILABLE; wall time does not prove active minutes",
       "cost": "UNAVAILABLE",
       "budget": "No explicit token budget; native remainingTokens null"
     },
-    "execution_units_closed": 14,
+    "execution_units_closed": 15,
     "health_checkpoint": {
       "first_250k_rebaseline_completed": true,
       "status": "HEALTHY",
       "baseline_tokens_observed": 289664,
       "checkpoint": "R03-a closure",
-      "reason": "Material first-time Windows graphics acceptance and diagnosed/repaired per-method prerequisites; no equivalent unresolved no-progress loop",
-      "next_checkpoint": "Private Windows GPU prerequisite materially accepted; actual D3D12 clear/copy/readback and closed graphics failures. Continue legitimate game/save/Cloud route; no unchanged retry.",
+      "reason": "Material read-only fullconfiguration capability and new source/CLI regression evidence; all original final acceptance pending. No equivalent no-progress loop or unchanged runtime retry.",
+      "next_checkpoint": "Derive the exact current installed/converted namespace from frozen activation and file/resource/interface hashes, map source/file providers and produce a current-vs-candidate impact plan. Real Steam/game launch remains NOT_RUN until legitimate local and Cloud save isolation is established; no account/Cloud/session/activation settings change.",
       "cooldown_rule": "75,000 additional tokens or 30 directly evidenced active minutes; newly accepted milestone resets no-progress facts"
     }
   },
@@ -585,10 +598,10 @@
     },
     {
       "scope": "Runtime game tests",
-      "reason": "Private Windows/D3D12 device and exact NVIDIA GPU transfer accepted. Real save/loader backups protected; exact legitimate Steam/game/display route and local/Cloud progress isolation still unestablished. No real account/Cloud/session/activation changes authorized.",
-      "state": "GAME_NOT_RUN; WINDOWS_GPU_PREREQUISITE_ACCEPTED",
-      "evidence": "docs/evidence/R04-f.json",
-      "next": "Prepare exact legitimate Steam/game/display route with local and Cloud progress isolation, using accepted Windows graphics prerequisite. Preserve original/new MOD unknown resource,body,DLC/loader requirements. No real account/Cloud/session/activation setting changes without exact authority."
+      "reason": "Windows GPU prerequisite accepted; currentmanifest/build and exactexistinglegitimateclient identity rechecked. ActualCloud API vsAutoCloud invocation/storage boundaries unproven; privateprefixalone insufficient. Existing settings/session/activation unchanged, no game launched.",
+      "state": "GAME_NOT_RUN; WINDOWS_GPU_AND_RAW_CONFIGURATION_PREVIEW_ACCEPTED",
+      "evidence": "docs/evidence/R04-g.json",
+      "next": "Derive the exact current installed/converted namespace from frozen activation and file/resource/interface hashes, map source/file providers and produce a current-vs-candidate impact plan. Real Steam/game launch remains NOT_RUN until legitimate local and Cloud save isolation is established; no account/Cloud/session/activation settings change."
     },
     {
       "scope": "Original CNS configuration and declared assets",
@@ -597,28 +610,26 @@
       "evidence": "docs/evidence/R03-inc1.json"
     }
   ],
-  "next_action": "Prepare exact legitimate Steam/game/display route with local and Cloud progress isolation, using accepted Windows graphics prerequisite. Preserve original/new MOD unknown resource,body,DLC/loader requirements. No real account/Cloud/session/activation setting changes without exact authority.",
+  "next_action": "Derive the exact current installed/converted namespace from frozen activation and file/resource/interface hashes, map source/file providers and produce a current-vs-candidate impact plan. Real Steam/game launch remains NOT_RUN until legitimate local and Cloud save isolation is established; no account/Cloud/session/activation settings change.",
   "updated_on": "2026-10-07",
   "execution": {
-    "owner_thread": "01a115db-7ff8-70c1-8122-cdc330aaf5c5",
     "lane": "DIRECT",
-    "lane_reason": "Fixed own PE in fresh private Proton/PID/network namespace with licensed private Xvfb memory framebuffer and generated test-only X authority. No host display, existing credentials/accounts, game/client, global configuration or user progress effects. Historical gates untouched.",
+    "entry_preimage": "7c9ee2257168129ebcc19f7a5aac21002977ed7c; clean same root task; state sha256 5342f934cdac0efcf0004d3184a842ee33117e3cfb1d845c4ec8e0c7bf9b39f4",
+    "external_scope": "Read-only original catalog/conflict/interface metadata and current game manifest/known exact Steam process identity; owned private synthetic/candidate plans only. No Steam IPC, config, Cloud, authentication/session access/change, game/client launch or deployment. Source sync authorized.",
+    "acceptance": "Full candidate profile preview from selected packages/components, exact known exclusions, required-provider candidates and raw script-provider impact; failure retains current profile and never authorizes application. Regressions plus fixed full473catalog coverage. Legitimate game/Cloud path classified with current read-only evidence, no real runtime acceptance.",
+    "execution_source": "Native Goal continuation after exact R04-f remote closure",
+    "next_evidence": "Derive the exact current installed/converted namespace from frozen activation and file/resource/interface hashes, map source/file providers and produce a current-vs-candidate impact plan. Real Steam/game launch remains NOT_RUN until legitimate local and Cloud save isolation is established; no account/Cloud/session/activation settings change.",
+    "result": "Accepted read-only preview:473sources,5separateloadercandidates,18badpairsrejected,18switchesremoveold,10profile+2staticregressions,Root9/9,22hashes/1330metadata unchanged. No deployment/game/cloud/compatibility acceptance.",
+    "owner_thread": "01a115db-7ff8-70c1-8122-cdc330aaf5c5",
     "owned_paths": [
-      "src/testing/d3d12_probe.py",
-      "src/testing/d3d12_probe.c",
-      "tests/test_d3d12_probe.py",
-      "src/testing/README.md",
-      "docs/evidence/R04-f.json",
+      "src/policy/profiles.py",
+      "tests/test_profiles.py",
+      "src/policy/README.md",
+      "docs/evidence/R04-g.json",
       "PROJECT_STATE.json",
-      ".local/r04/graphics/",
-      ".local/r04/d3d12/"
+      ".local/r04/configuration-preview/"
     ],
-    "entry_preimage": "6fd103ddbc411665ef274b26c237ff71e7440c1e; clean repository, same root native task; previous unit source/records and real data preserved",
-    "external_scope": "Download hash-pinned Ubuntu Xvfb package to owned private tool directory and extract licensed binary/notice without installation or package scripts; existing system shared libraries read-only. New private virtual display and test-only authority, no host socket/auth/config access; fixed own Windows probe, no arbitrary app/game/client.",
-    "acceptance": "Actual private X display readiness and unauthorized-client denial, original boundary/protection/teardown, and fixed NVIDIA D3D12 device/clear/copy/readback if route becomes available; retain exact prerequisite failure otherwise. No game/MOD/in-game UI acceptance.",
-    "execution_source": "Active Goal continuation after R04-e exact6fd103dremote closure",
-    "next_evidence": "Prepare exact legitimate Steam/game/display route with local and Cloud progress isolation, using accepted Windows graphics prerequisite. Preserve original/new MOD unknown resource,body,DLC/loader requirements. No real account/Cloud/session/activation setting changes without exact authority.",
-    "result": "Exact fixed candidate accepted: private Xdisplay5/5,3x29boundary,Root22/22,7regressions; real NVIDIA D3D12_12_0/32x32clear/GPUcopy/exact4096readback. Previous3failed profiles retained. Game/MOD/UI NOT_RUN."
+    "lane_reason": "Read-only raw discovery metadata and profile impact preview; owned private reports only. No deployment/runtime/Steam IPC or settings/credential effects, clear recovery and static acceptance. Historical governed launch gates unchanged."
   },
   "rounds": {
     "R01": {
@@ -669,23 +680,24 @@
       "increment_evidence": "docs/evidence/R03-inc1.json"
     },
     "R04": {
-      "status": "PARTIAL_ACCEPTED_WINDOWS_GPU; GAME_AND_MOD_COMBINATIONS_NOT_RUN",
-      "preparation": "R04-b private prefix/fixed CLI accepted; R04-c3PE images/79static dependencies; R04-d real NVIDIA offscreen Vulkan clear/transfer/exact4096-byte readback passed,23namespace+12Rootchecks,all protected inputs unchanged; R04-e own Windows diagnostic executes,2headless graphics failures retained,27boundary/11Rootchecks each,5tests pass; D3D12 not accepted; R04-f acceptedWindowsD3D12_12_0/NVIDIA32x32clear/copy/exact4096readback,privateX5/5,3x29boundary,Root22/22,7tests",
-      "remaining": "GPUwindow presentation/fonts/input/performance and legitimate isolatedSteam/game/save/Cloud route; actualloader/MOD/coldstart/stableprofiles NOT_RUN",
+      "status": "PARTIAL_WINDOWS_GPU_AND_RAW_PROFILE_PREVIEW; GAME_AND_MOD_COMBINATIONS_NOT_RUN",
+      "preparation": "R04-b private prefix/fixed CLI accepted; R04-c3PE images/79static dependencies; R04-d real NVIDIA offscreen Vulkan clear/transfer/exact4096-byte readback passed,23namespace+12Rootchecks,all protected inputs unchanged; R04-e own Windows diagnostic executes,2headless graphics failures retained,27boundary/11Rootchecks each,5tests pass; D3D12 not accepted; R04-f acceptedWindowsD3D12_12_0/NVIDIA32x32clear/copy/exact4096readback,privateX5/5,3x29boundary,Root22/22,7tests; R04-g rawwhole-vs-component/configurationpreview473sources/5loadercandidates,18exclusions/18replacements,10+2tests/Root9checks",
+      "remaining": "Exact current installed/converted configuration mapping; legitimate isolatedSteam/game/save/Cloud route; GPUwindow presentation/fonts/input/performance and actual loader/MOD/coldstart/stableprofiles NOT_RUN",
       "lane": "PER_UNIT",
       "contract": "docs/contracts/R04-b.json",
-      "evidence": "docs/evidence/R04-f.json",
-      "private_evidence": ".local/r04/d3d12/721b5c146d2b419d8bdaa4568e1e9c3a/root-verification.json",
-      "closed_unit": "R04-f",
+      "evidence": "docs/evidence/R04-g.json",
+      "private_evidence": ".local/r04/configuration-preview/verification.json",
+      "closed_unit": "R04-g",
       "closed_units": [
         "R04-a",
         "R04-b",
         "R04-c",
         "R04-d",
         "R04-e",
-        "R04-f"
+        "R04-f",
+        "R04-g"
       ],
-      "sync": "VERIFIED R04-f GitHub impl/mod-console == local aba37ea95b244e96fa88b85d0de2e7c2eb09a906"
+      "sync": "PENDING R04-g normal source push"
     },
     "R01-inc1": {
       "status": "COMPLETE_STATIC_ORGANIZATION_AND_REQUIREMENTS",
@@ -704,16 +716,16 @@
     "completion_percent": null,
     "reason": "A01-A14 heterogeneous end-to-end results; no final result accepted yet",
     "planning_rounds": 1,
-    "execution_rounds_closed": 14,
-    "last_closed": "R04-f",
+    "execution_rounds_closed": 15,
+    "last_closed": "R04-g",
     "remaining_round_estimate": null,
     "forecast_confidence": "unknown; no final end-to-end acceptance throughput; incomplete prerequisites and heterogeneous remaining work",
-    "previous_goal_turn": "PROGRESS: Accepted private WindowsD3D12_12_0/RTX5070Ti clear/copy/exact4096readback,3x29boundary,X5/5,Root22/22,7tests; protected originals unchanged. R04-f content aba37ea95b244e96fa88b85d0de2e7c2eb09a906 remoteverified; originalA01-A14remain0/14",
-    "total_closed_units_including_planning": 15,
+    "previous_goal_turn": "PROGRESS: Full raw configuration/profile preview accepted,473sources/5loadercandidates,18exclusions/18replacementimpacts,10+2tests/Root9checks; no full A01-A14 gain. Source sync pending",
+    "total_closed_units_including_planning": 16,
     "changes": {
-      "execution": "First actual Windows D3D12 GPU prerequisite accepted with exact readback and all candidate/protection/teardown checks; no final A01-A14 acceptance gain",
-      "evidence": "Private memory display, real NVIDIA identity and explicit WindowsCOM output-pointer signature resolve prior failure paths; previous graphics failures retained and no game acceptance inferred",
-      "scope": "No full-goal scope change; original14heterogeneous requirements and473relevant target basis remain. Completion/remaining percentages and forecast unknown"
+      "execution": "Candidate dependency/provider closure and whole-vs-component switch preview implemented/verified; actual game integration and final14results remain pending",
+      "evidence": "New exact473source/5loadercandidate coverage and source/CLI/protection proof; actual Steam identity/build refreshed. Existing Cloud/import uncertainty retained, not reclassified as safe",
+      "scope": "No full-goal scope or original14denominator change; completion/remaining percentages and remaining-round forecast unknown"
     },
     "remaining_percentage": null
   },

@@ -1,0 +1,177 @@
+{
+  "unit": "R04-g",
+  "lane": "DIRECT",
+  "baseline_commit": "7c9ee2257168129ebcc19f7a5aac21002977ed7c",
+  "scope": "Read-only raw configuration/profile previews and current legitimate game route prerequisites; no deployment or runtime launch",
+  "candidate": {
+    "source_sha256": {
+      "src/policy/profiles.py": "c8a5e9f81e2eb79d8f9dc1649d8bfaf156fbcb6cf37c14d9a103cfbdf15c2366",
+      "tests/test_profiles.py": "bf67471300c68e5ebe12429abe61544dfbf37a183f459600db9d27a106b28567"
+    },
+    "input_sha256": {
+      "catalog": "aa80bbcdfd63ed26e30f361e819de3454e28614ca3b20d15e57296d225a39ad5",
+      "graph": "49cc5d73355e649a9f288887eeb713d1219d643403cef25ff895602f207d90b9",
+      "interfaces": "bddd1e6574e43608b2c8079feaa34ab8df1f1fa5baebc8f91d4678e26b61b31a"
+    },
+    "schema": "Experimental discovery preview, not the R08 runtime adapter contract",
+    "profile_meaning": "Whole package selects all raw containers and bundled scripts; component selects only that container/loader. Source package is provenance, not implicit script activation.",
+    "dependency_meaning": "Explicit candidate-provider closure only; no automatic version choice, no satisfied dependency claim from filename or installed presence.",
+    "source_traceability": "Original path, hash, aliases, author-page evidence and filename-hint authority retained in private plans. Exact purpose remains UNKNOWN when not established.",
+    "decision": "All can_apply=false; static violation REJECTED_STATIC, remaining uncertainty REVIEW_REQUIRED. Empty input is only a preview.",
+    "replacement": "Addition/removal of references and components plus explicit provider changes; current input retained unchanged. Changed raw configurations require exit-game application or remain unsupported."
+  },
+  "root_validation": {
+    "checks": {
+      "all_18_known_bad_pairs_rejected": true,
+      "all_18_replacements_remove_old_component": true,
+      "all_473_relevant_sources_visible": true,
+      "actual_cli_preview_exit0": true,
+      "cli_refuses_existing_result_overwrite": true,
+      "protected_22_hashes_and_1330_metadata_unchanged": true,
+      "metadata_inputs_hashes_unchanged": true,
+      "all_current_original_inputs_retained": true,
+      "five_loader_bundles_have_separate_reviewable_plans": true
+    },
+    "passed": 9,
+    "required": 9,
+    "regression_tests": {
+      "profiles": 10,
+      "static_policy": 2,
+      "exit": 0
+    },
+    "known_groups": 5,
+    "known_bad_pairs_rejected": 18,
+    "replacement_previews_remove_old_components": 18,
+    "relevant_sources_visible": 473,
+    "original_source_basis": 450,
+    "increment_source_basis": 23,
+    "all_input_references_retained": 594,
+    "raw_loader_bundle_candidates": 5,
+    "actual_cli_exit": 0,
+    "actual_cli_report_matches_current_source": true,
+    "existing_report_overwrite_negative_exit": 1,
+    "protected_original_and_save_hashes": 22,
+    "protected_game_metadata_entries": 1330,
+    "protected_preimages_unchanged": true,
+    "protected_scope": "Exact inherited22hashes and1330listedmetadata; no new fullProton hashscan, no runtime effects",
+    "metadata_inputs_unchanged": true
+  },
+  "real_runtime_route": {
+    "current_manifest_appid": 3489700,
+    "current_manifest_buildid": 24463856,
+    "existing_legitimate_client_identity_rechecked": true,
+    "client_credential_values_or_config_read": false,
+    "cloud_enabled_current_value": "NOT_QUERIED",
+    "cloud_api_vs_autocloud_actual_invocations": "UNPROVED; static RemoteStorage016 import retained fromR04-c",
+    "fresh_prefix_only": "Not accepted as local and Steam-client-mediated save isolation",
+    "restart": "Official API can relaunch the installed library executable outside a private caller configuration. No restart invoked, no steam_appid bypass or patch added.",
+    "cloud_setting": "Current project forbids changing Steam account/Cloud settings to simplify tests. Provider API also requires direct explicit user request for SetCloudEnabledForApp. No setting changed or change route prepared/approved.",
+    "next_safe_work": "Map exact current installed converted/activation namespace to source candidates and file providers; retain real game/Cloud launch as a separate protected dependency."
+  },
+  "failures_retained": [
+    {
+      "target": "Evidence directory",
+      "class": "Historicalbootstrapprofilesalreadyexists",
+      "resolution": "Exclusive mkdir refused before inputs/output; use separateownedconfiguration-preview directory, no previous profile reuse"
+    },
+    {
+      "target": "Local read/doc patch helpers",
+      "class": "Wrong owner key and incomplete literal documentation patch context",
+      "resolution": "First reads/patch refused before affecting those targets; use actual state ownership key and full paragraph context"
+    }
+  ],
+  "private_evidence": [
+    {
+      "path": ".local/r04/configuration-preview/7840f3a2b0d93e6af183-preview.json",
+      "sha256": "f59fcc8946a6a13013e00ae22caa35a763229bfb315084a6752b784dcc911a50"
+    },
+    {
+      "path": ".local/r04/configuration-preview/7840f3a2b0d93e6af183-requested.json",
+      "sha256": "009fbf0ea0bec65413e64a429d73ff2d78933ec8bede893d9aed636bdc4a5a37"
+    },
+    {
+      "path": ".local/r04/configuration-preview/a0ad76bb565552e7a661-preview.json",
+      "sha256": "496e31f04acdc106b0a3a419b94dad4f96a204b343b2fdf56e974d61f1bfae8f"
+    },
+    {
+      "path": ".local/r04/configuration-preview/a0ad76bb565552e7a661-requested.json",
+      "sha256": "a81aec97ee1ef09a91fc9fe6ff3fde9912ab6fedf9ed881baddc784f5b569a76"
+    },
+    {
+      "path": ".local/r04/configuration-preview/cf11927cd2b039942c67-preview.json",
+      "sha256": "020ac82bdb361b53913d9075082961c086af014345335c93ce494004e92794c7"
+    },
+    {
+      "path": ".local/r04/configuration-preview/cf11927cd2b039942c67-requested.json",
+      "sha256": "52a28135a6cbd720d07c9dcf65ae0de3431a6cfffbd2d9f7f8e635f02971c067"
+    },
+    {
+      "path": ".local/r04/configuration-preview/cli-checks.json",
+      "sha256": "048edface8c228b26a2a31086abf7bb8d0fe33933a4ce964bd2f7eb88b5f7e2d"
+    },
+    {
+      "path": ".local/r04/configuration-preview/cli-final-preview.json",
+      "sha256": "84276a5a694843dc9c75f4479a9d73fc924b8860fb858687c30e48310ebd9709"
+    },
+    {
+      "path": ".local/r04/configuration-preview/cli-preview.json",
+      "sha256": "84276a5a694843dc9c75f4479a9d73fc924b8860fb858687c30e48310ebd9709"
+    },
+    {
+      "path": ".local/r04/configuration-preview/d7276006697282b73f29-preview.json",
+      "sha256": "3958d9826f176f7b7d72f5a6ba532766965f12a58f9b64da7198365e9a65d641"
+    },
+    {
+      "path": ".local/r04/configuration-preview/d7276006697282b73f29-requested.json",
+      "sha256": "9eef89e9210c1d2627d461a8ab2712d248d5eba5552e664365063600f766a943"
+    },
+    {
+      "path": ".local/r04/configuration-preview/de68b165199e9298620a-preview.json",
+      "sha256": "ae6543af0a467715946438575eb21d33b5f188aac6b4ebce46503cf2f815bb3d"
+    },
+    {
+      "path": ".local/r04/configuration-preview/de68b165199e9298620a-requested.json",
+      "sha256": "399bbcb06062dc83a349665af0a9e982b8dd07fe864d5a69f6d3fb8791c56e76"
+    },
+    {
+      "path": ".local/r04/configuration-preview/empty.json",
+      "sha256": "d85104f604ba7f6be32f13cbea2755efbec04034fffeee60eb9b3f5ced7833b6"
+    },
+    {
+      "path": ".local/r04/configuration-preview/protected-after.json",
+      "sha256": "6921c2a111098563bcf9f6360ff8fc0bb97ee3138aa116b6563fb437a32628dc"
+    },
+    {
+      "path": ".local/r04/configuration-preview/protected-before.json",
+      "sha256": "6921c2a111098563bcf9f6360ff8fc0bb97ee3138aa116b6563fb437a32628dc"
+    },
+    {
+      "path": ".local/r04/configuration-preview/verification.json",
+      "sha256": "78c9f58ba0849164560c38df17c62c8017a87d73909aeacf0437133e4960e224"
+    }
+  ],
+  "not_run": [
+    "Current installed profile selection/runtime mapping",
+    "Actual Steam or game coldstart",
+    "Local/Cloud save isolation",
+    "Loader ABI/new-old MOD compatibility",
+    "Game-internal console, Chinese/gamepad/input/visual/performance tests",
+    "Deployment, restore and full R10 shared runtime operation entries"
+  ],
+  "source_reuse": "Self-authored metadata planner/tests only; no third-party source, UI, assets or binary copied",
+  "sources": [
+    {
+      "title": "Steam API initialization/restart",
+      "url": "https://partner.steamgames.com/doc/api/steam_api"
+    },
+    {
+      "title": "Steam Cloud methods",
+      "url": "https://partner.steamgames.com/doc/features/cloud"
+    },
+    {
+      "title": "Remote Storage per-app Cloud toggle authority",
+      "url": "https://partner.steamgames.com/doc/api/ISteamRemoteStorage#SetCloudEnabledForApp"
+    }
+  ],
+  "product_acceptance": "Original A01-A14 unchanged, final accepted0/14; Goal active"
+}

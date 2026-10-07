@@ -39,3 +39,29 @@ Lua 调查使用词法分析，不运行脚本；动态属性、包装函数、�
 原配置的尾逗号只可移除后恢复调查元数据，明确保留严格格式失败；不修改源配置，不授权应用。重复 JSON 键拒绝解析，防止无声丢掉作者声明。顶层记录、声明的变体槽、实际可用选项和运行支持分别统计。
 
 资源依赖采用 Unreal 虚拟路径匹配：不同作者项目的 `Project/Content` 映射到 `/Game`，Engine 和插件保持独立命名空间。原始目录路径仍用于追溯。R02-b 修正了此前仅按物理路径查找造成的 222 条未匹配引用；余下 34 条还没有安装资源证据，不据此推断玩家是否拥有 DLC。路径存在仍不证明身体、骨骼或物理配套。
+
+R04-g 增加整套配置的只读预览：
+
+```sh
+python3 -B -m src.policy.profiles --catalog .local/r02/inc1/catalog.json --graph .local/r03/inc1/conflicts.json --interfaces .local/r03/inc1/interfaces.json --current .local/r04/configuration-preview/empty.json --requested .local/r04/configuration-preview/de68b165199e9298620a-requested.json --output .local/r04/configuration-preview/my-preview.json
+python3 -B -m unittest discover -s tests -p 'test_profiles.py' -v
+```
+
+预览输入使用 `schema_version: 1`、`name`、`selections` 和 `providers` 四个字段。
+选择清单可引用目录中的包 ID，或冲突图中的容器/加载器组件 ID。包 ID
+表示整个原包，包括其中的全部容器与脚本；组件 ID 只选对应容器或加载器，
+不会自动启用同包脚本。默认前置不自动选版本；显式 `providers` 映射只展开
+候选依赖闭包，仍不能证明版本、身体、DLC 或 ABI 满足。未知前置保留为阻塞。
+
+候选计划显示来源路径、哈希、别名、原页面证据和待核实的用途；原页面为空或
+文件名仅为提示时保留未知，不伪造作者来源。已知互斥检查也覆盖展开的前置；
+脚本目标与 Container/Chunk 重叠只表示需要核实提供者或覆盖规则，不推断崩溃。
+整包和单组件的差别、前置提供者变化、增加/移除组件及退出后应用要求可回读。
+预览保持传入的旧配置，无部署、配置保存或游戏/Steam/Cloud 效果；CLI 只在
+本仓库忽略目录独占创建报告，已有报告不覆盖。
+
+本轮覆盖全量 473 个相关来源，5 套原始加载器候选分别成档；18 个已知坏组合
+拒绝，18 个替换预览去除旧组件。10 项预览回归与原 2 项静态规则回归通过。
+每个候选的 `can_apply` 都是 `false`，不把静态预览当作 R10 的完整运行控制器。
+这里的空基线和原包候选也不是当前安装的已转换配置，不能用于替换真实游戏。
+固定当前安装命名空间、真实 Steam/存档隔离、冷启动与恢复仍须单独验证。
