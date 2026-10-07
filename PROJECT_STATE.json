@@ -420,7 +420,7 @@
     "visibility": "PUBLIC_VERIFIED",
     "initial_branch": "main",
     "implementation_branch_policy": "Separate implementation branch; push each round; no automatic merge",
-    "sync_status": "PENDING exact R04-i source push; freshJudge/Governor approved; priororganization/source deliveries retained",
+    "sync_status": "VERIFIED R04-i content7ce27eb37df188ea82ed4a2eaa2623aa296a5cb4 exactly matches GitHub branchAPI after one normal transient-server retry. Closure metadata follows normal push; latestHEAD identity uses Git and remote ref.",
     "head_identity": "Use git HEAD and the remote ref; do not store a self-referential commit hash",
     "branch": "impl/mod-console",
     "verified_content_commits": {
@@ -439,7 +439,8 @@
       "R04-e": "25d134a6a675b37231e4db3ee3e496c525efcc98",
       "R04-f": "aba37ea95b244e96fa88b85d0de2e7c2eb09a906",
       "R04-g": "118800a63a75369a286a8a80293093ecb60dbbdc",
-      "R04-h": "612646ebc14dcd6206d31471c32e18716008e3e1"
+      "R04-h": "612646ebc14dcd6206d31471c32e18716008e3e1",
+      "R04-i": "7ce27eb37df188ea82ed4a2eaa2623aa296a5cb4"
     },
     "verified_organization_followup_commit": "3cbdaade7cd6d71c255476ac99fc52b3f89c07ef"
   },
@@ -676,6 +677,16 @@
         "failure_class": "BLOCKERS_KEY_INSTEAD_OF_EXISTING_BLOCKING_ITEMS",
         "exit": 1,
         "resolution": "Firstscript failed before any state write; frozen state hash unchanged. Existing blocking_items field inspected and used; no source/candidate/evidence change."
+      },
+      {
+        "round": "R04-i",
+        "target": "GitHub source push impl/mod-console",
+        "relevant_version": "7ce27eb37df188ea82ed4a2eaa2623aa296a5cb4",
+        "failure_class": "REMOTE_INTERNAL_SERVER_ERROR",
+        "exit": 1,
+        "observed_remote_after_failure": "aabcfd9567de630b7b48cd977c1d57d3148ab159",
+        "method": "Normal source push; exactGitHubAPIref checked before retry",
+        "resolution": "One normal transient retry succeeded exit0; exactGitHubAPIref7ce27eb37df188ea82ed4a2eaa2623aa296a5cb4 verified. No force/auth/global configuration change."
       }
     ],
     "token_cost_telemetry": {
@@ -818,7 +829,7 @@
         "R04-h",
         "R04-i"
       ],
-      "sync": "PENDING approved R04-i source push and exact remote verification"
+      "sync": "VERIFIED R04-i source7ce27eb37df188ea82ed4a2eaa2623aa296a5cb4 exactly matched GitHub branchAPI"
     },
     "R01-inc1": {
       "status": "COMPLETE_STATIC_ORGANIZATION_AND_REQUIREMENTS",
@@ -841,7 +852,7 @@
     "last_closed": "R04-i",
     "remaining_round_estimate": null,
     "forecast_confidence": "unknown; no final end-to-end acceptance throughput; incomplete prerequisites and heterogeneous remaining work",
-    "previous_goal_turn": "PROGRESS: R04-i boundedpublisher extraction and24save/input protection accepted after numericguardrepair. Organization follow-up already delivered, not counted again; fullA01-A14final0/14.",
+    "previous_goal_turn": "PROGRESS: R04-i accepted after numericguard repair; bounded3Cloudrules/24protectedhashes and source7ce27eb verified on GitHub after one server-fault retry. Original fullA01-A14final0/14;18closedunits including planning, no duplicate organization count; next concreteSteam/save route.",
     "total_closed_units_including_planning": 18,
     "changes": {
       "execution": "Bounded publisher extractor/route evidence accepted with17Rootchecks/10tests/newfreshJudgePASS/Governor approval; no actual game/MOD/UI result.",
