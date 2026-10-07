@@ -268,13 +268,14 @@
     "visibility": "PUBLIC_VERIFIED",
     "initial_branch": "main",
     "implementation_branch_policy": "Separate implementation branch; push each round; no automatic merge",
-    "sync_status": "VERIFIED R01, R02-a, R03-a content commits; git HEAD and GitHub branch ref are authoritative for closure metadata",
+    "sync_status": "VERIFIED R01, R02-a, R03-a, R03-b content commits; git HEAD and GitHub branch ref are authoritative for closure metadata",
     "head_identity": "Use git HEAD and the remote ref; do not store a self-referential commit hash",
     "branch": "impl/mod-console",
     "verified_content_commits": {
       "R01": "ec98f6a34387c96c297f4ac49a2a39a6bcea5f49",
       "R02-a": "865b35996aa611d0b5bbec653ae29d8a55a0a191",
-      "R03-a": "9b231b5808d05e097dbf8fa0c21708c352cff065"
+      "R03-a": "9b231b5808d05e097dbf8fa0c21708c352cff065",
+      "R03-b": "e1622020a2acee5cbe151f6ed12a61a80229e814"
     }
   },
   "cumulative": {
@@ -387,7 +388,7 @@
       "private_graph": ".local/r03/conflicts.json",
       "closed_unit": "R03-b",
       "remaining": "CNS/body/material/physics dependencies and module/property/hotkey write ownership; per-file author prerequisites; historical load order and real compatibility",
-      "sync": "R03-b candidate verified locally; push and exact remote check pending",
+      "sync": "VERIFIED R03-b GitHub impl/mod-console == local e1622020a2acee5cbe151f6ed12a61a80229e814",
       "closed_units": [
         "R03-a",
         "R03-b"
