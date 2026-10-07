@@ -242,7 +242,7 @@
     },
     "A12": {
       "status": "PARTIAL",
-      "note": "R00 and R01 remote refs verified; future rounds remain required"
+      "note": "R00, R01, R02-a and R03-a content refs verified; metadata closure ref is verified after push. Future rounds remain required."
     },
     "A13": {
       "status": "NOT_RUN",
@@ -268,8 +268,14 @@
     "visibility": "PUBLIC_VERIFIED",
     "initial_branch": "main",
     "implementation_branch_policy": "Separate implementation branch; push each round; no automatic merge",
-    "sync_status": "R01 and R02-a refs verified; R03-a local candidate awaiting sync",
-    "head_identity": "Use git HEAD and the remote ref; do not store a self-referential commit hash"
+    "sync_status": "VERIFIED R01, R02-a, R03-a content commits; git HEAD and GitHub branch ref are authoritative for closure metadata",
+    "head_identity": "Use git HEAD and the remote ref; do not store a self-referential commit hash",
+    "branch": "impl/mod-console",
+    "verified_content_commits": {
+      "R01": "ec98f6a34387c96c297f4ac49a2a39a6bcea5f49",
+      "R02-a": "865b35996aa611d0b5bbec653ae29d8a55a0a191",
+      "R03-a": "9b231b5808d05e097dbf8fa0c21708c352cff065"
+    }
   },
   "cumulative": {
     "planning_rounds_completed": 1,
@@ -286,8 +292,25 @@
         "resolution": "Resolved against primary layout + actual bytes; 11 tests and independent retoc comparison pass"
       }
     ],
-    "token_cost_telemetry": "UNAVAILABLE; no invented budget or usage",
-    "execution_units_closed": 3
+    "token_cost_telemetry": {
+      "native_goal_tokens_observed": 289664,
+      "source": "get_goal at R03-a closure, updatedAt 1791369585",
+      "coverage": "Cumulative tokens reported by native active Goal; not hand-estimated or per-code-unit",
+      "native_goal_time_seconds_observed": 1493,
+      "active_execution_time": "UNAVAILABLE; wall time does not prove active minutes",
+      "cost": "UNAVAILABLE",
+      "budget": "No explicit token budget; native remainingTokens null"
+    },
+    "execution_units_closed": 3,
+    "health_checkpoint": {
+      "first_250k_rebaseline_completed": true,
+      "status": "HEALTHY",
+      "baseline_tokens_observed": 289664,
+      "checkpoint": "R03-a closure",
+      "reason": "Material candidates, new first-time checks and completed delivery units; no equivalent unresolved retries",
+      "next_checkpoint": "R03-b closure only if cooldown and eligible trigger apply; no scheduled monitoring",
+      "cooldown_rule": "75,000 additional tokens or 30 directly evidenced active minutes; newly accepted milestone resets no-progress facts"
+    }
   },
   "blocking_items": [
     {
@@ -311,7 +334,7 @@
       "state": "NOT_RUN; do not roll back personal saves"
     }
   ],
-  "next_action": "Finish R03-a remote verification, then index exact resource paths/payload hashes and current converted namespace in R03-b; continue R02 per-file prerequisites/permissions, keeping all unknowns and save isolation gate.",
+  "next_action": "R03-b: index exact resource paths/payload hashes and current converted namespace; continue R02 per-file prerequisites/permissions. Keep runtime tests NOT_RUN until isolated save/config protection is verified.",
   "updated_on": "2026-10-07",
   "execution": {
     "owner_thread": "01a115db-7ff8-70c1-8122-cdc330aaf5c5",
@@ -362,7 +385,7 @@
       "private_graph": ".local/r03/conflicts.json",
       "closed_unit": "R03-a",
       "remaining": "Exact resource/payload, installed converted namespace, writer/hotkey/CNS/body/physics graph and real compatibility",
-      "sync": "Pending R03-a commit/push verification"
+      "sync": "VERIFIED R03-a GitHub impl/mod-console == local 9b231b5808d05e097dbf8fa0c21708c352cff065"
     }
   },
   "progress": {
@@ -376,6 +399,7 @@
     "last_closed": "R03-a",
     "remaining_round_estimate": null,
     "forecast_confidence": "unknown; no final end-to-end acceptance throughput; incomplete prerequisites and heterogeneous remaining work",
-    "previous_goal_turn": "No durable implementation or live wait evidence in entry state; revalidated and executed R01"
+    "previous_goal_turn": "No durable implementation or live wait evidence in entry state; revalidated and executed R01",
+    "total_closed_units_including_planning": 4
   }
 }
