@@ -22,9 +22,59 @@
 
 管理库的分类/搜索、配置档切换、冲突原因和前置提示、可读的变更方案、作者更新提醒，均可用自己的模型和代码独立实现。接口适配保持工具责任，功能页融合在统一 UI；不把工具原代码、窗口或主题搬入新产品。
 
+### 新增归档分类和原 MOD 入口
+
+2026-10-07 再核对：下载目录 591 个文件与当前清单的路径集合及元数据一致，未出现清单外文件；这批 25 个新增归档已收录，含 23 份新增独立内容和 2 份复本。总来源仍为 594 个（含 3 个外部依赖），相关候选 473 条。原包不移动，复本不删除，历史未完成下载和失败记录继续保留。
+
+下面按用途列出全部 25 个归档；名称与版本取自文件名，链接主要是由 MOD 编号推断的原页面候选，尚未逐项核实作者及准确文件关联；Skin Suit Shields 的用途另有作者页说明。CNS 类型来自包内配置观察，物理项结合原包说明和脚本布局；所有新增项的实际效果、身体配套、完整前置和游戏兼容均未验收。分类不是启用建议。
+
+#### 服装/身体/外观
+
+| 条目及原页面候选 | 文件名版本 | 归档角色 | 配套和归属 |
+| --- | --- | --- | --- |
+| [A sexy girl with tank shorts heels womb tattoo (1)](https://www.nexusmods.com/stellarblade/mods/910) | 2-1 | 外观文件包候选 | 准确前置、身体配套及替换关系待核实 |
+| [A sexy girl with tank shorts heels womb tattoo](https://www.nexusmods.com/stellarblade/mods/910) | 2-1 | 外观文件包候选 | 与本批同名归档字节相同，作为复本来源 |
+| [A sexy girl with tank shorts heels](https://www.nexusmods.com/stellarblade/mods/910) | 2-1-1 | 外观文件包候选 | 准确前置、身体配套及替换关系待核实 |
+| [A version compatible with mod618 pale skin](https://www.nexusmods.com/stellarblade/mods/910) | 2-4 | 外观文件包候选 | 与 #618 pale skin 的关系只是文件名声明；准确依赖/版本/实际效果待核实 |
+| [Academy - CNS](https://www.nexusmods.com/stellarblade/mods/2675) | v1-0 | CNS 外观内容 | 需 CNS，准确版本及额外前置待核实 |
+| [Akali_ahuang_CNS](https://www.nexusmods.com/stellarblade/mods/1594) | 1-0-1 | 外观文件包候选 | 文件名含 CNS，但归档未观察到 .dekcns.json；不据文件名断言已配套 |
+| [Black and Red Pearl](https://www.nexusmods.com/stellarblade/mods/1770) | 1-0 | 外观文件包候选 | 准确前置、身体配套及替换关系待核实 |
+| [CNS-A_SEXY_GIRL_controllable_version](https://www.nexusmods.com/stellarblade/mods/910) | 3-0 | CNS 外观内容 | 需 CNS，准确版本及额外前置待核实 |
+| [EveSugarPerfume CNS (2)](https://www.nexusmods.com/stellarblade/mods/2989) | 1-1 | CNS 外观内容 | 与既有同名归档字节相同，作为复本来源；需 CNS，准确版本及额外前置待核实 |
+| [Haley_Bunny (CNS)](https://www.nexusmods.com/stellarblade/mods/2390) | 1-2 | CNS 外观内容 | 需 CNS，准确版本及额外前置待核实 |
+| [Ocean String(Red and White)](https://www.nexusmods.com/stellarblade/mods/2492) | V7 | 外观文件包候选 | 准确前置、身体配套及替换关系待核实 |
+| [Planet Diving Bikini 7th V2](https://www.nexusmods.com/stellarblade/mods/1918) | 1-1 | CNS 外观内容 | 需 CNS，准确版本及额外前置待核实 |
+| [Thicker Missing Link - CNS version](https://www.nexusmods.com/stellarblade/mods/1722) | 1-0 | CNS 外观内容 | 需 CNS，准确版本及额外前置待核实；原 CNS 配置含尾逗号；仅恢复元数据，原格式未验收、未修补 |
+| [Topless version V2 1.0](https://www.nexusmods.com/stellarblade/mods/1812) | 1-3 | 外观文件包候选 | 准确前置、身体配套及替换关系待核实 |
+| [Uncensored Kunoichi Lite CNS](https://www.nexusmods.com/stellarblade/mods/2692) | CNS | CNS 外观内容 | 需 CNS，准确版本及额外前置待核实 |
+| [Uncensored Kunoichi Lite edit](https://www.nexusmods.com/stellarblade/mods/2692) | Finalnocns | 外观文件包候选 | 文件名标注非 CNS；准确前置及与 CNS 版的替换关系待核实 |
+| [XXTB Bigger Areola](https://www.nexusmods.com/stellarblade/mods/3277) | 2 | 外观文件包候选 | 准确前置、身体配套及替换关系待核实 |
+| [Yorha 1 CNS](https://www.nexusmods.com/stellarblade/mods/3299) | 1 | CNS 外观内容 | 需 CNS，准确版本及额外前置待核实 |
+| [zYgDivingSuit_v4](https://www.nexusmods.com/stellarblade/mods/128) | 4 | 外观文件包候选 | 准确前置、身体配套及替换关系待核实 |
+| [zYgDivingSuit_v4-bigger-plug](https://www.nexusmods.com/stellarblade/mods/128) | 4-bigger-plug | 外观文件包候选 | 准确前置、身体配套及替换关系待核实 |
+
+#### 物理/动作
+
+| 条目及原页面候选 | 文件名版本 | 归档角色 | 配套和归属 |
+| --- | --- | --- | --- |
+| [Bombshell Jiggle Presets V2.2 (Presets 10-23)](https://www.nexusmods.com/stellarblade/mods/1774) | 2-2 | 物理预设扩展，无模块入口 | 每包 14 个预设；JiggleUpdate 准确消费者版本待核实 |
+| [Bombshell Jiggle Presets V2.2 (Presets 17-30)](https://www.nexusmods.com/stellarblade/mods/1774) | 2-2 | 物理预设扩展，无模块入口 | 每包 14 个预设；JiggleUpdate 准确消费者版本待核实 |
+| [Bombshell Jiggle Presets V2.2 (Replacer)](https://www.nexusmods.com/stellarblade/mods/1774) | 2-2 | 物理预设扩展，无模块入口 | 每包 14 个预设；JiggleUpdate 准确消费者版本待核实 |
+| [Jiggle Update](https://www.nexusmods.com/stellarblade/mods/1397) | 1-0 | 物理参数模块 | 含 main.lua 和默认物理参数；准确 UE4SS 版本待核实 |
+
+物理预设的同名目标必须先处理覆盖关系：10–23 与 17–30 重叠 7 个目标且字节不同，10–23 与 Replacer 重叠 5 个目标且字节不同，17–30 与 Replacer 无同名目标重叠。这仅说明文件覆盖范围，不能把无同名目标当作整个运行组合兼容。
+
+#### 玩法/辅助
+
+| 条目及原页面候选 | 文件名版本 | 归档角色 | 作用和条件 |
+| --- | --- | --- | --- |
+| [Skin Suit Shields](https://www.nexusmods.com/stellarblade/mods/380) | 1-0 | 护盾规则修改候选 | 作者说明为恢复 Skin Suit 护盾；改变装备规则，实际效果及准确包版本关联未验证 |
+
+作者页说明 Skin Suit Shields 的用途是恢复护盾，因此从先前仅按名称归入的外观类改到玩法/辅助。作者列出的潜在冲突涉及 `EquipStatViewerTable.uasset` 和 `ItemEquipableTable.uasset`；这是作者范围说明，尚未据此验收本机候选或所有相关组合。
+
 ### 本次补充整理的管理能力参考
 
-2026-10-07 只读核对本机包及可访问作者页面；下列页面功能描述不是本机运行验收，也不是可直接移植的接口。此次新增 25 个归档主要是外观/CNS 内容、Jiggle Update 和物理预设，管理器参考来自已有资料库，并没有把每个预设算成新管理器。
+2026-10-07 只读核对本机包及可访问作者页面；下列页面功能描述不是本机运行验收，也不是可直接移植的接口。此次新增 25 个归档包含 20 个外观/CNS 内容、4 个物理模块/预设和 1 个护盾规则项，管理器参考来自已有资料库，并没有把每个预设算成新管理器。
 
 | 参考及本机版本 | 可独立借鉴的能力 | 证据与边界 |
 | --- | --- | --- |
@@ -35,6 +85,8 @@
 | [Jiggle physics GUI #1627](https://www.nexusmods.com/stellarblade/mods/1627)，本机文件名 1.0 | 参数编辑、默认值恢复、参数与实际生效状态区分 | 作者页说明编辑 #1397 的 SpringBoneTweaks.lua，修改后仍需游戏内 F1 重载；不是通用 MOD 管理器，未证明支持 BetterJiggle/Kittens。作者权限限制仍适用 |
 
 CNS 的服装列表、ATOOL 的功能/动画选择、RandomSwitchCNS 的允许集合与自动切换也属于游戏内能力参考。它们的版本、变体、依赖、快捷键和写入权单独记录；调试 GUI、桌面 GUI 和作者描述都不能作为游戏内面板验收。
+
+这些参考进入开发的方式是能力映射：导入、分类和预览归入资料库；版本与前置引导归入详情；启用、停用和配置切换进入同一规则及事务；参数编辑归入对应功能面板；来源入口保留到原作者页面。参考工具的桌面窗口和工程结构不决定游戏内界面，未验证接口不进入可应用能力。具体玩家流程见 [从资料库到另一套体系](UI_SPEC.md#从资料库到另一套体系)。
 
 新增 #1397 包内说明和 Lua 静态分析可对应到准确归档：包含 JiggleUpdate 的 main.lua、默认 SpringBoneTweaks.lua 和 F1 绑定，UE4SS 准确版本仍未知。新增 #1774 三个包各含 14 个编号预设，没有 main.lua；它们是扩展数据，准确消费者版本待核实。10–23 与 17–30 覆盖同一批 7 个目标且字节不同，10–23 与 Replacer 重叠 5 个目标；这要求整套选择或明确覆盖计划，不等于已证明会崩溃。详细原包/文件/hash 对照保存在本机增量清单，不公开第三方原始内容。
 

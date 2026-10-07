@@ -139,5 +139,99 @@
     "Original R03 graph covers450 relevant records;23 added records require graph/resource expansion and actual runtime tests",
     "Static metadata, author descriptions and requirements do not establish compatibility, UI quality or original A01-A14 acceptance"
   ],
-  "result": "PASS_INCREMENT_ORGANIZATION_AND_REQUIREMENT_RECORD; FULL_GOAL_PARTIAL"
+  "result": "PASS_INCREMENT_ORGANIZATION_AND_REQUIREMENT_RECORD; FULL_GOAL_PARTIAL",
+  "organization_followup": {
+    "entry_commit": "f2452b0a66e79e5ac8bae4d4aec0548f95062a5d",
+    "lane": "DIRECT",
+    "scope": "Readable existing25archive organization and user journey; no new inputs/runtime/deployment",
+    "summary": {
+      "download_files": 591,
+      "new_since_inc1": 0,
+      "missing": 0,
+      "changed_source_stamps": 0,
+      "source_stamps_checked": 594,
+      "increment_archives": 25,
+      "new_canonical": 23,
+      "aliases": 2,
+      "increment_categories": {
+        "服装/身体/外观": 20,
+        "物理/动作": 4,
+        "玩法/辅助": 1
+      }
+    },
+    "primary_page_checks": [
+      {
+        "url": "https://www.nexusmods.com/stellarblade/mods/199",
+        "result": "AUTHOR_DESCRIPTION_READ; runtime NOT_RUN"
+      },
+      {
+        "url": "https://www.nexusmods.com/stellarblade/mods/1959",
+        "result": "AUTHOR_DESCRIPTION_READ; runtime NOT_RUN"
+      },
+      {
+        "url": "https://www.nexusmods.com/stellarblade/mods/206",
+        "result": "AUTHOR_DESCRIPTION_READ; runtime NOT_RUN"
+      },
+      {
+        "url": "https://www.nexusmods.com/stellarblade/mods/1627",
+        "result": "AUTHOR_DESCRIPTION_READ; runtime NOT_RUN"
+      },
+      {
+        "url": "https://www.nexusmods.com/stellarblade/mods/380",
+        "result": "AUTHOR_DESCRIPTION_READ; runtime NOT_RUN"
+      },
+      {
+        "url": "https://www.nexusmods.com/stellarblade/mods/89",
+        "result": "AUTHOR_PAGE_CONTENT_GATE; no preference/account changes"
+      },
+      {
+        "url": "https://www.nexusmods.com/stellarblade/mods/1397",
+        "result": "AUTHOR_PAGE_CONTENT_GATE; no preference/account changes"
+      }
+    ],
+    "corrections": [
+      {
+        "mod_id": 380,
+        "old_category": "服装/身体/外观",
+        "new_category": "玩法/辅助",
+        "basis": "Author-described shields restored; page-purpose only, not exact binary/runtime proof"
+      },
+      {
+        "mod_id": 2692,
+        "variant": "Finalnocns",
+        "basis": "No CNS support inferred from a nocns substring"
+      }
+    ],
+    "current_organization_sha256": "927cb05cf53a702d22e6472f4dd443a5292f129ef2c4b0643cdf11529e1b274a",
+    "current_organization": ".local/r02/inc1/organization-refresh.json",
+    "document_sha256": {
+      "docs/REUSE.md": "a6103b1abff0524be98f256243d18f6c166d17ff8ca5ec63bc7ec96ee2a34641",
+      "docs/UI_SPEC.md": "45489cc06b4bf379046c8b9c6dea1bfc86403892a4d08623a0f11e34ab2e5509"
+    },
+    "original_invariants": {
+      "sources": 594,
+      "relevant_records": 473,
+      "final_acceptance": 0,
+      "required": 14,
+      "closed_units_including_planning": 17,
+      "archive_rehash": "NOT_RUN this follow-up; unchanged stamps and accepted byte records reused",
+      "third_party_execution": "NOT_RUN",
+      "game_and_settings_writes": 0
+    },
+    "ui_acceptance": {
+      "candidate": "docs/UI_SPEC.md requirement-only addition",
+      "real_surface": "NO_IMPLEMENTED_GAME_INTERNAL_CONSOLE",
+      "design_source": "Figma designated; design file NOT_RUN",
+      "functional": "UNVERIFIED",
+      "visual": "UNVERIFIED",
+      "desktop_input": "UNVERIFIED",
+      "mobile": "NOT_APPLICABLE: product target is PC game; no mobile surface added",
+      "console": "UNVERIFIED",
+      "network": "UNVERIFIED",
+      "data": "Imported accepted inventory/organization; no application effects",
+      "overall": "SPECIFICATION_RECORDED; PRODUCT_NOT_ACCEPTED"
+    },
+    "comparison_diagnostic": "Initial tuple-vs-JSON-list stamp comparison gave false differences; corrected normalized list comparison finds all594 unchanged. No source effects.",
+    "result": "PASS_READABLE_ORGANIZATION_AND_REQUIREMENTS; runtime/game-internal application NOT_RUN"
+  }
 }

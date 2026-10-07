@@ -171,7 +171,14 @@
         "private_interfaces": ".local/r02/inc1/interfaces.json",
         "private_verification": ".local/r02/inc1/verification.json",
         "evidence": "docs/evidence/R01-inc1.json",
-        "runtime_compatibility": "NOT_RUN"
+        "runtime_compatibility": "NOT_RUN",
+        "private_organization_current": ".local/r02/inc1/organization-refresh.json",
+        "organization_current_sha256": "927cb05cf53a702d22e6472f4dd443a5292f129ef2c4b0643cdf11529e1b274a",
+        "organization_categories_current": {
+          "服装/身体/外观": 20,
+          "物理/动作": 4,
+          "玩法/辅助": 1
+        }
       }
     ],
     "conflict_graph_scope": {
@@ -393,7 +400,7 @@
     "visibility": "PUBLIC_VERIFIED",
     "initial_branch": "main",
     "implementation_branch_policy": "Separate implementation branch; push each round; no automatic merge",
-    "sync_status": "VERIFIED R04-h content commit matched GitHub branch; closure metadata follows normal push",
+    "sync_status": "PENDING current organization documentation follow-up; prior R04-h content612646e and closuref2452b0 both verified remotely",
     "head_identity": "Use git HEAD and the remote ref; do not store a self-referential commit hash",
     "branch": "impl/mod-console",
     "verified_content_commits": {
@@ -684,7 +691,25 @@
     "external_scope": "Original game/MOD/Downloads/Steam/prefix/saves and old evidence read-only. Necessary game MOD activation/root declarations read. No Steamaccount/Cloud/session/credential config values read/change, no copies of third-party assets/source/binaries, no game/client/process launch or stop. Normal source sync authorized.",
     "execution_source": "Native Goal continuation after R04-g exact remote c72bca6 closure",
     "next_evidence": "Prepare a bounded legitimate Steam/game/local-and-Cloud-save isolation candidate, using current byte-identical DLLs rather than reinstalling4equivalent loader cores. Inspect game-specific public Cloud configuration if decision-relevant; require new governed contract before protected session/client effects and exact owner authority for account/Cloud/activation changes. Do not launch real game until protection established; continue exact transformed/source/ABI prerequisite work independently.",
-    "result": "Accepted currentbyteprofile:790files/25,197,560,482B rehashed;780source rows/171container groups/108exactraw signatures;16directives7enabled4markers.4of5loadercorepairs identical,9sameDLLs/1different.10tests/Root15checks,22hashes/1330metadata/fullgameset preserved; no compatibility/deployment/runtime acceptance."
+    "result": "Accepted currentbyteprofile:790files/25,197,560,482B rehashed;780source rows/171container groups/108exactraw signatures;16directives7enabled4markers.4of5loadercorepairs identical,9sameDLLs/1different.10tests/Root15checks,22hashes/1330metadata/fullgameset preserved; no compatibility/deployment/runtime acceptance.",
+    "organization_followup": {
+      "lane": "DIRECT",
+      "owner_thread": "01a115db-7ff8-70c1-8122-cdc330aaf5c5",
+      "owned_paths": [
+        "docs/REUSE.md",
+        "docs/UI_SPEC.md",
+        "docs/evidence/R01-inc1.json",
+        "PROJECT_STATE.json",
+        ".local/r02/inc1/organization-refresh.json"
+      ],
+      "entry_preimage": "f2452b0a66e79e5ac8bae4d4aec0548f95062a5d",
+      "execution_source": "Current user: organize newly downloaded MODs and management references; small game-internal application with isolated incompatible configurations, categories and original-MOD traceability.",
+      "acceptance": "Every existing25increment archive represented once in a readable category/purpose/source table; management reference roles distinct; actual591download set and594source stamps checked; existing requirements/profile semantics preserved. No new assets/deployment/runtime claim.",
+      "exclusions": "Downloads/game/Steam/MOD packages/read-only; no external tools/game launch, no account/settings changes; original14acceptance and counts unchanged.",
+      "next_evidence": "Exact25row coverage,23newcanonical+2aliases,source hashes/stamps,current directoryset,primary manager author descriptions and exact documentation diff.",
+      "result": "All25increment archive rows/20appearance4physics1gameplay,23newcanonical2aliases,5managementreferences; current591file set/594source stamps unchanged; requirements only, runtime/UI NOT_RUN.",
+      "evidence": "docs/evidence/R01-inc1.json:organization_followup"
+    }
   },
   "rounds": {
     "R01": {
@@ -776,7 +801,7 @@
     "last_closed": "R04-h",
     "remaining_round_estimate": null,
     "forecast_confidence": "unknown; no final end-to-end acceptance throughput; incomplete prerequisites and heterogeneous remaining work",
-    "previous_goal_turn": "PROGRESS: Current790file byteprofile and provenance171containers108rawmatches accepted,4of5loadercorepairsidentical,10tests/Root15checks; source612646e verified remotely, originalA01-A14final0/14.",
+    "previous_goal_turn": "PROGRESS: R04-h delivered and current25increment archive/user-flow organization clarified; Skin Suit Shields category corrected from author page. Same17closed units, originalA01-A14final0/14, no duplicate increment.",
     "total_closed_units_including_planning": 17,
     "changes": {
       "execution": "Currentinstalled snapshot/source candidates/container namespace/activation and5loaderimpact plans implemented and actuallyverified. Final14end-to-endacceptance unchanged.",
