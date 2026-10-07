@@ -393,7 +393,7 @@
     "visibility": "PUBLIC_VERIFIED",
     "initial_branch": "main",
     "implementation_branch_policy": "Separate implementation branch; push each round; no automatic merge",
-    "sync_status": "PENDING R04-h exact source commit and GitHub ref verification",
+    "sync_status": "VERIFIED R04-h content commit matched GitHub branch; closure metadata follows normal push",
     "head_identity": "Use git HEAD and the remote ref; do not store a self-referential commit hash",
     "branch": "impl/mod-console",
     "verified_content_commits": {
@@ -411,7 +411,8 @@
       "R03-inc1": "b6c9dedac25588aaa87b86fcf0822e8d8f8428ad",
       "R04-e": "25d134a6a675b37231e4db3ee3e496c525efcc98",
       "R04-f": "aba37ea95b244e96fa88b85d0de2e7c2eb09a906",
-      "R04-g": "118800a63a75369a286a8a80293093ecb60dbbdc"
+      "R04-g": "118800a63a75369a286a8a80293093ecb60dbbdc",
+      "R04-h": "612646ebc14dcd6206d31471c32e18716008e3e1"
     }
   },
   "cumulative": {
@@ -752,7 +753,7 @@
         "R04-g",
         "R04-h"
       ],
-      "sync": "PENDING R04-h source push"
+      "sync": "VERIFIED R04-h content612646ebc14dcd6206d31471c32e18716008e3e1 matched GitHub branch"
     },
     "R01-inc1": {
       "status": "COMPLETE_STATIC_ORGANIZATION_AND_REQUIREMENTS",
@@ -775,7 +776,7 @@
     "last_closed": "R04-h",
     "remaining_round_estimate": null,
     "forecast_confidence": "unknown; no final end-to-end acceptance throughput; incomplete prerequisites and heterogeneous remaining work",
-    "previous_goal_turn": "PROGRESS: Current790file byteprofile and provenance171containers108rawmatches accepted,4of5loadercorepairsidentical,10tests/Root15checks; source sync pending, originalA01-A14final0/14.",
+    "previous_goal_turn": "PROGRESS: Current790file byteprofile and provenance171containers108rawmatches accepted,4of5loadercorepairsidentical,10tests/Root15checks; source612646e verified remotely, originalA01-A14final0/14.",
     "total_closed_units_including_planning": 17,
     "changes": {
       "execution": "Currentinstalled snapshot/source candidates/container namespace/activation and5loaderimpact plans implemented and actuallyverified. Final14end-to-endacceptance unchanged.",
