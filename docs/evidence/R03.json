@@ -96,5 +96,116 @@
     "Known static selection diagnostics never apply or authorize any configuration"
   ],
   "game_and_original_mod_mutations": "NONE",
-  "closure": "PARTIAL_R03; R03-a closed, original requirements and deferred acceptance preserved"
+  "closure": "PARTIAL_R03; R03-a and R03-b closed; original requirements and runtime acceptance preserved",
+  "resource_namespace_discovery": {
+    "unit": "R03-b",
+    "semantic_candidate_sha256": "1384ce539886b876e1b878e6845d70cae7dc1aec1b2efa84538d26140619db56",
+    "candidate_files_sha256": {
+      "src/policy/resources.py": "5447d9cac8584bfd8fd5d22b1da2c17cb94dca1ad148c04e44f7991951211b4a",
+      "tests/test_resources.py": "b2e0027f710155d532a18a375a1c8a5df986218dfc323c87c0486b09b2815fa4",
+      "src/policy/README.md": "f8707d6afdae03c532e5ff76c0d2e542cde04fccd4064c2c2060ad6cb7949c88",
+      "tests/README.md": "795c0401ccf3b80f34153ff7185a2b6ba57dea2d8fe2617d542fbf943323ee56"
+    },
+    "resources_sha256": "85491f4097a9ef931cfef8f7b158fc560a25882df9d2fea47372e9df880e2def",
+    "private_checks_sha256": {
+      "metadata": "1161550b840293a478a432ba314ccf27e1e84deb65d88a9df32a062320465975",
+      "historical": "353b08a09ffa8b8962760a03ff614fc9bd82e9d2268b207fc09efdac7960bd36",
+      "additional": "be47c1ba9574afacbe01c82dfcb476cf9fde8f233e4bc6c90d98810b0426e91e"
+    },
+    "summary": {
+      "raw_containers": 729,
+      "installed_containers": 176,
+      "deferrals": 0,
+      "installed_roles": {
+        "installed_mod_or_loader": 171,
+        "protected_original": 5
+      },
+      "raw_chunk_overlap_statuses": {
+        "SAME_STORED_HASH_AND_SIZE": 922,
+        "DIFFERING_STORED_METADATA": 611
+      },
+      "raw_path_overlap_statuses": {
+        "DIFFERING_STORED_METADATA": 401,
+        "SAME_STORED_HASH_AND_SIZE": 901
+      },
+      "installed_chunk_overlap_statuses": {
+        "DIFFERING_STORED_METADATA": 190,
+        "SAME_STORED_HASH_AND_SIZE": 83
+      },
+      "installed_path_overlap_statuses": {
+        "DIFFERING_STORED_METADATA": 68,
+        "SAME_STORED_HASH_AND_SIZE": 89
+      },
+      "installed_mods_only_chunk_overlap_statuses": {
+        "DIFFERING_STORED_METADATA": 44,
+        "SAME_STORED_HASH_AND_SIZE": 90
+      },
+      "installed_mods_only_path_overlap_statuses": {
+        "DIFFERING_STORED_METADATA": 7,
+        "SAME_STORED_HASH_AND_SIZE": 74
+      }
+    },
+    "independent_retoc": {
+      "version": "0.1.5 existing external tool; read-only",
+      "binary_sha256": "aa649cd8751a212ee946fa9c27f883770a9d67ca8d5f0b0c76ad856f44cf5eab",
+      "containers": 176,
+      "chunks": 228270,
+      "path_type_stored_hash_differences": 0,
+      "scope": "All current installed v2/v3 UTOC records, including 5 protected game containers"
+    },
+    "historical_binding": {
+      "historical_groups": 42,
+      "current_differing_mod_chunk_groups": 44,
+      "historical_groups_in_current": 42,
+      "other_differing_mod_chunk_groups": [
+        "9f359b5ac77386ca00000002",
+        "9f359b5ac77386ca00000003"
+      ],
+      "bound_containers": 11,
+      "all_bound_triples_identical": true,
+      "payloads_rehashed": 90,
+      "payload_sha256_matches": 90,
+      "errors": 0,
+      "runtime_override_order": "NOT_VERIFIED; historical priority rationale retained as a proposal, not accepted rule"
+    },
+    "additional_current_override": {
+      "shared_chunk_groups": 2,
+      "resources_rehashed": 4,
+      "actual_hashes_differ": true,
+      "target": "XXTB core/body texture and optional Oily Skin replacement",
+      "rule": "UNKNOWN; dependency and actual load order require validation"
+    },
+    "checks": [
+      {
+        "command": "python3 -m unittest discover -s tests -v",
+        "exit": 0,
+        "tests": 15
+      },
+      {
+        "command": "python3 -m src.policy.resources --catalog .local/r02/catalog.json --inventory .local/r01/inventory.json --output .local/r03/resources.json",
+        "exit": 0,
+        "scope": "729 raw and 176 installed TOCs; fixed input stamps and TOC SHA-256; no source modifications"
+      },
+      {
+        "check": "Current game TOC set equals frozen installed TOC set",
+        "exit": 0,
+        "containers": 176,
+        "resolved_first_failure": "Read-only check initially addressed paths.game; actual local schema is paths.paths.game; corrected without changing configuration"
+      },
+      {
+        "check": "Independent retoc metadata comparison and actual resource-block SHA-256",
+        "exit": 0,
+        "historical_payloads": 90,
+        "additional_payloads": 4
+      }
+    ],
+    "limits": [
+      "Only actual observed v2/v3 resource layouts supported; other/encrypted layouts remain unverified",
+      "Same stored hash/size is metadata equality, not runtime compatibility; raw UCAS payloads not all rehashed",
+      "42 historical content groups bind current exact triples and 90 payloads; historical load order rationale is still a proposal",
+      "CNS identities, module/hotkey write ownership, prerequisites and real game validation remain incomplete"
+    ],
+    "asset_files_retained_or_published": 0,
+    "game_mutations": "NONE"
+  }
 }
