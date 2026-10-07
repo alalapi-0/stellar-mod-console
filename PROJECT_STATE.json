@@ -11,13 +11,13 @@
     "scope": "This Projects repository; external game/mod paths are referenced, not relocated",
     "r00_lane": "DIRECT"
   },
-  "mode": "planning_only",
-  "goal_mode_started": false,
-  "implementation_started": false,
-  "phase": "P0",
-  "current_round": "R00",
-  "round_status": "COMPLETE_PLANNING_ONLY",
-  "next_round": "R01",
+  "mode": "execution",
+  "goal_mode_started": true,
+  "implementation_started": true,
+  "phase": "P1",
+  "current_round": "R01",
+  "round_status": "COMPLETE_STATIC_SNAPSHOT",
+  "next_round": "R02",
   "protected": [
     "Existing game files and saves",
     "Original MOD packages and downloads",
@@ -31,11 +31,11 @@
       "planning documents and non-executable skeleton",
       "new public GitHub repository initialization and sync"
     ],
-    "future_implementation": "Requires the subsequent user execution instruction; this planning turn does not run the prompt",
+    "future_implementation": "AUTHORIZED: active user Goal objective, 2026-10-07; R01 onward, source sync each round; exact release remains gated",
     "specific_binary_release": "Review the candidate and obtain channel/version authorization at R30"
   },
   "inputs": {
-    "snapshot": "R00 read-only discovery; R01 must freeze complete hashes",
+    "snapshot": "R01 SHA-256 frozen live snapshot; future additions are increments",
     "current_game_build": "24463856",
     "installed_loader_log_version": "3.0.1 Beta #0 / d3d1004",
     "download_files": 566,
@@ -45,16 +45,70 @@
     "unmatched_candidates": 133,
     "incomplete_downloads": 42,
     "other_files_to_classify": 16,
-    "complete_hashes_verified": "NOT_RUN except one duplicate loader sample",
+    "complete_hashes_verified": "VERIFIED: 569 source files; original 336 all matched",
     "prior_startup_seconds": 143,
     "prior_startup_status": "PASS_STARTUP_INITIALIZATION",
     "new_mod_compatibility": "NOT_RUN",
     "private_path_config": ".local/paths.json",
-    "historical_evidence": "External workspace references in .local/discovery.json"
+    "historical_evidence": "External workspace references in .local/discovery.json",
+    "r00_snapshot": {
+      "download_files": 566,
+      "complete_archive_or_exe_candidates": 508,
+      "historical_stellar_paths_and_sizes_matching": 336,
+      "other_game_historical_matches": 39,
+      "unmatched_candidates": 133,
+      "incomplete_downloads": 42,
+      "other_files_to_classify": 16
+    },
+    "private_inventory": ".local/r01/inventory.json",
+    "inventory_sha256": "852632f279958778ec7766e31b2189ae8ae5e5d98aec8797bab0ebaacdf579a8",
+    "summary": {
+      "sources": 569,
+      "downloads": 566,
+      "external_dependencies": 3,
+      "attribution": {
+        "stellar_content_candidate": 55,
+        "stellar_mod": 325,
+        "other_game_historical": 39,
+        "unrelated_loose_download": 16,
+        "game_mod_candidate_unconfirmed": 63,
+        "loader_or_runtime_candidate": 7,
+        "tool": 12,
+        "unclassified_candidate": 3,
+        "tool_or_runtime_candidate": 7,
+        "incomplete_download": 42
+      },
+      "integrity": {
+        "DECODED": 469,
+        "EXCLUDED_OTHER_GAME_NOT_DECODED": 38,
+        "NOT_APPLICABLE": 16,
+        "EXECUTABLE_NOT_RUN": 4,
+        "INCOMPLETE": 42
+      },
+      "source_changes": 0,
+      "duplicates": 23,
+      "duplicate_aliases": 27,
+      "historical_sources_checked": 337,
+      "historical_source_mismatches": 0,
+      "installed_files": 790,
+      "installed_historical_checked": 787,
+      "installed_historical_mismatches": 0,
+      "cns_config_files": 138,
+      "protected_save_files": 8,
+      "runtime_compatibility": "NOT_RUN",
+      "historical_336_matching": 336,
+      "cns_raw_option_records": 389,
+      "installed_kinds": {
+        "installed_mod_or_loader": 780,
+        "protected_original": 7,
+        "protected_save_backup": 3
+      }
+    },
+    "save_isolation": "NOT_ESTABLISHED; runtime tests NOT_RUN"
   },
   "milestones": {
     "M1": {
-      "status": "NOT_STARTED",
+      "status": "IN_PROGRESS",
       "acceptance": [
         "A01",
         "A02",
@@ -94,8 +148,9 @@
   },
   "acceptance": {
     "A01": {
-      "status": "NOT_RUN",
-      "note": "No implementation evidence in R00"
+      "status": "PARTIAL",
+      "evidence": "docs/evidence/R01.json",
+      "note": "Full snapshot and integrity established; exact candidate type/versions/capability catalog and unknown source attribution still require R02/R09"
     },
     "A02": {
       "status": "NOT_RUN",
@@ -134,12 +189,13 @@
       "note": "No implementation evidence in R00"
     },
     "A11": {
-      "status": "NOT_RUN",
-      "note": "No implementation evidence in R00"
+      "status": "PARTIAL",
+      "evidence": "docs/evidence/R01.json",
+      "note": "Read-only preimages, 8 prefix saves and 3 in-loader save backups protected; deployment/uninstall integrity and isolated runtime tests NOT_RUN"
     },
     "A12": {
-      "status": "NOT_RUN",
-      "note": "R00 bootstrap is a prerequisite; future round synchronization remains required"
+      "status": "PARTIAL",
+      "note": "R00 verified; R01 verified locally, remote synchronization pending; subsequent rounds remain required"
     },
     "A13": {
       "status": "NOT_RUN",
@@ -165,12 +221,12 @@
     "visibility": "PUBLIC_VERIFIED",
     "initial_branch": "main",
     "implementation_branch_policy": "Separate implementation branch; push each round; no automatic merge",
-    "sync_status": "VERIFIED_R00; recheck current HEAD against remote when resuming",
+    "sync_status": "R01 candidate verified; commit/push pending remote check",
     "head_identity": "Use git HEAD and the remote ref; do not store a self-referential commit hash"
   },
   "cumulative": {
     "planning_rounds_completed": 1,
-    "implementation_rounds_completed": 0,
+    "implementation_rounds_completed": 1,
     "attempts": [
       {
         "target": "GitHub CLI user query",
@@ -192,6 +248,47 @@
       "state": "REUSE_BOUNDARY_IDENTIFIED"
     }
   ],
-  "next_action": "Stop after R00. On the subsequent explicit execution instruction, activate Goal in this Projects repository and start R01 full input/compatibility inventory.",
-  "updated_on": "2026-10-07"
+  "next_action": "Verify R01 remote sync, then R02: exact duplicate aliases, author requirements/permissions and explicit unresolved dependency nodes.",
+  "updated_on": "2026-10-07",
+  "execution": {
+    "owner_thread": "01a115db-7ff8-70c1-8122-cdc330aaf5c5",
+    "lane": "DIRECT",
+    "owned_paths": [
+      "src/catalog/",
+      "tests/test_inventory.py",
+      "docs/evidence/",
+      "PROJECT_STATE.json",
+      ".local/",
+      "README.md",
+      "src/catalog/README.md",
+      "tests/README.md"
+    ],
+    "external_scope": "Downloads, game and prior MOD workspace read-only for R01-R03; no save or game launch",
+    "entry_preimage": "aafc4b0fcf94bdc73b8e6810971281953f945fe9; clean worktree; GitHub main matched",
+    "acceptance": "R01: exhaustive source ownership + SHA-256, archive results, current activation/build, protected-save boundary; no compatibility claim",
+    "next_evidence": ".local/r01/inventory.json; sanitized docs/evidence/R01.json"
+  },
+  "rounds": {
+    "R01": {
+      "status": "COMPLETE_STATIC_SNAPSHOT",
+      "lane": "DIRECT",
+      "evidence": "docs/evidence/R01.json",
+      "source_manifest": ".local/r01/inventory.json",
+      "acceptance": "Full hashes, applicable decode, each source assigned one visible category; unknown candidates retained",
+      "sync": "Commit/push required; verify exact remote ref after writing this state"
+    }
+  },
+  "progress": {
+    "accepted_required": 0,
+    "required": 14,
+    "acceptance_coverage_percent": 0,
+    "completion_percent": null,
+    "reason": "A01-A14 heterogeneous end-to-end results; no final result accepted yet",
+    "planning_rounds": 1,
+    "execution_rounds_closed": 1,
+    "last_closed": "R01",
+    "remaining_round_estimate": null,
+    "forecast_confidence": "unknown; no comparable accepted throughput",
+    "previous_goal_turn": "No durable implementation or live wait evidence in entry state; revalidated and executed R01"
+  }
 }

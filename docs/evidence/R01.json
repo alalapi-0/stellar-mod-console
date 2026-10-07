@@ -1,0 +1,159 @@
+{
+  "round": "R01",
+  "scope": "read-only complete input and installed-file snapshot",
+  "candidate_sha256": "fffe938c6dec556ed05e80cc37369efa24d7503166af50a7f577a98ad8dd820b",
+  "private_manifest_sha256": "852632f279958778ec7766e31b2189ae8ae5e5d98aec8797bab0ebaacdf579a8",
+  "summary": {
+    "sources": 569,
+    "downloads": 566,
+    "external_dependencies": 3,
+    "attribution": {
+      "stellar_content_candidate": 55,
+      "stellar_mod": 325,
+      "other_game_historical": 39,
+      "unrelated_loose_download": 16,
+      "game_mod_candidate_unconfirmed": 63,
+      "loader_or_runtime_candidate": 7,
+      "tool": 12,
+      "unclassified_candidate": 3,
+      "tool_or_runtime_candidate": 7,
+      "incomplete_download": 42
+    },
+    "integrity": {
+      "DECODED": 469,
+      "EXCLUDED_OTHER_GAME_NOT_DECODED": 38,
+      "NOT_APPLICABLE": 16,
+      "EXECUTABLE_NOT_RUN": 4,
+      "INCOMPLETE": 42
+    },
+    "source_changes": 0,
+    "duplicates": 23,
+    "duplicate_aliases": 27,
+    "historical_sources_checked": 337,
+    "historical_source_mismatches": 0,
+    "installed_files": 790,
+    "installed_historical_checked": 787,
+    "installed_historical_mismatches": 0,
+    "cns_config_files": 138,
+    "protected_save_files": 8,
+    "runtime_compatibility": "NOT_RUN",
+    "historical_336_matching": 336,
+    "cns_raw_option_records": 389,
+    "installed_kinds": {
+      "installed_mod_or_loader": 780,
+      "protected_original": 7,
+      "protected_save_backup": 3
+    }
+  },
+  "environment": {
+    "game_build": "24463856",
+    "loader": "3.0.1 Beta #0 / d3d1004 (log, installed hash matches baseline)",
+    "proton_prefix_version": "11.0-100 / Proton Experimental (prefix metadata; new launch NOT_RUN)",
+    "gpu": "RTX 5070 Ti / 595.91.07 / 16303 MiB"
+  },
+  "activation": [
+    {
+      "module": "CheatManagerEnablerMod",
+      "enabled": false
+    },
+    {
+      "module": "ActorDumperMod",
+      "enabled": false
+    },
+    {
+      "module": "ConsoleCommandsMod",
+      "enabled": false
+    },
+    {
+      "module": "ConsoleEnablerMod",
+      "enabled": false
+    },
+    {
+      "module": "SplitScreenMod",
+      "enabled": false
+    },
+    {
+      "module": "LineTraceMod",
+      "enabled": false
+    },
+    {
+      "module": "BPML_GenericFunctions",
+      "enabled": true
+    },
+    {
+      "module": "BPModLoaderMod",
+      "enabled": true
+    },
+    {
+      "module": "jsbLuaProfilerMod",
+      "enabled": false
+    },
+    {
+      "module": "JiggleUpdate",
+      "enabled": false
+    },
+    {
+      "module": "DekCNS",
+      "enabled": true
+    },
+    {
+      "module": "Keybinds",
+      "enabled": true
+    },
+    {
+      "module": "UltraCamera",
+      "enabled": true
+    },
+    {
+      "module": "KittensJiggleMod",
+      "enabled": true
+    },
+    {
+      "module": "EVEExperience",
+      "enabled": true
+    },
+    {
+      "module": "SBRewardsMod",
+      "enabled": false
+    }
+  ],
+  "checks": [
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "exit": 0,
+      "tests": 5,
+      "scope": "synthetic inventory integrity, traversal and concurrent mutation/resume"
+    },
+    {
+      "command": "python3 -m src.catalog.inventory --config .local/paths.json --output .local/r01 --resume",
+      "exit": 0,
+      "scope": "live read-only full hashes and applicable archive decoding"
+    },
+    {
+      "check": "Root full source set, stable stamps, all historical 336 hash matches, original/installed baseline",
+      "exit": 0
+    },
+    {
+      "check": "Metadata refinement: three in-loader save backups reclassified as protected; hashes/stamps unchanged",
+      "exit": 0
+    }
+  ],
+  "interruption": {
+    "initial_method": "deep-decode all archives including excluded other-game packages",
+    "exit": 130,
+    "reason": "Owner narrowed irrelevant other-game decoding; completed entries resumed after fresh hash verification",
+    "remaining_other_game_decode": "38 intentionally NOT_RUN; all 39 content hashes recorded"
+  },
+  "not_run": [
+    "game launch / load / outfits / compatibility / save isolation / UI / performance",
+    "EXE execution",
+    "deep decode of 38 other-game archives"
+  ],
+  "limits": [
+    "Content hashes and decoding do not prove compatibility",
+    "Filename/content type candidates remain uncertain; exact metadata discovery continues in R02",
+    "138 CNS configs and raw option records are not distinct wearable outfit counts",
+    "Eight prefix saves and three in-loader save backups protected; no isolated runtime save setup established"
+  ],
+  "game_or_download_mutations": "NONE"
+}
