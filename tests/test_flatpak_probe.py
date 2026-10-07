@@ -157,6 +157,13 @@ class FlatpakProbeTests(unittest.TestCase):
         with self.assertRaises(probe.Refused):
             probe.validate(self.root)
         (build / 'hard').unlink()
+        (self.root / probe.SENTINEL_NAME).unlink()
+        os.mkfifo(self.root / probe.SENTINEL_NAME)
+        with self.assertRaises(probe.Refused) as special:
+            probe.validate(self.root)
+        self.assertEqual(str(special.exception), 'PROFILE_SPECIAL')
+        (self.root / probe.SENTINEL_NAME).unlink()
+        (self.root / probe.SENTINEL_NAME).write_bytes(b'r04n-host-only\n')
         (self.root / 'probe.sh').chmod(0o700)
         (self.root / 'probe.sh').write_bytes(b'#!/bin/sh\necho foreign\n')
         with self.assertRaises(probe.Refused):
@@ -250,7 +257,8 @@ class FlatpakProbeTests(unittest.TestCase):
         self.assertEqual(calls[0][1]['HOME'], os.environ['HOME'])
         self.assertNotIn('DISPLAY', calls[0][1])
         result = json.loads((self.scope / 'result.json').read_text())
-        self.assertTrue(result['postflight_app_paths_absent'])
+        self.assertTrue(result['postflight']['app_paths_absent'])
+        self.assertTrue(result['postflight']['deployments_unchanged'])
 
     def test_timeout_reaps_and_residue_never_claims_success(self):
         self.arm()
@@ -259,23 +267,29 @@ class FlatpakProbeTests(unittest.TestCase):
         def popen(args, **kwargs):
             return hang
 
-        self.assertEqual(self.launch(popen, init_timeout=0.2), 'PROBE_TIMEOUT')
+        self.assertEqual(self.launch(popen, init_timeout=0.2), 'PROBE_FAILED_UNCLASSIFIED')
         self.assertTrue(hang.reaped)
         result = json.loads((self.scope / 'result.json').read_text())
-        self.assertTrue(result['postflight_app_paths_absent'])
-        (self.scope / 'result.json').unlink()
+        self.assertEqual(result['distinction'], 'PROBE_TIMEOUT')
+        self.assertTrue(result['postflight']['app_paths_absent'])
+        self.assertTrue(result['postflight']['owned_process_absent'])
+
+    def test_residue_and_flatpak_config_drift_block_success(self):
+        self.arm()
 
         def succeed(args, **kwargs):
             if args[1] == 'build-init':
                 (self.root / 'build' / 'files').mkdir()
                 return Done(0)
-            (self.home / '.var' / 'app' / probe.APP_ID).mkdir(parents=True)
+            (self.home / '.config' / 'flatpak').mkdir(parents=True)
+            (self.home / '.config' / 'flatpak' / 'overrides').write_text('changed')
             return Done(0, payload(), b'')
 
         self.assertEqual(self.launch(succeed), 'PROBE_FAILED_UNCLASSIFIED')
         result = json.loads((self.scope / 'result.json').read_text())
         self.assertTrue(result['platform_25_08_is_not_steam_26_08'])
-        self.assertFalse(result['postflight_app_paths_absent'])
+        self.assertFalse(result['postflight']['flatpak_config_unchanged'])
+        self.assertEqual(result['distinction'], 'POSTFLIGHT')
         self.assertNotEqual(result['outcome'], 'FLATPAK_RUNTIME_BOUNDARY_PROVED_WITH_DEFAULT_NVIDIA_EXTENSION')
 
     def test_streaming_limit_and_timeout_reap_real_processes(self):
@@ -349,11 +363,82 @@ class FlatpakProbeTests(unittest.TestCase):
             self.launch(popen)
         self.assertEqual(calls, [])
         document = probe.registration_document()
-        self.assertEqual(document['command_prefix'][:2], [probe.FLATPAK, 'build'])
+        self.assertEqual(document['build_vector'][:2], [probe.FLATPAK, 'build'])
+        self.assertIn(probe.BUILD_DIR_TOKEN, document['build_vector'])
+        self.assertEqual(probe.instantiate(document['build_vector'], self.root / 'build'),
+                         probe.build_command(self.root / 'build'))
         self.assertEqual(document['environment_allowlist'][:2], ['HOME', 'PATH'])
         self.assertIn('nvidia_marker_present', document['expected_payload_keys'])
+        self.assertIn('network_namespace_separate', document['expected_payload_keys'])
         text = probe.payload_bytes().decode()
         self.assertIn('/app/sentinel.path', text)
         self.assertIn('/app/nvidia.sha256', text)
+        self.assertIn('/app/ns.preimage', text)
         self.assertIn('/proc/sysvipc/shm', text)
-        self.assertIn(probe.PINNED_NVIDIA_SHA, probe.pinned_identity()['nvidia_metadata_sha256'])
+        self.assertIn('/proc/sysvipc/msg', text)
+        self.assertIn('/dev/mqueue', text)
+        self.assertEqual(probe.pinned_identity()['platform_commit'], probe.PINNED_PLATFORM_COMMIT)
+
+    def test_namespace_preimage_must_differ(self):
+        ns = self.base / 'ns'
+        ns.mkdir()
+        for kind, token in (('net', '11'), ('ipc', '22'), ('pid', '33')):
+            (ns / kind).symlink_to(f'{kind}:[{token}]')
+        preimage = self.base / 'ns.preimage'
+        preimage.write_text('net 1\nipc 2\npid 3\n')
+        script = probe.payload_bytes().decode()
+        start = script.index('preimage=${R04N_NS_PREIMAGE:-/app/ns.preimage}')
+        stop = script.index('runtime_exact=no')
+        fragment = script[start:stop] + 'printf "%s %s %s\\n" "$net_ns" "$ipc_ns" "$pid_ns"\n'
+        separated = subprocess.run(['/bin/sh', '-c', fragment], capture_output=True, text=True, env={
+            'R04N_NS_PREIMAGE': str(preimage), 'R04N_NS_DIR': str(ns), 'PATH': '/usr/bin:/bin'})
+        self.assertEqual(separated.returncode, 0, separated.stderr)
+        self.assertEqual(separated.stdout.strip(), 'yes yes yes')
+        preimage.write_text('net 11\nipc 22\npid 33\n')
+        same = subprocess.run(['/bin/sh', '-c', fragment], capture_output=True, text=True, env={
+            'R04N_NS_PREIMAGE': str(preimage), 'R04N_NS_DIR': str(ns), 'PATH': '/usr/bin:/bin'})
+        self.assertEqual(same.stdout.strip(), 'no no no')
+
+    def test_attempt_marker_and_launch_recheck_block_another_start(self):
+        self.arm()
+        calls = []
+
+        def popen(args, **kwargs):
+            calls.append(args[1])
+            return Done(1, b'', probe.PREREQ_EXACT[0])
+
+        self.assertEqual(self.launch(popen), 'FLATPAK_SUPPORTED_PREREQUISITE_MISSING')
+        (self.scope / 'result.json').unlink()
+        with self.assertRaises(probe.Refused) as reused:
+            self.launch(popen)
+        self.assertEqual(str(reused.exception), 'ATTEMPT_REUSED')
+        self.assertEqual(calls, ['build-init'])
+        (self.scope / 'attempt.json').unlink()
+        seen = {'n': 0}
+
+        def drift(*args):
+            seen['n'] += 1
+            if seen['n'] >= 2:
+                raise probe.Refused('PLATFORM_IDENTITY')
+            return probe.pinned_identity()
+
+        with patch.object(probe, 'read_deployments', side_effect=drift):
+            with self.assertRaises(probe.Refused) as changed:
+                probe.execute(self.root, self.home, popen=popen)
+        self.assertEqual(str(changed.exception), 'PLATFORM_IDENTITY')
+        self.assertEqual(calls, ['build-init'])
+
+    def test_result_publication_collision_is_not_retried(self):
+        self.arm()
+        calls = []
+
+        def popen(args, **kwargs):
+            calls.append(args[1])
+            (self.scope / 'result.json').write_text('race')
+            return Done(1, b'', probe.PREREQ_EXACT[0])
+
+        with self.assertRaises(probe.Refused) as collision:
+            self.launch(popen)
+        self.assertEqual(str(collision.exception), 'RESULT_PUBLICATION_COLLISION')
+        self.assertEqual(calls, ['build-init'])
+        self.assertTrue((self.scope / 'attempt.json').is_file())

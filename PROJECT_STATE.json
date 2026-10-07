@@ -16,7 +16,7 @@
   "implementation_started": true,
   "phase": "P1",
   "current_round": "R04-n",
-  "round_status": "R04-n_SECOND_REPAIR_PENDING_FRESH_JUDGE",
+  "round_status": "R04-n_THIRD_FAIL_REPAIR_PENDING_FRESH_JUDGE",
   "next_round": "R04-n",
   "protected": [
     "Existing game files and saves",
@@ -61,9 +61,20 @@
       "cursor_resume": "Direct user submission in Cursor resumes same stellar-mod-console/R04-n/v1 after ownership/current-evidence check; preparation approval is not runtime approval.",
       "admin_window": {
         "requested_hours": 20,
-        "status": "WINDOW_NOT_OPENED",
-        "waiting": "WAITING_FOR_LOCAL_AUTH",
-        "backend": "No qualified restricted 20-hour backend is registered. sudo cache is not a window. R04-n does not authorize installing a host backend."
+        "status": "ACTIVE",
+        "window_id": "cursor-shared-admin20-241668ad-9dd5-46dc-9f0d-5c356500b033",
+        "contract": "CURSOR-SHARED-ADMIN-20H-v1",
+        "manifest_sha256": "a7df750fb5f0a09b8e12075a0f7ba5352e263258b1d8031c07a15f9a17d1dd73",
+        "effective_uid": 0,
+        "owner_uid": 1000,
+        "hostname": "lab-root",
+        "boot_id": "8d760558-0593-42b7-aa5b-4c8ab37cfc4b",
+        "machine_id": "e0cd591bc1294ac69e392320a9dae981",
+        "started_at": "2026-10-08T04:26:13.602122+09:00",
+        "hard_expiry": "2026-10-09T00:26:13.602122+09:00",
+        "duration_seconds": 72000,
+        "covers_r04n_flatpak": false,
+        "backend": "Verified by client.py status on the current boot. Restart invalidates it. It does not authorize Flatpak, Steam, host policy, or operations outside its frozen manifest."
       },
       "validation": "PASS: document activation/window/manual-gate/contract/A01-A14/Git checks, JSON parse, required document references and exact diff whitespace checks. All original acceptance/counters and frozen R04-n governance unchanged. No implementation or runtime tests run.",
       "delivery": "VERIFIED content commit cd1f89d9a739fd579117c64e7b2c19cb6db3b9e2 equals GitHub impl/mod-console API ref. Final metadata commit identity is checked from Git HEAD and exact remote ref after push, without self-reference.",
@@ -946,7 +957,7 @@
     {
       "scope": "Runtime game tests",
       "reason": "Current R04-j route refusal retained. R04-n read-only assessment found installedFlatpak1.16.6/Platform25.08; defaultSteam deployments absent; upstreammaster Steam manifest26.08/broadpermissions not admitted. Fresh Governor contract defines distinct own Flatpak build-runtime proof, no runtime approval; user pause before implementation. Loaded AppArmor profile list unavailableerrno13, installedpolicy only. Steam/account/Cloud/game/save isolation remains unestablished.",
-      "state": "SECOND_REPAIR_AFTER_SECOND_JUDGE_FAIL; RUNTIME_NOT_GRANTED",
+      "state": "THIRD_FAIL_REPAIR_PENDING_FRESH_JUDGE; RUNTIME_NOT_GRANTED",
       "evidence": "docs/evidence/R04-n.json",
       "next": "Fresh prelaunch Judge PASS and Governor execution approval before one Flatpak probe. No Steam/game/auth/Cloud/install/host-policy effects."
     },
@@ -957,7 +968,7 @@
       "evidence": "docs/evidence/R03-inc1.json"
     }
   ],
-  "next_action": "Fresh read-only Judge on the second R04-n repair. Two prelaunch Judges returned FAIL. No Flatpak execution until a new PASS and Governor approval.",
+  "next_action": "Fresh read-only Judge on the repair after the third R04-n FAIL. No Flatpak execution and no Governor execution request until that Judge PASSes.",
   "updated_on": "2026-10-08",
   "execution": {
     "owner_thread": "01a115db-7ff8-70c1-8122-cdc330aaf5c5",
@@ -974,7 +985,7 @@
     ],
     "entry_preimage": "cdc4eb34af06e6bbdc25552392bbc42b8085e167; State SHA256 e033d19c278840935c30f01ef2c3d6c0ded6d1300e2d2a55dfee735974ee6b89",
     "execution_source": "Direct Cursor execution of EXECUTION_PROMPT.md",
-    "acceptance": "R04-n/v1 unfinished. Deployment files were read. Local process collection was tested. Flatpak build-init/build not run. C11-C12 not run. Original A01-A14 unchanged.",
+    "acceptance": "R04-n/v1 unfinished. Sixteen tests passed without launching Flatpak. Original A01-A14 unchanged.",
     "external_scope": "Preparation files and read-only current evidence only; no new runtime effects. Source sync remains authorized after preparation review/Governor decision.",
     "next_evidence": "Governor contract: exact distinct Flatpak build sandbox viability or read-only route assessment; never unchanged R04-j nested retry",
     "result": "Repaired candidate after prelaunch Judge FAIL. 9 synthetic tests pass. Flatpak was not launched. Runtime NOT_GRANTED."
@@ -1084,10 +1095,10 @@
     "last_closed": "R04-m",
     "remaining_round_estimate": null,
     "forecast_confidence": "unknown; no final end-to-end acceptance throughput; incomplete prerequisites and heterogeneous remaining work",
-    "previous_goal_turn": "R04-n remains open after a second Judge FAIL. The repair reads deployment files, pins the profile tree, bounds process output, and binds the registration file digest. 12 tests passed. No Flatpak launch and no new closed unit.",
+    "previous_goal_turn": "R04-n remains open after a third Judge FAIL. The shared 20-hour admin window is ACTIVE and does not cover Flatpak. The new candidate adds special-file refusal, deployment commits, the full command vector, namespace preimage checks, one attempt marker, and postflight stamps. 16 tests passed. No Flatpak launch and no new closed unit.",
     "total_closed_units_including_planning": 22,
     "changes": {
-      "execution": "Second repair inside unfinished R04-n. Flatpak/build/Steam/game not run. Closed-unit count unchanged.",
+      "execution": "Repair after the third prelaunch FAIL, inside unfinished R04-n. Flatpak/build/Steam/game not run. Closed-unit count unchanged.",
       "evidence": "C02-C09 recorded as synthetic or partial. NVIDIA deployment digest not re-read. Runtime gate remains NOT_GRANTED.",
       "scope": "Original A01-A14 denominator unchanged. 20-hour window requested and not opened."
     },
@@ -1101,9 +1112,10 @@
     "entry": ".local/r04/route-prerequisites/entry.json",
     "contract": "docs/contracts/R04-n.json",
     "contract_status": "ACTIVE_UNFINISHED",
-    "phase": "SECOND_REPAIR_PENDING_FRESH_JUDGE",
+    "phase": "THIRD_FAIL_REPAIR_PENDING_FRESH_JUDGE",
     "prelaunch_judge": "FAIL",
     "second_prelaunch_judge": "FAIL",
+    "third_prelaunch_judge": "FAIL",
     "runtime_execution_gate": "NOT_GRANTED",
     "result": "NONE_RUNTIME_NOT_RUN",
     "resume_contract_id": "stellar-mod-console/R04-n/v1",
@@ -1111,7 +1123,7 @@
     "evidence": "docs/evidence/R04-n.json",
     "registration": ".local/r04/route-prerequisites/registration.json",
     "preparation_semantic_candidate": "30c36dd4661266868c13351d1a0a4c7e6e3fb6062cf7ac8f9ace688f5ac86c2d",
-    "implementation_semantic_candidate": "86ec692fb535e650a3a3884aa9cbade5540079c3b0b4c836006aae5cdbf23b95",
+    "implementation_semantic_candidate": "c072c3b0dbeb41b805f00d7877054b135a1d45747a68deac7e8d23d92b9b3d19",
     "implementation_registration": ".local/r04/route-prerequisites/implementation.json",
     "judge": "r04_n_preparation_judge",
     "judge_report": ".local/r04/route-prerequisites/judge.json",

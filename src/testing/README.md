@@ -237,17 +237,19 @@ Steam 账户的 Cloud；合法客户端、许可、首次激活、Cloud 和游�
 Cursor 接手后沿用同一 `R04-n/v1`。自有 `flatpak_probe` 只构造固定的
 `build-init` 与 `build --runtime` 命令：Platform 同时作为 SDK 与 runtime
 操作数，显式拒绝已安装 man 页列出的全部 socket 与 device，并拒绝 host/home
-文件系统。执行前重新读取并核对已安装二进制、Platform metadata 与 NVIDIA
-active 提交；输出按块采集，超过上限或超时即结束进程组并做路径回查。探针
-脚本随模块发布。没有新鲜 Judge PASS 与 Governor `APPROVE_FLATPAK_PROBE`
-时，入口拒绝执行。注册文件的摘要必须等于该文件字节，不能由调用方传入。
+文件系统。执行前重新读取并核对已安装二进制、Platform 与 NVIDIA 的 active 提交和
+metadata；完整 build-init/build 命令向量写入注册文件。探针比较主机网络、IPC
+和 PID 命名空间预像，并在首次子进程前占用不可复用的单次尝试标记。输出按块
+采集。回查部署身份、应用路径、Flatpak 配置戳、进程和实例残留，以及 Steam
+目录戳，不读取存档内容。没有新鲜 Judge PASS 与 Governor
+`APPROVE_FLATPAK_PROBE` 时，入口拒绝执行。注册摘要必须等于该文件字节。
 
 ```sh
 python3 -B -m unittest tests.test_flatpak_probe -v
 ```
 
-12 项测试已通过：其中包含对真实 Flatpak 二进制、Platform metadata 与 NVIDIA
-active 提交的只读身份核对，以及本地进程的有界流式采集和超时回收。这些测试
-不启动 Flatpak 或 bwrap。build-init、build、Steam、游戏、账号、Cloud 与主机
-策略均未执行。Platform 25.08 仍不等于上游 Steam manifest 的 26.08。R04-n
-尚未完成；一次实验仍须先复核精确候选。
+16 项测试已通过：其中包括真实部署身份、特殊文件拒绝、命名空间预像比较、
+单次尝试标记、启动前身份复检、结果发布竞争，以及本地进程的有界采集和超时
+回收。这些测试不启动 Flatpak 或 bwrap。build-init、build、Steam、游戏、账号、
+Cloud 与主机策略均未执行。Platform 25.08 仍不等于上游 Steam manifest 的
+26.08。R04-n 尚未完成；一次实验仍须先复核精确候选。

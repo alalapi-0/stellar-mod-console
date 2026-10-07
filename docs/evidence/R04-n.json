@@ -1,6 +1,6 @@
 {
   "unit": "R04-n",
-  "phase": "SECOND_REPAIR_PENDING_FRESH_JUDGE",
+  "phase": "THIRD_FAIL_REPAIR_PENDING_FRESH_JUDGE",
   "contract": "docs/contracts/R04-n.json",
   "contract_status": "ACTIVE_UNFINISHED",
   "result": "NONE_RUNTIME_NOT_RUN",
@@ -63,22 +63,22 @@
   ],
   "contract_acceptance": {
     "C01": "ROOT_VERIFIED_PREPARATION_RECORD",
-    "C02": "SYNTHETIC_PASS_PRIVATE_MODE_ANCESTOR_CHANGE",
-    "C03": "REAL_DEPLOYMENT_FILES_READ_RUNTIME_NOT_RUN",
+    "C02": "SPECIAL_FILES_SYMLINKS_HARDLINKS_AND_ANCESTORS_REFUSED",
+    "C03": "PLATFORM_AND_NVIDIA_ACTIVE_COMMITS_REREAD_RUNTIME_NOT_RUN",
     "C04": "SYNTHETIC_COMMAND_PASS_BUILD_INIT_NOT_RUN",
     "C05": "SYNTHETIC_COMMAND_PASS_INCLUDING_HOST_RESET_BUILD_NOT_RUN",
-    "C06": "PAYLOAD_REQUIRES_TMPFS_AND_SYSVIPC_HEADER_SANDBOX_NOT_RUN",
+    "C06": "NAMESPACE_PREIMAGE_AND_POSIX_IPC_COMPARED_SANDBOX_NOT_RUN",
     "C07": "NVIDIA_MARKER_BOUND_TO_PINNED_DIGEST_NOT_OBSERVED",
     "C08": "BOUNDED_STREAMING_CAPTURE_REAPS_LOCAL_PROCESS_FLATPAK_NOT_RUN",
-    "C09": "TWELVE_TESTS_PASS_FLATPAK_NOT_LAUNCHED",
-    "C10": "REGISTRATION_FILE_DIGEST_COMMAND_ENV_AND_PINS_BOUND_JUDGE_PENDING",
-    "C11": "NOT_RUN",
-    "C12": "NOT_RUN",
+    "C09": "SIXTEEN_TESTS_PASS_FLATPAK_NOT_LAUNCHED",
+    "C10": "FULL_COMMAND_VECTOR_AND_REGISTRATION_FILE_DIGEST_JUDGE_PENDING",
+    "C11": "SINGLE_ATTEMPT_MARKER_PRESENT_RUNTIME_NOT_RUN",
+    "C12": "POSTFLIGHT_STAMPS_PRESENT_RUNTIME_NOT_RUN",
     "C13": "PARTIAL_25_08_VERSUS_26_08_RETAINED_RUNTIME_NOT_RUN"
   },
   "tests": {
     "command": "python3 -B -m unittest tests.test_flatpak_probe -v",
-    "passed": 12,
+    "passed": 16,
     "failed": 0,
     "flatpak_or_bwrap_launches": 0
   },
@@ -124,5 +124,5 @@
     }
   ],
   "user_pause": "Lifted for Cursor by direct execution of EXECUTION_PROMPT.md. Codex Goal remains paused.",
-  "next_action": "Second prelaunch Judge returned FAIL. This repair binds deployment file reads, tree pins, bounded process collection, and the registration file digest. It awaits a fresh read-only Judge before any build-init/build."
+  "next_action": "Third prelaunch Judge returned FAIL. This repair adds special-file refusal, active deployment commits, the full command vector, namespace preimage comparison, one attempt marker, and postflight stamps. It awaits a fresh read-only Judge. Do not request execution approval before that PASS."
 }
