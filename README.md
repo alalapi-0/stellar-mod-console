@@ -15,7 +15,7 @@
 - [本轮环境调查](docs/ENVIRONMENT.md)：新下载工具、已有证据及尚未验证的内容。
 - [界面与玩家引导](docs/UI_SPEC.md)：游戏风格、体积感、分类、输入和状态。
 - [开源复用与许可](docs/REUSE.md)：可用组件、禁止直接复制的工具和来源。
-- [执行交接 Prompt](EXECUTION_PROMPT.md)：用于后续执行窗口，不在规划轮自动运行。
+- [Cursor 执行交接 Prompt](EXECUTION_PROMPT.md)：原生 Goal＋Loop、20 小时管理员窗口规则、未完成 R04-n 续接和完整剩余验收；用户在 Cursor 明确发送后执行，Codex 保持暂停。
 - [项目执行约定](AGENTS.md)、[参与开发](CONTRIBUTING.md)。
 
 ## 为什么统一管理仍需要互斥

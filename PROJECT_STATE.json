@@ -16,7 +16,7 @@
   "implementation_started": true,
   "phase": "P1",
   "current_round": "R04-n",
-  "round_status": "PAUSED_UNFINISHED_R04-n_PREPARATION_DELIVERED; NATIVE_PAUSE_PENDING_AFTER_FINAL_REMOTE_VERIFY",
+  "round_status": "PAUSED_UNFINISHED_R04-n_PREPARATION_DELIVERED; NATIVE_PAUSE_CONFIRMED; CURSOR_HANDOFF_READY_NOT_STARTED",
   "next_round": "R04-n",
   "protected": [
     "Existing game files and saves",
@@ -38,8 +38,35 @@
       "timing": "After preparation evidence review and normal source sync; no new runtime experiment",
       "resume": "Requires explicit user resume; sameR04-n/v1",
       "scheduling_state": "PAUSED_UNFINISHED",
-      "native_control": "Invoke native update_goal(paused) only after final metadata commit remote verification; native tool result is authoritative",
-      "effects_after_pause": "No dispatch, tests, runtime, installs, host changes, Git or goal work until explicit user resume"
+      "native_control": "Native get_goal confirmed paused at Cursor-handoff entry; 6,537,229 cumulative tokens and 27,546 native Goal elapsed seconds. Codex Goal is not resumed by this documentation request.",
+      "effects_after_pause": "No Codex implementation, dispatch, tests, runtime, authentication, installs or host changes. Direct 2026-10-08 user request separately authorizes bounded Cursor handoff documentation/state and normal source sync only; Cursor execution requires direct user submission there."
+    },
+    "cursor_handoff": {
+      "requested_on": "2026-10-08",
+      "source": "Direct user: remaining unfinished objective is handed to Cursor; prepare directly executable Goal+Loop prompt, 20-hour window rules, and every-round GitHub delivery.",
+      "status": "READY_NOT_STARTED",
+      "prompt": "EXECUTION_PROMPT.md",
+      "pre_handoff_head": "68570eac329aa8ccc595882e6f0918e3eaffe570",
+      "lane": "DIRECT",
+      "scope": "Handoff documentation and pause/delivery metadata only; does not reopen R04-n or count a closed execution unit.",
+      "owner_thread": "01a115db-7ff8-70c1-8122-cdc330aaf5c5",
+      "owned_public_files": [
+        "EXECUTION_PROMPT.md",
+        "README.md",
+        "docs/ROADMAP.md",
+        "PROJECT_STATE.json"
+      ],
+      "codex_native_goal": "PAUSED_VERIFIED",
+      "cursor_goal_loop": "NOT_STARTED_BY_CODEX; actual native activation/deduplication required when user executes prompt in Cursor",
+      "cursor_resume": "Direct user submission in Cursor resumes same stellar-mod-console/R04-n/v1 after ownership/current-evidence check; preparation approval is not runtime approval.",
+      "admin_window": {
+        "requested_hours": 20,
+        "status": "NOT_OPENED_BY_CODEX",
+        "backend": "No qualified general 20-hour backend registered in this project; verify current backend, prepare bounded reviewed capability if needed, then user-local terminal authentication. Window cannot replace human validation."
+      },
+      "validation": "PASS: document activation/window/manual-gate/contract/A01-A14/Git checks, JSON parse, required document references and exact diff whitespace checks. All original acceptance/counters and frozen R04-n governance unchanged. No implementation or runtime tests run.",
+      "delivery": "PENDING_HANDOFF_SOURCE_SYNC; normal impl/mod-console commit/push and exact GitHub ref verification only",
+      "original_acceptance": "0/14; 22 closed units (21 execution + 1 planning); R04-n unfinished and uncounted"
     }
   },
   "inputs": {
@@ -929,7 +956,7 @@
       "evidence": "docs/evidence/R03-inc1.json"
     }
   ],
-  "next_action": "Await explicit user resume; then continue the same unfinished stellar-mod-console/R04-n/v1: implement/register exact self-authored Flatpak candidate, fresh prelaunch Judge PASS and Governor execution approval before one probe. No Steam/game/auth/Cloud/install/host-policy effects or unchangedR04-jretry.",
+  "next_action": "Await direct user execution of EXECUTION_PROMPT.md in Cursor; Codex remains paused. Cursor must verify native Goal+Loop and prepare/qualify the requested 20-hour admin window without replacing human gates or blocking independent nonprivileged R04-n preparation. Continue unchanged stellar-mod-console/R04-n/v1: implement/register candidate, fresh Judge PASS and Governor execution approval before one probe. No unchanged R04-j retry or implicit Steam/game/auth/Cloud/install/host-policy authority.",
   "updated_on": "2026-10-08",
   "execution": {
     "owner_thread": "01a115db-7ff8-70c1-8122-cdc330aaf5c5",
