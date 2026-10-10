@@ -1222,9 +1222,9 @@
         "id": "T4",
         "status": "IN_PROGRESS",
         "acceptance": "Body+physics+user combat actual actions and sustained combat success",
-        "next": "T4: exact originalSB plus restoredIPD/BetterEquipment102; actual equipped-stat effect and sustained combat. Automatic guard after light attack remains unresolved; do not repeat failed99 calibration or101 VK dispatch or enterT5/clothing.",
-        "findings": "100 three distinct automaticJustParry confirmed by native steps and video;101 automaticFlashBehindAttack and nativeJustParry290ms retainedHP1.0 with IPD. Incorrect far lock-on produces missed nearby attacker; source conflict not proven. Actual attack integration still missed; localized VK dispatch failed and exactexe/launcher preimages restored. Native Q healing verified. No fresh confirmed game crash99–101.",
-        "failure_fingerprint": "core101/SBParry0.2.3+IPD1.01/close attack integration auto guard missed/VK input candidate also failed/original restored",
+        "next": "Isolate real Win32 keyboard versus existing native secondary mouse defense route, then actual equipped effect/combatsustained. Do not repeat failedVK/holdtime/calibration candidates, enterT5 or restore clothing.",
+        "findings": "100 three distinct automaticJustParry confirmed by native steps and video;101 automaticFlashBehindAttack and nativeJustParry290ms retainedHP1.0 with IPD. Incorrect far lock-on produces missed nearby attacker; source conflict not proven. Actual attack integration still missed; localized VK dispatch failed and exactexe/launcher preimages restored. Native Q healing verified. No fresh confirmed game crash99–101. 102 exact engine equipment multiplier1.25 loaded; tooltip unchanged per author. Native keyboard input and200ms hold diagnostics still missed; original restored; real helper keys69/160 verified; new1death/new0crash.",
+        "failure_fingerprint": "core102/originalSB0.2.3+IPD+Better/current native keyboard attack and200ms hold both missDefense/holdcandidate exactrestored",
         "evidence": [
           "core-baseline-94/combat-resource-registration.json",
           "core-baseline-94/combat-diagnostic-result.json",
@@ -1234,7 +1234,7 @@
           "core-functional-101/vk-dispatch-candidate.json"
         ],
         "blocker": null,
-        "latest_evidence": ".local/play-session-20261008/core-functional-101/functional-round-result.json"
+        "latest_evidence": ".local/play-session-20261008/core-functional-102/functional-round-result.json"
       },
       {
         "id": "T5",
@@ -1273,7 +1273,7 @@
       "effective_accepted": 0,
       "completion_percent": null,
       "reason": "Unique MOD acceptance0/139; whole-goal includes five body combination checks and core baseline gates, no false aggregate acceptance",
-      "round_key": "core-p2-native-combat-functional",
+      "round_key": "core-p2-equipment-and-action-input",
       "round_status": "CLOSED",
       "remaining_rounds": "UNKNOWN",
       "legacy_denominator": 171,
@@ -1282,21 +1282,21 @@
       "effective_mod_required": 139,
       "effective_mod_percent": 0,
       "scope_increment": "3 required named body components added to136 historical MOD units; historical denominator171 and results retained",
-      "count": 7,
+      "count": 8,
       "coverage": "since_baseline",
-      "last_seq": 7,
-      "last_key": "core-p2-native-combat-functional",
+      "last_seq": 8,
+      "last_key": "core-p2-equipment-and-action-input",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": 0,
       "evidence_change_percentage_points": 0,
       "remaining_rounds_confidence": "UNKNOWN",
       "scope_change": "No unit additions/removals; effective139 denominator and historical171 preserved",
-      "milestone_change": "P2 first attributable automatic defense evidence: three independent parries100, oneParry/Blink101, healing actual. Attack/multi-target failures remain; VK candidate exactly rolled back. No full-core MOD acceptance, no new checkpoint claimed. Equipment restored for102 actual test.",
+      "milestone_change": "102 current engine equipment multiplier1.25 observed; exact runtime keyboard bindings verified. Keyboard-attack and200ms hold diagnostics still missed; exact temporary changes restored. One real characterdeath, no new crash; no fullcore acceptance/checkpoint claimed.",
       "scope_change_percentage_points": 0,
-      "round_start_commit": "9aa84139543b640479b7b2bbb2240acf94562985"
+      "round_start_commit": "8397958cc067f85ae509ac8206a844451ab0051b"
     },
-    "next_action": "T4: exact originalSB plus restoredIPD/BetterEquipment102; actual equipped-stat effect and sustained combat. Automatic guard after light attack remains unresolved; do not repeat failed99 calibration or101 VK dispatch or enterT5/clothing.",
-    "updated_at": "2026-10-10T19:05:03.230586+00:00",
+    "next_action": "Isolate real Win32 keyboard versus existing native secondary mouse defense route, then actual equipped effect/combatsustained. Do not repeat failedVK/holdtime/calibration candidates, enterT5 or restore clothing.",
+    "updated_at": "2026-10-10T19:35:56.504750+00:00",
     "blocked_audit": {
       "native_goal_status": "active",
       "consecutive_goal_turns": 0,
@@ -1342,7 +1342,7 @@
         "NEXT CHECKPOINT": "A newly registered diagnostic candidate yields an identifiable operation result; subsequent health checks obey75000-token/30-active-minute cooldown and require a listed trigger"
       }
     },
-    "round_closure_at": "2026-10-10T19:05:03.230586+00:00",
+    "round_closure_at": "2026-10-10T19:35:56.504750+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 8,
       "new_confirmed_this_round": 0,
@@ -1352,8 +1352,8 @@
       "evidence": "core-baseline-90/crash-diagnosis.json",
       "current_segment_new_confirmed": 0,
       "last_confirmed_segment": "core-baseline-90",
-      "observed_deaths": 35,
-      "latest_segment": "core-functional-101",
+      "observed_deaths": 36,
+      "latest_segment": "core-functional-102",
       "new_observed_deaths_this_round": 1,
       "video_death_correction": "Second core94 YOU_DIED now confirmed by exported frame evidence; count updated once"
     },
@@ -1369,7 +1369,7 @@
       "human_review": "Direct user confirms core91 selected green P1 natural, unaffected by later95 capture temporal defect"
     },
     "current_segment": ".local/play-session-20261008/core-functional-102",
-    "previous_goal_turn_classification": "USER_RESUME_ACTUAL_FUNCTIONAL_TEST_ROUND",
+    "previous_goal_turn_classification": "PROGRESS: real loaded equipment effect data and runtime input binding verification reduced failure surface; diagnostic failed and exactly restored, no false acceptance",
     "execution_status": "IN_PROGRESS",
     "pause_at": "2026-10-10T12:03:10.167690+00:00",
     "pause_source": "Direct user pauses actual tests, requests normal game exit and verified playset handoff to user with separate read-only observation session",
