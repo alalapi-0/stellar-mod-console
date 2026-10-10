@@ -1220,17 +1220,21 @@
       },
       {
         "id": "T4",
-        "status": "PAUSED_BY_USER_NOT_ACCEPTED",
+        "status": "IN_PROGRESS",
         "acceptance": "Body+physics+user combat actual actions and sustained combat success",
-        "next": "Restored native E/SHIFT+Mouse4/5 bindings; continuous single encounter without menu pauses, then sustained multiple-enemy/evade/heal/body-retention proof",
-        "findings": "Existing IPD Extended1.01 window290ms and one actual native player Parry animation observed; SBParry0.2.3 automatic responses remain unreliable across keyboard/XInput/native-aux trial. Five positive judge rows are repeated observations, not five accepted independent automatic defenses.",
-        "failure_fingerprint": "core94/SBParry0.2.3/IPD1.01/native auto input not accepted/timing-or-state cause UNKNOWN",
+        "next": "T4: exact originalSB plus restoredIPD/BetterEquipment102; actual equipped-stat effect and sustained combat. Automatic guard after light attack remains unresolved; do not repeat failed99 calibration or101 VK dispatch or enterT5/clothing.",
+        "findings": "100 three distinct automaticJustParry confirmed by native steps and video;101 automaticFlashBehindAttack and nativeJustParry290ms retainedHP1.0 with IPD. Incorrect far lock-on produces missed nearby attacker; source conflict not proven. Actual attack integration still missed; localized VK dispatch failed and exactexe/launcher preimages restored. Native Q healing verified. No fresh confirmed game crash99–101.",
+        "failure_fingerprint": "core101/SBParry0.2.3+IPD1.01/close attack integration auto guard missed/VK input candidate also failed/original restored",
         "evidence": [
           "core-baseline-94/combat-resource-registration.json",
-          "core-baseline-94/combat-diagnostic-result.json"
+          "core-baseline-94/combat-diagnostic-result.json",
+          "core-functional-99/input-api-diagnosis.json",
+          "core-functional-100/support-isolation-result.json",
+          "core-functional-101/ipd-corrected-target-result.json",
+          "core-functional-101/vk-dispatch-candidate.json"
         ],
         "blocker": null,
-        "latest_evidence": ".local/play-session-20261008/core-baseline-95/combat-diagnostic-result.json"
+        "latest_evidence": ".local/play-session-20261008/core-functional-101/functional-round-result.json"
       },
       {
         "id": "T5",
@@ -1269,7 +1273,7 @@
       "effective_accepted": 0,
       "completion_percent": null,
       "reason": "Unique MOD acceptance0/139; whole-goal includes five body combination checks and core baseline gates, no false aggregate acceptance",
-      "round_key": "core-p2-continuous-defense",
+      "round_key": "core-p2-native-combat-functional",
       "round_status": "CLOSED",
       "remaining_rounds": "UNKNOWN",
       "legacy_denominator": 171,
@@ -1278,23 +1282,23 @@
       "effective_mod_required": 139,
       "effective_mod_percent": 0,
       "scope_increment": "3 required named body components added to136 historical MOD units; historical denominator171 and results retained",
-      "count": 6,
+      "count": 7,
       "coverage": "since_baseline",
-      "last_seq": 6,
-      "last_key": "core-p2-continuous-defense",
+      "last_seq": 7,
+      "last_key": "core-p2-native-combat-functional",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": 0,
       "evidence_change_percentage_points": 0,
       "remaining_rounds_confidence": "UNKNOWN",
-      "scope_change": "None;139 unique units unchanged, full-core acceptance0/139; T4/T5 gates prevent clothing acceptance",
-      "milestone_change": "Read-only exact coordinates/native input proved22.9m approach and36s real enemy combat. NativeQ PotionCast verified but interrupted; threeSB guard attempts failed; P2 remains unaccepted. User paused, normalexit0, exact retained P0/P1 user-native96 launch and separate read-only observer active",
+      "scope_change": "No unit additions/removals; effective139 denominator and historical171 preserved",
+      "milestone_change": "P2 first attributable automatic defense evidence: three independent parries100, oneParry/Blink101, healing actual. Attack/multi-target failures remain; VK candidate exactly rolled back. No full-core MOD acceptance, no new checkpoint claimed. Equipment restored for102 actual test.",
       "scope_change_percentage_points": 0,
-      "round_start_commit": "a7565c5b7d56cfb6225d1202212f3af7bc4ea2d6"
+      "round_start_commit": "9aa84139543b640479b7b2bbb2240acf94562985"
     },
-    "next_action": "Keep existing read-only Root log observer until current manual-play game exits; actual tests/Goal remain PAUSED; screenshot97 report sealed, gameplay evidence UNKNOWN; no automatic restart",
-    "updated_at": "2026-10-10T16:38:33.678913+00:00",
+    "next_action": "T4: exact originalSB plus restoredIPD/BetterEquipment102; actual equipped-stat effect and sustained combat. Automatic guard after light attack remains unresolved; do not repeat failed99 calibration or101 VK dispatch or enterT5/clothing.",
+    "updated_at": "2026-10-10T19:05:03.230586+00:00",
     "blocked_audit": {
-      "native_goal_status": "paused",
+      "native_goal_status": "active",
       "consecutive_goal_turns": 0,
       "condition": null,
       "cleared_by": "Human green-profile visual confirmation"
@@ -1338,7 +1342,7 @@
         "NEXT CHECKPOINT": "A newly registered diagnostic candidate yields an identifiable operation result; subsequent health checks obey75000-token/30-active-minute cooldown and require a listed trigger"
       }
     },
-    "round_closure_at": "2026-10-10T12:14:03.134534+00:00",
+    "round_closure_at": "2026-10-10T19:05:03.230586+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 8,
       "new_confirmed_this_round": 0,
@@ -1348,8 +1352,8 @@
       "evidence": "core-baseline-90/crash-diagnosis.json",
       "current_segment_new_confirmed": 0,
       "last_confirmed_segment": "core-baseline-90",
-      "observed_deaths": 34,
-      "latest_segment": "core-baseline-95",
+      "observed_deaths": 35,
+      "latest_segment": "core-functional-101",
       "new_observed_deaths_this_round": 1,
       "video_death_correction": "Second core94 YOU_DIED now confirmed by exported frame evidence; count updated once"
     },
@@ -1364,13 +1368,13 @@
       "limit": "Core95 battle capture cadence failed and quality review remains partial; sealed original evidence retained. User96 had no valid continuous video due cancelled/rejected Portal;96 logs/stills/report preserved;97 video requires source authorization",
       "human_review": "Direct user confirms core91 selected green P1 natural, unaffected by later95 capture temporal defect"
     },
-    "current_segment": ".local/play-session-20261008/user-native-97",
-    "previous_goal_turn_classification": "PROGRESS_DIAGNOSTIC_THEN_PAUSED_BY_USER; no fullMOD accepted",
-    "execution_status": "PAUSED_BY_USER",
+    "current_segment": ".local/play-session-20261008/core-functional-102",
+    "previous_goal_turn_classification": "USER_RESUME_ACTUAL_FUNCTIONAL_TEST_ROUND",
+    "execution_status": "IN_PROGRESS",
     "pause_at": "2026-10-10T12:03:10.167690+00:00",
     "pause_source": "Direct user pauses actual tests, requests normal game exit and verified playset handoff to user with separate read-only observation session",
     "user_play_handoff": {
-      "status": "USER_CONTROL_READY_COMBAT_ENABLED_NOT_ACCEPTED",
+      "status": "USER_HANDED_BACK_TO_AGENT",
       "segment": "user-native-97",
       "playset_evidence": ".local/play-session-20261008/user-native-97/playset-registration.json",
       "launch_evidence": ".local/play-session-20261008/user-native-97/startup-result.json",
@@ -1406,6 +1410,8 @@
         "game_exit_observed": false,
         "log_observer": "ACTIVE"
       }
-    }
+    },
+    "resume_source": "Latest user: 你继续测试吧，我不玩了。把这个任务窗口交给你。先把功能性的模块测试完。",
+    "resumed_at": "2026-10-10T17:27:32.358381+00:00"
   }
 }
