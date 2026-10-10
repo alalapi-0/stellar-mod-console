@@ -1402,7 +1402,7 @@
       "round_start_commit": "242c93e6ed7157b17562e9a03271759ee2a29e17"
     },
     "next_action": "Restore109 single recorder via existingowner; continue alreadydefined large14 combo runtime/visual/wardrobe/cold/combat checks under samecandidate. Do notchangequality ordeclarefullcorePASS fromSize5stress.",
-    "updated_at": "2026-10-10T23:28:12.930743+00:00",
+    "updated_at": "2026-10-10T23:32:01.144005+00:00",
     "blocked_audit": {
       "native_goal_status": "active",
       "consecutive_goal_turns": 0,
@@ -1496,7 +1496,7 @@
         "source_seams_confirmed_by_independent_owner": true,
         "cause": "UNKNOWN X11 drawable capture versus presentation",
         "scope": "Focused3s during rapid upward camera motion; no codec decode error; not physics naturalness acceptance",
-        "current_capture": "109 notyetrecorded; previous supervisor live STOPPING_VALIDATION, Root requested existing owner recovery",
+        "current_capture": "Checkpoint 2026-10-10T23:32:01.144005+00:00:109 briefly resumed, then WAITING_EXCLUSIVE_GAME_AUDIO; current exact game live, no full visualsource coverage acceptance. Existing recording owner notified; no duplicatecapture/quality change.",
         "quality_unchanged": true
       }
     },
@@ -1555,7 +1555,7 @@
       "at_utc": "2026-10-10T22:14:19.883200+00:00",
       "status": "MEASURED_OFFLINE_CONCURRENT_GAME_LOAD_UNKNOWN",
       "scope": "Read-only local resource/capture diagnostic; no MOD acceptance or round-count change",
-      "current_game_and_capture": "GAME109_RUNNING_CAPTURE_WAITING_PRIOR_VALIDATION",
+      "current_game_and_capture": "GAME109_RUNNING_CAPTURE_WAITING_EXCLUSIVE_AUDIO",
       "idle_sample": {
         "gpu_percent": 0,
         "vram_used_mib": 18,
