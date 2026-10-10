@@ -1511,6 +1511,61 @@
       "combat": "Multi-enemy rear attacks, attack/hit-stun defensive limits are normal game constraints; prioritize feature functionality/compatibility, not full invulnerability",
       "physics": "Add large individual and combined body dimension regression with sole Jiggle; normal selected profile acceptance does not cover extremes",
       "priority": "Complete functional modules before clothing; continue campaign with skills/healing and view changes"
+    },
+    "resource_diagnosis": {
+      "at_utc": "2026-10-10T22:14:19.883200+00:00",
+      "status": "MEASURED_OFFLINE_CONCURRENT_GAME_LOAD_UNKNOWN",
+      "scope": "Read-only local resource/capture diagnostic; no MOD acceptance or round-count change",
+      "current_game_and_capture": "STOPPED",
+      "idle_sample": {
+        "gpu_percent": 0,
+        "vram_used_mib": 18,
+        "vram_total_mib": 16303,
+        "memory_available_gib_approx": 40,
+        "cpu_idle_percent_range": [
+          99,
+          100
+        ],
+        "io_wait_percent": 0
+      },
+      "capture_profile": {
+        "resolution": [
+          3440,
+          1440
+        ],
+        "fps_requested": 60,
+        "encoder": "libx264rgb",
+        "encoder_threads": 8,
+        "preset": "ultrafast",
+        "crf": 0,
+        "audio": "FLAC",
+        "automatic_validation_parallel_jobs_max": 1
+      },
+      "recent_capture": {
+        "segment": "core-large-105",
+        "warmup_excluded_seconds": 10,
+        "recording_speed_range_x": [
+          0.993,
+          1.0
+        ],
+        "final_dup_frames": 0,
+        "final_drop_frames": 0,
+        "average_output_mb_s": 30.94,
+        "highest_segment_average_mb_s": 45.54,
+        "not_game_render_fps": true
+      },
+      "offline_9s_sample": {
+        "decode_only_host32thread_percent": 2.0447,
+        "decode_plus_same_encoder_host32thread_percent": 5.4607,
+        "both_exit_codes": 0,
+        "includes_decode_not_live_x11_readback_or_game": true
+      },
+      "conclusion": "No demonstrated GPU/CPU/RAM saturation. No synchronous gameplay GPU/VRAM/CPU/disk telemetry saved for recent capture; spikes or game FPS cannot be inferred from recording rate. Concurrent full video validation and migration remain possible extra load, not confirmed cause.",
+      "next_check": "After warranted game/input recovery, sample exact game/capture/validator CPU, GPU/VRAM, disk waits and native frame times during same-scene capture-off/on comparison. Preserve native recording quality; do not attribute late UI exit to resources without evidence.",
+      "evidence_ids": [
+        "core105-recording-cpu-diagnostic-20261011",
+        "core105-capture-owner-readonly-receipt-20261011"
+      ]
     }
   }
 }
