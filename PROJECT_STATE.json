@@ -1192,16 +1192,31 @@
       },
       {
         "id": "T3",
-        "status": "IN_PROGRESS",
+        "status": "WAITING_HUMAN",
         "acceptance": "Body+user core physics real standing/walk/run/jump/combat/restart success",
-        "next": "Instrument native preset stages after exact preimage; existing body/preset path with original JG source and no probe; isolate only on discriminating evidence",
-        "findings": "18 actual snapshots: body scales retained, native jog~500 and airborne falling confirmed, JG live27 and dynamic fields; one new confirmed UE4SS readAV near bodySize1.10→1.11/slot1 restore; initiating Lua/MOD unknown; no full physics acceptance",
+        "next": "Human naturalness judgment on saved22s motion clip, then finish remaining P1 clear-route motion/combat checks using actual SHIFT dodge and namedEscape before T4",
+        "findings": "Diagnostic91 both five-stage presets complete; original-source cold92 Size1.10→1.11→slot1 restore and red wardrobe reopen passed; zero fresh fatal/crash91/92; prior confirmed core90 causeUNKNOWN retained. Native SHIFT roll captured; obstacle-limited walk/sprint and no enemy-contact attempts not combat acceptance.",
         "failure_fingerprint": "core90/P0selected+JG3.1.0/preset-stage/UE4SS.dll+0x910e80 readAV/probe18",
         "evidence": [
           "core-baseline-89/physics-lifecycle-observation.json",
           "core-baseline-90/actual-physics-samples.json",
-          "core-baseline-90/crash-diagnosis.json"
-        ]
+          "core-baseline-90/crash-diagnosis.json",
+          "core-baseline-91/preset-stage-diagnostic-result.json",
+          "core-baseline-92/original-source-p1-result.json"
+        ],
+        "blocker": "Actual physical naturalness cannot be reliably accepted from parameter logs or sparse frames alone",
+        "pending_visual_acceptance": {
+          "status": "REQUESTED_HUMAN_NOT_ANSWERED",
+          "scope": "Current selected P0+JG only; not all clothes",
+          "artifact_record": ".local/play-session-20261008/recording-session/core91-motion-export.json",
+          "clip_filename": "core91-motion-review-60fps.mp4"
+        },
+        "remaining": [
+          "Actual walk/sprint under clear-route conditions",
+          "Body physics during actual enemy contact",
+          "Human naturalness review"
+        ],
+        "source_status": "Exact original Tuner repair preimage and originalJG restored; no diagnostic probe persists"
       },
       {
         "id": "T4",
@@ -1244,7 +1259,7 @@
       "effective_accepted": 0,
       "completion_percent": null,
       "reason": "Unique MOD acceptance0/139; whole-goal includes five body combination checks and core baseline gates, no false aggregate acceptance",
-      "round_key": "core-p1-physics-integration",
+      "round_key": "core-p1-preset-diagnostic",
       "round_status": "CLOSED",
       "remaining_rounds": "UNKNOWN",
       "legacy_denominator": 171,
@@ -1253,23 +1268,25 @@
       "effective_mod_required": 139,
       "effective_mod_percent": 0,
       "scope_increment": "3 required named body components added to136 historical MOD units; historical denominator171 and results retained",
-      "count": 3,
+      "count": 4,
       "coverage": "since_baseline",
-      "last_seq": 3,
-      "last_key": "core-p1-physics-integration",
+      "last_seq": 4,
+      "last_key": "core-p1-preset-diagnostic",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": 0,
       "evidence_change_percentage_points": 0,
       "remaining_rounds_confidence": "UNKNOWN",
-      "scope_change": "None; full MOD acceptance0/139. P0 standalone profile PASS remains scoped; current P1 joint physics candidate failed, no MOD causality assigned",
-      "milestone_change": "P1 actual jog/airborne/field measurements saved; one new confirmed exception narrowed toUE4SS module; measurement probe removed and controlled size restored"
+      "scope_change": "None; full MOD acceptance remains0/139; corrected wrongSpace-as-dodge and obstacle-limited motion claims were never accepted weights",
+      "milestone_change": "Two full diagnostic preset stages and original-source cold regression complete; exact instrumentation restored; human motion artifact prepared; no crash cause-fix claim",
+      "scope_change_percentage_points": 0
     },
-    "next_action": "Install precise logging-only preset-stage diagnostic after game-off preimage; distinguish native preset push versus instance apply failure with original JG source/no probe; P2/P3 remain dependent and unstarted",
-    "updated_at": "2026-10-10T09:20:34.309968+00:00",
+    "next_action": "Obtain human physical naturalness judgment on the exported current-profile motion clip; resume remaining P1 real motion/enemy-contact checks with corrected controls before enabling P2",
+    "updated_at": "2026-10-10T10:07:01.894645+00:00",
     "blocked_audit": {
       "native_goal_status": "active",
-      "consecutive_goal_turns": 0,
-      "condition": null
+      "consecutive_goal_turns": 1,
+      "condition": "Human naturalness judgment pending for T3; first pending checkpoint, not native blocked threshold",
+      "first_seen_at": "2026-10-10T10:07:01.894645+00:00"
     },
     "user_exit_authorization": {
       "source": "Direct user: 没保存也没关系，允许放弃未保存进度并正常退出。正常重启人物; followed by 重启任务",
@@ -1282,12 +1299,12 @@
       "inactive_files": 570,
       "restorable": true,
       "saves_untouched": true,
-      "current_segment": "core-baseline-90",
-      "result": "P0_ACCEPTED_PROFILE_RETAINED_P1_CANDIDATE_NOT_ACCEPTED",
-      "current_game_state": "EXIT_CONFIRMED_CRASH_RUNTIME5_CONFIG_RESTORED_PROBE_REMOVED",
+      "current_segment": "core-baseline-92",
+      "result": "P0_SELECTED_PROFILE_ACCEPTED_P1_NOT_ACCEPTED_PENDING_VISUAL_AND_REMAINING_MOTION",
+      "current_game_state": "NORMAL_EXIT_RUNTIME0_ORIGINAL_SOURCES_CONFIG_PRESERVED",
       "body_configuration": "UUE controlled Spine1.097 +Eve main1.1.0 +Tuner1.4 repaired Size1.10; soleJG3.1.0 enabled for diagnosis; all cosmetics/CNS/alternatephysics/combat remain off",
       "p0_evidence": ".local/play-session-20261008/goal-restructure-20261010/p0-body-profile-result.json",
-      "p1_evidence": "core-baseline-90/crash-diagnosis.json"
+      "p1_evidence": "core-baseline-92/original-source-p1-result.json"
     },
     "health_checkpoint": {
       "goal_created_at": 1791607374,
@@ -1306,14 +1323,27 @@
         "NEXT CHECKPOINT": "A newly registered diagnostic candidate yields an identifiable operation result; subsequent health checks obey75000-token/30-active-minute cooldown and require a listed trigger"
       }
     },
-    "round_closure_at": "2026-10-10T09:20:34.309968+00:00",
+    "round_closure_at": "2026-10-10T10:07:01.894645+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 8,
-      "new_confirmed_this_round": 1,
+      "new_confirmed_this_round": 0,
       "current_crash_id": "UE4CC-Windows-97311C4641BEA5D2057D6BA1E005C10E_0000",
       "coverage": "Registered project play/audit ledger only; unrecorded earlier user history unknown; core83 unexplained exit not retroclassified",
       "cause": "UNKNOWN initiating Lua; actual exception module UE4SS.dll+0x910e80 confirmed",
-      "evidence": "core-baseline-90/crash-diagnosis.json"
+      "evidence": "core-baseline-90/crash-diagnosis.json",
+      "current_segment_new_confirmed": 0,
+      "last_confirmed_segment": "core-baseline-90"
+    },
+    "attachment_disposition": {
+      "main": "EveProportions1.1.0 intact installed and selectedP0 tested",
+      "lily": "Retained inactive, same resource names and NPCscope not enabled",
+      "spring_preset": "Data-only Lua preset retained inactive; consumerSpringBoneTweaks absent; userselected soleJG unchanged"
+    },
+    "recording_result": {
+      "status": "STOPPED_SEALED_EXACT_PROCESSES_ABSENT",
+      "evidence": ".local/play-session-20261008/recording-session/stop-confirmation.json",
+      "clips": "Core92 six sealed video parts decode clean; two audio-exclusivity gaps, not uninterrupted coverage",
+      "human_review": "Existing core91-motion-review-60fps.mp4 actual22s complete decode validaudio; does not establish gameFPS or physics acceptance"
     }
   }
 }
