@@ -1192,36 +1192,44 @@
       },
       {
         "id": "T3",
-        "status": "WAITING_HUMAN",
+        "status": "PASS",
         "acceptance": "Body+user core physics real standing/walk/run/jump/combat/restart success",
-        "next": "Human naturalness judgment on saved22s motion clip, then finish remaining P1 clear-route motion/combat checks using actual SHIFT dodge and namedEscape before T4",
-        "findings": "Diagnostic91 both five-stage presets complete; original-source cold92 Size1.10→1.11→slot1 restore and red wardrobe reopen passed; zero fresh fatal/crash91/92; prior confirmed core90 causeUNKNOWN retained. Native SHIFT roll captured; obstacle-limited walk/sprint and no enemy-contact attempts not combat acceptance.",
+        "next": "Completed selected P0/JG native red/green scope; all collected clothing remains gated by T4/T5",
+        "findings": "Human91 naturalness PASS plus actual physics/write/motion/outfit/cold original regressions and93 actual enemy contact; no newfatal/crash91–93. Prior diagnostic90 confirmed crash causeUNKNOWN retained.",
         "failure_fingerprint": "core90/P0selected+JG3.1.0/preset-stage/UE4SS.dll+0x910e80 readAV/probe18",
         "evidence": [
           "core-baseline-89/physics-lifecycle-observation.json",
           "core-baseline-90/actual-physics-samples.json",
           "core-baseline-90/crash-diagnosis.json",
           "core-baseline-91/preset-stage-diagnostic-result.json",
-          "core-baseline-92/original-source-p1-result.json"
+          "core-baseline-92/original-source-p1-result.json",
+          "goal-restructure-20261010/p1-selected-profile-result.json"
         ],
-        "blocker": "Actual physical naturalness cannot be reliably accepted from parameter logs or sparse frames alone",
+        "blocker": null,
         "pending_visual_acceptance": {
-          "status": "REQUESTED_HUMAN_NOT_ANSWERED",
+          "status": "PASS_HUMAN_CURRENT_GREEN_PROFILE",
           "scope": "Current selected P0+JG only; not all clothes",
           "artifact_record": ".local/play-session-20261008/recording-session/core91-motion-export.json",
-          "clip_filename": "core91-motion-review-60fps.mp4"
+          "clip_filename": "core91-motion-review-60fps.mp4",
+          "user_answer": "效果生效且自然",
+          "received_at": "2026-10-10T10:19:14.734947+00:00"
         },
-        "remaining": [
-          "Actual walk/sprint under clear-route conditions",
-          "Body physics during actual enemy contact",
-          "Human naturalness review"
-        ],
-        "source_status": "Exact original Tuner repair preimage and originalJG restored; no diagnostic probe persists"
+        "remaining": [],
+        "source_status": "Exact original Tuner repair preimage and originalJG restored; no diagnostic probe persists",
+        "accepted_scope": "Selected UUE Spine1.097 +Eve1.1.0/TunerSize1.10+soleJG3.1.0 current My_Default; native green/red only; all collected clothes untested"
       },
       {
         "id": "T4",
-        "status": "WAITING_T3",
-        "acceptance": "Body+physics+user combat actual actions and sustained combat success"
+        "status": "IN_PROGRESS",
+        "acceptance": "Body+physics+user combat actual actions and sustained combat success",
+        "next": "Restored native E/SHIFT+Mouse4/5 bindings; continuous single encounter without menu pauses, then sustained multiple-enemy/evade/heal/body-retention proof",
+        "findings": "Existing IPD Extended1.01 window290ms and one actual native player Parry animation observed; SBParry0.2.3 automatic responses remain unreliable across keyboard/XInput/native-aux trial. Five positive judge rows are repeated observations, not five accepted independent automatic defenses.",
+        "failure_fingerprint": "core94/SBParry0.2.3/IPD1.01/native auto input not accepted/timing-or-state cause UNKNOWN",
+        "evidence": [
+          "core-baseline-94/combat-resource-registration.json",
+          "core-baseline-94/combat-diagnostic-result.json"
+        ],
+        "blocker": null
       },
       {
         "id": "T5",
@@ -1239,7 +1247,8 @@
         "acceptance": "Compatibility records with current enabled/dependencies/body/physics/combat/profiles/conclusions/evidence/disposition; research entry only",
         "completed": [
           "Existing 136 unit records extended with core-first compatibility fields",
-          "Research entry created, no development"
+          "Research entry created, no development",
+          "Nine current core compatibility rows refreshed in the existing139-unit manifest; historical results retained and all effective full-core acceptance staysNOT_TESTED"
         ]
       }
     ],
@@ -1259,7 +1268,7 @@
       "effective_accepted": 0,
       "completion_percent": null,
       "reason": "Unique MOD acceptance0/139; whole-goal includes five body combination checks and core baseline gates, no false aggregate acceptance",
-      "round_key": "core-p1-preset-diagnostic",
+      "round_key": "core-p1-naturalness-and-combat",
       "round_status": "CLOSED",
       "remaining_rounds": "UNKNOWN",
       "legacy_denominator": 171,
@@ -1268,25 +1277,25 @@
       "effective_mod_required": 139,
       "effective_mod_percent": 0,
       "scope_increment": "3 required named body components added to136 historical MOD units; historical denominator171 and results retained",
-      "count": 4,
+      "count": 5,
       "coverage": "since_baseline",
-      "last_seq": 4,
-      "last_key": "core-p1-preset-diagnostic",
+      "last_seq": 5,
+      "last_key": "core-p1-naturalness-and-combat",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": 0,
       "evidence_change_percentage_points": 0,
       "remaining_rounds_confidence": "UNKNOWN",
-      "scope_change": "None; full MOD acceptance remains0/139; corrected wrongSpace-as-dodge and obstacle-limited motion claims were never accepted weights",
-      "milestone_change": "Two full diagnostic preset stages and original-source cold regression complete; exact instrumentation restored; human motion artifact prepared; no crash cause-fix claim",
+      "scope_change": "None;139 unique units unchanged, full-core acceptance0/139; T4/T5 gates prevent clothing acceptance",
+      "milestone_change": "Human naturalness and original-source movement/contact close T3 selected scope. T4 actual window/native Parry response and three distinct input trials diagnose unstable automatic defense; no full MOD accepted.",
       "scope_change_percentage_points": 0
     },
-    "next_action": "Obtain human physical naturalness judgment on the exported current-profile motion clip; resume remaining P1 real motion/enemy-contact checks with corrected controls before enabling P2",
-    "updated_at": "2026-10-10T10:07:01.894645+00:00",
+    "next_action": "Restored native E/SHIFT+Mouse4/5 bindings; continuous single encounter without menu pauses, then sustained multiple-enemy/evade/heal/body-retention proof",
+    "updated_at": "2026-10-10T11:16:43.198798+00:00",
     "blocked_audit": {
       "native_goal_status": "active",
-      "consecutive_goal_turns": 1,
-      "condition": "Human naturalness judgment pending for T3; first pending checkpoint, not native blocked threshold",
-      "first_seen_at": "2026-10-10T10:07:01.894645+00:00"
+      "consecutive_goal_turns": 0,
+      "condition": null,
+      "cleared_by": "Human green-profile visual confirmation"
     },
     "user_exit_authorization": {
       "source": "Direct user: 没保存也没关系，允许放弃未保存进度并正常退出。正常重启人物; followed by 重启任务",
@@ -1299,12 +1308,13 @@
       "inactive_files": 570,
       "restorable": true,
       "saves_untouched": true,
-      "current_segment": "core-baseline-92",
-      "result": "P0_SELECTED_PROFILE_ACCEPTED_P1_NOT_ACCEPTED_PENDING_VISUAL_AND_REMAINING_MOTION",
-      "current_game_state": "NORMAL_EXIT_RUNTIME0_ORIGINAL_SOURCES_CONFIG_PRESERVED",
-      "body_configuration": "UUE controlled Spine1.097 +Eve main1.1.0 +Tuner1.4 repaired Size1.10; soleJG3.1.0 enabled for diagnosis; all cosmetics/CNS/alternatephysics/combat remain off",
+      "current_segment": "core-baseline-94",
+      "result": "P0_P1_SELECTED_SCOPE_ACCEPTED_P2_PARTIAL_NOT_ACCEPTED",
+      "current_game_state": "NORMAL_EXIT_RUNTIME0_ALL_EXACT_GAME_TOOL_PROCESSES_ABSENT",
+      "body_configuration": "Selected UUE Spine1.097+Eve1.1.0/TunerSize1.10+soleJG3.1.0 original sources; IPD Extended1.01 restored as sole combat resource. SBParry0.2.3 autoParry/autoChance/autoQte configured1 and gracefully stopped; other combat/cosmetic/alternatephysics modules off",
       "p0_evidence": ".local/play-session-20261008/goal-restructure-20261010/p0-body-profile-result.json",
-      "p1_evidence": "core-baseline-92/original-source-p1-result.json"
+      "p1_evidence": "goal-restructure-20261010/p1-selected-profile-result.json",
+      "p2_evidence": "core-baseline-94/combat-diagnostic-result.json"
     },
     "health_checkpoint": {
       "goal_created_at": 1791607374,
@@ -1323,7 +1333,7 @@
         "NEXT CHECKPOINT": "A newly registered diagnostic candidate yields an identifiable operation result; subsequent health checks obey75000-token/30-active-minute cooldown and require a listed trigger"
       }
     },
-    "round_closure_at": "2026-10-10T10:07:01.894645+00:00",
+    "round_closure_at": "2026-10-10T11:16:43.198798+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 8,
       "new_confirmed_this_round": 0,
@@ -1332,7 +1342,11 @@
       "cause": "UNKNOWN initiating Lua; actual exception module UE4SS.dll+0x910e80 confirmed",
       "evidence": "core-baseline-90/crash-diagnosis.json",
       "current_segment_new_confirmed": 0,
-      "last_confirmed_segment": "core-baseline-90"
+      "last_confirmed_segment": "core-baseline-90",
+      "observed_deaths": 33,
+      "latest_segment": "core-baseline-94",
+      "new_observed_deaths_this_round": 3,
+      "video_death_correction": "Second core94 YOU_DIED now confirmed by exported frame evidence; count updated once"
     },
     "attachment_disposition": {
       "main": "EveProportions1.1.0 intact installed and selectedP0 tested",
@@ -1341,9 +1355,10 @@
     },
     "recording_result": {
       "status": "STOPPED_SEALED_EXACT_PROCESSES_ABSENT",
-      "evidence": ".local/play-session-20261008/recording-session/stop-confirmation.json",
-      "clips": "Core92 six sealed video parts decode clean; two audio-exclusivity gaps, not uninterrupted coverage",
-      "human_review": "Existing core91-motion-review-60fps.mp4 actual22s complete decode validaudio; does not establish gameFPS or physics acceptance"
-    }
+      "evidence": ".local/play-session-20261008/core-baseline-94/combat-diagnostic-result.json",
+      "clips": "Core93 walk/sprint+contact and core94 Parry exports decoded with digitalaudio. Final core94 native3440x1440 RGB lossless/FLAC menu segment decode0/audio nonzero; two capture gaps retained. File60fps not gameFPS.",
+      "human_review": "Direct user confirms core91 video effects active and natural; selected P0/JG native green scope only"
+    },
+    "current_segment": ".local/play-session-20261008/core-baseline-94"
   }
 }
