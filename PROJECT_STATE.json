@@ -1188,7 +1188,7 @@
           "goal-restructure-20261010/p0-body-profile-result.json"
         ],
         "accepted_scope": "Selected P0 profile only: UUE controlled Spine1.097 + Eve main + Tuner Size1.1; original red/green outfits; physics/combat/full outfit compatibility NOT_TESTED",
-        "blocker": "LateTunerUIreopen104/105 associatedunknownexit; nativeQhealingunresolved. Largevisualquestionpending. No attributablebody/JGsourcecauseproven.",
+        "blocker": "106 confirmed UE4SS+0x910750 readAV at cached late Tuner reopen; initiating Lua unknown. Prior detachedviewport hypothesis not observed. Native letter capture misses with helper on/off. Large visual/Size5/sustained combat still unaccepted.",
         "prior_selected_normal_scope_status": "PASS",
         "acceptance_extension": "User requires enlarged individual and combined dimensions under movement/outfit/combat/restart, not covered by earlier normal scoped PASS",
         "extended_parameter_regression": {
@@ -1203,7 +1203,7 @@
             "Native healing and sustained combat functionality",
             "Size5 confirmed fault initiating source diagnosis/repair; full maxima not accepted"
           ],
-          "default": "14conservativeenlargedvalues currentlysaved afterunknownexit; exactoriginalnamedpresets/sourceunchanged",
+          "default": "Original normal values restored via native preset1; exact named presets and large14 preimage retained; full maxima unaccepted",
           "coldrestart": {
             "status": "PASS_BOUNDED_CONSERVATIVE14_NATIVE_RETENTION",
             "evidence": "core-large-104/large-coldrestart-result.json",
@@ -1218,15 +1218,15 @@
             "checks": "11checkpoints40finitebodynodes/sixactivefiniteSpringBones; actualBeta1/light/finisher/contact/manualguard/manualJustEvade/respawn; nofullnaturalness/stabilityproof"
           }
         },
-        "next": "Diagnose cachedTunerUI/nativeinput lifecycle before registeredrecoverablecandidate andchangedregression; no equivalentlateF4/Size5repeat",
-        "latest_evidence": "core-large-105/functional-round11-result.json",
+        "next": "Registered Tuner game-thread-only cancellable timer candidate; actual reopened panel/preset/settings/motion regression, then native healing/enlarged core combat only after gates.",
+        "latest_evidence": "core-functional-106/functional-round12-crash-diagnosis.json",
         "prior_normal_mechanisms": "Earliernormalprofilelivewrites/preset/outfit/physics evidence retained; fullpanel lifecycle notaccepted afternewfailure"
       },
       {
         "id": "T3",
         "status": "IN_PROGRESS",
         "acceptance": "Body+user core physics real standing/walk/run/jump/combat/restart success",
-        "next": "Diagnose cachedTunerUI/nativeinput lifecycle before registeredrecoverablecandidate andchangedregression; no equivalentlateF4/Size5repeat",
+        "next": "Registered Tuner game-thread-only cancellable timer candidate; actual reopened panel/preset/settings/motion regression, then native healing/enlarged core combat only after gates.",
         "findings": "Human91 naturalness PASS plus actual physics/write/motion/outfit/cold original regressions and93 actual enemy contact; no newfatal/crash91–93. Prior diagnostic90 confirmed crash causeUNKNOWN retained.",
         "failure_fingerprint": "core90/P0selected+JG3.1.0/preset-stage/UE4SS.dll+0x910e80 readAV/probe18",
         "evidence": [
@@ -1237,7 +1237,7 @@
           "core-baseline-92/original-source-p1-result.json",
           "goal-restructure-20261010/p1-selected-profile-result.json"
         ],
-        "blocker": "LateTunerUIreopen104/105 associatedunknownexit; nativeQhealingunresolved. Largevisualquestionpending. No attributablebody/JGsourcecauseproven.",
+        "blocker": "106 confirmed UE4SS+0x910750 readAV at cached late Tuner reopen; initiating Lua unknown. Prior detachedviewport hypothesis not observed. Native letter capture misses with helper on/off. Large visual/Size5/sustained combat still unaccepted.",
         "pending_visual_acceptance": {
           "status": "PASS_HUMAN_CURRENT_GREEN_PROFILE",
           "scope": "Current selected P0+JG only; not all clothes",
@@ -1251,7 +1251,7 @@
           "Sustained actual enlarged-profile enemy combat",
           "Size5 confirmed crash diagnosis/repair; initiatingMod stillUNKNOWN"
         ],
-        "source_status": "Exact original Tuner repair preimage and originalJG restored; no diagnostic probe persists",
+        "source_status": "Failed viewport diagnostic exactly rolled back; original JG unchanged; next timer candidate not yet applied",
         "accepted_scope": "Selected UUE Spine1.097 +Eve1.1.0/TunerSize1.10+soleJG3.1.0 current My_Default; native green/red only; all collected clothes untested",
         "prior_selected_normal_scope_status": "PASS",
         "acceptance_extension": "User requires enlarged individual and combined dimensions under movement/outfit/combat/restart, not covered by earlier normal scoped PASS",
@@ -1267,7 +1267,7 @@
             "Native healing and sustained combat functionality",
             "Size5 confirmed fault initiating source diagnosis/repair; full maxima not accepted"
           ],
-          "default": "14conservativeenlargedvalues currentlysaved afterunknownexit; exactoriginalnamedpresets/sourceunchanged",
+          "default": "Original normal values restored via native preset1; exact named presets and large14 preimage retained; full maxima unaccepted",
           "coldrestart": {
             "status": "PASS_BOUNDED_CONSERVATIVE14_NATIVE_RETENTION",
             "evidence": "core-large-104/large-coldrestart-result.json",
@@ -1282,7 +1282,7 @@
             "checks": "11checkpoints40finitebodynodes/sixactivefiniteSpringBones; actualBeta1/light/finisher/contact/manualguard/manualJustEvade/respawn; nofullnaturalness/stabilityproof"
           }
         },
-        "latest_evidence": "core-large-105/functional-round11-result.json",
+        "latest_evidence": "core-functional-106/functional-round12-crash-diagnosis.json",
         "prior_normal_mechanisms": "Earliernormalprofilelivewrites/preset/outfit/physics evidence retained; fullpanel lifecycle notaccepted afternewfailure"
       },
       {
@@ -1347,7 +1347,7 @@
       "effective_accepted": 0,
       "completion_percent": null,
       "reason": "FullMODacceptance0/139; partialbody/physics mechanisms do not satisfy extendedUI/largevisual/combatcoregates; wholeGoal includesheterogeneousdependenttasks",
-      "round_key": "core-large-enemy-combat",
+      "round_key": "core-panel-viewport-input-recovery",
       "round_status": "CLOSED",
       "remaining_rounds": "UNKNOWN",
       "legacy_denominator": 171,
@@ -1356,21 +1356,21 @@
       "effective_mod_required": 139,
       "effective_mod_percent": 0,
       "scope_increment": "3 required named body components added to136 historical MOD units; historical denominator171 and results retained",
-      "count": 11,
+      "count": 12,
       "coverage": "since_baseline",
-      "last_seq": 11,
-      "last_key": "core-large-enemy-combat",
+      "last_seq": 12,
+      "last_key": "core-panel-viewport-input-recovery",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": 0,
       "evidence_change_percentage_points": 0,
       "remaining_rounds_confidence": "UNKNOWN",
       "scope_change": "No scopeaddition/removal; effective139/historical171 and63 legacyconclusions retained",
-      "milestone_change": "Nativeconservative14 actualenemyBeta/light/manualguard/JustEvade/respawn,11sixactivefiniteSpringBone+40finitebodycheckpoints; exactloaderPDBabsence/nativefunctioninference. New1characterdeath and2unknownexits, new0confirmedcrash; nativeQinput andlateTunerUIlifecyclestillunresolved.",
+      "milestone_change": "Fresh cached viewport true/read14 confirmed on two reopens; third reopen at normal Size1.1 caused new UE4SS+0x910750 crash. Full XML/small+wide dumps retained; initiatingLua unknown dueheapmissing. Native letter binding capture stillmisses withoutSBParry. Diagnostic exactrollback complete, normalvaluespreserved. New1crash/new0death; fullMOD0/139.",
       "scope_change_percentage_points": 0,
-      "round_start_commit": "8b15bb13231f30bc88dbbf9bdcc474474ab53feb"
+      "round_start_commit": "ab996c8bf85cbbebaa97b7a70b8b2f176c6d5790"
     },
-    "next_action": "Diagnose latecachedTunerUI/input lifecycle (104/105 unknownexit3,no newartifact): verifycachedwidgetviewport/lifetime hypothesis before registeredrecoverablecandidate/recovery; no unchangedlateF4/Size5repeat. Preserve14savedvalues andrestoreselectednormalprofileonlyfromexactpreimage/nativepreset; actualhealing regression afterinputrecovery.105battleclipUTC/decoder checks complete, largevisualhumanacceptancepending.",
-    "updated_at": "2026-10-10T22:07:34.250477+00:00",
+    "next_action": "Apply registered minimal Tuner polling migration from LoopAsync→LoopInGameThreadWithDelay80ms with exact cancellation andgeneration; loader already exposes APIs. Preserve body/physics/core switches and game/capture settings. Revalidate actual native lifecycle with evidence; no unchangedrepeat.",
+    "updated_at": "2026-10-10T22:38:11.705395+00:00",
     "blocked_audit": {
       "native_goal_status": "active",
       "consecutive_goal_turns": 0,
@@ -1388,10 +1388,10 @@
       "inactive_files": 564,
       "restorable": true,
       "saves_untouched": true,
-      "current_segment": "core-large-105",
-      "result": "PARTIAL_LARGE_ACTUAL_COMBAT_PHYSICS_CHECKED_LATE_PANEL_INPUT_UNRESOLVED_NOT_STABLE",
-      "current_game_state": "EXACT105GAMEOFF;ORIGINALHELPERQUIT;OWNEDRUNTIME_XCLEANED;OBSERVERINACTIVE;14LARGEVALUES_SAVED",
-      "body_configuration": "UUE disjointSpine1.097 +Eve1.1.0/Tuneroriginalsource +soleJG3.1.0. Conservative14 native enlargedsettingscurrentlysaved (notaccepteddefault). OriginalSB0.2.3 autoParry/chance/QTE1+IPDExtended1.01+BetterEquipment1.25 unchanged. No clothing/NPC/alternatephysics/camera enabled.",
+      "current_segment": "core-functional-106",
+      "result": "NORMAL_PROFILE_LATE_PANEL_CONFIRMED_CRASH_NOT_STABLE",
+      "current_game_state": "EXACT106GAMEOFF;ORIGINALHELPER_NATIVEQUIT;CRASHREPORT_NATIVE_DONT_REPORT;RUNTIME_EXIT5_OWNED_DISPLAY_CLEANED;OBSERVERENDED",
+      "body_configuration": "UUE Spine1.097+Eve1.1.0/Tuner original preimage restored+soleJG3.1.0. Native preset1 normal Size1.1saved, originalnamedpresetsandlarge14preimageretained. OriginalSB0.2.3automaticflags/IPD/Betterunchanged. Allcosmetic/NPC/alternatephysics/cameraoff.",
       "p0_evidence": ".local/play-session-20261008/goal-restructure-20261010/p0-body-profile-result.json",
       "p1_evidence": "goal-restructure-20261010/p1-selected-profile-result.json",
       "p2_evidence": "core-functional-103/functional-round9-result.json",
@@ -1416,19 +1416,19 @@
         "NEXT CHECKPOINT": "A newly registered diagnostic candidate yields an identifiable operation result; subsequent health checks obey75000-token/30-active-minute cooldown and require a listed trigger"
       }
     },
-    "round_closure_at": "2026-10-10T22:01:49.299725+00:00",
+    "round_closure_at": "2026-10-10T22:38:11.705395+00:00",
     "incidents": {
-      "confirmed_recorded_session_total": 9,
-      "new_confirmed_this_round": 0,
-      "current_crash_id": "UE4CC-Windows-BECF444A4F483FB1D5DC05BBB5B714F6_0000",
+      "confirmed_recorded_session_total": 10,
+      "new_confirmed_this_round": 1,
+      "current_crash_id": "UE4CC-Windows-E463FAB645934A47E3AC4AB82ED4B2E3_0000",
       "coverage": "Registered project play/audit ledger only; unrecorded earlier user history unknown; core83 unexplained exit not retroclassified",
-      "cause": "UNKNOWN initiating Lua/function; size5temporal association only, no provenJG/size source causality",
-      "evidence": "core-functional-102/body-stress-crash-diagnosis.json",
-      "current_segment_new_confirmed": 0,
-      "last_confirmed_segment": "core-functional-102",
+      "cause": "UNKNOWN initiating Lua/function; rawgenericLua hash lookup nativepattern at UE4SS+0x910750 inferred; no proven body/JG/helper attribution",
+      "evidence": "core-functional-106/functional-round12-crash-diagnosis.json",
+      "current_segment_new_confirmed": 1,
+      "last_confirmed_segment": "core-functional-106",
       "observed_deaths": 38,
-      "latest_segment": "core-large-105",
-      "new_observed_deaths_this_round": 1,
+      "latest_segment": "core-functional-106",
+      "new_observed_deaths_this_round": 0,
       "video_death_correction": "Second core94 YOU_DIED now confirmed by exported frame evidence; count updated once",
       "new_unconfirmed_exit_segments": [
         "core-large-104",
@@ -1443,26 +1443,24 @@
       "spring_preset": "Data-only Lua preset retained inactive; consumerSpringBoneTweaks absent; userselected soleJG unchanged"
     },
     "recording_result": {
-      "status": "CURRENT105_STOPPED_THREE_BATTLE_EXPORTS_DECODED_CLOCK_CHECKED",
+      "status": "CURRENT106_STOPPED_ORIGINALS_AND_CRASH_TAIL_DATA_VERIFIED",
       "evidence": ".local/play-session-20261008/recording-session/core103-green14-motion-review.json",
       "limit": "Bounded105threeclipcontainer/decoder/timealignmentchecked; visualnaturalness stillWAITING_HUMAN andwholecadence/fullMODcompatibility notaccepted. Dodge hassourceframe intervals0.001..0.033s; preserved nativeclockdecode succeeds, defaultnullmuxer roundingwarning retained.",
       "human_review": "Direct user confirms core91 selected green P1 natural, unaffected by later95 capture temporal defect",
-      "current_scope": "105exactgameoff,soleownercaptureSTOPPED; threeRGB/FLACbattleexports onDATA checksum+Rootdecodechecked; Rootmatchedmeleeoriginal/exportfivepackets andclock. Oldtailwrongexportrejected/corrected; verifiedtailworldframeagreesRootstill, no visiblefatalconfirmation",
+      "current_scope": "106 exactgameoff; existingsoleownerSTOPPED; native3440x1440/60RGB+FLAC unchanged; decoded1377frametail, capturedthrough22:30:38.626Z, requested42endunavailable. Static/blackframesnotsolecrashproof; XML/dumpsconfirm.",
       "large_motion_preview": "core103-green14-body-motion-preview-1920-crf16.mp4",
       "large_visual_acceptance": "WAITING_HUMAN; normal91 human PASS applies only earlier selected profile",
       "historical_limit": "Core95 battle capture cadence failed and quality review remains partial; sealed original evidence retained. User96 had no valid continuous video due cancelled/rejected Portal;96 logs/stills/report preserved;97 video requires source authorization",
-      "current_evidence": ".local/play-session-20261008/core-large-105/root-battle-video-decode-check.json",
+      "current_evidence": ".local/play-session-20261008/recording-session/core106-crash-tail-review.json",
       "current_preview": "core104-large14-motion-preview-1920-crf16.mp4",
       "current_battle_clips": [
-        "core105-large14-melee-beta-213430-213439-lossless.mkv",
-        "core105-large14-perfect-dodge-213519-213524-lossless.mkv",
-        "core105-large14-guard-213609-213615-lossless.mkv"
+        "core106-confirmed-crash-tail-223020-223042-lossless.mkv"
       ],
       "source_clock_evidence": ".local/play-session-20261008/core-large-105/root-melee-source-clock-check.json",
       "dodge_timestamp_evidence": ".local/play-session-20261008/core-large-105/root-dodge-native-timestamp-check.json"
     },
-    "current_segment": ".local/play-session-20261008/core-large-105",
-    "previous_goal_turn_classification": "PROGRESS_WITH_UNRESOLVED_INPUT_UI_FAILURE",
+    "current_segment": "core-functional-106",
+    "previous_goal_turn_classification": "PROGRESS: offline capture diagnostic saved; user clarifies no perceived performance fault. No extra Goal round counted.",
     "execution_status": "IN_PROGRESS",
     "pause_at": "2026-10-10T12:03:10.167690+00:00",
     "pause_source": "Direct user pauses actual tests, requests normal game exit and verified playset handoff to user with separate read-only observation session",
@@ -1565,7 +1563,8 @@
       "evidence_ids": [
         "core105-recording-cpu-diagnostic-20261011",
         "core105-capture-owner-readonly-receipt-20261011"
-      ]
+      ],
+      "user_clarification": "Performance symptom not confirmed by user; prior wording was input/panel nonresponse. Preserve game and capture quality/resolution/FPS."
     }
   }
 }
