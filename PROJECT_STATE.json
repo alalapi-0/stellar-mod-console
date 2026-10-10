@@ -1354,7 +1354,7 @@
       "round_start_commit": "e16efddea5c3dfd2e2eeed0ca17d0a492ceb4d4d"
     },
     "next_action": "Inspect matching loader symbols/native102 crash chain without repeating Size5, then actual enlarged-body enemy skill/movement/physics condition tests; human103 large naturalness question pending; no clothing before joint core baseline.",
-    "updated_at": "2026-10-10T21:09:35.428500+00:00",
+    "updated_at": "2026-10-10T21:16:01.844809+00:00",
     "blocked_audit": {
       "native_goal_status": "active",
       "consecutive_goal_turns": 0,
@@ -1421,15 +1421,16 @@
       "spring_preset": "Data-only Lua preset retained inactive; consumerSpringBoneTweaks absent; userselected soleJG unchanged"
     },
     "recording_result": {
-      "status": "CURRENT104_SINGLE_CAPTURE_ACTIVE;103_VALID_MOTION_RETAINED",
+      "status": "CURRENT104_SINGLE_CAPTURE_ACTIVE_BOUNDED_MOTION_EXPORTED",
       "evidence": ".local/play-session-20261008/recording-session/core103-green14-motion-review.json",
       "limit": "Current103 media valid in reviewed bounded clip; full large-profile naturalness/long-run frame stability not yet accepted. Earlier95/96/97 limitations preserved in historical_limit.",
       "human_review": "Direct user confirms core91 selected green P1 natural, unaffected by later95 capture temporal defect",
-      "current_scope": "Exact registered104 PID2125899/start_ticks26197754; current sole recorder active, existing owner exporting104 coldrestart motion.103 preview fully decoded and retained, human naturalness pending",
+      "current_scope": "Exact104 PID2125899/start_ticks26197754; sole recorder active.104 native RGB/FLAC motion original retained;1920x804 H264/AAC preview fully decoded by Root;1215 same timestamps/no inserted frames. Human large naturalness still pending.",
       "large_motion_preview": "core103-green14-body-motion-preview-1920-crf16.mp4",
       "large_visual_acceptance": "WAITING_HUMAN; normal91 human PASS applies only earlier selected profile",
       "historical_limit": "Core95 battle capture cadence failed and quality review remains partial; sealed original evidence retained. User96 had no valid continuous video due cancelled/rejected Portal;96 logs/stills/report preserved;97 video requires source authorization",
-      "current_evidence": ".local/play-session-20261008/core-large-104/large-coldrestart-result.json"
+      "current_evidence": ".local/play-session-20261008/recording-session/core104-large14-motion-review.json",
+      "current_preview": "core104-large14-motion-preview-1920-crf16.mp4"
     },
     "current_segment": ".local/play-session-20261008/core-large-104",
     "previous_goal_turn_classification": "PROGRESS: native coldrestart retained14 values and40 nodes, five dynamic physics checkpoints, actualBeta1 activation and exact default restore verified; prior dump missing heap limits identified",
