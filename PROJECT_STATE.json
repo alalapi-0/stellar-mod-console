@@ -1369,8 +1369,8 @@
       "scope_change_percentage_points": 0,
       "round_start_commit": "8b15bb13231f30bc88dbbf9bdcc474474ab53feb"
     },
-    "next_action": "Diagnose latecachedTunerUI/input lifecycle (104/105 unknownexit3,no newartifact) before newrecoverablecandidate/recovery; no repeatedunchangedlateF4/Size5. Preserve14savedvalues andrestoreselectednormalprofileonlyfromexactpreimage/nativepreset; verify105battleclipUTCmapping andactualhealing afterinputrecovery.",
-    "updated_at": "2026-10-10T22:01:49.299725+00:00",
+    "next_action": "Diagnose latecachedTunerUI/input lifecycle (104/105 unknownexit3,no newartifact): verifycachedwidgetviewport/lifetime hypothesis before registeredrecoverablecandidate/recovery; no unchangedlateF4/Size5repeat. Preserve14savedvalues andrestoreselectednormalprofileonlyfromexactpreimage/nativepreset; actualhealing regression afterinputrecovery.105battleclipUTC/decoder checks complete, largevisualhumanacceptancepending.",
+    "updated_at": "2026-10-10T22:07:34.250477+00:00",
     "blocked_audit": {
       "native_goal_status": "active",
       "consecutive_goal_turns": 0,
@@ -1443,16 +1443,23 @@
       "spring_preset": "Data-only Lua preset retained inactive; consumerSpringBoneTweaks absent; userselected soleJG unchanged"
     },
     "recording_result": {
-      "status": "CURRENT105_GAMEENDED_CAPTURESTOPPED_VALIDATION_PENDING",
+      "status": "CURRENT105_STOPPED_THREE_BATTLE_EXPORTS_DECODED_CLOCK_CHECKED",
       "evidence": ".local/play-session-20261008/recording-session/core103-green14-motion-review.json",
-      "limit": "105battleclipnotyetaccepted; pendingRootUTCmapping/full-decode check; no video-basedcrashconfirmation. Earliernormal91humanacceptance unchanged.",
+      "limit": "Bounded105threeclipcontainer/decoder/timealignmentchecked; visualnaturalness stillWAITING_HUMAN andwholecadence/fullMODcompatibility notaccepted. Dodge hassourceframe intervals0.001..0.033s; preserved nativeclockdecode succeeds, defaultnullmuxer roundingwarning retained.",
       "human_review": "Direct user confirms core91 selected green P1 natural, unaffected by later95 capture temporal defect",
-      "current_scope": "105gameexactabsent; soleownercapturestopverified, finalization/export pending; providedtailtimeconflictswithRootdirectwindowstill, owneraskedUTCmappingcheck",
+      "current_scope": "105exactgameoff,soleownercaptureSTOPPED; threeRGB/FLACbattleexports onDATA checksum+Rootdecodechecked; Rootmatchedmeleeoriginal/exportfivepackets andclock. Oldtailwrongexportrejected/corrected; verifiedtailworldframeagreesRootstill, no visiblefatalconfirmation",
       "large_motion_preview": "core103-green14-body-motion-preview-1920-crf16.mp4",
       "large_visual_acceptance": "WAITING_HUMAN; normal91 human PASS applies only earlier selected profile",
       "historical_limit": "Core95 battle capture cadence failed and quality review remains partial; sealed original evidence retained. User96 had no valid continuous video due cancelled/rejected Portal;96 logs/stills/report preserved;97 video requires source authorization",
-      "current_evidence": ".local/play-session-20261008/recording-session/core105-stop-review.json",
-      "current_preview": "core104-large14-motion-preview-1920-crf16.mp4"
+      "current_evidence": ".local/play-session-20261008/core-large-105/root-battle-video-decode-check.json",
+      "current_preview": "core104-large14-motion-preview-1920-crf16.mp4",
+      "current_battle_clips": [
+        "core105-large14-melee-beta-213430-213439-lossless.mkv",
+        "core105-large14-perfect-dodge-213519-213524-lossless.mkv",
+        "core105-large14-guard-213609-213615-lossless.mkv"
+      ],
+      "source_clock_evidence": ".local/play-session-20261008/core-large-105/root-melee-source-clock-check.json",
+      "dodge_timestamp_evidence": ".local/play-session-20261008/core-large-105/root-dodge-native-timestamp-check.json"
     },
     "current_segment": ".local/play-session-20261008/core-large-105",
     "previous_goal_turn_classification": "PROGRESS_WITH_UNRESOLVED_INPUT_UI_FAILURE",
