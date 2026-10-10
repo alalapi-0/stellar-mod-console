@@ -1220,7 +1220,7 @@
       },
       {
         "id": "T4",
-        "status": "IN_PROGRESS",
+        "status": "PAUSED_BY_USER_NOT_ACCEPTED",
         "acceptance": "Body+physics+user combat actual actions and sustained combat success",
         "next": "Restored native E/SHIFT+Mouse4/5 bindings; continuous single encounter without menu pauses, then sustained multiple-enemy/evade/heal/body-retention proof",
         "findings": "Existing IPD Extended1.01 window290ms and one actual native player Parry animation observed; SBParry0.2.3 automatic responses remain unreliable across keyboard/XInput/native-aux trial. Five positive judge rows are repeated observations, not five accepted independent automatic defenses.",
@@ -1229,7 +1229,8 @@
           "core-baseline-94/combat-resource-registration.json",
           "core-baseline-94/combat-diagnostic-result.json"
         ],
-        "blocker": null
+        "blocker": null,
+        "latest_evidence": ".local/play-session-20261008/core-baseline-95/combat-diagnostic-result.json"
       },
       {
         "id": "T5",
@@ -1268,7 +1269,7 @@
       "effective_accepted": 0,
       "completion_percent": null,
       "reason": "Unique MOD acceptance0/139; whole-goal includes five body combination checks and core baseline gates, no false aggregate acceptance",
-      "round_key": "core-p1-naturalness-and-combat",
+      "round_key": "core-p2-continuous-defense",
       "round_status": "CLOSED",
       "remaining_rounds": "UNKNOWN",
       "legacy_denominator": 171,
@@ -1277,22 +1278,23 @@
       "effective_mod_required": 139,
       "effective_mod_percent": 0,
       "scope_increment": "3 required named body components added to136 historical MOD units; historical denominator171 and results retained",
-      "count": 5,
+      "count": 6,
       "coverage": "since_baseline",
-      "last_seq": 5,
-      "last_key": "core-p1-naturalness-and-combat",
+      "last_seq": 6,
+      "last_key": "core-p2-continuous-defense",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": 0,
       "evidence_change_percentage_points": 0,
       "remaining_rounds_confidence": "UNKNOWN",
       "scope_change": "None;139 unique units unchanged, full-core acceptance0/139; T4/T5 gates prevent clothing acceptance",
-      "milestone_change": "Human naturalness and original-source movement/contact close T3 selected scope. T4 actual window/native Parry response and three distinct input trials diagnose unstable automatic defense; no full MOD accepted.",
-      "scope_change_percentage_points": 0
+      "milestone_change": "Read-only exact coordinates/native input proved22.9m approach and36s real enemy combat. NativeQ PotionCast verified but interrupted; threeSB guard attempts failed; P2 remains unaccepted. User paused, normalexit0, exact retained P0/P1 user-native96 launch and separate read-only observer active",
+      "scope_change_percentage_points": 0,
+      "round_start_commit": "a7565c5b7d56cfb6225d1202212f3af7bc4ea2d6"
     },
-    "next_action": "Restored native E/SHIFT+Mouse4/5 bindings; continuous single encounter without menu pauses, then sustained multiple-enemy/evade/heal/body-retention proof",
-    "updated_at": "2026-10-10T11:16:43.198798+00:00",
+    "next_action": "Wait for user-native96 observation report while actual testing/Goal remain PAUSED; resume only with explicit user instruction",
+    "updated_at": "2026-10-10T12:14:03.134534+00:00",
     "blocked_audit": {
-      "native_goal_status": "active",
+      "native_goal_status": "paused",
       "consecutive_goal_turns": 0,
       "condition": null,
       "cleared_by": "Human green-profile visual confirmation"
@@ -1308,13 +1310,13 @@
       "inactive_files": 570,
       "restorable": true,
       "saves_untouched": true,
-      "current_segment": "core-baseline-94",
+      "current_segment": "user-native-96",
       "result": "P0_P1_SELECTED_SCOPE_ACCEPTED_P2_PARTIAL_NOT_ACCEPTED",
-      "current_game_state": "NORMAL_EXIT_RUNTIME0_ALL_EXACT_GAME_TOOL_PROCESSES_ABSENT",
-      "body_configuration": "Selected UUE Spine1.097+Eve1.1.0/TunerSize1.10+soleJG3.1.0 original sources; IPD Extended1.01 restored as sole combat resource. SBParry0.2.3 autoParry/autoChance/autoQte configured1 and gracefully stopped; other combat/cosmetic/alternatephysics modules off",
+      "current_game_state": "USER_NATIVE_MAIN_MENU;USER_ONLY;NO_AGENT_INPUT",
+      "body_configuration": "Accepted scoped UUEPBS2.7.1 Spine1.097 +Eve1.1.0/Tuner1.4 Size1.10 +soleJG3.1.0 original sources. All cosmetics/NPC/equipment decorations off. IPD exacttriplet moved back recoverably; SBParry stopped. Existing loaders/mods.txt unchanged",
       "p0_evidence": ".local/play-session-20261008/goal-restructure-20261010/p0-body-profile-result.json",
       "p1_evidence": "goal-restructure-20261010/p1-selected-profile-result.json",
-      "p2_evidence": "core-baseline-94/combat-diagnostic-result.json"
+      "p2_evidence": "core-baseline-95/combat-diagnostic-result.json"
     },
     "health_checkpoint": {
       "goal_created_at": 1791607374,
@@ -1333,7 +1335,7 @@
         "NEXT CHECKPOINT": "A newly registered diagnostic candidate yields an identifiable operation result; subsequent health checks obey75000-token/30-active-minute cooldown and require a listed trigger"
       }
     },
-    "round_closure_at": "2026-10-10T11:16:43.198798+00:00",
+    "round_closure_at": "2026-10-10T12:14:03.134534+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 8,
       "new_confirmed_this_round": 0,
@@ -1343,9 +1345,9 @@
       "evidence": "core-baseline-90/crash-diagnosis.json",
       "current_segment_new_confirmed": 0,
       "last_confirmed_segment": "core-baseline-90",
-      "observed_deaths": 33,
-      "latest_segment": "core-baseline-94",
-      "new_observed_deaths_this_round": 3,
+      "observed_deaths": 34,
+      "latest_segment": "core-baseline-95",
+      "new_observed_deaths_this_round": 1,
       "video_death_correction": "Second core94 YOU_DIED now confirmed by exported frame evidence; count updated once"
     },
     "attachment_disposition": {
@@ -1354,11 +1356,35 @@
       "spring_preset": "Data-only Lua preset retained inactive; consumerSpringBoneTweaks absent; userselected soleJG unchanged"
     },
     "recording_result": {
-      "status": "STOPPED_SEALED_EXACT_PROCESSES_ABSENT",
-      "evidence": ".local/play-session-20261008/core-baseline-94/combat-diagnostic-result.json",
-      "clips": "Core93 walk/sprint+contact and core94 Parry exports decoded with digitalaudio. Final core94 native3440x1440 RGB lossless/FLAC menu segment decode0/audio nonzero; two capture gaps retained. File60fps not gameFPS.",
-      "human_review": "Direct user confirms core91 video effects active and natural; selected P0/JG native green scope only"
+      "status": "CORE95_CAPTURE_STOPPED_VALIDATION_PARTIAL;USER96_CONTINUOUS_PENDING",
+      "evidence": ".local/play-session-20261008/recording-session/core95-sealed-review.json",
+      "limit": "Core95 battle cadence failed:37s progress window1185dup/791drop; sealed source assets preserved, remaining quality checks deferred. User96 log/screenshots are valid; video pending owner setup",
+      "human_review": "Direct user confirms core91 selected green P1 natural, unaffected by later95 capture temporal defect"
     },
-    "current_segment": ".local/play-session-20261008/core-baseline-94"
+    "current_segment": ".local/play-session-20261008/user-native-96",
+    "previous_goal_turn_classification": "PROGRESS_DIAGNOSTIC_THEN_PAUSED_BY_USER; no fullMOD accepted",
+    "execution_status": "PAUSED_BY_USER",
+    "pause_at": "2026-10-10T12:03:10.167690+00:00",
+    "pause_source": "Direct user pauses actual tests, requests normal game exit and verified playset handoff to user with separate read-only observation session",
+    "user_play_handoff": {
+      "status": "USER_CONTROL_READY",
+      "segment": "user-native-96",
+      "playset_evidence": ".local/play-session-20261008/user-native-96/playset-registration.json",
+      "launch_evidence": ".local/play-session-20261008/user-native-96/startup-result.json",
+      "input_owner": "USER_ONLY",
+      "automatic_relaunch": false,
+      "actual_tests": "PAUSED_BY_USER",
+      "scoped_accepted": [
+        "P0 selected body profile",
+        "P1 soleJG native green/red profile"
+      ],
+      "not_accepted": [
+        "P2 combat",
+        "All collected clothing"
+      ],
+      "observation_thread_title": "剑星用户游玩观察与复盘",
+      "observation_evidence": ".local/play-session-20261008/user-native-96/observation/status.json",
+      "observation": "Actual separate service active; game-only screenshots30s and log evidence; continuous video pending owner preparation"
+    }
   }
 }
