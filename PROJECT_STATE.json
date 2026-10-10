@@ -1152,20 +1152,24 @@
     "tasks": [
       {
         "id": "T1",
-        "status": "BLOCKED_SAFE_EXIT_USER_DECISION",
+        "status": "PASS",
         "acceptance": "Historical evidence retained, restoreable MOD config, all cosmetic overrides reversibly off, clean baseline actual launch",
         "completed": [
           "Old clothing dispatch paused",
           "Old manifests snapshotted",
           "Recoverable text configuration preimages hashed",
-          "Effective MOD acceptance reset NOT_TESTED"
+          "Effective MOD acceptance reset NOT_TESTED",
+          "Normal game exit with explicit discard authorization",
+          "570 resource/config files retained outside scan by same-filesystem rename and exact hashes",
+          "Non-P0 runtime controls temporarily isolated; trainer normally exited",
+          "Clean baseline actual menu/nativeContinue scene/movement/view observed; no fresh fatal"
         ],
-        "blocker": "Native dialog: 7h18m53s since last save; no destructive exit authorization",
-        "save_search": "Bounded guide-directed plaza/statue approach preserved; no camp interaction or native save verified. No exit confirmed."
+        "blocker": null,
+        "save_search": "Explicit user authorized discard; exact old game exited normally"
       },
       {
         "id": "T2",
-        "status": "BLOCKED_T1_AND_MISSING_EVE_BASE",
+        "status": "IN_PROGRESS_CORE_PARAMETER_MEASUREMENT",
         "acceptance": "Evidence-backed unique stable body solution or compatible combination; real live/preset/reload/outfit/movement verification",
         "order": [
           "UUEPBS alone",
@@ -1174,8 +1178,14 @@
           "UUEPBS+EveProportions",
           "three-way ONLY if compatibility evidence"
         ],
-        "findings": "UUEPBS2.7.1 author GitHub release staged; Ayaka2.7.3 discrepancy retained. Eve base1.1.0 absent; panelv1.4 staged only. Native hook vs post-process AnimBP require isolated ownership validation.",
-        "static_evidence": "Verified x64 DLL import/loader proxy export; current JiggleControl main anim owner differs from Eve postprocess owner; stack still NOT_TESTED."
+        "findings": "Uploaded main1.1.0 installed; Lily/SpringBone preset retained inactive. UUE isolated preset/outfit/restart verified. Eve/Tuner14-value control/save/reset/load and exact hidden-outfit reopen repair verified. Core83 unknown abnormal exit retained; bounded core84 diagnostic did not reproduce it. UUE+Eve main core85 native preset and wardrobe retention verified; exact bone scale/cumulative and conditional3-way checks pending.",
+        "static_evidence": "Verified x64 DLL import/loader proxy export; current JiggleControl main anim owner differs from Eve postprocess owner; stack still NOT_TESTED.",
+        "evidence": [
+          "goal-restructure-20261010/uue-alone-result.json",
+          "goal-restructure-20261010/EvePanel-repair-result.json",
+          "goal-restructure-20261010/EvePanel-nudge-diagnostic-result.json",
+          "goal-restructure-20261010/body-pair-result.json"
+        ]
       },
       {
         "id": "T3",
@@ -1224,29 +1234,65 @@
       "completion_percent": null,
       "reason": "Unique MOD acceptance0/139; whole-goal includes five body combination checks and core baseline gates, no false aggregate acceptance",
       "round_key": "core-first-baseline-entry",
-      "round_status": "BLOCKED_UNFINISHED",
+      "round_status": "CLOSED",
       "remaining_rounds": "UNKNOWN",
       "legacy_denominator": 171,
       "legacy_concluded": 63,
       "effective_mod_accepted": 0,
       "effective_mod_required": 139,
       "effective_mod_percent": 0,
-      "scope_increment": "3 required named body components added to136 historical MOD units; historical denominator171 and results retained"
+      "scope_increment": "3 required named body components added to136 historical MOD units; historical denominator171 and results retained",
+      "count": 1,
+      "coverage": "since_baseline",
+      "last_seq": 1,
+      "last_key": "core-first-baseline-entry",
+      "historical_round_count": "UNKNOWN",
+      "execution_change_percentage_points": 0,
+      "evidence_change_percentage_points": 0,
+      "remaining_rounds_confidence": "UNKNOWN",
+      "scope_change": "3 named body units added to136 historical units, effective0/139; historical171/63 retained",
+      "milestone_change": "T1 baseline PASS; T2 bounded checks and one exact repair passed, no final MOD unit accepted"
     },
-    "next_action": "Wait for user safe-save/discard decision. No more clothing dispatch, game MOD changes, tests or relaunches until this gate changes.",
-    "updated_at": "2026-10-10T05:00:33.766155+00:00",
+    "next_action": "Read exact live postprocess and final socket/bone scales in a bounded controlled profile; finish pair measurement before conditional3-way, then choose stable P0 and proceedP1.",
+    "updated_at": "2026-10-10T07:44:29.850447+00:00",
     "blocked_audit": {
-      "condition": "Current exact game has unsaved progress; native save unverified, explicit discard answer pending",
-      "consecutive_goal_turns": 3,
-      "native_goal_status": "BLOCKED_CONFIRMED",
-      "independent_progress_this_turn": "Body dependency/import/writer mechanism checked; unique MOD denominator classified139",
-      "next_action": "Await safe-save/discard decision; author EveProportions base resource still missing",
-      "latest_native_warning": "7h33m15s since last save; exiting loses all progress since that save",
-      "latest_evidence": ".local/play-session-20261008/audit-76/core-first-safe-exit-gate-revalidated.png",
-      "last_native_save_utc": "2026-10-09T21:26:28.750338+00:00",
-      "classification_this_turn": "NO_PROGRESS_SAME_UNSAVED_EXIT_GATE_REVALIDATED",
-      "independent_preparation": "Archive/config snapshots/current acceptance reset/body static prerequisites/compatibility records/research entry complete; runtime gates still incomplete",
-      "resume_condition": "User assists a verified native camp save or explicitly authorizes normal exit discarding this unsaved progress; Eve base resource remains prerequisite after exit"
-    }
+      "native_goal_status": "active",
+      "consecutive_goal_turns": 0,
+      "condition": null
+    },
+    "user_exit_authorization": {
+      "source": "Direct user: 没保存也没关系，允许放弃未保存进度并正常退出。正常重启人物; followed by 重启任务",
+      "at": "2026-10-10T05:44:08.379077+00:00",
+      "scope": "Normal exit discarding unsaved progress, reversible MOD baseline changes and restart; no save-file editing or rollback"
+    },
+    "baseline_configuration": {
+      "evidence": ".local/play-session-20261008/goal-restructure-20261010/baseline-isolation.json",
+      "all_cosmetics_disabled": true,
+      "inactive_files": 570,
+      "restorable": true,
+      "saves_untouched": true,
+      "current_segment": "core-baseline-85",
+      "result": "PASS_BASELINE_STARTUP_AND_NATIVE_LOAD_ONLY",
+      "current_game_state": "NORMALLY_EXITED_RUNTIME0",
+      "body_configuration": "UUEPBS2.7.1 + EveProportions1.1.0 main; Tuner disabled for pair test; cosmetic resources still retained offscan"
+    },
+    "health_checkpoint": {
+      "goal_created_at": 1791607374,
+      "checked_at": "2026-10-10T07:11:43.974257+00:00",
+      "completed_one_time_rebaseline": true,
+      "telemetry": {
+        "native_tokens_used": 1224558,
+        "native_time_used_seconds": 6123,
+        "coverage": "Native tool cumulative current Goal; elapsed telemetry not treated as active-only no-progress time"
+      },
+      "report": {
+        "STATUS": "WATCH",
+        "TRIGGER": "Current Goal first evidenced checkpoint above250000 tokens without a completed rebaseline in this Goal",
+        "EVIDENCE": "Material body runtime checks and exact reopen repair passed; one new abnormal exit3 during Breast nudge context lacks cause; no repeated equivalent no-progress attempt proven",
+        "CORRECTIVE ACTION": "Locate the failing core83 operation before further acceptance",
+        "NEXT CHECKPOINT": "A newly registered diagnostic candidate yields an identifiable operation result; subsequent health checks obey75000-token/30-active-minute cooldown and require a listed trigger"
+      }
+    },
+    "round_closure_at": "2026-10-10T07:44:29.850447+00:00"
   }
 }
