@@ -1291,8 +1291,8 @@
       "scope_change_percentage_points": 0,
       "round_start_commit": "a7565c5b7d56cfb6225d1202212f3af7bc4ea2d6"
     },
-    "next_action": "Observe user-native97 manual play with requested existing combat aids enabled; actual tests/Goal remain PAUSED; evaluate user report only when user resumes",
-    "updated_at": "2026-10-10T12:31:35.824809+00:00",
+    "next_action": "Keep existing read-only Root log observer until current manual-play game exits; actual tests/Goal remain PAUSED; screenshot97 report sealed, gameplay evidence UNKNOWN; no automatic restart",
+    "updated_at": "2026-10-10T16:38:33.678913+00:00",
     "blocked_audit": {
       "native_goal_status": "paused",
       "consecutive_goal_turns": 0,
@@ -1359,7 +1359,7 @@
       "spring_preset": "Data-only Lua preset retained inactive; consumerSpringBoneTweaks absent; userselected soleJG unchanged"
     },
     "recording_result": {
-      "status": "CORE95_CAPTURE_STOPPED_VALIDATION_PARTIAL;USER96_PORTAL_REJECTED;USER97_PENDING",
+      "status": "CORE95_CAPTURE_VALIDATION_PARTIAL;USER96_PORTAL_REJECTED;USER97_NO_VALID_CONTINUOUS_VIDEO",
       "evidence": ".local/play-session-20261008/recording-session/core95-sealed-review.json",
       "limit": "Core95 battle capture cadence failed and quality review remains partial; sealed original evidence retained. User96 had no valid continuous video due cancelled/rejected Portal;96 logs/stills/report preserved;97 video requires source authorization",
       "human_review": "Direct user confirms core91 selected green P1 natural, unaffected by later95 capture temporal defect"
@@ -1387,7 +1387,7 @@
       ],
       "observation_thread_title": "剑星用户游玩观察与复盘",
       "observation_evidence": ".local/play-session-20261008/user-native-97/observation/status.json",
-      "observation": "Read-only Root process/log service active for97; separate game screenshot observer retarget requested; continuous video requires native portal window permission",
+      "observation": "Screenshot observer sealed after four-hour limit;476/476 sampled main-menu frames reviewed. Exact game still live; Root read-only log observer active. No current continuous video",
       "enabled_unaccepted_for_user_play": [
         "SBParry0.2.3 automaticparry/chance/QTE keyboard",
         "ImprovedPerfectDefense Extended1.01",
@@ -1395,7 +1395,17 @@
       ],
       "combat_evidence": ".local/play-session-20261008/user-native-97/combat-enable-result.json",
       "authority": "User explicitly requests existing useful MODs enabled without completed acceptance",
-      "previous_observation_report": "user-native-96 read-only report sealed; no confirmed new crash/death; no evidenced newroute/battle/potionuse"
+      "previous_observation_report": "user-native-96 read-only report sealed; no confirmed new crash/death; no evidenced newroute/battle/potionuse",
+      "observation_closure": {
+        "reason": "BOUNDED_FOUR_HOUR_OBSERVATION_END",
+        "report_evidence": ".local/play-session-20261008/user-native-97/observation/closure.json",
+        "reviewed_frames": 476,
+        "new_crashes_confirmed": 0,
+        "visual_deaths_confirmed": 0,
+        "route_combat_healing": "UNKNOWN",
+        "game_exit_observed": false,
+        "log_observer": "ACTIVE"
+      }
     }
   }
 }
