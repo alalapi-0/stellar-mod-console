@@ -1169,7 +1169,7 @@
       },
       {
         "id": "T2",
-        "status": "PASS",
+        "status": "IN_PROGRESS",
         "acceptance": "Evidence-backed unique stable body solution or compatible combination; real live/preset/reload/outfit/movement verification",
         "order": [
           "UUEPBS alone",
@@ -1188,13 +1188,29 @@
           "goal-restructure-20261010/p0-body-profile-result.json"
         ],
         "accepted_scope": "Selected P0 profile only: UUE controlled Spine1.097 + Eve main + Tuner Size1.1; original red/green outfits; physics/combat/full outfit compatibility NOT_TESTED",
-        "blocker": null
+        "blocker": "None for independent runtime checks; human large-profile visual acceptance pending; Size5 incident root cause unresolved",
+        "prior_selected_normal_scope_status": "PASS",
+        "acceptance_extension": "User requires enlarged individual and combined dimensions under movement/outfit/combat/restart, not covered by earlier normal scoped PASS",
+        "extended_parameter_regression": {
+          "status": "PARTIAL_NOT_FULL_PASS",
+          "evidence": "core-functional-103/functional-round9-result.json",
+          "single_dimension_cases": "14/14 bounded actual writes/jump/six finite active springs",
+          "combined_checks": "Run/jump/sword/15s side view/native green-red wardrobe/respawn preserve14 values and spring activity",
+          "new_failure": "core102 Size5 context fresh UE4SS.dll+0x90267d readAV; initiating Lua UNKNOWN, not proven size or Jiggle root cause",
+          "missing": [
+            "Large-profile visual naturalness",
+            "Large-profile cold restart",
+            "Sustained actual combat"
+          ],
+          "default": "Exact original selected Size1.1 restored; no preset or source change"
+        },
+        "next": "Verify conservative combined large coldrestart and obtain requested visual acceptance; diagnose new Size5 incident without repeating unchanged failed candidate"
       },
       {
         "id": "T3",
-        "status": "PASS",
+        "status": "IN_PROGRESS",
         "acceptance": "Body+user core physics real standing/walk/run/jump/combat/restart success",
-        "next": "Completed selected P0/JG native red/green scope; all collected clothing remains gated by T4/T5",
+        "next": "Verify conservative combined large coldrestart and obtain requested visual acceptance; diagnose new Size5 incident without repeating unchanged failed candidate",
         "findings": "Human91 naturalness PASS plus actual physics/write/motion/outfit/cold original regressions and93 actual enemy contact; no newfatal/crash91–93. Prior diagnostic90 confirmed crash causeUNKNOWN retained.",
         "failure_fingerprint": "core90/P0selected+JG3.1.0/preset-stage/UE4SS.dll+0x910e80 readAV/probe18",
         "evidence": [
@@ -1205,7 +1221,7 @@
           "core-baseline-92/original-source-p1-result.json",
           "goal-restructure-20261010/p1-selected-profile-result.json"
         ],
-        "blocker": null,
+        "blocker": "None for independent runtime checks; human large-profile visual acceptance pending; Size5 incident root cause unresolved",
         "pending_visual_acceptance": {
           "status": "PASS_HUMAN_CURRENT_GREEN_PROFILE",
           "scope": "Current selected P0+JG only; not all clothes",
@@ -1214,15 +1230,34 @@
           "user_answer": "效果生效且自然",
           "received_at": "2026-10-10T10:19:14.734947+00:00"
         },
-        "remaining": [],
+        "remaining": [
+          "Large-profile visual naturalness",
+          "Large-profile cold restart",
+          "Sustained actual combat"
+        ],
         "source_status": "Exact original Tuner repair preimage and originalJG restored; no diagnostic probe persists",
-        "accepted_scope": "Selected UUE Spine1.097 +Eve1.1.0/TunerSize1.10+soleJG3.1.0 current My_Default; native green/red only; all collected clothes untested"
+        "accepted_scope": "Selected UUE Spine1.097 +Eve1.1.0/TunerSize1.10+soleJG3.1.0 current My_Default; native green/red only; all collected clothes untested",
+        "prior_selected_normal_scope_status": "PASS",
+        "acceptance_extension": "User requires enlarged individual and combined dimensions under movement/outfit/combat/restart, not covered by earlier normal scoped PASS",
+        "extended_parameter_regression": {
+          "status": "PARTIAL_NOT_FULL_PASS",
+          "evidence": "core-functional-103/functional-round9-result.json",
+          "single_dimension_cases": "14/14 bounded actual writes/jump/six finite active springs",
+          "combined_checks": "Run/jump/sword/15s side view/native green-red wardrobe/respawn preserve14 values and spring activity",
+          "new_failure": "core102 Size5 context fresh UE4SS.dll+0x90267d readAV; initiating Lua UNKNOWN, not proven size or Jiggle root cause",
+          "missing": [
+            "Large-profile visual naturalness",
+            "Large-profile cold restart",
+            "Sustained actual combat"
+          ],
+          "default": "Exact original selected Size1.1 restored; no preset or source change"
+        }
       },
       {
         "id": "T4",
-        "status": "IN_PROGRESS",
+        "status": "WAITING_EXTENDED_P0_P1",
         "acceptance": "Body+physics+user combat actual actions and sustained combat success",
-        "next": "Isolate real Win32 keyboard versus existing native secondary mouse defense route, then actual equipped effect/combatsustained. Do not repeat failedVK/holdtime/calibration candidates, enterT5 or restore clothing.",
+        "next": "After enlarged body/physics gates, verify actual repeated enemy combat and equipped effect; retain normal mechanical guard limits. Native60→30 timing candidate not yet tested.",
         "findings": "100 three distinct automaticJustParry confirmed by native steps and video;101 automaticFlashBehindAttack and nativeJustParry290ms retainedHP1.0 with IPD. Incorrect far lock-on produces missed nearby attacker; source conflict not proven. Actual attack integration still missed; localized VK dispatch failed and exactexe/launcher preimages restored. Native Q healing verified. No fresh confirmed game crash99–101. 102 exact engine equipment multiplier1.25 loaded; tooltip unchanged per author. Native keyboard input and200ms hold diagnostics still missed; original restored; real helper keys69/160 verified; new1death/new0crash.",
         "failure_fingerprint": "core102/originalSB0.2.3+IPD+Better/current native keyboard attack and200ms hold both missDefense/holdcandidate exactrestored",
         "evidence": [
@@ -1234,7 +1269,9 @@
           "core-functional-101/vk-dispatch-candidate.json"
         ],
         "blocker": null,
-        "latest_evidence": ".local/play-session-20261008/core-functional-102/functional-round-result.json"
+        "latest_evidence": ".local/play-session-20261008/core-functional-102/functional-round-result.json",
+        "prior_work_status": "IN_PROGRESS",
+        "large_profile_contact": "One character death during standing Barnacle contact103; planned Beta action aborted before any input. No kill/new checkpoint, no current103 confirmed crash. All auto controls remain ON."
       },
       {
         "id": "T5",
@@ -1251,10 +1288,11 @@
         "status": "IN_PROGRESS",
         "acceptance": "Compatibility records with current enabled/dependencies/body/physics/combat/profiles/conclusions/evidence/disposition; research entry only",
         "completed": [
-          "Existing 136 unit records extended with core-first compatibility fields",
+          "Existing historical records retained with LEGACY_REQUIRES_RETEST annotation; effective full-core results NOT_TESTED",
           "Research entry created, no development",
-          "Nine current core compatibility rows refreshed in the existing139-unit manifest; historical results retained and all effective full-core acceptance staysNOT_TESTED"
-        ]
+          "Round9 reconciled actual manifest136→139 by adding three already-authorized body components; refreshed nine current core rows and preserved original fields/counts"
+        ],
+        "correction": "Earlier claim of139 actual rows/nine refreshed core records was not reflected on disk; exact private manifest preimage saved and current fields corrected without adding goal scope"
       }
     ],
     "research": {
@@ -1273,7 +1311,7 @@
       "effective_accepted": 0,
       "completion_percent": null,
       "reason": "Unique MOD acceptance0/139; whole-goal includes five body combination checks and core baseline gates, no false aggregate acceptance",
-      "round_key": "core-p2-equipment-and-action-input",
+      "round_key": "core-p2-defense-input-backend",
       "round_status": "CLOSED",
       "remaining_rounds": "UNKNOWN",
       "legacy_denominator": 171,
@@ -1282,21 +1320,21 @@
       "effective_mod_required": 139,
       "effective_mod_percent": 0,
       "scope_increment": "3 required named body components added to136 historical MOD units; historical denominator171 and results retained",
-      "count": 8,
+      "count": 9,
       "coverage": "since_baseline",
-      "last_seq": 8,
-      "last_key": "core-p2-equipment-and-action-input",
+      "last_seq": 9,
+      "last_key": "core-p2-defense-input-backend",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": 0,
       "evidence_change_percentage_points": 0,
       "remaining_rounds_confidence": "UNKNOWN",
-      "scope_change": "No unit additions/removals; effective139 denominator and historical171 preserved",
-      "milestone_change": "102 current engine equipment multiplier1.25 observed; exact runtime keyboard bindings verified. Keyboard-attack and200ms hold diagnostics still missed; exact temporary changes restored. One real characterdeath, no new crash; no fullcore acceptance/checkpoint claimed.",
+      "scope_change": "No unique MOD additions/removals;139 denominator unchanged. Enlarged body requirement extends acceptance semantics; earlier normal scopedPASS retained separately. Actual136-row manifest reconciled with already-counted3 body components.",
+      "milestone_change": "14 single large native body cases and one14-dimension combination checked with actual finite active physics; green-red wardrobe/respawn preserve values. New102 readAV causeUNKNOWN, exactdefault restored. New1characterdeath103 separately recorded; no new checkpoint/full core acceptance.",
       "scope_change_percentage_points": 0,
-      "round_start_commit": "8397958cc067f85ae509ac8206a844451ab0051b"
+      "round_start_commit": "cc6ab29faaae37de072d3bab45482c05f9343ffc"
     },
-    "next_action": "Isolate real Win32 keyboard versus existing native secondary mouse defense route, then actual equipped effect/combatsustained. Do not repeat failedVK/holdtime/calibration candidates, enterT5 or restore clothing.",
-    "updated_at": "2026-10-10T19:35:56.504750+00:00",
+    "next_action": "Conservative14-dimension combined coldrestart/restore validation and pending large-profile human visual acceptance; diagnose Size5 readAV without unchanged repeat. Then sustained native combat/equipped effects and campaign progression; no clothing before core baseline.",
+    "updated_at": "2026-10-10T20:36:15.953051+00:00",
     "blocked_audit": {
       "native_goal_status": "active",
       "consecutive_goal_turns": 0,
@@ -1314,13 +1352,13 @@
       "inactive_files": 564,
       "restorable": true,
       "saves_untouched": true,
-      "current_segment": "user-native-97",
-      "result": "P0_P1_SELECTED_SCOPE_ACCEPTED_P2_PARTIAL_NOT_ACCEPTED",
-      "current_game_state": "USER_NATIVE_MAIN_MENU;USER_ONLY;NO_AGENT_INPUT",
-      "body_configuration": "Selected P0/P1 retained unchanged. IPD Extended1.01 and BetterEquipment x1.25 restored reversibly; SBParry0.2.3 automaticparry/chance/QTE1 keyboard and UIhidden attached. All cosmetics/NPC/alternatephysics off; mods.txt and loaders unchanged",
+      "current_segment": "core-functional-103",
+      "result": "NORMAL_P0_P1_SCOPED_PASS_RETAINED_LARGE_EXTENSION_PARTIAL_P2_NOT_ACCEPTED",
+      "current_game_state": "AGENT_OWNED_PRIVATE_DISPLAY93;NATIVE_PAUSE_MENU;HP1;NORMAL_PROFILE_RESTORED;RED_OUTFIT",
+      "body_configuration": "UUE disjoint Spine1.097 +Eve1.1.0/Tuner originalSize1.1 +sole JiggleControl3.1.0. Temporary native high body values exactly restored. Original SBParry0.2.3 autoParry/chance/QTE1, hidden UI; IPD Extended1.01 and BetterEquipment1.25 present. No clothing/NPC/alternate physics/camera mods enabled.",
       "p0_evidence": ".local/play-session-20261008/goal-restructure-20261010/p0-body-profile-result.json",
       "p1_evidence": "goal-restructure-20261010/p1-selected-profile-result.json",
-      "p2_evidence": "core-baseline-95/combat-diagnostic-result.json",
+      "p2_evidence": "core-functional-103/functional-round9-result.json",
       "reactivated_combat_files": 6,
       "combat_enable_evidence": ".local/play-session-20261008/user-native-97/combat-enable-result.json",
       "original_inactive_files": 570
@@ -1342,18 +1380,18 @@
         "NEXT CHECKPOINT": "A newly registered diagnostic candidate yields an identifiable operation result; subsequent health checks obey75000-token/30-active-minute cooldown and require a listed trigger"
       }
     },
-    "round_closure_at": "2026-10-10T19:35:56.504750+00:00",
+    "round_closure_at": "2026-10-10T20:36:15.953051+00:00",
     "incidents": {
-      "confirmed_recorded_session_total": 8,
-      "new_confirmed_this_round": 0,
-      "current_crash_id": "UE4CC-Windows-97311C4641BEA5D2057D6BA1E005C10E_0000",
+      "confirmed_recorded_session_total": 9,
+      "new_confirmed_this_round": 1,
+      "current_crash_id": "UE4CC-Windows-BECF444A4F483FB1D5DC05BBB5B714F6_0000",
       "coverage": "Registered project play/audit ledger only; unrecorded earlier user history unknown; core83 unexplained exit not retroclassified",
-      "cause": "UNKNOWN initiating Lua; actual exception module UE4SS.dll+0x910e80 confirmed",
-      "evidence": "core-baseline-90/crash-diagnosis.json",
+      "cause": "UNKNOWN initiating Lua/function; size5temporal association only, no provenJG/size source causality",
+      "evidence": "core-functional-102/body-stress-crash-diagnosis.json",
       "current_segment_new_confirmed": 0,
-      "last_confirmed_segment": "core-baseline-90",
-      "observed_deaths": 36,
-      "latest_segment": "core-functional-102",
+      "last_confirmed_segment": "core-functional-102",
+      "observed_deaths": 37,
+      "latest_segment": "core-functional-103",
       "new_observed_deaths_this_round": 1,
       "video_death_correction": "Second core94 YOU_DIED now confirmed by exported frame evidence; count updated once"
     },
@@ -1363,13 +1401,17 @@
       "spring_preset": "Data-only Lua preset retained inactive; consumerSpringBoneTweaks absent; userselected soleJG unchanged"
     },
     "recording_result": {
-      "status": "CORE95_CAPTURE_VALIDATION_PARTIAL;USER96_PORTAL_REJECTED;USER97_NO_VALID_CONTINUOUS_VIDEO",
-      "evidence": ".local/play-session-20261008/recording-session/core95-sealed-review.json",
-      "limit": "Core95 battle capture cadence failed and quality review remains partial; sealed original evidence retained. User96 had no valid continuous video due cancelled/rejected Portal;96 logs/stills/report preserved;97 video requires source authorization",
-      "human_review": "Direct user confirms core91 selected green P1 natural, unaffected by later95 capture temporal defect"
+      "status": "CURRENT103_SINGLE_CAPTURE_VALID_BOUNDED_EXPORTED_MOTION;HISTORICAL_LIMITS_RETAINED",
+      "evidence": ".local/play-session-20261008/recording-session/core103-green14-motion-review.json",
+      "limit": "Current103 media valid in reviewed bounded clip; full large-profile naturalness/long-run frame stability not yet accepted. Earlier95/96/97 limitations preserved in historical_limit.",
+      "human_review": "Direct user confirms core91 selected green P1 natural, unaffected by later95 capture temporal defect",
+      "current_scope": "Exact registered103 PID2108546/start_ticks25949976; original3440x1440 RGB/FLAC clip retained,1920x804 MP4 preview fully decoded, no inserted/interpolated or accelerated frames",
+      "large_motion_preview": "core103-green14-body-motion-preview-1920-crf16.mp4",
+      "large_visual_acceptance": "WAITING_HUMAN; normal91 human PASS applies only earlier selected profile",
+      "historical_limit": "Core95 battle capture cadence failed and quality review remains partial; sealed original evidence retained. User96 had no valid continuous video due cancelled/rejected Portal;96 logs/stills/report preserved;97 video requires source authorization"
     },
-    "current_segment": ".local/play-session-20261008/core-functional-102",
-    "previous_goal_turn_classification": "PROGRESS: real loaded equipment effect data and runtime input binding verification reduced failure surface; diagnostic failed and exactly restored, no false acceptance",
+    "current_segment": ".local/play-session-20261008/core-functional-103",
+    "previous_goal_turn_classification": "EXECUTION_ROUND9_CLOSED_WITH_PARTIAL_RUNTIME_EVIDENCE;NOT_FULL_ACCEPTANCE",
     "execution_status": "IN_PROGRESS",
     "pause_at": "2026-10-10T12:03:10.167690+00:00",
     "pause_source": "Direct user pauses actual tests, requests normal game exit and verified playset handoff to user with separate read-only observation session",
@@ -1412,6 +1454,12 @@
       }
     },
     "resume_source": "Latest user: 你继续测试吧，我不玩了。把这个任务窗口交给你。先把功能性的模块测试完。",
-    "resumed_at": "2026-10-10T17:27:32.358381+00:00"
+    "resumed_at": "2026-10-10T17:27:32.358381+00:00",
+    "user_acceptance_clarification": {
+      "at": "2026-10-10T20:01:19.680897+00:00",
+      "combat": "Multi-enemy rear attacks, attack/hit-stun defensive limits are normal game constraints; prioritize feature functionality/compatibility, not full invulnerability",
+      "physics": "Add large individual and combined body dimension regression with sole Jiggle; normal selected profile acceptance does not cover extremes",
+      "priority": "Complete functional modules before clothing; continue campaign with skills/healing and view changes"
+    }
   }
 }
