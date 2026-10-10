@@ -1188,7 +1188,7 @@
           "goal-restructure-20261010/p0-body-profile-result.json"
         ],
         "accepted_scope": "Selected P0 profile only: UUE controlled Spine1.097 + Eve main + Tuner Size1.1; original red/green outfits; physics/combat/full outfit compatibility NOT_TESTED",
-        "blocker": "Prior102/106confirmedUE4SS faults initiatingLuaUNKNOWN.107/108newtimer boundedpanel/native-return regression passed; fullmaxSize5/largevisual/healing/sustainedcombat remainunaccepted. NativekeycaptureEscape limitedbeforeTuner; mousecancel/nativehierarchicalreturn usable, ForwardW restored.",
+        "blocker": "Large combined profile visual naturalness and sustained body/physics/combat remain unaccepted. Source video horizontal seams confirmed during rapidcamera motion; current109 capture resume waiting recorder owner. Historical102/106 Lua fault cause unknown; changedtimer scopednormal/Size5 warm/cold tests passed.",
         "prior_selected_normal_scope_status": "PASS",
         "acceptance_extension": "User requires enlarged individual and combined dimensions under movement/outfit/combat/restart, not covered by earlier normal scoped PASS",
         "extended_parameter_regression": {
@@ -1218,8 +1218,8 @@
             "checks": "11checkpoints40finitebodynodes/sixactivefiniteSpringBones; actualBeta1/light/finisher/contact/manualguard/manualJustEvade/respawn; nofullnaturalness/stabilityproof"
           }
         },
-        "next": "Samecandidate registered; revisit large14/maxSize5 nativebody stress after scopedpanel replay, retain normalpreset recovery and currentquality. Thenhealing/enemycombat only afterextendedP0/P1 gates.",
-        "latest_evidence": "core-functional-108/functional-round13-result.json",
+        "next": "Restore109 single recorder via existingowner; continue alreadydefined large14 combo runtime/visual/wardrobe/cold/combat checks under samecandidate. Do notchangequality ordeclarefullcorePASS fromSize5stress.",
+        "latest_evidence": "core-functional-109/functional-round14-result.json",
         "prior_normal_mechanisms": "Earliernormalprofilelivewrites/preset/outfit/physics evidence retained; fullpanel lifecycle notaccepted afternewfailure",
         "panel_timer_regression": {
           "status": "PASS_BOUNDED",
@@ -1228,13 +1228,21 @@
           "actual_cycles_108": 3,
           "restart": "107normalexit0→108coldstart",
           "limit": "InitiatingLuaUNKNOWN; boundednonreproduction notpermanentfix; noextendedvisual/max/combat acceptance"
+        },
+        "size5_newtimer_regression": {
+          "status": "PASS_BOUNDED_RUNTIME_RETENTION_RECOVERY",
+          "candidate_sha256": "02e816a10831318c4f2e30240798c72c9cf315a6f9f548514e873b5fe3e4f2a8",
+          "evidence": "core-functional-109/functional-round14-result.json",
+          "max_body_cold_delta": 0.0,
+          "full_visual": "NOT_ACCEPTED",
+          "cause_limit": "Historical initiating Lua remainsunknown; nonreproduction doesnotprove permanentrepair."
         }
       },
       {
         "id": "T3",
         "status": "IN_PROGRESS",
         "acceptance": "Body+user core physics real standing/walk/run/jump/combat/restart success",
-        "next": "Samecandidate registered; revisit large14/maxSize5 nativebody stress after scopedpanel replay, retain normalpreset recovery and currentquality. Thenhealing/enemycombat only afterextendedP0/P1 gates.",
+        "next": "Restore109 single recorder via existingowner; continue alreadydefined large14 combo runtime/visual/wardrobe/cold/combat checks under samecandidate. Do notchangequality ordeclarefullcorePASS fromSize5stress.",
         "findings": "Human91 naturalness PASS plus actual physics/write/motion/outfit/cold original regressions and93 actual enemy contact; no newfatal/crash91–93. Prior diagnostic90 confirmed crash causeUNKNOWN retained.",
         "failure_fingerprint": "core90/P0selected+JG3.1.0/preset-stage/UE4SS.dll+0x910e80 readAV/probe18",
         "evidence": [
@@ -1245,7 +1253,7 @@
           "core-baseline-92/original-source-p1-result.json",
           "goal-restructure-20261010/p1-selected-profile-result.json"
         ],
-        "blocker": "Prior102/106confirmedUE4SS faults initiatingLuaUNKNOWN.107/108newtimer boundedpanel/native-return regression passed; fullmaxSize5/largevisual/healing/sustainedcombat remainunaccepted. NativekeycaptureEscape limitedbeforeTuner; mousecancel/nativehierarchicalreturn usable, ForwardW restored.",
+        "blocker": "Large combined profile visual naturalness and sustained body/physics/combat remain unaccepted. Source video horizontal seams confirmed during rapidcamera motion; current109 capture resume waiting recorder owner. Historical102/106 Lua fault cause unknown; changedtimer scopednormal/Size5 warm/cold tests passed.",
         "pending_visual_acceptance": {
           "status": "PASS_HUMAN_CURRENT_GREEN_PROFILE",
           "scope": "Current selected P0+JG only; not all clothes",
@@ -1255,11 +1263,11 @@
           "received_at": "2026-10-10T10:19:14.734947+00:00"
         },
         "remaining": [
-          "Large-profile visual naturalness",
-          "Sustained actual enlarged-profile enemy combat",
-          "Size5 confirmed crash diagnosis/repair; initiatingMod stillUNKNOWN"
+          "Large combined profile visual naturalness with usable source video",
+          "Sustained actual enlarged-profile movement/enemy combat/healing",
+          "Current candidate stability beyond bounded normal/Size5 replay"
         ],
-        "source_status": "OnlyTunerpollingtimer candidate applied SHA02e816a1; soleJGmain/defaults/namedbodypresets unchanged.5currentruntime samples40body/sixactivefinite springs; fullenlargedcore pending.",
+        "source_status": "Same Tuner timer candidate SHA02e816a1 retained. No source/loader/core/default changes in14. Normalpreset exactly restored after actualSize5 warm/cold retention. OriginalJG/namedpresets protected.",
         "accepted_scope": "Selected UUE Spine1.097 +Eve1.1.0/TunerSize1.10+soleJG3.1.0 current My_Default; native green/red only; all collected clothes untested",
         "prior_selected_normal_scope_status": "PASS",
         "acceptance_extension": "User requires enlarged individual and combined dimensions under movement/outfit/combat/restart, not covered by earlier normal scoped PASS",
@@ -1290,7 +1298,7 @@
             "checks": "11checkpoints40finitebodynodes/sixactivefiniteSpringBones; actualBeta1/light/finisher/contact/manualguard/manualJustEvade/respawn; nofullnaturalness/stabilityproof"
           }
         },
-        "latest_evidence": "core-functional-108/functional-round13-result.json",
+        "latest_evidence": "core-functional-109/functional-round14-result.json",
         "prior_normal_mechanisms": "Earliernormalprofilelivewrites/preset/outfit/physics evidence retained; fullpanel lifecycle notaccepted afternewfailure",
         "panel_timer_regression": {
           "status": "PASS_BOUNDED",
@@ -1299,6 +1307,14 @@
           "actual_cycles_108": 3,
           "restart": "107normalexit0→108coldstart",
           "limit": "InitiatingLuaUNKNOWN; boundednonreproduction notpermanentfix; noextendedvisual/max/combat acceptance"
+        },
+        "size5_newtimer_regression": {
+          "status": "PASS_BOUNDED_RUNTIME_RETENTION_RECOVERY",
+          "candidate_sha256": "02e816a10831318c4f2e30240798c72c9cf315a6f9f548514e873b5fe3e4f2a8",
+          "evidence": "core-functional-109/functional-round14-result.json",
+          "max_body_cold_delta": 0.0,
+          "full_visual": "NOT_ACCEPTED",
+          "cause_limit": "Historical initiating Lua remainsunknown; nonreproduction doesnotprove permanentrepair."
         }
       },
       {
@@ -1362,8 +1378,8 @@
     "progress": {
       "effective_accepted": 0,
       "completion_percent": null,
-      "reason": "FullMODacceptance0/139; scopedpaneltimer/native-return regression verified, enlargedvisual/maxSize5/sustainedcombat coregates remain; wholeGoal containsdependentheterogeneoustasks",
-      "round_key": "core-panel-game-thread-timer-regression",
+      "reason": "Full MOD acceptance remains0/139. Size5 runtime retention/recovery now verified on changed timer; combined large body visual, sustained movement/combat and video source reliability gates remain.",
+      "round_key": "core-body-size5-newtimer-revalidation",
       "round_status": "CLOSED",
       "remaining_rounds": "UNKNOWN",
       "legacy_denominator": 171,
@@ -1372,21 +1388,21 @@
       "effective_mod_required": 139,
       "effective_mod_percent": 0,
       "scope_increment": "3 required named body components added to136 historical MOD units; historical denominator171 and results retained",
-      "count": 13,
+      "count": 14,
       "coverage": "since_baseline",
-      "last_seq": 13,
-      "last_key": "core-panel-game-thread-timer-regression",
+      "last_seq": 14,
+      "last_key": "core-body-size5-newtimer-revalidation",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": 0,
       "evidence_change_percentage_points": 0,
       "remaining_rounds_confidence": "UNKNOWN",
       "scope_change": "No scopeaddition/removal; effective139/historical171 and63 legacyconclusions retained",
-      "milestone_change": "Single Tuner80ms game-thread timer candidate actual start/cancel verified.107 normalexit0→108coldrestart;1083opens/closes includingnativecustom/menu return, actualSize/Breast writes/presetrestore/Wjump/sidecamera/40body+6finiteactivesprings.107Rootkeycaptureerror correctedForwardW via108singlekeyreset. NativecaptureEscape stilllimited beforeTuner; mousecancel works. New0crash/0death; no permanentcrashfix/fullMODacceptance claim.",
+      "milestone_change": "Size5 exact Root scale verified after movement/jump/views and cached panel reopen; native normalpreset restores exact original.108 normalquit0→109 coldSize5 retained across40nodes with0delta, sixfiniteactivesprings; coldW/native normalrestore works. New0crash/death. Sourcevideo also has horizontal seams during rapid upward camera motion;109capture waiting oldvalidation, owner notified. No full visual/core/MOD acceptance.",
       "scope_change_percentage_points": 0,
-      "round_start_commit": "aa9c95974d3bfb7cc45ee9823bc9963255a79146"
+      "round_start_commit": "242c93e6ed7157b17562e9a03271759ee2a29e17"
     },
-    "next_action": "Samecandidate registered; revisit large14/maxSize5 nativebody stress after scopedpanel replay, retain normalpreset recovery and currentquality. Thenhealing/enemycombat only afterextendedP0/P1 gates.",
-    "updated_at": "2026-10-10T23:09:15.973877+00:00",
+    "next_action": "Restore109 single recorder via existingowner; continue alreadydefined large14 combo runtime/visual/wardrobe/cold/combat checks under samecandidate. Do notchangequality ordeclarefullcorePASS fromSize5stress.",
+    "updated_at": "2026-10-10T23:28:12.930743+00:00",
     "blocked_audit": {
       "native_goal_status": "active",
       "consecutive_goal_turns": 0,
@@ -1432,7 +1448,7 @@
         "NEXT CHECKPOINT": "A newly registered diagnostic candidate yields an identifiable operation result; subsequent health checks obey75000-token/30-active-minute cooldown and require a listed trigger"
       }
     },
-    "round_closure_at": "2026-10-10T23:09:15.973877+00:00",
+    "round_closure_at": "2026-10-10T23:28:12.930743+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 10,
       "new_confirmed_this_round": 0,
@@ -1443,7 +1459,7 @@
       "current_segment_new_confirmed": 0,
       "last_confirmed_segment": "core-functional-106",
       "observed_deaths": 38,
-      "latest_segment": "core-functional-108",
+      "latest_segment": "core-functional-109",
       "new_observed_deaths_this_round": 0,
       "video_death_correction": "Second core94 YOU_DIED now confirmed by exported frame evidence; count updated once",
       "new_unconfirmed_exit_segments": [
@@ -1473,10 +1489,19 @@
         "core106-confirmed-crash-tail-223020-223042-lossless.mkv"
       ],
       "source_clock_evidence": ".local/play-session-20261008/core-large-105/root-melee-source-clock-check.json",
-      "dodge_timestamp_evidence": ".local/play-session-20261008/core-large-105/root-dodge-native-timestamp-check.json"
+      "dodge_timestamp_evidence": ".local/play-session-20261008/core-large-105/root-dodge-native-timestamp-check.json",
+      "latest_issue": {
+        "at": "2026-10-10T23:28:12.930743+00:00",
+        "evidence": "recording-session/core108-size5-artifact-review.json",
+        "source_seams_confirmed_by_independent_owner": true,
+        "cause": "UNKNOWN X11 drawable capture versus presentation",
+        "scope": "Focused3s during rapid upward camera motion; no codec decode error; not physics naturalness acceptance",
+        "current_capture": "109 notyetrecorded; previous supervisor live STOPPING_VALIDATION, Root requested existing owner recovery",
+        "quality_unchanged": true
+      }
     },
-    "current_segment": "core-functional-108",
-    "previous_goal_turn_classification": "BOUND_TIMER_REGRESSION_VERIFIED_CORE_STILL_IN_PROGRESS",
+    "current_segment": "core-functional-109",
+    "previous_goal_turn_classification": "PROGRESS: Size5 warm/cold runtime retention and exact native recovery verified under changed timer; source-video seam problem observed, current capture resume owner notified; full acceptance not granted.",
     "execution_status": "IN_PROGRESS",
     "pause_at": "2026-10-10T12:03:10.167690+00:00",
     "pause_source": "Direct user pauses actual tests, requests normal game exit and verified playset handoff to user with separate read-only observation session",
@@ -1530,7 +1555,7 @@
       "at_utc": "2026-10-10T22:14:19.883200+00:00",
       "status": "MEASURED_OFFLINE_CONCURRENT_GAME_LOAD_UNKNOWN",
       "scope": "Read-only local resource/capture diagnostic; no MOD acceptance or round-count change",
-      "current_game_and_capture": "RUNNING_EXACT108",
+      "current_game_and_capture": "GAME109_RUNNING_CAPTURE_WAITING_PRIOR_VALIDATION",
       "idle_sample": {
         "gpu_percent": 0,
         "vram_used_mib": 18,
