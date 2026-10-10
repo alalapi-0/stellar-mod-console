@@ -1152,7 +1152,7 @@
     "tasks": [
       {
         "id": "T1",
-        "status": "IN_PROGRESS_WAITING_SAFE_EXIT",
+        "status": "BLOCKED_SAFE_EXIT_USER_DECISION",
         "acceptance": "Historical evidence retained, restoreable MOD config, all cosmetic overrides reversibly off, clean baseline actual launch",
         "completed": [
           "Old clothing dispatch paused",
@@ -1165,7 +1165,7 @@
       },
       {
         "id": "T2",
-        "status": "PREREQUISITE_DISCOVERY",
+        "status": "BLOCKED_T1_AND_MISSING_EVE_BASE",
         "acceptance": "Evidence-backed unique stable body solution or compatible combination; real live/preset/reload/outfit/movement verification",
         "order": [
           "UUEPBS alone",
@@ -1224,7 +1224,7 @@
       "completion_percent": null,
       "reason": "Unique MOD acceptance0/139; whole-goal includes five body combination checks and core baseline gates, no false aggregate acceptance",
       "round_key": "core-first-baseline-entry",
-      "round_status": "OPEN",
+      "round_status": "BLOCKED_UNFINISHED",
       "remaining_rounds": "UNKNOWN",
       "legacy_denominator": 171,
       "legacy_concluded": 63,
@@ -1233,14 +1233,20 @@
       "effective_mod_percent": 0,
       "scope_increment": "3 required named body components added to136 historical MOD units; historical denominator171 and results retained"
     },
-    "next_action": "Await safe-save/discard decision for exact current game; meanwhile obtain author EveProportions1.1.0 base resource without modifying active MODs",
-    "updated_at": "2026-10-10T04:46:19.435304+00:00",
+    "next_action": "Wait for user safe-save/discard decision. No more clothing dispatch, game MOD changes, tests or relaunches until this gate changes.",
+    "updated_at": "2026-10-10T05:00:33.766155+00:00",
     "blocked_audit": {
       "condition": "Current exact game has unsaved progress; native save unverified, explicit discard answer pending",
-      "consecutive_goal_turns": 2,
-      "native_goal_status": "ACTIVE",
+      "consecutive_goal_turns": 3,
+      "native_goal_status": "BLOCKED_CONFIRMED",
       "independent_progress_this_turn": "Body dependency/import/writer mechanism checked; unique MOD denominator classified139",
-      "next_action": "Await safe-save/discard decision; author EveProportions base resource still missing"
+      "next_action": "Await safe-save/discard decision; author EveProportions base resource still missing",
+      "latest_native_warning": "7h33m15s since last save; exiting loses all progress since that save",
+      "latest_evidence": ".local/play-session-20261008/audit-76/core-first-safe-exit-gate-revalidated.png",
+      "last_native_save_utc": "2026-10-09T21:26:28.750338+00:00",
+      "classification_this_turn": "NO_PROGRESS_SAME_UNSAVED_EXIT_GATE_REVALIDATED",
+      "independent_preparation": "Archive/config snapshots/current acceptance reset/body static prerequisites/compatibility records/research entry complete; runtime gates still incomplete",
+      "resume_condition": "User assists a verified native camp save or explicitly authorizes normal exit discarding this unsaved progress; Eve base resource remains prerequisite after exit"
     }
   }
 }
