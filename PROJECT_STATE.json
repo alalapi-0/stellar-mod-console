@@ -1160,7 +1160,8 @@
           "Recoverable text configuration preimages hashed",
           "Effective MOD acceptance reset NOT_TESTED"
         ],
-        "blocker": "Native dialog: 7h18m53s since last save; no destructive exit authorization"
+        "blocker": "Native dialog: 7h18m53s since last save; no destructive exit authorization",
+        "save_search": "Bounded guide-directed plaza/statue approach preserved; no camp interaction or native save verified. No exit confirmed."
       },
       {
         "id": "T2",
@@ -1173,7 +1174,8 @@
           "UUEPBS+EveProportions",
           "three-way ONLY if compatibility evidence"
         ],
-        "findings": "UUEPBS2.7.1 author GitHub release staged; Ayaka2.7.3 discrepancy retained. Eve base1.1.0 absent; panelv1.4 staged only. Native hook vs post-process AnimBP require isolated ownership validation."
+        "findings": "UUEPBS2.7.1 author GitHub release staged; Ayaka2.7.3 discrepancy retained. Eve base1.1.0 absent; panelv1.4 staged only. Native hook vs post-process AnimBP require isolated ownership validation.",
+        "static_evidence": "Verified x64 DLL import/loader proxy export; current JiggleControl main anim owner differs from Eve postprocess owner; stack still NOT_TESTED."
       },
       {
         "id": "T3",
@@ -1220,14 +1222,25 @@
     "progress": {
       "effective_accepted": 0,
       "completion_percent": null,
-      "reason": "New acceptance scope and dependencies still being classified; old 63/171 preserved as LEGACY, not current",
+      "reason": "Unique MOD acceptance0/139; whole-goal includes five body combination checks and core baseline gates, no false aggregate acceptance",
       "round_key": "core-first-baseline-entry",
       "round_status": "OPEN",
       "remaining_rounds": "UNKNOWN",
       "legacy_denominator": 171,
-      "legacy_concluded": 63
+      "legacy_concluded": 63,
+      "effective_mod_accepted": 0,
+      "effective_mod_required": 139,
+      "effective_mod_percent": 0,
+      "scope_increment": "3 required named body components added to136 historical MOD units; historical denominator171 and results retained"
     },
     "next_action": "Await safe-save/discard decision for exact current game; meanwhile obtain author EveProportions1.1.0 base resource without modifying active MODs",
-    "updated_at": "2026-10-10T04:46:19.435304+00:00"
+    "updated_at": "2026-10-10T04:46:19.435304+00:00",
+    "blocked_audit": {
+      "condition": "Current exact game has unsaved progress; native save unverified, explicit discard answer pending",
+      "consecutive_goal_turns": 2,
+      "native_goal_status": "ACTIVE",
+      "independent_progress_this_turn": "Body dependency/import/writer mechanism checked; unique MOD denominator classified139",
+      "next_action": "Await safe-save/discard decision; author EveProportions base resource still missing"
+    }
   }
 }
