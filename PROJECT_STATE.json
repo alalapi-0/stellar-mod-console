@@ -1169,7 +1169,7 @@
       },
       {
         "id": "T2",
-        "status": "IN_PROGRESS_CORE_PARAMETER_MEASUREMENT",
+        "status": "PASS",
         "acceptance": "Evidence-backed unique stable body solution or compatible combination; real live/preset/reload/outfit/movement verification",
         "order": [
           "UUEPBS alone",
@@ -1178,19 +1178,23 @@
           "UUEPBS+EveProportions",
           "three-way ONLY if compatibility evidence"
         ],
-        "findings": "Uploaded main1.1.0 installed; Lily/SpringBone preset retained inactive. UUE isolated preset/outfit/restart verified. Eve/Tuner14-value control/save/reset/load and exact hidden-outfit reopen repair verified. Core83 unknown abnormal exit retained; bounded core84 diagnostic did not reproduce it. UUE+Eve main core85 native preset and wardrobe retention verified; exact bone scale/cumulative and conditional3-way checks pending.",
+        "findings": "Author components isolated and combined. Real socket2-way/3-way reset/load/outfit measurements and cold restart passed; exact reopen bug repaired and revalidated; core83 unknown exit retained, not falsely attributed/fixed.",
         "static_evidence": "Verified x64 DLL import/loader proxy export; current JiggleControl main anim owner differs from Eve postprocess owner; stack still NOT_TESTED.",
         "evidence": [
           "goal-restructure-20261010/uue-alone-result.json",
           "goal-restructure-20261010/EvePanel-repair-result.json",
           "goal-restructure-20261010/EvePanel-nudge-diagnostic-result.json",
-          "goal-restructure-20261010/body-pair-result.json"
-        ]
+          "goal-restructure-20261010/body-pair-result.json",
+          "goal-restructure-20261010/p0-body-profile-result.json"
+        ],
+        "accepted_scope": "Selected P0 profile only: UUE controlled Spine1.097 + Eve main + Tuner Size1.1; original red/green outfits; physics/combat/full outfit compatibility NOT_TESTED",
+        "blocker": null
       },
       {
         "id": "T3",
-        "status": "WAITING_T2",
-        "acceptance": "Body+user core physics real standing/walk/run/jump/combat/restart success"
+        "status": "READY",
+        "acceptance": "Body+user core physics real standing/walk/run/jump/combat/restart success",
+        "next": "Enable existing JiggleControl3.1.0 only after exact config preimage/ownership, actual body/physics action and restart/outfit checks"
       },
       {
         "id": "T4",
@@ -1233,7 +1237,7 @@
       "effective_accepted": 0,
       "completion_percent": null,
       "reason": "Unique MOD acceptance0/139; whole-goal includes five body combination checks and core baseline gates, no false aggregate acceptance",
-      "round_key": "core-first-baseline-entry",
+      "round_key": "core-p0-final-scale-measurement",
       "round_status": "CLOSED",
       "remaining_rounds": "UNKNOWN",
       "legacy_denominator": 171,
@@ -1242,19 +1246,19 @@
       "effective_mod_required": 139,
       "effective_mod_percent": 0,
       "scope_increment": "3 required named body components added to136 historical MOD units; historical denominator171 and results retained",
-      "count": 1,
+      "count": 2,
       "coverage": "since_baseline",
-      "last_seq": 1,
-      "last_key": "core-first-baseline-entry",
+      "last_seq": 2,
+      "last_key": "core-p0-final-scale-measurement",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": 0,
       "evidence_change_percentage_points": 0,
       "remaining_rounds_confidence": "UNKNOWN",
-      "scope_change": "3 named body units added to136 historical units, effective0/139; historical171/63 retained",
-      "milestone_change": "T1 baseline PASS; T2 bounded checks and one exact repair passed, no final MOD unit accepted"
+      "scope_change": "None; full MOD units remain0/139; P0 phase alone is not full core acceptance",
+      "milestone_change": "T2 selected body profile accepted with two-way/three-way final-scale and native cold-restart evidence; T3 READY"
     },
-    "next_action": "Read exact live postprocess and final socket/bone scales in a bounded controlled profile; finish pair measurement before conditional3-way, then choose stable P0 and proceedP1.",
-    "updated_at": "2026-10-10T07:44:29.850447+00:00",
+    "next_action": "P1 add only user-selected JiggleControl3.1.0 under this profile after exact stopped-game config registration; verify actual standing/walk/run/jump/combat/restore/outfit/restart; no alternate physics writer",
+    "updated_at": "2026-10-10T08:29:43.649991+00:00",
     "blocked_audit": {
       "native_goal_status": "active",
       "consecutive_goal_turns": 0,
@@ -1271,10 +1275,11 @@
       "inactive_files": 570,
       "restorable": true,
       "saves_untouched": true,
-      "current_segment": "core-baseline-85",
+      "current_segment": "core-baseline-88",
       "result": "PASS_BASELINE_STARTUP_AND_NATIVE_LOAD_ONLY",
       "current_game_state": "NORMALLY_EXITED_RUNTIME0",
-      "body_configuration": "UUEPBS2.7.1 + EveProportions1.1.0 main; Tuner disabled for pair test; cosmetic resources still retained offscan"
+      "body_configuration": "Selected P0 accepted controlled profile: UUEPBS2.7.1 Spine1.097 + Eve main1.1.0 + Tuner1.4 repaired Size1.1; all cosmetics/physics/combat remain isolated",
+      "p0_evidence": ".local/play-session-20261008/goal-restructure-20261010/p0-body-profile-result.json"
     },
     "health_checkpoint": {
       "goal_created_at": 1791607374,
@@ -1293,6 +1298,6 @@
         "NEXT CHECKPOINT": "A newly registered diagnostic candidate yields an identifiable operation result; subsequent health checks obey75000-token/30-active-minute cooldown and require a listed trigger"
       }
     },
-    "round_closure_at": "2026-10-10T07:44:29.850447+00:00"
+    "round_closure_at": "2026-10-10T08:29:43.649991+00:00"
   }
 }
