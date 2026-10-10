@@ -1134,5 +1134,100 @@
     "governor_report_sha256": "8e187b378e1c41951314dcd4ab4771822fd43be20703a96246badfbcd67847df",
     "identity_rule": "Exact three-file semantic map plus private evidence and separate State hash. Review/sync/pause scheduling metadata outside content identity.",
     "source_approval_identity_correction": "Truncated63character hash corrected to exact64 before any Git effect; semanticcandidate unchanged"
+  },
+  "mod_compatibility_restructure": {
+    "task_id": "stellar-mod-compatibility-core-first-20261010",
+    "source": "Direct current user /goal execution instruction; does not resume paused console development/Cursor R04-n",
+    "lane": "DIRECT",
+    "owner_thread": "01a117fe-247b-7fb0-af64-ac93f87a439d",
+    "objective": "Stable adjustable body + natural physics + user combat; then individually retest all clothing while progressing campaign and changing view every 15 seconds",
+    "priority": [
+      "P0_BODY",
+      "P1_PHYSICS",
+      "P2_COMBAT",
+      "P3_OUTFITS"
+    ],
+    "private_evidence": ".local/play-session-20261008/goal-restructure-20261010",
+    "legacy_result_policy": "LEGACY / REQUIRES_RETEST; current effective acceptance NOT_TESTED; historical results and counts preserved",
+    "tasks": [
+      {
+        "id": "T1",
+        "status": "IN_PROGRESS_WAITING_SAFE_EXIT",
+        "acceptance": "Historical evidence retained, restoreable MOD config, all cosmetic overrides reversibly off, clean baseline actual launch",
+        "completed": [
+          "Old clothing dispatch paused",
+          "Old manifests snapshotted",
+          "Recoverable text configuration preimages hashed",
+          "Effective MOD acceptance reset NOT_TESTED"
+        ],
+        "blocker": "Native dialog: 7h18m53s since last save; no destructive exit authorization"
+      },
+      {
+        "id": "T2",
+        "status": "PREREQUISITE_DISCOVERY",
+        "acceptance": "Evidence-backed unique stable body solution or compatible combination; real live/preset/reload/outfit/movement verification",
+        "order": [
+          "UUEPBS alone",
+          "EveProportions alone",
+          "EveProportions+panel",
+          "UUEPBS+EveProportions",
+          "three-way ONLY if compatibility evidence"
+        ],
+        "findings": "UUEPBS2.7.1 author GitHub release staged; Ayaka2.7.3 discrepancy retained. Eve base1.1.0 absent; panelv1.4 staged only. Native hook vs post-process AnimBP require isolated ownership validation."
+      },
+      {
+        "id": "T3",
+        "status": "WAITING_T2",
+        "acceptance": "Body+user core physics real standing/walk/run/jump/combat/restart success"
+      },
+      {
+        "id": "T4",
+        "status": "WAITING_T3",
+        "acceptance": "Body+physics+user combat actual actions and sustained combat success"
+      },
+      {
+        "id": "T5",
+        "status": "WAITING_T4",
+        "acceptance": "Versioned hashed restoreable accepted core baseline"
+      },
+      {
+        "id": "T6",
+        "status": "WAITING_T5",
+        "acceptance": "All collected clothes individually retested; accepted only PASS/PASS_WITH_PROFILE; no legacy pass inherited"
+      },
+      {
+        "id": "T7",
+        "status": "IN_PROGRESS",
+        "acceptance": "Compatibility records with current enabled/dependencies/body/physics/combat/profiles/conclusions/evidence/disposition; research entry only",
+        "completed": [
+          "Existing 136 unit records extended with core-first compatibility fields",
+          "Research entry created, no development"
+        ]
+      }
+    ],
+    "research": {
+      "id": "BODY_OUTFIT_COMPATIBILITY_LAYER",
+      "status": "RESEARCH_ENTRY_ONLY_NOT_STARTED",
+      "scope": [
+        "Unified body parameters",
+        "Restore on outfit change",
+        "Per-outfit profiles",
+        "Resource overlap detection",
+        "Identify model-adaptation needs",
+        "Semi-automatic adaptation feasibility"
+      ]
+    },
+    "progress": {
+      "effective_accepted": 0,
+      "completion_percent": null,
+      "reason": "New acceptance scope and dependencies still being classified; old 63/171 preserved as LEGACY, not current",
+      "round_key": "core-first-baseline-entry",
+      "round_status": "OPEN",
+      "remaining_rounds": "UNKNOWN",
+      "legacy_denominator": 171,
+      "legacy_concluded": 63
+    },
+    "next_action": "Await safe-save/discard decision for exact current game; meanwhile obtain author EveProportions1.1.0 base resource without modifying active MODs",
+    "updated_at": "2026-10-10T04:46:19.435304+00:00"
   }
 }
