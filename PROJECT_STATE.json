@@ -1188,7 +1188,8 @@
           "goal-restructure-20261010/p0-body-profile-result.json",
           "core-functional-111/functional-round17-result.json",
           "core-functional-111/functional-round18-result.json",
-          "core-functional-111/functional-round19-result.json"
+          "core-functional-111/functional-round19-result.json",
+          "core-functional-113/functional-round20-result.json"
         ],
         "accepted_scope": "Selected P0 profile only: UUE controlled Spine1.097 + Eve main + Tuner Size1.1; original red/green outfits; physics/combat/full outfit compatibility NOT_TESTED",
         "blocker": "Human enlarged naturalness, actual damage effects, auto JustEvade/Repulse/QTE and remaining controls, current long-run/input stability, T5 stable combination, then all clothing retests",
@@ -1221,8 +1222,8 @@
             "checks": "11checkpoints40finitebodynodes/sixactivefiniteSpringBones; actualBeta1/light/finisher/contact/manualguard/manualJustEvade/respawn; nofullnaturalness/stabilityproof"
           }
         },
-        "next": "Cold-start verify saved diagnostic slot9, then restore exact original preset preimage only while game is off and with concurrent-change check; revalidate original normal core. Inspect native skill/resources and lock controls before remaining automatic dodge/QTE and enlarged combo. Preserve current game/recording quality.",
-        "latest_evidence": "core-functional-111/functional-round19-result.json",
+        "next": "Register exact Jiggle profile/INI preimages; verify bounded nudge/save/load/reload/cycle/motion controls with current normal core, restore original parameters; then resolve remaining P0 and automatic evade/QTE/damage behavior. Preserve source/recording quality and existing pending enlarged naturalness review.",
+        "latest_evidence": "core-functional-113/functional-round20-result.json",
         "prior_normal_mechanisms": "Earliernormalprofilelivewrites/preset/outfit/physics evidence retained; fullpanel lifecycle notaccepted afternewfailure",
         "panel_timer_regression": {
           "status": "PASS_BOUNDED",
@@ -1260,7 +1261,7 @@
         "id": "T3",
         "status": "IN_PROGRESS",
         "acceptance": "Body+user core physics real standing/walk/run/jump/combat/restart success",
-        "next": "Cold-start verify saved diagnostic slot9, then restore exact original preset preimage only while game is off and with concurrent-change check; revalidate original normal core. Inspect native skill/resources and lock controls before remaining automatic dodge/QTE and enlarged combo. Preserve current game/recording quality.",
+        "next": "Register exact Jiggle profile/INI preimages; verify bounded nudge/save/load/reload/cycle/motion controls with current normal core, restore original parameters; then resolve remaining P0 and automatic evade/QTE/damage behavior. Preserve source/recording quality and existing pending enlarged naturalness review.",
         "findings": "Human91 naturalness PASS plus actual physics/write/motion/outfit/cold original regressions and93 actual enemy contact; no newfatal/crash91–93. Prior diagnostic90 confirmed crash causeUNKNOWN retained.",
         "failure_fingerprint": "core90/P0selected+JG3.1.0/preset-stage/UE4SS.dll+0x910e80 readAV/probe18",
         "evidence": [
@@ -1272,7 +1273,8 @@
           "goal-restructure-20261010/p1-selected-profile-result.json",
           "core-functional-111/functional-round17-result.json",
           "core-functional-111/functional-round18-result.json",
-          "core-functional-111/functional-round19-result.json"
+          "core-functional-111/functional-round19-result.json",
+          "core-functional-113/functional-round20-result.json"
         ],
         "blocker": "Human enlarged naturalness, actual damage effects, auto JustEvade/Repulse/QTE and remaining controls, current long-run/input stability, T5 stable combination, then all clothing retests",
         "pending_visual_acceptance": {
@@ -1319,7 +1321,7 @@
             "checks": "11checkpoints40finitebodynodes/sixactivefiniteSpringBones; actualBeta1/light/finisher/contact/manualguard/manualJustEvade/respawn; nofullnaturalness/stabilityproof"
           }
         },
-        "latest_evidence": "core-functional-111/functional-round19-result.json",
+        "latest_evidence": "core-functional-113/functional-round20-result.json",
         "prior_normal_mechanisms": "Earliernormalprofilelivewrites/preset/outfit/physics evidence retained; fullpanel lifecycle notaccepted afternewfailure",
         "panel_timer_regression": {
           "status": "PASS_BOUNDED",
@@ -1440,10 +1442,10 @@
       ]
     },
     "progress": {
-      "effective_accepted": 46,
-      "completion_percent": 56.79,
-      "reason": "Core functionality46/81 accepted. These are exact independently verified functions, not all-core completion. Temporary preset9 cold validation/cleanup and remaining controls/large naturalness/full stability still pending.",
-      "round_key": "core-panel-current-candidate-preset-binding-and-input",
+      "effective_accepted": 50,
+      "completion_percent": 61.73,
+      "reason": "50/81 independent core functions scoped accepted. Four native Jiggle editor/selector functions added; cold preset verification and original exact cleanup completed. Full core stability and enlarged naturalness gates remain open.",
+      "round_key": "core-preset-native-cold-load-exact-cleanup",
       "round_status": "CLOSED",
       "remaining_rounds": "UNKNOWN",
       "legacy_denominator": 171,
@@ -1452,22 +1454,22 @@
       "effective_mod_required": 139,
       "effective_mod_percent": null,
       "scope_increment": "3 required named body components added to136 historical MOD units; historical denominator171 and results retained",
-      "count": 19,
+      "count": 20,
       "coverage": "since_baseline",
-      "last_seq": 19,
-      "last_key": "core-panel-current-candidate-preset-binding-and-input",
+      "last_seq": 20,
+      "last_key": "core-preset-native-cold-load-exact-cleanup",
       "historical_round_count": "UNKNOWN",
-      "execution_change_percentage_points": 6.17,
+      "execution_change_percentage_points": 4.94,
       "evidence_change_percentage_points": 0,
       "remaining_rounds_confidence": "UNKNOWN",
-      "scope_change": "Same81core functionality/139inventory; five actual current-candidate functions newly accepted, no inventory expansion",
-      "milestone_change": "Tuner slot9save/load andReset; native white1.0→green global1.1→white bound1.0→unbind original1.1 with40nodes delta0; nativepass-throughON/OFF verified.0crashes0deaths; one Root menu error corrected.",
+      "scope_change": "Same81core functions/139inventory; four newly verified current UI functions, no scope expansion",
+      "milestone_change": "Cold saved9 actual40node delta1.037e-5 and motion/view; native1 recovery, game-off exact9cleanup, fresh113 original40node delta0/native9empty. Jiggle3region/5field/5increment UI forward/reverse andclose confirmed.0newcrash0death.",
       "scope_change_percentage_points": 0,
-      "round_start_commit": "66f300868494775c36dc8edc2e7a5b62b1317b58",
+      "round_start_commit": "9e269eeafe0a5a40540dc8a570bdd28a865e095f",
       "completion_scope": "CORE_FUNCTIONS_ONLY_NOT_WHOLE_PROJECT",
-      "effective_function_accepted": 46,
+      "effective_function_accepted": 50,
       "effective_function_required": 81,
-      "effective_function_percent": 56.79,
+      "effective_function_percent": 61.73,
       "effective_mod_metric_status": "LEGACY_WHOLE_MOD_COUNT_SUPERSEDED;139 inventory retained",
       "legacy_mod_acceptance_before_metric_change": {
         "accepted": 0,
@@ -1476,12 +1478,12 @@
       },
       "functional_accounting": {
         "scope_version": "functional-capabilities-v2",
-        "at": "2026-10-11T03:19:10.302268+00:00",
+        "at": "2026-10-11T03:49:46.024184+00:00",
         "rule": "Each independently verifiable functional capability is one equal-weight unit; a MOD and its child capabilities never both count. Clothes remain one complete MOD unit covering all applicable variants/views/regressions. Repeated samples, key presses, normal/enlarged repeats and native game actions are not new functional units.",
         "core_functions": {
-          "accepted": 46,
+          "accepted": 50,
           "required": 81,
-          "percent": 56.79,
+          "percent": 61.73,
           "by_mod": {
             "lua:UUEPBS": {
               "accepted": 8,
@@ -1496,7 +1498,7 @@
               "required": 26
             },
             "lua:JiggleControl": {
-              "accepted": 5,
+              "accepted": 9,
               "required": 17
             },
             "global:Improved_Perfect_Defense_Default": {
@@ -1540,25 +1542,24 @@
         "state_authority": "PROJECT_STATE.json.mod_compatibility_restructure"
       },
       "new_function_evidence_this_round": [
-        "outfit-bind",
-        "outfit-unbind",
-        "passthrough",
-        "preset-save",
-        "reset-neutral"
+        "lua:JiggleControl/editor",
+        "lua:JiggleControl/field",
+        "lua:JiggleControl/increment",
+        "lua:JiggleControl/region"
       ],
       "window": []
     },
-    "next_action": "Cold-start verify saved diagnostic slot9, then restore exact original preset preimage only while game is off and with concurrent-change check; revalidate original normal core. Inspect native skill/resources and lock controls before remaining automatic dodge/QTE and enlarged combo. Preserve current game/recording quality.",
-    "updated_at": "2026-10-11T03:19:10.302268+00:00",
+    "next_action": "Register exact Jiggle profile/INI preimages; verify bounded nudge/save/load/reload/cycle/motion controls with current normal core, restore original parameters; then resolve remaining P0 and automatic evade/QTE/damage behavior. Preserve source/recording quality and existing pending enlarged naturalness review.",
+    "updated_at": "2026-10-11T03:49:46.024184+00:00",
     "blocked_audit": {
       "native_goal_status": "active",
       "consecutive_goal_turns": 0,
       "condition": null,
-      "cleared_by": "Round19 five native function acceptances and bounded body/input/outfit regression",
+      "cleared_by": "Round20 cold native preset recovery and four independent current Jiggle UI function acceptances",
       "consecutive_no_progress_turns": 0,
       "status": "PROGRESS",
-      "evidence": "Round19 current-candidate preset save/reset, bind/unbind with exact40-node restoration, and native passthrough ON/OFF observed",
-      "next_action": "Cold-start verify saved diagnostic slot9, then restore exact original preset preimage only while game is off and with concurrent-change check; revalidate original normal core. Inspect native skill/resources and lock controls before remaining automatic dodge/QTE and enlarged combo. Preserve current game/recording quality."
+      "evidence": "core-functional-113/functional-round20-result.json",
+      "next_action": "Register exact Jiggle profile/INI preimages; verify bounded nudge/save/load/reload/cycle/motion controls with current normal core, restore original parameters; then resolve remaining P0 and automatic evade/QTE/damage behavior. Preserve source/recording quality and existing pending enlarged naturalness review."
     },
     "user_exit_authorization": {
       "source": "Direct user: 没保存也没关系，允许放弃未保存进度并正常退出。正常重启人物; followed by 重启任务",
@@ -1571,11 +1572,11 @@
       "inactive_files": 564,
       "restorable": true,
       "saves_untouched": true,
-      "current_segment": "core-functional-111",
-      "result": "NORMAL_DEFAULT_CURRENT_TUNER_FIVE_MORE_FUNCTIONS_VERIFIED_FULL_CORE_PENDING",
-      "current_game_state": "LIVE_NATIVE_GEAR_HP1_ORIGINAL_NORMAL_VALUES_AND_WHITE_OUTFIT",
+      "current_segment": "core-functional-113",
+      "result": "ORIGINAL_NORMAL_PRESETS_EXACTLY_RESTORED_COLD_VERIFIED_SCOPED_JIGGLE_CONTROLS_PASS_FULL_CORE_PENDING",
+      "current_game_state": "LIVE_NATIVE_GEAR_AT_EXISTING_CAMP_HP1_ORIGINAL_NORMAL_BODY_WHITE_OUTFIT",
       "body_configuration": "UUE Spine1.097 + Eve1.1.0/Tuner currenttimer + originalnormal Size1.1 + soleJG3.1.0. Namedpresets retained; existingSB0.2.3 allautomaticflags1 with exactlocal600msfinisherholdcandidate; IPD/Better unchanged. Allcosmetic/NPC/alternatephysics/cameraoff.",
-      "p0_evidence": "core-functional-111/functional-round19-result.json",
+      "p0_evidence": "core-functional-113/functional-round20-result.json",
       "p1_evidence": "goal-restructure-20261010/p1-selected-profile-result.json",
       "p2_evidence": "core-functional-111/functional-round18-result.json",
       "reactivated_combat_files": 6,
@@ -1583,7 +1584,7 @@
       "original_inactive_files": 570,
       "local_combat_adjustment": "Existing SBParry0.2.3 onlyfinisherhold600ms exactcandidate, reversiblepreimages; partialactualnormal verified; no fullcoreacceptance",
       "previous_failure_result": "NORMAL_PROFILE_LATE_PANEL_CONFIRMED_CRASH_NOT_STABLE",
-      "test_preset_slot9": "Author-native saved into previously empty slot9; source slots1/2 intact. Registered cold verify then exact game-off cleanup required."
+      "test_preset_slot9": "COLD_VERIFIED_AND_REMOVED_EXACT_ORIGINAL:9saved/loaded after cold112; native1 restored,112normalexit0,originalPresetfile12490dc restored while gameoff concurrent check,113native9empty/bodydelta0. Original slots1/2 intact."
     },
     "health_checkpoint": {
       "goal_created_at": 1791607374,
@@ -1602,7 +1603,7 @@
         "NEXT CHECKPOINT": "A newly registered diagnostic candidate yields an identifiable operation result; subsequent health checks obey75000-token/30-active-minute cooldown and require a listed trigger"
       }
     },
-    "round_closure_at": "2026-10-11T03:19:10.302268+00:00",
+    "round_closure_at": "2026-10-11T03:49:46.024184+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 10,
       "new_confirmed_this_round": 0,
@@ -1613,7 +1614,7 @@
       "current_segment_new_confirmed": 0,
       "last_confirmed_segment": "core-functional-106",
       "observed_deaths": 42,
-      "latest_segment": "core-functional-111",
+      "latest_segment": "core-functional-113",
       "new_observed_deaths_this_round": 0,
       "video_death_correction": "Second core94 YOU_DIED now confirmed by exported frame evidence; count updated once",
       "new_unconfirmed_exit_segments": [
@@ -1637,7 +1638,7 @@
       "large_motion_preview": "core103-green14-body-motion-preview-1920-crf16.mp4",
       "large_visual_acceptance": "WAITING_HUMAN; normal91 human PASS applies only earlier selected profile",
       "historical_limit": "Core95 battle capture cadence failed and quality review remains partial; sealed original evidence retained. User96 had no valid continuous video due cancelled/rejected Portal;96 logs/stills/report preserved;97 video requires source authorization",
-      "current_evidence": ".local/play-session-20261008/recording-session/core111-round18-recording-review.json",
+      "current_evidence": "recording-session/core113-recorder-resume.json",
       "current_preview": "core104-large14-motion-preview-1920-crf16.mp4",
       "current_battle_clips": [
         "core106-confirmed-crash-tail-223020-223042-lossless.mkv"
@@ -1667,10 +1668,21 @@
         "current_profile": "Human1720x72030debug unchanged",
         "source_motion_quality": "NOT_ACCEPTED_HORIZONTALTEARS_CAUSE_UNKNOWN",
         "automatic_finisher_windows_requested_from_owner": true
-      }
+      },
+      "current_identity": {
+        "state": "RECORDING",
+        "supervisor_pid": 2419147,
+        "supervisor_start_ticks": "28666922",
+        "ffmpeg_pid": 2419185,
+        "ffmpeg_start_ticks": "28666938",
+        "run_id": "20261011T034036195989Z-core-functional-113",
+        "game_pid": 2418598,
+        "game_start_ticks": "28660759"
+      },
+      "current_coverage_limit": "112/113 only after exact recorder start; menus/loading are separate evidence. Same authorized1720x72030DEBUG; source presentation quality not fully accepted."
     },
-    "current_segment": "core-functional-111",
-    "previous_goal_turn_classification": "PROGRESS_ROUND19_FIVE_CURRENT_NATIVE_TUNER_FUNCTIONS_VERIFIED_AND_EXACT_NORMAL_BODY_RESTORED",
+    "current_segment": "core-functional-113",
+    "previous_goal_turn_classification": "PROGRESS_ROUND20_FOUR_JIGGLE_NATIVE_UI_FUNCTIONS_COLD_PRESET_VERIFIED_AND_EXACT_ORIGINAL_CONFIG_RESTORED",
     "execution_status": "IN_PROGRESS",
     "pause_at": "2026-10-10T12:03:10.167690+00:00",
     "pause_source": "Direct user pauses actual tests, requests normal game exit and verified playset handoff to user with separate read-only observation session",
