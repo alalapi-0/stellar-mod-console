@@ -1139,7 +1139,7 @@
     "task_id": "stellar-mod-compatibility-core-first-20261010",
     "source": "Direct current user /goal execution instruction; does not resume paused console development/Cursor R04-n",
     "lane": "DIRECT",
-    "owner_thread": "01a117fe-247b-7fb0-af64-ac93f87a439d",
+    "owner_thread": "01a12a72-1d28-73c1-bedc-77a0f48858a2",
     "objective": "Stable adjustable body + natural physics + user combat; then individually retest all clothing while progressing campaign and changing view every 15 seconds",
     "priority": [
       "P0_BODY",
@@ -1854,8 +1854,8 @@
       "newly_defined_function_items": 0,
       "latest_scope_extension": "No new PASS or test round. Single-body selection changes current baseline applicability; known56/253 functions and56/81core retained as historical scoped metrics. Added/restored wardrobe plus current hair/face/weapon scopes need parent/variant reconciliation; overall denominator UNKNOWN."
     },
-    "next_action": "Authorized fresh replacement chat: finish only nativeSteam startup for128, exactPID/start_ticks and freshCNS11 registrations, soleEveProportions+Tuner/F9 withnoUUEhook/Jiggle/SBParry/Doro/audio initialization; diagnoseYoRHa trueNierDLC dependency without bypass; ask user visual clipping confirmation. No broad tests/Goal/development/continuousobserver resume; no reinstallation of completed65files/44accessories. Oldchat stops after handoff.",
-    "updated_at": "2026-10-11T10:07:18.356705+00:00",
+    "next_action": "Native128 menu startup and soleEve/Jiggle/Doro/audio/helper initialization verified; observer stopped. Wait for user manual Continue/CNS wardrobe visual check or a new bounded input grant to verify11 CNS registrations, clipping, audible dance and YoRHa DLC mount. Broad tests/Goal/development/player observation remain PAUSED; no repeated install.",
+    "updated_at": "2026-10-11T10:18:23.689375+00:00",
     "blocked_audit": {
       "native_goal_status": "paused",
       "consecutive_goal_turns": 0,
@@ -2011,10 +2011,10 @@
     "pause_at": "2026-10-11T04:42:58.883433+00:00",
     "pause_source": "User pauses tests, requests manual native gameplay with enabled playset, local learning records and new conversation continuation",
     "user_play_handoff": {
-      "status": "WARDROBE_EXPANSION_APPLIED_FRESH_CHAT_STARTUP_PENDING",
+      "status": "NATIVE128_MENU_STARTED_INITIALIZATION_VERIFIED_VISUAL_PENDING",
       "segment": "user-native-128",
       "playset_evidence": ".local/play-session-20261008/user-native-115/playset-registration.json",
-      "launch_evidence": null,
+      "launch_evidence": ".local/play-session-20261008/user-native-128/startup-result.json",
       "trash_evidence": ".local/play-session-20261008/user-native-115/trash-receipt.json",
       "input_owner": "USER_OR_ENABLED_MOD_AUTO",
       "automatic_relaunch": false,
@@ -2034,7 +2034,7 @@
       "observation_limit": "Sparse currentnative coordinate/HP and true video frames; before04:46:05UTC visualgap retained; routelearning notMODacceptance",
       "continuation_prompt": ".local/play-session-20261008/CONTINUE_MOD_TESTING_PROMPT_20261011.md",
       "local_data_index": ".local/play-session-20261008/local-data-index-20261011.json",
-      "current_chat": "User requests fresh separate continuation conversation due repeated Codex stream errors; old root relinquishes shared writes after Git closure",
+      "current_chat": "Replacement Root active only for current installation/startup repair; broad tests remain paused",
       "clipping_repair": {
         "status": "PROFILE_SPILLOVER_REPAIRED_TWO_MODEL_NATIVE_PERSISTENCE_PASS",
         "lane": "DIRECT",
@@ -2072,8 +2072,8 @@
       },
       "body_binding_instructions": ".local/play-session-20261008/FUNCTIONAL_MOD_KEYS_20261011.md",
       "control_returned_at": "2026-10-11T07:17:32.728463+00:00",
-      "game_current": "OFF_NO_STARTUP_YET",
-      "current_repair_evidence": ".local/play-session-20261008/user-native-128/repair/wardrobe-expansion/install-plan.json",
+      "game_current": "LIVE_NATIVE128_MENU_USER_INPUT_PENDING",
+      "current_repair_evidence": ".local/play-session-20261008/user-native-128/repair/startup-validation.json",
       "active_body_controller": "EveProportions+Tuner/F9 only; UUEPBS intact outside loader",
       "clipping_result": "PARAMETERS_NEUTRAL_SECOND_POSE_WRITER_ISOLATED; current visual clipping root cause UNKNOWN, pending user visual check"
     },
@@ -2166,11 +2166,11 @@
       }
     },
     "user_play_repairs": {
-      "at": "2026-10-11T10:07:18.356705+00:00",
-      "status": "APPLIED_FILE_VERIFIED_NEW_CHAT_STARTUP_PENDING",
+      "at": "2026-10-11T10:18:23.689375+00:00",
+      "status": "MENU_STARTUP_VERIFIED_RUNTIME_WARDROBE_AND_VISUAL_PENDING",
       "lane": "DIRECT",
       "native_goal": "NONE_ACTIVE_tool_verified; broad tests PAUSED_BY_USER",
-      "control": "No keyboard/mouse sent. Exact former game/helper gone; no normal exit sent because they were already gone. User error clarified Codex stream, not confirmed game crash.",
+      "control": "NativeSteam launch and exact new process/window identity verified; no keyboard/mouse sent. Read-only startup observation stopped. Saves not copied/written/rolled back by agent.",
       "previous_repair_evidence": "user-native-127/repair/startup-validation.json",
       "current_evidence": ".local/play-session-20261008/user-native-128/repair/wardrobe-expansion/install-plan.json",
       "restored_XXTB_units": [
@@ -2234,7 +2234,7 @@
         "id": "Repacked Mod1052",
         "status": "FOUR_FILES_RESTORED_NierDLC_DEPENDENCY_UNVERIFIED_NOT_VISUAL_FIXED",
         "scope": "Author mesh boneweights fix candidate, not verified counterpart to new990 modular installer",
-        "dependency": "NierDLC requirement retained; original Nier03 material/mesh assets not found in existing base index, current entitlement/mount unresolved"
+        "dependency": "Fresh current five official containers enumerate successfully; referenced Nier03 resource paths absent. Entitlement/runtime mount UNKNOWN; NierDLC requirement preserved."
       },
       "body_controller": {
         "active": "EveProportions+Tuner formerF4/currentF9",
@@ -2268,7 +2268,21 @@
         "evidence": ".local/play-session-20261008/user-native-128/repair/wardrobe-expansion/codex-stream-diagnosis.json"
       },
       "background_observer": "STOPPED; existing recorder independent owner unchanged",
-      "game_and_recording_quality_changed": false
+      "game_and_recording_quality_changed": false,
+      "native_startup_evidence": ".local/play-session-20261008/user-native-128/repair/startup-validation.json",
+      "current_root": "01a12a72-1d28-73c1-bedc-77a0f48858a2",
+      "startup_verification": {
+        "native_menu": "VISUAL_CONFIRMED_3440x1440",
+        "installed_hashes": "65/65 PASS",
+        "CNS_JSON": "11/11 PASS",
+        "CNS_runtime_registration": "NOT_OBSERVED_AT_MENU",
+        "Eve_Tuner_unique_Jiggle_Doro_DanceBGMBridge": "INITIALIZED",
+        "UUEPBS": "NO_LOAD_RECORD_AND_OUTSIDE_LOADER",
+        "SBParry": "EXISTING_AUTO_CONFIG_RUNNING_HIDDEN; functional acceptance NOT_RUN",
+        "observer": "STOPPED_EXIT0_211_SECONDS",
+        "fatal_or_new_crash": "NONE_OBSERVED",
+        "acceptance_credit": 0
+      }
     },
     "active_body_control_selection": {
       "active": "EveProportions + Tuner (formerF4,currentF9)",
