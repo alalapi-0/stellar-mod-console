@@ -1513,7 +1513,7 @@
       "execution_change_percentage_points": 0,
       "evidence_change_percentage_points": 0,
       "remaining_rounds_confidence": "UNKNOWN",
-      "scope_change": "User excludes6XXTB Eve outfit units,4verifiedCNSdeclared-failureunits and1EffectTableconflictingfunction.139originalinventory retained; allhistoricalevidencepreserved. NewNPCrestore for userplay is not acceptance.",
+      "scope_change": "Latest user restores six XXTB wardrobe units, installs six nativeCNS archives/seven entries plus three independent native outfit replacers and optional XXTB texture; unlocks44 existing accessory entries. Existing accepted results stay historical to their version/scope, new/current geometry NOT_TESTED. Broad tests paused.",
       "milestone_change": "Boundedrepairclosedearly; noGoaltaskroundincrement. Native fourfunctions reaccepted from52→56. Newper-modelpersistencerestoredwith neutraldefaults; allgarmentsvisualpending.",
       "scope_change_percentage_points": -0.63,
       "round_start_commit": "509ecfb454af5c2adb3ad0062c6f1746cd4724c3",
@@ -1738,7 +1738,7 @@
           "accepted": 56,
           "required": 253,
           "percent": 22.13,
-          "scope": "253 currently identified capabilities; 56 accepted in their version/scope; overall denominator UNKNOWN",
+          "scope": "Historical identified253 capabilities,56 accepted in exact version/scope; sole-body current selection and restored/added outfits require applicability reconciliation and actual retest. Not all current playset accepted.",
           "unidentified_scope_retained": true
         },
         "whole_project_required": null,
@@ -1747,8 +1747,17 @@
           "at": "2026-10-11T04:50:36.531097+00:00",
           "original_inventory_mod_units": 139,
           "inventory_retained_in_history": 139,
-          "remaining_required_mod_units": 128,
+          "remaining_required_mod_units": 134,
           "removed_units": {
+            "collection:Mod1143": "VERIFIED_DECLARED_CNS_FEATURE_FAILURE",
+            "collection:Mod2795": "VERIFIED_DECLARED_CNS_FEATURE_FAILURE",
+            "collection:Mod3452": "VERIFIED_DECLARED_CNS_FEATURE_FAILURE",
+            "collection:Mod3748": "VERIFIED_DECLARED_CNS_FEATURE_FAILURE",
+            "global:Drone_Scan_Duration_10s": "VERIFIED_EFFECTTABLE_CONFLICT_WITH_SELECTED_GEARBOOST"
+          },
+          "evidence": ".local/play-session-20261008/user-native-115/trash-receipt.json",
+          "rule": "Latest user explicitly restores six aesthetic XXTB exclusions, NOT_TESTED. Other four declared-failure CNS units and scanningEffectTable conflict remain excluded; no runtime acceptance from restoration; added wardrobe/body scope must reconcile parent/variant IDs.",
+          "previous_removed_units": {
             "resource:XXTB Black Pearl Nude v1.3_P": "USER_REJECTED_XXTB_EVE_SERIES",
             "resource:XXTB Nude Skinsuit_P": "USER_REJECTED_XXTB_EVE_SERIES",
             "resource:XXTB White-Black Kunoichi_P": "USER_REJECTED_XXTB_EVE_SERIES",
@@ -1761,8 +1770,16 @@
             "collection:Mod3748": "VERIFIED_DECLARED_CNS_FEATURE_FAILURE",
             "global:Drone_Scan_Duration_10s": "VERIFIED_EFFECTTABLE_CONFLICT_WITH_SELECTED_GEARBOOST"
           },
-          "evidence": ".local/play-session-20261008/user-native-115/trash-receipt.json",
-          "rule": "Do not reinstall/retest removed units or count recycle-bin disposition as gameplay acceptance; known247functional scope reduced1, known98clothing scope reduced10;3unidentifiedfunctionsurfaces retained"
+          "restored_units": {
+            "collection:Mod2421": "USER_REJECTED_XXTB_EVE_SERIES",
+            "collection:Mod74": "USER_REJECTED_XXTB_EVE_SERIES",
+            "resource:CustomNanosuitSystem/XXTB-Slingkini": "USER_REJECTED_XXTB_EVE_SERIES",
+            "resource:XXTB Black Pearl Nude v1.3_P": "USER_REJECTED_XXTB_EVE_SERIES",
+            "resource:XXTB Nude Skinsuit_P": "USER_REJECTED_XXTB_EVE_SERIES",
+            "resource:XXTB White-Black Kunoichi_P": "USER_REJECTED_XXTB_EVE_SERIES"
+          },
+          "restored_at": "2026-10-11T10:07:18.356705+00:00",
+          "restore_evidence": ".local/play-session-20261008/user-native-128/repair/wardrobe-expansion/install-plan.json"
         },
         "current_repair_reopened": [
           "component:EveProportionsTuner/outfit-bind",
@@ -1835,10 +1852,10 @@
       "new_function_evidence_this_round": [],
       "window": [],
       "newly_defined_function_items": 0,
-      "latest_scope_extension": "Current userplay repair adds Doro6 declared capabilities and danceBGM1 capability NOT_TESTED.56/253identifiedfunctions accepted,56/81core; noGoaltaskround or newPASS. SBPR accessory coexistence futuretarget; weapon parent/variant exclusions pending manifest reconciliation. Overall denominatorUNKNOWN."
+      "latest_scope_extension": "No new PASS or test round. Single-body selection changes current baseline applicability; known56/253 functions and56/81core retained as historical scoped metrics. Added/restored wardrobe plus current hair/face/weapon scopes need parent/variant reconciliation; overall denominator UNKNOWN."
     },
-    "next_action": "Broad tests and formal console remainPAUSED. User plays native127, current identity from registration/startup only. Body values reset, customweapon replacements removed, Doro3.0 and localdanceBGM bridge initialized; await user summon/follow and play-stop sound confirmation. Bounded startup observer is stopped; do not sendinput/load/test, restart ongoing monitoring or claim allclothes/physics compatible. Future user-authorized test resumes core-first and incorporates SBPR/accessory coexistence plus new7functions with parent/variant exclusion reconciliation.",
-    "updated_at": "2026-10-11T09:19:17.161860+00:00",
+    "next_action": "Authorized fresh replacement chat: finish only nativeSteam startup for128, exactPID/start_ticks and freshCNS11 registrations, soleEveProportions+Tuner/F9 withnoUUEhook/Jiggle/SBParry/Doro/audio initialization; diagnoseYoRHa trueNierDLC dependency without bypass; ask user visual clipping confirmation. No broad tests/Goal/development/continuousobserver resume; no reinstallation of completed65files/44accessories. Oldchat stops after handoff.",
+    "updated_at": "2026-10-11T10:07:18.356705+00:00",
     "blocked_audit": {
       "native_goal_status": "paused",
       "consecutive_goal_turns": 0,
@@ -1988,16 +2005,16 @@
         "game_start_ticks": "28828935"
       }
     },
-    "current_segment": "user-native-127",
+    "current_segment": "user-native-128",
     "previous_goal_turn_classification": "INTERRUPTED_BY_USER_PAUSE_NO_NEW_RUNTIME_ACCEPTANCE",
     "execution_status": "PAUSED_BY_USER",
     "pause_at": "2026-10-11T04:42:58.883433+00:00",
     "pause_source": "User pauses tests, requests manual native gameplay with enabled playset, local learning records and new conversation continuation",
     "user_play_handoff": {
-      "status": "SCOPED_BODY_PROFILE_REPAIR_NATIVE_PASS_CONTROL_RETURNED",
-      "segment": "user-native-125",
+      "status": "WARDROBE_EXPANSION_APPLIED_FRESH_CHAT_STARTUP_PENDING",
+      "segment": "user-native-128",
       "playset_evidence": ".local/play-session-20261008/user-native-115/playset-registration.json",
-      "launch_evidence": ".local/play-session-20261008/user-native-125/startup-result.json",
+      "launch_evidence": null,
       "trash_evidence": ".local/play-session-20261008/user-native-115/trash-receipt.json",
       "input_owner": "USER_OR_ENABLED_MOD_AUTO",
       "automatic_relaunch": false,
@@ -2005,12 +2022,6 @@
       "enabled_unaccepted_for_user_play": true,
       "npc_mods": "RESTORED_LATEST_USER_REQUEST_7_UNITS27_FILES",
       "excluded_units": [
-        "resource:XXTB Black Pearl Nude v1.3_P",
-        "resource:XXTB Nude Skinsuit_P",
-        "resource:XXTB White-Black Kunoichi_P",
-        "collection:Mod74",
-        "collection:Mod2421",
-        "resource:CustomNanosuitSystem/XXTB-Slingkini",
         "collection:Mod1143",
         "collection:Mod2795",
         "collection:Mod3452",
@@ -2023,7 +2034,7 @@
       "observation_limit": "Sparse currentnative coordinate/HP and true video frames; before04:46:05UTC visualgap retained; routelearning notMODacceptance",
       "continuation_prompt": ".local/play-session-20261008/CONTINUE_MOD_TESTING_PROMPT_20261011.md",
       "local_data_index": ".local/play-session-20261008/local-data-index-20261011.json",
-      "current_chat": "Boundedbodyrepaircomplete, 2hmaxwindow returnedearly; noGoalresume",
+      "current_chat": "User requests fresh separate continuation conversation due repeated Codex stream errors; old root relinquishes shared writes after Git closure",
       "clipping_repair": {
         "status": "PROFILE_SPILLOVER_REPAIRED_TWO_MODEL_NATIVE_PERSISTENCE_PASS",
         "lane": "DIRECT",
@@ -2060,7 +2071,11 @@
         "acceptance_credit": 4
       },
       "body_binding_instructions": ".local/play-session-20261008/FUNCTIONAL_MOD_KEYS_20261011.md",
-      "control_returned_at": "2026-10-11T07:17:32.728463+00:00"
+      "control_returned_at": "2026-10-11T07:17:32.728463+00:00",
+      "game_current": "OFF_NO_STARTUP_YET",
+      "current_repair_evidence": ".local/play-session-20261008/user-native-128/repair/wardrobe-expansion/install-plan.json",
+      "active_body_controller": "EveProportions+Tuner/F9 only; UUEPBS intact outside loader",
+      "clipping_result": "PARAMETERS_NEUTRAL_SECOND_POSE_WRITER_ISOLATED; current visual clipping root cause UNKNOWN, pending user visual check"
     },
     "resume_source": "Latest user: 你继续测试吧，我不玩了。把这个任务窗口交给你。先把功能性的模块测试完。",
     "resumed_at": "2026-10-10T17:27:32.358381+00:00",
@@ -2151,46 +2166,115 @@
       }
     },
     "user_play_repairs": {
-      "at": "2026-10-11T09:16:20.176415+00:00",
-      "status": "BODY_RESET_WEAPONS_REMOVED_DORO_AUDIO_BRIDGE_INITIALIZED_USER_CHECK_PENDING",
+      "at": "2026-10-11T10:07:18.356705+00:00",
+      "status": "APPLIED_FILE_VERIFIED_NEW_CHAT_STARTUP_PENDING",
       "lane": "DIRECT",
-      "native_goal": "PAUSED",
-      "control": "USER_ONLY_NO_NEW_KEYBOARD_MOUSE_TAKEOVER",
-      "body_default_reset": {
-        "evidence": ".local/play-session-20261008/user-native-125/repair/default-reset/registration.json",
-        "Tuner": "12 scales1;2 offsets0; saved outfit profiles neutral",
-        "CNS": "11 ShapeKeys across2 supported models reset to author defaults0",
-        "UUEPBS": "lastsession bones empty",
-        "preserved": "Named presets,favourites,Jiggle,non-weapon selections,actual game progress"
+      "native_goal": "NONE_ACTIVE_tool_verified; broad tests PAUSED_BY_USER",
+      "control": "No keyboard/mouse sent. Exact former game/helper gone; no normal exit sent because they were already gone. User error clarified Codex stream, not confirmed game crash.",
+      "previous_repair_evidence": "user-native-127/repair/startup-validation.json",
+      "current_evidence": ".local/play-session-20261008/user-native-128/repair/wardrobe-expansion/install-plan.json",
+      "restored_XXTB_units": [
+        "collection:Mod2421",
+        "collection:Mod74",
+        "resource:CustomNanosuitSystem/XXTB-Slingkini",
+        "resource:XXTB Black Pearl Nude v1.3_P",
+        "resource:XXTB Nude Skinsuit_P",
+        "resource:XXTB White-Black Kunoichi_P"
+      ],
+      "new_CNS_entries": [
+        {
+          "id": "belly_cns_632",
+          "name": "Belly Dance Outfit",
+          "requirement": "None",
+          "status": "NOT_TESTED"
+        },
+        {
+          "id": "belly2_cns_626",
+          "name": "Belly Dance Outfit2",
+          "requirement": "NikkeDLC",
+          "status": "NOT_TESTED"
+        },
+        {
+          "id": "Hushifu_Ahuang",
+          "name": "Hushifu_Ahuang",
+          "requirement": "None",
+          "status": "NOT_TESTED"
+        },
+        {
+          "id": "Blackfull_cns_713",
+          "name": "Black full topless",
+          "requirement": "None",
+          "status": "NOT_TESTED"
+        },
+        {
+          "id": "Blackfullshort_cns_713",
+          "name": "Black full short topless",
+          "requirement": "None",
+          "status": "NOT_TESTED"
+        },
+        {
+          "id": "Bodystocking_706",
+          "name": "Bodystocking",
+          "requirement": "None",
+          "status": "NOT_TESTED"
+        },
+        {
+          "id": "Royalguard_cns_701",
+          "name": "Royalguard",
+          "requirement": "None",
+          "status": "NOT_TESTED"
+        }
+      ],
+      "new_native_outfit_replacers": [
+        1036,
+        2648,
+        2694
+      ],
+      "YoRHa": {
+        "id": "Repacked Mod1052",
+        "status": "FOUR_FILES_RESTORED_NierDLC_DEPENDENCY_UNVERIFIED_NOT_VISUAL_FIXED",
+        "scope": "Author mesh boneweights fix candidate, not verified counterpart to new990 modular installer",
+        "dependency": "NierDLC requirement retained; original Nier03 material/mesh assets not found in existing base index, current entitlement/mount unresolved"
       },
-      "weapon_removal": {
-        "scope": "11 custom weapon-only AiK selection directories and one back-holster skeleton modifier",
-        "files": 47,
-        "disposition": "RECOVERABLY_REMOVED_FROM_GAME_SCAN_PATHS",
-        "evidence": ".local/play-session-20261008/user-native-125/repair/default-reset/registration.json",
-        "core_combat_removed": false
+      "body_controller": {
+        "active": "EveProportions+Tuner formerF4/currentF9",
+        "disabled": "UUEPBS",
+        "recovery": ".local/play-session-20261008/user-native-128/repair/wardrobe-expansion/disabled-runtime/UUEPBS",
+        "body_values": "Tuner all neutral; CNS Ultimate9zero and XS no savedConfiguration before change",
+        "geometry": "No proof second writer caused current clipping; single-controller isolation pending visual check"
       },
-      "Doro": {
-        "version": "3.0",
-        "status": "OFFICIAL_PACKAGE_HASH_VERIFIED_ACTOR_LOADED",
-        "evidence": ".local/play-session-20261008/user-native-126/repair/doro3.0/registration.json",
-        "runtime_follow_summon_acceptance": "PENDING_USER",
-        "keys": "6 summon/recall;hold2s silent;closeF9Tunerpanel first",
-        "loader": "Existing selected loader preserved; actual BPModLoader actor load seen, no broad loader compatibility claim"
+      "accessories": {
+        "unlocked": 44,
+        "files": 2,
+        "only_change": "CheckSaveData to None; original mesh/material/slot IDs preserved; does not create DLC assets"
       },
-      "dance_BGM": {
-        "status": "LOCAL_BRIDGE_INSTALLED_INITIALIZED_AUDIBLE_ACCEPTANCE_PENDING",
-        "evidence": ".local/play-session-20261008/user-native-126/repair/dance-bgm-registration.json",
-        "mechanism": "One owned BGMMute push only while verified Van cue AudioComponent actually playing; owned pop on stop/error/map pre; never savevolume or clearothermixes",
-        "checks": "Syntax and owned-mix lifecycle simulation PASS; runtime READY; sound result pending",
-        "asset_modification": false
+      "syntax_repair_files": [
+        "Blackfullshort_cns_713.dekcns.json",
+        "Bodystocking_706.dekcns.json",
+        "Royalguard_cns_701.dekcns.json"
+      ],
+      "file_integrity": {
+        "containers": 18,
+        "result": "NativeSHA1 and generatedBLAKE3 all chunks passed",
+        "evidence": ".local/play-session-20261008/user-native-128/repair/wardrobe-expansion/container-verification.json"
       },
-      "startup_evidence": ".local/play-session-20261008/user-native-127/repair/startup-validation.json",
+      "protected_preserved_byte_exact": true,
+      "downloads_repeated": false,
       "new_crash_count": 0,
-      "foot_ground_and_full_clothing_geometry": "REQUIRES_RETEST_NOT_ACCEPTED",
-      "game_and_recording_quality_changed": false,
-      "background_observer": "INACTIVE_BOUNDED_STARTUP_COMPLETE_NO_RENEWAL",
-      "result_evidence": ".local/play-session-20261008/user-native-127/repair/result.json"
+      "Codex_error": {
+        "status": "REPEATED_SAMPLING_STREAM_ERRORS_RETRIES_EXHAUSTED",
+        "request_id": "1e78bcfa-3870-4620-a0db-150acf629058",
+        "cause": "Precise upstream/connection cause UNKNOWN; no indicated local configuration repair",
+        "evidence": ".local/play-session-20261008/user-native-128/repair/wardrobe-expansion/codex-stream-diagnosis.json"
+      },
+      "background_observer": "STOPPED; existing recorder independent owner unchanged",
+      "game_and_recording_quality_changed": false
+    },
+    "active_body_control_selection": {
+      "active": "EveProportions + Tuner (formerF4,currentF9)",
+      "inactive_preserved": "UUEPBS",
+      "source": "Current user explicitly requests sole formerF4 system",
+      "geometry_acceptance": "PENDING_USER_VISUAL"
     }
   }
 }
