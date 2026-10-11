@@ -1499,19 +1499,19 @@
     "progress": {
       "scope_version": "unified-leaves-v1-20261011",
       "completion_scope": "ALL_CURRENTLY_ENUMERATED_INDEPENDENT_TEST_LEAVES_WITH_EXPLICIT_SCOPE_GATES",
-      "effective_accepted": 44,
+      "effective_accepted": 47,
       "effective_required": 5129,
-      "completion_percent": 0.8579,
+      "completion_percent": 0.9164,
       "tested_with_complete_conclusion": 48,
       "test_conclusion_percent": 0.9359,
       "statuses": {
-        "NOT_TESTED": 5034,
-        "PASS": 44,
+        "NOT_TESTED": 5033,
+        "PASS": 47,
         "REOPENED": 4,
         "WAITING_HUMAN": 1,
-        "PARTIAL": 14,
-        "FAIL": 4,
-        "BLOCKED_NOT_INSTALLED": 28
+        "PARTIAL": 15,
+        "BLOCKED_NOT_INSTALLED": 28,
+        "FAIL": 1
       },
       "categories": {
         "功能": 221,
@@ -1527,25 +1527,25 @@
         "共享依赖": 4,
         "组合回归": 7
       },
-      "reason": "One common denominator; PASS only, failures/partial/reopened/blocked remain required. Existing scoped41pass +3actual pureLua APIpass;0 fulloutfit compatibility pass. Van/SEAP incomplete surfaces retained as gates and new exact options append without resetting failures.",
+      "reason": "Three actual installed pure profiler APIs repaired and rechecked; pointer hardware candidate failed in136, shared virtual replacement installed137runtime pending. Whole outfit pass0, no scope/count reset.",
       "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
-      "manifest_sha256": "d1acf0c7bd8b152e49fa3432d4ea661251d0ea19128e176090fecc60c2cd9ea1",
+      "manifest_sha256": "4ebb7a2af9c94af23983a8c38a204c32e166e8095f8c28530cea2ce09694d51c",
       "target_identity_sha256": "b000f0c6352976828bcbd0e5f32417ba92da1ef5374b5e0b680723e3c1444540",
-      "enumeration_validation": ".local/play-session-20261008/user-native-136/repair/unified-accounting-validation.json",
-      "round_key": "resumed-pointer-gray-unified-accounting",
-      "round_status": "CLOSED_OFFLINE_BATCH_UI_WAITING_LOCAL_UNLOCK",
-      "count": 23,
+      "enumeration_validation": ".local/play-session-20261008/user-native-136/repair/goal-resume-20261012/unified-current-validation.json",
+      "round_key": "goal-resume-offline-prerequisites",
+      "round_status": "CLOSED_BOUNDED_BATCH_GOAL_CONTINUES",
+      "count": 24,
       "coverage": "since_baseline",
-      "last_seq": 23,
-      "last_key": "resumed-pointer-gray-unified-accounting",
+      "last_seq": 24,
+      "last_key": "goal-resume-offline-prerequisites",
       "historical_round_count": "UNKNOWN",
-      "execution_change_percentage_points": 0,
-      "evidence_change_percentage_points": -1.581,
-      "scope_change_percentage_points": -19.6955,
-      "change_rule": "Old scope56/253 -> evidence correction52/253 (four counterexamples reopened) -> no same-old-scope new acceptance -> current44/5129. Retired11 alternative-body/defense PASS and newly defined3 API PASS belong to scope change, not execution gain.",
-      "round_start_commit": "f3e29a3e25332af07d9f45f038273383ab030a8b",
+      "execution_change_percentage_points": 0.0585,
+      "evidence_change_percentage_points": 0,
+      "scope_change_percentage_points": 0,
+      "change_rule": "Same5129 acceptance scope; three actual installed public Lua APIs FAIL->PASS through repair+real source retest. Current pointer visuals partial, not an extra PASS. No scope/evidence-rate change.",
+      "round_start_commit": "d32a81a063770bb186c01b2c868e4366d33e2a46",
       "scope_change": "Expanded actual variant/control/animation/native/dependency/integration leaves; parent rollups/aliases not counted; explicit selected alternatives retained in excluded history. Initial draft5021 corrected to5129 before State registration using author variant rules.",
-      "milestone_change": "Cursor lifecycle candidate and missing Nano base installed game-off; actual package-import closure and pureLua API checks delivered. Locked desktop prevented UI/body/camp/defense acceptance.",
+      "milestone_change": "Exact threeLua repairs installedgameoff,137coldboot singlevirtualpointer visualpartial; one existing game-only recorder resumedDATA;16missing resource names resolved and source-provider scan completed. Full cursor click/lifecycle and garments/defense still open.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1899,17 +1899,16 @@
       "window": [],
       "prediction_reason": "Scope changed, heterogeneous tests and lock/save isolation blockers; no three comparable positive accepted rounds."
     },
-    "next_action": "After local desktop unlock and a valid input window, verify current registered136 pointer candidate: Num9/AltN actual routing/click/Close/Esc/Num8 and both Tuner/CNS close orders/native HUD recovery; then actual Nano Skin variants and selected assistant/camp regressions. No locked-screen input, save rollback or unverified duplicate removal.",
-    "updated_at": "2026-10-11T14:10:42.773682+00:00",
+    "next_action": "Continue exact137 native game on assigned fifthdesktop: diagnose mouse-button processing (one guarded click attempt refused a transient non-game focus; native/X11 click delivery alone did not close panels), verify NumLock routing and both close orders, F11/nativeHUD/camp. Preserve47/5129 and exact136 raw recorder files;137 recorder active with20minstop grace. Next Nano/YoRHa/NPC body/patch tests remain full scope.",
+    "updated_at": "2026-10-11T23:49:14.949148+00:00",
     "blocked_audit": {
-      "native_goal_status": "paused",
+      "native_goal_status": "active",
+      "status": "PROGRESS_NO_TOTAL_BLOCK",
       "consecutive_goal_turns": 0,
-      "condition": null,
-      "cleared_by": "Round21 seven independent current Jiggle capability acceptances and exact cold cleanup; feature accounting expanded without false acceptance",
       "consecutive_no_progress_turns": 0,
-      "status": "USER_PAUSED",
-      "evidence": "core-functional-114/functional-round21-result.json",
-      "next_action": "Tests remain PAUSED. User plays Steam native115 under separate read-only observation. Resume only on a new explicit user instruction, read local continuation prompt and user route report, restore exact core test isolation after normal exit/concurrency checks, continue first incomplete P0/P1/P2 function; excluded units never auto-return."
+      "condition": null,
+      "evidence": "Exact136game PID/startticks live, current loginctl LockedHint=yes and desktopctl service unavailable; not a game exit or total work block",
+      "next_action": "Offline profiler repair candidate verification and gray-resource dependency discovery while local unlock pending; no locked-screen input or reuse of expired136guard."
     },
     "user_exit_authorization": {
       "source": "Direct user: 没保存也没关系，允许放弃未保存进度并正常退出。正常重启人物; followed by 重启任务",
@@ -1956,7 +1955,7 @@
         "NEXT CHECKPOINT": "A newly registered diagnostic candidate yields an identifiable operation result; subsequent health checks obey75000-token/30-active-minute cooldown and require a listed trigger"
       }
     },
-    "round_closure_at": "2026-10-11T14:10:42.773682+00:00",
+    "round_closure_at": "2026-10-11T23:49:14.949148+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 12,
       "new_confirmed_this_round": 0,
@@ -2051,9 +2050,9 @@
         "game_start_ticks": "28828935"
       }
     },
-    "current_segment": "user-native-136",
-    "previous_goal_turn_classification": "One bounded resumed root batch closed; no nativeGoal active, no callbacks counted as rounds.",
-    "execution_status": "RESUMED_OFFLINE_BATCH_CLOSED_UI_WAITING_LOCAL_UNLOCK",
+    "current_segment": "user-native-137",
+    "previous_goal_turn_classification": "PROGRESS: three new real installedAPI acceptances, meaningful sharedcursor replacement and actual137visualpartial, exact missing-ID mapping/index correction, current own recording handle live.",
+    "execution_status": "GOAL_ACTIVE_CONTINUING_UI_REGRESSIONS",
     "pause_at": "2026-10-11T12:13:22.865867+00:00",
     "pause_source": "Latest human says today stop checking and deliver functional MOD key usage only",
     "user_play_handoff": {
@@ -2339,12 +2338,11 @@
         "acceptance_credit": 0
       },
       "current_control_window": {
-        "source": "Human ended play and explicitly requests resumed previous MOD tests, unified denominator, non-crash bugs including Num9 no cursor and gray skin, retaining verified compatible variants over incompatible duplicates",
-        "deadline_utc": "2026-10-11T14:16:27.260316+00:00",
+        "source": "Latest direct human: now unlock and continue actual tests; use separate desktop/background game control and record testing. Native Goal verified active.",
+        "state": "ACTIVE",
+        "deadline_utc": "2026-10-11T23:59:36.880922+00:00",
         "evidence": ".local/play-session-20261008/user-native-136/repair/control-window.json",
-        "scope": "Resumed exact game MOD tests/directly justified fixes; protect real progress",
-        "state": "ACTIVE_UNTIL_DEADLINE_INPUT_WITHHELD_DESKTOP_LOCKED",
-        "lock_observed_at": "2026-10-11T14:10:42.773682+00:00"
+        "scope": "Current exact136 MOD regression keys/window-directed events and capture; no foreground activation or unrelated desktop inputs, protect saves"
       },
       "compatible_659_install": {
         "outfit_options": 11,
@@ -2573,6 +2571,42 @@
       "continuation_prompt": ".local/play-session-20261008/CONTINUE_MOD_TESTING_PROMPT_20261011.md",
       "usage_guide": ".local/play-session-20261008/FUNCTIONAL_MOD_KEYS_20261011.md",
       "source_delivery": "Exact owned source closure; actual normal commit/push and remote HEAD verification receipt: .local/play-session-20261008/user-native-136/repair/source-delivery.json"
+    },
+    "native_goal": {
+      "status": "active",
+      "source": "Native get_goal verified active on2026-10-11T22:30Z; latest direct user objective enables persistent resumed MOD testing in background",
+      "scope": "All current and subsequently discovered stable test leaves; every independently verifiable test in one denominator; no formal Console implementation or scheduler resume",
+      "tool_objective": "继续，继续这个测试，继续在我的桌面后台测试。嗯，我开目标模式的话应该就可以了吧。然后注意我之前说过的几个问题，你都进行测试。然后每一个问题都算一个任务。每个任务，每一个这个任务都是，就是每一个要测试的都算一个任务，算一个分母，拿这个当总任务数来进行汇报。"
+    },
+    "goal_resume_source": {
+      "at": "2026-10-11T22:33:55.839554+00:00",
+      "continuation_attachment_sha256": "8ed17e0aba3532cb5f68781342440d77613305b5fef9b008468b077f39681d06",
+      "attachment": "User supplied CONTINUE_MOD_TESTING_PROMPT_20261011.md",
+      "lane": "DIRECT",
+      "previous_turn_classification": "PROGRESS: previous authoritative5129 manifest, actual imports/API outcomes, two cursor candidates + Nano base installation and exact source commit d32a81a verified; no false visual acceptance.",
+      "current_round_key": "goal-resume-offline-prerequisites",
+      "pending_closure_seq": 24,
+      "same_task_id": "stellar-mod-compatibility-core-first-20261010",
+      "live_cursor_failure": "136 CNS+F9 visible, exact native mouse moved2540,660, GetCursorInfo flags0; bShowMouseCursor=true and zero virtual pointer did not yield a pointer. New single virtual owner candidate prepared; actual GUI acceptance0.",
+      "game_file_ownership": [
+        "DekCNS/Scripts/main.lua",
+        "EveProportions/Scripts/EveProportionsTuner.lua",
+        "shared/jsbProfiler/jsbProfi.lua"
+      ],
+      "new_effective_acceptances_this_round": [
+        "lua:jsbLuaProfilerMod/simpleBench",
+        "lua:jsbLuaProfilerMod/simpleBenchMulti",
+        "lua:jsbLuaProfilerMod/stop_trace"
+      ],
+      "recording_136_stop_failure": {
+        "source": "Exact unique systemd service journal verified timeout90s killed supervisor during queued segment validation; statusSTOPPING was stale afterhandleterminal",
+        "raw_files_retained": "DATA _capture-spool/root-mod-tests-20261012-session136",
+        "validation": "UNFINISHED_NOT_ACCEPTED",
+        "repair": "Next same service TimeoutStopSec1200; bounded validation recovery pending, no parallel recorder"
+      },
+      "last_closed_seq": 24,
+      "pointer_evidence": ".local/play-session-20261008/user-native-137/repair/shared-cursor-partial-result.json",
+      "source_delivery": "Exact owned state branch synchronization receipt: .local/play-session-20261008/user-native-136/repair/goal-resume-20261012/source-delivery.json"
     }
   }
 }
