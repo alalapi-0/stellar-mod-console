@@ -1172,11 +1172,7 @@
         "status": "IN_PROGRESS",
         "acceptance": "Evidence-backed unique stable body solution or compatible combination; real live/preset/reload/outfit/movement verification",
         "order": [
-          "UUEPBS alone",
-          "EveProportions alone",
-          "EveProportions+panel",
-          "UUEPBS+EveProportions",
-          "three-way ONLY if compatibility evidence"
+          "Selected EveProportions+Tuner sole-body input/shape regressions; UUE remains inactive"
         ],
         "findings": "Author components isolated and combined. Real socket2-way/3-way reset/load/outfit measurements and cold restart passed; exact reopen bug repaired and revalidated; core83 unknown exit retained, not falsely attributed/fixed.",
         "static_evidence": "Verified x64 DLL import/loader proxy export; current JiggleControl main anim owner differs from Eve postprocess owner; stack still NOT_TESTED.",
@@ -1193,7 +1189,7 @@
           "core-functional-114/functional-round21-result.json"
         ],
         "accepted_scope": "Selected P0 profile only: UUE controlled Spine1.097 + Eve main + Tuner Size1.1; original red/green outfits; physics/combat/full outfit compatibility NOT_TESTED",
-        "blocker": "Human enlarged naturalness, actual damage effects, auto JustEvade/Repulse/QTE and remaining controls, current long-run/input stability, T5 stable combination, then all clothing retests",
+        "blocker": "Desktop currently locked; no real-save isolation; full appearance/body/input/defense and current core-combination acceptance remain incomplete.",
         "prior_selected_normal_scope_status": "PASS",
         "acceptance_extension": "User requires enlarged individual and combined dimensions under movement/outfit/combat/restart, not covered by earlier normal scoped PASS",
         "extended_parameter_regression": {
@@ -1223,7 +1219,7 @@
             "checks": "11checkpoints40finitebodynodes/sixactivefiniteSpringBones; actualBeta1/light/finisher/contact/manualguard/manualJustEvade/respawn; nofullnaturalness/stabilityproof"
           }
         },
-        "next": "Continue current81core acceptance: remaining UUEPBS body controls and Tuner input-return, automatic evade/Repulse/QTE and equipment damage behavior; retain pending enlarged human naturalness. Complete source decomposition for retained opaque supplemental packages before claiming a final overall denominator. Use current247 identified function items and98 separate clothing records; no legacyPASS inheritance, no source/recording quality reduction.",
+        "next": "Use unified5129 leaf manifest: current sole EveProportions/Tuner+JiggleControl, input recovery first, chosen CombatAssistant actual behavior under safe isolated conditions; preserve earlier scoped tests and reopen counterexample items.",
         "latest_evidence": "core-functional-114/functional-round21-result.json",
         "prior_normal_mechanisms": "Earliernormalprofilelivewrites/preset/outfit/physics evidence retained; fullpanel lifecycle notaccepted afternewfailure",
         "panel_timer_regression": {
@@ -1257,13 +1253,20 @@
           "source_quality": "Camera-moving sourcehorizontal seams confirmed; no codec/whole-frame freeze inselected39.534s; originUNKNOWN",
           "round17_combat_evidence": "core-functional-111/functional-round17-result.json"
         },
-        "latest_repair_gate": "CurrentF9/valuespersistence/manualbind/unbind scopednativePASS; originalunboundswitchPARTIAL andfullclippingvisualnotaccepted; broadT2/T5gatesnotbypassed."
+        "latest_repair_gate": "CurrentF9/valuespersistence/manualbind/unbind scopednativePASS; originalunboundswitchPARTIAL andfullclippingvisualnotaccepted; broadT2/T5gatesnotbypassed.",
+        "historical_test_order": [
+          "UUEPBS alone",
+          "EveProportions alone",
+          "EveProportions+panel",
+          "UUEPBS+EveProportions",
+          "three-way ONLY if compatibility evidence"
+        ]
       },
       {
         "id": "T3",
         "status": "IN_PROGRESS",
         "acceptance": "Body+user core physics real standing/walk/run/jump/combat/restart success",
-        "next": "Continue current81core acceptance: remaining UUEPBS body controls and Tuner input-return, automatic evade/Repulse/QTE and equipment damage behavior; retain pending enlarged human naturalness. Complete source decomposition for retained opaque supplemental packages before claiming a final overall denominator. Use current247 identified function items and98 separate clothing records; no legacyPASS inheritance, no source/recording quality reduction.",
+        "next": "Use unified5129 leaf manifest: current sole EveProportions/Tuner+JiggleControl, input recovery first, chosen CombatAssistant actual behavior under safe isolated conditions; preserve earlier scoped tests and reopen counterexample items.",
         "findings": "Human91 naturalness PASS plus actual physics/write/motion/outfit/cold original regressions and93 actual enemy contact; no newfatal/crash91–93. Prior diagnostic90 confirmed crash causeUNKNOWN retained.",
         "failure_fingerprint": "core90/P0selected+JG3.1.0/preset-stage/UE4SS.dll+0x910e80 readAV/probe18",
         "evidence": [
@@ -1279,7 +1282,7 @@
           "core-functional-113/functional-round20-result.json",
           "core-functional-114/functional-round21-result.json"
         ],
-        "blocker": "Human enlarged naturalness, actual damage effects, auto JustEvade/Repulse/QTE and remaining controls, current long-run/input stability, T5 stable combination, then all clothing retests",
+        "blocker": "Desktop currently locked; no real-save isolation; full appearance/body/input/defense and current core-combination acceptance remain incomplete.",
         "pending_visual_acceptance": {
           "status": "PASS_HUMAN_CURRENT_GREEN_PROFILE",
           "scope": "Current selected P0+JG only; not all clothes",
@@ -1362,7 +1365,7 @@
         "id": "T4",
         "status": "WAITING_EXTENDED_P0_P1",
         "acceptance": "Body+physics+user combat actual actions and sustained combat success",
-        "next": "Complete native skill/resource and lock/input eligibility diagnostics at safe camp; prove remaining automatic evade/QTE and large combo without repeating failed low-HP retreat. Keep current resolution/recorder profile and normal body; await existing large visual acceptance.",
+        "next": "Use unified5129 leaf manifest: current sole EveProportions/Tuner+JiggleControl, input recovery first, chosen CombatAssistant actual behavior under safe isolated conditions; preserve earlier scoped tests and reopen counterexample items.",
         "findings": "100 three distinct automaticJustParry confirmed by native steps and video;101 automaticFlashBehindAttack and nativeJustParry290ms retainedHP1.0 with IPD. Incorrect far lock-on produces missed nearby attacker; source conflict not proven. Actual attack integration still missed; localized VK dispatch failed and exactexe/launcher preimages restored. Native Q healing verified. No fresh confirmed game crash99–101. 102 exact engine equipment multiplier1.25 loaded; tooltip unchanged per author. Native keyboard input and200ms hold diagnostics still missed; original restored; real helper keys69/160 verified; new1death/new0crash.",
         "failure_fingerprint": "core102/originalSB0.2.3+IPD+Better/current native keyboard attack and200ms hold both missDefense/holdcandidate exactrestored",
         "evidence": [
@@ -1376,7 +1379,7 @@
           "core-functional-111/functional-round17-result.json",
           "core-functional-111/functional-round18-result.json"
         ],
-        "blocker": "Human enlarged naturalness, actual damage effects, auto JustEvade/Repulse/QTE and remaining controls, current long-run/input stability, T5 stable combination, then all clothing retests",
+        "blocker": "Desktop currently locked; no real-save isolation; full appearance/body/input/defense and current core-combination acceptance remain incomplete.",
         "latest_evidence": "core-functional-111/functional-round18-result.json",
         "prior_work_status": "IN_PROGRESS",
         "large_profile_contact": "109 Barnacle actualBetaChainStab1/light/heavy/evade/nativeJustParry andnative Qhealing;14 body/physics samples. HPmin0.5445→1.0, no death/crash; noverifiedkill orcheckpoint. ManualE intervals retained, AUTO-only inference limited to nativeJustParry outside manualguard intervals.",
@@ -1418,7 +1421,7 @@
       {
         "id": "T6",
         "status": "WAITING_T5",
-        "acceptance": "All clothes/hair/faceappearance individually retested under acceptedcore; include allhair variants andfacialexpressions/transitions; accept only PASS/PASS_WITH_PROFILE with motion/physics/combat/15sviews/restart evidence; no legacypass",
+        "acceptance": "Current1027 and retained25 exact appearance choices plus17 native effects tested under selected validated core; each records rendering, full/limited/static-only body support, clipping and patches, movement/physics/safe restart. Only verified replacement permits duplicate retirement; no historical PASS inheritance.",
         "scope_extension": {
           "status": "QUEUED_TESTS_PAUSED_RECONCILIATION_BEFORE_RESUME",
           "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json:future_hair_and_facial_acceptance",
@@ -1434,7 +1437,8 @@
           "Research entry created, no development",
           "Round9 reconciled actual manifest136→139 by adding three already-authorized body components; refreshed nine current core rows and preserved original fields/counts"
         ],
-        "correction": "Earlier claim of139 actual rows/nine refreshed core records was not reflected on disk; exact private manifest preimage saved and current fields corrected without adding goal scope"
+        "correction": "Earlier claim of139 actual rows/nine refreshed core records was not reflected on disk; exact private manifest preimage saved and current fields corrected without adding goal scope",
+        "findings": "Known scopes reconciled into one5129-leaf denominator; two compiled menu gates retain unknown remainder; no parent/alias double count. Actual181container imports and offlineAPI evidence retained."
       }
     ],
     "research": {
@@ -1493,41 +1497,56 @@
       }
     },
     "progress": {
-      "effective_accepted": 56,
-      "completion_percent": 22.13,
-      "reason": "56/253 currently identifiedfunctions and56/81core; new Doro/audio items initialize only, no added acceptance. Broad tests PAUSED; full clothing validation remains0; overall denominatorUNKNOWN.",
-      "round_key": "core-uue-native-axis-translation-rotation-regression",
-      "round_status": "CLOSED_INTERRUPTED_BY_USER",
-      "remaining_rounds": "UNKNOWN",
-      "legacy_denominator": 171,
-      "legacy_concluded": 63,
-      "effective_mod_accepted": null,
-      "effective_mod_required": null,
-      "effective_mod_percent": null,
-      "scope_increment": "Doro3.0 six declared features and owned dance BGM duck/restore one capability added NOT_TESTED; SBPR already installed adds no duplicate units; weapon variant exclusion requires parent manifest reconciliation",
-      "count": 22,
+      "scope_version": "unified-leaves-v1-20261011",
+      "completion_scope": "ALL_CURRENTLY_ENUMERATED_INDEPENDENT_TEST_LEAVES_WITH_EXPLICIT_SCOPE_GATES",
+      "effective_accepted": 44,
+      "effective_required": 5129,
+      "completion_percent": 0.8579,
+      "tested_with_complete_conclusion": 48,
+      "test_conclusion_percent": 0.9359,
+      "statuses": {
+        "NOT_TESTED": 5034,
+        "PASS": 44,
+        "REOPENED": 4,
+        "WAITING_HUMAN": 1,
+        "PARTIAL": 14,
+        "FAIL": 4,
+        "BLOCKED_NOT_INSTALLED": 28
+      },
+      "categories": {
+        "功能": 221,
+        "开发工具 API": 7,
+        "范围门禁": 2,
+        "外观选择": 1027,
+        "历史待测外观": 25,
+        "外观参数": 531,
+        "纹理选择": 390,
+        "配置门禁": 1,
+        "动画选择": 2897,
+        "原生替换效果": 17,
+        "共享依赖": 4,
+        "组合回归": 7
+      },
+      "reason": "One common denominator; PASS only, failures/partial/reopened/blocked remain required. Existing scoped41pass +3actual pureLua APIpass;0 fulloutfit compatibility pass. Van/SEAP incomplete surfaces retained as gates and new exact options append without resetting failures.",
+      "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
+      "manifest_sha256": "d1acf0c7bd8b152e49fa3432d4ea661251d0ea19128e176090fecc60c2cd9ea1",
+      "target_identity_sha256": "b000f0c6352976828bcbd0e5f32417ba92da1ef5374b5e0b680723e3c1444540",
+      "enumeration_validation": ".local/play-session-20261008/user-native-136/repair/unified-accounting-validation.json",
+      "round_key": "resumed-pointer-gray-unified-accounting",
+      "round_status": "CLOSED_OFFLINE_BATCH_UI_WAITING_LOCAL_UNLOCK",
+      "count": 23,
       "coverage": "since_baseline",
-      "last_seq": 22,
-      "last_key": "core-uue-native-axis-translation-rotation-regression",
+      "last_seq": 23,
+      "last_key": "resumed-pointer-gray-unified-accounting",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": 0,
-      "evidence_change_percentage_points": 0,
-      "remaining_rounds_confidence": "UNKNOWN",
-      "scope_change": "Latest bounded input repair adds11nonoverlapping native outfit options+Common, fixes duplicated modifier binds, and records representative costume/accessory/Doro/dance/movement checks. Original global acceptance denominator and historical fulloutfit0 retained; broad tests remainpaused.",
-      "milestone_change": "Boundedrepairclosedearly; noGoaltaskroundincrement. Native fourfunctions reaccepted from52→56. Newper-modelpersistencerestoredwith neutraldefaults; allgarmentsvisualpending.",
-      "scope_change_percentage_points": -0.63,
-      "round_start_commit": "509ecfb454af5c2adb3ad0062c6f1746cd4724c3",
-      "completion_scope": "IDENTIFIED_FUNCTION_CAPABILITIES_ONLY_PENDING_SCOPE_NOT_WHOLE_PROJECT",
-      "effective_function_accepted": 56,
-      "effective_function_required": 253,
-      "effective_function_percent": 22.13,
-      "effective_mod_metric_status": "RETIRED_INVENTORY_METRIC_USE_FUNCTION_CAPABILITIES_AND_SEPARATE_CLOTHING",
-      "legacy_mod_acceptance_before_metric_change": {
-        "accepted": 0,
-        "required": 139,
-        "percent": 0
-      },
-      "functional_accounting": {
+      "evidence_change_percentage_points": -1.581,
+      "scope_change_percentage_points": -19.6955,
+      "change_rule": "Old scope56/253 -> evidence correction52/253 (four counterexamples reopened) -> no same-old-scope new acceptance -> current44/5129. Retired11 alternative-body/defense PASS and newly defined3 API PASS belong to scope change, not execution gain.",
+      "round_start_commit": "f3e29a3e25332af07d9f45f038273383ab030a8b",
+      "scope_change": "Expanded actual variant/control/animation/native/dependency/integration leaves; parent rollups/aliases not counted; explicit selected alternatives retained in excluded history. Initial draft5021 corrected to5129 before State registration using author variant rules.",
+      "milestone_change": "Cursor lifecycle candidate and missing Nano base installed game-off; actual package-import closure and pureLua API checks delivered. Locked desktop prevented UI/body/camp/defense acceptance.",
+      "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
         "rule": "Each independently verifiable capability is one equal-weight unit, with stable ID,version,status,evidence. Count child functions instead of parent MOD, never both. Clothes remain separate complete-MOD tests. Static newly defined supplemental items stay NOT_TESTED; pending surfaces are explicit and no complete overall percentage is fabricated.",
@@ -1742,7 +1761,7 @@
           "unidentified_scope_retained": true
         },
         "whole_project_required": null,
-        "reporting_rule": "Always report function items accepted/required with scope and current core subtotal; clothing separately. Never present historical0/139 as current complete acceptance. Loading/UI opening alone, repeated keypresses, sampling or duplicate presets do not earn new units.",
+        "reporting_rule": "Historical scoped original56/253, not the current denominator or acceptance; use current progress.effective_accepted/effective_required and unified_tests.",
         "user_scope_exclusion": {
           "at": "2026-10-11T04:50:36.531097+00:00",
           "original_inventory_mod_units": 139,
@@ -1847,15 +1866,41 @@
             "evidence": ".local/play-session-20261008/user-native-127/repair/startup-validation.json",
             "initialization_only": true
           }
-        ]
+        ],
+        "status": "HISTORICAL_ONLY_REPLACED_BY_UNIFIED_LEAF_ACCOUNTING"
       },
-      "new_function_evidence_this_round": [],
+      "original_inventory_retained": {
+        "function_items": 247,
+        "function_v5_required": 253,
+        "function_v5_accepted": 56,
+        "runtime_modules": 16,
+        "containers": 171,
+        "cns_configs": 137,
+        "cns_entry_ids": 388,
+        "mixed_parent_mods": 139,
+        "clothing_parent_mods": 98
+      },
+      "excluded_history_count": 38,
+      "uncounted_parent_rollups": 12,
+      "full_appearance_compatible_accepted": 0,
+      "new_function_evidence_this_round": [
+        "lua:jsbLuaProfilerMod/serialize",
+        "lua:jsbLuaProfilerMod/tbl",
+        "lua:jsbLuaProfilerMod/write"
+      ],
+      "new_failures_this_round": [
+        "lua:jsbLuaProfilerMod/simpleBench",
+        "lua:jsbLuaProfilerMod/simpleBenchMulti",
+        "lua:jsbLuaProfilerMod/stop_trace",
+        "control:UltimateNudeEve/TextureOptions/5/schema"
+      ],
+      "remaining_rounds": "UNKNOWN",
+      "remaining_rounds_confidence": "UNKNOWN",
       "window": [],
-      "newly_defined_function_items": 0,
-      "latest_scope_extension": "No new PASS or test round. Single-body selection changes current baseline applicability; known56/253 functions and56/81core retained as historical scoped metrics. Added/restored wardrobe plus current hair/face/weapon scopes need parent/variant reconciliation; overall denominator UNKNOWN."
+      "prediction_reason": "Scope changed, heterogeneous tests and lock/save isolation blockers; no three comparable positive accepted rounds."
     },
-    "next_action": "Current onehour repair/install delivered with representative live checks. Broad tests/Goal/development remain PAUSED. Remaining: per-outfit dynamic geometry and11native replacement visuals, DLC dependencies, automatic Jiggle reacquisition afterdance, realenemy combat. Use latest local guide and exact current segment identity.",
-    "updated_at": "2026-10-11T11:18:30.134404+00:00",
+    "next_action": "After local desktop unlock and a valid input window, verify current registered136 pointer candidate: Num9/AltN actual routing/click/Close/Esc/Num8 and both Tuner/CNS close orders/native HUD recovery; then actual Nano Skin variants and selected assistant/camp regressions. No locked-screen input, save rollback or unverified duplicate removal.",
+    "updated_at": "2026-10-11T14:10:42.773682+00:00",
     "blocked_audit": {
       "native_goal_status": "paused",
       "consecutive_goal_turns": 0,
@@ -1879,7 +1924,7 @@
       "saves_untouched": true,
       "current_segment": "core-functional-114",
       "result": "ORIGINAL18CORE_CONFIG_EXACT_RESTORED_COLD40NODE_DELTA0_AND_SIX_ORIGINAL_FINITE_SPRINGS_FULL_CORE_PENDING",
-      "current_game_state": "CORE_TEST_BASELINE_PAUSED; CURRENT_GAME_USER_PLAYSET_NOT_ACCEPTED",
+      "current_game_state": "Historical114 baseline retained for evidence; current136 resumed user playset is not fully accepted.",
       "body_configuration": "UUE Spine1.097 + Eve1.1.0/Tuner currenttimer + originalnormal Size1.1 + soleJG3.1.0. Namedpresets retained; existingSB0.2.3 allautomaticflags1 with exactlocal600msfinisherholdcandidate; IPD/Better unchanged. Allcosmetic/NPC/alternatephysics/cameraoff.",
       "p0_evidence": "core-functional-114/functional-round21-result.json",
       "p1_evidence": "goal-restructure-20261010/p1-selected-profile-result.json",
@@ -1891,7 +1936,8 @@
       "previous_failure_result": "NORMAL_PROFILE_LATE_PANEL_CONFIRMED_CRASH_NOT_STABLE",
       "test_preset_slot9": "COLD_VERIFIED_AND_REMOVED_EXACT_ORIGINAL:9saved/loaded after cold112; native1 restored,112normalexit0,originalPresetfile12490dc restored while gameoff concurrent check,113native9empty/bodydelta0. Original slots1/2 intact.",
       "active_for_current_game": false,
-      "preserved_test_segment": "core-functional-114"
+      "preserved_test_segment": "core-functional-114",
+      "status": "HISTORICAL_CORE_ISOLATION_PROFILE_NOT_CURRENT_PLAYSET"
     },
     "health_checkpoint": {
       "goal_created_at": 1791607374,
@@ -1910,7 +1956,7 @@
         "NEXT CHECKPOINT": "A newly registered diagnostic candidate yields an identifiable operation result; subsequent health checks obey75000-token/30-active-minute cooldown and require a listed trigger"
       }
     },
-    "round_closure_at": "2026-10-11T11:18:30.134404+00:00",
+    "round_closure_at": "2026-10-11T14:10:42.773682+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 12,
       "new_confirmed_this_round": 0,
@@ -1984,16 +2030,16 @@
       },
       "current_identity": {
         "state": "RECORDING",
-        "supervisor_pid": 2478843,
-        "supervisor_start_ticks": "29059778",
-        "ffmpeg_pid": 2478881,
-        "ffmpeg_start_ticks": "29059793",
-        "run_id": "20261011T044604747574Z-user-native-115",
-        "game_pid": 2476510,
-        "game_start_ticks": "29038753"
+        "supervisor_pid": 2762573,
+        "supervisor_start_ticks": "31598877",
+        "ffmpeg_pid": 2762639,
+        "ffmpeg_start_ticks": "31598894",
+        "run_id": "20261011T114915757883Z-user-native-133",
+        "game_pid": 2759773,
+        "game_start_ticks": "31582002"
       },
-      "current_coverage_limit": "Native115 recording from04:46:04UTC onward; short actualworldframes and audio decode verified, fullsourcecadence/AVsync/route/physicsvisualacceptance remainunaccepted; pre-start black screenshotgap retained.",
-      "current_segment": "user-native-115",
+      "current_coverage_limit": "Current133 resumed after cursorfix; native-window-only30fps1720x720 capture directlyDATA, exactidentityverified. InitialRootframes not playertest acceptance; record gaps/route/combat remain scoped.",
+      "current_segment": "user-native-133",
       "previous_identity": {
         "state": "RECORDING",
         "supervisor_pid": 2436635,
@@ -2005,16 +2051,16 @@
         "game_start_ticks": "28828935"
       }
     },
-    "current_segment": "user-native-129",
-    "previous_goal_turn_classification": "INTERRUPTED_BY_USER_PAUSE_NO_NEW_RUNTIME_ACCEPTANCE",
-    "execution_status": "PAUSED_BY_USER",
-    "pause_at": "2026-10-11T04:42:58.883433+00:00",
-    "pause_source": "User pauses tests, requests manual native gameplay with enabled playset, local learning records and new conversation continuation",
+    "current_segment": "user-native-136",
+    "previous_goal_turn_classification": "One bounded resumed root batch closed; no nativeGoal active, no callbacks counted as rounds.",
+    "execution_status": "RESUMED_OFFLINE_BATCH_CLOSED_UI_WAITING_LOCAL_UNLOCK",
+    "pause_at": "2026-10-11T12:13:22.865867+00:00",
+    "pause_source": "Latest human says today stop checking and deliver functional MOD key usage only",
     "user_play_handoff": {
-      "status": "NATIVE129_WORLD_REPAIR_DELIVERED_REPRESENTATIVE_CHECKS",
-      "segment": "user-native-129",
+      "status": "USER_CONFIRMED_PLAYING; MOD_TESTS_STOPPED",
+      "segment": "user-native-134",
       "playset_evidence": ".local/play-session-20261008/user-native-115/playset-registration.json",
-      "launch_evidence": ".local/play-session-20261008/user-native-129/startup-result.json",
+      "launch_evidence": ".local/play-session-20261008/user-native-133/startup-result.json",
       "trash_evidence": ".local/play-session-20261008/user-native-115/trash-receipt.json",
       "input_owner": "USER_OR_ENABLED_MOD_AUTO",
       "automatic_relaunch": false,
@@ -2030,8 +2076,8 @@
       ],
       "observation_thread_id": "01a1293f-3df2-7061-a720-77071a961421",
       "observation_thread_title": "剑星玩家推进观察（测试暂停）",
-      "observation_evidence": ".local/play-session-20261008/user-play-observation-20261011/data-index.json",
-      "observation_limit": "Sparse currentnative coordinate/HP and true video frames; before04:46:05UTC visualgap retained; routelearning notMODacceptance",
+      "observation_evidence": "/data/ProjectOutputs/stellar-mod-console/game-recordings/user-native-133/observation/观察报告.md",
+      "observation_limit": "Initial agent reviewed only root repair images; new133 recording writes DATA, no sealed player segment yet reviewed. Input source user or enabledMOD automatic, not manually attributed.",
       "continuation_prompt": ".local/play-session-20261008/CONTINUE_MOD_TESTING_PROMPT_20261011.md",
       "local_data_index": ".local/play-session-20261008/local-data-index-20261011.json",
       "current_chat": "Replacement Root active only for current installation/startup repair; broad tests remain paused",
@@ -2051,9 +2097,9 @@
         "body_outfit_review": ".local/play-session-20261008/FUNCTIONAL_MOD_KEYS_20261011.md",
         "latest_crash": ".local/play-session-20261008/user-native-117/repair/hair-crash-analysis.json"
       },
-      "observation_status": "STOPPED_EXPLICIT_LATEST_USER_REQUEST",
+      "observation_status": "HEARTBEAT_CHECKS_PAUSED_ON_LATEST_STOP; existing passive recording retains prior authority",
       "observation_stop_evidence": ".local/play-session-20261008/user-play-observation-20261011/observation-stop-20261011.json",
-      "recording_evidence": ".local/play-session-20261008/recording-session/user-native125-recorder-resume.json",
+      "recording_evidence": ".local/play-session-20261008/recording-session/status.json",
       "latest_repair_result": ".local/play-session-20261008/user-native-125/repair/result.json",
       "current_visual": "NATIVE_WORLD_NEUTRAL_CURRENT_A_PANEL_CLOSED_CAMERA_RESPONDS",
       "input_repair": {
@@ -2071,14 +2117,23 @@
         "acceptance_credit": 4
       },
       "body_binding_instructions": ".local/play-session-20261008/FUNCTIONAL_MOD_KEYS_20261011.md",
-      "control_returned_at": "2026-10-11T11:18:30.134404+00:00",
-      "game_current": "LIVE_NATIVE129_WORLD_REPAIR_FINISHED_LIMITED_ACCEPTANCE",
-      "current_repair_evidence": ".local/play-session-20261008/user-native-129/repair/repair-final-validation.json",
+      "control_returned_at": "2026-10-11T12:13:22.865867+00:00",
+      "game_current": {
+        "pid": 2774415,
+        "start_ticks": "31685546",
+        "window": 106954755
+      },
+      "current_repair_evidence": "user-native-134/repair/stable-recovery-registration.json",
       "active_body_controller": "EveProportions+Tuner/F9 only; UUEPBS intact outside loader",
-      "clipping_result": "Neutral representative costumes displayed; full dynamic geometry unverified. Sole Eve+Tuner active, UUEPBS retained inactive."
+      "clipping_result": "Neutral representative costumes displayed; full dynamic geometry unverified. Sole Eve+Tuner active, UUEPBS retained inactive.",
+      "observation_heartbeat": {
+        "id": "131",
+        "status": "PAUSED",
+        "reason": "Latest user asks no more checks today"
+      }
     },
-    "resume_source": "Latest user: 你继续测试吧，我不玩了。把这个任务窗口交给你。先把功能性的模块测试完。",
-    "resumed_at": "2026-10-10T17:27:32.358381+00:00",
+    "resume_source": "Human ended play and explicitly requests resumed previous MOD tests, unified denominator, non-crash bugs including Num9 no cursor and gray skin, retaining verified compatible variants over incompatible duplicates",
+    "resumed_at": "2026-10-11T13:16:27.260316+00:00",
     "user_acceptance_clarification": {
       "at": "2026-10-10T20:01:19.680897+00:00",
       "combat": "Multi-enemy rear attacks, attack/hit-stun defensive limits are normal game constraints; prioritize feature functionality/compatibility, not full invulnerability",
@@ -2167,12 +2222,12 @@
     },
     "user_play_repairs": {
       "at": "2026-10-11T11:16:21.583212+00:00",
-      "status": "AUTHORIZED_LOCAL_REPAIR_INSTALLED_REPRESENTATIVE_RUNTIME_VERIFIED_LIMITATIONS_RETAINED",
+      "status": "RESUMED_CANDIDATES_INSTALLED_NO_CURRENT_UI_ACCEPTANCE",
       "lane": "DIRECT",
-      "native_goal": "NONE_ACTIVE_tool_verified; broad tests PAUSED_BY_USER",
+      "native_goal": "NONE_ACTIVE; direct human resumed compatibility tests",
       "control": "Onehour all keyboard/mouse/MOD/combat direct grant; exactPID guarded native input. Realprogress saves not copied/written/rolled back by agent.",
       "previous_repair_evidence": "user-native-127/repair/startup-validation.json",
-      "current_evidence": ".local/play-session-20261008/user-native-129/repair/repair-final-validation.json",
+      "current_evidence": ".local/play-session-20261008/user-native-136/repair/unified-accounting-validation.json",
       "restored_XXTB_units": [
         "collection:Mod2421",
         "collection:Mod74",
@@ -2267,7 +2322,7 @@
         "cause": "Precise upstream/connection cause UNKNOWN; no indicated local configuration repair",
         "evidence": ".local/play-session-20261008/user-native-128/repair/wardrobe-expansion/codex-stream-diagnosis.json"
       },
-      "background_observer": "STOPPED; existing recorder independent owner unchanged",
+      "background_observer": "User explicitly requested independent read-only agent; bounded child collected; native heartbeat continues DATA-only review",
       "game_and_recording_quality_changed": false,
       "native_startup_evidence": ".local/play-session-20261008/user-native-129/startup-result.json",
       "current_root": "01a12a72-1d28-73c1-bedc-77a0f48858a2",
@@ -2284,12 +2339,12 @@
         "acceptance_credit": 0
       },
       "current_control_window": {
-        "source": "Direct user one hour mouse grant, then all keyboard/MOD shortcuts and combat input, direct proven conflict repair, final report and MOD usage guide",
-        "deadline_utc": "2026-10-11T11:20:35+00:00",
-        "evidence": ".local/play-session-20261008/user-native-129/repair/control-window.json",
-        "scope": "Current registered game input and previously discussed install/current compatibility repair; no Goal or continuous observer resume",
-        "state": "RELEASED",
-        "released_at": "2026-10-11T11:18:30.134404+00:00"
+        "source": "Human ended play and explicitly requests resumed previous MOD tests, unified denominator, non-crash bugs including Num9 no cursor and gray skin, retaining verified compatible variants over incompatible duplicates",
+        "deadline_utc": "2026-10-11T14:16:27.260316+00:00",
+        "evidence": ".local/play-session-20261008/user-native-136/repair/control-window.json",
+        "scope": "Resumed exact game MOD tests/directly justified fixes; protect real progress",
+        "state": "ACTIVE_UNTIL_DEADLINE_INPUT_WITHHELD_DESKTOP_LOCKED",
+        "lock_observed_at": "2026-10-11T14:10:42.773682+00:00"
       },
       "compatible_659_install": {
         "outfit_options": 11,
@@ -2342,13 +2397,182 @@
         "movement": "VISUAL_PASS",
         "enemycombat": "UNVERIFIED"
       },
-      "usage_guide": ".local/play-session-20261008/FUNCTIONAL_MOD_KEYS_20261011.md"
+      "usage_guide": ".local/play-session-20261008/FUNCTIONAL_MOD_KEYS_20261011.md",
+      "functional_handoff": {
+        "at": "2026-10-11T11:53:48.241285+00:00",
+        "source": "Latest user functional shortcuts/restart/unique formerF4 F9, then cursor recurrence repair; now user confirms fixed and stops changes today",
+        "lane": "DIRECT",
+        "native_goal": "NONE; broad tests remain paused",
+        "unique_body": "EveProportions+Tuner/F9; UUEPBS intact inactive",
+        "key_remap": "Tuner ShiftLeftRight/Jiggle AltLeftRight actual129 independent PASS",
+        "cursor_fix": {
+          "files": 2,
+          "changes": [
+            "DekCNS author UseVirtualCursor=false",
+            "Tuner optional virtual cursor creation off, existing hardware fallback"
+          ],
+          "cold_segment": "user-native-133",
+          "checks": "F9 open/Hide click, CNS open/Close/reopen; zeroWBMouseCursor and one native pointer; user confirmed fixed",
+          "limit": "Both-panel close ordering and U-hide/transition regression not accepted",
+          "preimages": [
+            "user-native-131/repair/dekcns-config-preimage.lua",
+            "user-native-132/repair/tuner-cursor-preimage.lua"
+          ],
+          "evidence": "user-native-133/repair/cursor-repair-result.json"
+        },
+        "unknown130_exit": {
+          "steam_exit_code": -1,
+          "user_denies_manual": true,
+          "new_confirmed_crash": false,
+          "reason": "UNKNOWN; no effective freshFatal/stack; not fixed/attributed",
+          "evidence": "user-native-130/repair/early-exit.json"
+        },
+        "gray_loading_bugs": {
+          "status": "REPORTED_BY_USER_DEFERRED_TO_LATER_TESTS",
+          "targets": [
+            "YoRHa Unofficial outfit/body",
+            "Uncovered body regions on multiple outfits",
+            "Several NPC skins"
+          ],
+          "cause": "Material/resource loading suspected, exact asset/version/DLC cause unverified; do not treat as author color",
+          "action": "Per-item native visual and patch comparison"
+        },
+        "variant_selection": "CNS-compatible versions preferred, one confirmed repeated/exclusive outfit variant; NanoSuit CNS/native pairing verify first; native format alone is not conflict",
+        "EVE_CNS": "Author docs support CNS mesh bindings and local representative actual integration verified; full mesh compatibility unknown; future sameoutfit baseline/EVE/EVE+JG A/B before replacing sole controller",
+        "latest_pause": "USER_TODAY_DONE_NO_MORE_MOD_CHANGES",
+        "source_sync": "LOCAL_CLOSURE_SAVED; user stop prevents initiating a new commit/push; prior f3e29a3 remote delivery retained, later authorized round sync current bounded closure",
+        "new_global_acceptance_credit": 0
+      },
+      "stable_recovery": {
+        "lane": "DIRECT",
+        "state": "CLOSED_INTERRUPTED_BY_USER",
+        "authority": "Latest direct human asks configure currently stable compatible version for immediate play and prioritize death/UI/auto defense bugs",
+        "scope": "Bounded stable playset recovery: death/menu/HUD, defense, normal restart and handoff; no wardrobe/NPC tests or saves write",
+        "control_deadline": "2026-10-11T12:19:49.490406+00:00",
+        "observed_failure": "Human reports no death/menu/HUD UI and incomplete automatic defenses; screenshot shows dead character without death UI",
+        "next_evidence": "Only after later explicit resume: menus/death/HUD/defense tests in isolated test conditions",
+        "input_control": "RELEASED",
+        "result": "134 restart restored world HUD; human confirms playing. Menu/death/complete defense regression not accepted.",
+        "changes": [
+          "CNS hide key U→Num8",
+          "Tuner invalid widget releases input through existing hideUI"
+        ],
+        "evidence": "user-native-134/repair/stable-recovery-registration.json",
+        "profile": "user-native-134/repair/stable-profile-snapshot.json",
+        "source_sync": "LOCAL_ONLY; latest stop prevents initiating commit/push, previous f3e29a3 delivery retained"
+      },
+      "combat_assistant_restore": {
+        "lane": "DIRECT",
+        "state": "SELECTED_NORMAL_CLOSED_FOR_GAME_RESTART_CURRENT_TOGGLES_UNVERIFIED",
+        "authority": "Human requests prior auto dodge/parry/blink assistant and relaunch; photo chord conflict and inactive camp reported",
+        "scope": "Resumed bounded selected defense/camp/input tests; actual UI/combat pending local unlock and safe conditions",
+        "next_evidence": "After localunlock/currentguard verify exact assistant connection and actual independent auto-defense outcomes, minimize continuity; camp/native UI regressions still pending.",
+        "stopped_at": "2026-10-11T12:52:58.164408+00:00",
+        "input_control": "ROOT_SCOPED_RESUMED_MOD_TESTS_WITHHELD_WHILE_LOCKED",
+        "current_session": "user-native-136",
+        "current_game_identity": {
+          "pid": 2826300,
+          "start_ticks": "32193700"
+        },
+        "selected_assistant": "Nyxeon CombatAssistant 1.0.16 existing installation; no redownload/reinstall",
+        "result": "Prior chosen assistant normally closed so Steam could relaunch136; game current exactidentity alive, assistant not currently providing auto defense. No new toggle/feature PASS.",
+        "feature_acceptance": "User reports connected; final Guard/Dodge/Blink toggle states and continuous combat stability not independently verified before stop",
+        "known_findings": [
+          "Human confirmed X closes assistant normally; keep minimized instead of closing during play",
+          "SBParry Ctrl+Alt+P collides with native PhotoMode P; SBParry stopped",
+          "Camp interaction issue remains unresolved; no accepted camp/death/menu regression"
+        ],
+        "source_sync": "This resumed source closure authorized; per-round branch sync follows exact-owned review.",
+        "new_global_acceptance_credit": 0
+      }
     },
     "active_body_control_selection": {
       "active": "EveProportions + Tuner (formerF4,currentF9)",
       "inactive_preserved": "UUEPBS",
       "source": "Current user explicitly requests sole formerF4 system",
       "geometry_acceptance": "PENDING_USER_VISUAL"
+    },
+    "resumed_test_checkpoint": {
+      "at": "2026-10-11T14:10:42.773682+00:00",
+      "lane": "DIRECT",
+      "status": "OFFLINE_BATCH_DELIVERED_RUNTIME_WAITING_LOCAL_UNLOCK",
+      "root_owned_game_files": 2,
+      "candidate_evidence": [
+        ".local/play-session-20261008/user-native-135/repair/cursor-lifecycle-installed.json",
+        ".local/play-session-20261008/user-native-135/repair/nano-base-installed.json"
+      ],
+      "runtime_evidence": ".local/play-session-20261008/user-native-136/startup-result.json",
+      "runtime_status": "Current exact game alive; candidate load logged only; no visual/input/garment compatibility PASS while LockedHint=yes",
+      "actual_import_check": {
+        "evidence": ".local/play-session-20261008/user-native-136/repair/package-import-closure.json",
+        "containers": 181,
+        "asset_rows": 202316,
+        "errors": 0,
+        "finding": "Nano SkinEve installed. Milk/OP actual Suit imports missing texture12764879518949602727; Skin variants direct imports resolve. Converted1052/2724 missing8312870539305733357 nameunknown; NPC missing imports not all typed. No full rendering/body PASS."
+      },
+      "bug_regressions": [
+        {
+          "id": "BUG_CURSOR_SINGLE_OWNER",
+          "kind": "NON_CRASH",
+          "status": "CANDIDATE_INSTALLED_RUNTIME_PENDING"
+        },
+        {
+          "id": "BUG_GRAY_MATERIALS",
+          "kind": "NON_CRASH",
+          "status": "PARTIAL_NANO_DEPENDENCY_INSTALLED_NO_VISUAL_PASS"
+        },
+        {
+          "id": "BUG_DEATH_NATIVE_RECOVERY",
+          "kind": "NON_CRASH",
+          "status": "OPEN"
+        },
+        {
+          "id": "BUG_CAMP_INTERACTION",
+          "kind": "NON_CRASH",
+          "status": "OPEN"
+        },
+        {
+          "id": "BUG_HUD_PHOTO_RECOVERY",
+          "kind": "NON_CRASH",
+          "status": "OPEN"
+        },
+        {
+          "id": "BUG_ASSISTANT_WINDOW_CONTINUITY",
+          "kind": "NON_CRASH",
+          "status": "OPEN"
+        },
+        {
+          "id": "BUG_PHOTO_HOTKEY_ROUTING",
+          "kind": "NON_CRASH",
+          "status": "OPEN"
+        },
+        {
+          "id": "BUG_AUTO_DEFENSE_INCOMPLETE",
+          "kind": "NON_CRASH",
+          "status": "OPEN"
+        },
+        {
+          "id": "UNKNOWN_SESSION130_EXIT",
+          "kind": "UNCONFIRMED_EXIT",
+          "status": "UNKNOWN_CAUSE"
+        },
+        {
+          "id": "BUG_BODY_CLOTHING_CLIPPING",
+          "kind": "NON_CRASH",
+          "status": "OPEN"
+        }
+      ],
+      "legacy_conversion_failures": "Linux14/14failed assets despiteexit0, changed-method WindowsDATA namespace not visible; route ended. No copied asset output, new prefix, global tool installation or loader upgrade.",
+      "save_isolation": "NOT_ESTABLISHED_NO_SAVE_ROLLBACK_OR_DELIBERATE_DEATH_PROGRESSION_TESTS",
+      "confirmed_new_crashes": 0,
+      "unknown_exit130_preserved": true,
+      "replacement_disposition": "No newly verified full compatible substitute; no additional incompatible appearance variant removed in this batch.",
+      "agent_disposition": "All four bounded read-only agents completed; Root sole writer/runtime/Git owner.",
+      "report": ".local/play-session-20261008/MOD_TEST_REPORT_20261011.md",
+      "csv": ".local/play-session-20261008/UNIFIED_MOD_TEST_LIST_20261011.csv",
+      "continuation_prompt": ".local/play-session-20261008/CONTINUE_MOD_TESTING_PROMPT_20261011.md",
+      "usage_guide": ".local/play-session-20261008/FUNCTIONAL_MOD_KEYS_20261011.md",
+      "source_delivery": "Exact owned source closure; actual normal commit/push and remote HEAD verification receipt: .local/play-session-20261008/user-native-136/repair/source-delivery.json"
     }
   }
 }
