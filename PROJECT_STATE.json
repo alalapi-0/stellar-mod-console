@@ -1939,20 +1939,20 @@
       "status": "HISTORICAL_CORE_ISOLATION_PROFILE_NOT_CURRENT_PLAYSET"
     },
     "health_checkpoint": {
-      "goal_created_at": 1791607374,
-      "checked_at": "2026-10-10T07:11:43.974257+00:00",
+      "goal_created_at": 1791757805,
+      "checked_at": "2026-10-11T23:54:43.777348+00:00",
       "completed_one_time_rebaseline": true,
       "telemetry": {
-        "native_tokens_used": 1224558,
-        "native_time_used_seconds": 6123,
-        "coverage": "Native tool cumulative current Goal; elapsed telemetry not treated as active-only no-progress time"
+        "native_tokens_used": 497175,
+        "native_time_used_seconds": 4944,
+        "coverage": "Direct nativeget_goal currentGoal cumulative only; undifferentiated elapsed not counted as active-only no-progress time"
       },
       "report": {
         "STATUS": "WATCH",
-        "TRIGGER": "Current Goal first evidenced checkpoint above250000 tokens without a completed rebaseline in this Goal",
-        "EVIDENCE": "Material body runtime checks and exact reopen repair passed; one new abnormal exit3 during Breast nudge context lacks cause; no repeated equivalent no-progress attempt proven",
-        "CORRECTIVE ACTION": "Locate the failing core83 operation before further acceptance",
-        "NEXT CHECKPOINT": "A newly registered diagnostic candidate yields an identifiable operation result; subsequent health checks obey75000-token/30-active-minute cooldown and require a listed trigger"
+        "TRIGGER": "Current Goal first directly evidenced checkpoint above250000 tokens without thisGoal completed rebaseline",
+        "EVIDENCE": "Three newly verified installedLuaAPI PASS and actual137single-pointer visualpartial;136raw recording validation incomplete afterstop timeout, files retained",
+        "CORRECTIVE ACTION": "Recover bounded validation of the136raw recording",
+        "NEXT CHECKPOINT": "At least one136raw segment has complete decode conclusion; later checks require75000additionaltokens/30active-minute cooldown and a listed condition"
       }
     },
     "round_closure_at": "2026-10-11T23:49:14.949148+00:00",
@@ -2607,6 +2607,23 @@
       "last_closed_seq": 24,
       "pointer_evidence": ".local/play-session-20261008/user-native-137/repair/shared-cursor-partial-result.json",
       "source_delivery": "Exact owned state branch synchronization receipt: .local/play-session-20261008/user-native-136/repair/goal-resume-20261012/source-delivery.json"
+    },
+    "historical_previous_goal_health_checkpoint": {
+      "goal_created_at": 1791607374,
+      "checked_at": "2026-10-10T07:11:43.974257+00:00",
+      "completed_one_time_rebaseline": true,
+      "telemetry": {
+        "native_tokens_used": 1224558,
+        "native_time_used_seconds": 6123,
+        "coverage": "Native tool cumulative current Goal; elapsed telemetry not treated as active-only no-progress time"
+      },
+      "report": {
+        "STATUS": "WATCH",
+        "TRIGGER": "Current Goal first evidenced checkpoint above250000 tokens without a completed rebaseline in this Goal",
+        "EVIDENCE": "Material body runtime checks and exact reopen repair passed; one new abnormal exit3 during Breast nudge context lacks cause; no repeated equivalent no-progress attempt proven",
+        "CORRECTIVE ACTION": "Locate the failing core83 operation before further acceptance",
+        "NEXT CHECKPOINT": "A newly registered diagnostic candidate yields an identifiable operation result; subsequent health checks obey75000-token/30-active-minute cooldown and require a listed trigger"
+      }
     }
   }
 }
