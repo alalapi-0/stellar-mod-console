@@ -1256,7 +1256,8 @@
           "full_visual": "PENDING_HUMAN",
           "source_quality": "Camera-moving sourcehorizontal seams confirmed; no codec/whole-frame freeze inselected39.534s; originUNKNOWN",
           "round17_combat_evidence": "core-functional-111/functional-round17-result.json"
-        }
+        },
+        "latest_repair_gate": "CurrentF9/valuespersistence/manualbind/unbind scopednativePASS; originalunboundswitchPARTIAL andfullclippingvisualnotaccepted; broadT2/T5gatesnotbypassed."
       },
       {
         "id": "T3",
@@ -1451,9 +1452,9 @@
       "preferred_existing_capability": "EveTuner per-bodymesh bindings; ownNude morphs notuniversal garment adaptation; UUE manualpresets/currentbuild notverified autooutfitprofiles"
     },
     "progress": {
-      "effective_accepted": 57,
-      "completion_percent": 23.17,
-      "reason": "57/246 identified function capabilities (scope-only denominator reduction1); core57/81 unchanged.88 remaining clothes/appearance,0accepted against completed core baseline.11user exclusions are notPASS; finalwholeprojectdenominatorUNKNOWN.",
+      "effective_accepted": 56,
+      "completion_percent": 22.76,
+      "reason": "56/246 identifiedfunctions and56/81core.4currentchangedTunerfunctions native reaccepted; originalunboundoutfitfallback remainsPARTIAL. HistoricalPASS evidence retained.88remainingclothing0accepted; overalldenominatorUNKNOWN.",
       "round_key": "core-uue-native-axis-translation-rotation-regression",
       "round_status": "CLOSED_INTERRUPTED_BY_USER",
       "remaining_rounds": "UNKNOWN",
@@ -1472,13 +1473,13 @@
       "evidence_change_percentage_points": 0,
       "remaining_rounds_confidence": "UNKNOWN",
       "scope_change": "User excludes6XXTB Eve outfit units,4verifiedCNSdeclared-failureunits and1EffectTableconflictingfunction.139originalinventory retained; allhistoricalevidencepreserved. NewNPCrestore for userplay is not acceptance.",
-      "milestone_change": "User paused unfinished UUE axis check; no new capability acceptance. Native game handed over under selected functional/cosmetic/NPC playset;11 explicitly excluded units trashed,0newconfirmedcrash0death.",
+      "milestone_change": "Boundedrepairclosedearly; noGoaltaskroundincrement. Native fourfunctions reaccepted from52→56. Newper-modelpersistencerestoredwith neutraldefaults; allgarmentsvisualpending.",
       "scope_change_percentage_points": 0.0938,
       "round_start_commit": "509ecfb454af5c2adb3ad0062c6f1746cd4724c3",
       "completion_scope": "IDENTIFIED_FUNCTION_CAPABILITIES_ONLY_PENDING_SCOPE_NOT_WHOLE_PROJECT",
-      "effective_function_accepted": 57,
+      "effective_function_accepted": 56,
       "effective_function_required": 246,
-      "effective_function_percent": 23.17,
+      "effective_function_percent": 22.76,
       "effective_mod_metric_status": "RETIRED_INVENTORY_METRIC_USE_FUNCTION_CAPABILITIES_AND_SEPARATE_CLOTHING",
       "legacy_mod_acceptance_before_metric_change": {
         "accepted": 0,
@@ -1487,12 +1488,12 @@
       },
       "functional_accounting": {
         "scope_version": "functional-capabilities-v4-user-exclusions",
-        "at": "2026-10-11T04:50:36.531097+00:00",
+        "at": "2026-10-11T07:22:26.078959+00:00",
         "rule": "Each independently verifiable capability is one equal-weight unit, with stable ID,version,status,evidence. Count child functions instead of parent MOD, never both. Clothes remain separate complete-MOD tests. Static newly defined supplemental items stay NOT_TESTED; pending surfaces are explicit and no complete overall percentage is fabricated.",
         "core_functions": {
-          "accepted": 57,
+          "accepted": 56,
           "required": 81,
-          "percent": 70.37,
+          "percent": 69.14,
           "by_mod": {
             "lua:JiggleControl": {
               "accepted": 16,
@@ -1519,7 +1520,7 @@
               "required": 4
             },
             "component:EveProportionsTuner": {
-              "accepted": 25,
+              "accepted": 24,
               "required": 26
             }
           }
@@ -1685,10 +1686,10 @@
         "missing_gates": "Human enlarged naturalness, actual damage effects, auto JustEvade/Repulse/QTE and remaining controls, current long-run/input stability, T5 stable combination, then all clothing retests",
         "state_authority": "PROJECT_STATE.json.mod_compatibility_restructure",
         "identified_functions": {
-          "accepted": 57,
+          "accepted": 56,
           "required": 246,
-          "percent": 23.17,
-          "scope": "246 explicitly listed active-scope capabilities;11MOD exclusions recorded,0newacceptance; complete overall denominator stillUNKNOWN",
+          "percent": 22.76,
+          "scope": "246 identifiedcapabilities;56accepted underrespectiveversion/scope; overalldenominatorUNKNOWN",
           "unidentified_scope_retained": true
         },
         "whole_project_required": null,
@@ -1713,15 +1714,31 @@
           },
           "evidence": ".local/play-session-20261008/user-native-115/trash-receipt.json",
           "rule": "Do not reinstall/retest removed units or count recycle-bin disposition as gameplay acceptance; known247functional scope reduced1, known98clothing scope reduced10;3unidentifiedfunctionsurfaces retained"
-        }
+        },
+        "current_repair_reopened": [
+          "component:EveProportionsTuner/outfit-bind",
+          "component:EveProportionsTuner/outfit-defaults",
+          "component:EveProportionsTuner/outfit-unbind",
+          "component:EveProportionsTuner/panel",
+          "component:EveProportionsTuner/session-values"
+        ],
+        "current_repair_reaccepted": [
+          "component:EveProportionsTuner/panel",
+          "component:EveProportionsTuner/session-values",
+          "component:EveProportionsTuner/outfit-bind",
+          "component:EveProportionsTuner/outfit-unbind"
+        ],
+        "current_repair_pending": [
+          "component:EveProportionsTuner/outfit-defaults"
+        ]
       },
       "new_function_evidence_this_round": [],
       "window": [],
       "newly_defined_function_items": 0,
-      "latest_scope_extension": "Futurehair variants and21EVEFace/Expression gates queued by latestuser; inventoryparent/child reconciliation beforetestresume; identified57/246acceptance retained; finalproject denominatorUNKNOWN"
+      "latest_scope_extension": "Futurehair variants and21EVEFace/Expression gates queued bylatestuser; originalinventoryretained. Currentboundedbodyrepair reaccepts4changedfunctions,56/246accepted; finalwholeprojectdenominatorUNKNOWN."
     },
-    "next_action": "Tests remain PAUSED. Native119 latestTuner cursor/key repair installed and restarted. User verify F4 singlecursor and CtrlAltB binding/CtrlAltShiftB unbinding; 0 retaineddance. Body-outfit ownerTuner existingmesh binding; hair/facefuturegates and exactcausepending; noauto restart/observer/testresume.",
-    "updated_at": "2026-10-11T06:03:38.352201+00:00",
+    "next_action": "BroadGoal/tests stayPAUSED. Current125 usernativegame leftopen, controlreturned07:17:32UTC, bodydefaultsneutral, F9menusclosed andSBParryexistingtoolrunning1. Boundedsave/bind/unbind/2meshrestore/coldrestorePASS. Awaituserplay/newtaskauthorization; unboundoriginalexactswitch/allgarmentvisual/footground/hair causes stillpending. Noautomaticinputs/restart/repair.",
+    "updated_at": "2026-10-11T07:22:26.078959+00:00",
     "blocked_audit": {
       "native_goal_status": "paused",
       "consecutive_goal_turns": 0,
@@ -1787,7 +1804,7 @@
       "current_segment_new_confirmed": 0,
       "last_confirmed_segment": "user-native-117",
       "observed_deaths": 42,
-      "latest_segment": "user-native-118",
+      "latest_segment": "user-native-125",
       "new_observed_deaths_this_round": 0,
       "video_death_correction": "Second core94 YOU_DIED now confirmed by exported frame evidence; count updated once",
       "new_unconfirmed_exit_segments": [
@@ -1796,7 +1813,12 @@
       ],
       "unconfirmed_exit_evidence": "core-large-105/round11-abnormal-exit.json",
       "new_death_evidence": null,
-      "new_confirmed_during_user_repair": 2
+      "new_confirmed_during_user_repair": 2,
+      "body_repair_unconfirmed_exit_segments": [
+        "user-native-121",
+        "user-native-122"
+      ],
+      "body_repair_exit_evidence": ".local/play-session-20261008/user-native-125/repair/result.json"
     },
     "attachment_disposition": {
       "main": "EveProportions1.1.0 intact installed and selectedP0 tested",
@@ -1866,18 +1888,18 @@
         "game_start_ticks": "28828935"
       }
     },
-    "current_segment": "user-native-119",
+    "current_segment": "user-native-125",
     "previous_goal_turn_classification": "INTERRUPTED_BY_USER_PAUSE_NO_NEW_RUNTIME_ACCEPTANCE",
     "execution_status": "PAUSED_BY_USER",
     "pause_at": "2026-10-11T04:42:58.883433+00:00",
     "pause_source": "User pauses tests, requests manual native gameplay with enabled playset, local learning records and new conversation continuation",
     "user_play_handoff": {
-      "status": "INPUT_REPAIR_INSTALLED_RESTARTED_119_NATIVE_UI_PENDING",
-      "segment": "user-native-119",
+      "status": "SCOPED_BODY_PROFILE_REPAIR_NATIVE_PASS_CONTROL_RETURNED",
+      "segment": "user-native-125",
       "playset_evidence": ".local/play-session-20261008/user-native-115/playset-registration.json",
-      "launch_evidence": ".local/play-session-20261008/user-native-119/startup-result.json",
+      "launch_evidence": ".local/play-session-20261008/user-native-125/startup-result.json",
       "trash_evidence": ".local/play-session-20261008/user-native-115/trash-receipt.json",
-      "input_owner": "USER_ONLY",
+      "input_owner": "USER_OR_ENABLED_MOD_AUTO",
       "automatic_relaunch": false,
       "actual_tests": "PAUSED_BY_USER",
       "enabled_unaccepted_for_user_play": true,
@@ -1901,42 +1923,44 @@
       "observation_limit": "Sparse currentnative coordinate/HP and true video frames; before04:46:05UTC visualgap retained; routelearning notMODacceptance",
       "continuation_prompt": ".local/play-session-20261008/CONTINUE_MOD_TESTING_PROMPT_20261011.md",
       "local_data_index": ".local/play-session-20261008/local-data-index-20261011.json",
-      "current_chat": "Bounded latesthotkey/cursor repair only; broadtestsGoalPAUSED; no observation/autorelaunch",
+      "current_chat": "Boundedbodyrepaircomplete, 2hmaxwindow returnedearly; noGoalresume",
       "clipping_repair": {
-        "status": "BODY_DEFAULTS_VERIFIED_TWO_HAIR_CHOICES_SUSPENDED_CAUSE_UNKNOWN",
+        "status": "PROFILE_SPILLOVER_REPAIRED_TWO_MODEL_NATIVE_PERSISTENCE_PASS",
         "lane": "DIRECT",
         "authority": "Latest user foot-floor/bodycoverage repair+restart and resetcurrentbodynumericalvalues",
         "evidence": ".local/play-session-20261008/user-native-115/clipping-repair/registration.json",
-        "changes": "CurrentTuner12scale1+2offset0; UUEboneeditscleared; existingEnableCNSTrackingtrue; usernamedpresetsandsoleJGretained",
-        "acceptance": "Currentbodydefault readback verified; hair146 isolation did not establishstablehair switch; new118 startup only; footfloor/alloutfit notaccepted",
+        "changes": "Neutral12scales1+2offset0; outfit-scopedauto-save andoldpendingflush; currentplayerbodyownsadoption; F9key; UUEbonesempty, namedpresets/soleJG preserved",
+        "acceptance": "Native two-bodymodelindependentprofile/autosave/manualbind/unbind/warmrestore/coldrestore actualPASS; allclothesgeometry NOT_ACCEPTED",
         "actual_tests": "PAUSED_BY_USER",
-        "new_acceptance_credit": 0,
+        "new_acceptance_credit": 4,
         "body_evidence": ".local/play-session-20261008/user-native-117/repair/current-body-default-readback.json",
         "hair_evidence": ".local/play-session-20261008/user-native-118/repair/hair-isolation-registration.json",
-        "remaining": "Ordinary standing/walking foot-ground visual acceptance; per-outfit core compatibility; exact hair146 and Kasumi root cause, adaptation and retest",
-        "result_evidence": ".local/play-session-20261008/user-native-118/repair/result.json",
-        "body_outfit_review": ".local/play-session-20261008/user-native-118/repair/body-outfit-binding-review.json",
+        "remaining": "Exactnewcandidate unboundoriginaloutfitswitch, allgarmentsvisual/motion/extremes andknownhaircauses remain forlater authorizedtests",
+        "result_evidence": ".local/play-session-20261008/user-native-125/repair/result.json",
+        "body_outfit_review": ".local/play-session-20261008/FUNCTIONAL_MOD_KEYS_20261011.md",
         "latest_crash": ".local/play-session-20261008/user-native-117/repair/hair-crash-analysis.json"
       },
       "observation_status": "STOPPED_EXPLICIT_LATEST_USER_REQUEST",
       "observation_stop_evidence": ".local/play-session-20261008/user-play-observation-20261011/observation-stop-20261011.json",
-      "recording_evidence": ".local/play-session-20261008/recording-session/user-native119-recorder-resume.json",
-      "latest_repair_result": ".local/play-session-20261008/user-native-119/repair/result.json",
-      "current_visual": "NATIVE_CNS_ULTIMATE_NUDE_EVE_MENU_AND_NONZERO_GAME_AUDIO_VERIFIED; F4 cursor/binding pendinghumanfeedback",
+      "recording_evidence": ".local/play-session-20261008/recording-session/user-native125-recorder-resume.json",
+      "latest_repair_result": ".local/play-session-20261008/user-native-125/repair/result.json",
+      "current_visual": "NATIVE_WORLD_NEUTRAL_CURRENT_A_PANEL_CLOSED_CAMERA_RESPONDS",
       "input_repair": {
         "lane": "DIRECT",
         "evidence": ".local/play-session-20261008/user-native-119/repair/cursor-key-repair-registration.json",
-        "candidate_sha256": "ad2549fd02596506c436efc2badbc7091d0dd67dd7d6e44605476fc818a9b1ed",
+        "candidate_sha256": "6a3e4ab49bce850dfc60a918b95b1a45723d9eb8769aa235ef5ceed4285e6a3c",
         "keys": {
           "bind": "Ctrl+Alt+B",
           "unbind": "Ctrl+Alt+Shift+B",
-          "panel": "F4",
+          "panel": "F9",
           "passthrough": "F11"
         },
-        "status": "APPLIED_RESTARTED_HOTKEY_REGISTERED_USER_F4_CHECK_PENDING",
+        "status": "F9_NATIVE_PANEL_AND_CTRLALT_BIND_UNBIND_PASS",
         "preserved": "bodydefaults/soleJiggle/otherMods/gamequality/recordingprofile/saves",
-        "acceptance_credit": 0
-      }
+        "acceptance_credit": 4
+      },
+      "body_binding_instructions": ".local/play-session-20261008/FUNCTIONAL_MOD_KEYS_20261011.md",
+      "control_returned_at": "2026-10-11T07:17:32.728463+00:00"
     },
     "resume_source": "Latest user: 你继续测试吧，我不玩了。把这个任务窗口交给你。先把功能性的模块测试完。",
     "resumed_at": "2026-10-10T17:27:32.358381+00:00",
