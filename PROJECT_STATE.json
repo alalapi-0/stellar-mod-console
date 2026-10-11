@@ -1455,7 +1455,7 @@
       "effective_mod_accepted": null,
       "effective_mod_required": null,
       "effective_mod_percent": null,
-      "scope_increment": "166 supplemental capability definitions,0newacceptance; no newMOD installation",
+      "scope_increment": "No new MODs;11 explicit user exclusions preserved in history, reducing current identified-function denominator1 and clothes/appearance10",
       "count": 22,
       "coverage": "since_baseline",
       "last_seq": 22,
@@ -1836,6 +1836,18 @@
       },
       "current_identity": {
         "state": "RECORDING",
+        "supervisor_pid": 2478843,
+        "supervisor_start_ticks": "29059778",
+        "ffmpeg_pid": 2478881,
+        "ffmpeg_start_ticks": "29059793",
+        "run_id": "20261011T044604747574Z-user-native-115",
+        "game_pid": 2476510,
+        "game_start_ticks": "29038753"
+      },
+      "current_coverage_limit": "Native115 recording from04:46:04UTC onward; short actualworldframes and audio decode verified, fullsourcecadence/AVsync/route/physicsvisualacceptance remainunaccepted; pre-start black screenshotgap retained.",
+      "current_segment": "user-native-115",
+      "previous_identity": {
+        "state": "RECORDING",
         "supervisor_pid": 2436635,
         "supervisor_start_ticks": "28838017",
         "ffmpeg_pid": 2436668,
@@ -1843,9 +1855,7 @@
         "run_id": "20261011T040907144648Z-core-functional-114",
         "game_pid": 2435006,
         "game_start_ticks": "28828935"
-      },
-      "current_coverage_limit": "Current114 after exact recorder start only; initial world frame and3s decode/audio checked. Same authorized1720x72030DEBUG; actual render FPS and full source-motion presentation quality remain unaccepted.",
-      "current_segment": "user-native-115"
+      }
     },
     "current_segment": "user-native-115",
     "previous_goal_turn_classification": "INTERRUPTED_BY_USER_PAUSE_NO_NEW_RUNTIME_ACCEPTANCE",
