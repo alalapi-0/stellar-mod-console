@@ -1445,10 +1445,10 @@
     },
     "progress": {
       "effective_accepted": 57,
-      "completion_percent": 23.08,
-      "reason": "57/247 currently defined functional capabilities accepted; current core57/81=70.37%. Added166 static supplemental definitions as NOT_TESTED; final whole-project denominator still UNKNOWN.139 retained as inventory only.",
-      "round_key": "core-jiggle-native-nudge-save-reload-and-profile-cycle",
-      "round_status": "CLOSED",
+      "completion_percent": 23.17,
+      "reason": "57/246 identified function capabilities (scope-only denominator reduction1); core57/81 unchanged.88 remaining clothes/appearance,0accepted against completed core baseline.11user exclusions are notPASS; finalwholeprojectdenominatorUNKNOWN.",
+      "round_key": "core-uue-native-axis-translation-rotation-regression",
+      "round_status": "CLOSED_INTERRUPTED_BY_USER",
       "remaining_rounds": "UNKNOWN",
       "legacy_denominator": 171,
       "legacy_concluded": 63,
@@ -1456,22 +1456,22 @@
       "effective_mod_required": null,
       "effective_mod_percent": null,
       "scope_increment": "166 supplemental capability definitions,0newacceptance; no newMOD installation",
-      "count": 21,
+      "count": 22,
       "coverage": "since_baseline",
-      "last_seq": 21,
-      "last_key": "core-jiggle-native-nudge-save-reload-and-profile-cycle",
+      "last_seq": 22,
+      "last_key": "core-uue-native-axis-translation-rotation-regression",
       "historical_round_count": "UNKNOWN",
-      "execution_change_percentage_points": 8.64,
+      "execution_change_percentage_points": 0,
       "evidence_change_percentage_points": 0,
       "remaining_rounds_confidence": "UNKNOWN",
-      "scope_change": "Same139 MOD inventory. User per-feature correction adds166 explicit supplemental capabilities; core denominator81 unchanged. Three unidentified surfaces retained, whole-project percentage UNKNOWN.",
-      "milestone_change": "Seven Jiggle native control/isolated layer capabilities accepted;113normalexit0 and exact original18config hashes restored,114cold body40delta0/six original active finite springs.0newcrash0death.",
-      "scope_change_percentage_points": -47.29,
-      "round_start_commit": "7125aa2147a5eb66b990005f0bfeae5a0909b435",
+      "scope_change": "User excludes6XXTB Eve outfit units,4verifiedCNSdeclared-failureunits and1EffectTableconflictingfunction.139originalinventory retained; allhistoricalevidencepreserved. NewNPCrestore for userplay is not acceptance.",
+      "milestone_change": "User paused unfinished UUE axis check; no new capability acceptance. Native game handed over under selected functional/cosmetic/NPC playset;11 explicitly excluded units trashed,0newconfirmedcrash0death.",
+      "scope_change_percentage_points": 0.0938,
+      "round_start_commit": "509ecfb454af5c2adb3ad0062c6f1746cd4724c3",
       "completion_scope": "IDENTIFIED_FUNCTION_CAPABILITIES_ONLY_PENDING_SCOPE_NOT_WHOLE_PROJECT",
       "effective_function_accepted": 57,
-      "effective_function_required": 247,
-      "effective_function_percent": 23.08,
+      "effective_function_required": 246,
+      "effective_function_percent": 23.17,
       "effective_mod_metric_status": "RETIRED_INVENTORY_METRIC_USE_FUNCTION_CAPABILITIES_AND_SEPARATE_CLOTHING",
       "legacy_mod_acceptance_before_metric_change": {
         "accepted": 0,
@@ -1479,8 +1479,8 @@
         "percent": 0
       },
       "functional_accounting": {
-        "scope_version": "functional-capabilities-v3",
-        "at": "2026-10-11T04:16:20.314281+00:00",
+        "scope_version": "functional-capabilities-v4-user-exclusions",
+        "at": "2026-10-11T04:50:36.531097+00:00",
         "rule": "Each independently verifiable capability is one equal-weight unit, with stable ID,version,status,evidence. Count child functions instead of parent MOD, never both. Clothes remain separate complete-MOD tests. Static newly defined supplemental items stay NOT_TESTED; pending surfaces are explicit and no complete overall percentage is fabricated.",
         "core_functions": {
           "accepted": 57,
@@ -1519,8 +1519,21 @@
         },
         "clothing_and_appearance": {
           "accepted": 0,
-          "required": 98,
-          "rule": "Includes retained NPC removal/other visual records; no legacy PASS inherits current core acceptance; excluded items are not runtime PASS"
+          "required": 88,
+          "rule": "Original98 inventory retained;10 explicit user exclusions do not earn PASS or require future retest.88 remaining current-core clothing/appearance units; no legacyPASS inheritance.",
+          "original_required": 98,
+          "user_excluded_units": [
+            "resource:XXTB Black Pearl Nude v1.3_P",
+            "resource:XXTB Nude Skinsuit_P",
+            "resource:XXTB White-Black Kunoichi_P",
+            "collection:Mod1143",
+            "collection:Mod2795",
+            "collection:Mod3452",
+            "collection:Mod3748",
+            "collection:Mod74",
+            "collection:Mod2421",
+            "resource:CustomNanosuitSystem/XXTB-Slingkini"
+          ]
         },
         "inventory_classification": {
           "OTHER_FUNCTIONAL_OR_SUPPORT_REQUIRES_DECOMPOSITION": 31,
@@ -1530,9 +1543,9 @@
         },
         "inventory_mod_units": 139,
         "other_functional_scope": {
-          "retained_mod_units": 31,
-          "identified_mod_units": 28,
-          "known_required_functions": 166,
+          "retained_mod_units": 30,
+          "identified_mod_units": 27,
+          "known_required_functions": 165,
           "accepted": 0,
           "status": "PARTIALLY_DEFINED_PENDING_RUNTIME_AND_COMPILED_SURFACES",
           "by_mod": {
@@ -1616,10 +1629,6 @@
               "accepted": 0,
               "required": 1
             },
-            "global:Drone_Scan_Duration_10s": {
-              "accepted": 0,
-              "required": 1
-            },
             "global:Easy_Fishing": {
               "accepted": 0,
               "required": 1
@@ -1654,49 +1663,66 @@
             "logic:Van_Mods_P",
             "logic:XTG_SEAP_P"
           ],
-          "definition_evidence": "core-functional-113/round21-jiggle-control/supplemental-function-definitions.json"
+          "definition_evidence": "core-functional-113/round21-jiggle-control/supplemental-function-definitions.json",
+          "original_retained_mod_units": 31,
+          "user_excluded_units": [
+            "global:Drone_Scan_Duration_10s"
+          ]
         },
         "shared_dependencies": {
           "retained_mod_units": 3,
           "accepted": 0
         },
         "whole_project_percent": null,
-        "whole_project_reason": "139 is inventory, not outfits or acceptance denominator. 81 core +166 supplemental functions are explicitly listed,98 clothing/appearance retained separately. Three function surfaces remain unidentified and compiled declared effects may have further options; complete whole-project denominator is UNKNOWN. Shared dependencies are preconditions, not duplicate gameplay capabilities.",
+        "whole_project_reason": "139 original mixed MOD inventory retained;11 explicit user exclusions.81core+165supplemental identified capabilities,88remainingclothing/appearance.3unknownsurfaces and further compiled options retained; full overall denominator/percentageUNKNOWN.",
         "missing_gates": "Human enlarged naturalness, actual damage effects, auto JustEvade/Repulse/QTE and remaining controls, current long-run/input stability, T5 stable combination, then all clothing retests",
         "state_authority": "PROJECT_STATE.json.mod_compatibility_restructure",
         "identified_functions": {
           "accepted": 57,
-          "required": 247,
-          "percent": 23.08,
-          "scope": "247 explicitly listed capabilities only; not a final whole-project denominator",
+          "required": 246,
+          "percent": 23.17,
+          "scope": "246 explicitly listed active-scope capabilities;11MOD exclusions recorded,0newacceptance; complete overall denominator stillUNKNOWN",
           "unidentified_scope_retained": true
         },
         "whole_project_required": null,
-        "reporting_rule": "Always report function items accepted/required with scope and current core subtotal; clothing separately. Never present historical0/139 as current complete acceptance. Loading/UI opening alone, repeated keypresses, sampling or duplicate presets do not earn new units."
+        "reporting_rule": "Always report function items accepted/required with scope and current core subtotal; clothing separately. Never present historical0/139 as current complete acceptance. Loading/UI opening alone, repeated keypresses, sampling or duplicate presets do not earn new units.",
+        "user_scope_exclusion": {
+          "at": "2026-10-11T04:50:36.531097+00:00",
+          "original_inventory_mod_units": 139,
+          "inventory_retained_in_history": 139,
+          "remaining_required_mod_units": 128,
+          "removed_units": {
+            "resource:XXTB Black Pearl Nude v1.3_P": "USER_REJECTED_XXTB_EVE_SERIES",
+            "resource:XXTB Nude Skinsuit_P": "USER_REJECTED_XXTB_EVE_SERIES",
+            "resource:XXTB White-Black Kunoichi_P": "USER_REJECTED_XXTB_EVE_SERIES",
+            "collection:Mod74": "USER_REJECTED_XXTB_EVE_SERIES",
+            "collection:Mod2421": "USER_REJECTED_XXTB_EVE_SERIES",
+            "resource:CustomNanosuitSystem/XXTB-Slingkini": "USER_REJECTED_XXTB_EVE_SERIES",
+            "collection:Mod1143": "VERIFIED_DECLARED_CNS_FEATURE_FAILURE",
+            "collection:Mod2795": "VERIFIED_DECLARED_CNS_FEATURE_FAILURE",
+            "collection:Mod3452": "VERIFIED_DECLARED_CNS_FEATURE_FAILURE",
+            "collection:Mod3748": "VERIFIED_DECLARED_CNS_FEATURE_FAILURE",
+            "global:Drone_Scan_Duration_10s": "VERIFIED_EFFECTTABLE_CONFLICT_WITH_SELECTED_GEARBOOST"
+          },
+          "evidence": ".local/play-session-20261008/user-native-115/trash-receipt.json",
+          "rule": "Do not reinstall/retest removed units or count recycle-bin disposition as gameplay acceptance; known247functional scope reduced1, known98clothing scope reduced10;3unidentifiedfunctionsurfaces retained"
+        }
       },
-      "new_function_evidence_this_round": [
-        "lua:JiggleControl/nudge",
-        "lua:JiggleControl/save",
-        "lua:JiggleControl/reload",
-        "lua:JiggleControl/cycle",
-        "lua:JiggleControl/motion",
-        "lua:JiggleControl/load",
-        "lua:JiggleControl/impact"
-      ],
+      "new_function_evidence_this_round": [],
       "window": [],
-      "newly_defined_function_items": 166
+      "newly_defined_function_items": 0
     },
-    "next_action": "Continue current81core acceptance: remaining UUEPBS body controls and Tuner input-return, automatic evade/Repulse/QTE and equipment damage behavior; retain pending enlarged human naturalness. Complete source decomposition for retained opaque supplemental packages before claiming a final overall denominator. Use current247 identified function items and98 separate clothing records; no legacyPASS inheritance, no source/recording quality reduction.",
-    "updated_at": "2026-10-11T04:16:20.314281+00:00",
+    "next_action": "Tests remain PAUSED. User plays Steam native115 under separate read-only observation. Resume only on a new explicit user instruction, read local continuation prompt and user route report, restore exact core test isolation after normal exit/concurrency checks, continue first incomplete P0/P1/P2 function; excluded units never auto-return.",
+    "updated_at": "2026-10-11T04:50:36.531097+00:00",
     "blocked_audit": {
-      "native_goal_status": "active",
+      "native_goal_status": "paused",
       "consecutive_goal_turns": 0,
       "condition": null,
       "cleared_by": "Round21 seven independent current Jiggle capability acceptances and exact cold cleanup; feature accounting expanded without false acceptance",
       "consecutive_no_progress_turns": 0,
-      "status": "PROGRESS",
+      "status": "USER_PAUSED",
       "evidence": "core-functional-114/functional-round21-result.json",
-      "next_action": "Continue current81core acceptance: remaining UUEPBS body controls and Tuner input-return, automatic evade/Repulse/QTE and equipment damage behavior; retain pending enlarged human naturalness. Complete source decomposition for retained opaque supplemental packages before claiming a final overall denominator. Use current247 identified function items and98 separate clothing records; no legacyPASS inheritance, no source/recording quality reduction."
+      "next_action": "Tests remain PAUSED. User plays Steam native115 under separate read-only observation. Resume only on a new explicit user instruction, read local continuation prompt and user route report, restore exact core test isolation after normal exit/concurrency checks, continue first incomplete P0/P1/P2 function; excluded units never auto-return."
     },
     "user_exit_authorization": {
       "source": "Direct user: 没保存也没关系，允许放弃未保存进度并正常退出。正常重启人物; followed by 重启任务",
@@ -1711,7 +1737,7 @@
       "saves_untouched": true,
       "current_segment": "core-functional-114",
       "result": "ORIGINAL18CORE_CONFIG_EXACT_RESTORED_COLD40NODE_DELTA0_AND_SIX_ORIGINAL_FINITE_SPRINGS_FULL_CORE_PENDING",
-      "current_game_state": "LIVE_NATIVE_WORLD_AT_EXISTING_CAMP_HP1_ORIGINAL_NORMAL_BODY_WHITE_OUTFIT",
+      "current_game_state": "CORE_TEST_BASELINE_PAUSED; CURRENT_GAME_USER_PLAYSET_NOT_ACCEPTED",
       "body_configuration": "UUE Spine1.097 + Eve1.1.0/Tuner currenttimer + originalnormal Size1.1 + soleJG3.1.0. Namedpresets retained; existingSB0.2.3 allautomaticflags1 with exactlocal600msfinisherholdcandidate; IPD/Better unchanged. Allcosmetic/NPC/alternatephysics/cameraoff.",
       "p0_evidence": "core-functional-114/functional-round21-result.json",
       "p1_evidence": "goal-restructure-20261010/p1-selected-profile-result.json",
@@ -1721,7 +1747,9 @@
       "original_inactive_files": 570,
       "local_combat_adjustment": "Existing SBParry0.2.3 onlyfinisherhold600ms exactcandidate, reversiblepreimages; partialactualnormal verified; no fullcoreacceptance",
       "previous_failure_result": "NORMAL_PROFILE_LATE_PANEL_CONFIRMED_CRASH_NOT_STABLE",
-      "test_preset_slot9": "COLD_VERIFIED_AND_REMOVED_EXACT_ORIGINAL:9saved/loaded after cold112; native1 restored,112normalexit0,originalPresetfile12490dc restored while gameoff concurrent check,113native9empty/bodydelta0. Original slots1/2 intact."
+      "test_preset_slot9": "COLD_VERIFIED_AND_REMOVED_EXACT_ORIGINAL:9saved/loaded after cold112; native1 restored,112normalexit0,originalPresetfile12490dc restored while gameoff concurrent check,113native9empty/bodydelta0. Original slots1/2 intact.",
+      "active_for_current_game": false,
+      "preserved_test_segment": "core-functional-114"
     },
     "health_checkpoint": {
       "goal_created_at": 1791607374,
@@ -1740,7 +1768,7 @@
         "NEXT CHECKPOINT": "A newly registered diagnostic candidate yields an identifiable operation result; subsequent health checks obey75000-token/30-active-minute cooldown and require a listed trigger"
       }
     },
-    "round_closure_at": "2026-10-11T04:16:20.314281+00:00",
+    "round_closure_at": "2026-10-11T04:50:36.531097+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 10,
       "new_confirmed_this_round": 0,
@@ -1751,7 +1779,7 @@
       "current_segment_new_confirmed": 0,
       "last_confirmed_segment": "core-functional-106",
       "observed_deaths": 42,
-      "latest_segment": "core-functional-114",
+      "latest_segment": "user-native-115",
       "new_observed_deaths_this_round": 0,
       "video_death_correction": "Second core94 YOU_DIED now confirmed by exported frame evidence; count updated once",
       "new_unconfirmed_exit_segments": [
@@ -1767,15 +1795,15 @@
       "spring_preset": "Data-only Lua preset retained inactive; consumerSpringBoneTweaks absent; userselected soleJG unchanged"
     },
     "recording_result": {
-      "status": "CURRENT114_EXISTING_SINGLE_RECORDER_ALIVE_SHORT_DECODE_AUDIO_CHECKED_SOURCE_QUALITY_PENDING",
+      "status": "SEPARATE_OWNER_NATIVE115_RECORDING_TRUE_FRAME_VERIFIED_FULLQUALITY_PENDING",
       "evidence": ".local/play-session-20261008/recording-session/core103-green14-motion-review.json",
       "limit": "Bounded105threeclipcontainer/decoder/timealignmentchecked; visualnaturalness stillWAITING_HUMAN andwholecadence/fullMODcompatibility notaccepted. Dodge hassourceframe intervals0.001..0.033s; preserved nativeclockdecode succeeds, defaultnullmuxer roundingwarning retained.",
       "human_review": "Direct user confirms core91 selected green P1 natural, unaffected by later95 capture temporal defect",
-      "current_scope": "Exact114 PID2435006/ticks28828935; same human authorized1720x72030DEBUG and unchanged3440x1440game; no full source-motion quality acceptance",
+      "current_scope": "Exactnative115 PID/ticks; previouslyauthorizedDEBUG30; no duplicate capture or quality change byRoot",
       "large_motion_preview": "core103-green14-body-motion-preview-1920-crf16.mp4",
       "large_visual_acceptance": "WAITING_HUMAN; normal91 human PASS applies only earlier selected profile",
       "historical_limit": "Core95 battle capture cadence failed and quality review remains partial; sealed original evidence retained. User96 had no valid continuous video due cancelled/rejected Portal;96 logs/stills/report preserved;97 video requires source authorization",
-      "current_evidence": "recording-session/core114-recorder-resume.json",
+      "current_evidence": "recording-session/user-native115-recorder-resume.json",
       "current_preview": "core104-large14-motion-preview-1920-crf16.mp4",
       "current_battle_clips": [
         "core106-confirmed-crash-tail-223020-223042-lossless.mkv"
@@ -1816,50 +1844,45 @@
         "game_pid": 2435006,
         "game_start_ticks": "28828935"
       },
-      "current_coverage_limit": "Current114 after exact recorder start only; initial world frame and3s decode/audio checked. Same authorized1720x72030DEBUG; actual render FPS and full source-motion presentation quality remain unaccepted."
+      "current_coverage_limit": "Current114 after exact recorder start only; initial world frame and3s decode/audio checked. Same authorized1720x72030DEBUG; actual render FPS and full source-motion presentation quality remain unaccepted.",
+      "current_segment": "user-native-115"
     },
-    "current_segment": "core-functional-114",
-    "previous_goal_turn_classification": "PROGRESS_ROUND21_SEVEN_JIGGLE_FUNCTIONS_EXACT_COLD_RESTORATION_AND_USER_PER_FUNCTION_METRIC_CORRECTION",
-    "execution_status": "IN_PROGRESS",
-    "pause_at": "2026-10-10T12:03:10.167690+00:00",
-    "pause_source": "Direct user pauses actual tests, requests normal game exit and verified playset handoff to user with separate read-only observation session",
+    "current_segment": "user-native-115",
+    "previous_goal_turn_classification": "INTERRUPTED_BY_USER_PAUSE_NO_NEW_RUNTIME_ACCEPTANCE",
+    "execution_status": "PAUSED_BY_USER",
+    "pause_at": "2026-10-11T04:42:58.883433+00:00",
+    "pause_source": "User pauses tests, requests manual native gameplay with enabled playset, local learning records and new conversation continuation",
     "user_play_handoff": {
-      "status": "USER_HANDED_BACK_TO_AGENT",
-      "segment": "user-native-97",
-      "playset_evidence": ".local/play-session-20261008/user-native-97/playset-registration.json",
-      "launch_evidence": ".local/play-session-20261008/user-native-97/startup-result.json",
+      "status": "LIVE_USER_CONTROL_NATIVE_READONLY_OBSERVATION",
+      "segment": "user-native-115",
+      "playset_evidence": ".local/play-session-20261008/user-native-115/playset-registration.json",
+      "launch_evidence": ".local/play-session-20261008/user-native-115/startup-result.json",
+      "trash_evidence": ".local/play-session-20261008/user-native-115/trash-receipt.json",
       "input_owner": "USER_ONLY",
       "automatic_relaunch": false,
       "actual_tests": "PAUSED_BY_USER",
-      "scoped_accepted": [
-        "P0 selected body profile",
-        "P1 soleJG native green/red profile"
+      "enabled_unaccepted_for_user_play": true,
+      "npc_mods": "RESTORED_LATEST_USER_REQUEST_7_UNITS27_FILES",
+      "excluded_units": [
+        "resource:XXTB Black Pearl Nude v1.3_P",
+        "resource:XXTB Nude Skinsuit_P",
+        "resource:XXTB White-Black Kunoichi_P",
+        "collection:Mod74",
+        "collection:Mod2421",
+        "resource:CustomNanosuitSystem/XXTB-Slingkini",
+        "collection:Mod1143",
+        "collection:Mod2795",
+        "collection:Mod3452",
+        "collection:Mod3748",
+        "global:Drone_Scan_Duration_10s"
       ],
-      "not_accepted": [
-        "P2 combat",
-        "All collected clothing"
-      ],
-      "observation_thread_title": "剑星用户游玩观察与复盘",
-      "observation_evidence": ".local/play-session-20261008/user-native-97/observation/status.json",
-      "observation": "Screenshot observer sealed after four-hour limit;476/476 sampled main-menu frames reviewed. Exact game still live; Root read-only log observer active. No current continuous video",
-      "enabled_unaccepted_for_user_play": [
-        "SBParry0.2.3 automaticparry/chance/QTE keyboard",
-        "ImprovedPerfectDefense Extended1.01",
-        "BetterEquipment x1.25 Exo1.04"
-      ],
-      "combat_evidence": ".local/play-session-20261008/user-native-97/combat-enable-result.json",
-      "authority": "User explicitly requests existing useful MODs enabled without completed acceptance",
-      "previous_observation_report": "user-native-96 read-only report sealed; no confirmed new crash/death; no evidenced newroute/battle/potionuse",
-      "observation_closure": {
-        "reason": "BOUNDED_FOUR_HOUR_OBSERVATION_END",
-        "report_evidence": ".local/play-session-20261008/user-native-97/observation/closure.json",
-        "reviewed_frames": 476,
-        "new_crashes_confirmed": 0,
-        "visual_deaths_confirmed": 0,
-        "route_combat_healing": "UNKNOWN",
-        "game_exit_observed": false,
-        "log_observer": "ACTIVE"
-      }
+      "observation_thread_id": "01a1293f-3df2-7061-a720-77071a961421",
+      "observation_thread_title": "剑星玩家推进观察（测试暂停）",
+      "observation_evidence": ".local/play-session-20261008/user-play-observation-20261011/data-index.json",
+      "observation_limit": "Sparse currentnative coordinate/HP and true video frames; before04:46:05UTC visualgap retained; routelearning notMODacceptance",
+      "continuation_prompt": ".local/play-session-20261008/CONTINUE_MOD_TESTING_PROMPT_20261011.md",
+      "local_data_index": ".local/play-session-20261008/local-data-index-20261011.json",
+      "current_chat": "No further monitoring/test wakeups; existingmodheartbeatPAUSED; newseparateconversation owns playerobservation"
     },
     "resume_source": "Latest user: 你继续测试吧，我不玩了。把这个任务窗口交给你。先把功能性的模块测试完。",
     "resumed_at": "2026-10-10T17:27:32.358381+00:00",
