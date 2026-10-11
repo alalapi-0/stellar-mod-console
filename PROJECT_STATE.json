@@ -1720,8 +1720,8 @@
       "newly_defined_function_items": 0,
       "latest_scope_extension": "Futurehair variants and21EVEFace/Expression gates queued by latestuser; inventoryparent/child reconciliation beforetestresume; identified57/246acceptance retained; finalproject denominatorUNKNOWN"
     },
-    "next_action": "Tests remain PAUSED. User explicitly reopened native118 after secondhaircrash; exacthair146/Kasumi selectors reversibly isolated, bodydefaultsretained. Per-outfit binding author/local/priornative evidence reviewed; add hair/facial gates when explicitlyresumed, reconcile existinginventory/childchecks without legacyacceptance. Do not autorestart or resumeobserver.",
-    "updated_at": "2026-10-11T05:46:16.851867+00:00",
+    "next_action": "Tests remain PAUSED. Native119 latestTuner cursor/key repair installed and restarted. User verify F4 singlecursor and CtrlAltB binding/CtrlAltShiftB unbinding; 0 retaineddance. Body-outfit ownerTuner existingmesh binding; hair/facefuturegates and exactcausepending; noauto restart/observer/testresume.",
+    "updated_at": "2026-10-11T06:03:38.352201+00:00",
     "blocked_audit": {
       "native_goal_status": "paused",
       "consecutive_goal_turns": 0,
@@ -1866,16 +1866,16 @@
         "game_start_ticks": "28828935"
       }
     },
-    "current_segment": "user-native-118",
+    "current_segment": "user-native-119",
     "previous_goal_turn_classification": "INTERRUPTED_BY_USER_PAUSE_NO_NEW_RUNTIME_ACCEPTANCE",
     "execution_status": "PAUSED_BY_USER",
     "pause_at": "2026-10-11T04:42:58.883433+00:00",
     "pause_source": "User pauses tests, requests manual native gameplay with enabled playset, local learning records and new conversation continuation",
     "user_play_handoff": {
-      "status": "EXPLICIT_RESTART_MAIN_MENU_AND_RECORDER_VERIFIED_HAIR_STABILITY_PENDING",
-      "segment": "user-native-118",
+      "status": "INPUT_REPAIR_INSTALLED_RESTARTED_119_NATIVE_UI_PENDING",
+      "segment": "user-native-119",
       "playset_evidence": ".local/play-session-20261008/user-native-115/playset-registration.json",
-      "launch_evidence": ".local/play-session-20261008/user-native-118/startup-result.json",
+      "launch_evidence": ".local/play-session-20261008/user-native-119/startup-result.json",
       "trash_evidence": ".local/play-session-20261008/user-native-115/trash-receipt.json",
       "input_owner": "USER_ONLY",
       "automatic_relaunch": false,
@@ -1901,7 +1901,7 @@
       "observation_limit": "Sparse currentnative coordinate/HP and true video frames; before04:46:05UTC visualgap retained; routelearning notMODacceptance",
       "continuation_prompt": ".local/play-session-20261008/CONTINUE_MOD_TESTING_PROMPT_20261011.md",
       "local_data_index": ".local/play-session-20261008/local-data-index-20261011.json",
-      "current_chat": "Bounded body/hair repair completed; no further Root test/monitor wakeups; player-observation chat explicitly stopped; sole existing recording stops on exit",
+      "current_chat": "Bounded latesthotkey/cursor repair only; broadtestsGoalPAUSED; no observation/autorelaunch",
       "clipping_repair": {
         "status": "BODY_DEFAULTS_VERIFIED_TWO_HAIR_CHOICES_SUSPENDED_CAUSE_UNKNOWN",
         "lane": "DIRECT",
@@ -1920,9 +1920,23 @@
       },
       "observation_status": "STOPPED_EXPLICIT_LATEST_USER_REQUEST",
       "observation_stop_evidence": ".local/play-session-20261008/user-play-observation-20261011/observation-stop-20261011.json",
-      "recording_evidence": ".local/play-session-20261008/recording-session/user-native118-recorder-resume.json",
-      "latest_repair_result": ".local/play-session-20261008/user-native-118/repair/result.json",
-      "current_visual": "NATIVE_MAIN_MENU_AND_NONZERO_GAME_AUDIO_VERIFIED; blackstartupwasloading; nofullstabilityclaim"
+      "recording_evidence": ".local/play-session-20261008/recording-session/user-native119-recorder-resume.json",
+      "latest_repair_result": ".local/play-session-20261008/user-native-119/repair/result.json",
+      "current_visual": "NATIVE_CNS_ULTIMATE_NUDE_EVE_MENU_AND_NONZERO_GAME_AUDIO_VERIFIED; F4 cursor/binding pendinghumanfeedback",
+      "input_repair": {
+        "lane": "DIRECT",
+        "evidence": ".local/play-session-20261008/user-native-119/repair/cursor-key-repair-registration.json",
+        "candidate_sha256": "ad2549fd02596506c436efc2badbc7091d0dd67dd7d6e44605476fc818a9b1ed",
+        "keys": {
+          "bind": "Ctrl+Alt+B",
+          "unbind": "Ctrl+Alt+Shift+B",
+          "panel": "F4",
+          "passthrough": "F11"
+        },
+        "status": "APPLIED_RESTARTED_HOTKEY_REGISTERED_USER_F4_CHECK_PENDING",
+        "preserved": "bodydefaults/soleJiggle/otherMods/gamequality/recordingprofile/saves",
+        "acceptance_credit": 0
+      }
     },
     "resume_source": "Latest user: 你继续测试吧，我不玩了。把这个任务窗口交给你。先把功能性的模块测试完。",
     "resumed_at": "2026-10-10T17:27:32.358381+00:00",
