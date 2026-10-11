@@ -1417,7 +1417,12 @@
       {
         "id": "T6",
         "status": "WAITING_T5",
-        "acceptance": "All collected clothes individually retested; accepted only PASS/PASS_WITH_PROFILE; no legacy pass inherited"
+        "acceptance": "All clothes/hair/faceappearance individually retested under acceptedcore; include allhair variants andfacialexpressions/transitions; accept only PASS/PASS_WITH_PROFILE with motion/physics/combat/15sviews/restart evidence; no legacypass",
+        "scope_extension": {
+          "status": "QUEUED_TESTS_PAUSED_RECONCILIATION_BEFORE_RESUME",
+          "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json:future_hair_and_facial_acceptance",
+          "new_acceptance_credit": 0
+        }
       },
       {
         "id": "T7",
@@ -1441,7 +1446,9 @@
         "Resource overlap detection",
         "Identify model-adaptation needs",
         "Semi-automatic adaptation feasibility"
-      ]
+      ],
+      "latest_body_outfit_findings": ".local/play-session-20261008/user-native-118/repair/body-outfit-binding-review.json",
+      "preferred_existing_capability": "EveTuner per-bodymesh bindings; ownNude morphs notuniversal garment adaptation; UUE manualpresets/currentbuild notverified autooutfitprofiles"
     },
     "progress": {
       "effective_accepted": 57,
@@ -1710,10 +1717,11 @@
       },
       "new_function_evidence_this_round": [],
       "window": [],
-      "newly_defined_function_items": 0
+      "newly_defined_function_items": 0,
+      "latest_scope_extension": "Futurehair variants and21EVEFace/Expression gates queued by latestuser; inventoryparent/child reconciliation beforetestresume; identified57/246acceptance retained; finalproject denominatorUNKNOWN"
     },
-    "next_action": "Testing remains PAUSED. User plays native117 with default body values/custom-outfit tracking and exact hair146 isolated. Another player-observation chat stopped. Await normal-foot visual feedback; future explicitly resumed chat uses retained core114 evidence and current repair records without acceptance inheritance.",
-    "updated_at": "2026-10-11T05:29:07.412181+00:00",
+    "next_action": "Tests remain PAUSED. User explicitly reopened native118 after secondhaircrash; exacthair146/Kasumi selectors reversibly isolated, bodydefaultsretained. Per-outfit binding author/local/priornative evidence reviewed; add hair/facial gates when explicitlyresumed, reconcile existinginventory/childchecks without legacyacceptance. Do not autorestart or resumeobserver.",
+    "updated_at": "2026-10-11T05:46:16.851867+00:00",
     "blocked_audit": {
       "native_goal_status": "paused",
       "consecutive_goal_turns": 0,
@@ -1770,16 +1778,16 @@
     },
     "round_closure_at": "2026-10-11T04:50:36.531097+00:00",
     "incidents": {
-      "confirmed_recorded_session_total": 11,
+      "confirmed_recorded_session_total": 12,
       "new_confirmed_this_round": 0,
-      "current_crash_id": "UE4CC-Windows-CADE349A454A45E71EF743B5BA0F6B45_0000",
+      "current_crash_id": "UE4CC-Windows-5511A79E465F920358E6D6A6C9407A3B_0000",
       "coverage": "Registered project play/audit ledger only; unrecorded earlier user history unknown; core83 unexplained exit not retroclassified",
-      "cause": "UNKNOWN; user115 hair switch to Repacked ExtraMod331 146 immediately preceded fresh GameThread access violation; precise mesh/animation/controller cause unproved; current117 startup only",
-      "evidence": "user-native-117/repair/result.json; user-native-115/clipping-repair/current-minidump-analysis.json",
+      "cause": "UNKNOWN; second distinct hair switch KasumiHair4930/PlatinumBlonde preceded game RVA 0x405663a write access violation at 0x11. Prior hair146 isolation did not establish stable hair switching.",
+      "evidence": "user-native-117/repair/hair-crash-analysis.json",
       "current_segment_new_confirmed": 0,
-      "last_confirmed_segment": "user-native-115",
+      "last_confirmed_segment": "user-native-117",
       "observed_deaths": 42,
-      "latest_segment": "user-native-117",
+      "latest_segment": "user-native-118",
       "new_observed_deaths_this_round": 0,
       "video_death_correction": "Second core94 YOU_DIED now confirmed by exported frame evidence; count updated once",
       "new_unconfirmed_exit_segments": [
@@ -1788,7 +1796,7 @@
       ],
       "unconfirmed_exit_evidence": "core-large-105/round11-abnormal-exit.json",
       "new_death_evidence": null,
-      "new_confirmed_during_user_repair": 1
+      "new_confirmed_during_user_repair": 2
     },
     "attachment_disposition": {
       "main": "EveProportions1.1.0 intact installed and selectedP0 tested",
@@ -1858,16 +1866,16 @@
         "game_start_ticks": "28828935"
       }
     },
-    "current_segment": "user-native-117",
+    "current_segment": "user-native-118",
     "previous_goal_turn_classification": "INTERRUPTED_BY_USER_PAUSE_NO_NEW_RUNTIME_ACCEPTANCE",
     "execution_status": "PAUSED_BY_USER",
     "pause_at": "2026-10-11T04:42:58.883433+00:00",
     "pause_source": "User pauses tests, requests manual native gameplay with enabled playset, local learning records and new conversation continuation",
     "user_play_handoff": {
-      "status": "BODY_DEFAULTS_HAIR_CHOICE_ISOLATED_NATIVE117_LIVE",
-      "segment": "user-native-117",
+      "status": "EXPLICIT_RESTART_MAIN_MENU_AND_RECORDER_VERIFIED_HAIR_STABILITY_PENDING",
+      "segment": "user-native-118",
       "playset_evidence": ".local/play-session-20261008/user-native-115/playset-registration.json",
-      "launch_evidence": ".local/play-session-20261008/user-native-117/startup-result.json",
+      "launch_evidence": ".local/play-session-20261008/user-native-118/startup-result.json",
       "trash_evidence": ".local/play-session-20261008/user-native-115/trash-receipt.json",
       "input_owner": "USER_ONLY",
       "automatic_relaunch": false,
@@ -1895,22 +1903,26 @@
       "local_data_index": ".local/play-session-20261008/local-data-index-20261011.json",
       "current_chat": "Bounded body/hair repair completed; no further Root test/monitor wakeups; player-observation chat explicitly stopped; sole existing recording stops on exit",
       "clipping_repair": {
-        "status": "BODY_DEFAULTS_VERIFIED_HAIR146_REVERSIBLY_ISOLATED_RESTARTED",
+        "status": "BODY_DEFAULTS_VERIFIED_TWO_HAIR_CHOICES_SUSPENDED_CAUSE_UNKNOWN",
         "lane": "DIRECT",
         "authority": "Latest user foot-floor/bodycoverage repair+restart and resetcurrentbodynumericalvalues",
         "evidence": ".local/play-session-20261008/user-native-115/clipping-repair/registration.json",
         "changes": "CurrentTuner12scale1+2offset0; UUEboneeditscleared; existingEnableCNSTrackingtrue; usernamedpresetsandsoleJGretained",
-        "acceptance": "BODY_DEFAULT_PARAMETERS_RUNTIME_VERIFIED; FOOT_GROUND_AND_ALL_OUTFIT_COVERAGE_NOT_ACCEPTED; HAIR_ISOLATION_NOT_CAUSAL_FIX",
+        "acceptance": "Currentbodydefault readback verified; hair146 isolation did not establishstablehair switch; new118 startup only; footfloor/alloutfit notaccepted",
         "actual_tests": "PAUSED_BY_USER",
         "new_acceptance_credit": 0,
         "body_evidence": ".local/play-session-20261008/user-native-117/repair/current-body-default-readback.json",
-        "hair_evidence": ".local/play-session-20261008/user-native-116/repair/hair-repair-registration.json",
-        "remaining": "Ordinary standing/walking foot visual acceptance; per-outfit core compatibility; exact hair146 root cause/adaptation/retest",
-        "result_evidence": ".local/play-session-20261008/user-native-117/repair/result.json"
+        "hair_evidence": ".local/play-session-20261008/user-native-118/repair/hair-isolation-registration.json",
+        "remaining": "Ordinary standing/walking foot-ground visual acceptance; per-outfit core compatibility; exact hair146 and Kasumi root cause, adaptation and retest",
+        "result_evidence": ".local/play-session-20261008/user-native-118/repair/result.json",
+        "body_outfit_review": ".local/play-session-20261008/user-native-118/repair/body-outfit-binding-review.json",
+        "latest_crash": ".local/play-session-20261008/user-native-117/repair/hair-crash-analysis.json"
       },
       "observation_status": "STOPPED_EXPLICIT_LATEST_USER_REQUEST",
       "observation_stop_evidence": ".local/play-session-20261008/user-play-observation-20261011/observation-stop-20261011.json",
-      "recording_evidence": ".local/play-session-20261008/recording-session/user-native117-recorder-resume.json"
+      "recording_evidence": ".local/play-session-20261008/recording-session/user-native118-recorder-resume.json",
+      "latest_repair_result": ".local/play-session-20261008/user-native-118/repair/result.json",
+      "current_visual": "NATIVE_MAIN_MENU_AND_NONZERO_GAME_AUDIO_VERIFIED; blackstartupwasloading; nofullstabilityclaim"
     },
     "resume_source": "Latest user: 你继续测试吧，我不玩了。把这个任务窗口交给你。先把功能性的模块测试完。",
     "resumed_at": "2026-10-10T17:27:32.358381+00:00",
