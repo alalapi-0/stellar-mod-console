@@ -1513,7 +1513,7 @@
       "execution_change_percentage_points": 0,
       "evidence_change_percentage_points": 0,
       "remaining_rounds_confidence": "UNKNOWN",
-      "scope_change": "Latest user restores six XXTB wardrobe units, installs six nativeCNS archives/seven entries plus three independent native outfit replacers and optional XXTB texture; unlocks44 existing accessory entries. Existing accepted results stay historical to their version/scope, new/current geometry NOT_TESTED. Broad tests paused.",
+      "scope_change": "Latest bounded input repair adds11nonoverlapping native outfit options+Common, fixes duplicated modifier binds, and records representative costume/accessory/Doro/dance/movement checks. Original global acceptance denominator and historical fulloutfit0 retained; broad tests remainpaused.",
       "milestone_change": "Boundedrepairclosedearly; noGoaltaskroundincrement. Native fourfunctions reaccepted from52→56. Newper-modelpersistencerestoredwith neutraldefaults; allgarmentsvisualpending.",
       "scope_change_percentage_points": -0.63,
       "round_start_commit": "509ecfb454af5c2adb3ad0062c6f1746cd4724c3",
@@ -1854,8 +1854,8 @@
       "newly_defined_function_items": 0,
       "latest_scope_extension": "No new PASS or test round. Single-body selection changes current baseline applicability; known56/253 functions and56/81core retained as historical scoped metrics. Added/restored wardrobe plus current hair/face/weapon scopes need parent/variant reconciliation; overall denominator UNKNOWN."
     },
-    "next_action": "Native128 menu startup and soleEve/Jiggle/Doro/audio/helper initialization verified; observer stopped. Wait for user manual Continue/CNS wardrobe visual check or a new bounded input grant to verify11 CNS registrations, clipping, audible dance and YoRHa DLC mount. Broad tests/Goal/development/player observation remain PAUSED; no repeated install.",
-    "updated_at": "2026-10-11T10:18:23.689375+00:00",
+    "next_action": "Current onehour repair/install delivered with representative live checks. Broad tests/Goal/development remain PAUSED. Remaining: per-outfit dynamic geometry and11native replacement visuals, DLC dependencies, automatic Jiggle reacquisition afterdance, realenemy combat. Use latest local guide and exact current segment identity.",
+    "updated_at": "2026-10-11T11:18:30.134404+00:00",
     "blocked_audit": {
       "native_goal_status": "paused",
       "consecutive_goal_turns": 0,
@@ -1910,7 +1910,7 @@
         "NEXT CHECKPOINT": "A newly registered diagnostic candidate yields an identifiable operation result; subsequent health checks obey75000-token/30-active-minute cooldown and require a listed trigger"
       }
     },
-    "round_closure_at": "2026-10-11T04:50:36.531097+00:00",
+    "round_closure_at": "2026-10-11T11:18:30.134404+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 12,
       "new_confirmed_this_round": 0,
@@ -2005,16 +2005,16 @@
         "game_start_ticks": "28828935"
       }
     },
-    "current_segment": "user-native-128",
+    "current_segment": "user-native-129",
     "previous_goal_turn_classification": "INTERRUPTED_BY_USER_PAUSE_NO_NEW_RUNTIME_ACCEPTANCE",
     "execution_status": "PAUSED_BY_USER",
     "pause_at": "2026-10-11T04:42:58.883433+00:00",
     "pause_source": "User pauses tests, requests manual native gameplay with enabled playset, local learning records and new conversation continuation",
     "user_play_handoff": {
-      "status": "NATIVE128_MENU_STARTED_INITIALIZATION_VERIFIED_VISUAL_PENDING",
-      "segment": "user-native-128",
+      "status": "NATIVE129_WORLD_REPAIR_DELIVERED_REPRESENTATIVE_CHECKS",
+      "segment": "user-native-129",
       "playset_evidence": ".local/play-session-20261008/user-native-115/playset-registration.json",
-      "launch_evidence": ".local/play-session-20261008/user-native-128/startup-result.json",
+      "launch_evidence": ".local/play-session-20261008/user-native-129/startup-result.json",
       "trash_evidence": ".local/play-session-20261008/user-native-115/trash-receipt.json",
       "input_owner": "USER_OR_ENABLED_MOD_AUTO",
       "automatic_relaunch": false,
@@ -2071,11 +2071,11 @@
         "acceptance_credit": 4
       },
       "body_binding_instructions": ".local/play-session-20261008/FUNCTIONAL_MOD_KEYS_20261011.md",
-      "control_returned_at": "2026-10-11T07:17:32.728463+00:00",
-      "game_current": "LIVE_NATIVE128_MENU_USER_INPUT_PENDING",
-      "current_repair_evidence": ".local/play-session-20261008/user-native-128/repair/startup-validation.json",
+      "control_returned_at": "2026-10-11T11:18:30.134404+00:00",
+      "game_current": "LIVE_NATIVE129_WORLD_REPAIR_FINISHED_LIMITED_ACCEPTANCE",
+      "current_repair_evidence": ".local/play-session-20261008/user-native-129/repair/repair-final-validation.json",
       "active_body_controller": "EveProportions+Tuner/F9 only; UUEPBS intact outside loader",
-      "clipping_result": "PARAMETERS_NEUTRAL_SECOND_POSE_WRITER_ISOLATED; current visual clipping root cause UNKNOWN, pending user visual check"
+      "clipping_result": "Neutral representative costumes displayed; full dynamic geometry unverified. Sole Eve+Tuner active, UUEPBS retained inactive."
     },
     "resume_source": "Latest user: 你继续测试吧，我不玩了。把这个任务窗口交给你。先把功能性的模块测试完。",
     "resumed_at": "2026-10-10T17:27:32.358381+00:00",
@@ -2166,13 +2166,13 @@
       }
     },
     "user_play_repairs": {
-      "at": "2026-10-11T10:18:23.689375+00:00",
-      "status": "MENU_STARTUP_VERIFIED_RUNTIME_WARDROBE_AND_VISUAL_PENDING",
+      "at": "2026-10-11T11:16:21.583212+00:00",
+      "status": "AUTHORIZED_LOCAL_REPAIR_INSTALLED_REPRESENTATIVE_RUNTIME_VERIFIED_LIMITATIONS_RETAINED",
       "lane": "DIRECT",
       "native_goal": "NONE_ACTIVE_tool_verified; broad tests PAUSED_BY_USER",
-      "control": "NativeSteam launch and exact new process/window identity verified; no keyboard/mouse sent. Read-only startup observation stopped. Saves not copied/written/rolled back by agent.",
+      "control": "Onehour all keyboard/mouse/MOD/combat direct grant; exactPID guarded native input. Realprogress saves not copied/written/rolled back by agent.",
       "previous_repair_evidence": "user-native-127/repair/startup-validation.json",
-      "current_evidence": ".local/play-session-20261008/user-native-128/repair/wardrobe-expansion/install-plan.json",
+      "current_evidence": ".local/play-session-20261008/user-native-129/repair/repair-final-validation.json",
       "restored_XXTB_units": [
         "collection:Mod2421",
         "collection:Mod74",
@@ -2186,43 +2186,43 @@
           "id": "belly_cns_632",
           "name": "Belly Dance Outfit",
           "requirement": "None",
-          "status": "NOT_TESTED"
+          "status": "SCANNED_VISUAL_NOT_TESTED_REQUIREMENTS_RETAINED"
         },
         {
           "id": "belly2_cns_626",
           "name": "Belly Dance Outfit2",
           "requirement": "NikkeDLC",
-          "status": "NOT_TESTED"
+          "status": "SCANNED_VISUAL_NOT_TESTED_REQUIREMENTS_RETAINED"
         },
         {
           "id": "Hushifu_Ahuang",
           "name": "Hushifu_Ahuang",
           "requirement": "None",
-          "status": "NOT_TESTED"
+          "status": "SCANNED_VISUAL_NOT_TESTED_REQUIREMENTS_RETAINED"
         },
         {
           "id": "Blackfull_cns_713",
           "name": "Black full topless",
           "requirement": "None",
-          "status": "NOT_TESTED"
+          "status": "SCANNED_AND_EQUIPPED_VISUAL_REPRESENTATIVE_ONLY"
         },
         {
           "id": "Blackfullshort_cns_713",
           "name": "Black full short topless",
           "requirement": "None",
-          "status": "NOT_TESTED"
+          "status": "SCANNED_AND_EQUIPPED_VISUAL_REPRESENTATIVE_ONLY"
         },
         {
           "id": "Bodystocking_706",
           "name": "Bodystocking",
           "requirement": "None",
-          "status": "NOT_TESTED"
+          "status": "SCANNED_AND_EQUIPPED_VISUAL_REPRESENTATIVE_ONLY"
         },
         {
           "id": "Royalguard_cns_701",
           "name": "Royalguard",
           "requirement": "None",
-          "status": "NOT_TESTED"
+          "status": "SCANNED_AND_EQUIPPED_VISUAL_REPRESENTATIVE_ONLY"
         }
       ],
       "new_native_outfit_replacers": [
@@ -2269,20 +2269,80 @@
       },
       "background_observer": "STOPPED; existing recorder independent owner unchanged",
       "game_and_recording_quality_changed": false,
-      "native_startup_evidence": ".local/play-session-20261008/user-native-128/repair/startup-validation.json",
+      "native_startup_evidence": ".local/play-session-20261008/user-native-129/startup-result.json",
       "current_root": "01a12a72-1d28-73c1-bedc-77a0f48858a2",
       "startup_verification": {
         "native_menu": "VISUAL_CONFIRMED_3440x1440",
         "installed_hashes": "65/65 PASS",
         "CNS_JSON": "11/11 PASS",
-        "CNS_runtime_registration": "NOT_OBSERVED_AT_MENU",
+        "CNS_runtime_registration": "11/11_CONFIGS_SCANNED_IN_WORLD",
         "Eve_Tuner_unique_Jiggle_Doro_DanceBGMBridge": "INITIALIZED",
         "UUEPBS": "NO_LOAD_RECORD_AND_OUTSIDE_LOADER",
-        "SBParry": "EXISTING_AUTO_CONFIG_RUNNING_HIDDEN; functional acceptance NOT_RUN",
+        "SBParry": "EXISTING_AUTO_CONFIG_RUNNING_HIDDEN; actualenemycombat UNVERIFIED",
         "observer": "STOPPED_EXIT0_211_SECONDS",
         "fatal_or_new_crash": "NONE_OBSERVED",
         "acceptance_credit": 0
-      }
+      },
+      "current_control_window": {
+        "source": "Direct user one hour mouse grant, then all keyboard/MOD shortcuts and combat input, direct proven conflict repair, final report and MOD usage guide",
+        "deadline_utc": "2026-10-11T11:20:35+00:00",
+        "evidence": ".local/play-session-20261008/user-native-129/repair/control-window.json",
+        "scope": "Current registered game input and previously discussed install/current compatibility repair; no Goal or continuous observer resume",
+        "state": "RELEASED",
+        "released_at": "2026-10-11T11:18:30.134404+00:00"
+      },
+      "compatible_659_install": {
+        "outfit_options": 11,
+        "shared_units": 1,
+        "containers": 12,
+        "files": 36,
+        "integrity": "12/12nativeSHA1and36/36filehashPASS",
+        "selection": [
+          "Comfort_Force",
+          "Cybernetic_Dress",
+          "Cybernetic_Suit",
+          "Daily_Force",
+          "Default_V2_Wingless",
+          "Default_V3_Wingless",
+          "Keyhole_Dress",
+          "Orca_Exploration",
+          "Orca_Pathfinder",
+          "Stargazer",
+          "War_Suit"
+        ],
+        "excluded_conflicts": [
+          "Default_Wingless",
+          "Keyhole_Suit",
+          "Kunoichi_Black",
+          "Kunoichi_White",
+          "War_Dress"
+        ],
+        "visual_all": "UNVERIFIED",
+        "evidence": ".local/play-session-20261008/user-native-128/repair/compatible-install-plan.json"
+      },
+      "key_conflict_repair": {
+        "jiggle_step": "Alt+Left/Right",
+        "tuner_coarse": "Shift+Left/Right",
+        "runtime": "REPRODUCED_BEFORE_AND_INDEPENDENT_AFTER_RESTART_PASS",
+        "evidence": ".local/play-session-20261008/user-native-129/repair/key-remap-validation.json"
+      },
+      "representative_visuals": [
+        "Royalguard",
+        "Black full topless",
+        "Black full short topless",
+        "Bodystocking",
+        "XXTB Wuchang",
+        "SBPR BlackFullDress plus independent Ears/Hair/Face"
+      ],
+      "functional_control_checks": {
+        "Doro": "SUMMON_FOLLOW_DISMISS_VERIFIED",
+        "dance": "PLAY_STOP_VERIFIED_BGM_DUCK_RESTORE_LOGGED_AUDIBLE_UNVERIFIED",
+        "dance_camera": "OFF_AFTER_OBSERVED_WALL_INTERSECTION",
+        "jiggle_afterdance": "F1_RESTORED_ACTIVE27nodes338writes0fail_AUTOMATIC_RECOVERY_UNRESOLVED",
+        "movement": "VISUAL_PASS",
+        "enemycombat": "UNVERIFIED"
+      },
+      "usage_guide": ".local/play-session-20261008/FUNCTIONAL_MOD_KEYS_20261011.md"
     },
     "active_body_control_selection": {
       "active": "EveProportions + Tuner (formerF4,currentF9)",
