@@ -1463,13 +1463,39 @@
         "requested_outcome": "True clothing on Ultimate body; per-outfit parameter copying alone insufficient",
         "target": "Nano Suit CNS / Repacked Mod2724 / Nexus2724, four variants",
         "package_evidence": ".local/play-session-20261008/user-native-125/repair/nano-suit-package-review.json",
-        "prerequisites": "Geometry/section separation and editable licensed source/cooking workflow unknown; no deployment/compatibility acceptance"
+        "prerequisites": "Geometry/section separation and editable licensed source/cooking workflow unknown; no deployment/compatibility acceptance",
+        "latest_user_disposition": "Historical full-layer target retained for reference; current user prioritizes reset and SBPR wardrobe/accessory coexistence; no full refit started"
+      },
+      "preferred_body_favourite_scope": {
+        "status": "DEFERRED_TO_FUTURE_TEST_USER_BODY_RESET_APPLIED",
+        "evidence": ".local/play-session-20261008/user-native-125/repair/favourite-adaptation-scope.json",
+        "preferred_bodies": [
+          "Ultimate Nude Eve",
+          "XS Sporty skin detail"
+        ],
+        "favourite_count": 9,
+        "other_favourite_entries": 7,
+        "all_declared_type": "Body",
+        "requested_behavior": "True clothes over selected preferred body, parameters independently adjustable without cross-outfit spillover",
+        "xs_mechanism": "Converted Body includes normal map and body dependency, not a standalone texture layer",
+        "current_bug_status": "BODY_DEFAULTS_RESET_WEAPON_REPLACEMENTS_REMOVED_VISUAL_COMPATIBILITY_NOT_ACCEPTED",
+        "acceptance_credit": 0,
+        "at": "2026-10-11T08:33:08.500867+00:00",
+        "latest_user_scope": "SBPR wardrobe/accessory coexistence is latest main target; full Ultimate/XS refit not required today",
+        "latest_evidence": ".local/play-session-20261008/user-native-127/repair/sbpr-coexistence-review.json"
+      },
+      "sbpr_coexistence": {
+        "status": "INSTALLED_SELECTIONS_IDENTIFIED_RUNTIME_COMBINATION_REQUIRES_TEST",
+        "source": "Current user Nexus1032 clarification",
+        "evidence": ".local/play-session-20261008/user-native-127/repair/sbpr-coexistence-review.json",
+        "route": "One SBPR Body plus independent accessory slots; two Body selections remain exclusive",
+        "acceptance_credit": 0
       }
     },
     "progress": {
       "effective_accepted": 56,
-      "completion_percent": 22.76,
-      "reason": "56/246 identifiedfunctions and56/81core.4currentchangedTunerfunctions native reaccepted; originalunboundoutfitfallback remainsPARTIAL. HistoricalPASS evidence retained.88remainingclothing0accepted; overalldenominatorUNKNOWN.",
+      "completion_percent": 22.13,
+      "reason": "56/253 currently identifiedfunctions and56/81core; new Doro/audio items initialize only, no added acceptance. Broad tests PAUSED; full clothing validation remains0; overall denominatorUNKNOWN.",
       "round_key": "core-uue-native-axis-translation-rotation-regression",
       "round_status": "CLOSED_INTERRUPTED_BY_USER",
       "remaining_rounds": "UNKNOWN",
@@ -1478,7 +1504,7 @@
       "effective_mod_accepted": null,
       "effective_mod_required": null,
       "effective_mod_percent": null,
-      "scope_increment": "No new MODs;11 explicit user exclusions preserved in history, reducing current identified-function denominator1 and clothes/appearance10",
+      "scope_increment": "Doro3.0 six declared features and owned dance BGM duck/restore one capability added NOT_TESTED; SBPR already installed adds no duplicate units; weapon variant exclusion requires parent manifest reconciliation",
       "count": 22,
       "coverage": "since_baseline",
       "last_seq": 22,
@@ -1489,12 +1515,12 @@
       "remaining_rounds_confidence": "UNKNOWN",
       "scope_change": "User excludes6XXTB Eve outfit units,4verifiedCNSdeclared-failureunits and1EffectTableconflictingfunction.139originalinventory retained; allhistoricalevidencepreserved. NewNPCrestore for userplay is not acceptance.",
       "milestone_change": "Boundedrepairclosedearly; noGoaltaskroundincrement. Native fourfunctions reaccepted from52→56. Newper-modelpersistencerestoredwith neutraldefaults; allgarmentsvisualpending.",
-      "scope_change_percentage_points": 0.0938,
+      "scope_change_percentage_points": -0.63,
       "round_start_commit": "509ecfb454af5c2adb3ad0062c6f1746cd4724c3",
       "completion_scope": "IDENTIFIED_FUNCTION_CAPABILITIES_ONLY_PENDING_SCOPE_NOT_WHOLE_PROJECT",
       "effective_function_accepted": 56,
-      "effective_function_required": 246,
-      "effective_function_percent": 22.76,
+      "effective_function_required": 253,
+      "effective_function_percent": 22.13,
       "effective_mod_metric_status": "RETIRED_INVENTORY_METRIC_USE_FUNCTION_CAPABILITIES_AND_SEPARATE_CLOTHING",
       "legacy_mod_acceptance_before_metric_change": {
         "accepted": 0,
@@ -1502,8 +1528,8 @@
         "percent": 0
       },
       "functional_accounting": {
-        "scope_version": "functional-capabilities-v4-user-exclusions",
-        "at": "2026-10-11T07:22:26.078959+00:00",
+        "scope_version": "functional-capabilities-v5-userplay-doro-audio",
+        "at": "2026-10-11T09:16:20.176415+00:00",
         "rule": "Each independently verifiable capability is one equal-weight unit, with stable ID,version,status,evidence. Count child functions instead of parent MOD, never both. Clothes remain separate complete-MOD tests. Static newly defined supplemental items stay NOT_TESTED; pending surfaces are explicit and no complete overall percentage is fabricated.",
         "core_functions": {
           "accepted": 56,
@@ -1566,9 +1592,9 @@
         },
         "inventory_mod_units": 139,
         "other_functional_scope": {
-          "retained_mod_units": 30,
-          "identified_mod_units": 27,
-          "known_required_functions": 165,
+          "retained_mod_units": 32,
+          "identified_mod_units": 29,
+          "known_required_functions": 172,
           "accepted": 0,
           "status": "PARTIALLY_DEFINED_PENDING_RUNTIME_AND_COMPILED_SURFACES",
           "by_mod": {
@@ -1679,6 +1705,14 @@
             "lua:FOVControl": {
               "accepted": 0,
               "required": 8
+            },
+            "logic:Doro": {
+              "accepted": 0,
+              "required": 6
+            },
+            "lua:DanceBGMBridge": {
+              "accepted": 0,
+              "required": 1
             }
           },
           "unidentified_mod_units": [
@@ -1697,14 +1731,14 @@
           "accepted": 0
         },
         "whole_project_percent": null,
-        "whole_project_reason": "139 original mixed MOD inventory retained;11 explicit user exclusions.81core+165supplemental identified capabilities,88remainingclothing/appearance.3unknownsurfaces and further compiled options retained; full overall denominator/percentageUNKNOWN.",
+        "whole_project_reason": "Original139 mixed inventory retained; user exclusions/history preserved.81core+172identifiedsupplemental functions; remaining clothing/hair/face scope and weapon removal need manifest reconciliation; full overall denominator UNKNOWN.",
         "missing_gates": "Human enlarged naturalness, actual damage effects, auto JustEvade/Repulse/QTE and remaining controls, current long-run/input stability, T5 stable combination, then all clothing retests",
         "state_authority": "PROJECT_STATE.json.mod_compatibility_restructure",
         "identified_functions": {
           "accepted": 56,
-          "required": 246,
-          "percent": 22.76,
-          "scope": "246 identifiedcapabilities;56accepted underrespectiveversion/scope; overalldenominatorUNKNOWN",
+          "required": 253,
+          "percent": 22.13,
+          "scope": "253 currently identified capabilities; 56 accepted in their version/scope; overall denominator UNKNOWN",
           "unidentified_scope_retained": true
         },
         "whole_project_required": null,
@@ -1745,15 +1779,66 @@
         ],
         "current_repair_pending": [
           "component:EveProportionsTuner/outfit-defaults"
+        ],
+        "incremental_userplay_units": [
+          {
+            "id": "logic:Doro:summon",
+            "version": "3.0",
+            "status": "NOT_TESTED",
+            "evidence": ".local/play-session-20261008/user-native-127/repair/startup-validation.json",
+            "initialization_only": true
+          },
+          {
+            "id": "logic:Doro:recall",
+            "version": "3.0",
+            "status": "NOT_TESTED",
+            "evidence": ".local/play-session-20261008/user-native-127/repair/startup-validation.json",
+            "initialization_only": true
+          },
+          {
+            "id": "logic:Doro:follow",
+            "version": "3.0",
+            "status": "NOT_TESTED",
+            "evidence": ".local/play-session-20261008/user-native-127/repair/startup-validation.json",
+            "initialization_only": true
+          },
+          {
+            "id": "logic:Doro:silent_summon",
+            "version": "3.0",
+            "status": "NOT_TESTED",
+            "evidence": ".local/play-session-20261008/user-native-127/repair/startup-validation.json",
+            "initialization_only": true
+          },
+          {
+            "id": "logic:Doro:footsteps",
+            "version": "3.0",
+            "status": "NOT_TESTED",
+            "evidence": ".local/play-session-20261008/user-native-127/repair/startup-validation.json",
+            "initialization_only": true
+          },
+          {
+            "id": "logic:Doro:summon_smoke",
+            "version": "3.0",
+            "status": "NOT_TESTED",
+            "evidence": ".local/play-session-20261008/user-native-127/repair/startup-validation.json",
+            "initialization_only": true
+          },
+          {
+            "id": "lua:DanceBGMBridge:dance_bgm_duck_and_restore",
+            "version": "local1",
+            "status": "NOT_TESTED",
+            "evidence": ".local/play-session-20261008/user-native-127/repair/startup-validation.json",
+            "initialization_only": true
+          }
         ]
       },
       "new_function_evidence_this_round": [],
       "window": [],
       "newly_defined_function_items": 0,
-      "latest_scope_extension": "Futurehair variants and21EVEFace/Expression gates queued bylatestuser; originalinventoryretained. Currentboundedbodyrepair reaccepts4changedfunctions,56/246accepted; finalwholeprojectdenominatorUNKNOWN."
+      "latest_scope_extension": "Current userplay repair adds Doro6 declared capabilities and danceBGM1 capability NOT_TESTED.56/253identifiedfunctions accepted,56/81core; noGoaltaskround or newPASS. SBPR accessory coexistence futuretarget; weapon parent/variant exclusions pending manifest reconciliation. Overall denominatorUNKNOWN."
     },
-    "next_action": "BroadGoal/tests stayPAUSED. Current125 usernativegame leftopen, controlreturned07:17:32UTC, bodydefaultsneutral, F9menusclosed andSBParryexistingtoolrunning1. Boundedsave/bind/unbind/2meshrestore/coldrestorePASS. Awaituserplay/newtaskauthorization; unboundoriginalexactswitch/allgarmentvisual/footground/hair causes stillpending. Noautomaticinputs/restart/repair.",
-    "updated_at": "2026-10-11T08:22:55.826828+00:00",
+    "next_action": "Broad tests and formal console remainPAUSED. User plays native127, current identity from registration/startup only. Body values reset, customweapon replacements removed, Doro3.0 and localdanceBGM bridge initialized; await user summon/follow and play-stop sound confirmation. Bounded startup observer is stopped; do not sendinput/load/test, restart ongoing monitoring or claim allclothes/physics compatible. Future user-authorized test resumes core-first and incorporates SBPR/accessory coexistence plus new7functions with parent/variant exclusion reconciliation.",
+    "updated_at": "2026-10-11T09:19:17.161860+00:00",
     "blocked_audit": {
       "native_goal_status": "paused",
       "consecutive_goal_turns": 0,
@@ -1903,7 +1988,7 @@
         "game_start_ticks": "28828935"
       }
     },
-    "current_segment": "user-native-125",
+    "current_segment": "user-native-127",
     "previous_goal_turn_classification": "INTERRUPTED_BY_USER_PAUSE_NO_NEW_RUNTIME_ACCEPTANCE",
     "execution_status": "PAUSED_BY_USER",
     "pause_at": "2026-10-11T04:42:58.883433+00:00",
@@ -2064,6 +2149,48 @@
         "evidence": "recording-session/core111-recorder-resume.json",
         "game_render_fps": "NOT_MEASURED"
       }
+    },
+    "user_play_repairs": {
+      "at": "2026-10-11T09:16:20.176415+00:00",
+      "status": "BODY_RESET_WEAPONS_REMOVED_DORO_AUDIO_BRIDGE_INITIALIZED_USER_CHECK_PENDING",
+      "lane": "DIRECT",
+      "native_goal": "PAUSED",
+      "control": "USER_ONLY_NO_NEW_KEYBOARD_MOUSE_TAKEOVER",
+      "body_default_reset": {
+        "evidence": ".local/play-session-20261008/user-native-125/repair/default-reset/registration.json",
+        "Tuner": "12 scales1;2 offsets0; saved outfit profiles neutral",
+        "CNS": "11 ShapeKeys across2 supported models reset to author defaults0",
+        "UUEPBS": "lastsession bones empty",
+        "preserved": "Named presets,favourites,Jiggle,non-weapon selections,actual game progress"
+      },
+      "weapon_removal": {
+        "scope": "11 custom weapon-only AiK selection directories and one back-holster skeleton modifier",
+        "files": 47,
+        "disposition": "RECOVERABLY_REMOVED_FROM_GAME_SCAN_PATHS",
+        "evidence": ".local/play-session-20261008/user-native-125/repair/default-reset/registration.json",
+        "core_combat_removed": false
+      },
+      "Doro": {
+        "version": "3.0",
+        "status": "OFFICIAL_PACKAGE_HASH_VERIFIED_ACTOR_LOADED",
+        "evidence": ".local/play-session-20261008/user-native-126/repair/doro3.0/registration.json",
+        "runtime_follow_summon_acceptance": "PENDING_USER",
+        "keys": "6 summon/recall;hold2s silent;closeF9Tunerpanel first",
+        "loader": "Existing selected loader preserved; actual BPModLoader actor load seen, no broad loader compatibility claim"
+      },
+      "dance_BGM": {
+        "status": "LOCAL_BRIDGE_INSTALLED_INITIALIZED_AUDIBLE_ACCEPTANCE_PENDING",
+        "evidence": ".local/play-session-20261008/user-native-126/repair/dance-bgm-registration.json",
+        "mechanism": "One owned BGMMute push only while verified Van cue AudioComponent actually playing; owned pop on stop/error/map pre; never savevolume or clearothermixes",
+        "checks": "Syntax and owned-mix lifecycle simulation PASS; runtime READY; sound result pending",
+        "asset_modification": false
+      },
+      "startup_evidence": ".local/play-session-20261008/user-native-127/repair/startup-validation.json",
+      "new_crash_count": 0,
+      "foot_ground_and_full_clothing_geometry": "REQUIRES_RETEST_NOT_ACCEPTED",
+      "game_and_recording_quality_changed": false,
+      "background_observer": "INACTIVE_BOUNDED_STARTUP_COMPLETE_NO_RENEWAL",
+      "result_evidence": ".local/play-session-20261008/user-native-127/repair/result.json"
     }
   }
 }
