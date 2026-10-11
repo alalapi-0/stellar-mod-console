@@ -1433,9 +1433,10 @@
     "next_action": "Await large-body humanvisual; independently finish candidate/control diagnostics under coregate, keep normaloriginal preset asdefault, same gamequality and userrecordingprofile",
     "updated_at": "2026-10-11T00:15:53.120966+00:00",
     "blocked_audit": {
-      "status": "NOT_BLOCKED",
-      "consecutive_blocked_goal_turns": 0,
-      "reason": "Meaningful new runtime/coldretention/nativehealing evidence; humanvisual gatepending but independent currentcandidate/auto-control diagnosis remains"
+      "native_goal_status": "active",
+      "consecutive_goal_turns": 0,
+      "condition": null,
+      "cleared_by": "Round15 actuallargecombo/outfit/coldretention/nativehealing progress; humanlargevisualpending, independentdiagnosis remains"
     },
     "user_exit_authorization": {
       "source": "Direct user: 没保存也没关系，允许放弃未保存进度并正常退出。正常重启人物; followed by 重启任务",
@@ -1524,7 +1525,7 @@
         "source_seams_confirmed_by_independent_owner": true,
         "cause": "UNKNOWN X11 drawable capture versus presentation",
         "scope": "Focused3s during rapid upward camera motion; no codec decode error; not physics naturalness acceptance",
-        "current_capture": "Exact109 singlecapture restored by existing owner with isolatedgameaudio; current ffmpeg shape3440x1440@60 RGB+FLAC unchanged. Prior gaps retained; horizontal seam cause stillunknown.",
+        "current_capture": "Historical109 audio-restoration checkpoint23:36UTC: single3440x1440@60 RGB+FLAC restored. Later userrequestin recordingchat changes debugcapture to720p30 inRound15; prior gaps and seams retained.",
         "quality_unchanged": true
       },
       "round15": {
@@ -1537,7 +1538,7 @@
     },
     "current_segment": "core-functional-110",
     "previous_goal_turn_classification": "ROUND15_CHANGED_TIMER_LARGE_COMBO_RUNTIME_RETENTION_HEALING_PASS_BOUNDED_HUMAN_VISUAL_PENDING",
-    "execution_status": "ACTIVE",
+    "execution_status": "IN_PROGRESS",
     "pause_at": "2026-10-10T12:03:10.167690+00:00",
     "pause_source": "Direct user pauses actual tests, requests normal game exit and verified playset handoff to user with separate read-only observation session",
     "user_play_handoff": {
@@ -1590,7 +1591,7 @@
       "at_utc": "2026-10-10T22:14:19.883200+00:00",
       "status": "MEASURED_OFFLINE_CONCURRENT_GAME_LOAD_UNKNOWN",
       "scope": "Read-only local resource/capture diagnostic; no MOD acceptance or round-count change",
-      "current_game_and_capture": "GAME109_AND_ISOLATED_SINGLE_CAPTURE_RUNNING",
+      "current_game_and_capture": "GAME110_SINGLE_CAPTURE_RUNNING_USER_AUTHORIZED_DEBUG720P30",
       "idle_sample": {
         "gpu_percent": 0,
         "vram_used_mib": 18,
@@ -1640,7 +1641,17 @@
         "core105-recording-cpu-diagnostic-20261011",
         "core105-capture-owner-readonly-receipt-20261011"
       ],
-      "user_clarification": "Performance symptom not confirmed by user; prior wording was input/panel nonresponse. Preserve game and capture quality/resolution/FPS."
+      "user_clarification": "Performance symptom not confirmed by user; prior wording was input/panel nonresponse. Preserve game and capture quality/resolution/FPS.",
+      "round15_live_sample": {
+        "evidence": "core-functional-109/round15-large-combination/render-resource-sample.json",
+        "scope": "One read-only live sample; not peak/longitudinal performance acceptance",
+        "gpu_utilization_percent": 6,
+        "gpu_vram_used_mib": 8008,
+        "gpu_vram_total_mib": 16303,
+        "memory_available_mib": 27075,
+        "saturation": "NOT_DEMONSTRATED",
+        "game_render_fps": "NOT_MEASURED"
+      }
     }
   }
 }
