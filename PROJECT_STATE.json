@@ -1186,10 +1186,11 @@
           "goal-restructure-20261010/EvePanel-nudge-diagnostic-result.json",
           "goal-restructure-20261010/body-pair-result.json",
           "goal-restructure-20261010/p0-body-profile-result.json",
-          "core-functional-111/functional-round17-result.json"
+          "core-functional-111/functional-round17-result.json",
+          "core-functional-111/functional-round18-result.json"
         ],
         "accepted_scope": "Selected P0 profile only: UUE controlled Spine1.097 + Eve main + Tuner Size1.1; original red/green outfits; physics/combat/full outfit compatibility NOT_TESTED",
-        "blocker": "Human14combined-large naturalness stillpending; all14values/13bodyphysics samples/2nativefinisher/Beta1/Qheal/15sorbit/normalexactrestore nowverified. Sourcehorizontaltears causeUNKNOWN; nofullcore acceptance.",
+        "blocker": "Human enlarged naturalness, actual damage effects, auto JustEvade/Repulse/QTE and remaining controls, current long-run/input stability, T5 stable combination, then all clothing retests",
         "prior_selected_normal_scope_status": "PASS",
         "acceptance_extension": "User requires enlarged individual and combined dimensions under movement/outfit/combat/restart, not covered by earlier normal scoped PASS",
         "extended_parameter_regression": {
@@ -1219,8 +1220,8 @@
             "checks": "11checkpoints40finitebodynodes/sixactivefiniteSpringBones; actualBeta1/light/finisher/contact/manualguard/manualJustEvade/respawn; nofullnaturalness/stabilityproof"
           }
         },
-        "next": "Await existinglarge humanvisual. Independently regress candidate/enlargednativecombat and camera on documentedroute; keep originalnormaldefault and existinggame/capturequality.",
-        "latest_evidence": "core-functional-111/functional-round17-result.json",
+        "next": "Complete native skill/resource and lock/input eligibility diagnostics at safe camp; prove remaining automatic evade/QTE and large combo without repeating failed low-HP retreat. Keep current resolution/recorder profile and normal body; await existing large visual acceptance.",
+        "latest_evidence": "core-functional-111/functional-round18-result.json",
         "prior_normal_mechanisms": "Earliernormalprofilelivewrites/preset/outfit/physics evidence retained; fullpanel lifecycle notaccepted afternewfailure",
         "panel_timer_regression": {
           "status": "PASS_BOUNDED",
@@ -1258,7 +1259,7 @@
         "id": "T3",
         "status": "IN_PROGRESS",
         "acceptance": "Body+user core physics real standing/walk/run/jump/combat/restart success",
-        "next": "Await existinglarge humanvisual. Independently regress candidate/enlargednativecombat and camera on documentedroute; keep originalnormaldefault and existinggame/capturequality.",
+        "next": "Complete native skill/resource and lock/input eligibility diagnostics at safe camp; prove remaining automatic evade/QTE and large combo without repeating failed low-HP retreat. Keep current resolution/recorder profile and normal body; await existing large visual acceptance.",
         "findings": "Human91 naturalness PASS plus actual physics/write/motion/outfit/cold original regressions and93 actual enemy contact; no newfatal/crash91–93. Prior diagnostic90 confirmed crash causeUNKNOWN retained.",
         "failure_fingerprint": "core90/P0selected+JG3.1.0/preset-stage/UE4SS.dll+0x910e80 readAV/probe18",
         "evidence": [
@@ -1268,9 +1269,10 @@
           "core-baseline-91/preset-stage-diagnostic-result.json",
           "core-baseline-92/original-source-p1-result.json",
           "goal-restructure-20261010/p1-selected-profile-result.json",
-          "core-functional-111/functional-round17-result.json"
+          "core-functional-111/functional-round17-result.json",
+          "core-functional-111/functional-round18-result.json"
         ],
-        "blocker": "Human14combined-large naturalness stillpending; all14values/13bodyphysics samples/2nativefinisher/Beta1/Qheal/15sorbit/normalexactrestore nowverified. Sourcehorizontaltears causeUNKNOWN; nofullcore acceptance.",
+        "blocker": "Human enlarged naturalness, actual damage effects, auto JustEvade/Repulse/QTE and remaining controls, current long-run/input stability, T5 stable combination, then all clothing retests",
         "pending_visual_acceptance": {
           "status": "PASS_HUMAN_CURRENT_GREEN_PROFILE",
           "scope": "Current selected P0+JG only; not all clothes",
@@ -1315,7 +1317,7 @@
             "checks": "11checkpoints40finitebodynodes/sixactivefiniteSpringBones; actualBeta1/light/finisher/contact/manualguard/manualJustEvade/respawn; nofullnaturalness/stabilityproof"
           }
         },
-        "latest_evidence": "core-functional-111/functional-round17-result.json",
+        "latest_evidence": "core-functional-111/functional-round18-result.json",
         "prior_normal_mechanisms": "Earliernormalprofilelivewrites/preset/outfit/physics evidence retained; fullpanel lifecycle notaccepted afternewfailure",
         "panel_timer_regression": {
           "status": "PASS_BOUNDED",
@@ -1353,7 +1355,7 @@
         "id": "T4",
         "status": "WAITING_EXTENDED_P0_P1",
         "acceptance": "Body+physics+user combat actual actions and sustained combat success",
-        "next": "Sourcequalitymotion compare andnativeparking/HallofRecords route progression with differentattacktypes; keepnormaldefault/allautoswitches1; awaitlargevisual.",
+        "next": "Complete native skill/resource and lock/input eligibility diagnostics at safe camp; prove remaining automatic evade/QTE and large combo without repeating failed low-HP retreat. Keep current resolution/recorder profile and normal body; await existing large visual acceptance.",
         "findings": "100 three distinct automaticJustParry confirmed by native steps and video;101 automaticFlashBehindAttack and nativeJustParry290ms retainedHP1.0 with IPD. Incorrect far lock-on produces missed nearby attacker; source conflict not proven. Actual attack integration still missed; localized VK dispatch failed and exactexe/launcher preimages restored. Native Q healing verified. No fresh confirmed game crash99–101. 102 exact engine equipment multiplier1.25 loaded; tooltip unchanged per author. Native keyboard input and200ms hold diagnostics still missed; original restored; real helper keys69/160 verified; new1death/new0crash.",
         "failure_fingerprint": "core102/originalSB0.2.3+IPD+Better/current native keyboard attack and200ms hold both missDefense/holdcandidate exactrestored",
         "evidence": [
@@ -1364,10 +1366,11 @@
           "core-functional-101/ipd-corrected-target-result.json",
           "core-functional-101/vk-dispatch-candidate.json",
           "core-functional-111/functional-round16-result.json",
-          "core-functional-111/functional-round17-result.json"
+          "core-functional-111/functional-round17-result.json",
+          "core-functional-111/functional-round18-result.json"
         ],
-        "blocker": "P0/P1 enlargedhumanvisual gatepending; selectedlargeautoFinisher2/Beta1/JustParry/Qheal actualverified. Otherenemy automaticEvade/QTE andlargeLight1–4/currentlongcombo coverage incomplete.",
-        "latest_evidence": "core-functional-111/functional-round17-result.json",
+        "blocker": "Human enlarged naturalness, actual damage effects, auto JustEvade/Repulse/QTE and remaining controls, current long-run/input stability, T5 stable combination, then all clothing retests",
+        "latest_evidence": "core-functional-111/functional-round18-result.json",
         "prior_work_status": "IN_PROGRESS",
         "large_profile_contact": "109 Barnacle actualBetaChainStab1/light/heavy/evade/nativeJustParry andnative Qhealing;14 body/physics samples. HPmin0.5445→1.0, no death/crash; noverifiedkill orcheckpoint. ManualE intervals retained, AUTO-only inference limited to nativeJustParry outside manualguard intervals.",
         "native_controls_correction": {
@@ -1389,6 +1392,15 @@
           "first_finish1_verified": true,
           "cause_limit": "HOLDdurationdifference supported andcandidateworks; oldmenu/timing contribution notexclusivelyexcluded",
           "large_complete_native_finisher_triggers": 2
+        },
+        "actual_new_round18": {
+          "automatic_blink": "Normal Barnacle Grab; helperauto,evade followed nativeFlashBehind Cast1/Cast2/Hit1/Finish1. No Root E/Shift during trigger; HP0.5445 maintained through action.",
+          "different_enemy_automatic_parry": "ClriketB TraceAttackRight2 actual native JustParry; no Root manual E in observation.",
+          "normal_light_combo": "Normal Light1..4 Cast/Hit/Finish complete in active-clear-barnacle-12.",
+          "normal_beta": "Native Beta1 ChainStab3 hits/Finish and Beta2 ChargeSlash Cast/Hit/Finish observed.",
+          "healing": "Native Q Potion Cast/Hit/Finish and HP0.5445→1; large viewport recovery Potion also complete.",
+          "large": "Current14 values native applied; 40 finite body nodes/six active finite springs at contact. Light1..3 complete, Light4 Cast/Hit only; full large combo not accepted.",
+          "recovery": "Original native preset1 restored; all13 protected hashes exact; current native Gear at camp HP1."
         }
       },
       {
@@ -1426,38 +1438,122 @@
       ]
     },
     "progress": {
-      "effective_accepted": 0,
-      "completion_percent": null,
-      "reason": "Full139MODacceptance0; fourteenlargevalues/13finitebodyphysics samples/twofullautomaticfinisher/Beta1/Qheal/15s120degorbit/normalexactrestore verified. Humanvisual/sourcequality andremainingcombat gates pending.",
-      "round_key": "core-large-body-finisher-candidate-combat-regression",
+      "effective_accepted": 41,
+      "completion_percent": 50.62,
+      "reason": "User explicitly changed progress to independent MOD functions. Verified capability PASS now contributes; full core stability gates remain separate. Whole project percent is unknown until retained other function inventories are split.",
+      "round_key": "core-route-newenemy-and-source-capture-regression",
       "round_status": "CLOSED",
       "remaining_rounds": "UNKNOWN",
       "legacy_denominator": 171,
       "legacy_concluded": 63,
       "effective_mod_accepted": 0,
       "effective_mod_required": 139,
-      "effective_mod_percent": 0,
+      "effective_mod_percent": null,
       "scope_increment": "3 required named body components added to136 historical MOD units; historical denominator171 and results retained",
-      "count": 17,
+      "count": 18,
       "coverage": "since_baseline",
-      "last_seq": 17,
-      "last_key": "core-large-body-finisher-candidate-combat-regression",
+      "last_seq": 18,
+      "last_key": "core-route-newenemy-and-source-capture-regression",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": 0,
       "evidence_change_percentage_points": 0,
       "remaining_rounds_confidence": "UNKNOWN",
-      "scope_change": "No newMODunits;139/historical171/63 retained",
-      "milestone_change": "Large2actualfullfinisher plusBeta1threehits/Finish andQheal0.421→1; nativejump zspan122.97cm, camera119.87deg15s, 13activefinitebodyphysics samples. OneRootnormalUIpatroldeath, new0crash; no game/capturequality orMODsource/helperchanges; normalconfig exactrestored.",
-      "scope_change_percentage_points": 0,
-      "round_start_commit": "f64f80692fb18d8a4a35153c3886318102b664f2"
+      "scope_change": "Authorized whole-MOD→independent-function acceptance semantics. Existing139/171/63 and failed records retained;7 current core MODs split, remaining functional/support units retained for later exact decomposition.",
+      "milestone_change": "Actual new automatic Blink fullnativeaction and ClriketB JustParry; normalLight1–4/Beta2 complete; largeLight4Finish/input/resource gaps retained.2deaths0crashes. Numerical nonzero is scope/evidence recognition, not all new this round.",
+      "scope_change_percentage_points": null,
+      "round_start_commit": "0a4c2ba59f2a3f37ef57ae91ebc5e977e2c36e02",
+      "completion_scope": "CORE_FUNCTIONS_ONLY_NOT_WHOLE_PROJECT",
+      "effective_function_accepted": 41,
+      "effective_function_required": 81,
+      "effective_function_percent": 50.62,
+      "effective_mod_metric_status": "LEGACY_WHOLE_MOD_COUNT_SUPERSEDED;139 inventory retained",
+      "legacy_mod_acceptance_before_metric_change": {
+        "accepted": 0,
+        "required": 139,
+        "percent": 0
+      },
+      "functional_accounting": {
+        "scope_version": "functional-capabilities-v2",
+        "at": "2026-10-11T02:54:20.363815+00:00",
+        "rule": "Each independently verifiable functional capability is one equal-weight unit; a MOD and its child capabilities never both count. Clothes remain one complete MOD unit covering all applicable variants/views/regressions. Repeated samples, key presses, normal/enlarged repeats and native game actions are not new functional units.",
+        "core_functions": {
+          "accepted": 41,
+          "required": 81,
+          "percent": 50.62,
+          "by_mod": {
+            "lua:UUEPBS": {
+              "accepted": 8,
+              "required": 20
+            },
+            "lua:EveProportions": {
+              "accepted": 4,
+              "required": 4
+            },
+            "component:EveProportionsTuner": {
+              "accepted": 20,
+              "required": 26
+            },
+            "lua:JiggleControl": {
+              "accepted": 5,
+              "required": 17
+            },
+            "global:Improved_Perfect_Defense_Default": {
+              "accepted": 1,
+              "required": 2
+            },
+            "global:Better_Equipment_x1_25": {
+              "accepted": 0,
+              "required": 3
+            },
+            "external:SBParry": {
+              "accepted": 3,
+              "required": 9
+            }
+          }
+        },
+        "clothing_and_appearance": {
+          "accepted": 0,
+          "required": 98,
+          "rule": "Includes retained NPC removal/other visual records; no legacy PASS inherits current core acceptance; excluded items are not runtime PASS"
+        },
+        "inventory_classification": {
+          "OTHER_FUNCTIONAL_OR_SUPPORT_REQUIRES_DECOMPOSITION": 31,
+          "CORE_FUNCTIONS": 7,
+          "CLOTHING_OR_APPEARANCE": 98,
+          "SHARED_RESOURCE_DEPENDENCY": 3
+        },
+        "inventory_mod_units": 139,
+        "other_functional_scope": {
+          "retained_mod_units": 31,
+          "status": "REQUIRES_DECOMPOSITION",
+          "accepted": 0
+        },
+        "shared_dependencies": {
+          "retained_mod_units": 3,
+          "accepted": 0
+        },
+        "whole_project_percent": null,
+        "whole_project_reason": "Core functionality now has an evidence-backed finite denominator; other retained inactive/support MOD functions need exact decomposition. Do not label a lower-bound denominator as final overall completion.",
+        "missing_gates": "Human enlarged naturalness, actual damage effects, auto JustEvade/Repulse/QTE and remaining controls, current long-run/input stability, T5 stable combination, then all clothing retests",
+        "state_authority": "PROJECT_STATE.json.mod_compatibility_restructure"
+      },
+      "new_function_evidence_this_round": [
+        "SBParry automatic Blink full action",
+        "ClriketB automatic JustParry regression"
+      ],
+      "window": []
     },
-    "next_action": "Maintain restorednormalpreset and existingfinisher600mscandidate. Boundedscreenshot/presentationmotion compare at unchangedquality; follow verifiedHallofRecords/parkingroute towardnewattacktypes forautoEvade/QTE andlargelight coverage. Humanlarge naturalness remainsgate; noP3.",
-    "updated_at": "2026-10-11T01:48:13.558750+00:00",
+    "next_action": "Complete native skill/resource and lock/input eligibility diagnostics at safe camp; prove remaining automatic evade/QTE and large combo without repeating failed low-HP retreat. Keep current resolution/recorder profile and normal body; await existing large visual acceptance.",
+    "updated_at": "2026-10-11T02:54:20.363815+00:00",
     "blocked_audit": {
       "native_goal_status": "active",
       "consecutive_goal_turns": 0,
       "condition": null,
-      "cleared_by": "Round17 newactualcombinedlarge finisher2/Beta/heal/camera/13physics/defaultrestore; sourcecomparison andremainingattacktypes ready"
+      "cleared_by": "Round18 verified full native automatic Blink/new-enemy JustParry and authorized function accounting; no repeated whole-task no-progress condition",
+      "consecutive_no_progress_turns": 0,
+      "status": "PROGRESS",
+      "evidence": "New complete automatic Blink and different-enemy guard; native full normalcombo/Beta2 and metric scope correction",
+      "next_action": "Complete native skill/resource and lock/input eligibility diagnostics at safe camp; prove remaining automatic evade/QTE and large combo without repeating failed low-HP retreat. Keep current resolution/recorder profile and normal body; await existing large visual acceptance."
     },
     "user_exit_authorization": {
       "source": "Direct user: 没保存也没关系，允许放弃未保存进度并正常退出。正常重启人物; followed by 重启任务",
@@ -1471,12 +1567,12 @@
       "restorable": true,
       "saves_untouched": true,
       "current_segment": "core-functional-111",
-      "result": "NORMAL_DEFAULT_WITH_SCOPED_COMBINED_LARGE_COMBAT_PROOF_FULL_CORE_PENDING",
-      "current_game_state": "LIVE_NATIVE_GEAR_MENU_HP1_ORIGINAL_NORMAL_BODY_EXACT_RESTORED",
+      "result": "NORMAL_DEFAULT_WITH_SCOPED_FUNCTIONS_ACCEPTED_FULL_CORE_PENDING",
+      "current_game_state": "LIVE_NATIVE_GEAR_AT_EXISTING_CAMP_HP1_ORIGINAL_NORMAL_BODY",
       "body_configuration": "UUE Spine1.097 + Eve1.1.0/Tuner currenttimer + originalnormal Size1.1 + soleJG3.1.0. Namedpresets retained; existingSB0.2.3 allautomaticflags1 with exactlocal600msfinisherholdcandidate; IPD/Better unchanged. Allcosmetic/NPC/alternatephysics/cameraoff.",
       "p0_evidence": ".local/play-session-20261008/goal-restructure-20261010/p0-body-profile-result.json",
       "p1_evidence": "goal-restructure-20261010/p1-selected-profile-result.json",
-      "p2_evidence": "core-functional-111/functional-round17-result.json",
+      "p2_evidence": "core-functional-111/functional-round18-result.json",
       "reactivated_combat_files": 6,
       "combat_enable_evidence": ".local/play-session-20261008/user-native-97/combat-enable-result.json",
       "original_inactive_files": 570,
@@ -1500,7 +1596,7 @@
         "NEXT CHECKPOINT": "A newly registered diagnostic candidate yields an identifiable operation result; subsequent health checks obey75000-token/30-active-minute cooldown and require a listed trigger"
       }
     },
-    "round_closure_at": "2026-10-11T01:48:13.558750+00:00",
+    "round_closure_at": "2026-10-11T02:54:20.363815+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 10,
       "new_confirmed_this_round": 0,
@@ -1510,16 +1606,16 @@
       "evidence": "core-functional-106/functional-round12-crash-diagnosis.json",
       "current_segment_new_confirmed": 0,
       "last_confirmed_segment": "core-functional-106",
-      "observed_deaths": 40,
+      "observed_deaths": 42,
       "latest_segment": "core-functional-111",
-      "new_observed_deaths_this_round": 1,
+      "new_observed_deaths_this_round": 2,
       "video_death_correction": "Second core94 YOU_DIED now confirmed by exported frame evidence; count updated once",
       "new_unconfirmed_exit_segments": [
         "core-large-104",
         "core-large-105"
       ],
       "unconfirmed_exit_evidence": "core-large-105/round11-abnormal-exit.json",
-      "new_death_evidence": "core-functional-111/core111-r17-death-before-revive.png plus round17 panel-open-patrol-interruption; RootUIobservationdelay notproven MODcrash"
+      "new_death_evidence": "core-functional-111/core111-r18-death-before-revive.png and core111-r18-second-death-before-revive.png; two native R recoveries, game stayed alive"
     },
     "attachment_disposition": {
       "main": "EveProportions1.1.0 intact installed and selectedP0 tested",
@@ -1527,15 +1623,15 @@
       "spring_preset": "Data-only Lua preset retained inactive; consumerSpringBoneTweaks absent; userselected soleJG unchanged"
     },
     "recording_result": {
-      "status": "CURRENT106_STOPPED_ORIGINALS_AND_CRASH_TAIL_DATA_VERIFIED",
+      "status": "CURRENT111_EXISTING_RECORDER_ALIVE_SOURCE_TEARING_UNRESOLVED",
       "evidence": ".local/play-session-20261008/recording-session/core103-green14-motion-review.json",
       "limit": "Bounded105threeclipcontainer/decoder/timealignmentchecked; visualnaturalness stillWAITING_HUMAN andwholecadence/fullMODcompatibility notaccepted. Dodge hassourceframe intervals0.001..0.033s; preserved nativeclockdecode succeeds, defaultnullmuxer roundingwarning retained.",
       "human_review": "Direct user confirms core91 selected green P1 natural, unaffected by later95 capture temporal defect",
-      "current_scope": "106 exactgameoff; existingsoleownerSTOPPED; native3440x1440/60RGB+FLAC unchanged; decoded1377frametail, capturedthrough22:30:38.626Z, requested42endunavailable. Static/blackframesnotsolecrashproof; XML/dumpsconfirm.",
+      "current_scope": "core-functional-111 exactPID/ticks; existing sole recorder continues current authorized debug profile; Root did not alter quality",
       "large_motion_preview": "core103-green14-body-motion-preview-1920-crf16.mp4",
       "large_visual_acceptance": "WAITING_HUMAN; normal91 human PASS applies only earlier selected profile",
       "historical_limit": "Core95 battle capture cadence failed and quality review remains partial; sealed original evidence retained. User96 had no valid continuous video due cancelled/rejected Portal;96 logs/stills/report preserved;97 video requires source authorization",
-      "current_evidence": ".local/play-session-20261008/recording-session/core106-crash-tail-review.json",
+      "current_evidence": ".local/play-session-20261008/recording-session/core111-round17-recording-review.json",
       "current_preview": "core104-large14-motion-preview-1920-crf16.mp4",
       "current_battle_clips": [
         "core106-confirmed-crash-tail-223020-223042-lossless.mkv"
@@ -1568,7 +1664,7 @@
       }
     },
     "current_segment": "core-functional-111",
-    "previous_goal_turn_classification": "PROGRESS_ROUND17_VERIFIED_LARGE_COMBAT_PHYSICS_RECOVERY",
+    "previous_goal_turn_classification": "ROUND18_MATERIAL_RUNTIME_PROGRESS_AND_AUTHORIZED_FUNCTION_METRIC_CHANGE; no new round for progress question",
     "execution_status": "IN_PROGRESS",
     "pause_at": "2026-10-10T12:03:10.167690+00:00",
     "pause_source": "Direct user pauses actual tests, requests normal game exit and verified playset handoff to user with separate read-only observation session",
