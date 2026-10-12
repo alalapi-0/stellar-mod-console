@@ -1189,7 +1189,7 @@
           "core-functional-114/functional-round21-result.json"
         ],
         "accepted_scope": "Selected P0 profile only: UUE controlled Spine1.097 + Eve main + Tuner Size1.1; original red/green outfits; physics/combat/full outfit compatibility NOT_TESTED",
-        "blocker": "Desktop currently locked; no real-save isolation; full appearance/body/input/defense and current core-combination acceptance remain incomplete.",
+        "blocker": "Save isolation NOT_ESTABLISHED; full appearance/body/input/defense acceptance incomplete. Desktop currently unlocked and10hourgrant active.",
         "prior_selected_normal_scope_status": "PASS",
         "acceptance_extension": "User requires enlarged individual and combined dimensions under movement/outfit/combat/restart, not covered by earlier normal scoped PASS",
         "extended_parameter_regression": {
@@ -1282,7 +1282,7 @@
           "core-functional-113/functional-round20-result.json",
           "core-functional-114/functional-round21-result.json"
         ],
-        "blocker": "Desktop currently locked; no real-save isolation; full appearance/body/input/defense and current core-combination acceptance remain incomplete.",
+        "blocker": "Save isolation NOT_ESTABLISHED; full appearance/body/input/defense acceptance incomplete. Desktop currently unlocked and10hourgrant active.",
         "pending_visual_acceptance": {
           "status": "PASS_HUMAN_CURRENT_GREEN_PROFILE",
           "scope": "Current selected P0+JG only; not all clothes",
@@ -1379,7 +1379,7 @@
           "core-functional-111/functional-round17-result.json",
           "core-functional-111/functional-round18-result.json"
         ],
-        "blocker": "Desktop currently locked; no real-save isolation; full appearance/body/input/defense and current core-combination acceptance remain incomplete.",
+        "blocker": "Save isolation NOT_ESTABLISHED; full appearance/body/input/defense acceptance incomplete. Desktop currently unlocked and10hourgrant active.",
         "latest_evidence": "core-functional-111/functional-round18-result.json",
         "prior_work_status": "IN_PROGRESS",
         "large_profile_contact": "109 Barnacle actualBetaChainStab1/light/heavy/evade/nativeJustParry andnative Qhealing;14 body/physics samples. HPmin0.5445→1.0, no death/crash; noverifiedkill orcheckpoint. ManualE intervals retained, AUTO-only inference limited to nativeJustParry outside manualguard intervals.",
@@ -1499,19 +1499,19 @@
     "progress": {
       "scope_version": "unified-leaves-v2-favourite-edition-20261012",
       "completion_scope": "RETAINED_INDEPENDENT_TESTS_AFTER_EXPLICIT_FAVOURITE_EDITION_SELECTION_WITH_SCOPE_GATES",
-      "effective_accepted": 49,
+      "effective_accepted": 50,
       "effective_required": 5125,
-      "completion_percent": 0.9561,
-      "tested_with_complete_conclusion": 50,
-      "test_conclusion_percent": 0.9756,
+      "completion_percent": 0.9756,
+      "tested_with_complete_conclusion": 52,
+      "test_conclusion_percent": 1.0146,
       "statuses": {
-        "NOT_TESTED": 5029,
-        "PASS": 49,
+        "NOT_TESTED": 5028,
+        "PASS": 50,
         "REOPENED": 2,
         "WAITING_HUMAN": 1,
-        "PARTIAL": 15,
-        "BLOCKED_NOT_INSTALLED": 28,
-        "FAIL": 1
+        "PARTIAL": 14,
+        "FAIL": 2,
+        "BLOCKED_NOT_INSTALLED": 28
       },
       "categories": {
         "功能": 221,
@@ -1527,25 +1527,25 @@
         "共享依赖": 4,
         "组合回归": 7
       },
-      "reason": "Two cold UI lifecycle functions nowPASS; F11/native movement isPARTIAL. Four corresponding Nano original menu variants explicitly excluded by favourite edition choice, not countedPASS. No whole outfit acceptance.",
+      "reason": "One native F11 routing leaf newlyPASS; one actual gray YoRHa converted1052 leafFAIL. Four favourite families and14 resource overlaps audited, no new exclusion or static PASS.",
       "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
-      "manifest_sha256": "4c62e8d1e6e1b2e5380ac35a73e4ea37f2f857fa3e1d2e0d12577e817648523a",
+      "manifest_sha256": "ad2ae0d83550a667fbc5964525cf60184fbf6df22e7ba50f3a36d897388c6d14",
       "target_identity_sha256": "adef3fc3e5a0aa07b96f4ea73ce23de7bc3006139aa810f55841f3cffa22da85",
-      "enumeration_validation": ".local/play-session-20261008/user-native-141/repair/unified-current-validation.json",
-      "round_key": "cursor-hittest-screenoff-favourite-selection-141",
+      "enumeration_validation": ".local/play-session-20261008/user-native-141/repair/unified-current-validation-round26.json",
+      "round_key": "native-passthrough-and-offline-favourite-audit-141",
       "round_status": "CLOSED_BOUNDED_BATCH_GOAL_CONTINUES",
-      "count": 25,
+      "count": 26,
       "coverage": "since_baseline",
-      "last_seq": 25,
-      "last_key": "cursor-hittest-screenoff-favourite-selection-141",
+      "last_seq": 26,
+      "last_key": "native-passthrough-and-offline-favourite-audit-141",
       "historical_round_count": "UNKNOWN",
-      "execution_change_percentage_points": 0.039,
+      "execution_change_percentage_points": 0.0195,
       "evidence_change_percentage_points": 0,
-      "scope_change_percentage_points": 0.0007,
-      "change_rule": "Original5129retained. +2actualnewUI PASS atoldscope; four explicit favourite-edition exclusions reduce effective denominator5125 with noPASS credit.",
-      "round_start_commit": "b3d8d7c12b775f0506da1599811ec5b416a6de21",
+      "scope_change_percentage_points": 0,
+      "change_rule": "Same5125scope; one new real routing functionPASS. Original5129 and four priorNanoexclusions preserved.",
+      "round_start_commit": "f632fc1ecb61214cb551837486aef23d914f1b10",
       "scope_change": "Expanded actual variant/control/animation/native/dependency/integration leaves; parent rollups/aliases not counted; explicit selected alternatives retained in excluded history. Initial draft5021 corrected to5129 before State registration using author variant rules.",
-      "milestone_change": "Cold139 focus and HitTest repair verified; screen-off nativeinput/capture short regression works, Steamrestart wakesdisplay and requires another one-shot off. Favourite12snapshot; redundant Nano menu actually absent cold141 after filename scan fix. Single recorder reused through restarts.",
+      "milestone_change": "10hourhumaninputgrant registered and existing capture resumed screenoff. F11routingPASS; YoRHa9nullmaterials actualgrayFAIL, favouriteNano restored. Distinct/shared resources preserved.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1884,18 +1884,19 @@
       "uncounted_parent_rollups": 12,
       "full_appearance_compatible_accepted": 0,
       "new_function_evidence_this_round": [
-        "lua:DekCNS/ui",
-        "component:EveProportionsTuner/panel"
+        "component:EveProportionsTuner/passthrough"
       ],
-      "new_failures_this_round": [],
+      "new_failures_this_round": [
+        "appearance:Repacked Mod1052/choice-0"
+      ],
       "remaining_rounds": "UNKNOWN",
       "remaining_rounds_confidence": "UNKNOWN",
       "window": [],
-      "prediction_reason": "Scope changed, heterogeneous tests and lock/save isolation blockers; no three comparable positive accepted rounds.",
+      "prediction_reason": "Heterogeneous tests, recent scope change, unresolved material dependencies and save-isolation limits; no three comparable positive accepted rounds.",
       "original_unified_required_retained": 5129
     },
-    "next_action": "Continue author/source-based duplicate reconciliation for current12favourites before testing retained variants. Nano favourite RepackedMod2724 kept, original menu4excluded/assets retained. Then actual F11movement/camp, gray body/NPC/YoRHa and selected clothing body/patch tests. Current141deadline010036UTC, do not bypassexpiry. Root recorder active; screen-off after controlled Steamrestarts needs reapply one-shot only.",
-    "updated_at": "2026-10-12T00:48:38.271904+00:00",
+    "next_action": "Compare original1052 source import/dependency structure against converted version and identify a legitimate matching-resource route; continue favourite variant-level dedup and actual body/patch/input/defense tests within fixed10hgrant. Preserve real progress and shared resources.",
+    "updated_at": "2026-10-12T01:34:23.018285+00:00",
     "blocked_audit": {
       "native_goal_status": "active",
       "status": "PROGRESS_NO_TOTAL_BLOCK",
@@ -1959,7 +1960,7 @@
         "full_clean_capture_pass": false
       }
     },
-    "round_closure_at": "2026-10-12T00:48:38.271904+00:00",
+    "round_closure_at": "2026-10-12T01:34:23.018285+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 12,
       "new_confirmed_this_round": 0,
@@ -2035,13 +2036,13 @@
         "state": "RECORDING",
         "supervisor_pid": 3000444,
         "supervisor_start_ticks": "36083636",
-        "ffmpeg_pid": 3024025,
-        "ffmpeg_start_ticks": "36258806",
-        "run_id": "20261012T004556211816Z-user-native-141",
+        "ffmpeg_pid": 3038268,
+        "ffmpeg_start_ticks": "36475561",
+        "run_id": "20261012T012203761209Z-user-native-141",
         "game_pid": 3023364,
         "game_start_ticks": "36256287"
       },
-      "current_coverage_limit": "Root inputs and exact current window/audio only; stored requested60FPS, actual game rendering FPS unmeasured. Source gaps/tears and old incomplete validation remain historical unresolved findings; no full recording acceptance.",
+      "current_coverage_limit": "Same supervisor resumed141 at fresh10hgrant; exact encoder/game live. Prior expiry recording gap retained; full media validation remains incomplete.",
       "current_segment": "user-native-141",
       "previous_identity": {
         "state": "RECORDING",
@@ -2064,7 +2065,7 @@
         "game_start_ticks": "31582002"
       },
       "historical_prior_current_coverage_limit": "Current133 resumed after cursorfix; native-window-only30fps1720x720 capture directlyDATA, exactidentityverified. InitialRootframes not playertest acceptance; record gaps/route/combat remain scoped.",
-      "current_state": "ROOT_SINGLE_RECORDER_ACTIVE",
+      "current_state": "RECORDING",
       "current_service": "stellar-level-recorder-20261009.service",
       "root_input_source": "ROOT_GAME_MOD_TESTS",
       "source_resolution": "3440x1440 RGB60 lossless/FLAC DATA-only",
@@ -2074,8 +2075,8 @@
       "full_media_acceptance": "NOT_COMPLETE"
     },
     "current_segment": "user-native-141",
-    "previous_goal_turn_classification": "PROGRESS_UI_REPAIR_SCREEN_OFF_AND_FAVOURITE_EDITION_SELECTION",
-    "execution_status": "GOAL_ACTIVE_FAVOURITE_DUPLICATE_RECONCILIATION",
+    "previous_goal_turn_classification": "PROGRESS_NATIVE_ROUTING_PASS_YORHA_GRAY_FAIL_AND_SOURCE_RESOURCE_AUDITS",
+    "execution_status": "GOAL_ACTIVE_NATIVE_AND_OFFLINE_TESTS",
     "pause_at": "2026-10-11T12:13:22.865867+00:00",
     "pause_source": "Latest human says today stop checking and deliver functional MOD key usage only",
     "user_play_handoff": {
@@ -2240,6 +2241,25 @@
         "status": "LATEST_DIRECT_HUMAN_RECORDING_PROFILE_PRESERVED_NO_ROOT_QUALITY_CHANGE",
         "evidence": "recording-session/core111-recorder-resume.json",
         "game_render_fps": "NOT_MEASURED"
+      },
+      "latest_material_overlap_review": {
+        "at": "2026-10-12T01:34:23.018285+00:00",
+        "evidence": "user-native-141/repair/overlap-payload-comparison.json",
+        "groups": 14,
+        "identical_package_chunks": 10,
+        "different_package_chunks": 4,
+        "root_cause_credit": 0,
+        "whole_package_exclusions": 0
+      },
+      "latest_gray_native_review": {
+        "at": "2026-10-12T01:34:23.018285+00:00",
+        "evidence": "user-native-141/repair/gray-yorha-native-result.json",
+        "id": "appearance:Repacked Mod1052/choice-0",
+        "status": "FAIL",
+        "native_material_slots_null": 9,
+        "declared_original_dlc_resources": "NOT_FOUND_IN_UTOC_VIEW",
+        "body_compatibility": "UNVERIFIED",
+        "replacement": "UNKNOWN"
       }
     },
     "user_play_repairs": {
@@ -2600,10 +2620,10 @@
       "source": "Native get_goal verified active on2026-10-11T22:30Z; latest direct user objective enables persistent resumed MOD testing in background",
       "scope": "All current and subsequently discovered stable test leaves; every independently verifiable test in one denominator; no formal Console implementation or scheduler resume",
       "tool_objective": "继续，继续这个测试，继续在我的桌面后台测试。嗯，我开目标模式的话应该就可以了吧。然后注意我之前说过的几个问题，你都进行测试。然后每一个问题都算一个任务。每个任务，每一个这个任务都是，就是每一个要测试的都算一个任务，算一个分母，拿这个当总任务数来进行汇报。",
-      "tokensUsed": 868015,
-      "timeUsedSeconds": 8032,
-      "telemetry_at": "2026-10-12T00:43:57UTC",
-      "telemetry_coverage": "Direct current nativeGoal cumulative; undifferentiated elapsed, not active-only time; no cost estimate"
+      "tokensUsed": 1132276,
+      "timeUsedSeconds": 10958,
+      "telemetry_at": "2026-10-12T01:34:23.018285+00:00",
+      "telemetry_coverage": "Last direct nativeGoal cumulative checkpoint thisturn; not active-only time or cost; later work not included"
     },
     "goal_resume_source": {
       "at": "2026-10-11T22:33:55.839554+00:00",
@@ -2660,7 +2680,10 @@
       "new_excluded_leaves": 4,
       "native_asset_packages_removed": 0,
       "evidence": "user-native-139/repair/favourite-nano-edition-selection.json",
-      "pending": "Remaining families require primary author/source relation; no blanket nonfavourite removal"
+      "pending": "Remaining families require primary author/source relation; no blanket nonfavourite removal",
+      "offline_audited_families": 4,
+      "latest_audit": "user-native-141/repair/favourite-offline-dedup-review.json",
+      "new_exclusions_this_round": 0
     },
     "screen_off_result": {
       "evidence": "user-native-139/repair/screen-off-regression.json",
@@ -2670,6 +2693,14 @@
       "current_segment": "user-native-141",
       "final_power_mode": 3,
       "final_lock_hint": "no"
+    },
+    "input_window_result": {
+      "state": "ACTIVE",
+      "source": "Fresh direct human authorizes10hours",
+      "authorized_until": "2026-10-12T11:22:02.234030+00:00",
+      "current_operational_deadline": "2026-10-12T03:22:02.234030+00:00",
+      "same_grant_chunk_refresh_no_new_permission": true,
+      "scope": "Owned nativegame MODtest/input/screenoff/capture only; preserve saves/other tasks"
     }
   }
 }
