@@ -1536,25 +1536,25 @@
         "共享依赖": 4,
         "组合回归": 8
       },
-      "reason": "Round38addednative148latencyPARTIAL; specific150followupdirecthumanrecoveryaccepted asoneboundedPASS, failuresretained; fullGoalpaused/count38unchanged",
+      "reason": "180activelegacyPAKindexes addexactYoRHaabsenceproof; four1032localbatchprovenance clarified; no newruntimePASS orscope exclusion",
       "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
-      "manifest_sha256": "13e60bc804e60c58b4d04a4171af409ddc11709399fa242bc9d96ea9015187f7",
+      "manifest_sha256": "8f419ff07c0b8f558bd805d8449362d4bee985ad46ea326a63a2dc43ee9ec701",
       "target_identity_sha256": "90e747117d706ac416339ed18f06c64a0f0208f0f4fdd1153453be2856b3446e",
-      "enumeration_validation": ".local/play-session-20261008/user-native-150/repair/unified-followup-validation.json",
-      "round_key": "user-requested-native-play-handoff-and-recorder-stop",
-      "round_status": "CLOSED_USER_HANDOFF_PAUSE_REQUESTED",
-      "count": 38,
+      "enumeration_validation": ".local/play-session-20261008/core-functional-151/repair/unified-current-validation-round39.json",
+      "round_key": "resume-offline-yorha-legacy-pak-and-sbpr-provenance-20261013",
+      "round_status": "CLOSED_OFFLINE_VERIFIED_PRIVATE_GAME_HANDOFF_PENDING",
+      "count": 39,
       "coverage": "since_baseline",
-      "last_seq": 38,
-      "last_key": "user-requested-native-play-handoff-and-recorder-stop",
+      "last_seq": 39,
+      "last_key": "resume-offline-yorha-legacy-pak-and-sbpr-provenance-20261013",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": 0,
       "evidence_change_percentage_points": 0,
-      "scope_change_percentage_points": -0.0002,
-      "change_rule": "Addexact1newlatencyissue; original5123 IDs/statuses preserved; no newPASS. Restart/handoff isoperation evidenceonly.",
-      "round_start_commit": "936977cec4b579d8d7263cbc6784babc73682ba0",
+      "scope_change_percentage_points": 0,
+      "change_rule": "Same5124ID/version/status/weight set; only89evidence references anddependency/provenance notes updated; no newPASS orscope shrink",
+      "round_start_commit": "067c233a1ffc66ffcb9ce7ad7791a21b1921a236",
       "scope_change": "Expanded actual variant/control/animation/native/dependency/integration leaves; parent rollups/aliases not counted; explicit selected alternatives retained in excluded history. Initial draft5021 corrected to5129 before State registration using author variant rules.",
-      "milestone_change": "Userplayconfigurationkept; recordingstoppedwithraw57deferredchecksretained; normalnative149restartandassistantbindingready; Goalpauserequestedbyhuman.",
+      "milestone_change": "TaskprivateDisplay5ready/exactidentity; native150notcontrolled; author source rule gate retained",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1893,9 +1893,7 @@
       "uncounted_parent_rollups": 12,
       "full_appearance_compatible_accepted": 0,
       "new_function_evidence_this_round": [],
-      "new_failures_this_round": [
-        "integration:native-play-input-latency:native148humanreportedlarge latency;149assessmentpending"
-      ],
+      "new_failures_this_round": [],
       "remaining_rounds": "UNKNOWN",
       "remaining_rounds_confidence": "UNKNOWN",
       "window": [],
@@ -1909,8 +1907,8 @@
         "new_full_passes": 1
       }
     },
-    "next_action": "WAIT_FOR_DIRECT_HUMAN_MANUAL_GOAL_RESUME_OR_SPECIFIC_BUG_REPAIR; native150recoveryconfirmedbyhuman, noinput/capture/settings/restart duringuserplay",
-    "updated_at": "2026-10-12T13:33:34.962297+00:00",
+    "next_action": "WAIT_FOR_PENDING_DIRECT_HUMAN_ENDPLAY_HANDOFF_ANSWER_THEN_NORMAL_NATIVE150_QUIT_AND_PRIVATE5_START; no foregroundinput beforeanswer",
+    "updated_at": "2026-10-12T20:59:00.402021+00:00",
     "blocked_audit": {
       "native_goal_status": "PAUSED_CONFIRMED_NATIVE_TOOL",
       "status": "PAUSED_AT_USER_HANDOFF;NOT_BLOCKED",
@@ -1974,7 +1972,7 @@
         "full_clean_capture_pass": false
       }
     },
-    "round_closure_at": "2026-10-12T12:36:33.101928+00:00",
+    "round_closure_at": "2026-10-12T20:59:00.402021+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 12,
       "new_confirmed_this_round": 0,
@@ -2139,8 +2137,8 @@
       }
     },
     "current_segment": "user-native-150",
-    "previous_goal_turn_classification": "PROGRESS_HANDOFF_AND_USER_PAUSE",
-    "execution_status": "PAUSED_BY_USER_USER_PLAY_NO_INPUT",
+    "previous_goal_turn_classification": "PROGRESS_OFFLINE_DEPENDENCY_AND_PATCH_PROVENANCE",
+    "execution_status": "RESUMED_OFFLINE_CHECKPOINT_WAITING_CURRENT_GAME_HANDOFF",
     "pause_at": "2026-10-12T12:36:33.101928+00:00",
     "pause_source": "Latestdirecthuman: endround/nativeplayhandoff/stoprecording/pauseGoaluntilmanualresume; finaladditionalrequest normalrestartforlatency",
     "user_play_handoff": {
@@ -2231,8 +2229,8 @@
       "configuration_inventory": "Currentactual171threepiecegroups/125CNSconfigs; mutexandquarantine kept; no newinstallation required",
       "latency": "Current150recoveryconfirmedbydirecthuman;causeandlongrunUNKNOWN"
     },
-    "resume_source": "Human ended play and explicitly requests resumed previous MOD tests, unified denominator, non-crash bugs including Num9 no cursor and gray skin, retaining verified compatible variants over incompatible duplicates",
-    "resumed_at": "2026-10-11T13:16:27.260316+00:00",
+    "resume_source": "Directhuman 继续测试 2026-10-13; prioruserstoprevokedonlyforMODtests, nototherprojects",
+    "resumed_at": "2026-10-12T20:48:13.290541+00:00",
     "user_acceptance_clarification": {
       "at": "2026-10-10T20:01:19.680897+00:00",
       "combat": "Multi-enemy rear attacks, attack/hit-stun defensive limits are normal game constraints; prioritize feature functionality/compatibility, not full invulnerability",
@@ -2648,15 +2646,15 @@
       "geometry_acceptance": "PriorR32six/R33five plusR35four favouritevariants limited Hips/Butt response; latest4 neutralreset40 andfinite8history; fullranges/clipping/coldreload pending."
     },
     "resumed_test_checkpoint": {
-      "at": "2026-10-12T13:33:34.962297+00:00",
+      "at": "2026-10-12T20:59:00.402021+00:00",
       "lane": "DIRECT",
-      "status": "ROUND38_FOLLOWUP_NATIVE150_USER_REPORTED_RECOVERED_GOAL_PAUSED",
-      "root_owned_game_files": 2,
+      "status": "OFFLINE_DEPENDENCY_AND_LOCAL_VARIANT_PROVENANCE_CHECKED_PRIVATE_DISPLAY_READY_GAME_HANDOFF_PENDING",
+      "root_owned_game_files": 0,
       "candidate_evidence": [
         ".local/play-session-20261008/user-native-148/repair/handoff-registration.json"
       ],
       "runtime_evidence": ".local/play-session-20261008/user-native-150/repair/latency-handoff-result.json",
-      "runtime_status": "USER_REPORTED_RECOVERED_CONTROL_RETURNED_NATIVE150",
+      "runtime_status": "NATIVE150_USERPLAY_PROTECTED_NO_CONTROL_THIS_ROUND",
       "actual_import_check": {
         "evidence": ".local/play-session-20261008/user-native-136/repair/package-import-closure.json",
         "containers": 181,
@@ -2674,7 +2672,9 @@
           "id": "BUG_GRAY_MATERIALS",
           "kind": "NON_CRASH",
           "status": "NANO_DEPENDENCY_INSTALLED_NO_VISUAL_PASS;CURRENT_NPC_DECLARED_IMPORT_GAPS_AND_OVERLAP_DIAGNOSED_RENDERING_UNKNOWN",
-          "evidence": ".local/play-session-20261008/core-functional-147/repair/r36-current-npc-package-closure.json"
+          "evidence": ".local/play-session-20261008/core-functional-147/repair/r36-current-npc-package-closure.json",
+          "latest_offline_evidence": ".local/play-session-20261008/core-functional-151/repair/yorha-pak-only-dependency-check.json",
+          "current": "1052 legacyPAK provider gap also verified; NPC actualrendering andpatchsources unknown"
         },
         {
           "id": "BUG_DEATH_NATIVE_RECOVERY",
@@ -2740,13 +2740,13 @@
       "confirmed_new_crashes": 0,
       "unknown_exit130_preserved": true,
       "replacement_disposition": "No confirmed newsourcealias orcompatible replacement; zeroextraexclusions; source alternatives retained.",
-      "agent_disposition": "Read-onlyconfiguration/latencyagents completedandcollected; no active descendantwriter",
+      "agent_disposition": "Singleboundedread-onlyexplorer completedandcollected; no active descendantwriter",
       "report": ".local/play-session-20261008/MOD_TEST_REPORT_20261011.md",
       "csv": ".local/play-session-20261008/UNIFIED_MOD_TEST_LIST_20261011.csv",
       "continuation_prompt": ".local/play-session-20261008/CONTINUE_MOD_TESTING_PROMPT_20261011.md",
       "usage_guide": ".local/play-session-20261008/FUNCTIONAL_MOD_KEYS_20261011.md",
-      "source_delivery": "Receipt user-native-150/repair/source-delivery-followup.json afterbranchpush/remoteHEADverify",
-      "root_owned_game_files_scope": "No game/MOD/graphics/storysave writesbyRoot; ownmetadata/helpersandnormalgame/assistantlifecycles only. Tuneroutfits autonative/userwritehashchanged20profiles, preservedcurrentuserdata.",
+      "source_delivery": "Receipt core-functional-151/repair/source-delivery-round39.json afterbranchpush exactremoteverify",
+      "root_owned_game_files_scope": "Readonlyallgame/MOD/settings/saves thisround; ownprivateevidence andtestdisplay5only; noforegroundgamecontrol/bodyprofileinspection",
       "previous_game_candidate_evidence": [
         ".local/play-session-20261008/user-native-135/repair/cursor-lifecycle-installed.json",
         ".local/play-session-20261008/user-native-135/repair/nano-base-installed.json"
@@ -2790,21 +2790,34 @@
         "mesh": "/Game/CNSRepacked/4c7515dbb7f9194d/Art/Character/PC/CH_P_EVE_09/CH_P_EVE_09.CH_P_EVE_09",
         "body": "Butt1.00->1.20 actual bilateralhipresponse; keyboardneutralrestoration exact40; othercases pending",
         "result": "PARTIAL_LIMITED_ADJUSTABLE"
-      }
+      },
+      "resume_registration": ".local/play-session-20261008/core-functional-151/repair/resume-registration.json",
+      "private_test_display": {
+        "display": ":5",
+        "pid": 3765017,
+        "start_ticks": "43519972",
+        "unit": "stellar-mod-test-display-151.service",
+        "state": "PRIVATE_DISPLAY_READY_NO_GAME_OR_INPUT",
+        "resolution": "3440x1440",
+        "game_started": false
+      },
+      "user_handoff_question": "PENDING: native150userfinishedplay? permissionneededonlyfornormalrestarttoprivate5; no foregroundinputuntilreply",
+      "current_round_evidence": ".local/play-session-20261008/core-functional-151/repair/round39-offline-result.json",
+      "latest_offline_evidence": ".local/play-session-20261008/core-functional-151/repair/round39-offline-result.json"
     },
     "native_goal": {
       "status": "paused",
       "source": "Native get_goal verified active on2026-10-11T22:30Z; latest direct user objective enables persistent resumed MOD testing in background",
       "scope": "All current and subsequently discovered stable test leaves; every independently verifiable test in one denominator; no formal Console implementation or scheduler resume",
       "tool_objective": "继续，继续这个测试，继续在我的桌面后台测试。嗯，我开目标模式的话应该就可以了吧。然后注意我之前说过的几个问题，你都进行测试。然后每一个问题都算一个任务。每个任务，每一个这个任务都是，就是每一个要测试的都算一个任务，算一个分母，拿这个当总任务数来进行汇报。",
-      "tokensUsed": 6350355,
-      "timeUsedSeconds": 51086,
-      "telemetry_at": "2026-10-12T13:34:27.317793+00:00",
-      "telemetry_coverage": "Actualget_goalpaused/currentcumulative6350355tokens51086seconds; subsequentclosuretools excluded",
+      "tokensUsed": 6498602,
+      "timeUsedSeconds": 51163,
+      "telemetry_at": "2026-10-12T20:59:00.402021+00:00",
+      "telemetry_coverage": "Actualget_goalduringRound39 returnedpaused; noresume tool available. LatesthumancontinuesMODtestwork ascurrentturn.",
       "last_observed_status": "paused",
       "pause_requested": false,
       "pause_source": "Latestdirecthuman: endround/nativeplayhandoff/stoprecording/pauseGoaluntilmanualresume; finaladditionalrequest normalrestartforlatency",
-      "final_native_transition": "get_goalconfirmedpaused; scopedlatencyfollowupclosedwithoutresumingGoal"
+      "final_native_transition": "PERSISTENT_GOAL_PAUSED; no APIresume/complete/blocked claimed; currentdirecthuman testrequest recorded"
     },
     "goal_resume_source": {
       "at": "2026-10-11T22:33:55.839554+00:00",
