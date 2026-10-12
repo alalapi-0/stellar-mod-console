@@ -1508,18 +1508,18 @@
     "progress": {
       "scope_version": "unified-leaves-v2-favourite-edition-20261012",
       "completion_scope": "RETAINED_INDEPENDENT_TESTS_AFTER_EXPLICIT_FAVOURITE_EDITION_SELECTION_WITH_SCOPE_GATES",
-      "effective_accepted": 54,
+      "effective_accepted": 55,
       "effective_required": 5125,
-      "completion_percent": 1.0537,
+      "completion_percent": 1.0732,
       "tested_with_complete_conclusion": 57,
       "test_conclusion_percent": 1.1122,
       "statuses": {
         "NOT_TESTED": 5021,
-        "PASS": 54,
+        "PASS": 55,
         "REOPENED": 2,
         "WAITING_HUMAN": 1,
-        "FAIL": 3,
         "PARTIAL": 16,
+        "FAIL": 2,
         "BLOCKED_NOT_INSTALLED": 28
       },
       "categories": {
@@ -1536,25 +1536,25 @@
         "共享依赖": 4,
         "组合回归": 7
       },
-      "reason": "Actualfive nativeguard andJustParry actions accepted after fullnative diagnostic; strictinitialcapture counterfalse-negative identified. Privateinput/capture recoveredwhilelocked+screenoff. CNSExit adaptercoldstarts butruntimeautorestorepending. Globaldesktopskillmergedandindependentlyapproved, not countedasMODtestleaf.",
+      "reason": "V3 native pause/UI gated CNS training return repair accepted after two final-world restores and preservation checks; source alternative1029 found but not downloaded. Recording right-channel suppression isolated to copied playback balance, repair pending. No new scope or skill credit.",
       "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
-      "manifest_sha256": "db9ca6cfc08fb2b87d676f8fcd16f2d6c36b8937548f62d7566ece74fc332d4b",
+      "manifest_sha256": "902855e64cae151d8e36e58a0fedab5e1d42b1e1a032c79001d3dc35ca6ca438",
       "target_identity_sha256": "adef3fc3e5a0aa07b96f4ea73ce23de7bc3006139aa810f55841f3cffa22da85",
-      "enumeration_validation": ".local/play-session-20261008/core-functional-144/repair/unified-current-validation-round29.json",
-      "round_key": "native-guard-diagnostics-purple-and-cns-return-142",
+      "enumeration_validation": ".local/play-session-20261008/core-functional-146/repair/unified-current-validation-round30.json",
+      "round_key": "private144-cns-training-return-and-source-alternatives",
       "round_status": "CLOSED_BOUNDED_BATCH_GOAL_CONTINUES",
-      "count": 29,
+      "count": 30,
       "coverage": "since_baseline",
-      "last_seq": 29,
-      "last_key": "native-guard-diagnostics-purple-and-cns-return-142",
+      "last_seq": 30,
+      "last_key": "private144-cns-training-return-and-source-alternatives",
       "historical_round_count": "UNKNOWN",
-      "execution_change_percentage_points": 0.039,
+      "execution_change_percentage_points": 0.0195,
       "evidence_change_percentage_points": 0,
       "scope_change_percentage_points": 0,
-      "change_rule": "Same5125 equalweight leaves; twoPARTIAL->PASS fromnew actualnativeactions. No scopeexclusion/addition, no setup/skill/globalfile credit.",
-      "round_start_commit": "1d480d5645ddc5cc2eb808eed280946a1b356ae8",
+      "change_rule": "Same5125/version1/equalweight leaves; existingCNSrefresh FAIL->PASS only after actual repaired flow. Original failure and failed candidates retained; no setup/skill/source discovery credit.",
+      "round_start_commit": "48cf139b9b68e4a4aa49f492988e92584b2fd617",
       "scope_change": "Expanded actual variant/control/animation/native/dependency/integration leaves; parent rollups/aliases not counted; explicit selected alternatives retained in excluded history. Initial draft5021 corrected to5129 before State registration using author variant rules.",
-      "milestone_change": "Guard+JustParry proof; private93 lockedoffscreen input+recording restored; minimalCNSExit candidate coldloads pendingactualtrainingreturn; globalGUI skill defaultvirtual accepted.",
+      "milestone_change": "Two v3 native training return restorations, no paused-menu false timeout; body/favourites/HUD/input preserved;1029 author alternative pending owner download; recorder balance root cause verified.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1902,16 +1902,16 @@
       "prediction_reason": "Heterogeneous tests, recent scope change, unresolved material dependencies and save-isolation limits; no three comparable positive accepted rounds.",
       "original_unified_required_retained": 5129
     },
-    "next_action": "Continue same private144 game/unique recording under fixed10hourgrant. Reach native camp skill terminal, enter protectedTR_NoDamage training, validate CNSExit hook/log/selected7materialbody restoration without menu reselection; then reconnect originalauxiliary Combined threeON and testpurple/remainingdefense. Retainsource-first favourite/patch/body compatibility queue and unchanged1052 failure; no save rollback or foreground switch.",
-    "updated_at": "2026-10-12T05:47:43.467689+00:00",
+    "next_action": "Continue private146 within unchanged10hour grant: fix only owned recorder stereo gain by removing copied physical L/R balance, seal/restart the sole supervisor normally and validate a short new stereo sample while preserving physical playback/game. Then reconnect original CombatAssistant using fresh identities and test remaining purple/dodge. Keep source-first favourite/patch/body/gray/NPC/cursor/HUD/death/camp queue;1052 unchanged failure is not retried without new material package.",
+    "updated_at": "2026-10-12T07:16:38.852966+00:00",
     "blocked_audit": {
       "native_goal_status": "active",
       "status": "PROGRESS_NO_TOTAL_BLOCK",
       "consecutive_goal_turns": 0,
       "consecutive_no_progress_turns": 0,
       "condition": null,
-      "evidence": ".local/play-session-20261008/user-native-142/repair/guard-native-result.json",
-      "next_action": "Continue same private144 game/unique recording under fixed10hourgrant. Reach native camp skill terminal, enter protectedTR_NoDamage training, validate CNSExit hook/log/selected7materialbody restoration without menu reselection; then reconnect originalauxiliary Combined threeON and testpurple/remainingdefense. Retainsource-first favourite/patch/body compatibility queue and unchanged1052 failure; no save rollback or foreground switch.",
+      "evidence": ".local/play-session-20261008/core-functional-146/repair/r30-cns-v3-runtime-result.json",
+      "next_action": "Continue private146 within unchanged10hour grant: fix only owned recorder stereo gain by removing copied physical L/R balance, seal/restart the sole supervisor normally and validate a short new stereo sample while preserving physical playback/game. Then reconnect original CombatAssistant using fresh identities and test remaining purple/dodge. Keep source-first favourite/patch/body/gray/NPC/cursor/HUD/death/camp queue;1052 unchanged failure is not retried without new material package.",
       "consecutive_no_progress_goal_turns": 0
     },
     "user_exit_authorization": {
@@ -1967,7 +1967,7 @@
         "full_clean_capture_pass": false
       }
     },
-    "round_closure_at": "2026-10-12T05:47:43.467689+00:00",
+    "round_closure_at": "2026-10-12T07:16:38.852966+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 12,
       "new_confirmed_this_round": 0,
@@ -2000,15 +2000,15 @@
       "spring_preset": "Data-only Lua preset retained inactive; consumerSpringBoneTweaks absent; userselected soleJG unchanged"
     },
     "recording_result": {
-      "status": "PRIVATE144_EXACT_WINDOW_CAPTURE_RUNNING_COMPLETE_METADATA_SAMPLE_PASS_FULLQUALITY_PENDING",
+      "status": "PRIVATE146_SINGLE_RECORDER_RUNNING_RIGHT_CHANNEL_GAIN_BUG_CONFIRMED_NOT_REPAIRED",
       "evidence": ".local/play-session-20261008/core-functional-144/repair/private-display-route-evidence.json",
-      "limit": "Closed180s container metadata and decodedframe105s verifiedgameview. Full-rate quality/audio/cadence stillpending, old EOF/seams retained.",
+      "limit": "144105-108s sample leftnonzero/rightzero; video121 distinctmonotonicPTS, no fullclip/framequality PASS. Recorder copies physicalL76/R0 gain onto ownbus; exact live146bus and scriptlines174-180 verified, source right-content stillunknown. No physicalaudio changes.",
       "human_review": "Direct user confirms core91 selected green P1 natural, unaffected by later95 capture temporal defect",
-      "current_scope": "Exactprivate144game PID3190743/ticks37941356/display93 + sameoriginalsupervisor3000444;3440x1440RGB60/FLAC DATAonly; no duplicaterecorder",
+      "current_scope": "Exactprivate146game3242180/ticks38455867/display93, originalsupervisor3000444/ticks36083636;3440x1440RGB60/FLAC DATAonly",
       "large_motion_preview": "core103-green14-body-motion-preview-1920-crf16.mp4",
       "large_visual_acceptance": "WAITING_HUMAN; normal91 human PASS applies only earlier selected profile",
       "historical_limit": "Core95 battle capture cadence failed and quality review remains partial; sealed original evidence retained. User96 had no valid continuous video due cancelled/rejected Portal;96 logs/stills/report preserved;97 video requires source authorization",
-      "current_evidence": ".local/play-session-20261008/core-functional-144/repair/private-display-route-evidence.json",
+      "current_evidence": ".local/play-session-20261008/core-functional-144/repair/recording-readonly-review/short-media-evidence.json",
       "current_preview": "core104-large14-motion-preview-1920-crf16.mp4",
       "current_battle_clips": [
         "core106-confirmed-crash-tail-223020-223042-lossless.mkv"
@@ -2080,10 +2080,22 @@
       "native137": "One published clip full-decode/audio-nonzero verified; remaining originalraw validation incomplete. Exact owned validator interrupted to resume capture; no game process killed.",
       "native138_to_141": "Same supervisor resumes after exact root game restart; no second recorder",
       "full_media_acceptance": "NOT_COMPLETE",
-      "native142": "Single original service continues fullresolution RGB60/FLAC gamewindow/audio; source141shortmotion evidence distinct from fullquality acceptance."
+      "native142": "Single original service continues fullresolution RGB60/FLAC gamewindow/audio; source141shortmotion evidence distinct from fullquality acceptance.",
+      "latest_stereo_issue": {
+        "at": "2026-10-12T07:16:38.852966+00:00",
+        "status": "CONFIRMED_OWN_BUS_COPIED_PHYSICAL_BALANCE_FIX_PENDING",
+        "game_pid": 3242180,
+        "recorder_bus": "stellar_recorder_3242180_38455867",
+        "native_gain": [
+          49595,
+          0
+        ],
+        "source": "recording-session/recorder_audio.py:174-180; repeated AUDIO.source resets bus; three game streams100/100 and six links intact",
+        "evidence": ".local/play-session-20261008/core-functional-146/repair/r30-recorder-stereo-diagnosis.json"
+      }
     },
-    "current_segment": "core-functional-144",
-    "previous_goal_turn_classification": "PROGRESS_NATIVE_GUARD_PARRY_AND_PRIVATE_DISPLAY_ROUTE",
+    "current_segment": "core-functional-146",
+    "previous_goal_turn_classification": "PROGRESS_CNS_TRAINING_RETURN_REPAIR_AND_RECORDER_AUDIO_CAUSE",
     "execution_status": "GOAL_ACTIVE_PRIVATE_DISPLAY_LOCKED_DESKTOP_TESTS",
     "pause_at": "2026-10-11T12:13:22.865867+00:00",
     "pause_source": "Latest human says today stop checking and deliver functional MOD key usage only",
@@ -2572,15 +2584,15 @@
       "geometry_acceptance": "PENDING_USER_VISUAL"
     },
     "resumed_test_checkpoint": {
-      "at": "2026-10-12T05:47:43.467689+00:00",
+      "at": "2026-10-12T07:16:38.852966+00:00",
       "lane": "DIRECT",
-      "status": "ROUND29_CLOSED_PRIVATE_ROUTE_CONTINUES_CNS_EXIT_PENDING",
+      "status": "ROUND30_CLOSED_V3_NATIVE_TRAINING_RETURN_ACCEPTED_OTHER_SCOPE_PENDING",
       "root_owned_game_files": 1,
       "candidate_evidence": [
-        ".local/play-session-20261008/user-native-142/repair/cns-training-exit-candidate.json"
+        ".local/play-session-20261008/core-functional-145/repair/cns-training-exit-candidate-v3.json"
       ],
-      "runtime_evidence": ".local/play-session-20261008/core-functional-144/repair/private-display-route-evidence.json",
-      "runtime_status": "Native143 normally closed by exact WM_DELETE_WINDOW. Existing hash-pinned privateXvfb93/SteamRuntime4/Proton launched144. GNOME LockedHint=yes/MutterPowerSaveMode3; actual Continue, Num9 open and mouseClose, nativeI menu verified. One original recorder3000444 capturing full RGB60/FLAC exact3440x1440 game; closed180second container metadata and decodedgameframe verified; fullquality/audio/cadencepending. CNS cold selected7materialmesh restored; trainingExit candidate not accepted yet. Trainer auxiliary currently closed.",
+      "runtime_evidence": ".local/play-session-20261008/core-functional-146/repair/r30-cns-v3-runtime-result.json",
+      "runtime_status": "PASS_BOUNDED_TWO_NATIVE_TRAINING_RETURNS",
       "actual_import_check": {
         "evidence": ".local/play-session-20261008/user-native-136/repair/package-import-closure.json",
         "containers": 181,
@@ -2642,8 +2654,10 @@
         {
           "id": "BUG_CNS_TRAINING_RETURN",
           "kind": "NON_CRASH",
-          "status": "FAIL_ADAPTER_APPLIED_COLDSTART_OK_EXIT_RUNTIME_PENDING",
-          "leaf": "lua:DekCNS/outfit-refresh"
+          "status": "REPAIRED_BOUNDED_NATIVE_TRAINING_RETURN_V3_TWO_REPETITIONS",
+          "leaf": "lua:DekCNS/outfit-refresh",
+          "evidence": ".local/play-session-20261008/core-functional-146/repair/r30-cns-v3-runtime-result.json",
+          "limit": "Selected RepackedMod2724/Nano Milk style2 on native no-damage training return only. Other outfits/maps/cutscenes/death, gray materials, clipping, whole appearance compatibility and capture quality not accepted."
         }
       ],
       "legacy_conversion_failures": "Linux14/14failed assets despiteexit0, changed-method WindowsDATA namespace not visible; route ended. No copied asset output, new prefix, global tool installation or loader upgrade.",
@@ -2651,27 +2665,45 @@
       "confirmed_new_crashes": 0,
       "unknown_exit130_preserved": true,
       "replacement_disposition": "No newly verified full compatible substitute; no additional incompatible appearance variant removed in this batch.",
-      "agent_disposition": "All four bounded read-only agents completed; Root sole writer/runtime/Git owner.",
+      "agent_disposition": "All bounded subagents completed; recording_setup reused read-only for exact stereo bus diagnosis and collected",
       "report": ".local/play-session-20261008/MOD_TEST_REPORT_20261011.md",
       "csv": ".local/play-session-20261008/UNIFIED_MOD_TEST_LIST_20261011.csv",
       "continuation_prompt": ".local/play-session-20261008/CONTINUE_MOD_TESTING_PROMPT_20261011.md",
       "usage_guide": ".local/play-session-20261008/FUNCTIONAL_MOD_KEYS_20261011.md",
-      "source_delivery": "Delivery receipt: .local/play-session-20261008/core-functional-144/repair/source-delivery-round29.json; exact remoteHEAD confirmation required independently of State text",
-      "root_owned_game_files_scope": "ThisRound29 single existingCNSmain.lua insertion; priorcursor/dependency installedconfiguration preserved",
+      "source_delivery": "Delivery receipt: .local/play-session-20261008/core-functional-146/repair/source-delivery-round30.json; exact remoteHEAD confirmation required independently of State text",
+      "root_owned_game_files_scope": "Same one CNS main.lua owned addition, v1->v2->v3 registered while old game/encoder off; no full thirdparty source copied",
       "previous_game_candidate_evidence": [
         ".local/play-session-20261008/user-native-135/repair/cursor-lifecycle-installed.json",
         ".local/play-session-20261008/user-native-135/repair/nano-base-installed.json"
-      ]
+      ],
+      "source_alternative": {
+        "mod_id": 1029,
+        "status": "AUTHOR_CNS_ALTERNATIVE_IDENTIFIED_NOT_DOWNLOADED_NOT_RUNTIME_ACCEPTED",
+        "files": [
+          14331,
+          14313
+        ],
+        "evidence": ".local/play-session-20261008/core-functional-144/repair/r30-author-alternatives.json",
+        "caveat": "Slim body alternative, not1052 patch; DLC/material prerequisites unknown; normal manual download requires owner login; no old failed/favourite asset removed"
+      },
+      "exit_method_correction": {
+        "evidence": ".local/play-session-20261008/core-functional-144/repair/r30-v2-game-close.json",
+        "old_method": "xdotool windowclose/XDestroyWindow",
+        "old_runtime_exit": 143,
+        "replacement": "Exact WM_DELETE_WINDOW protocol",
+        "normal145_runtime_exit": 0,
+        "limits": "Owned action preceded144 exit; no native crash root cause claimed"
+      }
     },
     "native_goal": {
       "status": "active",
       "source": "Native get_goal verified active on2026-10-11T22:30Z; latest direct user objective enables persistent resumed MOD testing in background",
       "scope": "All current and subsequently discovered stable test leaves; every independently verifiable test in one denominator; no formal Console implementation or scheduler resume",
       "tool_objective": "继续，继续这个测试，继续在我的桌面后台测试。嗯，我开目标模式的话应该就可以了吧。然后注意我之前说过的几个问题，你都进行测试。然后每一个问题都算一个任务。每个任务，每一个这个任务都是，就是每一个要测试的都算一个任务，算一个分母，拿这个当总任务数来进行汇报。",
-      "tokensUsed": 2647255,
-      "timeUsedSeconds": 26081,
-      "telemetry_at": "2026-10-12T05:44:46+00:00",
-      "telemetry_coverage": "Nativeget_goal snapshotatclosing2647255tokens/26081s; laterclosuretools excluded; no explicitbudget"
+      "tokensUsed": 3993755,
+      "timeUsedSeconds": 31701,
+      "telemetry_at": "2026-10-12T07:18:27+00:00",
+      "telemetry_coverage": "Nativeget_goal cumulative parent/child Goal at bounded Round30 closure; includes prior work, no explicit token budget; later Git/closure tools excluded"
     },
     "goal_resume_source": {
       "at": "2026-10-11T22:33:55.839554+00:00",
@@ -2740,7 +2772,7 @@
       }
     },
     "screen_off_result": {
-      "evidence": "core-functional-144/repair/private-display-route-evidence.json",
+      "evidence": ".local/play-session-20261008/core-functional-146/repair/r30-cns-v3-runtime-result.json",
       "native_input_and_frame_capture": "PRIVATE_ROUTE_PASS_NATIVE_LOCK_GUARD_PRESERVED",
       "lock_sleep_policy_changed": false,
       "restart_limit": "Private93 coldroute does not requireGNOMEunlock; normalnativeSteam :0 restartcanwakephysicaldisplay and requiresseparateverifiedroute",
@@ -2756,7 +2788,7 @@
       "state": "ACTIVE",
       "source": "Fresh direct human authorizes10hours",
       "authorized_until": "2026-10-12T11:22:02.234030+00:00",
-      "current_operational_deadline": "2026-10-12T06:45:50.764077+00:00",
+      "current_operational_deadline": "2026-10-12T08:21:15.090081+00:00",
       "same_grant_chunk_refresh_no_new_permission": true,
       "scope": "Owned nativegame MODtest/input/screenoff/capture only; preserve saves/other tasks"
     },
