@@ -1508,18 +1508,18 @@
     "progress": {
       "scope_version": "unified-leaves-v2-favourite-edition-20261012",
       "completion_scope": "RETAINED_INDEPENDENT_TESTS_AFTER_EXPLICIT_FAVOURITE_EDITION_SELECTION_WITH_SCOPE_GATES",
-      "effective_accepted": 51,
+      "effective_accepted": 52,
       "effective_required": 5125,
-      "completion_percent": 0.9951,
-      "tested_with_complete_conclusion": 53,
-      "test_conclusion_percent": 1.0341,
+      "completion_percent": 1.0146,
+      "tested_with_complete_conclusion": 55,
+      "test_conclusion_percent": 1.0732,
       "statuses": {
-        "NOT_TESTED": 5027,
-        "PASS": 51,
+        "NOT_TESTED": 5021,
+        "PASS": 52,
         "REOPENED": 2,
         "WAITING_HUMAN": 1,
-        "PARTIAL": 14,
-        "FAIL": 2,
+        "FAIL": 3,
+        "PARTIAL": 18,
         "BLOCKED_NOT_INSTALLED": 28
       },
       "categories": {
@@ -1536,25 +1536,25 @@
         "共享依赖": 4,
         "组合回归": 7
       },
-      "reason": "Native favourite function NOT_TESTED->PASS with originalpreferences/configs/bodyphysics restored. NanoMilk LIMITED_ADJUSTABLE under two sampled profiles/jump/cold; full appearance remainsPARTIAL. Original1052 import loss and11missing originaldependencies established offline.",
+      "reason": "One actual blue response PASS; native guard/parry/dodge/camp bounded partials, training-return selected-outfit failure confirmed and manually restored. Favourites, body configs and nine other preference fields retained; native preview camera preference changed and is explicitly recorded.",
       "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
-      "manifest_sha256": "3e14e1f0eefb2995633c7fcfd188c3f6064251477feb99470d82a49b15e3df6e",
+      "manifest_sha256": "d9b28993a83c75e4e96fcdc5eb9b4e325f275aceced9d11b93dd4c43d3956c7c",
       "target_identity_sha256": "adef3fc3e5a0aa07b96f4ea73ce23de7bc3006139aa810f55841f3cffa22da85",
-      "enumeration_validation": ".local/play-session-20261008/user-native-142/repair/unified-current-validation-round27.json",
-      "round_key": "source-import-nano-body-favourite-native-142",
+      "enumeration_validation": ".local/play-session-20261008/user-native-142/repair/unified-current-validation-round28.json",
+      "round_key": "native-training-defense-and-outfit-return-142",
       "round_status": "CLOSED_BOUNDED_BATCH_GOAL_CONTINUES",
-      "count": 27,
+      "count": 28,
       "coverage": "since_baseline",
-      "last_seq": 27,
-      "last_key": "source-import-nano-body-favourite-native-142",
+      "last_seq": 28,
+      "last_key": "native-training-defense-and-outfit-return-142",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": 0.0195,
       "evidence_change_percentage_points": 0,
       "scope_change_percentage_points": 0,
-      "change_rule": "Same5125equalweightleafscope, one new native functionPASS; no added/excluded targets and no static/runtime-partial appearance credit.",
-      "round_start_commit": "a90db8c55f366dbfa3bf3b533fa2cfd8f637ecf8",
+      "change_rule": "Same5125 stable equal-weight leaves. One new native functionPASS, one failed transition case and four partials; no duplicates excluded/targets added, no setup/static/count-only acceptance.",
+      "round_start_commit": "e1a48ae1ccc96520e67bc606413d69dd2eac44a5",
       "scope_change": "Expanded actual variant/control/animation/native/dependency/integration leaves; parent rollups/aliases not counted; explicit selected alternatives retained in excluded history. Initial draft5021 corrected to5129 before State registration using author variant rules.",
-      "milestone_change": "One independent preference functionPASS; current Nano body case and cold retention verified, all original configuration hashes preserved. Source1052 unavailable dependency route narrowed without invented donor assets or purchase.",
+      "milestone_change": "Native safe training configuration found. Dodge and blue actions verified; guard current native outcome unresolved. Repeated selected-outfit fallback after training identified; original selected variant restored.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1902,16 +1902,16 @@
       "prediction_reason": "Heterogeneous tests, recent scope change, unresolved material dependencies and save-isolation limits; no three comparable positive accepted rounds.",
       "original_unified_required_retained": 5129
     },
-    "next_action": "Read current camp interaction conditions and native training-mode availability to identify a safe combat test configuration; continue retained favourite outfits/patch/body mapping. Do not retry unchanged1052 missing-dependency case or bypass real-progress protection.",
-    "updated_at": "2026-10-12T02:26:51.115470+00:00",
+    "next_action": "Diagnose the guard native first-step/stance outcome in the verified NoDamage training configuration and exercise a purple response; repair/retest training-return CNS automatic restoration with an exact registered game-off candidate. Preserve current tested Dodge+Special settings and selected CNS outfit; continue retained favourite/patch/body cases without repeating unchanged1052 missing-dependency failures.",
+    "updated_at": "2026-10-12T04:17:16.949763+00:00",
     "blocked_audit": {
       "native_goal_status": "active",
       "status": "PROGRESS_NO_TOTAL_BLOCK",
       "consecutive_goal_turns": 0,
       "consecutive_no_progress_turns": 0,
       "condition": null,
-      "evidence": "Exact142game/supervisor/encoder identities live, desktop unlocked and displaymode3; native favouritePASS and body/source evidence are material progress.",
-      "next_action": "Read current camp interaction conditions and native training-mode availability to identify a safe combat test configuration; continue retained favourite outfits/patch/body mapping. Do not retry unchanged1052 missing-dependency case or bypass real-progress protection.",
+      "evidence": ".local/play-session-20261008/user-native-142/repair/native-training-defense-result.json",
+      "next_action": "Diagnose the guard native first-step/stance outcome in the verified NoDamage training configuration and exercise a purple response; repair/retest training-return CNS automatic restoration with an exact registered game-off candidate. Preserve current tested Dodge+Special settings and selected CNS outfit; continue retained favourite/patch/body cases without repeating unchanged1052 missing-dependency failures.",
       "consecutive_no_progress_goal_turns": 0
     },
     "user_exit_authorization": {
@@ -1967,7 +1967,7 @@
         "full_clean_capture_pass": false
       }
     },
-    "round_closure_at": "2026-10-12T02:26:51.115470+00:00",
+    "round_closure_at": "2026-10-12T04:17:16.949763+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 12,
       "new_confirmed_this_round": 0,
@@ -2083,7 +2083,7 @@
       "native142": "Single original service continues fullresolution RGB60/FLAC gamewindow/audio; source141shortmotion evidence distinct from fullquality acceptance."
     },
     "current_segment": "user-native-142",
-    "previous_goal_turn_classification": "PROGRESS_SOURCE_IMPORT_DIAGNOSIS_NANO_BODY_CASE_ONE_FAVOURITE_PASS",
+    "previous_goal_turn_classification": "PROGRESS_NATIVE_TRAINING_BLUE_RESPONSE_AND_NEW_OUTFIT_FAILURE",
     "execution_status": "GOAL_ACTIVE_NATIVE_AND_OFFLINE_TESTS",
     "pause_at": "2026-10-11T12:13:22.865867+00:00",
     "pause_source": "Latest human says today stop checking and deliver functional MOD key usage only",
@@ -2541,6 +2541,28 @@
         ],
         "source_sync": "This resumed source closure authorized; per-round branch sync follows exact-owned review.",
         "new_global_acceptance_credit": 0
+      },
+      "training_defense_native142": {
+        "at": "2026-10-12T04:17:16.949763+00:00",
+        "status": "BOUNDED_TRAINING_BATCH_COMPLETED_FULL_SCOPE_PENDING",
+        "evidence": ".local/play-session-20261008/user-native-142/repair/native-training-defense-result.json",
+        "assistant_current": {
+          "version": "1.0.16",
+          "automatic_defense": false,
+          "automatic_dodge": true,
+          "special": true,
+          "mode": "DodgeOnly",
+          "visibility": "HIDDEN_NOT_CLOSED",
+          "owner_and_host_alive": true
+        },
+        "training_test_config": "Native Common training settings TR_NoDamage ActorState_NoDamage=4; TR_Player_HPMax and temporary TR_Player_EquipDefaultNanoSuit verified from loaded native tables",
+        "outfit_return_failure": {
+          "saved_selection_retained": true,
+          "actual_mesh_fallback_confirmed": true,
+          "manual_reselection_restores": true,
+          "automatic_fix": false
+        },
+        "limits": "Working dodge/blue response demonstrated in native training; guard acceptance unresolved, purple no opportunity observed. A green connected window alone is not acceptance."
       }
     },
     "active_body_control_selection": {
@@ -2550,16 +2572,16 @@
       "geometry_acceptance": "PENDING_USER_VISUAL"
     },
     "resumed_test_checkpoint": {
-      "at": "2026-10-11T14:10:42.773682+00:00",
+      "at": "2026-10-12T04:17:16.949763+00:00",
       "lane": "DIRECT",
-      "status": "OFFLINE_BATCH_DELIVERED_RUNTIME_WAITING_LOCAL_UNLOCK",
+      "status": "NATIVE_TRAINING_BATCH_CLOSED_GOAL_CONTINUES",
       "root_owned_game_files": 2,
       "candidate_evidence": [
         ".local/play-session-20261008/user-native-135/repair/cursor-lifecycle-installed.json",
         ".local/play-session-20261008/user-native-135/repair/nano-base-installed.json"
       ],
-      "runtime_evidence": ".local/play-session-20261008/user-native-136/startup-result.json",
-      "runtime_status": "Current exact game alive; candidate load logged only; no visual/input/garment compatibility PASS while LockedHint=yes",
+      "runtime_evidence": ".local/play-session-20261008/user-native-142/repair/native-training-defense-result.json",
+      "runtime_status": "Exact142 alive; current selected CNS restored, unique recorder active, displayoff/unlocked. Automatic blue accepted in training; guard and remaining compatibility not accepted.",
       "actual_import_check": {
         "evidence": ".local/play-session-20261008/user-native-136/repair/package-import-closure.json",
         "containers": 181,
@@ -2636,10 +2658,10 @@
       "source": "Native get_goal verified active on2026-10-11T22:30Z; latest direct user objective enables persistent resumed MOD testing in background",
       "scope": "All current and subsequently discovered stable test leaves; every independently verifiable test in one denominator; no formal Console implementation or scheduler resume",
       "tool_objective": "继续，继续这个测试，继续在我的桌面后台测试。嗯，我开目标模式的话应该就可以了吧。然后注意我之前说过的几个问题，你都进行测试。然后每一个问题都算一个任务。每个任务，每一个这个任务都是，就是每一个要测试的都算一个任务，算一个分母，拿这个当总任务数来进行汇报。",
-      "tokensUsed": 1340346,
-      "timeUsedSeconds": 13556,
-      "telemetry_at": "2026-10-12T02:26:51.115470+00:00",
-      "telemetry_coverage": "Last direct nativeGoal checkpoint at this round; cumulative usage, not active-only time/cost; later tool work excluded"
+      "tokensUsed": 1844525,
+      "timeUsedSeconds": 20463,
+      "telemetry_at": "2026-10-12T04:11:08+00:00",
+      "telemetry_coverage": "Native get_goal snapshot at Round28 closing checkpoint; cumulative task telemetry through that call, later closure tools excluded"
     },
     "goal_resume_source": {
       "at": "2026-10-11T22:33:55.839554+00:00",
@@ -2720,7 +2742,7 @@
       "state": "ACTIVE",
       "source": "Fresh direct human authorizes10hours",
       "authorized_until": "2026-10-12T11:22:02.234030+00:00",
-      "current_operational_deadline": "2026-10-12T03:22:02.234030+00:00",
+      "current_operational_deadline": "2026-10-12T04:52:45.628577+00:00",
       "same_grant_chunk_refresh_no_new_permission": true,
       "scope": "Owned nativegame MODtest/input/screenoff/capture only; preserve saves/other tasks"
     }
