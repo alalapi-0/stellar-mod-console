@@ -1536,25 +1536,25 @@
         "共享依赖": 4,
         "组合回归": 7
       },
-      "reason": "Four additional retained favourites actual loaded mesh, moderate body response, actual short movement and neutralreset PARTIAL; priority stack keptON, no automatic action test.",
+      "reason": "Currentunlockedcamp music/skill andpostCNS skillmenus verifiedwithprioritystack; existingPARTIAL scopeextended. CurrentNPCdeclareddependencies/42overlap diagnosed, no staticPASS.",
       "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
-      "manifest_sha256": "532906e6bde1b2a19d8464cb0abda8ce5ee5330781165ffd5eeed2d8b25bb3b6",
+      "manifest_sha256": "28524fd07e2e42c9a4140c0b9e9d78bbc49011524a4d8b569ccf6e2eed3411f5",
       "target_identity_sha256": "93f0deed0de951e82b214a2754054df036cd81394a85a755e9038386c7a17537",
-      "enumeration_validation": ".local/play-session-20261008/core-functional-147/repair/unified-current-validation-round35.json",
-      "round_key": "private147-next-favourite-material-body-coexistence",
+      "enumeration_validation": ".local/play-session-20261008/core-functional-147/repair/unified-current-validation-round36.json",
+      "round_key": "private147-current-camp-input-and-npc-patch-evidence",
       "round_status": "CLOSED_BOUNDED_BATCH_GOAL_CONTINUES",
-      "count": 35,
+      "count": 36,
       "coverage": "since_baseline",
-      "last_seq": 35,
-      "last_key": "private147-next-favourite-material-body-coexistence",
+      "last_seq": 36,
+      "last_key": "private147-current-camp-input-and-npc-patch-evidence",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": 0,
       "evidence_change_percentage_points": 0,
       "scope_change_percentage_points": 0,
-      "change_rule": "Same5123 semantics; fourNOT_TESTED->PARTIAL, no wholeleaf acceptance credit.",
-      "round_start_commit": "c62a79f688668afa81b45e100754f5b9477d1945",
+      "change_rule": "Same5123 scope/statuses; partialcamp evidenceexpanded andNPCuninstalledprojection corrected; no fullleafacceptancecredit.",
+      "round_start_commit": "5186335e8b7068e41930728b053a066ac3df13e6",
       "scope_change": "Expanded actual variant/control/animation/native/dependency/integration leaves; parent rollups/aliases not counted; explicit selected alternatives retained in excluded history. Initial draft5021 corrected to5129 before State registration using author variant rules.",
-      "milestone_change": "CWchoice1/Silvernostocking/WarAegis/Latex actual limitedadjustability andmotion/reset; all15oldprofiles and12favourites preserved.",
+      "milestone_change": "Actualmusicmenu/nativeSkilltree/postCNSinput acceptedbounded; NPCcurrent153cached+28fresh index reuse,233targetexports,42sharedIDs withbothuniqueexports.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1900,16 +1900,16 @@
       "prediction_reason": "Heterogeneous pending targets, source/login gates, and no three comparable positive throughput rounds.",
       "original_unified_required_retained": 5129
     },
-    "next_action": "Keep Combined3ON/soleTuner/Jiggle/one recorder ON. Continue safe currentcamp interaction withHUD/input regressions and next retained favourites/sourcegray/NPC/patch findings; leave firstactivation/death/map/coldselectedreload andfullclipping gates unaccepted until evidence. Do not restart/adjustassistant for success percentages or change story saves.",
-    "updated_at": "2026-10-12T10:51:14.727598+00:00",
+    "next_action": "Keep priorityCombined3ON/soleTuner/Jiggle/one recorder. Follow currentNPC unresolvedIDs and42shared nativeexports to actual visibleNPC/mountwinner/material observations; sourceauthor patch rules before removing anything. Continue retainedclothing/otherfunction tests inprivate display within masterdeadline11:22:02UTC; afterdeadline no input untilfresh grant, offline diagnosis continues. Preservecampfirstactivation/death/coldselectedreload/fullclipping pendinggates.",
+    "updated_at": "2026-10-12T11:16:19.116589+00:00",
     "blocked_audit": {
       "native_goal_status": "active",
       "status": "PROGRESS_NO_TOTAL_BLOCK",
       "consecutive_goal_turns": 0,
       "consecutive_no_progress_turns": 0,
       "condition": null,
-      "evidence": ".local/play-session-20261008/core-functional-147/repair/round35-runtime-result.json",
-      "next_action": "Keep Combined3ON/soleTuner/Jiggle/one recorder ON. Continue safe currentcamp interaction withHUD/input regressions and next retained favourites/sourcegray/NPC/patch findings; leave firstactivation/death/map/coldselectedreload andfullclipping gates unaccepted until evidence. Do not restart/adjustassistant for success percentages or change story saves.",
+      "evidence": ".local/play-session-20261008/core-functional-147/repair/round36-runtime-result.json",
+      "next_action": "Keep priorityCombined3ON/soleTuner/Jiggle/one recorder. Follow currentNPC unresolvedIDs and42shared nativeexports to actual visibleNPC/mountwinner/material observations; sourceauthor patch rules before removing anything. Continue retainedclothing/otherfunction tests inprivate display within masterdeadline11:22:02UTC; afterdeadline no input untilfresh grant, offline diagnosis continues. Preservecampfirstactivation/death/coldselectedreload/fullclipping pendinggates.",
       "consecutive_no_progress_goal_turns": 0
     },
     "user_exit_authorization": {
@@ -1965,7 +1965,7 @@
         "full_clean_capture_pass": false
       }
     },
-    "round_closure_at": "2026-10-12T10:51:14.727598+00:00",
+    "round_closure_at": "2026-10-12T11:16:19.116589+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 12,
       "new_confirmed_this_round": 0,
@@ -2595,15 +2595,15 @@
       "geometry_acceptance": "PriorR32six/R33five plusR35four favouritevariants limited Hips/Butt response; latest4 neutralreset40 andfinite8history; fullranges/clipping/coldreload pending."
     },
     "resumed_test_checkpoint": {
-      "at": "2026-10-12T10:51:14.727598+00:00",
+      "at": "2026-10-12T11:16:19.116589+00:00",
       "lane": "DIRECT",
-      "status": "ROUND35_CLOSED_FOUR_NEXT_FAVOURITES_PARTIAL",
+      "status": "ROUND36_CLOSED_CAMP_REGRESSION_AND_NPC_DEPENDENCIES",
       "root_owned_game_files": 2,
       "candidate_evidence": [
-        ".local/play-session-20261008/core-functional-147/repair/round35-registration.json"
+        ".local/play-session-20261008/core-functional-147/repair/round36-registration.json"
       ],
-      "runtime_evidence": ".local/play-session-20261008/core-functional-147/repair/round35-runtime-result.json",
-      "runtime_status": "FOUR_FAVOURITES_LIMITED_ADJUSTABLE_PARTIAL_PRIORITY_STACK_RETAINED",
+      "runtime_evidence": ".local/play-session-20261008/core-functional-147/repair/round36-runtime-result.json",
+      "runtime_status": "CURRENT_CAMP_MUSIC_AND_SKILL_AFTER_CNS_ACCEPTED_BOUNDED_NPC_STATIC_DEPENDENCIES_DIAGNOSED",
       "actual_import_check": {
         "evidence": ".local/play-session-20261008/user-native-136/repair/package-import-closure.json",
         "containers": 181,
@@ -2620,7 +2620,8 @@
         {
           "id": "BUG_GRAY_MATERIALS",
           "kind": "NON_CRASH",
-          "status": "PARTIAL_NANO_DEPENDENCY_INSTALLED_NO_VISUAL_PASS"
+          "status": "NANO_DEPENDENCY_INSTALLED_NO_VISUAL_PASS;CURRENT_NPC_DECLARED_IMPORT_GAPS_AND_OVERLAP_DIAGNOSED_RENDERING_UNKNOWN",
+          "evidence": ".local/play-session-20261008/core-functional-147/repair/r36-current-npc-package-closure.json"
         },
         {
           "id": "BUG_DEATH_NATIVE_RECOVERY",
@@ -2630,7 +2631,8 @@
         {
           "id": "BUG_CAMP_INTERACTION",
           "kind": "NON_CRASH",
-          "status": "OPEN"
+          "status": "EXISTING_CAMP_MUSIC_SKILL_POSTCNS_ACCEPTED_BOUNDED_FIRSTACTIVATION_ALLFACILITIES_DEATH_PENDING",
+          "evidence": ".local/play-session-20261008/core-functional-147/repair/round36-runtime-result.json"
         },
         {
           "id": "BUG_HUD_PHOTO_RECOVERY",
@@ -2678,13 +2680,13 @@
       "confirmed_new_crashes": 0,
       "unknown_exit130_preserved": true,
       "replacement_disposition": "No confirmed newsourcealias orcompatible replacement; zeroextraexclusions; source alternatives retained.",
-      "agent_disposition": "Bounded read-only follow-up completed; no descendant writer.",
+      "agent_disposition": "Both bounded read-only source follow-ups completed; no descendantwriter.",
       "report": ".local/play-session-20261008/MOD_TEST_REPORT_20261011.md",
       "csv": ".local/play-session-20261008/UNIFIED_MOD_TEST_LIST_20261011.csv",
       "continuation_prompt": ".local/play-session-20261008/CONTINUE_MOD_TESTING_PROMPT_20261011.md",
       "usage_guide": ".local/play-session-20261008/FUNCTIONAL_MOD_KEYS_20261011.md",
-      "source_delivery": "Delivery receipt: .local/play-session-20261008/core-functional-147/repair/source-delivery-round35.json; exact remote verification recorded after normal branch push",
-      "root_owned_game_files_scope": "Prior ownedHUD module unchanged; no loader/DLL/gameLua changes. Native Tuner added4neutral bindings; original15 semantic profiles andValues/Presets preserved. Native CNS selectedoutfit/index changed, other preferences/favourites preserved.",
+      "source_delivery": "Delivery receipt: .local/play-session-20261008/core-functional-147/repair/source-delivery-round36.json; exact remote verification recorded after normal branch push",
+      "root_owned_game_files_scope": "No gameLua/loader/DLL orMODpackage changes; all19Tuner profiles/defaults/presets/12favourites/40neutralbones preserved. Currentnativecamp menu only; game own autosave indicator observed, no manualsavecopy/rollback.",
       "previous_game_candidate_evidence": [
         ".local/play-session-20261008/user-native-135/repair/cursor-lifecycle-installed.json",
         ".local/play-session-20261008/user-native-135/repair/nano-base-installed.json"
@@ -2727,10 +2729,10 @@
       "source": "Native get_goal verified active on2026-10-11T22:30Z; latest direct user objective enables persistent resumed MOD testing in background",
       "scope": "All current and subsequently discovered stable test leaves; every independently verifiable test in one denominator; no formal Console implementation or scheduler resume",
       "tool_objective": "继续，继续这个测试，继续在我的桌面后台测试。嗯，我开目标模式的话应该就可以了吧。然后注意我之前说过的几个问题，你都进行测试。然后每一个问题都算一个任务。每个任务，每一个这个任务都是，就是每一个要测试的都算一个任务，算一个分母，拿这个当总任务数来进行汇报。",
-      "tokensUsed": 5488846,
-      "timeUsedSeconds": 44347,
-      "telemetry_at": "2026-10-12T10:49:41+00:00",
-      "telemetry_coverage": "Actual native get_goal before Round35 closure; later closing tools excluded"
+      "tokensUsed": 5604854,
+      "timeUsedSeconds": 45782,
+      "telemetry_at": "2026-10-12T11:13:07+00:00",
+      "telemetry_coverage": "Actual nativeget_goal beforeRound36closing; laterclosingtools excluded"
     },
     "goal_resume_source": {
       "at": "2026-10-11T22:33:55.839554+00:00",
