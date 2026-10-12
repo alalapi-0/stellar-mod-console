@@ -1138,7 +1138,7 @@
   "mod_compatibility_restructure": {
     "task_id": "stellar-mod-compatibility-core-first-20261010",
     "source": "Direct current user /goal execution instruction; does not resume paused console development/Cursor R04-n",
-    "lane": "DIRECT",
+    "lane": "GOVERNED",
     "owner_thread": "01a12a72-1d28-73c1-bedc-77a0f48858a2",
     "objective": "Stable adjustable body + natural physics + user combat; then individually retest all clothing while progressing campaign and changing view every 15 seconds",
     "priority": [
@@ -1536,25 +1536,25 @@
         "共享依赖": 4,
         "组合回归": 7
       },
-      "reason": "Currentunlockedcamp music/skill andpostCNS skillmenus verifiedwithprioritystack; existingPARTIAL scopeextended. CurrentNPCdeclareddependencies/42overlap diagnosed, no staticPASS.",
+      "reason": "NPCsourceversionmix ruledout; recorderexpiry sourceguardverified39checks/independentreview, oldsupervisor standby activationNOT_RUN; noinput/newPASS.",
       "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
-      "manifest_sha256": "28524fd07e2e42c9a4140c0b9e9d78bbc49011524a4d8b569ccf6e2eed3411f5",
+      "manifest_sha256": "a2e41ac0a13e3a97cc37689a6bca5381d51beaa0a4a7b2c836f5e82a52bab2a9",
       "target_identity_sha256": "93f0deed0de951e82b214a2754054df036cd81394a85a755e9038386c7a17537",
-      "enumeration_validation": ".local/play-session-20261008/core-functional-147/repair/unified-current-validation-round36.json",
-      "round_key": "private147-current-camp-input-and-npc-patch-evidence",
-      "round_status": "CLOSED_BOUNDED_BATCH_GOAL_CONTINUES",
-      "count": 36,
+      "enumeration_validation": ".local/play-session-20261008/core-functional-147/repair/unified-current-validation-round37.json",
+      "round_key": "offline-current-npc-unresolved-original-resource-and-author-rules",
+      "round_status": "CLOSED_BOUNDED_OFFLINE_BATCH_GOAL_CONTINUES",
+      "count": 37,
       "coverage": "since_baseline",
-      "last_seq": 36,
-      "last_key": "private147-current-camp-input-and-npc-patch-evidence",
+      "last_seq": 37,
+      "last_key": "offline-current-npc-unresolved-original-resource-and-author-rules",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": 0,
       "evidence_change_percentage_points": 0,
       "scope_change_percentage_points": 0,
-      "change_rule": "Same5123 scope/statuses; partialcamp evidenceexpanded andNPCuninstalledprojection corrected; no fullleafacceptancecredit.",
-      "round_start_commit": "5186335e8b7068e41930728b053a066ac3df13e6",
+      "change_rule": "Same5123 scope/statuses; sourceprovenance/failurehypothesis diagnosis only, no fullleafacceptancecredit.",
+      "round_start_commit": "ad540fb8500c3adca94aa774c23649fd85296558",
       "scope_change": "Expanded actual variant/control/animation/native/dependency/integration leaves; parent rollups/aliases not counted; explicit selected alternatives retained in excluded history. Initial draft5021 corrected to5129 before State registration using author variant rules.",
-      "milestone_change": "Actualmusicmenu/nativeSkilltree/postCNSinput acceptedbounded; NPCcurrent153cached+28fresh index reuse,233targetexports,42sharedIDs withbothuniqueexports.",
+      "milestone_change": "Three actualoriginalarchives/5currentUTOC matched; sourcevariantmix ruledout;201685canonicalnames+raw/incremental/nativeScript/152loosePAK candidates checkedwithout finding40missingIDs; authorpagegates preserved.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1893,23 +1893,25 @@
       "uncounted_parent_rollups": 12,
       "full_appearance_compatible_accepted": 0,
       "new_function_evidence_this_round": [],
-      "new_failures_this_round": [],
+      "new_failures_this_round": [
+        "PRIVATE_ROOT_RECORDER_EXPIRY_PREFLIGHT_RESTART_LOOP; containedstandby/sourceguardverified; activationNOT_RUN; helperissue no MODleafPASScredit"
+      ],
       "remaining_rounds": "UNKNOWN",
       "remaining_rounds_confidence": "UNKNOWN",
       "window": [],
       "prediction_reason": "Heterogeneous pending targets, source/login gates, and no three comparable positive throughput rounds.",
       "original_unified_required_retained": 5129
     },
-    "next_action": "Keep priorityCombined3ON/soleTuner/Jiggle/one recorder. Follow currentNPC unresolvedIDs and42shared nativeexports to actual visibleNPC/mountwinner/material observations; sourceauthor patch rules before removing anything. Continue retainedclothing/otherfunction tests inprivate display within masterdeadline11:22:02UTC; afterdeadline no input untilfresh grant, offline diagnosis continues. Preservecampfirstactivation/death/coldselectedreload/fullclipping pendinggates.",
-    "updated_at": "2026-10-12T11:16:19.116589+00:00",
+    "next_action": "NO_INPUT after expired10h grant pendinghumanrenewal. Keep game/prioritymods/soleoldrecorderWAITING_HANDOFF; candidateguard sourcewritten39tests/JudgePASS/GovAPPROVE, normalreloadonlyifexistingvalidation safelyfinished; no capture withoutfreshgrant. NextpassiveO_RDONLY currentloadedNPC meshes/material/component reference observation to connect40unknownImportIDs toactual missingmaterial ifpresent. No unavailableauthorpage retries/newdownloads/login orsame unchangedrawnamehash retry. Preservefull5123scope andall pendingvisual/body/clipping/patch/firstcamp/death gates; no wholeNPCpackage exclusion.",
+    "updated_at": "2026-10-12T11:59:54.751738+00:00",
     "blocked_audit": {
       "native_goal_status": "active",
-      "status": "PROGRESS_NO_TOTAL_BLOCK",
+      "status": "PROGRESS_UI_INPUT_AUTHORITY_EXPIRED_OFFLINE_ROUTE_CONTINUES",
       "consecutive_goal_turns": 0,
       "consecutive_no_progress_turns": 0,
       "condition": null,
-      "evidence": ".local/play-session-20261008/core-functional-147/repair/round36-runtime-result.json",
-      "next_action": "Keep priorityCombined3ON/soleTuner/Jiggle/one recorder. Follow currentNPC unresolvedIDs and42shared nativeexports to actual visibleNPC/mountwinner/material observations; sourceauthor patch rules before removing anything. Continue retainedclothing/otherfunction tests inprivate display within masterdeadline11:22:02UTC; afterdeadline no input untilfresh grant, offline diagnosis continues. Preservecampfirstactivation/death/coldselectedreload/fullclipping pendinggates.",
+      "evidence": ".local/play-session-20261008/core-functional-147/repair/round37-runtime-result.json",
+      "next_action": "NO_INPUT after expired10h grant pendinghumanrenewal. Keep game/prioritymods/soleoldrecorderWAITING_HANDOFF; candidateguard sourcewritten39tests/JudgePASS/GovAPPROVE, normalreloadonlyifexistingvalidation safelyfinished; no capture withoutfreshgrant. NextpassiveO_RDONLY currentloadedNPC meshes/material/component reference observation to connect40unknownImportIDs toactual missingmaterial ifpresent. No unavailableauthorpage retries/newdownloads/login orsame unchangedrawnamehash retry. Preservefull5123scope andall pendingvisual/body/clipping/patch/firstcamp/death gates; no wholeNPCpackage exclusion.",
       "consecutive_no_progress_goal_turns": 0
     },
     "user_exit_authorization": {
@@ -1965,7 +1967,7 @@
         "full_clean_capture_pass": false
       }
     },
-    "round_closure_at": "2026-10-12T11:16:19.116589+00:00",
+    "round_closure_at": "2026-10-12T11:59:54.751738+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 12,
       "new_confirmed_this_round": 0,
@@ -1998,15 +2000,15 @@
       "spring_preset": "Data-only Lua preset retained inactive; consumerSpringBoneTweaks absent; userselected soleJG unchanged"
     },
     "recording_result": {
-      "status": "PRIVATE147_SAME_SUPERVISOR_HANDOFF_REUSED_STEREO_UNITY_FULLQUALITY_PENDING",
+      "status": "PRIVATE147_RECORDER_WAITING_RENEWAL_SOURCE_EXPIRY_GUARD_VERIFIED_ACTIVATION_NOT_RUN",
       "evidence": ".local/play-session-20261008/core-functional-144/repair/private-display-route-evidence.json",
-      "limit": "Old146 encoder sealed normally with SIGINT exit255 and valid trailer/tail; Root sequencing mistake retained. Same supervisor reused; full supervisor shutdown NOT_RUN, full media quality and old125 deferred validation unaccepted.",
+      "limit": "Capturestandbyawaitsfreshhumanrenewal; normalownsupervisorreload onlyaftervalidation safelyfinishes. Historicalmedia quality/125deferredvalidation notaccepted.",
       "human_review": "Direct user confirms core91 selected green P1 natural, unaffected by later95 capture temporal defect",
-      "current_scope": "Exact147 game3398595/ticks39602517/:93; same3266392/ticks38684542; currentencoder3401853/ticks39623724",
+      "current_scope": "Exact147 game/serverlive; sole3266392/38684542 WAITING_HANDOFF; noencoder capture whileexpired",
       "large_motion_preview": "core103-green14-body-motion-preview-1920-crf16.mp4",
       "large_visual_acceptance": "WAITING_HUMAN; normal91 human PASS applies only earlier selected profile",
       "historical_limit": "Core95 battle capture cadence failed and quality review remains partial; sealed original evidence retained. User96 had no valid continuous video due cancelled/rejected Portal;96 logs/stills/report preserved;97 video requires source authorization",
-      "current_evidence": ".local/play-session-20261008/core-functional-147/repair/round34-runtime-result.json",
+      "current_evidence": ".local/play-session-20261008/core-functional-147/repair/round37-runtime-result.json",
       "current_preview": "core104-large14-motion-preview-1920-crf16.mp4",
       "current_battle_clips": [
         "core106-confirmed-crash-tail-223020-223042-lossless.mkv"
@@ -2038,17 +2040,17 @@
         "automatic_finisher_windows_requested_from_owner": true
       },
       "current_identity": {
-        "state": "RECORDING",
-        "supervisor_pid": 3000444,
-        "supervisor_start_ticks": "36083636",
-        "ffmpeg_pid": 3065438,
-        "ffmpeg_start_ticks": "36667452",
-        "run_id": "20261012T015402664294Z-user-native-142",
-        "game_pid": 3064904,
-        "game_start_ticks": "36665112"
+        "state": "WAITING_HANDOFF",
+        "updated_utc": "2026-10-12T11:40:44.665405+00:00",
+        "supervisor_pid": 3266392,
+        "supervisor_start_ticks": "38684542",
+        "script": "/home/alalapi/Projects/stellar-mod-console/.local/play-session-20261008/recording-session/continuous-recorder.py",
+        "game_pid": 3398595,
+        "game_start_ticks": "39602517",
+        "capture_active": false
       },
-      "current_coverage_limit": "Same sole supervisor resumed142 after normal141exit/configcleanup. Source141four-second jump sequence decoded and reviewed, airborne/landing visible. Full cadence/game rendering FPS/old gaps and tears remain unresolved; no full mediaPASS.",
-      "current_segment": "user-native-142",
+      "current_coverage_limit": "ExpiredprivateROOT preflight repeatedzero-durationends preservedasfailure; guardwritten39tests/JudgePASS/GovAPPROVE butcurrentoldsupervisornot reloaded. Existingmediavalidation allowed; no fullcapturequalityPASS.",
+      "current_segment": "core-functional-147",
       "previous_identity": {
         "state": "RECORDING",
         "supervisor_pid": 2436635,
@@ -2070,7 +2072,7 @@
         "game_start_ticks": "31582002"
       },
       "historical_prior_current_coverage_limit": "Current133 resumed after cursorfix; native-window-only30fps1720x720 capture directlyDATA, exactidentityverified. InitialRootframes not playertest acceptance; record gaps/route/combat remain scoped.",
-      "current_state": "RECORDING",
+      "current_state": "WAITING_HANDOFF",
       "current_service": "stellar-level-recorder-20261009.service",
       "root_input_source": "ROOT_GAME_MOD_TESTS",
       "source_resolution": "3440x1440 RGB60 lossless/FLAC DATA-only",
@@ -2095,6 +2097,37 @@
           0
         ],
         "prior_source": "recording-session/recorder_audio.py:174-180; repeated AUDIO.source resets bus; three game streams100/100 and six links intact"
+      },
+      "historical_before_round37_current_identity": {
+        "state": "RECORDING",
+        "supervisor_pid": 3000444,
+        "supervisor_start_ticks": "36083636",
+        "ffmpeg_pid": 3065438,
+        "ffmpeg_start_ticks": "36667452",
+        "run_id": "20261012T015402664294Z-user-native-142",
+        "game_pid": 3064904,
+        "game_start_ticks": "36665112"
+      },
+      "source_guard": {
+        "at": "2026-10-12T11:58:59.386975+00:00",
+        "contract_id": "private-root-recorder-expiry-admission",
+        "contract_version": 1,
+        "semantic_sha256": "4613d3c188819d00cb40c8a9169507f1ecd61df8d4da9f35f90c85ba99310405",
+        "source_sha256": "147e9295a2ae6bcbaa7977efa81489e48dcd605ab4bf6553d32f2a51b1178d4d",
+        "test_sha256": "ac4cbb46aa5a50b9b5c999b2ae7a5113dffbb463df8d00847f1e79c2545a96c2",
+        "judge": {
+          "identity": "/root/recorder_expiry_judge",
+          "decision": "PASS",
+          "evidence": "Freshreadonly independentlyrecomputed exacthashes/preimage preservation/protected4configs/33pure+6mockcases/no processes/no input/no capture/liveWAITING_HANDOFF"
+        },
+        "governor": {
+          "identity": "/root/virtual_desktop_governor",
+          "decision": "APPROVE",
+          "source": "Independentfinaldecisionreturned inthischat",
+          "activation": "NOT_RUN; oldsupervisor keptstandby; currentexistingffmpeg-f-null validation notnewcapture"
+        },
+        "scope": "SOURCE_GUARD_WRITTEN_39_CHECKS_VERIFIED_LIVE_HANDOFF_STANDBY;NO_NEWPROCESS_ACTIVATION",
+        "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
     "current_segment": "core-functional-147",
@@ -2595,15 +2628,18 @@
       "geometry_acceptance": "PriorR32six/R33five plusR35four favouritevariants limited Hips/Butt response; latest4 neutralreset40 andfinite8history; fullranges/clipping/coldreload pending."
     },
     "resumed_test_checkpoint": {
-      "at": "2026-10-12T11:16:19.116589+00:00",
-      "lane": "DIRECT",
-      "status": "ROUND36_CLOSED_CAMP_REGRESSION_AND_NPC_DEPENDENCIES",
+      "at": "2026-10-12T11:59:54.751738+00:00",
+      "lane": "GOVERNED",
+      "status": "ROUND37_CLOSED_NPC_PROVENANCE_RECORDER_GUARD_VERIFIED_ACTIVATION_NOT_RUN",
       "root_owned_game_files": 2,
       "candidate_evidence": [
-        ".local/play-session-20261008/core-functional-147/repair/round36-registration.json"
+        ".local/play-session-20261008/core-functional-147/repair/round37-registration.json",
+        ".local/play-session-20261008/core-functional-147/repair/r37-recorder-expiry-contract-v1.json",
+        ".local/play-session-20261008/core-functional-147/repair/r37-recorder-candidate-registration.json",
+        ".local/play-session-20261008/core-functional-147/repair/r37-recorder-review-decision.json"
       ],
-      "runtime_evidence": ".local/play-session-20261008/core-functional-147/repair/round36-runtime-result.json",
-      "runtime_status": "CURRENT_CAMP_MUSIC_AND_SKILL_AFTER_CNS_ACCEPTED_BOUNDED_NPC_STATIC_DEPENDENCIES_DIAGNOSED",
+      "runtime_evidence": ".local/play-session-20261008/core-functional-147/repair/round37-runtime-result.json",
+      "runtime_status": "NPC_MIXED_EDITION_RULED_OUT_RECORDER_EXPIRY_GUARD_VERIFIED_ACTIVATION_NOT_RUN_OFFLINE_ONLY",
       "actual_import_check": {
         "evidence": ".local/play-session-20261008/user-native-136/repair/package-import-closure.json",
         "containers": 181,
@@ -2680,13 +2716,13 @@
       "confirmed_new_crashes": 0,
       "unknown_exit130_preserved": true,
       "replacement_disposition": "No confirmed newsourcealias orcompatible replacement; zeroextraexclusions; source alternatives retained.",
-      "agent_disposition": "Both bounded read-only source follow-ups completed; no descendantwriter.",
+      "agent_disposition": "Boundedsource agent/Judge/Governor completed/collected; Root independentlyreproduced currentarchive/UTOC provenance andcandidatechecks. No descendantwriter; Govincidentalrebuildablecache removedexactly.",
       "report": ".local/play-session-20261008/MOD_TEST_REPORT_20261011.md",
       "csv": ".local/play-session-20261008/UNIFIED_MOD_TEST_LIST_20261011.csv",
       "continuation_prompt": ".local/play-session-20261008/CONTINUE_MOD_TESTING_PROMPT_20261011.md",
       "usage_guide": ".local/play-session-20261008/FUNCTIONAL_MOD_KEYS_20261011.md",
-      "source_delivery": "Delivery receipt: .local/play-session-20261008/core-functional-147/repair/source-delivery-round36.json; exact remote verification recorded after normal branch push",
-      "root_owned_game_files_scope": "No gameLua/loader/DLL orMODpackage changes; all19Tuner profiles/defaults/presets/12favourites/40neutralbones preserved. Currentnativecamp menu only; game own autosave indicator observed, no manualsavecopy/rollback.",
+      "source_delivery": "Delivery receipt: .local/play-session-20261008/core-functional-147/repair/source-delivery-round37.json; exact remote verification recorded after normal branch push",
+      "root_owned_game_files_scope": "No newgame/MOD/input/save/authentication effects; originalarchive O_RDONLY. Original19Tuner/defaults/presets exacthashes preserved. Root ownrecorder sourceguard/readyfalse standbymetadata/evidence only; exactgame/server/supervisor kept. SourceactivationNOT_RUN.",
       "previous_game_candidate_evidence": [
         ".local/play-session-20261008/user-native-135/repair/cursor-lifecycle-installed.json",
         ".local/play-session-20261008/user-native-135/repair/nano-base-installed.json"
@@ -2722,17 +2758,18 @@
         "mesh": "/Game/CNSRepacked/4c7515dbb7f9194d/Art/Character/PC/CH_P_EVE_09/CH_P_EVE_09.CH_P_EVE_09",
         "body": "Butt1.00->1.20 actual bilateralhipresponse; keyboardneutralrestoration exact40; othercases pending",
         "result": "PARTIAL_LIMITED_ADJUSTABLE"
-      }
+      },
+      "recorder_guard_activation": "NOT_RUN_CURRENT_OLD_SUPERVISOR_KEPT_WAITING_HANDOFF"
     },
     "native_goal": {
       "status": "active",
       "source": "Native get_goal verified active on2026-10-11T22:30Z; latest direct user objective enables persistent resumed MOD testing in background",
       "scope": "All current and subsequently discovered stable test leaves; every independently verifiable test in one denominator; no formal Console implementation or scheduler resume",
       "tool_objective": "继续，继续这个测试，继续在我的桌面后台测试。嗯，我开目标模式的话应该就可以了吧。然后注意我之前说过的几个问题，你都进行测试。然后每一个问题都算一个任务。每个任务，每一个这个任务都是，就是每一个要测试的都算一个任务，算一个分母，拿这个当总任务数来进行汇报。",
-      "tokensUsed": 5604854,
-      "timeUsedSeconds": 45782,
-      "telemetry_at": "2026-10-12T11:13:07+00:00",
-      "telemetry_coverage": "Actual nativeget_goal beforeRound36closing; laterclosingtools excluded"
+      "tokensUsed": 5986653,
+      "timeUsedSeconds": 48465,
+      "telemetry_at": "2026-10-12T11:57:50+00:00",
+      "telemetry_coverage": "Actualnativeget_goal beforeRound37closure; laterclosingtools excluded"
     },
     "goal_resume_source": {
       "at": "2026-10-11T22:33:55.839554+00:00",
@@ -2814,12 +2851,14 @@
       "input_route": "VerifiedprivateXvfb93 only; native0lockguardretained"
     },
     "input_window_result": {
-      "state": "ACTIVE",
+      "state": "EXPIRED_WAITING_HUMAN_RENEWAL",
       "source": "Fresh direct human authorizes10hours",
       "authorized_until": "2026-10-12T11:22:02.234030+00:00",
       "current_operational_deadline": "2026-10-12T11:22:02.234030+00:00",
       "same_grant_chunk_refresh_no_new_permission": true,
-      "scope": "Owned nativegame MODtest/input/screenoff/capture only; preserve saves/other tasks"
+      "scope": "Owned nativegame MODtest/input/screenoff/capture only; preserve saves/other tasks",
+      "expiry_observed_at": "2026-10-12T11:24:18.869386+00:00",
+      "renewal_question": "Pending asynchronous question: extend10hours/1hour/offlineonly; no reply received"
     },
     "virtual_desktop_skill_request": {
       "source": "User explicitly requests newAgent merge private-display workflow into existing linux-task-desktop, default newGUI tasks virtual and foreground only explicit request",
