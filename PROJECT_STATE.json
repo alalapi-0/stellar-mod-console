@@ -1260,7 +1260,8 @@
           "EveProportions+panel",
           "UUEPBS+EveProportions",
           "three-way ONLY if compatibility evidence"
-        ]
+        ],
+        "latest_native_outfit_case": "user-native-142/repair/nano-limited-body-result.json"
       },
       {
         "id": "T3",
@@ -1359,7 +1360,8 @@
           "full_visual": "PENDING_HUMAN",
           "source_quality": "Camera-moving sourcehorizontal seams confirmed; no codec/whole-frame freeze inselected39.534s; originUNKNOWN",
           "round17_combat_evidence": "core-functional-111/functional-round17-result.json"
-        }
+        },
+        "latest_native_outfit_case": "user-native-142/repair/nano-limited-body-result.json"
       },
       {
         "id": "T4",
@@ -1494,19 +1496,26 @@
         "evidence": ".local/play-session-20261008/user-native-127/repair/sbpr-coexistence-review.json",
         "route": "One SBPR Body plus independent accessory slots; two Body selections remain exclusive",
         "acceptance_credit": 0
+      },
+      "latest_limited_body_case": {
+        "at": "2026-10-12T02:26:51.115470+00:00",
+        "id": "appearance:Repacked Mod2724/choice-2",
+        "classification": "LIMITED_ADJUSTABLE",
+        "evidence": "user-native-142/repair/nano-limited-body-result.json",
+        "whole_appearance_accepted": false
       }
     },
     "progress": {
       "scope_version": "unified-leaves-v2-favourite-edition-20261012",
       "completion_scope": "RETAINED_INDEPENDENT_TESTS_AFTER_EXPLICIT_FAVOURITE_EDITION_SELECTION_WITH_SCOPE_GATES",
-      "effective_accepted": 50,
+      "effective_accepted": 51,
       "effective_required": 5125,
-      "completion_percent": 0.9756,
-      "tested_with_complete_conclusion": 52,
-      "test_conclusion_percent": 1.0146,
+      "completion_percent": 0.9951,
+      "tested_with_complete_conclusion": 53,
+      "test_conclusion_percent": 1.0341,
       "statuses": {
-        "NOT_TESTED": 5028,
-        "PASS": 50,
+        "NOT_TESTED": 5027,
+        "PASS": 51,
         "REOPENED": 2,
         "WAITING_HUMAN": 1,
         "PARTIAL": 14,
@@ -1527,25 +1536,25 @@
         "共享依赖": 4,
         "组合回归": 7
       },
-      "reason": "One native F11 routing leaf newlyPASS; one actual gray YoRHa converted1052 leafFAIL. Four favourite families and14 resource overlaps audited, no new exclusion or static PASS.",
+      "reason": "Native favourite function NOT_TESTED->PASS with originalpreferences/configs/bodyphysics restored. NanoMilk LIMITED_ADJUSTABLE under two sampled profiles/jump/cold; full appearance remainsPARTIAL. Original1052 import loss and11missing originaldependencies established offline.",
       "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
-      "manifest_sha256": "ad2ae0d83550a667fbc5964525cf60184fbf6df22e7ba50f3a36d897388c6d14",
+      "manifest_sha256": "3e14e1f0eefb2995633c7fcfd188c3f6064251477feb99470d82a49b15e3df6e",
       "target_identity_sha256": "adef3fc3e5a0aa07b96f4ea73ce23de7bc3006139aa810f55841f3cffa22da85",
-      "enumeration_validation": ".local/play-session-20261008/user-native-141/repair/unified-current-validation-round26.json",
-      "round_key": "native-passthrough-and-offline-favourite-audit-141",
+      "enumeration_validation": ".local/play-session-20261008/user-native-142/repair/unified-current-validation-round27.json",
+      "round_key": "source-import-nano-body-favourite-native-142",
       "round_status": "CLOSED_BOUNDED_BATCH_GOAL_CONTINUES",
-      "count": 26,
+      "count": 27,
       "coverage": "since_baseline",
-      "last_seq": 26,
-      "last_key": "native-passthrough-and-offline-favourite-audit-141",
+      "last_seq": 27,
+      "last_key": "source-import-nano-body-favourite-native-142",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": 0.0195,
       "evidence_change_percentage_points": 0,
       "scope_change_percentage_points": 0,
-      "change_rule": "Same5125scope; one new real routing functionPASS. Original5129 and four priorNanoexclusions preserved.",
-      "round_start_commit": "f632fc1ecb61214cb551837486aef23d914f1b10",
+      "change_rule": "Same5125equalweightleafscope, one new native functionPASS; no added/excluded targets and no static/runtime-partial appearance credit.",
+      "round_start_commit": "a90db8c55f366dbfa3bf3b533fa2cfd8f637ecf8",
       "scope_change": "Expanded actual variant/control/animation/native/dependency/integration leaves; parent rollups/aliases not counted; explicit selected alternatives retained in excluded history. Initial draft5021 corrected to5129 before State registration using author variant rules.",
-      "milestone_change": "10hourhumaninputgrant registered and existing capture resumed screenoff. F11routingPASS; YoRHa9nullmaterials actualgrayFAIL, favouriteNano restored. Distinct/shared resources preserved.",
+      "milestone_change": "One independent preference functionPASS; current Nano body case and cold retention verified, all original configuration hashes preserved. Source1052 unavailable dependency route narrowed without invented donor assets or purchase.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1884,27 +1893,25 @@
       "uncounted_parent_rollups": 12,
       "full_appearance_compatible_accepted": 0,
       "new_function_evidence_this_round": [
-        "component:EveProportionsTuner/passthrough"
+        "lua:DekCNS/favourite"
       ],
-      "new_failures_this_round": [
-        "appearance:Repacked Mod1052/choice-0"
-      ],
+      "new_failures_this_round": [],
       "remaining_rounds": "UNKNOWN",
       "remaining_rounds_confidence": "UNKNOWN",
       "window": [],
       "prediction_reason": "Heterogeneous tests, recent scope change, unresolved material dependencies and save-isolation limits; no three comparable positive accepted rounds.",
       "original_unified_required_retained": 5129
     },
-    "next_action": "Compare original1052 source import/dependency structure against converted version and identify a legitimate matching-resource route; continue favourite variant-level dedup and actual body/patch/input/defense tests within fixed10hgrant. Preserve real progress and shared resources.",
-    "updated_at": "2026-10-12T01:34:23.018285+00:00",
+    "next_action": "Read current camp interaction conditions and native training-mode availability to identify a safe combat test configuration; continue retained favourite outfits/patch/body mapping. Do not retry unchanged1052 missing-dependency case or bypass real-progress protection.",
+    "updated_at": "2026-10-12T02:26:51.115470+00:00",
     "blocked_audit": {
       "native_goal_status": "active",
       "status": "PROGRESS_NO_TOTAL_BLOCK",
       "consecutive_goal_turns": 0,
       "consecutive_no_progress_turns": 0,
       "condition": null,
-      "evidence": "Exact136game PID/startticks live, current loginctl LockedHint=yes and desktopctl service unavailable; not a game exit or total work block",
-      "next_action": "Offline profiler repair candidate verification and gray-resource dependency discovery while local unlock pending; no locked-screen input or reuse of expired136guard.",
+      "evidence": "Exact142game/supervisor/encoder identities live, desktop unlocked and displaymode3; native favouritePASS and body/source evidence are material progress.",
+      "next_action": "Read current camp interaction conditions and native training-mode availability to identify a safe combat test configuration; continue retained favourite outfits/patch/body mapping. Do not retry unchanged1052 missing-dependency case or bypass real-progress protection.",
       "consecutive_no_progress_goal_turns": 0
     },
     "user_exit_authorization": {
@@ -1960,7 +1967,7 @@
         "full_clean_capture_pass": false
       }
     },
-    "round_closure_at": "2026-10-12T01:34:23.018285+00:00",
+    "round_closure_at": "2026-10-12T02:26:51.115470+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 12,
       "new_confirmed_this_round": 0,
@@ -2036,14 +2043,14 @@
         "state": "RECORDING",
         "supervisor_pid": 3000444,
         "supervisor_start_ticks": "36083636",
-        "ffmpeg_pid": 3038268,
-        "ffmpeg_start_ticks": "36475561",
-        "run_id": "20261012T012203761209Z-user-native-141",
-        "game_pid": 3023364,
-        "game_start_ticks": "36256287"
+        "ffmpeg_pid": 3065438,
+        "ffmpeg_start_ticks": "36667452",
+        "run_id": "20261012T015402664294Z-user-native-142",
+        "game_pid": 3064904,
+        "game_start_ticks": "36665112"
       },
-      "current_coverage_limit": "Same supervisor resumed141 at fresh10hgrant; exact encoder/game live. Prior expiry recording gap retained; full media validation remains incomplete.",
-      "current_segment": "user-native-141",
+      "current_coverage_limit": "Same sole supervisor resumed142 after normal141exit/configcleanup. Source141four-second jump sequence decoded and reviewed, airborne/landing visible. Full cadence/game rendering FPS/old gaps and tears remain unresolved; no full mediaPASS.",
+      "current_segment": "user-native-142",
       "previous_identity": {
         "state": "RECORDING",
         "supervisor_pid": 2436635,
@@ -2072,10 +2079,11 @@
       "native136_last_segment": "Full readable frames decoded but prematureEOF warning; original retained, no cleancapturePASS",
       "native137": "One published clip full-decode/audio-nonzero verified; remaining originalraw validation incomplete. Exact owned validator interrupted to resume capture; no game process killed.",
       "native138_to_141": "Same supervisor resumes after exact root game restart; no second recorder",
-      "full_media_acceptance": "NOT_COMPLETE"
+      "full_media_acceptance": "NOT_COMPLETE",
+      "native142": "Single original service continues fullresolution RGB60/FLAC gamewindow/audio; source141shortmotion evidence distinct from fullquality acceptance."
     },
-    "current_segment": "user-native-141",
-    "previous_goal_turn_classification": "PROGRESS_NATIVE_ROUTING_PASS_YORHA_GRAY_FAIL_AND_SOURCE_RESOURCE_AUDITS",
+    "current_segment": "user-native-142",
+    "previous_goal_turn_classification": "PROGRESS_SOURCE_IMPORT_DIAGNOSIS_NANO_BODY_CASE_ONE_FAVOURITE_PASS",
     "execution_status": "GOAL_ACTIVE_NATIVE_AND_OFFLINE_TESTS",
     "pause_at": "2026-10-11T12:13:22.865867+00:00",
     "pause_source": "Latest human says today stop checking and deliver functional MOD key usage only",
@@ -2259,7 +2267,15 @@
         "native_material_slots_null": 9,
         "declared_original_dlc_resources": "NOT_FOUND_IN_UTOC_VIEW",
         "body_compatibility": "UNVERIFIED",
-        "replacement": "UNKNOWN"
+        "replacement": "UNKNOWN",
+        "source_audit": "user-native-141/repair/source1052-dependency-audit.json",
+        "original_import_count": 12,
+        "converted_import_count": 2,
+        "dropped_original_imports": 11,
+        "offline_source_paths": 1339,
+        "unique_source_indices": 629,
+        "matching_original_dependency_providers": 0,
+        "source_author_page": "GUEST_ADULT_CONTENT_ACCESS_BARRIER_NO_AUTHOR_CLAIM"
       }
     },
     "user_play_repairs": {
@@ -2620,10 +2636,10 @@
       "source": "Native get_goal verified active on2026-10-11T22:30Z; latest direct user objective enables persistent resumed MOD testing in background",
       "scope": "All current and subsequently discovered stable test leaves; every independently verifiable test in one denominator; no formal Console implementation or scheduler resume",
       "tool_objective": "继续，继续这个测试，继续在我的桌面后台测试。嗯，我开目标模式的话应该就可以了吧。然后注意我之前说过的几个问题，你都进行测试。然后每一个问题都算一个任务。每个任务，每一个这个任务都是，就是每一个要测试的都算一个任务，算一个分母，拿这个当总任务数来进行汇报。",
-      "tokensUsed": 1132276,
-      "timeUsedSeconds": 10958,
-      "telemetry_at": "2026-10-12T01:34:23.018285+00:00",
-      "telemetry_coverage": "Last direct nativeGoal cumulative checkpoint thisturn; not active-only time or cost; later work not included"
+      "tokensUsed": 1340346,
+      "timeUsedSeconds": 13556,
+      "telemetry_at": "2026-10-12T02:26:51.115470+00:00",
+      "telemetry_coverage": "Last direct nativeGoal checkpoint at this round; cumulative usage, not active-only time/cost; later tool work excluded"
     },
     "goal_resume_source": {
       "at": "2026-10-11T22:33:55.839554+00:00",
@@ -2683,14 +2699,20 @@
       "pending": "Remaining families require primary author/source relation; no blanket nonfavourite removal",
       "offline_audited_families": 4,
       "latest_audit": "user-native-141/repair/favourite-offline-dedup-review.json",
-      "new_exclusions_this_round": 0
+      "new_exclusions_this_round": 0,
+      "latest_native_favourite_function": {
+        "evidence": "user-native-142/repair/favourite-native-result.json",
+        "status": "PASS",
+        "original_true_count_restored": 12,
+        "no_new_exclusions": true
+      }
     },
     "screen_off_result": {
       "evidence": "user-native-139/repair/screen-off-regression.json",
       "native_input_and_frame_capture": "PASS_SHORT_REGRESSION",
       "lock_sleep_policy_changed": false,
       "restart_limit": "Native Steam relaunch wakes physical display; reapply documented one-shotPowerSaveMode3 after controlled restart",
-      "current_segment": "user-native-141",
+      "current_segment": "user-native-142",
       "final_power_mode": 3,
       "final_lock_hint": "no"
     },
