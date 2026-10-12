@@ -1497,17 +1497,17 @@
       }
     },
     "progress": {
-      "scope_version": "unified-leaves-v1-20261011",
-      "completion_scope": "ALL_CURRENTLY_ENUMERATED_INDEPENDENT_TEST_LEAVES_WITH_EXPLICIT_SCOPE_GATES",
-      "effective_accepted": 47,
-      "effective_required": 5129,
-      "completion_percent": 0.9164,
-      "tested_with_complete_conclusion": 48,
-      "test_conclusion_percent": 0.9359,
+      "scope_version": "unified-leaves-v2-favourite-edition-20261012",
+      "completion_scope": "RETAINED_INDEPENDENT_TESTS_AFTER_EXPLICIT_FAVOURITE_EDITION_SELECTION_WITH_SCOPE_GATES",
+      "effective_accepted": 49,
+      "effective_required": 5125,
+      "completion_percent": 0.9561,
+      "tested_with_complete_conclusion": 50,
+      "test_conclusion_percent": 0.9756,
       "statuses": {
-        "NOT_TESTED": 5033,
-        "PASS": 47,
-        "REOPENED": 4,
+        "NOT_TESTED": 5029,
+        "PASS": 49,
+        "REOPENED": 2,
         "WAITING_HUMAN": 1,
         "PARTIAL": 15,
         "BLOCKED_NOT_INSTALLED": 28,
@@ -1517,7 +1517,7 @@
         "功能": 221,
         "开发工具 API": 7,
         "范围门禁": 2,
-        "外观选择": 1027,
+        "外观选择": 1023,
         "历史待测外观": 25,
         "外观参数": 531,
         "纹理选择": 390,
@@ -1527,25 +1527,25 @@
         "共享依赖": 4,
         "组合回归": 7
       },
-      "reason": "Three actual installed pure profiler APIs repaired and rechecked; pointer hardware candidate failed in136, shared virtual replacement installed137runtime pending. Whole outfit pass0, no scope/count reset.",
+      "reason": "Two cold UI lifecycle functions nowPASS; F11/native movement isPARTIAL. Four corresponding Nano original menu variants explicitly excluded by favourite edition choice, not countedPASS. No whole outfit acceptance.",
       "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
-      "manifest_sha256": "4ebb7a2af9c94af23983a8c38a204c32e166e8095f8c28530cea2ce09694d51c",
-      "target_identity_sha256": "b000f0c6352976828bcbd0e5f32417ba92da1ef5374b5e0b680723e3c1444540",
-      "enumeration_validation": ".local/play-session-20261008/user-native-136/repair/goal-resume-20261012/unified-current-validation.json",
-      "round_key": "goal-resume-offline-prerequisites",
+      "manifest_sha256": "4c62e8d1e6e1b2e5380ac35a73e4ea37f2f857fa3e1d2e0d12577e817648523a",
+      "target_identity_sha256": "adef3fc3e5a0aa07b96f4ea73ce23de7bc3006139aa810f55841f3cffa22da85",
+      "enumeration_validation": ".local/play-session-20261008/user-native-141/repair/unified-current-validation.json",
+      "round_key": "cursor-hittest-screenoff-favourite-selection-141",
       "round_status": "CLOSED_BOUNDED_BATCH_GOAL_CONTINUES",
-      "count": 24,
+      "count": 25,
       "coverage": "since_baseline",
-      "last_seq": 24,
-      "last_key": "goal-resume-offline-prerequisites",
+      "last_seq": 25,
+      "last_key": "cursor-hittest-screenoff-favourite-selection-141",
       "historical_round_count": "UNKNOWN",
-      "execution_change_percentage_points": 0.0585,
+      "execution_change_percentage_points": 0.039,
       "evidence_change_percentage_points": 0,
-      "scope_change_percentage_points": 0,
-      "change_rule": "Same5129 acceptance scope; three actual installed public Lua APIs FAIL->PASS through repair+real source retest. Current pointer visuals partial, not an extra PASS. No scope/evidence-rate change.",
-      "round_start_commit": "d32a81a063770bb186c01b2c868e4366d33e2a46",
+      "scope_change_percentage_points": 0.0007,
+      "change_rule": "Original5129retained. +2actualnewUI PASS atoldscope; four explicit favourite-edition exclusions reduce effective denominator5125 with noPASS credit.",
+      "round_start_commit": "b3d8d7c12b775f0506da1599811ec5b416a6de21",
       "scope_change": "Expanded actual variant/control/animation/native/dependency/integration leaves; parent rollups/aliases not counted; explicit selected alternatives retained in excluded history. Initial draft5021 corrected to5129 before State registration using author variant rules.",
-      "milestone_change": "Exact threeLua repairs installedgameoff,137coldboot singlevirtualpointer visualpartial; one existing game-only recorder resumedDATA;16missing resource names resolved and source-provider scan completed. Full cursor click/lifecycle and garments/defense still open.",
+      "milestone_change": "Cold139 focus and HitTest repair verified; screen-off nativeinput/capture short regression works, Steamrestart wakesdisplay and requires another one-shot off. Favourite12snapshot; redundant Nano menu actually absent cold141 after filename scan fix. Single recorder reused through restarts.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1880,27 +1880,22 @@
         "mixed_parent_mods": 139,
         "clothing_parent_mods": 98
       },
-      "excluded_history_count": 38,
+      "excluded_history_count": 42,
       "uncounted_parent_rollups": 12,
       "full_appearance_compatible_accepted": 0,
       "new_function_evidence_this_round": [
-        "lua:jsbLuaProfilerMod/serialize",
-        "lua:jsbLuaProfilerMod/tbl",
-        "lua:jsbLuaProfilerMod/write"
+        "lua:DekCNS/ui",
+        "component:EveProportionsTuner/panel"
       ],
-      "new_failures_this_round": [
-        "lua:jsbLuaProfilerMod/simpleBench",
-        "lua:jsbLuaProfilerMod/simpleBenchMulti",
-        "lua:jsbLuaProfilerMod/stop_trace",
-        "control:UltimateNudeEve/TextureOptions/5/schema"
-      ],
+      "new_failures_this_round": [],
       "remaining_rounds": "UNKNOWN",
       "remaining_rounds_confidence": "UNKNOWN",
       "window": [],
-      "prediction_reason": "Scope changed, heterogeneous tests and lock/save isolation blockers; no three comparable positive accepted rounds."
+      "prediction_reason": "Scope changed, heterogeneous tests and lock/save isolation blockers; no three comparable positive accepted rounds.",
+      "original_unified_required_retained": 5129
     },
-    "next_action": "Continue exact137 native game on assigned fifthdesktop: diagnose mouse-button processing (one guarded click attempt refused a transient non-game focus; native/X11 click delivery alone did not close panels), verify NumLock routing and both close orders, F11/nativeHUD/camp. Preserve47/5129 and exact136 raw recorder files;137 recorder active with20minstop grace. Next Nano/YoRHa/NPC body/patch tests remain full scope.",
-    "updated_at": "2026-10-11T23:49:14.949148+00:00",
+    "next_action": "Continue author/source-based duplicate reconciliation for current12favourites before testing retained variants. Nano favourite RepackedMod2724 kept, original menu4excluded/assets retained. Then actual F11movement/camp, gray body/NPC/YoRHa and selected clothing body/patch tests. Current141deadline010036UTC, do not bypassexpiry. Root recorder active; screen-off after controlled Steamrestarts needs reapply one-shot only.",
+    "updated_at": "2026-10-12T00:48:38.271904+00:00",
     "blocked_audit": {
       "native_goal_status": "active",
       "status": "PROGRESS_NO_TOTAL_BLOCK",
@@ -1908,7 +1903,8 @@
       "consecutive_no_progress_turns": 0,
       "condition": null,
       "evidence": "Exact136game PID/startticks live, current loginctl LockedHint=yes and desktopctl service unavailable; not a game exit or total work block",
-      "next_action": "Offline profiler repair candidate verification and gray-resource dependency discovery while local unlock pending; no locked-screen input or reuse of expired136guard."
+      "next_action": "Offline profiler repair candidate verification and gray-resource dependency discovery while local unlock pending; no locked-screen input or reuse of expired136guard.",
+      "consecutive_no_progress_goal_turns": 0
     },
     "user_exit_authorization": {
       "source": "Direct user: 没保存也没关系，允许放弃未保存进度并正常退出。正常重启人物; followed by 重启任务",
@@ -1953,9 +1949,17 @@
         "EVIDENCE": "Three newly verified installedLuaAPI PASS and actual137single-pointer visualpartial;136raw recording validation incomplete afterstop timeout, files retained",
         "CORRECTIVE ACTION": "Recover bounded validation of the136raw recording",
         "NEXT CHECKPOINT": "At least one136raw segment has complete decode conclusion; later checks require75000additionaltokens/30active-minute cooldown and a listed condition"
+      },
+      "corrective_action_result": {
+        "evidence": "user-native-136/repair/goal-resume-20261012/recording-recovery-decode.json",
+        "status": "CONCLUDED_TRUNCATED_CONTAINER_REVIEW_REQUIRED",
+        "exit": 0,
+        "warning": "File ended prematurely",
+        "unchanged_original_retained": true,
+        "full_clean_capture_pass": false
       }
     },
-    "round_closure_at": "2026-10-11T23:49:14.949148+00:00",
+    "round_closure_at": "2026-10-12T00:48:38.271904+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 12,
       "new_confirmed_this_round": 0,
@@ -2029,16 +2033,16 @@
       },
       "current_identity": {
         "state": "RECORDING",
-        "supervisor_pid": 2762573,
-        "supervisor_start_ticks": "31598877",
-        "ffmpeg_pid": 2762639,
-        "ffmpeg_start_ticks": "31598894",
-        "run_id": "20261011T114915757883Z-user-native-133",
-        "game_pid": 2759773,
-        "game_start_ticks": "31582002"
+        "supervisor_pid": 3000444,
+        "supervisor_start_ticks": "36083636",
+        "ffmpeg_pid": 3024025,
+        "ffmpeg_start_ticks": "36258806",
+        "run_id": "20261012T004556211816Z-user-native-141",
+        "game_pid": 3023364,
+        "game_start_ticks": "36256287"
       },
-      "current_coverage_limit": "Current133 resumed after cursorfix; native-window-only30fps1720x720 capture directlyDATA, exactidentityverified. InitialRootframes not playertest acceptance; record gaps/route/combat remain scoped.",
-      "current_segment": "user-native-133",
+      "current_coverage_limit": "Root inputs and exact current window/audio only; stored requested60FPS, actual game rendering FPS unmeasured. Source gaps/tears and old incomplete validation remain historical unresolved findings; no full recording acceptance.",
+      "current_segment": "user-native-141",
       "previous_identity": {
         "state": "RECORDING",
         "supervisor_pid": 2436635,
@@ -2048,11 +2052,30 @@
         "run_id": "20261011T040907144648Z-core-functional-114",
         "game_pid": 2435006,
         "game_start_ticks": "28828935"
-      }
+      },
+      "historical_prior_current_identity": {
+        "state": "RECORDING",
+        "supervisor_pid": 2762573,
+        "supervisor_start_ticks": "31598877",
+        "ffmpeg_pid": 2762639,
+        "ffmpeg_start_ticks": "31598894",
+        "run_id": "20261011T114915757883Z-user-native-133",
+        "game_pid": 2759773,
+        "game_start_ticks": "31582002"
+      },
+      "historical_prior_current_coverage_limit": "Current133 resumed after cursorfix; native-window-only30fps1720x720 capture directlyDATA, exactidentityverified. InitialRootframes not playertest acceptance; record gaps/route/combat remain scoped.",
+      "current_state": "ROOT_SINGLE_RECORDER_ACTIVE",
+      "current_service": "stellar-level-recorder-20261009.service",
+      "root_input_source": "ROOT_GAME_MOD_TESTS",
+      "source_resolution": "3440x1440 RGB60 lossless/FLAC DATA-only",
+      "native136_last_segment": "Full readable frames decoded but prematureEOF warning; original retained, no cleancapturePASS",
+      "native137": "One published clip full-decode/audio-nonzero verified; remaining originalraw validation incomplete. Exact owned validator interrupted to resume capture; no game process killed.",
+      "native138_to_141": "Same supervisor resumes after exact root game restart; no second recorder",
+      "full_media_acceptance": "NOT_COMPLETE"
     },
-    "current_segment": "user-native-137",
-    "previous_goal_turn_classification": "PROGRESS: three new real installedAPI acceptances, meaningful sharedcursor replacement and actual137visualpartial, exact missing-ID mapping/index correction, current own recording handle live.",
-    "execution_status": "GOAL_ACTIVE_CONTINUING_UI_REGRESSIONS",
+    "current_segment": "user-native-141",
+    "previous_goal_turn_classification": "PROGRESS_UI_REPAIR_SCREEN_OFF_AND_FAVOURITE_EDITION_SELECTION",
+    "execution_status": "GOAL_ACTIVE_FAVOURITE_DUPLICATE_RECONCILIATION",
     "pause_at": "2026-10-11T12:13:22.865867+00:00",
     "pause_source": "Latest human says today stop checking and deliver functional MOD key usage only",
     "user_play_handoff": {
@@ -2576,7 +2599,11 @@
       "status": "active",
       "source": "Native get_goal verified active on2026-10-11T22:30Z; latest direct user objective enables persistent resumed MOD testing in background",
       "scope": "All current and subsequently discovered stable test leaves; every independently verifiable test in one denominator; no formal Console implementation or scheduler resume",
-      "tool_objective": "继续，继续这个测试，继续在我的桌面后台测试。嗯，我开目标模式的话应该就可以了吧。然后注意我之前说过的几个问题，你都进行测试。然后每一个问题都算一个任务。每个任务，每一个这个任务都是，就是每一个要测试的都算一个任务，算一个分母，拿这个当总任务数来进行汇报。"
+      "tool_objective": "继续，继续这个测试，继续在我的桌面后台测试。嗯，我开目标模式的话应该就可以了吧。然后注意我之前说过的几个问题，你都进行测试。然后每一个问题都算一个任务。每个任务，每一个这个任务都是，就是每一个要测试的都算一个任务，算一个分母，拿这个当总任务数来进行汇报。",
+      "tokensUsed": 868015,
+      "timeUsedSeconds": 8032,
+      "telemetry_at": "2026-10-12T00:43:57UTC",
+      "telemetry_coverage": "Direct current nativeGoal cumulative; undifferentiated elapsed, not active-only time; no cost estimate"
     },
     "goal_resume_source": {
       "at": "2026-10-11T22:33:55.839554+00:00",
@@ -2624,6 +2651,25 @@
         "CORRECTIVE ACTION": "Locate the failing core83 operation before further acceptance",
         "NEXT CHECKPOINT": "A newly registered diagnostic candidate yields an identifiable operation result; subsequent health checks obey75000-token/30-active-minute cooldown and require a listed trigger"
       }
+    },
+    "user_favourite_dedup_policy": {
+      "source": "Latest direct human favourite duplicate edition request",
+      "favourites_count": 12,
+      "original_unified_required": 5129,
+      "effective_required": 5125,
+      "new_excluded_leaves": 4,
+      "native_asset_packages_removed": 0,
+      "evidence": "user-native-139/repair/favourite-nano-edition-selection.json",
+      "pending": "Remaining families require primary author/source relation; no blanket nonfavourite removal"
+    },
+    "screen_off_result": {
+      "evidence": "user-native-139/repair/screen-off-regression.json",
+      "native_input_and_frame_capture": "PASS_SHORT_REGRESSION",
+      "lock_sleep_policy_changed": false,
+      "restart_limit": "Native Steam relaunch wakes physical display; reapply documented one-shotPowerSaveMode3 after controlled restart",
+      "current_segment": "user-native-141",
+      "final_power_mode": 3,
+      "final_lock_hint": "no"
     }
   }
 }
