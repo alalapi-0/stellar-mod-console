@@ -1514,11 +1514,11 @@
       "tested_with_complete_conclusion": 57,
       "test_conclusion_percent": 1.1126,
       "statuses": {
-        "NOT_TESTED": 5019,
+        "NOT_TESTED": 5014,
         "PASS": 55,
         "REOPENED": 2,
         "WAITING_HUMAN": 1,
-        "PARTIAL": 16,
+        "PARTIAL": 21,
         "FAIL": 2,
         "BLOCKED_NOT_INSTALLED": 28
       },
@@ -1536,25 +1536,25 @@
         "共享依赖": 4,
         "组合回归": 7
       },
-      "reason": "Human changes assistant acceptance tolaunch/connect/coexistence only; two redundant sharedcheckbox actionleaves excluded, three representativesv2. Same55 accepted; OceanString partial numericalbodyresponse, stereo actualsample repaired; no new originalaction PASS.",
+      "reason": "Six favourite variants actualload/moderateHips bodyvisual/reset verified;5newPARTIAL+1broadenedPARTIAL. No fullappearance PASS or denominatorchange.",
       "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
-      "manifest_sha256": "35a12708d6661f4e105ba500954131919aa47f8356ea0a554aa84034110d2c37",
+      "manifest_sha256": "a01f1526b660310b09bcbdc1ce923b6185f46666ec2f9e2c8f7c969012cfec26",
       "target_identity_sha256": "93f0deed0de951e82b214a2754054df036cd81394a85a755e9038386c7a17537",
-      "enumeration_validation": ".local/play-session-20261008/core-functional-146/repair/unified-current-validation-round31.json",
-      "round_key": "private146-recorder-stereo-and-combined-defense",
+      "enumeration_validation": ".local/play-session-20261008/core-functional-146/repair/unified-current-validation-round32.json",
+      "round_key": "private146-priority-on-favourite-body-visual",
       "round_status": "CLOSED_BOUNDED_BATCH_GOAL_CONTINUES",
-      "count": 31,
+      "count": 32,
       "coverage": "since_baseline",
-      "last_seq": 31,
-      "last_key": "private146-recorder-stereo-and-combined-defense",
+      "last_seq": 32,
+      "last_key": "private146-priority-on-favourite-body-visual",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": 0,
       "evidence_change_percentage_points": 0,
-      "scope_change_percentage_points": 0.0004,
-      "change_rule": "Explicithumanv2 acceptance/sameGUI-control merger; denominator5125->5123 andretainedactionhistory. Acceptedweight55 unchanged, entirepercentagechangeisscope, no action-success execution credit.",
-      "round_start_commit": "ad7d4671914a84f4755036293e381a937a36aa3d",
+      "scope_change_percentage_points": 0,
+      "change_rule": "Same55/5123; all completionrate contribution categories0. Five newpartialtests are genuine bounded progress, not acceptancecredit.",
+      "round_start_commit": "9db76fd371e5693416ec2837db8f731a931a8a55",
       "scope_change": "Expanded actual variant/control/animation/native/dependency/integration leaves; parent rollups/aliases not counted; explicit selected alternatives retained in excluded history. Initial draft5021 corrected to5129 before State registration using author variant rules.",
-      "milestone_change": "Actualstereo fixed; privateAux hideblack overlayrecovered;3ON retained duringothermod UI/outfit tests;OceanString numericalbodyresponse/reset/movementpartial; HUDabsence recorded.",
+      "milestone_change": "Priority3ON preserved during six outfitbody cases; nativebackpackrecovery confirmed; HUDopacity0 exactreadonly causeunestablished.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1889,12 +1889,10 @@
         "mixed_parent_mods": 139,
         "clothing_parent_mods": 98
       },
-      "excluded_history_count": 42,
+      "excluded_history_count": 44,
       "uncounted_parent_rollups": 12,
       "full_appearance_compatible_accepted": 0,
-      "new_function_evidence_this_round": [
-        "lua:DekCNS/favourite"
-      ],
+      "new_function_evidence_this_round": [],
       "new_failures_this_round": [],
       "remaining_rounds": "UNKNOWN",
       "remaining_rounds_confidence": "UNKNOWN",
@@ -1902,8 +1900,8 @@
       "prediction_reason": "Heterogeneous tests, recent scope change, unresolved material dependencies and save-isolation limits; no three comparable positive accepted rounds.",
       "original_unified_required_retained": 5129
     },
-    "next_action": "Keep current Combined3ON andsoleEveProportions/Tuner/JiggleControl ON; continue retained favourite clothing source/material/body/clipping tests in same running146. CurrentSBPROceanString30 smallbreastpointnumericalresponsePARTIAL; nextusemoderatebody/standing+motion visualcase andnextfavourite. Record HUD absence andother noncrash bugs; diagnose exact observed crash/conflict. No dedicated auto-defense action test, no driver switching; one stereo recorder continues.",
-    "updated_at": "2026-10-12T08:30:39.813312+00:00",
+    "next_action": "KeepCombined3ON/soleTuner/Jiggle/one recorder unchanged. Continue next favourite clothing andsource-first alias audit; six bounded bodycases partial, next test otherbodycontrols/tunedmotion andbatch nativeHUD/camp recovery. Diagnose actualclearconflict; no standalone automaticdefense actiontest, no save rollback.",
+    "updated_at": "2026-10-12T08:59:29.694002+00:00",
     "blocked_audit": {
       "native_goal_status": "active",
       "status": "PROGRESS_NO_TOTAL_BLOCK",
@@ -1967,7 +1965,7 @@
         "full_clean_capture_pass": false
       }
     },
-    "round_closure_at": "2026-10-12T08:30:39.813312+00:00",
+    "round_closure_at": "2026-10-12T08:59:29.694002+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 12,
       "new_confirmed_this_round": 0,
@@ -2100,7 +2098,7 @@
       }
     },
     "current_segment": "core-functional-146",
-    "previous_goal_turn_classification": "PROGRESS_STEREO_REPAIR_AND_HUMAN_SCOPE_ALIGNMENT_FAVOURITE_BODY_PARTIAL",
+    "previous_goal_turn_classification": "PROGRESS",
     "execution_status": "GOAL_ACTIVE_PRIVATE_DISPLAY_LOCKED_DESKTOP_TESTS",
     "pause_at": "2026-10-11T12:13:22.865867+00:00",
     "pause_source": "Latest human says today stop checking and deliver functional MOD key usage only",
@@ -2594,19 +2592,18 @@
       "active": "EveProportions + Tuner (formerF4,currentF9)",
       "inactive_preserved": "UUEPBS",
       "source": "Current user explicitly requests sole formerF4 system",
-      "geometry_acceptance": "PENDING_USER_VISUAL"
+      "geometry_acceptance": "SIX_FAVOURITE_HIPS_1_TO_1_2_LOCAL_VISUAL_AND_EXACT_RESET_CONFIRMED_FULLRANGES_PENDING"
     },
     "resumed_test_checkpoint": {
-      "at": "2026-10-12T08:30:39.813312+00:00",
+      "at": "2026-10-12T08:59:29.694002+00:00",
       "lane": "DIRECT",
-      "status": "ROUND31_CLOSED_PRIORITY_MODULES_ON_APPEARANCE_CONTINUES",
+      "status": "ROUND32_CLOSED_SIX_FAVOURITE_BODY_CASES_PRIORITY_ON",
       "root_owned_game_files": 0,
       "candidate_evidence": [
-        ".local/play-session-20261008/core-functional-146/repair/recorder-stereo-lifecycle-candidate.json",
-        ".local/play-session-20261008/core-functional-146/repair/aux-hide-raise-recovery.json"
+        ".local/play-session-20261008/core-functional-146/repair/round32-registration.json"
       ],
-      "runtime_evidence": ".local/play-session-20261008/core-functional-146/repair/round31-runtime-result.json",
-      "runtime_status": "PASS_BOUNDED_STEREO_AND_USER_DEFINED_ASSISTANT_COMPATIBILITY_APPEARANCE_PARTIAL",
+      "runtime_evidence": ".local/play-session-20261008/core-functional-146/repair/round32-runtime-result.json",
+      "runtime_status": "SIX_FAVOURITE_VARIANTS_BOUNDED_BODY_VISUAL_PARTIAL_PRIORITY_STACK_PRESERVED",
       "actual_import_check": {
         "evidence": ".local/play-session-20261008/user-native-136/repair/package-import-closure.json",
         "containers": 181,
@@ -2638,8 +2635,8 @@
         {
           "id": "BUG_HUD_PHOTO_RECOVERY",
           "kind": "NON_CRASH",
-          "status": "OPEN_HUD_ABSENT_AFTER_CNS_OUTFIT_CHANGE_MOVEMENT_WORKS_CAUSE_UNKNOWN",
-          "evidence": ".local/play-session-20261008/core-functional-146/repair/round31-runtime-result.json"
+          "status": "OPEN_MAINHUD_OPACITY_ZERO_NATIVE_INVENTORY_RECOVERY_WORKS_WRITER_UNKNOWN",
+          "evidence": ".local/play-session-20261008/core-functional-146/repair/r32-hud-opacity-readonly.json"
         },
         {
           "id": "BUG_ASSISTANT_WINDOW_CONTINUITY",
@@ -2680,14 +2677,14 @@
       "save_isolation": "NOT_ESTABLISHED_NO_SAVE_ROLLBACK_OR_DELIBERATE_DEATH_PROGRESSION_TESTS",
       "confirmed_new_crashes": 0,
       "unknown_exit130_preserved": true,
-      "replacement_disposition": "No newly verified full compatible substitute; no additional incompatible appearance variant removed in this batch.",
-      "agent_disposition": "All bounded descendants completed; no live descendant writer",
+      "replacement_disposition": "No confirmed newsourcealias orcompatible replacement; zeroextraexclusions; source alternatives retained.",
+      "agent_disposition": "Both bounded read-only audits collected; no descendant writer.",
       "report": ".local/play-session-20261008/MOD_TEST_REPORT_20261011.md",
       "csv": ".local/play-session-20261008/UNIFIED_MOD_TEST_LIST_20261011.csv",
       "continuation_prompt": ".local/play-session-20261008/CONTINUE_MOD_TESTING_PROMPT_20261011.md",
       "usage_guide": ".local/play-session-20261008/FUNCTIONAL_MOD_KEYS_20261011.md",
-      "source_delivery": "Delivery receipt: .local/play-session-20261008/core-functional-146/repair/source-delivery-round31.json; verify exact remoteHEAD",
-      "root_owned_game_files_scope": "No additionalgame sourcechange; native UI test changescurrentoutfit andneutralcurrentmeshTuner binding only. Prior four bindings preserved; existingCNSv3 stays samehash.",
+      "source_delivery": "Delivery receipt: .local/play-session-20261008/core-functional-146/repair/source-delivery-round32.json; verify exactremoteHEAD",
+      "root_owned_game_files_scope": "No sourcefile change; only nativeoutfit selections andnewneutralTuner bindings. All5round-start bindingblocks preserved;Values/Presets unchanged.",
       "previous_game_candidate_evidence": [
         ".local/play-session-20261008/user-native-135/repair/cursor-lifecycle-installed.json",
         ".local/play-session-20261008/user-native-135/repair/nano-base-installed.json"
@@ -2733,10 +2730,10 @@
       "source": "Native get_goal verified active on2026-10-11T22:30Z; latest direct user objective enables persistent resumed MOD testing in background",
       "scope": "All current and subsequently discovered stable test leaves; every independently verifiable test in one denominator; no formal Console implementation or scheduler resume",
       "tool_objective": "继续，继续这个测试，继续在我的桌面后台测试。嗯，我开目标模式的话应该就可以了吧。然后注意我之前说过的几个问题，你都进行测试。然后每一个问题都算一个任务。每个任务，每一个这个任务都是，就是每一个要测试的都算一个任务，算一个分母，拿这个当总任务数来进行汇报。",
-      "tokensUsed": 4407159,
-      "timeUsedSeconds": 35872,
-      "telemetry_at": "2026-10-12T08:27:58+00:00",
-      "telemetry_coverage": "Nativeget_goal cumulative parent/child snapshot beforeRound31close, no explicitbudget; laterclosingtools excluded"
+      "tokensUsed": 4684965,
+      "timeUsedSeconds": 37554,
+      "telemetry_at": "2026-10-12T08:55:59+00:00",
+      "telemetry_coverage": "Actualnativeget_goal cumulativeparent/child snapshotbeforeRound32closure; laterclosingtools excluded"
     },
     "goal_resume_source": {
       "at": "2026-10-11T22:33:55.839554+00:00",
