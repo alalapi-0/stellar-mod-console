@@ -1536,25 +1536,25 @@
         "共享依赖": 4,
         "组合回归": 8
       },
-      "reason": "Fresh112NPC/monstercomponent snapshot narrowsactualSkinEve/Teeth nulls anduncreated19-import providers inoverlappingAIO/Misc. Objecthashmismatch ruledout; checksum-onlyrootcause invalidatedbyworkingPrototype. Author-nativeCNS1029 alternatives identified; no wholeNPC/repairPASS.",
+      "reason": "ColdAIOonly/Misconly eachrestore3SkinEve9; fullbothcoldreproducesNULL3. Precisenativebundlehardconflict verified, no wholeNPCPASS orscopechanges.",
       "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
-      "manifest_sha256": "89ceb205e0a8256f24dfd6412ba9c83fa70b14aa0927b8fadf1a3baad40d3f6a",
+      "manifest_sha256": "924f8d164d86dbbb575d093a51e9e0da607c890c0813916709859cd4ac7e2cec",
       "target_identity_sha256": "90e747117d706ac416339ed18f06c64a0f0208f0f4fdd1153453be2856b3446e",
-      "enumeration_validation": ".local/play-session-20261008/core-functional-152/repair/unified-current-validation-round46.json",
-      "round_key": "private152-current-npc-materials-and-yorha-replacement-source-20261013",
-      "round_status": "CLOSED_BOUNDED_NPC_RUNTIME_DIAGNOSIS_GOAL_CONTINUES",
-      "count": 46,
+      "enumeration_validation": ".local/play-session-20261008/core-functional-152/repair/unified-current-validation-round47.json",
+      "round_key": "private-npc-single-bundle-cold-ab-and-baseline-restoration-20261013",
+      "round_status": "CLOSED_COLD_AB_CONFLICT_VERIFIED_BASELINE_RESTORED",
+      "count": 47,
       "coverage": "since_baseline",
-      "last_seq": 46,
-      "last_key": "private152-current-npc-materials-and-yorha-replacement-source-20261013",
+      "last_seq": 47,
+      "last_key": "private-npc-single-bundle-cold-ab-and-baseline-restoration-20261013",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": 0,
       "evidence_change_percentage_points": 0,
       "scope_change_percentage_points": 0,
-      "change_rule": "TwoexistingnativeNPC leafsNOT_TESTED->PARTIAL with actualreferences, nofullPASS/ID/version/weight/exclusion changes. Original5129/history retained.",
-      "round_start_commit": "4f57478130e40fc12e779e71d885288194314109",
+      "change_rule": "Current5124 ID/version/weight/status unchanged; onlypreciseconflict/runtime evidence added; oldfailures/original5129/exclusions retained.",
+      "round_start_commit": "3405bebccd899d9a61024ebc85f28973adaec72a",
       "scope_change": "Expanded actual variant/control/animation/native/dependency/integration leaves; parent rollups/aliases not counted; explicit selected alternatives retained in excluded history. Initial draft5021 corrected to5129 before State registration using author variant rules.",
-      "milestone_change": "Specific3Deadman04 SkinEve9/Teeth7null, exacttwo-provider/object/metadata diagnosis andtwoauthorCNS alternatives; nextcoldsinglebundle comparison, notblanketNPCremoval orhashrewrite.",
+      "milestone_change": "ActualNPCskin loading conflict isolatedbytwo singlebundlecases andfreshbothreproduction; nextAIO-only stabilization withoutuniquecontent removal.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1907,16 +1907,16 @@
         "new_full_passes": 1
       }
     },
-    "next_action": "Continue fullretained5124 scope inownedprivate5 underpersistenthuman authority. Nextboundedround registerfreshcoldbaseline andtemporarysingle-nativeNPC-bundle A/B foractualDeadman04 SkinEve/nullprovider/overlap; retainuniquecontent, exactpreimages, normalownedgame+assistant exit/restart onlybefore packagechanges, restorealloriginalprofiles/selections/fullpackagebaseline. InvestigateactualPackageStore/graph/materialload; no checksum-only blindrewrite (workingconvertedPrototype withsameNativeSHA1-difference counterexample). ExistingauthorSlimYoRHa1029CNS1.0.2 isunverifiedreplacement candidate, noauthentication/entitlement/downloadassumptions. Usefreshruntimeidentities forrestart; priority3ON/recordingOFF/graphicsunchanged; nofrontinput/savecopyrollback/storyprogression/death. Completecoldreload gates ofexistinglimitedbodycases underoriginalmanifest acceptance, notinventunboundedrange/combinationrequirements.",
-    "updated_at": "2026-10-13T03:59:21.710712+00:00",
+    "next_action": "Register reviewedAIO-only currentnativeNPCprofile underexistinghumanmutual-exclusion/stability instruction; preserveMisc asinactivealternate, exactsourcehashes andownednormalrestart onprivate5. Independentreview exactcandidate/evidence beforefinalstabilization. Continueall5124 retainedtests, noallNPCvisualPASS fromreferencefix. Teeth7/otherNPCrender,grayYoRHa replacement, body/cursor/HUD/camp/functions/animations remainpending; nofrontinput/recording/graphicsreduction/savecopyrollback/story/death.",
+    "updated_at": "2026-10-13T05:00:25.185746+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
-      "status": "PROGRESS_NOT_TOTAL_BLOCKED_COLD_AB_NEXT",
+      "status": "PROGRESS_NPC_CONFLICT_STABILIZATION_NEXT",
       "consecutive_goal_turns": 0,
       "consecutive_no_progress_turns": 0,
       "condition": null,
-      "evidence": ".local/play-session-20261008/core-functional-152/repair/round46-runtime-result.json",
-      "next_action": "Continue fullretained5124 scope inownedprivate5 underpersistenthuman authority. Nextboundedround registerfreshcoldbaseline andtemporarysingle-nativeNPC-bundle A/B foractualDeadman04 SkinEve/nullprovider/overlap; retainuniquecontent, exactpreimages, normalownedgame+assistant exit/restart onlybefore packagechanges, restorealloriginalprofiles/selections/fullpackagebaseline. InvestigateactualPackageStore/graph/materialload; no checksum-only blindrewrite (workingconvertedPrototype withsameNativeSHA1-difference counterexample). ExistingauthorSlimYoRHa1029CNS1.0.2 isunverifiedreplacement candidate, noauthentication/entitlement/downloadassumptions. Usefreshruntimeidentities forrestart; priority3ON/recordingOFF/graphicsunchanged; nofrontinput/savecopyrollback/storyprogression/death. Completecoldreload gates ofexistinglimitedbodycases underoriginalmanifest acceptance, notinventunboundedrange/combinationrequirements.",
+      "evidence": ".local/play-session-20261008/core-functional-152/repair/round47-runtime-result.json",
+      "next_action": "Register reviewedAIO-only currentnativeNPCprofile underexistinghumanmutual-exclusion/stability instruction; preserveMisc asinactivealternate, exactsourcehashes andownednormalrestart onprivate5. Independentreview exactcandidate/evidence beforefinalstabilization. Continueall5124 retainedtests, noallNPCvisualPASS fromreferencefix. Teeth7/otherNPCrender,grayYoRHa replacement, body/cursor/HUD/camp/functions/animations remainpending; nofrontinput/recording/graphicsreduction/savecopyrollback/story/death.",
       "consecutive_no_progress_goal_turns": 0
     },
     "user_exit_authorization": {
@@ -1972,7 +1972,7 @@
         "full_clean_capture_pass": false
       }
     },
-    "round_closure_at": "2026-10-13T03:59:21.710712+00:00",
+    "round_closure_at": "2026-10-13T05:00:25.185746+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 12,
       "new_confirmed_this_round": 0,
@@ -2136,9 +2136,9 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "core-functional-152",
-    "previous_goal_turn_classification": "PROGRESS_ROUND46_NPC_NULL_PROVIDER_DIAGNOSIS_AND_AUTHOR_CNS_CANDIDATES",
-    "execution_status": "ACTIVE_PRIVATE152_FULL_MOD_TESTS_CONTINUE",
+    "current_segment": "core-functional-155",
+    "previous_goal_turn_classification": "PROGRESS_ROUND47_COLD_AB_CONFLICT_ISOLATED",
+    "execution_status": "ACTIVE_PRIVATE155_NPC_CONFLICT_VERIFIED_STABILIZATION_NEXT",
     "pause_at": "2026-10-12T12:36:33.101928+00:00",
     "pause_source": "Latestdirecthuman: endround/nativeplayhandoff/stoprecording/pauseGoaluntilmanualresume; finaladditionalrequest normalrestartforlatency",
     "user_play_handoff": {
@@ -2670,15 +2670,15 @@
       "geometry_acceptance": "PriorR32six/R33five plusR35four favouritevariants limited Hips/Butt response; latest4 neutralreset40 andfinite8history; fullranges/clipping/coldreload pending."
     },
     "resumed_test_checkpoint": {
-      "at": "2026-10-13T03:59:21.710712+00:00",
+      "at": "2026-10-13T05:00:25.185746+00:00",
       "lane": "DIRECT",
-      "status": "ROUND46_CLOSED_CURRENT_NPC_PROVIDER_DIAGNOSIS",
-      "root_owned_game_files": 0,
+      "status": "ROUND47_CLOSED_COLD_NPC_AB_CONFLICT",
+      "root_owned_game_files": 12,
       "candidate_evidence": [
-        ".local/play-session-20261008/core-functional-152/repair/round46-registration.json"
+        ".local/play-session-20261008/core-functional-152/repair/round47-registration.json"
       ],
-      "runtime_evidence": ".local/play-session-20261008/core-functional-152/repair/round46-runtime-result.json",
-      "runtime_status": "ACTUAL_NPC_SKIN_NULL_PROVIDER_CORRELATION_AND_PRIMARY_YORHA_CNS_CANDIDATES",
+      "runtime_evidence": ".local/play-session-20261008/core-functional-152/repair/round47-runtime-result.json",
+      "runtime_status": "NPC_NATIVE_BUNDLE_CONFLICT_COLD_AB_VERIFIED_BASELINE_RESTORED",
       "actual_import_check": {
         "evidence": ".local/play-session-20261008/user-native-136/repair/package-import-closure.json",
         "containers": 181,
@@ -2698,8 +2698,8 @@
           "status": "NANO_DEPENDENCY_INSTALLED_NO_VISUAL_PASS;CURRENT_NPC_DECLARED_IMPORT_GAPS_AND_OVERLAP_DIAGNOSED_RENDERING_UNKNOWN",
           "evidence": ".local/play-session-20261008/core-functional-147/repair/r36-current-npc-package-closure.json",
           "latest_offline_evidence": ".local/play-session-20261008/core-functional-152/repair/round44-offline-result.json",
-          "current": "Current3Deadman04 SkinEve9/Teeth7null anddeclaredtwoSkinproviders uncreated; objectimport/export referencescorrect. NativeSHA1difference alsooccurs inworkingPrototype, no checksumcausalclaim. Fullrender/cause/repairpending;1052FAIL retained; author1029CNS1.0.2unverifiedcandidate.",
-          "latest_runtime_evidence": ".local/play-session-20261008/core-functional-152/repair/round46-runtime-result.json"
+          "current": "NativeAIO+Misc coactivation coldreproducesDeadman04SkinEve9null3; eitheralone restoresactualskinmat+textures. Teeth7stillnull; otherNPCvisual/Yorha1052 failure remain. Nohashrewrite/newtexturecopy.",
+          "latest_runtime_evidence": ".local/play-session-20261008/core-functional-152/repair/round47-runtime-result.json"
         },
         {
           "id": "BUG_DEATH_NATIVE_RECOVERY",
@@ -2780,13 +2780,13 @@
       "confirmed_new_crashes": 0,
       "unknown_exit130_preserved": true,
       "replacement_disposition": "No confirmed newsourcealias orcompatible replacement; zeroextraexclusions; source alternatives retained.",
-      "agent_disposition": "Rootserial reads/computation only; no newdescendants oractivewriters",
+      "agent_disposition": "Rootserial only; no newdescendants oractivewriter",
       "report": ".local/play-session-20261008/MOD_TEST_REPORT_20261011.md",
       "csv": ".local/play-session-20261008/UNIFIED_MOD_TEST_LIST_20261011.csv",
       "continuation_prompt": ".local/play-session-20261008/CONTINUE_MOD_TESTING_PROMPT_20261011.md",
       "usage_guide": ".local/play-session-20261008/FUNCTIONAL_MOD_KEYS_20261011.md",
-      "source_delivery": "Per-round receipt core-functional-152/repair/source-delivery-round46.json; exactremote verification required fordelivery",
-      "root_owned_game_files_scope": "Read-only game/packages/currentsource/bodyconfigs; no keyboard/mouse orconfiguration writes",
+      "source_delivery": "Per-round receipt core-functional-152/repair/source-delivery-round47.json; exactremote verification required",
+      "root_owned_game_files_scope": "Temporarysuffix renamesonlywithownedgameexited; all12names/bytehashes restored, no payload/loader/config/saveoverwrite",
       "previous_game_candidate_evidence": [
         ".local/play-session-20261008/user-native-135/repair/cursor-lifecycle-installed.json",
         ".local/play-session-20261008/user-native-135/repair/nano-base-installed.json"
@@ -2845,19 +2845,51 @@
         "window": 37748739
       },
       "user_handoff_question": "RESOLVED_DIRECT_HUMAN_AUTHORIZES_BACKEND_RESTART_TESTS",
-      "current_round_evidence": ".local/play-session-20261008/core-functional-152/repair/round46-registration.json",
+      "current_round_evidence": ".local/play-session-20261008/core-functional-152/repair/round47-registration.json",
       "latest_offline_evidence": ".local/play-session-20261008/core-functional-152/repair/round44-offline-result.json",
-      "round40_registration": ".local/play-session-20261008/core-functional-151/repair/round40-registration.json"
+      "round40_registration": ".local/play-session-20261008/core-functional-151/repair/round40-registration.json",
+      "current_game": {
+        "pid": 4103611,
+        "start_ticks": "46343857",
+        "window": 37748739,
+        "width": 3440,
+        "height": 1440,
+        "display": ":5",
+        "private_server_pid": 3765017,
+        "private_server_start_ticks": "43519972",
+        "xauthority": "/home/alalapi/Projects/stellar-mod-console/.local/play-session-20261008/core-functional-151/private-display/Xauthority",
+        "input_owner": "ROOT_PRIVATE_MOD_TESTS",
+        "native_goal": "active",
+        "acceptance": "PRIVATE_CANDIDATE_GAME_RENDER_PENDING",
+        "at": "2026-10-13T04:46:51.494869+00:00"
+      },
+      "case": "BOTH_RESTORED;12filename/hash and181UTOC baselineexact",
+      "verified_npc_bundle_conflict": {
+        "kind": "HARD_CONFLICT_CURRENT_NATIVE_BUNDLES",
+        "members": [
+          "global:NPC_AIO_Default",
+          "global:NPC_Misc_Base"
+        ],
+        "shared_target_package_id": 6269631868449615244,
+        "target": "/Game/Art/Character/NPC/CH_NPC_Deadman_04/CH_NPC_Deadman_04",
+        "baseline_both_skin9": "NULL3",
+        "aio_only_skin9": "LOADED3 namespace9248229246980cf0",
+        "misc_only_skin9": "LOADED3 namespace7ef3d0fd5a3f8807",
+        "restored_both_cold_skin9": "NULL3",
+        "evidence": "core-functional-152/repair/round47-runtime-result.json",
+        "scope": "ThreeDeadman04 components inF02; exactsame12 sourcebytehashes, allcasesfreshcold andassistant3ON. Do not coactivatebothnativebundles; do not deleteuniquecontent.",
+        "limit": "Not universalNPCvisual/body/clippingPASS; Teeth7 missingineverycase, othermodels/anglesunaccepted"
+      }
     },
     "native_goal": {
       "status": "active",
       "source": "Native get_goal verified active on2026-10-11T22:30Z; latest direct user objective enables persistent resumed MOD testing in background",
       "scope": "All current and subsequently discovered stable test leaves; every independently verifiable test in one denominator; no formal Console implementation or scheduler resume",
       "tool_objective": "继续，继续这个测试，继续在我的桌面后台测试。嗯，我开目标模式的话应该就可以了吧。然后注意我之前说过的几个问题，你都进行测试。然后每一个问题都算一个任务。每个任务，每一个这个任务都是，就是每一个要测试的都算一个任务，算一个分母，拿这个当总任务数来进行汇报。",
-      "tokensUsed": 8915503,
-      "timeUsedSeconds": 69573,
-      "telemetry_at": "2026-10-13T03:54:49+00:00",
-      "telemetry_coverage": "Actualget_goal beforeRound46closure; laterclosingtools excluded",
+      "tokensUsed": 9116416,
+      "timeUsedSeconds": 73344,
+      "telemetry_at": "2026-10-13T04:57:40+00:00",
+      "telemetry_coverage": "Actualget_goal beforeRound47closure, laterclosingtools excluded",
       "last_observed_status": "active",
       "pause_requested": false,
       "pause_source": "Latestdirecthuman: endround/nativeplayhandoff/stoprecording/pauseGoaluntilmanualresume; finaladditionalrequest normalrestartforlatency",
@@ -2946,11 +2978,11 @@
     "input_window_result": {
       "state": "CLOSED_INTERNAL_SEGMENT",
       "lane": "DIRECT",
-      "started_at": "2026-10-13T03:14:59.445133+00:00",
-      "deadline": "2026-10-13T03:49:59.445133+00:00",
-      "source": "Continuingdirecthuman comprehensiveprivate tests, oldoffline misclickrevoked; no repeatedauthorization",
-      "scope": "Owned152/private5 currentNPC/material/source diagnosis andboundedUI observation only",
-      "phase_timeout": "Internal35min currentRound46 inputwork bound; not humanauthorizationexpiry",
+      "started_at": "2026-10-13T04:14:32.122642+00:00",
+      "deadline": "2026-10-13T05:14:32.122642+00:00",
+      "source": "Continuinghumanprivate testing authority persists; internalphase closes, no repeatrenewal",
+      "scope": "Round47 normalownprivategame/assistant restart andboundedsingleNPCbundle A/B; noforeground",
+      "phase_timeout": "Internal60min segment; nothumanpermissionexpiry orGoalbudgetreset",
       "previous_expired_grant": {
         "state": "EXPIRED_WAITING_HUMAN_RENEWAL",
         "source": "Fresh direct human authorizes10hours",
@@ -2961,7 +2993,7 @@
         "expiry_observed_at": "2026-10-12T11:24:18.869386+00:00",
         "renewal_question": "Pending asynchronous question: extend10hours/1hour/offlineonly; no reply received"
       },
-      "closed_at": "2026-10-13T03:59:21.710712+00:00",
+      "closed_at": "2026-10-13T05:00:25.185746+00:00",
       "action_authority": "Continuingcomprehensiveprivate test instruction; internalphase ended, nohumanexpiry orrepeatrenewal",
       "latest_human_steering": {
         "at": "2026-10-13T02:05:28.282332+00:00",
