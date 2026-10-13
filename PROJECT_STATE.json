@@ -1138,7 +1138,7 @@
   "mod_compatibility_restructure": {
     "task_id": "stellar-mod-compatibility-core-first-20261010",
     "source": "Direct current user /goal execution instruction; does not resume paused console development/Cursor R04-n",
-    "lane": "REVIEWED",
+    "lane": "DIRECT",
     "owner_thread": "01a12a72-1d28-73c1-bedc-77a0f48858a2",
     "objective": "Stable adjustable body + natural physics + user combat; then individually retest all clothing while progressing campaign and changing view every 15 seconds",
     "priority": [
@@ -1508,17 +1508,17 @@
     "progress": {
       "scope_version": "unified-leaves-v4-native-latency-feedback-20261012",
       "completion_scope": "RETAINED_INDEPENDENT_TESTS_AFTER_EXPLICIT_FAVOURITE_EDITION_SELECTION_WITH_SCOPE_GATES",
-      "effective_accepted": 60,
+      "effective_accepted": 62,
       "effective_required": 5124,
-      "completion_percent": 1.171,
-      "tested_with_complete_conclusion": 62,
-      "test_conclusion_percent": 1.21,
+      "completion_percent": 1.21,
+      "tested_with_complete_conclusion": 64,
+      "test_conclusion_percent": 1.249,
       "statuses": {
         "NOT_TESTED": 4994,
-        "PASS": 60,
+        "PASS": 62,
         "REOPENED": 2,
         "WAITING_HUMAN": 1,
-        "PARTIAL": 37,
+        "PARTIAL": 35,
         "FAIL": 2,
         "BLOCKED_NOT_INSTALLED": 28
       },
@@ -1536,25 +1536,25 @@
         "共享依赖": 4,
         "组合回归": 8
       },
-      "reason": "Reviewed AIO-only exclusiveprofile currentcoldloads actual3NPCSkin9, all12bytes/config/40body/CNS/graphics preserved; no fullNPC acceptance or target/scopechanges",
+      "reason": "Two exact Prototype variants completed original finite equip/body/reset/menu/input/physics and tuned cold reload gates; other failures and all5124 scope retained",
       "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
-      "manifest_sha256": "549136f27f961f7ed292c3718bad9f5d2624930bb479c9a055b9223522c5a2b6",
+      "manifest_sha256": "577f06c58b4eba9110c536bfcc929b019bddc5803311a332945e5b17d4c72353",
       "target_identity_sha256": "90e747117d706ac416339ed18f06c64a0f0208f0f4fdd1153453be2856b3446e",
-      "enumeration_validation": ".local/play-session-20261008/core-functional-156/repair/unified-current-validation-round48.json",
-      "round_key": "private156-reviewed-aio-only-native-npc-profile-20261013",
-      "round_status": "CLOSED_REVIEWED_AIO_ONLY_NPC_PROFILE_SELECTED",
-      "count": 48,
+      "enumeration_validation": ".local/play-session-20261008/core-functional-158/r49/unified-current-validation-round49.json",
+      "round_key": "private-prototype1273-two-variants-original-coldload-and-menu-gates-20261013",
+      "round_status": "CLOSED_TWO_PROTOTYPE_ORIGINAL_GATES_PASSED",
+      "count": 49,
       "coverage": "since_baseline",
-      "last_seq": 48,
-      "last_key": "private156-reviewed-aio-only-native-npc-profile-20261013",
+      "last_seq": 49,
+      "last_key": "private-prototype1273-two-variants-original-coldload-and-menu-gates-20261013",
       "historical_round_count": "UNKNOWN",
-      "execution_change_percentage_points": 0,
+      "execution_change_percentage_points": 0.039,
       "evidence_change_percentage_points": 0,
       "scope_change_percentage_points": 0,
-      "change_rule": "Current5124 IDs/version/weight/status unchanged; verifiedmutualexclusionfix evidence/activation added; oldfailures/original5129/44exclusions retained",
-      "round_start_commit": "8c2f22b4b554536fcfa671013dbc4bba6f76cf00",
+      "change_rule": "Only two existing appearance PARTIAL leaves become PASS after original gates; IDs/version/weight/gates/scope unchanged. No added exclusions or reopened completed valid evidence.",
+      "round_start_commit": "46bd53a9de4162c667c6973ddf265c65fac04989",
       "scope_change": "Expanded actual variant/control/animation/native/dependency/integration leaves; parent rollups/aliases not counted; explicit selected alternatives retained in excluded history. Initial draft5021 corrected to5129 before State registration using author variant rules.",
-      "milestone_change": "CurrentAIO-only profile withfresh independentJudgePASS restores3actualNPCskin references; Misc intactinactive. Teeth7/otherNPCvisual pending",
+      "milestone_change": "Both Prototype variants current cold Hip1.1 exact40, reset0, camp jump and original configuration restored",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1891,13 +1891,22 @@
       },
       "excluded_history_count": 44,
       "uncounted_parent_rollups": 12,
-      "full_appearance_compatible_accepted": 0,
+      "full_appearance_compatible_accepted": 2,
       "new_function_evidence_this_round": [],
       "new_failures_this_round": [],
       "remaining_rounds": "UNKNOWN",
       "remaining_rounds_confidence": "UNKNOWN",
-      "window": [],
-      "prediction_reason": "Heterogeneous pending targets, source/login gates, and no three comparable positive throughput rounds.",
+      "window": [
+        {
+          "seq": 49,
+          "key": "private-prototype1273-two-variants-original-coldload-and-menu-gates-20261013",
+          "scope": "unified-leaves-v4-native-latency-feedback-20261012",
+          "execution_delta": 2,
+          "evidence_delta": 0,
+          "scope_delta": 0
+        }
+      ],
+      "prediction_reason": "Heterogeneous controls, dependencies, outfits and animations; recent comparable positive throughput insufficient for an honest remaining-round estimate",
       "original_unified_required_retained": 5129,
       "latest_specific_followup": {
         "task": "specific-latency-repair-20261012",
@@ -1907,16 +1916,16 @@
         "new_full_passes": 1
       }
     },
-    "next_action": "Continuepreviouspartialfavouritevariant originalfinitegates, bodyselected/baseline/reset, actualmenu/input/physics andsafe coldreload; othergray/NPCteeth/patchedoutfits/functions/animations remaininall5124. Keep AIO-only andassistant3ON, private5; no frontinput/recording/graphicsreduction/savecopyrollback/story/death. Register next internal phase without humanauthorizationrenewal. Neveroverwrite28 R48 frozen evidencefiles; usefresh tagged readers andfresh identity output names when required.",
-    "updated_at": "2026-10-13T05:33:28.433173+00:00",
+    "next_action": "Continue remaining PARTIAL favourite variants at their original finite gates, then gray outfits/NPC teeth and other models/patches/functions/animations in all5124. Keep assistant3ON and AIO-only, private5, soleF9 body control; no front input/recording/graphics reduction/savecopyrollback/story/death. Register next internal segment under continuing human authority without renewed permission; preserve28 R48 frozen files and R49 evidence.",
+    "updated_at": "2026-10-13T08:55:59.510302+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
-      "status": "PROGRESS_REVIEWED_NPC_PROFILE_STABILIZED_FULL_TESTS_CONTINUE",
+      "status": "PROGRESS_R49_TWO_ORIGINAL_APPEARANCE_GATES_PASSED_FULL_TESTS_CONTINUE",
       "consecutive_goal_turns": 0,
       "consecutive_no_progress_turns": 0,
       "condition": null,
-      "evidence": ".local/play-session-20261008/core-functional-156/repair/round48-runtime-result.json",
-      "next_action": "Continuepreviouspartialfavouritevariant originalfinitegates, bodyselected/baseline/reset, actualmenu/input/physics andsafe coldreload; othergray/NPCteeth/patchedoutfits/functions/animations remaininall5124. Keep AIO-only andassistant3ON, private5; no frontinput/recording/graphicsreduction/savecopyrollback/story/death. Register next internal phase without humanauthorizationrenewal. Neveroverwrite28 R48 frozen evidencefiles; usefresh tagged readers andfresh identity output names when required.",
+      "evidence": ".local/play-session-20261008/core-functional-158/r49/round49-runtime-result.json",
+      "next_action": "Continue remaining PARTIAL favourite variants at their original finite gates, then gray outfits/NPC teeth and other models/patches/functions/animations in all5124. Keep assistant3ON and AIO-only, private5, soleF9 body control; no front input/recording/graphics reduction/savecopyrollback/story/death. Register next internal segment under continuing human authority without renewed permission; preserve28 R48 frozen files and R49 evidence.",
       "consecutive_no_progress_goal_turns": 0
     },
     "user_exit_authorization": {
@@ -1972,7 +1981,7 @@
         "full_clean_capture_pass": false
       }
     },
-    "round_closure_at": "2026-10-13T05:33:28.433173+00:00",
+    "round_closure_at": "2026-10-13T08:55:59.510302+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 12,
       "new_confirmed_this_round": 0,
@@ -2136,9 +2145,9 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "core-functional-156",
-    "previous_goal_turn_classification": "PROGRESS_ROUND48_REVIEWED_EXCLUSIVE_NPC_PROFILE_COLD_SKIN_REFERENCE_FIX",
-    "execution_status": "ACTIVE_PRIVATE156_REVIEWED_NPC_PROFILE_FULL_TESTS_CONTINUE",
+    "current_segment": "core-functional-158",
+    "previous_goal_turn_classification": "PROGRESS",
+    "execution_status": "ACTIVE_PRIVATE158_ROUND49_CLOSED_ORIGINAL_GATES_AND_CONFIG_RESTORED",
     "pause_at": "2026-10-12T12:36:33.101928+00:00",
     "pause_source": "Latestdirecthuman: endround/nativeplayhandoff/stoprecording/pauseGoaluntilmanualresume; finaladditionalrequest normalrestartforlatency",
     "user_play_handoff": {
@@ -2667,18 +2676,18 @@
       "active": "EveProportions + Tuner (formerF4,currentF9)",
       "inactive_preserved": "UUEPBS",
       "source": "Current user explicitly requests sole formerF4 system",
-      "geometry_acceptance": "PriorR32six/R33five plusR35four favouritevariants limited Hips/Butt response; latest4 neutralreset40 andfinite8history; fullranges/clipping/coldreload pending."
+      "geometry_acceptance": "SoleF9 body controller preserved. R49 both ExtraMod1273 variants pass original finite gates: validR45 fourteen independent small parameters, Hip1.1 savedbinding cold40error0/reset0/campjump/menu recovery. Other variants and extreme combinations/clipping/animations remain separately pending."
     },
     "resumed_test_checkpoint": {
-      "at": "2026-10-13T05:33:28.433173+00:00",
-      "lane": "REVIEWED",
-      "status": "ROUND48_CLOSED_REVIEWED_NPC_PROFILE",
-      "root_owned_game_files": 6,
+      "at": "2026-10-13T08:55:59.510302+00:00",
+      "lane": "DIRECT",
+      "status": "ROUND49_CLOSED_TWO_ORIGINAL_APPEARANCE_GATES_PASSED",
+      "root_owned_game_files": 2,
       "candidate_evidence": [
         ".local/play-session-20261008/core-functional-155/repair/r48-profile-candidate.json"
       ],
-      "runtime_evidence": ".local/play-session-20261008/core-functional-156/repair/round48-runtime-result.json",
-      "runtime_status": "AIO_ONLY_COLD_NPC_SKIN9_LOADED3;INDEPENDENT_JUDGE_PASS_BOUNDED",
+      "runtime_evidence": ".local/play-session-20261008/core-functional-158/r49/round49-runtime-result.json",
+      "runtime_status": "PRIVATE158_LIVE_TWO_PROTOTYPE_COLD_GATES_PASSED_ORIGINAL_CONFIGURATION_RESTORED",
       "actual_import_check": {
         "evidence": ".local/play-session-20261008/user-native-136/repair/package-import-closure.json",
         "containers": 181,
@@ -2780,13 +2789,13 @@
       "confirmed_new_crashes": 0,
       "unknown_exit130_preserved": true,
       "replacement_disposition": "No confirmed newsourcealias orcompatible replacement; zeroextraexclusions; source alternatives retained.",
-      "agent_disposition": "Freshreadonlyr48_npc_profile_judge completedPASS; no active descendantwriter",
+      "agent_disposition": "No R49 delegation; prior descendants all completed; no active descendant writer",
       "report": ".local/play-session-20261008/MOD_TEST_REPORT_20261011.md",
       "csv": ".local/play-session-20261008/UNIFIED_MOD_TEST_LIST_20261011.csv",
       "continuation_prompt": ".local/play-session-20261008/CONTINUE_MOD_TESTING_PROMPT_20261011.md",
       "usage_guide": ".local/play-session-20261008/FUNCTIONAL_MOD_KEYS_20261011.md",
-      "source_delivery": "Per-round receipt core-functional-156/repair/source-delivery-round48.json; exactremote verification required",
-      "root_owned_game_files_scope": "Exactly6Misc filename suffixrenames onlyafterownprivate155normalexit; sourcebytesintact, AIO6 active/179UTOCs; selectedprofile withreviewed coldmaterialfix",
+      "source_delivery": "Per-round receipt core-functional-158/r49/source-delivery-round49.json; exact remote verification required",
+      "root_owned_game_files_scope": "Root private r49 helpers/evidence, soleState subtree/manifest/projections/Git; temporarynativeUI bindings/values for exact2unboundmeshes; exactregistered generateduserdata bytes onlyaftersemantic/concurrent verification; normalownedgame+assistant restart",
       "previous_game_candidate_evidence": [
         ".local/play-session-20261008/user-native-135/repair/cursor-lifecycle-installed.json",
         ".local/play-session-20261008/user-native-135/repair/nano-base-installed.json"
@@ -2810,11 +2819,11 @@
         "limits": "Owned action preceded144 exit; no native crash root cause claimed"
       },
       "assistant_current": {
-        "segment": "core-functional-156",
+        "segment": "core-functional-158",
         "version": "1.0.16",
-        "unit": "stellar-combat-assistant-private156.service",
-        "game_linux_pid": 4116060,
-        "game_linux_start_ticks": "46499374",
+        "unit": "stellar-combat-assistant-private158.service",
+        "game_linux_pid": 20313,
+        "game_linux_start_ticks": "47609787",
         "game_windows_pid": 364,
         "trainer_windows_pid": 1540,
         "connected": true,
@@ -2823,13 +2832,13 @@
         "dodge": true,
         "special": true,
         "stopped": false,
-        "evidence": ".local/play-session-20261008/core-functional-156/repair/r48-assistant-connected.json",
-        "latest_status_at": "2026-10-13T05:28:23.430518+00:00"
+        "evidence": ".local/play-session-20261008/core-functional-158/r49/r49-assistant-final-connected.json",
+        "latest_status_at": "2026-10-13T08:47:52.252206+00:00"
       },
       "active_outfit": {
         "id": "appearance:Repacked Mod2724/choice-2",
         "mesh": "/Game/CNSRepacked/8352b223d4d33600/Art/Character/PC/CH_P_EVE_07/CH_P_EVE_07.CH_P_EVE_07",
-        "status": "INITIAL_CURRENT_OUTFIT_RESTORED_EXACT_MESH_40BODYTRANSFORMS",
+        "status": "INITIAL_NANO_RESTORED_EXACT_MESH_40BODYTRANSFORMS_CNS6CHOICES171INDEXES",
         "whole_compatibility": "NOT_ACCEPTED",
         "current_tuner_profiles": 20
       },
@@ -2847,18 +2856,18 @@
         "pid": 3765017,
         "start_ticks": "43519972",
         "unit": "stellar-mod-test-display-151.service",
-        "state": "PRIVATE152_DISPLAY5_GAME_LIVE_BOUNDED_INPUT_CANDIDATE_ACCEPTED",
+        "state": "PRIVATE158_DISPLAY5_LIVE_REUSED_NO_FOREGROUND_NO_RECORDING",
         "resolution": "3440x1440",
         "game_started": true,
         "window": 37748739
       },
       "user_handoff_question": "RESOLVED_DIRECT_HUMAN_AUTHORIZES_BACKEND_RESTART_TESTS",
-      "current_round_evidence": ".local/play-session-20261008/core-functional-155/repair/round48-registration.json",
+      "current_round_evidence": ".local/play-session-20261008/core-functional-156/r49/round49-registration.json",
       "latest_offline_evidence": ".local/play-session-20261008/core-functional-152/repair/round44-offline-result.json",
       "round40_registration": ".local/play-session-20261008/core-functional-151/repair/round40-registration.json",
       "current_game": {
-        "pid": 4116060,
-        "start_ticks": "46499374",
+        "pid": 20313,
+        "start_ticks": "47609787",
         "window": 37748739,
         "width": 3440,
         "height": 1440,
@@ -2868,8 +2877,8 @@
         "xauthority": "/home/alalapi/Projects/stellar-mod-console/.local/play-session-20261008/core-functional-151/private-display/Xauthority",
         "input_owner": "ROOT_PRIVATE_MOD_TESTS",
         "native_goal": "active",
-        "acceptance": "FRESH_PRIVATE_WORLD_READY;SCOPED_NPC_SKIN_REFERENCE_VERIFIED;WHOLE_GOAL_PENDING",
-        "at": "2026-10-13T05:13:23.734013+00:00"
+        "acceptance": "FRESH_PRIVATE_WORLD_READY;TWO_PROTOTYPE_ORIGINAL_GATES_VERIFIED;ORIGINAL_CONFIG_RESTORED;WHOLE_GOAL_PENDING",
+        "at": "2026-10-13T08:19:01.791226+00:00"
       },
       "case": "REVIEWED_AIO_ONLY;Misc6 preservedinactive alternate",
       "verified_npc_bundle_conflict": {
@@ -2904,6 +2913,24 @@
         "remaining_teeth7_null_components": 3,
         "full_npc_acceptance": "PARTIAL_UNVERIFIED_VISUAL_OTHERMODELS_BODY_CLIPPING",
         "evidence": "core-functional-156/repair/round48-runtime-result.json"
+      },
+      "helper_scope": ".local/play-session-20261008/core-functional-158/r49",
+      "temporary_userdata": {
+        "profile_count": 20,
+        "temporary_bindings": 0,
+        "original20maps_exact_bytes_restored": true,
+        "evidence": ".local/play-session-20261008/core-functional-158/r49/r49-final-preservation.json"
+      },
+      "cold_reload_error": 0.0,
+      "body_variant_original_gate_acceptance": {
+        "targets": [
+          "appearance:Repacked ExtraMod1273/choice-0",
+          "appearance:Repacked ExtraMod1273/choice-1"
+        ],
+        "passed": 2,
+        "source_sha256": "d60898b08611ced72e896a3212911b8ee4d88c6813c01142212d3cfd94f1714d",
+        "tuner_sha256": "452ec76cc0af68de114e67e44f5e0bbbc9497c3d2d83900c9ab426d8fa9c8bea",
+        "limit": "Original three appearance gates passed for each exact variant: current equip/standing material and skin, fourteen independent small R45 parameter samples/reset, Hip 1.1 per-mesh binding cold reload, stationary camp jump/finite body physics, CNS/F9 close and input recovery. Extreme ranges, simultaneous combinations, other angles/actions/maps, long-run stability, patch comparison and other separately enumerated options remain unaccepted; no whole-NPC PASS."
       }
     },
     "native_goal": {
@@ -2911,10 +2938,10 @@
       "source": "Native get_goal verified active on2026-10-11T22:30Z; latest direct user objective enables persistent resumed MOD testing in background",
       "scope": "All current and subsequently discovered stable test leaves; every independently verifiable test in one denominator; no formal Console implementation or scheduler resume",
       "tool_objective": "继续，继续这个测试，继续在我的桌面后台测试。嗯，我开目标模式的话应该就可以了吧。然后注意我之前说过的几个问题，你都进行测试。然后每一个问题都算一个任务。每个任务，每一个这个任务都是，就是每一个要测试的都算一个任务，算一个分母，拿这个当总任务数来进行汇报。",
-      "tokensUsed": 9468603,
-      "timeUsedSeconds": 75329,
-      "telemetry_at": "2026-10-13T05:30:45+00:00",
-      "telemetry_coverage": "Actualget_goal afterR48Judge beforeclosure; laterclosingtools excluded",
+      "tokensUsed": 9993936,
+      "timeUsedSeconds": 83453,
+      "telemetry_at": "2026-10-13T08:46:48+00:00",
+      "telemetry_coverage": "Actual get_goal before R49 closure; subsequent closing/delivery tools excluded",
       "last_observed_status": "active",
       "pause_requested": false,
       "pause_source": "Latestdirecthuman: endround/nativeplayhandoff/stoprecording/pauseGoaluntilmanualresume; finaladditionalrequest normalrestartforlatency",
@@ -3002,12 +3029,12 @@
     },
     "input_window_result": {
       "state": "CLOSED_INTERNAL_SEGMENT",
-      "lane": "REVIEWED",
-      "started_at": "2026-10-13T05:09:44.968062+00:00",
-      "deadline": "2026-10-13T06:09:44.968062+00:00",
-      "source": "ContinuingdirecthumanfullprivateMODtesting; no repeatedrenewal",
-      "scope": "Round48 exactnativeNPC mutualexclusion candidate and ownnormalprivate155-to156 restart, same display5",
-      "phase_timeout": "Internalboundedsegment only; not humanauthorizationexpiry",
+      "lane": "DIRECT",
+      "started_at": "2026-10-13T07:52:58.805273+00:00",
+      "deadline": "2026-10-13T08:52:58.805273+00:00",
+      "source": "SameexistinghumanfullprivateMODtest authority; sameR49segment3, no renewal/newGoal/budgetreset",
+      "scope": "Completecurrentchoice1connectedcoldrecovery andoriginalchoice0 gates/cleanup withinR49; keep all5124scope",
+      "phase_timeout": "Internalworksegment; existingcumulativeRound49 preserved",
       "previous_expired_grant": {
         "state": "EXPIRED_WAITING_HUMAN_RENEWAL",
         "source": "Fresh direct human authorizes10hours",
@@ -3018,7 +3045,7 @@
         "expiry_observed_at": "2026-10-12T11:24:18.869386+00:00",
         "renewal_question": "Pending asynchronous question: extend10hours/1hour/offlineonly; no reply received"
       },
-      "action_authority": "Humancomprehensiveprivate test authority persists; segmentclosure is notexpiry, no repeatrenewal",
+      "action_authority": "Full private testing authority persists; this internal segment closure is not human grant expiry",
       "latest_human_steering": {
         "at": "2026-10-13T02:05:28.282332+00:00",
         "offline_only_revoked": true,
@@ -3030,9 +3057,20 @@
           "started_at": "2026-10-13T02:13:02.071768+00:00",
           "deadline": "2026-10-13T02:48:02.071768+00:00",
           "classification": "Progress: choice1 all14 native parameter cases reset40exact plus stationaryjump; sameauthority continues"
+        },
+        {
+          "started_at": "2026-10-13T05:44:02.700150+00:00",
+          "deadline": "2026-10-13T06:59:02.700150+00:00",
+          "classification": "R49 segment1 PROGRESS actualchoice1 material/skin andnativeHip1.1 savedbinding/40delta0.07; UIroute diagnosis, oldAll label notrealcategory; no newsource/graphics/payload edits"
+        },
+        {
+          "started_at": "2026-10-13T06:54:15.339386+00:00",
+          "deadline": "2026-10-13T07:54:15.339386+00:00",
+          "classification": "R49 segment2 PROGRESS tooltransitionpath rootcause repaired; actualowned157 coldreload mesh exact/all40tunederror0. PriorunitfailedbeforePopen, no gamecrash. Existinggoalbudget and human authority persist."
         }
       ],
-      "closed_at": "2026-10-13T05:33:28.433173+00:00"
+      "closed_at": "2026-10-13T08:55:59.510302+00:00",
+      "classification": "PROGRESS_R49_BOTH_ORIGINAL_APPEARANCE_GATES_PASSED_AND_ORIGINAL_CONFIGURATION_RESTORED"
     },
     "virtual_desktop_skill_request": {
       "source": "User explicitly requests newAgent merge private-display workflow into existing linux-task-desktop, default newGUI tasks virtual and foreground only explicit request",
