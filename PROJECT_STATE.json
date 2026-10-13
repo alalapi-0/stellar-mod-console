@@ -1514,11 +1514,11 @@
       "tested_with_complete_conclusion": 62,
       "test_conclusion_percent": 1.21,
       "statuses": {
-        "NOT_TESTED": 5000,
+        "NOT_TESTED": 4998,
         "PASS": 60,
         "REOPENED": 2,
         "WAITING_HUMAN": 1,
-        "PARTIAL": 31,
+        "PARTIAL": 33,
         "FAIL": 2,
         "BLOCKED_NOT_INSTALLED": 28
       },
@@ -1536,25 +1536,25 @@
         "共享依赖": 4,
         "组合回归": 8
       },
-      "reason": "Existing reopened passthrough leaf repaired by singleenabledmodebranch, cold152 realOFF/ON/OFF andcloseorders, independentJudgePASS. Inputreturn remainsPARTIAL; no fullclothingcredit.",
+      "reason": "XSNormal0 andSilverNoStocking1 actualmesh/material/standingHips/jump/reset observed; twoNOT_TESTED->PARTIAL withboundedLIMITED_ADJUSTABLE, nofullPASS.",
       "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
-      "manifest_sha256": "1a68635e59332de8aa08e563bc8987b95b165d31259c623f522ee5564250c82c",
+      "manifest_sha256": "9efc34d794d95fe67f48c4c37e2aa93ce951a124533337ea503d548df12a66f7",
       "target_identity_sha256": "90e747117d706ac416339ed18f06c64a0f0208f0f4fdd1153453be2856b3446e",
-      "enumeration_validation": ".local/play-session-20261008/core-functional-152/repair/unified-current-validation-round42.json",
-      "round_key": "private152-combined-tuner-cns-input-isolation-repair-20261013",
-      "round_status": "CLOSED_BOUNDED_REVIEWED_RUNTIME_GOAL_CONTINUES_PRIVATE5",
-      "count": 42,
+      "enumeration_validation": ".local/play-session-20261008/core-functional-152/repair/unified-current-validation-round43.json",
+      "round_key": "private152-xsnormal-silverkunoichi-favourite-body-cases-20261013",
+      "round_status": "CLOSED_BOUNDED_RUNTIME_GOAL_CONTINUES_PRIVATE5",
+      "count": 43,
       "coverage": "since_baseline",
-      "last_seq": 42,
-      "last_key": "private152-combined-tuner-cns-input-isolation-repair-20261013",
+      "last_seq": 43,
+      "last_key": "private152-xsnormal-silverkunoichi-favourite-body-cases-20261013",
       "historical_round_count": "UNKNOWN",
-      "execution_change_percentage_points": 0.0195,
+      "execution_change_percentage_points": 0,
       "evidence_change_percentage_points": 0,
       "scope_change_percentage_points": 0,
-      "change_rule": "Sameleaf/version/weight REOPENED->PASS after452 source repair andfreshJudge; executiongain1/5124, zero scope/evidencecorrection. Full5124IDs andoriginal5129/history preserved.",
-      "round_start_commit": "a3f35e33ad34870ab51c076bb8f54f79713ab84a",
+      "change_rule": "Two existing untested appearance leaves acquireboundedPARTIAL evidence only; noPASS orID/version/weight/exclusion changes. Original5129/history retained.",
+      "round_start_commit": "af72debb4f2b14c0f4c060114b578695d9a5c8a0",
       "scope_change": "Expanded actual variant/control/animation/native/dependency/integration leaves; parent rollups/aliases not counted; explicit selected alternatives retained in excluded history. Initial draft5021 corrected to5129 before State registration using author variant rules.",
-      "milestone_change": "CombinedCNS/Tuner input isolation repaired; exact20userdata/originalmesh/body/graphics preserved; fullMODGoal continues.",
+      "milestone_change": "Two remaining favourites limitedHipsadjustability proven; original20bindings/selection/body/graphics restored; fullGoal continues.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1892,9 +1892,7 @@
       "excluded_history_count": 44,
       "uncounted_parent_rollups": 12,
       "full_appearance_compatible_accepted": 0,
-      "new_function_evidence_this_round": [
-        "component:EveProportionsTuner/passthrough"
-      ],
+      "new_function_evidence_this_round": [],
       "new_failures_this_round": [],
       "remaining_rounds": "UNKNOWN",
       "remaining_rounds_confidence": "UNKNOWN",
@@ -1909,16 +1907,16 @@
         "new_full_passes": 1
       }
     },
-    "next_action": "Reuse live private152/display5 with connected priority assistant3ON and recordingOFF. Register next bounded internal input phase under continuing directhuman scope; resume remaining favourite XSNormal choice0 and SilverKunoichi choice1, then retained5124 gray/NPC/body/clipping/patch/function/animation gates. Preserve current20profiles/originalNano2; noforegroundinput/graphicsreduction/savecopyrollback orintentionaldeath/progression.",
-    "updated_at": "2026-10-13T00:54:43.656639+00:00",
+    "next_action": "Continue retained5124 fullMOD scope on live private152/display5 withassistant3ON andrecordingOFF. Remaining favouritefamilies and allvariant body/material/gray/NPC/clipping/patch/function/control/animation gates staypending. Select next exactuncoveredIDs fromexistingmanifest; broaden testedbodyparameters/coldreload onlywithregisteredcurrentuserdata preservation. Noforegroundinput/graphicsreduction/intentionaldeath/progression/savecopyrollback.",
+    "updated_at": "2026-10-13T01:37:21.613996+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
-      "status": "PROGRESS_NOT_TOTAL_BLOCKED_NEXT_FAVOURITES",
+      "status": "PROGRESS_NOT_TOTAL_BLOCKED_REMAINING_MOD_TESTS",
       "consecutive_goal_turns": 0,
       "consecutive_no_progress_turns": 0,
       "condition": null,
-      "evidence": ".local/play-session-20261008/core-functional-152/repair/round42-runtime-result.json",
-      "next_action": "Reuse live private152/display5 with connected priority assistant3ON and recordingOFF. Register next bounded internal input phase under continuing directhuman scope; resume remaining favourite XSNormal choice0 and SilverKunoichi choice1, then retained5124 gray/NPC/body/clipping/patch/function/animation gates. Preserve current20profiles/originalNano2; noforegroundinput/graphicsreduction/savecopyrollback orintentionaldeath/progression.",
+      "evidence": ".local/play-session-20261008/core-functional-152/repair/round43-runtime-result.json",
+      "next_action": "Continue retained5124 fullMOD scope on live private152/display5 withassistant3ON andrecordingOFF. Remaining favouritefamilies and allvariant body/material/gray/NPC/clipping/patch/function/control/animation gates staypending. Select next exactuncoveredIDs fromexistingmanifest; broaden testedbodyparameters/coldreload onlywithregisteredcurrentuserdata preservation. Noforegroundinput/graphicsreduction/intentionaldeath/progression/savecopyrollback.",
       "consecutive_no_progress_goal_turns": 0
     },
     "user_exit_authorization": {
@@ -1974,7 +1972,7 @@
         "full_clean_capture_pass": false
       }
     },
-    "round_closure_at": "2026-10-13T00:54:43.656639+00:00",
+    "round_closure_at": "2026-10-13T01:37:21.613996+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 12,
       "new_confirmed_this_round": 0,
@@ -2139,7 +2137,7 @@
       }
     },
     "current_segment": "core-functional-152",
-    "previous_goal_turn_classification": "PROGRESS_ROUND42_REVIEWED_INPUT_REPAIR_PASS",
+    "previous_goal_turn_classification": "PROGRESS_ROUND43_TWO_FAVOURITE_PARTIALS_AND_EXACT_RESTORATION",
     "execution_status": "ACTIVE_PRIVATE152_FULL_MOD_TESTS_CONTINUE",
     "pause_at": "2026-10-12T12:36:33.101928+00:00",
     "pause_source": "Latestdirecthuman: endround/nativeplayhandoff/stoprecording/pauseGoaluntilmanualresume; finaladditionalrequest normalrestartforlatency",
@@ -2188,7 +2186,7 @@
       "observation_stop_evidence": ".local/play-session-20261008/user-play-observation-20261011/observation-stop-20261011.json",
       "recording_evidence": "recording-session/stop-confirmation.json",
       "latest_repair_result": ".local/play-session-20261008/user-native-125/repair/result.json",
-      "current_visual": "OriginalNano2 mesh/40transforms restored; current452 combinedOFFmodifier isolation acceptedbounded, F11ON intentionallyadmitsgameinput; remainingwardrobe pending",
+      "current_visual": "OriginalNano2 restoredexactmesh/40transforms; XSNormal0/SilverNoStocking1 limitedHips cases observed, fullappearancegatespending",
       "input_repair": {
         "lane": "DIRECT",
         "evidence": ".local/play-session-20261008/user-native-119/repair/cursor-key-repair-registration.json",
@@ -2211,7 +2209,7 @@
         "display": ":5",
         "resolution": "3440x1440"
       },
-      "current_repair_evidence": ".local/play-session-20261008/core-functional-152/repair/round42-runtime-result.json",
+      "current_repair_evidence": ".local/play-session-20261008/core-functional-152/repair/round43-runtime-result.json",
       "active_body_controller": "EveProportions+Tuner/F9 only; UUEPBS intact outside loader",
       "clipping_result": "Historicalrepresentativeneutralviews only; currentuserbodyvaluesand20profiles preserved; no fresh149geometryacceptance",
       "observation_heartbeat": {
@@ -2672,16 +2670,15 @@
       "geometry_acceptance": "PriorR32six/R33five plusR35four favouritevariants limited Hips/Butt response; latest4 neutralreset40 andfinite8history; fullranges/clipping/coldreload pending."
     },
     "resumed_test_checkpoint": {
-      "at": "2026-10-13T00:54:43.656639+00:00",
-      "lane": "REVIEWED",
-      "status": "ROUND42_CLOSED_BOUNDED_INPUT_REPAIR_JUDGE_PASS",
+      "at": "2026-10-13T01:37:21.613996+00:00",
+      "lane": "DIRECT",
+      "status": "ROUND43_CLOSED_TWO_FAVOURITE_BODY_PARTIALS",
       "root_owned_game_files": 1,
       "candidate_evidence": [
-        ".local/play-session-20261008/core-functional-152/repair/r42-candidate-registration.json",
-        ".local/play-session-20261008/core-functional-152/repair/r42-review-decision.json"
+        ".local/play-session-20261008/core-functional-152/repair/round43-registration.json"
       ],
-      "runtime_evidence": ".local/play-session-20261008/core-functional-152/repair/round42-runtime-result.json",
-      "runtime_status": "BOUNDED_INPUT_REPAIR_COLD_RUNTIME_AND_FRESH_JUDGE_PASS",
+      "runtime_evidence": ".local/play-session-20261008/core-functional-152/repair/round43-runtime-result.json",
+      "runtime_status": "TWO_FAVOURITE_VARIANTS_ACTUAL_LIMITED_BODY_CASES_AND_USERDATA_RESTORED",
       "actual_import_check": {
         "evidence": ".local/play-session-20261008/user-native-136/repair/package-import-closure.json",
         "containers": 181,
@@ -2782,13 +2779,13 @@
       "confirmed_new_crashes": 0,
       "unknown_exit130_preserved": true,
       "replacement_disposition": "No confirmed newsourcealias orcompatible replacement; zeroextraexclusions; source alternatives retained.",
-      "agent_disposition": "Read-onlyresume_evidence_audit andfreshr42_input_judge completedandcollected; noactivedescendantwriter",
+      "agent_disposition": "Read-onlyr43_favourite_selector_audit completedandcollected; noactivedescendantwriter",
       "report": ".local/play-session-20261008/MOD_TEST_REPORT_20261011.md",
       "csv": ".local/play-session-20261008/UNIFIED_MOD_TEST_LIST_20261011.csv",
       "continuation_prompt": ".local/play-session-20261008/CONTINUE_MOD_TESTING_PROMPT_20261011.md",
       "usage_guide": ".local/play-session-20261008/FUNCTIONAL_MOD_KEYS_20261011.md",
-      "source_delivery": "Delivery receipt: core-functional-152/repair/source-delivery-round42.json; exactcommit/remoteverification recordedafter normalbranchpush.",
-      "root_owned_game_files_scope": "Only Tuner enabled-input-mode branch replaced after old game normally closed. Native test target values restored/unbound; semantic20match then exactregisteredOutfits preimage restored afterconcurrentbytecheck. No loader/DLL/package/mods.txt/prefix/graphics/default/preset/key/cursor edits.",
+      "source_delivery": "Delivery receipt core-functional-152/repair/source-delivery-round43.json; exactcommit/remoteverified afterbranchpush",
+      "root_owned_game_files_scope": "Only nativeUI temporary rows fortwo previouslyunbound targetmeshes; resetandnativeunbind; semantic20match thenconcurrentbytescheck exactregisteredOutfits preimage restoration. InstalledTuner452 andallothergamefiles/configs unchanged.",
       "previous_game_candidate_evidence": [
         ".local/play-session-20261008/user-native-135/repair/cursor-lifecycle-installed.json",
         ".local/play-session-20261008/user-native-135/repair/nano-base-installed.json"
@@ -2847,7 +2844,7 @@
         "window": 37748739
       },
       "user_handoff_question": "RESOLVED_DIRECT_HUMAN_AUTHORIZES_BACKEND_RESTART_TESTS",
-      "current_round_evidence": ".local/play-session-20261008/core-functional-152/repair/round42-registration.json",
+      "current_round_evidence": ".local/play-session-20261008/core-functional-152/repair/round43-registration.json",
       "latest_offline_evidence": ".local/play-session-20261008/core-functional-151/repair/round39-offline-result.json",
       "round40_registration": ".local/play-session-20261008/core-functional-151/repair/round40-registration.json"
     },
@@ -2856,10 +2853,10 @@
       "source": "Native get_goal verified active on2026-10-11T22:30Z; latest direct user objective enables persistent resumed MOD testing in background",
       "scope": "All current and subsequently discovered stable test leaves; every independently verifiable test in one denominator; no formal Console implementation or scheduler resume",
       "tool_objective": "继续，继续这个测试，继续在我的桌面后台测试。嗯，我开目标模式的话应该就可以了吧。然后注意我之前说过的几个问题，你都进行测试。然后每一个问题都算一个任务。每个任务，每一个这个任务都是，就是每一个要测试的都算一个任务，算一个分母，拿这个当总任务数来进行汇报。",
-      "tokensUsed": 7525544,
-      "timeUsedSeconds": 58341,
-      "telemetry_at": "2026-10-13T00:50:53+00:00",
-      "telemetry_coverage": "Actualget_goal beforeRound42closure; laterclosingtools excluded",
+      "tokensUsed": 8034097,
+      "timeUsedSeconds": 61035,
+      "telemetry_at": "2026-10-13T01:33:24+00:00",
+      "telemetry_coverage": "Actualget_goal beforeRound43closure; laterclosingtools excluded",
       "last_observed_status": "active",
       "pause_requested": false,
       "pause_source": "Latestdirecthuman: endround/nativeplayhandoff/stoprecording/pauseGoaluntilmanualresume; finaladditionalrequest normalrestartforlatency",
@@ -2947,13 +2944,12 @@
     },
     "input_window_result": {
       "state": "CLOSED_INTERNAL_SEGMENT",
-      "lane": "REVIEWED",
-      "started_at": "2026-10-13T00:04:19.437618+00:00",
-      "deadline": "2026-10-13T00:44:19.437618+00:00",
-      "authorization_deadline": "2026-10-13T00:44:19.437618+00:00",
-      "source": "Directhuman backgroundrestore/test plusactiveGoal MODcompatibility objective",
-      "scope": "Exactprivate151normalshutdown; reuseowneddisplay5, sameprefixprivate152 restart andboundedcombinedUI inputrepairtests; no foreground/recording",
-      "phase_timeout": "Internal40min phase42, notnewhuman10h grant orscopebudgetreset",
+      "lane": "DIRECT",
+      "started_at": "2026-10-13T00:58:16.795705+00:00",
+      "deadline": "2026-10-13T01:33:16.795705+00:00",
+      "source": "Active nativeGoal plus latest directhumanprivatebackgroundtesting instruction; previous10hgrant notrenewed",
+      "scope": "Private152/display5 only twofavourite wardrobe/body tests withpriority3ON; noforeground/recording",
+      "phase_timeout": "Internal35min phase43; same task authority and cumulativeGoaltelemetry, no newhuman10hgrant",
       "previous_expired_grant": {
         "state": "EXPIRED_WAITING_HUMAN_RENEWAL",
         "source": "Fresh direct human authorizes10hours",
@@ -2964,8 +2960,8 @@
         "expiry_observed_at": "2026-10-12T11:24:18.869386+00:00",
         "renewal_question": "Pending asynchronous question: extend10hours/1hour/offlineonly; no reply received"
       },
-      "closed_at": "2026-10-13T00:54:43.656639+00:00",
-      "action_authority": "Currentdirecthumanprivatebackgroundtestinstruction persists; expired40min was internalphase timer, notnew10hgrant orhumanpermissionexpiry"
+      "closed_at": "2026-10-13T01:37:21.613996+00:00",
+      "action_authority": "Currentdirecthumanbackgroundtestinstruction persists; 35min wasinternal phase timer, nothumanpermissionexpiry"
     },
     "virtual_desktop_skill_request": {
       "source": "User explicitly requests newAgent merge private-display workflow into existing linux-task-desktop, default newGUI tasks virtual and foreground only explicit request",
