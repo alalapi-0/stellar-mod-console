@@ -1508,17 +1508,17 @@
     "progress": {
       "scope_version": "unified-leaves-v5-sequential-material-feedback-20261014",
       "completion_scope": "RETAINED_INDEPENDENT_TESTS_AFTER_EXPLICIT_FAVOURITE_EDITION_SELECTION_WITH_SCOPE_GATES",
-      "effective_accepted": 73,
+      "effective_accepted": 84,
       "effective_required": 5125,
-      "completion_percent": 1.4244,
-      "tested_with_complete_conclusion": 75,
-      "test_conclusion_percent": 1.4634,
+      "completion_percent": 1.639,
+      "tested_with_complete_conclusion": 86,
+      "test_conclusion_percent": 1.678,
       "statuses": {
-        "NOT_TESTED": 4982,
-        "PASS": 73,
+        "NOT_TESTED": 4970,
+        "PASS": 84,
         "REOPENED": 2,
         "WAITING_HUMAN": 1,
-        "PARTIAL": 37,
+        "PARTIAL": 38,
         "FAIL": 2,
         "BLOCKED_NOT_INSTALLED": 28
       },
@@ -1536,25 +1536,25 @@
         "共享依赖": 4,
         "组合回归": 9
       },
-      "reason": "R53 retired one confirmed gray variant and completed bounded material diagnostics; four appearance leaves becomePARTIAL, one newly reported independent regression addedPARTIAL. No whole clothing/body or persistent-bug PASS invented.",
+      "reason": "R54 eleven existing finite WarAegis control gates actually selected, material effect observed, default/current-user settings restored and cold checked; SBPR33 newlyPARTIAL. Whole appearance and persistent contamination remain unaccepted.",
       "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
-      "manifest_sha256": "50c3e8863ad3689dcebda2ba5c5218801d6431a780cb35dd75a4442e87ca8327",
+      "manifest_sha256": "4175f58afd74033f0ad47c00e605c22b7b94ba45c3363e39b53c711b79280d9d",
       "target_identity_sha256": "955965cda7371a7ff208fdf736e19a1136e0628cf77a644ac49b5d4323aa9a92",
-      "enumeration_validation": ".local/play-session-20261008/core-functional-164/r53/unified-current-validation-round53.json",
-      "round_key": "private-sequential-outfit-material-contamination-20261014",
-      "round_status": "CLOSED_KNOWN_GRAY_RETIREMENT_REPORTED_CONTAMINATION_OPEN",
-      "count": 53,
+      "enumeration_validation": ".local/play-session-20261008/core-functional-165/r54/unified-current-validation-round54.json",
+      "round_key": "private164-waraegis-material-controls-and-favourite-sequence-20261014",
+      "round_status": "CLOSED_ELEVEN_FINITE_CONTROLS_PASS_PERSISTENT_GRAY_OPEN",
+      "count": 54,
       "coverage": "since_baseline",
-      "last_seq": 53,
-      "last_key": "private-sequential-outfit-material-contamination-20261014",
+      "last_seq": 54,
+      "last_key": "private164-waraegis-material-controls-and-favourite-sequence-20261014",
       "historical_round_count": "UNKNOWN",
-      "execution_change_percentage_points": 0,
+      "execution_change_percentage_points": 0.2146341,
       "evidence_change_percentage_points": 0,
-      "scope_change_percentage_points": -0.000278,
-      "change_rule": "Old5124 identity/versions/weights/gates and73PASS/2FAIL retained; add one authorized pending material state regression. Retiring a failed variant does not erase its test.",
-      "round_start_commit": "640bba93168687dc97fbdbf64c54860b1b5805b0",
+      "scope_change_percentage_points": 0,
+      "change_rule": "Same5125 IDs/versions/weights/gates. Eleven NOT_TESTED controls ->PASS; one appearance ->PARTIAL; oldPASS/FAIL and exclusions retained.",
+      "round_start_commit": "e2dc9d80cf67606d6b80307af66417eb5603feff",
       "scope_change": "Original5124 retained; append1 independent newly reported sequential material recovery regression. Original5129 initial enumeration and44 exclusions preserved, retired1052 remainsFAIL.",
-      "milestone_change": "9exact model cases;8 render,1052gray/null failure removed scan-safe; native40/profile/graphics preservation and fresh164 priority3ON",
+      "milestone_change": "8texture options+3scalar finite endpoints/default, exact currenthuman CNS/body/graphics recovery and cold165 Connected3ON",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1897,22 +1897,22 @@
       "remaining_rounds": "UNKNOWN",
       "remaining_rounds_confidence": "UNKNOWN",
       "window": [],
-      "prediction_reason": "Original persistent symptom not reproduced; no comparable acceptance throughput prediction.",
+      "prediction_reason": "Persistent material trigger unconfirmed, heterogeneous movement/visibility/patch and NPC gates; no comparable throughput prediction.",
       "original_unified_required_retained": 5129,
       "latest_specific_followup": "integration:sequential-outfit-material-recovery"
     },
-    "next_action": "Reuse verifiedprivate164; keep CombatAssistant3ON/EveProportionsTuner/JiggleControl, recordingoff. Continue remaining favourites/ordered texture or visibility changes and body/patch gates; use any human supplied exact trigger. Persistent black-gray bug OPEN;1052 retiredFAIL, never retest same missing providers without new evidence.",
-    "updated_at": "2026-10-13T18:08:16.132435+00:00",
+    "next_action": "Reuse private165 with priorities; investigate remaining visibility controls and ordered material state/patched alternatives without claiming complete clothing compatibility.",
+    "updated_at": "2026-10-13T19:25:42.038165+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
-      "status": "ACTIVE_RESUMED_WITH_PROGRESS_R53_NO_CURRENT_IMPASSE",
+      "status": "ACTIVE_RESUMED_WITH_PROGRESS_R54_NO_CURRENT_IMPASSE",
       "consecutive_goal_turns": 0,
       "consecutive_no_progress_turns": 0,
       "condition": null,
-      "evidence": ".local/play-session-20261008/core-functional-160/r52/round52-runtime-result.json",
-      "next_action": "Remain paused and USER_ONLY. No inputs, outfit/body changes, observation, recording, auto relaunch or new test round. Continue full5124 scope only after direct user resume; preserve original failures and R48/R49/R50/R51/R52 evidence.",
+      "evidence": "core-functional-165/r54/round54-runtime-result.json",
+      "next_action": "Reuse private165 with priorities; investigate remaining visibility controls and ordered material state/patched alternatives without claiming complete clothing compatibility.",
       "consecutive_no_progress_goal_turns": 0,
-      "next_allowed": "Continue private164 pending tests with priorities retained; original persistent material symptom open"
+      "next_allowed": "Reuse private165 with priorities; investigate remaining visibility controls and ordered material state/patched alternatives without claiming complete clothing compatibility."
     },
     "user_exit_authorization": {
       "source": "Direct user: 没保存也没关系，允许放弃未保存进度并正常退出。正常重启人物; followed by 重启任务",
@@ -1967,7 +1967,7 @@
         "full_clean_capture_pass": false
       }
     },
-    "round_closure_at": "2026-10-13T18:08:16.132435+00:00",
+    "round_closure_at": "2026-10-13T19:25:42.038165+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 12,
       "new_confirmed_this_round": 0,
@@ -2131,9 +2131,9 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "core-functional-164",
+    "current_segment": "core-functional-165",
     "previous_goal_turn_classification": "PROGRESS",
-    "execution_status": "IN_PROGRESS_PRIVATE_TESTING_R53_CLOSED",
+    "execution_status": "IN_PROGRESS_PRIVATE_TESTING_R54_CLOSED",
     "pause_at": "2026-10-13T12:34:41+00:00",
     "pause_source": "本轮完成后暂停，不记录不录屏，正常退出并从Steam主页重新打开，交还控制权并提供MOD方法",
     "user_play_handoff": {
@@ -2681,13 +2681,13 @@
       "geometry_acceptance": "SoleF9 body controller preserved. R49 two Prototype original finite gates plus R50 four Silver variants: selected Hip1.1 actual40 response, saved-profile restart/equip matches0, reset0 and camp jump/menu recovery. Other variants/ranges/controls/combinations and detailed dynamic clipping/animations remain separately pending."
     },
     "resumed_test_checkpoint": {
-      "at": "2026-10-13T18:08:16.132435+00:00",
+      "at": "2026-10-13T19:25:42.038165+00:00",
       "lane": "DIRECT",
-      "status": "R53_CLOSED_PRIVATE164_READY_NEXT_TESTS",
+      "status": "R54_CLOSED_PRIVATE165_READY_NEXT_TESTS",
       "root_owned_game_files": 4,
       "candidate_evidence": "/home/alalapi/Projects/stellar-mod-console/.local/play-session-20261008/core-functional-162/r53/r53-incompatible-retirement-candidate.json",
-      "runtime_evidence": "core-functional-164/r53/round53-runtime-result.json",
-      "runtime_status": "FRESH164_RENDERED_CURRENT_CYBER_MENU1052_ABSENT_PRIORITY3ON",
+      "runtime_evidence": "core-functional-165/r54/round54-runtime-result.json",
+      "runtime_status": "COLD165_CURRENT_CYBER_BODY40_MATERIALS3_EXACT_WAR_USER_PARAMS_EXACT_PRIORITY3ON",
       "actual_import_check": {
         "evidence": ".local/play-session-20261008/user-native-136/repair/package-import-closure.json",
         "containers": 181,
@@ -2785,9 +2785,9 @@
         },
         {
           "id": "BUG_SEQUENTIAL_OUTFIT_MATERIAL_CONTAMINATION",
-          "status": "OPEN_NOT_REPRODUCED_THIS_SELECTED_SEQUENCE",
+          "status": "OPEN_NOT_REPRODUCED_FINITE_R54_MATERIAL_SEQUENCE",
           "source": "Direct user resume: investigate repeated clothing changes causing black edges/gray on previously good outfits; remove confirmed incompatible clothes while preserving priority MODs",
-          "evidence": "core-functional-164/r53/round53-runtime-result.json",
+          "evidence": "core-functional-165/r54/round54-runtime-result.json",
           "priority": "FIRST"
         }
       ],
@@ -2801,7 +2801,7 @@
       "csv": ".local/play-session-20261008/UNIFIED_MOD_TEST_LIST_20261011.csv",
       "continuation_prompt": ".local/play-session-20261008/CONTINUE_MOD_TESTING_PROMPT_20261011.md",
       "usage_guide": ".local/play-session-20261008/FUNCTIONAL_MOD_KEYS_20261011.md",
-      "source_delivery": "core-functional-164/r53/source-delivery-round53.json; exact branch remote verification required",
+      "source_delivery": "core-functional-165/r54/source-delivery-round54.json; exact remote verification required",
       "root_owned_game_files_scope": "Only converted1052 three inactive containers and generatedJSON outside completePakMods scan",
       "previous_game_candidate_evidence": [
         ".local/play-session-20261008/user-native-135/repair/cursor-lifecycle-installed.json",
@@ -2826,30 +2826,30 @@
         "limits": "Owned action preceded144 exit; no native crash root cause claimed"
       },
       "assistant_current": {
-        "segment": "core-functional-164",
+        "segment": "core-functional-165",
         "version": "1.0.16",
-        "unit": "stellar-combat-assistant-private164.service",
-        "game_linux_pid": 808574,
-        "game_linux_start_ticks": "51035515",
+        "unit": "stellar-combat-assistant-private165.service",
+        "game_linux_pid": 941429,
+        "game_linux_start_ticks": "51544262",
         "game_windows_pid": 364,
-        "trainer_windows_pid": 1516,
+        "trainer_windows_pid": 1536,
         "connected": true,
         "bindingReady": true,
         "guard": true,
         "dodge": true,
         "special": true,
         "stopped": false,
-        "evidence": "core-functional-164/r53/r53-assistant-final-connected.json",
-        "latest_status_at": "2026-10-13T17:55:48.060700+00:00"
+        "evidence": "core-functional-165/r54/r54-assistant-final-connected.json",
+        "latest_status_at": "2026-10-13T19:21:30.848371+00:00"
       },
       "active_outfit": {
         "uid": "Repacked ExtraMod1775 4",
         "choice": 0,
         "full_mesh": "/Game/CNSRepacked/f824d9425092fe3e/Art/Character/PC/CH_P_EVE_InnerSuit/CH_P_EVE_InnerSuit.CH_P_EVE_InnerSuit",
-        "source": "Current user resume baseline, restored through actual outfit UI; not oldR52 snapshot",
+        "source": "Current user R54 preimage, actual menu restored after normalcold165",
         "native40_error": 0,
         "userdata_exact": true,
-        "evidence": "core-functional-164/r53/r53-final-preservation.json"
+        "evidence": "core-functional-165/r54/r54-final-preservation.json"
       },
       "recorder_guard_activation": "NOT_RUN_CURRENT_OLD_SUPERVISOR_KEPT_WAITING_HANDOFF",
       "historical_previous_active_outfit": {
@@ -2859,25 +2859,25 @@
         "body": "Butt1.00->1.20 actual bilateralhipresponse; keyboardneutralrestoration exact40; othercases pending",
         "result": "PARTIAL_LIMITED_ADJUSTABLE"
       },
-      "resume_registration": "/home/alalapi/Projects/stellar-mod-console/.local/play-session-20261008/core-functional-162/r53/round53-registration.json",
+      "resume_registration": ".local/play-session-20261008/core-functional-164/r54/round54-registration.json",
       "private_test_display": {
         "display": ":5",
         "pid": 3765017,
         "start_ticks": "43519972",
         "unit": "stellar-mod-test-display-151.service",
-        "state": "PRIVATE164_LIVE_NO_RECORDING",
+        "state": "PRIVATE165_LIVE_NO_RECORDING",
         "resolution": "3440x1440",
         "game_started": true,
         "window": 37748739,
         "last_game_window": 37748739
       },
       "user_handoff_question": "RESOLVED_DIRECT_USER_REQUESTS_NORMAL_FOREGROUND_RESTART_AND_CONTROL",
-      "current_round_evidence": "core-functional-164/r53/round53-runtime-result.json",
+      "current_round_evidence": "core-functional-165/r54/round54-runtime-result.json",
       "latest_offline_evidence": ".local/play-session-20261008/core-functional-152/repair/round44-offline-result.json",
       "round40_registration": ".local/play-session-20261008/core-functional-151/repair/round40-registration.json",
       "current_game": {
-        "pid": 808574,
-        "start_ticks": "51035515",
+        "pid": 941429,
+        "start_ticks": "51544262",
         "window": 37748739,
         "width": 3440,
         "height": 1440,
@@ -2886,12 +2886,12 @@
         "private_server_start_ticks": "43519972",
         "input_owner": "ROOT_PRIVATE_MOD_TESTS",
         "native_goal": "active",
-        "acceptance": "FRESH164_RENDER_PRIORITY3ON_BAD1052_MENU_ABSENT;NOT_ALL_COMPATIBILITY_ACCEPTED",
-        "at": "2026-10-13T17:50:33.805404+00:00",
+        "acceptance": "FRESH165_RENDER_PRIORITY3ON_ORIGINAL_USER_MATERIALS_AND_BODY_EXACT;NOT_ALL_COMPATIBILITY_ACCEPTED",
+        "at": "2026-10-13T19:13:40.097309+00:00",
         "recording": false,
         "observation": false
       },
-      "case": "Known gray1052 removed; persistent sequence contamination remains open; exact nine model case evidence retained",
+      "case": "Eleven finite WarAegis controlPASS; SBPR33 standingPARTIAL; persistentblackgrayOPEN; humanCNS exact restored",
       "verified_npc_bundle_conflict": {
         "kind": "HARD_CONFLICT_CURRENT_NATIVE_BUNDLES",
         "members": [
@@ -2925,8 +2925,8 @@
         "full_npc_acceptance": "PARTIAL_UNVERIFIED_VISUAL_OTHERMODELS_BODY_CLIPPING",
         "evidence": "core-functional-156/repair/round48-runtime-result.json"
       },
-      "helper_scope": "Own read-only material/scalar/vector/hidden-slot/GPU observations and exact private UI; no hooks or memory writes; oldPID/HWND reuse guarded by birth identity",
-      "temporary_userdata": "None; current human16protected files byte-identical, original40body delta0; native game auto saves retained, never rolled back",
+      "helper_scope": "Own regenerated exact private input, read-only reflected materials/body and author assistant CLI; no memory writes/hooks",
+      "temporary_userdata": "TemporaryWarAegis CNS option edits recovered to exact CURRENT humanpreimage afternormal164exit; all16protected files nowexact. MainStorysave never restored.",
       "cold_reload_error": 0.0,
       "body_variant_original_gate_acceptance": {
         "targets": [
@@ -2956,7 +2956,7 @@
         "position_limit": "Doro summon/recall and one bounded F02 camp follow response only. Smoke/audio/other navigation/maps/long-run pending. ModActor may retain a recalled stale pawn reference; live-object absence and rendered disappearance are checked, no memory-leak claim. Player moved about4.56m from original camp position through normal keys; no teleport, story, intentional death or save rollback.",
         "evidence": ".local/play-session-20261008/core-functional-159/r51/round51-runtime-result.json"
       },
-      "latest_warm_evidence": "core-functional-164/r53/r53-case-summary.json",
+      "latest_warm_evidence": "core-functional-165/r54/r54-final-preservation.json",
       "incompatible_retirement": {
         "candidate": "core-functional-162/r53/r53-incompatible-retirement-candidate.json",
         "initial_applied": "core-functional-162/r53/r53-incompatible-retirement-applied.json",
@@ -2972,10 +2972,10 @@
       "source": "Direct human resume, nativeGoal active verified",
       "scope": "All current and subsequently discovered stable test leaves; every independently verifiable test in one denominator; no formal Console implementation or scheduler resume",
       "tool_objective": "继续，继续这个测试，继续在我的桌面后台测试。嗯，我开目标模式的话应该就可以了吧。然后注意我之前说过的几个问题，你都进行测试。然后每一个问题都算一个任务。每个任务，每一个这个任务都是，就是每一个要测试的都算一个任务，算一个分母，拿这个当总任务数来进行汇报。",
-      "tokensUsed": 11113205,
-      "timeUsedSeconds": 101477,
-      "telemetry_at": "2026-10-13T18:00:29+00:00",
-      "telemetry_coverage": "Native get_goal snapshot at R53 closing; includes cumulative earlier goal work, excludes later final Git closure",
+      "tokensUsed": 11433290,
+      "timeUsedSeconds": 106448,
+      "telemetry_at": "2026-10-13T19:23:20+00:00",
+      "telemetry_coverage": "Native get_goal at R54 closing; cumulative native Goal snapshot, excludes subsequent closure and Git work",
       "last_observed_status": "active",
       "pause_requested": false,
       "pause_source": "本轮完成后暂停，不记录不录屏，正常退出并从Steam主页重新打开，交还控制权并提供MOD方法",
@@ -3062,12 +3062,12 @@
       "current_status": "PRIVATE152_DISPLAY5; no foregroundinput/physicalpowerpolicychanges"
     },
     "input_window_result": {
-      "state": "R53_CLOSED_PRIVATE164_RETAINED_NEXT_BOUND_SEGMENT_ALLOWED",
+      "state": "R54_CLOSED_PRIVATE165_RETAINED_NEXT_BOUND_SEGMENT_ALLOWED",
       "lane": "DIRECT",
       "started_at": "2026-10-13T16:58:51.100398+00:00",
       "deadline": "HISTORICAL_INTERNAL_SEGMENTS_CLOSED;NOT_HUMAN_AUTHORITY_EXPIRY",
-      "source": "Continuing direct human private test authority; not a human expiry renewal",
-      "scope": "R53 nine exact model material sequence observations, current human data preservation, normal162/163 exits and scan-safe1052 retirement, fresh164; next round reuses current private backend",
+      "source": "Continuing human full private testing authority",
+      "scope": "R54 finite material controls and favourite sequence; exact currenthuman MOD settings recovered; normal164exit and cold165",
       "phase_timeout": "Internal work segment only, not human authority expiry/Goal budget/quota reset",
       "previous_expired_grant": {
         "state": "EXPIRED_WAITING_HUMAN_RENEWAL",
@@ -3103,8 +3103,8 @@
           "classification": "R49 segment2 PROGRESS tooltransitionpath rootcause repaired; actualowned157 coldreload mesh exact/all40tunederror0. PriorunitfailedbeforePopen, no gamecrash. Existinggoalbudget and human authority persist."
         }
       ],
-      "closed_at": "2026-10-13T18:08:16.132435+00:00",
-      "classification": "R53_INTERNAL_PHASE_CLOSED_GOAL_ACTIVE_PRIVATE_TESTING_AUTHORITY_CONTINUES"
+      "closed_at": "2026-10-13T19:25:42.038165+00:00",
+      "classification": "R54_INTERNAL_PHASE_CLOSED_GOAL_ACTIVE_AUTHORITY_CONTINUES"
     },
     "virtual_desktop_skill_request": {
       "source": "User explicitly requests newAgent merge private-display workflow into existing linux-task-desktop, default newGUI tasks virtual and foreground only explicit request",
