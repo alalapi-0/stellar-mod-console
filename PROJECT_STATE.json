@@ -1508,17 +1508,17 @@
     "progress": {
       "scope_version": "unified-leaves-v4-native-latency-feedback-20261012",
       "completion_scope": "RETAINED_INDEPENDENT_TESTS_AFTER_EXPLICIT_FAVOURITE_EDITION_SELECTION_WITH_SCOPE_GATES",
-      "effective_accepted": 66,
+      "effective_accepted": 69,
       "effective_required": 5124,
-      "completion_percent": 1.2881,
-      "tested_with_complete_conclusion": 68,
-      "test_conclusion_percent": 1.3271,
+      "completion_percent": 1.3466,
+      "tested_with_complete_conclusion": 71,
+      "test_conclusion_percent": 1.3856,
       "statuses": {
-        "NOT_TESTED": 4992,
-        "PASS": 66,
+        "NOT_TESTED": 4986,
+        "PASS": 69,
         "REOPENED": 2,
         "WAITING_HUMAN": 1,
-        "PARTIAL": 33,
+        "PARTIAL": 36,
         "FAIL": 2,
         "BLOCKED_NOT_INSTALLED": 28
       },
@@ -1536,25 +1536,25 @@
         "共享依赖": 4,
         "组合回归": 8
       },
-      "reason": "Four distinct Silver variants passed original finite body/reset/equip/menu/input/physics and saved-profile reload gates. Other tests/failures and all5124 scope retained.",
+      "reason": "Doro3 actual summon/recall/one bounded camp follow accepted; audio and smoke retain PARTIAL. All original test scope and failures remain.",
       "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
-      "manifest_sha256": "d079657ba18b6c6947d8a94f003b6dfd1cd1033a47267b4ddaa2fd54d2b6d8f0",
+      "manifest_sha256": "6d966257700cfc85463a5d0a0b45e2e4c70734ccdbf426bb6cb539fcc2d4213a",
       "target_identity_sha256": "90e747117d706ac416339ed18f06c64a0f0208f0f4fdd1153453be2856b3446e",
-      "enumeration_validation": ".local/play-session-20261008/core-functional-159/r50/unified-current-validation-round50.json",
-      "round_key": "private-silver721-four-variants-original-gates-and-saved-profile-reload-20261013",
-      "round_status": "CLOSED_SILVER_FOUR_ORIGINAL_GATES_PASSED",
-      "count": 50,
+      "enumeration_validation": ".local/play-session-20261008/core-functional-159/r51/unified-current-validation-round51.json",
+      "round_key": "private159-doro3-functional-summon-recall-follow-effects-20261013",
+      "round_status": "CLOSED_DORO_THREE_FUNCTION_PASSES_THREE_PARTIAL",
+      "count": 51,
       "coverage": "since_baseline",
-      "last_seq": 50,
-      "last_key": "private-silver721-four-variants-original-gates-and-saved-profile-reload-20261013",
+      "last_seq": 51,
+      "last_key": "private159-doro3-functional-summon-recall-follow-effects-20261013",
       "historical_round_count": "UNKNOWN",
-      "execution_change_percentage_points": 0.0781,
+      "execution_change_percentage_points": 0.0585,
       "evidence_change_percentage_points": 0,
       "scope_change_percentage_points": 0,
-      "change_rule": "Only original Silver four leaves (two PARTIAL and two NOT_TESTED) become PASS after original gates; no identity/version/weight/gate/scope/exclusion changes.",
-      "round_start_commit": "e77fb415e67d171ee5deb45f4cc72b74d3716324",
+      "change_rule": "Only registered six original Doro3 leaves gain runtime evidence, threePASS/threePARTIAL; no identity/version/weight/gate/exclusion changes.",
+      "round_start_commit": "8a6ef536477ea61d5ab3506ea23fb8640c7b8878",
       "scope_change": "Expanded actual variant/control/animation/native/dependency/integration leaves; parent rollups/aliases not counted; explicit selected alternatives retained in excluded history. Initial draft5021 corrected to5129 before State registration using author variant rules.",
-      "milestone_change": "Four current native Hip1.10 responses, post-restart equip40 errors0/reset0/jump/original configuration restoration; detailed dynamic clipping remains pending.",
+      "milestone_change": "Visible summon/recall, actual302.622cm Doro follow, input recovery jump, final pet recalled and original settings/mesh/body preserved.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1892,7 +1892,11 @@
       "excluded_history_count": 44,
       "uncounted_parent_rollups": 12,
       "full_appearance_compatible_accepted": 6,
-      "new_function_evidence_this_round": [],
+      "new_function_evidence_this_round": [
+        "logic:Doro:summon",
+        "logic:Doro:recall",
+        "logic:Doro:follow"
+      ],
       "new_failures_this_round": [],
       "remaining_rounds": "UNKNOWN",
       "remaining_rounds_confidence": "UNKNOWN",
@@ -1912,9 +1916,17 @@
           "execution_delta": 4,
           "evidence_delta": 0,
           "scope_delta": 0
+        },
+        {
+          "seq": 51,
+          "key": "private159-doro3-functional-summon-recall-follow-effects-20261013",
+          "scope": "unified-leaves-v4-native-latency-feedback-20261012",
+          "execution_delta": 3,
+          "evidence_delta": 0,
+          "scope_delta": 0
         }
       ],
-      "prediction_reason": "Heterogeneous remaining targets and fewer than three comparable consecutive positive rounds.",
+      "prediction_reason": "Current three closing rounds mix clothing gates and companion functions; remaining targets are heterogeneous with unmet prerequisites, so no comparable throughput forecast.",
       "original_unified_required_retained": 5129,
       "latest_specific_followup": {
         "task": "specific-latency-repair-20261012",
@@ -1924,16 +1936,16 @@
         "new_full_passes": 1
       }
     },
-    "next_action": "Continue all remaining5124 leaves, next partial favourite families and gray outfits/NPC teeth/other models/patches/functions/animations. Keep assistant3ON, AIO-only, soleF9 body control, private5; no front input/recording/graphics reduction/savecopyrollback/story/death. Dynamic clipping still requires clearer applicable views. Register next internal segment under continuing human authority without renewal; preserve R48 frozen28 and R49/R50 evidence.",
-    "updated_at": "2026-10-13T10:10:47.093144+00:00",
+    "next_action": "Continue all remaining5124 leaves, next partial favourite families and gray outfits/NPC teeth/other models/patches/functions/animations. Preserve valid prior gates; Doro audio and smoke remain unaccepted. Keep assistant3ON, AIO-only, soleF9 body control, private5; no front input/recording/graphics reduction/savecopyrollback/story/death. Register next internal segment under continuing human authority without renewal; preserve R48 frozen28 and R49/R50/R51 evidence.",
+    "updated_at": "2026-10-13T11:18:22.205045+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
-      "status": "PROGRESS_R50_SILVER4_ORIGINAL_GATES_PASSED_FULL_SCOPE_CONTINUES",
+      "status": "PROGRESS_R51_DORO_THREE_PASSES_FULL_SCOPE_CONTINUES",
       "consecutive_goal_turns": 0,
       "consecutive_no_progress_turns": 0,
       "condition": null,
-      "evidence": ".local/play-session-20261008/core-functional-159/r50/round50-runtime-result.json",
-      "next_action": "Continue all remaining5124 leaves, next partial favourite families and gray outfits/NPC teeth/other models/patches/functions/animations. Keep assistant3ON, AIO-only, soleF9 body control, private5; no front input/recording/graphics reduction/savecopyrollback/story/death. Dynamic clipping still requires clearer applicable views. Register next internal segment under continuing human authority without renewal; preserve R48 frozen28 and R49/R50 evidence.",
+      "evidence": ".local/play-session-20261008/core-functional-159/r51/round51-runtime-result.json",
+      "next_action": "Continue all remaining5124 leaves, next partial favourite families and gray outfits/NPC teeth/other models/patches/functions/animations. Preserve valid prior gates; Doro audio and smoke remain unaccepted. Keep assistant3ON, AIO-only, soleF9 body control, private5; no front input/recording/graphics reduction/savecopyrollback/story/death. Register next internal segment under continuing human authority without renewal; preserve R48 frozen28 and R49/R50/R51 evidence.",
       "consecutive_no_progress_goal_turns": 0
     },
     "user_exit_authorization": {
@@ -1989,7 +2001,7 @@
         "full_clean_capture_pass": false
       }
     },
-    "round_closure_at": "2026-10-13T10:10:47.093144+00:00",
+    "round_closure_at": "2026-10-13T11:18:22.205045+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 12,
       "new_confirmed_this_round": 0,
@@ -2155,7 +2167,7 @@
     },
     "current_segment": "core-functional-159",
     "previous_goal_turn_classification": "PROGRESS",
-    "execution_status": "ACTIVE_PRIVATE159_ROUND50_CLOSED_SILVER4_AND_CONFIGURATION_RESTORED",
+    "execution_status": "ACTIVE_PRIVATE159_ROUND51_CLOSED_DORO_THREE_PASSES",
     "pause_at": "2026-10-12T12:36:33.101928+00:00",
     "pause_source": "Latestdirecthuman: endround/nativeplayhandoff/stoprecording/pauseGoaluntilmanualresume; finaladditionalrequest normalrestartforlatency",
     "user_play_handoff": {
@@ -2687,15 +2699,15 @@
       "geometry_acceptance": "SoleF9 body controller preserved. R49 two Prototype original finite gates plus R50 four Silver variants: selected Hip1.1 actual40 response, saved-profile restart/equip matches0, reset0 and camp jump/menu recovery. Other variants/ranges/controls/combinations and detailed dynamic clipping/animations remain separately pending."
     },
     "resumed_test_checkpoint": {
-      "at": "2026-10-13T10:10:47.093144+00:00",
+      "at": "2026-10-13T11:18:22.205045+00:00",
       "lane": "DIRECT",
-      "status": "ROUND50_CLOSED_SILVER_FOUR_ORIGINAL_GATES_PASSED",
-      "root_owned_game_files": 2,
+      "status": "ROUND51_CLOSED_DORO_THREE_PASSES_THREE_PARTIAL",
+      "root_owned_game_files": 0,
       "candidate_evidence": [
         ".local/play-session-20261008/core-functional-155/repair/r48-profile-candidate.json"
       ],
-      "runtime_evidence": ".local/play-session-20261008/core-functional-159/r50/round50-runtime-result.json",
-      "runtime_status": "PRIVATE159_LIVE_SILVER4_ORIGINAL_GATES_PASSED_ORIGINAL_CONFIGURATION_RESTORED",
+      "runtime_evidence": ".local/play-session-20261008/core-functional-159/r51/round51-runtime-result.json",
+      "runtime_status": "PRIVATE159_LIVE_DORO_RECALLED_ORIGINAL_CONFIGURATION_PRESERVED",
       "actual_import_check": {
         "evidence": ".local/play-session-20261008/user-native-136/repair/package-import-closure.json",
         "containers": 181,
@@ -2797,13 +2809,13 @@
       "confirmed_new_crashes": 0,
       "unknown_exit130_preserved": true,
       "replacement_disposition": "No confirmed newsourcealias orcompatible replacement; zeroextraexclusions; source alternatives retained.",
-      "agent_disposition": "Root only, no new delegation; prior descendants completed",
+      "agent_disposition": "Root only; no new delegation; prior descendants completed",
       "report": ".local/play-session-20261008/MOD_TEST_REPORT_20261011.md",
       "csv": ".local/play-session-20261008/UNIFIED_MOD_TEST_LIST_20261011.csv",
       "continuation_prompt": ".local/play-session-20261008/CONTINUE_MOD_TESTING_PROMPT_20261011.md",
       "usage_guide": ".local/play-session-20261008/FUNCTIONAL_MOD_KEYS_20261011.md",
-      "source_delivery": "Per-round receipt core-functional-159/r50/source-delivery-round50.json; exact remote verification required",
-      "root_owned_game_files_scope": "Root private r50 helpers/evidence, soleState subtree/manifest/projections/Git; exact generatedTuner userdata, bounded native UI and normal own158-to159 game+assistant restart only",
+      "source_delivery": "Per-round receipt core-functional-159/r51/source-delivery-round51.json; exact remote verification required",
+      "root_owned_game_files_scope": "Root private r51 helpers/evidence, soleState subtree/manifest/projections/Git and bounded runtime-only Doro toggle; no installed file modifications",
       "previous_game_candidate_evidence": [
         ".local/play-session-20261008/user-native-135/repair/cursor-lifecycle-installed.json",
         ".local/play-session-20261008/user-native-135/repair/nano-base-installed.json"
@@ -2840,8 +2852,8 @@
         "dodge": true,
         "special": true,
         "stopped": false,
-        "evidence": ".local/play-session-20261008/core-functional-159/r50/r50-assistant-final-connected.json",
-        "latest_status_at": "2026-10-13T10:01:55.442408+00:00"
+        "evidence": ".local/play-session-20261008/core-functional-159/r51/r51-assistant-final-connected.json",
+        "latest_status_at": "2026-10-13T11:12:05.331669+00:00"
       },
       "active_outfit": {
         "id": "appearance:Repacked Mod2724/choice-2",
@@ -2870,7 +2882,7 @@
         "window": 37748739
       },
       "user_handoff_question": "RESOLVED_DIRECT_HUMAN_AUTHORIZES_BACKEND_RESTART_TESTS",
-      "current_round_evidence": ".local/play-session-20261008/core-functional-158/r50/round50-registration.json",
+      "current_round_evidence": ".local/play-session-20261008/core-functional-159/r51/round51-registration.json",
       "latest_offline_evidence": ".local/play-session-20261008/core-functional-152/repair/round44-offline-result.json",
       "round40_registration": ".local/play-session-20261008/core-functional-151/repair/round40-registration.json",
       "current_game": {
@@ -2885,7 +2897,7 @@
         "xauthority": "/home/alalapi/Projects/stellar-mod-console/.local/play-session-20261008/core-functional-151/private-display/Xauthority",
         "input_owner": "ROOT_PRIVATE_MOD_TESTS",
         "native_goal": "active",
-        "acceptance": "FRESH_PRIVATE_WORLD_READY;SILVER4_FINITE_ORIGINAL_GATES_VERIFIED;ORIGINAL_CONFIGURATION_RESTORED;WHOLE_GOAL_PENDING",
+        "acceptance": "PRIVATE_WORLD_READY;DORO3_SUMMON_RECALL_FOLLOW_VERIFIED;ORIGINAL_CONFIGURATION_PRESERVED;WHOLE_GOAL_PENDING",
         "at": "2026-10-13T09:35:11.848327+00:00"
       },
       "case": "REVIEWED_AIO_ONLY;Misc6 preservedinactive alternate",
@@ -2922,7 +2934,7 @@
         "full_npc_acceptance": "PARTIAL_UNVERIFIED_VISUAL_OTHERMODELS_BODY_CLIPPING",
         "evidence": "core-functional-156/repair/round48-runtime-result.json"
       },
-      "helper_scope": ".local/play-session-20261008/core-functional-159/r50",
+      "helper_scope": ".local/play-session-20261008/core-functional-159/r51",
       "temporary_userdata": {
         "profile_count": 20,
         "temporary_bindings": 0,
@@ -2942,6 +2954,22 @@
         "source_sha256": "9fd5585905e50f55e23d50cb3ee5a2202807254f9ebecb1d7b7b2cee1f1b1b46",
         "tuner_sha256": "452ec76cc0af68de114e67e44f5e0bbbc9497c3d2d83900c9ab426d8fa9c8bea",
         "limit": "Original three appearance gates, exact Silver variant only: current standing model/material/skin, baseline versus Hip1.10 and exact reset, saved per-mesh profile reload then native equip/40 matching transforms, menu/input return and stationary camp jump/finite body physics. Only choice1 was active at cold scene; choices0,2,3 were individually equipped after that restart. Fine dynamic clipping is unaccepted: some jump stills were blurred or standing-like; early ascent stills and telemetry do not prove all poses. Other parameters/ranges/combinations/actions/maps/patches/long-run/NPC acceptance remain separate pending tests."
+      },
+      "doro_runtime_acceptance": {
+        "version": "3.0",
+        "passed": [
+          "logic:Doro:summon",
+          "logic:Doro:recall",
+          "logic:Doro:follow"
+        ],
+        "partial": [
+          "logic:Doro:silent_summon",
+          "logic:Doro:footsteps",
+          "logic:Doro:summon_smoke"
+        ],
+        "current_live_pawn_absent": true,
+        "position_limit": "Doro summon/recall and one bounded F02 camp follow response only. Smoke/audio/other navigation/maps/long-run pending. ModActor may retain a recalled stale pawn reference; live-object absence and rendered disappearance are checked, no memory-leak claim. Player moved about4.56m from original camp position through normal keys; no teleport, story, intentional death or save rollback.",
+        "evidence": ".local/play-session-20261008/core-functional-159/r51/round51-runtime-result.json"
       }
     },
     "native_goal": {
@@ -2949,10 +2977,10 @@
       "source": "Native get_goal verified active on2026-10-11T22:30Z; latest direct user objective enables persistent resumed MOD testing in background",
       "scope": "All current and subsequently discovered stable test leaves; every independently verifiable test in one denominator; no formal Console implementation or scheduler resume",
       "tool_objective": "继续，继续这个测试，继续在我的桌面后台测试。嗯，我开目标模式的话应该就可以了吧。然后注意我之前说过的几个问题，你都进行测试。然后每一个问题都算一个任务。每个任务，每一个这个任务都是，就是每一个要测试的都算一个任务，算一个分母，拿这个当总任务数来进行汇报。",
-      "tokensUsed": 10265372,
-      "timeUsedSeconds": 88232,
-      "telemetry_at": "2026-10-13T10:06:28+00:00",
-      "telemetry_coverage": "Actual get_goal before R50 closure; later closing/delivery tools excluded",
+      "tokensUsed": 10486952,
+      "timeUsedSeconds": 92315,
+      "telemetry_at": "2026-10-13T11:14:31+00:00",
+      "telemetry_coverage": "Actual get_goal before R51 closure; later closing/delivery tools excluded",
       "last_observed_status": "active",
       "pause_requested": false,
       "pause_source": "Latestdirecthuman: endround/nativeplayhandoff/stoprecording/pauseGoaluntilmanualresume; finaladditionalrequest normalrestartforlatency",
@@ -3041,11 +3069,11 @@
     "input_window_result": {
       "state": "CLOSED_INTERNAL_SEGMENT",
       "lane": "DIRECT",
-      "started_at": "2026-10-13T09:06:32.563911+00:00",
-      "deadline": "2026-10-13T10:21:32.563911+00:00",
-      "source": "Continuing explicit full private MOD testing authority; no human renewal or new Goal",
-      "scope": "R50 Silver four exact variants, warm selected body comparison and saved mappings cold reload/native equip plus original configuration restoration; normal owned158->159 restart only",
-      "phase_timeout": "Internal work segment only, not human authority expiry/Goal budget/quota reset",
+      "started_at": "2026-10-13T10:30:51.513505+00:00",
+      "deadline": "2026-10-13T11:30:51.513505+00:00",
+      "source": "Continuing human full private MOD test authority; no renewed permission/new Goal/quota reset",
+      "scope": "R51 installed Doro3.0 actual summon/recall/follow/effect and priority3ON compatibility; no source/package/settings writes; tiny safe camp movement only. Audio acceptance needs actual evidence, otherwise remains pending.",
+      "phase_timeout": "Internal work segment, not human authority expiry",
       "previous_expired_grant": {
         "state": "EXPIRED_WAITING_HUMAN_RENEWAL",
         "source": "Fresh direct human authorizes10hours",
@@ -3080,8 +3108,8 @@
           "classification": "R49 segment2 PROGRESS tooltransitionpath rootcause repaired; actualowned157 coldreload mesh exact/all40tunederror0. PriorunitfailedbeforePopen, no gamecrash. Existinggoalbudget and human authority persist."
         }
       ],
-      "closed_at": "2026-10-13T10:10:47.093144+00:00",
-      "classification": "PROGRESS_R50_SILVER4_ORIGINAL_GATES_AND_ORIGINAL_CONFIGURATION_RESTORED"
+      "closed_at": "2026-10-13T11:18:22.205045+00:00",
+      "classification": "PROGRESS_R51_DORO_THREE_FUNCTION_PASSES_THREE_PARTIAL"
     },
     "virtual_desktop_skill_request": {
       "source": "User explicitly requests newAgent merge private-display workflow into existing linux-task-desktop, default newGUI tasks virtual and foreground only explicit request",
