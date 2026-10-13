@@ -1514,11 +1514,11 @@
       "tested_with_complete_conclusion": 62,
       "test_conclusion_percent": 1.21,
       "statuses": {
-        "NOT_TESTED": 4998,
+        "NOT_TESTED": 4996,
         "PASS": 60,
         "REOPENED": 2,
         "WAITING_HUMAN": 1,
-        "PARTIAL": 33,
+        "PARTIAL": 35,
         "FAIL": 2,
         "BLOCKED_NOT_INSTALLED": 28
       },
@@ -1536,25 +1536,25 @@
         "共享依赖": 4,
         "组合回归": 8
       },
-      "reason": "Offline25additionalNPC importname hashmappings and6exactrecovery sourcevariants, Nano normalreference path mismatch mapped; status/ID/version/weight unchanged, no runtimePASS.",
+      "reason": "PrototypeExtra1273choice0/1 actualmesh/material and fourteenparameter samples each, 40reseterror0/sixsprings/stationaryjump; twoNOT_TESTED->PARTIAL only.",
       "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
-      "manifest_sha256": "e84f6861fd246ca1059c3e19b0ced764469fe8cb4dfcc197a1bf5ea458d82d69",
+      "manifest_sha256": "55908e360796de5be121a786495b3d8a716d6bb2e53f71760743b085e37f238c",
       "target_identity_sha256": "90e747117d706ac416339ed18f06c64a0f0208f0f4fdd1153453be2856b3446e",
-      "enumeration_validation": ".local/play-session-20261008/core-functional-152/repair/unified-current-validation-round44.json",
-      "round_key": "private152-offline-patch-and-gray-dependency-audit-20261013",
-      "round_status": "CLOSED_OFFLINE_EVIDENCE_LATEST_HUMAN_FULL_PRIVATE_RESUME",
-      "count": 44,
+      "enumeration_validation": ".local/play-session-20261008/core-functional-152/repair/unified-current-validation-round45.json",
+      "round_key": "private152-prototype1273-variants-native-body-compatibility-20261013",
+      "round_status": "CLOSED_BOUNDED_RUNTIME_GOAL_CONTINUES_PRIVATE5",
+      "count": 45,
       "coverage": "since_baseline",
-      "last_seq": 44,
-      "last_key": "private152-offline-patch-and-gray-dependency-audit-20261013",
+      "last_seq": 45,
+      "last_key": "private152-prototype1273-variants-native-body-compatibility-20261013",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": 0,
       "evidence_change_percentage_points": 0,
       "scope_change_percentage_points": 0,
-      "change_rule": "Staticnewsource/dependency evidence leavesall5124status/version/weight unchanged; noexclusions/runtimecredit. Original5129/history retained.",
-      "round_start_commit": "5a9861ba5c3a514264fe746706d2eb5c90a7febd",
+      "change_rule": "Twoexistingappearanceleaves acquire28smallparameter samples andtwojump/reset cases asPARTIAL, noPASS/ID/version/weight/exclusion changes; original5129/historyretained.",
+      "round_start_commit": "f2a5f31e3b1cfc763021117efd19f53a2c7a8ba9",
       "scope_change": "Expanded actual variant/control/animation/native/dependency/integration leaves; parent rollups/aliases not counted; explicit selected alternatives retained in excluded history. Initial draft5021 corrected to5129 before State registration using author variant rules.",
-      "milestone_change": "New25names+6sourcevariant relations andsamebasename normalpath provider narrow futuregray/patch diagnosis; fullprivateGUI resume recorded.",
+      "milestone_change": "TwoPrototype variants bounded14parameter adjustability andreset proven; original20bindings/wardrobe/body/graphics restored; fullGoal continues.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1907,16 +1907,16 @@
         "new_full_passes": 1
       }
     },
-    "next_action": "Resume full retainedMOD tests on currentprivate152/display5, priorityassistant3ON/recordingOFF; next boundednative target pairPrototypePlanetDivingExtra1273 choices0/1 andapplicablebody/menu/input checks. Keep sourcepatch installation/removal decisions behindexactdependency/mutex proof; nofrontinput, graphicsreduction, savecopyrollback orintentionaldeath/progression.",
-    "updated_at": "2026-10-13T02:07:38.987167+00:00",
+    "next_action": "Continue full retained5124 MOD tests on verified private152/display5, priorityassistant3ON/recordingOFF. Next select exactremaining body/material/gray/outfit/NPC/patch/function/animation IDs from existingmanifest; reusecurrentloader andpreserve originalprofiles/selections/graphics. Fullranges/motion/coldreload andsourceauthorcomparison pending; no foregroundinput/graphicsreduction/newrecording/savecopyrollback/intentionaldeath orstoryprogression. Currenthuman comprehensiveprivatetest authority persists, no repeated10hrenewal.",
+    "updated_at": "2026-10-13T03:06:55.124141+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
-      "status": "PROGRESS_OFFLINE_DIAGNOSIS_FULL_RUNTIME_NEXT",
+      "status": "PROGRESS_NOT_TOTAL_BLOCKED_REMAINING_MOD_TESTS",
       "consecutive_goal_turns": 0,
       "consecutive_no_progress_turns": 0,
       "condition": null,
-      "evidence": ".local/play-session-20261008/core-functional-152/repair/round44-offline-result.json",
-      "next_action": "Resume full retainedMOD tests on currentprivate152/display5, priorityassistant3ON/recordingOFF; next boundednative target pairPrototypePlanetDivingExtra1273 choices0/1 andapplicablebody/menu/input checks. Keep sourcepatch installation/removal decisions behindexactdependency/mutex proof; nofrontinput, graphicsreduction, savecopyrollback orintentionaldeath/progression.",
+      "evidence": ".local/play-session-20261008/core-functional-152/repair/round45-runtime-result.json",
+      "next_action": "Continue full retained5124 MOD tests on verified private152/display5, priorityassistant3ON/recordingOFF. Next select exactremaining body/material/gray/outfit/NPC/patch/function/animation IDs from existingmanifest; reusecurrentloader andpreserve originalprofiles/selections/graphics. Fullranges/motion/coldreload andsourceauthorcomparison pending; no foregroundinput/graphicsreduction/newrecording/savecopyrollback/intentionaldeath orstoryprogression. Currenthuman comprehensiveprivatetest authority persists, no repeated10hrenewal.",
       "consecutive_no_progress_goal_turns": 0
     },
     "user_exit_authorization": {
@@ -1972,7 +1972,7 @@
         "full_clean_capture_pass": false
       }
     },
-    "round_closure_at": "2026-10-13T02:07:38.987167+00:00",
+    "round_closure_at": "2026-10-13T03:06:55.124141+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 12,
       "new_confirmed_this_round": 0,
@@ -2137,8 +2137,8 @@
       }
     },
     "current_segment": "core-functional-152",
-    "previous_goal_turn_classification": "PROGRESS_ROUND44_STATIC_NEW25_NAMES_6_SOURCE_VARIANTS",
-    "execution_status": "ACTIVE_PRIVATE152_FULL_MOD_TESTS_RESUMED_CURRENT_HUMAN",
+    "previous_goal_turn_classification": "PROGRESS_ROUND45_28PARAMETER_SAMPLES_TWO_PARTIALS_EXACT_RESTORATION",
+    "execution_status": "ACTIVE_PRIVATE152_FULL_MOD_TESTS_CONTINUE",
     "pause_at": "2026-10-12T12:36:33.101928+00:00",
     "pause_source": "Latestdirecthuman: endround/nativeplayhandoff/stoprecording/pauseGoaluntilmanualresume; finaladditionalrequest normalrestartforlatency",
     "user_play_handoff": {
@@ -2186,7 +2186,7 @@
       "observation_stop_evidence": ".local/play-session-20261008/user-play-observation-20261011/observation-stop-20261011.json",
       "recording_evidence": "recording-session/stop-confirmation.json",
       "latest_repair_result": ".local/play-session-20261008/user-native-125/repair/result.json",
-      "current_visual": "OriginalNano2 restoredexactmesh/40transforms; XSNormal0/SilverNoStocking1 limitedHips cases observed, fullappearancegatespending",
+      "current_visual": "OriginalNano2 restoredexactmesh/40transforms; bothPrototypeExtra1273 limited14parameter samples observed, fullappearancegatespending",
       "input_repair": {
         "lane": "DIRECT",
         "evidence": ".local/play-session-20261008/user-native-119/repair/cursor-key-repair-registration.json",
@@ -2209,7 +2209,7 @@
         "display": ":5",
         "resolution": "3440x1440"
       },
-      "current_repair_evidence": ".local/play-session-20261008/core-functional-152/repair/round43-runtime-result.json",
+      "current_repair_evidence": ".local/play-session-20261008/core-functional-152/repair/round45-runtime-result.json",
       "active_body_controller": "EveProportions+Tuner/F9 only; UUEPBS intact outside loader",
       "clipping_result": "Historicalrepresentativeneutralviews only; currentuserbodyvaluesand20profiles preserved; no fresh149geometryacceptance",
       "observation_heartbeat": {
@@ -2670,15 +2670,15 @@
       "geometry_acceptance": "PriorR32six/R33five plusR35four favouritevariants limited Hips/Butt response; latest4 neutralreset40 andfinite8history; fullranges/clipping/coldreload pending."
     },
     "resumed_test_checkpoint": {
-      "at": "2026-10-13T02:07:38.987167+00:00",
+      "at": "2026-10-13T03:06:55.124141+00:00",
       "lane": "DIRECT",
-      "status": "ROUND44_CLOSED_OFFLINE_DIAGNOSIS_FULL_PRIVATE_TEST_RESUMED",
-      "root_owned_game_files": 0,
+      "status": "ROUND45_CLOSED_TWO_PROTOTYPE_BODY_PARTIALS",
+      "root_owned_game_files": 1,
       "candidate_evidence": [
-        ".local/play-session-20261008/core-functional-152/repair/round44-registration.json"
+        ".local/play-session-20261008/core-functional-152/repair/round45-registration.json"
       ],
-      "runtime_evidence": ".local/play-session-20261008/core-functional-152/repair/round43-runtime-result.json",
-      "runtime_status": "TWO_FAVOURITE_VARIANTS_ACTUAL_LIMITED_BODY_CASES_AND_USERDATA_RESTORED",
+      "runtime_evidence": ".local/play-session-20261008/core-functional-152/repair/round45-runtime-result.json",
+      "runtime_status": "TWO_PROTOTYPE_VARIANTS_28_NATIVE_PARAMETER_SAMPLES_AND_ORIGINAL_CONFIG_RESTORED",
       "actual_import_check": {
         "evidence": ".local/play-session-20261008/user-native-136/repair/package-import-closure.json",
         "containers": 181,
@@ -2779,13 +2779,13 @@
       "confirmed_new_crashes": 0,
       "unknown_exit130_preserved": true,
       "replacement_disposition": "No confirmed newsourcealias orcompatible replacement; zeroextraexclusions; source alternatives retained.",
-      "agent_disposition": "Bothread-onlyr44_npc_dependency_audit/r44_patch_provenance_audit completedandcollected; noactivewriter",
+      "agent_disposition": "Read-only r43_favourite_selector_audit independentlyrecomputed both14parameter/40reset/6springs/jump/temporarybinding removal, completed andcollected; Root materialverification reproduced; no active descendantwriter",
       "report": ".local/play-session-20261008/MOD_TEST_REPORT_20261011.md",
       "csv": ".local/play-session-20261008/UNIFIED_MOD_TEST_LIST_20261011.csv",
       "continuation_prompt": ".local/play-session-20261008/CONTINUE_MOD_TESTING_PROMPT_20261011.md",
       "usage_guide": ".local/play-session-20261008/FUNCTIONAL_MOD_KEYS_20261011.md",
-      "source_delivery": "Delivery receipt core-functional-152/repair/source-delivery-round44.json; exactcommit/remoteverified afterbranchpush",
-      "root_owned_game_files_scope": "Readonly game/MOD/sourcefiles; no input orconfiguration change duringRound44",
+      "source_delivery": "Per-round receipt core-functional-152/repair/source-delivery-round45.json; exactremote verification required fordelivery",
+      "root_owned_game_files_scope": "Only nativeUI temporaryprofile rowsfortwo originallyunbound registeredPrototype meshes; reset andnativeunbind; all20maps exactthen concurrentbytescheck beforeexactregisteredOutfits restoration. Source/packages/loaders/defaults/presets/graphics unchanged; no savedprogress rollback.",
       "previous_game_candidate_evidence": [
         ".local/play-session-20261008/user-native-135/repair/cursor-lifecycle-installed.json",
         ".local/play-session-20261008/user-native-135/repair/nano-base-installed.json"
@@ -2844,7 +2844,7 @@
         "window": 37748739
       },
       "user_handoff_question": "RESOLVED_DIRECT_HUMAN_AUTHORIZES_BACKEND_RESTART_TESTS",
-      "current_round_evidence": ".local/play-session-20261008/core-functional-152/repair/round44-registration.json",
+      "current_round_evidence": ".local/play-session-20261008/core-functional-152/repair/round45-registration.json",
       "latest_offline_evidence": ".local/play-session-20261008/core-functional-152/repair/round44-offline-result.json",
       "round40_registration": ".local/play-session-20261008/core-functional-151/repair/round40-registration.json"
     },
@@ -2853,10 +2853,10 @@
       "source": "Native get_goal verified active on2026-10-11T22:30Z; latest direct user objective enables persistent resumed MOD testing in background",
       "scope": "All current and subsequently discovered stable test leaves; every independently verifiable test in one denominator; no formal Console implementation or scheduler resume",
       "tool_objective": "继续，继续这个测试，继续在我的桌面后台测试。嗯，我开目标模式的话应该就可以了吧。然后注意我之前说过的几个问题，你都进行测试。然后每一个问题都算一个任务。每个任务，每一个这个任务都是，就是每一个要测试的都算一个任务，算一个分母，拿这个当总任务数来进行汇报。",
-      "tokensUsed": 8225898,
-      "timeUsedSeconds": 62742,
-      "telemetry_at": "2026-10-13T02:00:58+00:00",
-      "telemetry_coverage": "Actualget_goal beforeRound44closure; laterclosingtools excluded",
+      "tokensUsed": 8525835,
+      "timeUsedSeconds": 66670,
+      "telemetry_at": "2026-10-13 03:06:55 UTC",
+      "telemetry_coverage": "Native get_goal before Round45 closure, later tools excluded",
       "last_observed_status": "active",
       "pause_requested": false,
       "pause_source": "Latestdirecthuman: endround/nativeplayhandoff/stoprecording/pauseGoaluntilmanualresume; finaladditionalrequest normalrestartforlatency",
@@ -2945,11 +2945,11 @@
     "input_window_result": {
       "state": "CLOSED_INTERNAL_SEGMENT",
       "lane": "DIRECT",
-      "started_at": "2026-10-13T00:58:16.795705+00:00",
-      "deadline": "2026-10-13T01:33:16.795705+00:00",
-      "source": "Latesthuman offline misclickcorrected: restorefullprivatevirtualdesktoptests, no repeatedrenewal",
-      "scope": "Round44offlinechecks ended; nextnativephase registration pending",
-      "phase_timeout": "Internal35min phase43; same task authority and cumulativeGoaltelemetry, no newhuman10hgrant",
+      "started_at": "2026-10-13T02:48:44.502066+00:00",
+      "deadline": "2026-10-13T03:08:44.502066+00:00",
+      "source": "Latest directhuman saysoffline wasmistake; restorecomprehensivevirtualdesktoptesting anddo notrequest repeatedauthorization",
+      "scope": "Ownedprivate152/display5 selectedPrototype1273nativechecks only; nofrontinput/recording",
+      "phase_timeout": "Internal20min segment2 ofsameRound45; bounds inputwork only, same continuing humanauthority; no10hrenewal or quota reset",
       "previous_expired_grant": {
         "state": "EXPIRED_WAITING_HUMAN_RENEWAL",
         "source": "Fresh direct human authorizes10hours",
@@ -2960,14 +2960,21 @@
         "expiry_observed_at": "2026-10-12T11:24:18.869386+00:00",
         "renewal_question": "Pending asynchronous question: extend10hours/1hour/offlineonly; no reply received"
       },
-      "closed_at": "2026-10-13T02:07:38.987167+00:00",
-      "action_authority": "Currentdirectfullprivatetest instruction; old10hrenewal reminder superseded, nofictionalnewgrant",
+      "closed_at": "2026-10-13T03:06:55.124141+00:00",
+      "action_authority": "Continuing comprehensiveprivatevirtualtest directhuman instruction; internalboundedsegments were not humanexpiration ornewquota",
       "latest_human_steering": {
         "at": "2026-10-13T02:05:28.282332+00:00",
         "offline_only_revoked": true,
         "source": "先只做离线检查是我点错了，请恢复全面的测试任务，虚拟桌面的方案应该能全覆盖所有需求，不需要再向我请求授权",
         "scope": "FullretainedMODtesting onownedprivatevirtualdisplay; priorforeground/GPU/credentials/saves boundaries preserved"
-      }
+      },
+      "segments": [
+        {
+          "started_at": "2026-10-13T02:13:02.071768+00:00",
+          "deadline": "2026-10-13T02:48:02.071768+00:00",
+          "classification": "Progress: choice1 all14 native parameter cases reset40exact plus stationaryjump; sameauthority continues"
+        }
+      ]
     },
     "virtual_desktop_skill_request": {
       "source": "User explicitly requests newAgent merge private-display workflow into existing linux-task-desktop, default newGUI tasks virtual and foreground only explicit request",
