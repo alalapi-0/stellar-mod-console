@@ -1138,8 +1138,8 @@
   "mod_compatibility_restructure": {
     "task_id": "stellar-mod-compatibility-core-first-20261010",
     "source": "Direct current user /goal execution instruction; does not resume paused console development/Cursor R04-n",
-    "lane": "REVIEWED",
-    "owner_thread": "01a12a72-1d28-73c1-bedc-77a0f48858a2",
+    "lane": "DIRECT",
+    "owner_thread": "01a13763-999e-73e3-bb51-d52669c59d87",
     "objective": "Stable adjustable body + natural physics + user combat; then individually retest all clothing while progressing campaign and changing view every 15 seconds",
     "priority": [
       "P0_BODY",
@@ -1508,14 +1508,14 @@
     "progress": {
       "scope_version": "unified-leaves-v5-sequential-material-feedback-20261014",
       "completion_scope": "RETAINED_INDEPENDENT_TESTS_AFTER_EXPLICIT_FAVOURITE_EDITION_SELECTION_WITH_SCOPE_GATES",
-      "effective_accepted": 86,
+      "effective_accepted": 110,
       "effective_required": 5125,
-      "completion_percent": 1.678,
-      "tested_with_complete_conclusion": 88,
-      "test_conclusion_percent": 1.7171,
+      "completion_percent": 2.1463,
+      "tested_with_complete_conclusion": 112,
+      "test_conclusion_percent": 2.1854,
       "statuses": {
-        "NOT_TESTED": 4968,
-        "PASS": 86,
+        "NOT_TESTED": 4944,
+        "PASS": 110,
         "REOPENED": 2,
         "WAITING_HUMAN": 1,
         "PARTIAL": 38,
@@ -1536,25 +1536,25 @@
         "共享依赖": 4,
         "组合回归": 9
       },
-      "reason": "R55 reproduced and repaired nativeCNS menu hidden-section reset; freshindependentPASS. Two existing shoe toggle controlsPASS; originalwholegray/appearancePARTIAL and other24toggles preservedpending.",
+      "reason": "R56 recovered after Codex stream failure:15 primary bool drivers and9 declared linked sections actual endpoints/render/restoration verified; original full5125 scope and prior failures retained.",
       "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
-      "manifest_sha256": "f2769c389516fb8ac0b72a2ab08350d87be121d8ae03dae7ea32b95e0c6d55f9",
+      "manifest_sha256": "062359592210134f97a35bb44bb01a894f4d00809aae614dacc1ad10f3417ce7",
       "target_identity_sha256": "955965cda7371a7ff208fdf736e19a1136e0628cf77a644ac49b5d4323aa9a92",
-      "enumeration_validation": ".local/play-session-20261008/core-functional-166/r55/unified-current-validation-round55.json",
-      "round_key": "private165-ultimate-visibility-and-menu-reopen-material-regression-20261014",
-      "round_status": "CLOSED_REVIEWED_HIDDENSTATE_REPAIR_TWO_FINITE_CONTROLS_PASS_WHOLEGRAY_OPEN",
-      "count": 55,
+      "enumeration_validation": "core-functional-166/r56-recovery/round56-runtime-result.json",
+      "round_key": "private166-ultimate-remaining24-material-toggle-endpoints-20261014",
+      "round_status": "CLOSED_DIRECT_ROOT_VERIFIED_24_FINITE_MATERIAL_LEAVES_PASS",
+      "count": 56,
       "coverage": "since_baseline",
-      "last_seq": 55,
-      "last_key": "private165-ultimate-visibility-and-menu-reopen-material-regression-20261014",
+      "last_seq": 56,
+      "last_key": "private166-ultimate-remaining24-material-toggle-endpoints-20261014",
       "historical_round_count": "UNKNOWN",
-      "execution_change_percentage_points": 0.0390244,
+      "execution_change_percentage_points": 0.4682927,
       "evidence_change_percentage_points": 0,
       "scope_change_percentage_points": 0,
-      "change_rule": "Same5125 targets/versions/weights/gates; two controlsNOT_TESTED->PASS. Newbugdescriptor mapsalreadyexistingintegrationgate2 and adds no duplicate task.",
+      "change_rule": "Same IDs/versions/weights/gates;24 NOT_TESTED->PASS, original86 PASS/2 FAIL/44 exclusions and initial5129 retained.",
       "round_start_commit": "625e89f0a6847d3dfa42d1884162bbdc5796d43d",
       "scope_change": "Original5124 retained; append1 independent newly reported sequential material recovery regression. Original5129 initial enumeration and44 exclusions preserved, retired1052 remainsFAIL.",
-      "milestone_change": "ConfirmednativeShowAll resets23hidden; guardednativeaftersetter restorescurrentchoices; repeatedreopens/crossoutfit/cold166/current15configs+originalprefix/40nodes verified and independently reviewed",
+      "milestone_change": "Exact parent/ControlledBy material endpoints and original17 configs/native40/camera/Cyber/priority3ON restoration; no code change and no full clothing acceptance.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1901,18 +1901,18 @@
       "original_unified_required_retained": 5129,
       "latest_specific_followup": "integration:sequential-outfit-material-recovery"
     },
-    "next_action": "Reuse private166 with priority3ON; continue remaining Ultimate visibility/texture controls and ordered switch/body/patch/NPC gates; no same missing1052 dependency rerun.",
-    "updated_at": "2026-10-13T20:09:03.127216+00:00",
+    "next_action": "R57 continue pending Ultimate shape/scalar/vector/texture controls and ordered outfit/body/patch/NPC gates across full5125 scope; no same1052 missing-dependency retry; save isolation gates remain.",
+    "updated_at": "2026-10-13T23:35:46.043806+00:00",
     "blocked_audit": {
-      "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
-      "status": "ACTIVE_RESUMED_WITH_PROGRESS_R55_NO_CURRENT_IMPASSE",
+      "native_goal_status": "ACTIVE_REPLACEMENT_CONFIRMED_NATIVE_TOOL",
+      "status": "PROGRESS_R56_RECOVERY_24_FINITE_LEAVES_PASS_NO_CURRENT_IMPASSE",
       "consecutive_goal_turns": 0,
       "consecutive_no_progress_turns": 0,
       "condition": null,
-      "evidence": "core-functional-166/r55/round55-runtime-result.json",
-      "next_action": "Reuse private166 with priority3ON; continue remaining Ultimate visibility/texture controls and ordered switch/body/patch/NPC gates; no same missing1052 dependency rerun.",
+      "evidence": "core-functional-166/r56-recovery/round56-runtime-result.json",
+      "next_action": "R57 continue pending Ultimate shape/scalar/vector/texture controls and ordered outfit/body/patch/NPC gates across full5125 scope; no same1052 missing-dependency retry; save isolation gates remain.",
       "consecutive_no_progress_goal_turns": 0,
-      "next_allowed": "Reuse private166 with priority3ON; continue remaining Ultimate visibility/texture controls and ordered switch/body/patch/NPC gates; no same missing1052 dependency rerun."
+      "next_allowed": "R57 continue pending Ultimate shape/scalar/vector/texture controls and ordered outfit/body/patch/NPC gates across full5125 scope; no same1052 missing-dependency retry; save isolation gates remain."
     },
     "user_exit_authorization": {
       "source": "Direct user: 没保存也没关系，允许放弃未保存进度并正常退出。正常重启人物; followed by 重启任务",
@@ -1965,9 +1965,27 @@
         "warning": "File ended prematurely",
         "unchanged_original_retained": true,
         "full_clean_capture_pass": false
+      },
+      "replacement_goal_rebaseline": {
+        "goal_created_at": 1791930638,
+        "thread_id": "01a13763-999e-73e3-bb51-d52669c59d87",
+        "checked_at": "2026-10-13T23:52:21.528302+00:00",
+        "completed_one_time_rebaseline": true,
+        "telemetry": {
+          "native_tokens_used": 440869,
+          "native_time_used_seconds": 2573,
+          "coverage": "Direct root nativeget_goal checkpoint; elapsed not treated as active-only time; old telemetry/health/watch retained"
+        },
+        "report": {
+          "STATUS": "HEALTHY",
+          "TRIGGER": "First closing boundary in the new user-requested Goal directly shows >=250000 tokens and no rebaseline for this native Goal",
+          "EVIDENCE": "Same R56 closed once,24 actual finite material leaves first PASS; original17 configurations andnative40 restored; oldGoal clear/get absent and oldTask archived verified",
+          "CORRECTIVE ACTION": "Continue the existing full MOD test plan",
+          "NEXT CHECKPOINT": "A later actual acceptance boundary; subsequent health checks still need a listed condition and75000 more tokens or30 active execution minutes unless a new accepted milestone resets no-progress counters"
+        }
       }
     },
-    "round_closure_at": "2026-10-13T20:09:03.127216+00:00",
+    "round_closure_at": "2026-10-13T23:35:46.043806+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 12,
       "new_confirmed_this_round": 0,
@@ -2132,8 +2150,8 @@
       }
     },
     "current_segment": "core-functional-166",
-    "previous_goal_turn_classification": "PROGRESS",
-    "execution_status": "IN_PROGRESS_PRIVATE_TESTING_R55_CLOSED",
+    "previous_goal_turn_classification": "PROGRESS: replacement ownership, old Goal cleared/task archived, same R56 closed once with24 bounded actual leaf acceptances and exact restoration.",
+    "execution_status": "IN_PROGRESS_R56_CLOSED_PRIVATE166_READY_FULL_REMAINING_SCOPE",
     "pause_at": "2026-10-13T12:34:41+00:00",
     "pause_source": "本轮完成后暂停，不记录不录屏，正常退出并从Steam主页重新打开，交还控制权并提供MOD方法",
     "user_play_handoff": {
@@ -2264,8 +2282,8 @@
       "usage_guide": ".local/play-session-20261008/FUNCTIONAL_MOD_KEYS_20261011.md",
       "ended_by_resume": "Direct user resume: investigate repeated clothing changes causing black edges/gray on previously good outfits; remove confirmed incompatible clothes while preserving priority MODs"
     },
-    "resume_source": "Direct user resume: investigate repeated clothing changes causing black edges/gray on previously good outfits; remove confirmed incompatible clothes while preserving priority MODs",
-    "resumed_at": "2026-10-13T16:58:51.100398+00:00",
+    "resume_source": "Direct user asks replacement task to continue failed prior tests and close prior Goal/task",
+    "resumed_at": "2026-10-13T22:35:37.035884+00:00",
     "user_acceptance_clarification": {
       "at": "2026-10-10T20:01:19.680897+00:00",
       "combat": "Multi-enemy rear attacks, attack/hit-stun defensive limits are normal game constraints; prioritize feature functionality/compatibility, not full invulnerability",
@@ -2681,13 +2699,13 @@
       "geometry_acceptance": "SoleF9 body controller preserved. R49 two Prototype original finite gates plus R50 four Silver variants: selected Hip1.1 actual40 response, saved-profile restart/equip matches0, reset0 and camp jump/menu recovery. Other variants/ranges/controls/combinations and detailed dynamic clipping/animations remain separately pending."
     },
     "resumed_test_checkpoint": {
-      "at": "2026-10-13T20:09:03.127216+00:00",
-      "lane": "REVIEWED",
-      "status": "R55_CLOSED_PRIVATE166_READY_NEXT_TESTS",
+      "at": "2026-10-13T23:35:46.043806+00:00",
+      "lane": "DIRECT",
+      "status": "R56_CLOSED_PRIVATE166_READY_NEXT_FULL_SCOPE",
       "root_owned_game_files": 6,
       "candidate_evidence": "/home/alalapi/Projects/stellar-mod-console/.local/play-session-20261008/core-functional-162/r53/r53-incompatible-retirement-candidate.json",
-      "runtime_evidence": "core-functional-166/r55/round55-runtime-result.json",
-      "runtime_status": "COLD166_RENDER_CURRENTBODY40_MATERIALS3_EXACT_PRIORITY3ON_REVIEWED_HIDDEN_RESTORE",
+      "runtime_evidence": "core-functional-166/r56-recovery/round56-runtime-result.json",
+      "runtime_status": "WARM166_FINITE24_TOGGLE_ENDPOINTS_RENDER_ORIGINAL17_NATIVE40_CYBER_CAMERA_PRIORITY3ON_ROOT_VERIFIED",
       "actual_import_check": {
         "evidence": ".local/play-session-20261008/user-native-136/repair/package-import-closure.json",
         "containers": 181,
@@ -2803,12 +2821,12 @@
       "confirmed_new_crashes": 0,
       "unknown_exit130_preserved": true,
       "replacement_disposition": "Confirmed1052 incompatible with current resources; no equivalent replacement accepted; other outfits/favourites retained",
-      "agent_disposition": "Root only; no new delegation; all previous descendants completed",
+      "agent_disposition": "Root writer only; bounded read-only explorer completed; no descendant writers",
       "report": ".local/play-session-20261008/MOD_TEST_REPORT_20261011.md",
       "csv": ".local/play-session-20261008/UNIFIED_MOD_TEST_LIST_20261011.csv",
       "continuation_prompt": ".local/play-session-20261008/CONTINUE_MOD_TESTING_PROMPT_20261011.md",
       "usage_guide": ".local/play-session-20261008/FUNCTIONAL_MOD_KEYS_20261011.md",
-      "source_delivery": "core-functional-166/r55/source-delivery-round55.json; exactremote verificationrequired",
+      "source_delivery": "core-functional-166/r56-recovery/source-delivery-round56.json; exactremote verification required",
       "root_owned_game_files_scope": "R53 fourinactive1052generatedfiles preserved plus R55exactCNS mainLuaappend and oneownvisibilitymodule; no other gamepayload change",
       "previous_game_candidate_evidence": [
         ".local/play-session-20261008/user-native-135/repair/cursor-lifecycle-installed.json",
@@ -2853,10 +2871,10 @@
         "uid": "Repacked ExtraMod1775 4",
         "choice": 0,
         "full_mesh": "/Game/CNSRepacked/f824d9425092fe3e/Art/Character/PC/CH_P_EVE_InnerSuit/CH_P_EVE_InnerSuit.CH_P_EVE_InnerSuit",
-        "source": "R55currenthumanCNSfiles originalbytehash preserved, actualCyberreturnedandmenuclosed",
+        "source": "Original R56 entry Cyber restored through native UI; full17 source/settings files byte-exact",
         "native40_error": 0,
         "userdata_exact": true,
-        "evidence": "core-functional-166/r55/r55-root-verification.json"
+        "evidence": "core-functional-166/r56-recovery/round56-runtime-result.json"
       },
       "recorder_guard_activation": "NOT_RUN_CURRENT_OLD_SUPERVISOR_KEPT_WAITING_HANDOFF",
       "historical_previous_active_outfit": {
@@ -2866,7 +2884,7 @@
         "body": "Butt1.00->1.20 actual bilateralhipresponse; keyboardneutralrestoration exact40; othercases pending",
         "result": "PARTIAL_LIMITED_ADJUSTABLE"
       },
-      "resume_registration": ".local/play-session-20261008/core-functional-165/r55/round55-registration.json",
+      "resume_registration": ".local/play-session-20261008/core-functional-166/r56-recovery/recovery-registration.json",
       "private_test_display": {
         "display": ":5",
         "pid": 3765017,
@@ -2879,7 +2897,7 @@
         "last_game_window": 37748739
       },
       "user_handoff_question": "RESOLVED_DIRECT_USER_REQUESTS_NORMAL_FOREGROUND_RESTART_AND_CONTROL",
-      "current_round_evidence": "core-functional-166/r55/round55-runtime-result.json",
+      "current_round_evidence": "core-functional-166/r56-recovery/round56-runtime-result.json",
       "latest_offline_evidence": ".local/play-session-20261008/core-functional-152/repair/round44-offline-result.json",
       "round40_registration": ".local/play-session-20261008/core-functional-151/repair/round40-registration.json",
       "current_game": {
@@ -2893,8 +2911,8 @@
         "private_server_start_ticks": "43519972",
         "input_owner": "ROOT_PRIVATE_MOD_TESTS",
         "native_goal": "active",
-        "acceptance": "FRESH166_REVIEWED_LOCAL_HIDDENSTATE_REPAIR;NOT_ALL_COMPATIBILITY_ACCEPTED",
-        "at": "2026-10-13T19:39:59.587851+00:00",
+        "acceptance": "WARM166_CURRENT_CYBER_RESTORED_R56_BOUNDED_MATERIAL_CONTROL_PROOF",
+        "at": "2026-10-13T23:35:46.043806+00:00",
         "recording": false,
         "observation": false
       },
@@ -2991,17 +3009,19 @@
     },
     "native_goal": {
       "status": "active",
-      "source": "Direct human resume, nativeGoal active verified",
-      "scope": "All current and subsequently discovered stable test leaves; every independently verifiable test in one denominator; no formal Console implementation or scheduler resume",
-      "tool_objective": "继续，继续这个测试，继续在我的桌面后台测试。嗯，我开目标模式的话应该就可以了吧。然后注意我之前说过的几个问题，你都进行测试。然后每一个问题都算一个任务。每个任务，每一个这个任务都是，就是每一个要测试的都算一个任务，算一个分母，拿这个当总任务数来进行汇报。",
-      "tokensUsed": 11798134,
-      "timeUsedSeconds": 109191,
-      "telemetry_at": "2026-10-13T20:09:03+00:00",
-      "telemetry_coverage": "Nativeget_goal atR55closing; cumulativegoal usage excludeslaterclosure/Git",
+      "source": "Replacement task native Goal explicitly started by user; existing MOD test scope and prior cumulative telemetry retained",
+      "scope": "Same retained5125 leaves; formal Console remains paused",
+      "tool_objective": "Replacement user Goal continues the prior full MOD tests and retires the failed prior Goal/task; full5125 test scope retained.",
+      "tokensUsed": 440869,
+      "timeUsedSeconds": 2573,
+      "telemetry_at": "2026-10-13T23:35:46.043806+00:00",
+      "telemetry_coverage": "Fresh root nativeget_goal beforeR56closure. Old native Goal11839951tokens/109923seconds retained in task_recovery; no logical acceptance/round/health reset.",
       "last_observed_status": "active",
       "pause_requested": false,
       "pause_source": "本轮完成后暂停，不记录不录屏，正常退出并从Steam主页重新打开，交还控制权并提供MOD方法",
-      "final_native_transition": "User/system resumednativeGoal; RootdidnotfabricateresumeAPI"
+      "final_native_transition": "Old explicitly retired Goal cleared; replacement user-started Goal remains active and full retained tests unfinished.",
+      "threadId": "01a13763-999e-73e3-bb51-d52669c59d87",
+      "tool_objective_private_evidence": ".local/play-session-20261008/core-functional-166/r56-recovery/round56-native-goal-active.json"
     },
     "goal_resume_source": {
       "at": "2026-10-11T22:33:55.839554+00:00",
@@ -3084,12 +3104,12 @@
       "current_status": "PRIVATE152_DISPLAY5; no foregroundinput/physicalpowerpolicychanges"
     },
     "input_window_result": {
-      "state": "R55_CLOSED_PRIVATE166_RETAINED_NEXT_BOUND_SEGMENT_ALLOWED",
-      "lane": "REVIEWED",
+      "state": "R56_CLOSED_PRIVATE166_RETAINED_NEXT_BOUND_SEGMENT_ALLOWED",
+      "lane": "DIRECT",
       "started_at": "2026-10-13T16:58:51.100398+00:00",
       "deadline": "HISTORICAL_INTERNAL_SEGMENTS_CLOSED;NOT_HUMAN_AUTHORITY_EXPIRY",
       "source": "Standingfullprivatehuman test authority",
-      "scope": "R55knownhiddenstatebug repaired withnativeAPI, independentreview; twofinite controls andcurrentuserdata preservation",
+      "scope": "Same original24 Ultimate leaves;15 parent drivers/9 authored linked sections; exact original17 user/code settings/native40/camera/Cyber restoration",
       "phase_timeout": "Internal work segment only, not human authority expiry/Goal budget/quota reset",
       "previous_expired_grant": {
         "state": "EXPIRED_WAITING_HUMAN_RENEWAL",
@@ -3125,8 +3145,8 @@
           "classification": "R49 segment2 PROGRESS tooltransitionpath rootcause repaired; actualowned157 coldreload mesh exact/all40tunederror0. PriorunitfailedbeforePopen, no gamecrash. Existinggoalbudget and human authority persist."
         }
       ],
-      "closed_at": "2026-10-13T20:09:03.127216+00:00",
-      "classification": "R55_INTERNAL_PHASE_CLOSED_GOAL_ACTIVE_AUTHORITY_CONTINUES"
+      "closed_at": "2026-10-13T23:35:46.043806+00:00",
+      "classification": "R56_RECOVERY_CLOSED_GOAL_ACTIVE_ORIGINAL_FULL_SCOPE_CONTINUES"
     },
     "virtual_desktop_skill_request": {
       "source": "User explicitly requests newAgent merge private-display workflow into existing linux-task-desktop, default newGUI tasks virtual and foreground only explicit request",
@@ -3161,6 +3181,31 @@
       "existing_agents_hot_reload": "NOT_CLAIMED",
       "current_gnome_foreground_runtime": "UNAVAILABLE_EXTENSION_INACTIVE; unchangedcode, ownerexplicitforegroundonly",
       "agents_collected": true
+    },
+    "task_recovery": {
+      "previous_thread": "01a12a72-1d28-73c1-bedc-77a0f48858a2",
+      "current_thread": "01a13763-999e-73e3-bb51-d52669c59d87",
+      "previous_error": "stream disconnected before completion",
+      "old_task_archived": true,
+      "old_turn_status": "interrupted",
+      "old_goal_status": "CLEARED_NATIVE_GET_AND_PERSISTENCE_VERIFIED_ABSENT",
+      "logical_round": 56,
+      "lane": "DIRECT",
+      "registration": ".local/play-session-20261008/core-functional-166/r56-recovery/recovery-registration.json",
+      "preserved_original_denominator": 5125,
+      "prior_cumulative_goal_tokens": 11839951,
+      "prior_cumulative_goal_seconds": 109923,
+      "status": "RECOVERY_COMPLETE_SAME_MOD_TASK_CONTINUES",
+      "at": "2026-10-13T22:35:37.035884+00:00",
+      "old_goal_previous_status": "blocked",
+      "old_goal_receipt": ".local/play-session-20261008/core-functional-166/r56-recovery/old-goal-clear-receipt.json",
+      "telemetry_coverage": "Old native thread/goal/get immediately before clear; new Goal telemetry is separate and additive, logical task/acceptance/health rebaseline unchanged.",
+      "logical_round_closed_once": 56,
+      "new_goal_status": "active",
+      "new_goal_tokens_at_checkpoint": 440869,
+      "new_goal_seconds_at_checkpoint": 2573,
+      "existing_health_rebaseline_and_watch_preserved": true,
+      "old_goal_objective_private_evidence": ".local/play-session-20261008/core-functional-166/r56-recovery/old-goal-clear-receipt.json"
     }
   }
 }
