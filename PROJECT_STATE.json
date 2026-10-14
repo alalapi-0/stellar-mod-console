@@ -1959,11 +1959,11 @@
       "original_unified_required_retained": 5129,
       "latest_specific_followup": "integration:sequential-outfit-material-recovery"
     },
-    "next_action": "Await human current-game normal-exit choice; keep offline preparation independent, then fresh current-user snapshots/private display and original R59 remaining leaf tests. No foreground test input or recording.",
-    "updated_at": "2026-10-14T16:35:16.764767+00:00",
+    "next_action": "Wait for current human-game exit approval or exact game process natural exit; then fresh manual configuration snapshots and private R59 runtime. Installed DLL does not match local3.1.0-6 archive; no blind upgrade or mismatched-symbol diagnosis.",
+    "updated_at": "2026-10-14T16:41:52.296919+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
-      "status": "R59_OFFLINE_PROGRESS_CURRENT_USER_GAME_EXIT_DECISION_PENDING",
+      "status": "VERIFIED_LIVE_FOREGROUND_GAME_WAIT; OFFLINE_LOADER_VERSION_IDENTIFIED",
       "consecutive_goal_turns": 0,
       "consecutive_no_progress_turns": 0,
       "condition": null,
@@ -1971,8 +1971,10 @@
       "next_action": "Continue next pending original outfit/parameter/body/patch/NPC leaf gates across full5125; Ultimate100 finite controls are closed, appearance staysPARTIAL and ORSS schemaFAIL/globalGrayOPEN retained. Current loader ConsoleManager singleton/BeginPlay detour and cached-controller warnings remain for affected tool/integration gates; no same1052 missing-dependency repeat, no story/death gates without save isolation.",
       "consecutive_no_progress_goal_turns": 0,
       "next_allowed": "Continue next pending original outfit/parameter/body/patch/NPC leaf gates across full5125; Ultimate100 finite controls are closed, appearance staysPARTIAL and ORSS schemaFAIL/globalGrayOPEN retained. Current loader ConsoleManager singleton/BeginPlay detour and cached-controller warnings remain for affected tool/integration gates; no same1052 missing-dependency repeat, no story/death gates without save isolation.",
-      "current_waiting_condition": "Foreground human game still alive; required current-game normal exit decision pending. First current Goal checkpoint, not native blocked.",
-      "current_waiting_goal_checkpoints": 1
+      "current_waiting_condition": "Same required current human-game normal-exit decision pending; process3423888/start58254886 confirmed live and own display5 confirmed live; no second game or input",
+      "current_waiting_goal_checkpoints": 2,
+      "current_goal_turn_classification": "VERIFIED_WAIT_WITH_OFFLINE_VERSION_PROGRESS",
+      "previous_goal_turn_classification": "PROGRESS: native Goal restarted, original scope and counter retained, original R59 prerequisites/44cases and private display prepared; round59 remains unclosed"
     },
     "user_exit_authorization": {
       "source": "Direct user: 没保存也没关系，允许放弃未保存进度并正常退出。正常重启人物; followed by 重启任务",
@@ -3124,7 +3126,8 @@
         "evidence": ".local/play-session-20261008/core-functional-170/private-display/display-registration.json",
         "clients_started": false,
         "hardware_game_acceptance": "NOT_STARTED"
-      }
+      },
+      "loader_version_evidence": ".local/play-session-20261008/core-functional-170/r59/loader-version-prerequisite.json"
     },
     "native_goal": {
       "status": "active",
