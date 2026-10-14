@@ -1959,8 +1959,8 @@
       "original_unified_required_retained": 5129,
       "latest_specific_followup": "integration:sequential-outfit-material-recovery"
     },
-    "next_action": "User manual play; full tests remain paused. On later explicit resume use R59 original partial registration; verify current user settings and revision2 timing/cursor regressions first without rollback.",
-    "updated_at": "2026-10-14T13:13:21.313236+00:00",
+    "next_action": "User can independently launch 剑星 自动防御辅助工具. Original native Niagara notification crash still unresolved; preserved new dump and current settings. Do not resume full tests or repeat unbounded dispatch/loader upgrades.",
+    "updated_at": "2026-10-14T14:16:53.527367+00:00",
     "blocked_audit": {
       "native_goal_status": "PAUSED_CONFIRMED_NATIVE_USER_REQUEST",
       "status": "HISTORICAL_R58_COMPLETE_R59_INTERRUPTED; USER_MANUAL_PLAY_ONLY",
@@ -2045,16 +2045,16 @@
     },
     "round_closure_at": "2026-10-14T11:23:12.121412+00:00",
     "incidents": {
-      "confirmed_recorded_session_total": 13,
+      "confirmed_recorded_session_total": 14,
       "new_confirmed_this_round": 0,
-      "current_crash_id": "UE4CC-Windows-017FBBB34C14128A05D8E3BEAE93C913_0000",
+      "current_crash_id": "UE4CC-Windows-E86352FF404373C2F9FB2CACF8618336_0000",
       "coverage": "Registered project play/audit ledger only; unrecorded earlier user history unknown; core83 unexplained exit not retroclassified",
-      "cause": "UNKNOWN; fresh user manual game crash read access violation in UE4SS/Lua table lookup on FAsyncLoadingThread; final-log timing does not identify responsible MOD",
-      "evidence": "user-crash-20261014-2113/crash-summary.json",
+      "cause": "UNKNOWN origin; repeated FAsyncLoadingThread Lua native read violation at UE4SS RVA0x9032a8/address0x8. Native stack contains niagaracomponent. EVEExperience owns current observed Niagara notification; this identifies entry path, not corruption origin or CombatAssistant cause.",
+      "evidence": "user-crash-20261014-2245/crash-summary.json",
       "current_segment_new_confirmed": 0,
-      "last_confirmed_segment": "USER_MANUAL_20261014_2113",
+      "last_confirmed_segment": "USER_MANUAL_20261014_2245",
       "observed_deaths": 42,
-      "latest_segment": "USER_MANUAL_RECOVERY_20261014_V2",
+      "latest_segment": "USER_MANUAL_HELPER_20261014_REOPENED",
       "new_observed_deaths_this_round": 0,
       "video_death_correction": "Second core94 YOU_DIED now confirmed by exported frame evidence; count updated once",
       "new_unconfirmed_exit_segments": [
@@ -2209,11 +2209,11 @@
     },
     "current_segment": "USER_MANUAL_RECOVERY_20261014_V2",
     "previous_goal_turn_classification": "PROGRESS: same interruptedR58 closed once after human resume,57 new finite leaves accepted with exact current-user cold recovery; original scope/failures/budgets preserved.",
-    "execution_status": "PAUSED_USER_MANUAL_PLAY_REPAIR_AND_LOCAL_PACKAGE_DELIVERED",
+    "execution_status": "FULL_TESTS_SUSPENDED_USER_MANUAL_HELPER_THREE_ON",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
     "pause_source": "Current human: restart game, tests remain paused; subsequent black-screen repair does not resume tests",
     "user_play_handoff": {
-      "status": "CURRENT_USER_MANUAL_PLAY_V2_THREE_ON",
+      "status": "USER_MANUAL_GAME_WITH_VISIBLE_ASSISTANT_THREE_ON",
       "segment": "USER_MANUAL_RECOVERY_20261014_V2",
       "playset_evidence": ".local/play-session-20261008/user-native-115/playset-registration.json",
       "launch_evidence": ".local/play-session-20261008/core-functional-152/startup-result.json",
@@ -2236,7 +2236,7 @@
       "observation_limit": "Initial agent reviewed only root repair images; new133 recording writes DATA, no sealed player segment yet reviewed. Input source user or enabledMOD automatic, not manually attributed.",
       "continuation_prompt": ".local/play-session-20261008/CONTINUE_MOD_TESTING_PROMPT_20261011.md",
       "local_data_index": ".local/play-session-20261008/local-data-index-20261011.json",
-      "current_chat": "TESTS_PAUSED; V2 user manual game camp entered, no root gameplay input",
+      "current_chat": "Human manual play; helper GUI three ON and connected; tests remain suspended",
       "clipping_repair": {
         "status": "PROFILE_SPILLOVER_REPAIRED_TWO_MODEL_NATIVE_PERSISTENCE_PASS",
         "lane": "DIRECT",
@@ -2334,14 +2334,14 @@
       "handoff_evidence": "/home/alalapi/Projects/stellar-mod-console/.local/play-session-20261008/core-functional-160/handoff/handoff-registration.json",
       "completed_at": "2026-10-13T12:54:58.426748+00:00",
       "control_owner": "USER_ONLY",
-      "current_game_pid": 3253270,
-      "current_game_start_ticks": "57911206",
+      "current_game_pid": 3423888,
+      "current_game_start_ticks": "58254886",
       "assistant3ON_connected": true,
       "usage_guide": "/data/ProjectOutputs/stellar-mod-console/MOD打包/2026-10-14/MOD按键与操作清单.md",
       "ended_by_resume": "Direct user resume: investigate repeated clothing changes causing black edges/gray on previously good outfits; remove confirmed incompatible clothes while preserving priority MODs",
       "current_game": {
-        "pid": 3253270,
-        "start_ticks": "57911206",
+        "pid": 3423888,
+        "start_ticks": "58254886",
         "display": ":0"
       }
     },
@@ -2756,7 +2756,7 @@
       },
       "manual_20261014_crash_pointer": {
         "lane": "REVIEWED",
-        "status": "GAME_ENTRY_RECOVERED_ASSISTANT_THREE_ON_PACKAGE_VERIFIED_CURSOR_PENDING",
+        "status": "ORIGINAL_CRASH_RECURRED_DIAGNOSED; NEW_USER_GAME_HELPER_THREE_ON_GUI_OPENED",
         "authority": "Direct human crash/pointer fix and restart; explicitly tests remain paused",
         "evidence": ".local/play-session-20261008/user-crash-20261014-2113/repair/registration.json",
         "v1_failure": ".local/play-session-20261008/user-crash-20261014-2113/repair/black-screen-failure.json",
@@ -2767,8 +2767,8 @@
         "result_evidence": ".local/play-session-20261008/user-crash-20261014-2113/repair/restart-result-v2.json",
         "limits": "UNKNOWN cause; GameThread runner risk reduced, async notification VM entry remains; cursor/menu/frame-time acceptance not inferred from camp screenshot",
         "game_identity": {
-          "pid": 3253270,
-          "start_ticks": "57911206",
+          "pid": 3423888,
+          "start_ticks": "58254886",
           "display": ":0"
         },
         "assistant": {
@@ -2778,9 +2778,19 @@
           "specialEnabled": true,
           "connected": true,
           "bindingReady": true,
-          "service": "stellar-combat-assistant-user20261014.service",
-          "evidence": ".local/play-session-20261008/user-crash-20261014-2113/repair/assistant-user-handoff.json",
-          "actual_combat": "NOT_TESTED"
+          "service": "stellar-combat-assistant-user20261014b.service",
+          "evidence": ".local/play-session-20261008/user-helper-three-on-20261014/assistant-user-set.json",
+          "actual_combat": "NOT_TESTED",
+          "gui": {
+            "pid": 3453830,
+            "start_ticks": "58356965",
+            "x_window": 123731975,
+            "title": "Stellar Blade Trainer · 正式版 · 1.0.16",
+            "visible_gui_opened": true,
+            "foreground": "Activation not confirmed; game retains focus",
+            "image": ".local/play-session-20261008/user-helper-three-on-20261014/assistant-three-on.png",
+            "launcher_name": "剑星 自动防御辅助工具"
+          }
         },
         "package": {
           "path": "/data/ProjectOutputs/stellar-mod-console/MOD打包/2026-10-14",
@@ -3106,7 +3116,7 @@
       "continuation_registration": "/home/alalapi/Projects/stellar-mod-console/.local/play-session-20261008/core-functional-169/r59/round59-registration.json"
     },
     "native_goal": {
-      "status": "paused",
+      "status": "NONE_OBSERVED_CURRENT_NATIVE_GET",
       "source": "Replacement task native Goal explicitly started by user; existing MOD test scope and prior cumulative telemetry retained",
       "scope": "Same retained5125 leaves; formal Console remains paused",
       "tool_objective": "Replacement user Goal continues the prior full MOD tests and retires the failed prior Goal/task; full5125 test scope retained.",
@@ -3114,14 +3124,15 @@
       "timeUsedSeconds": 17402,
       "telemetry_at": "2026-10-14T13:13:21.313236+00:00",
       "telemetry_coverage": "Fresh supported native get_goal observed paused; cumulative Goal only, one-off repair turn not a new Goal round",
-      "last_observed_status": "paused",
+      "last_observed_status": "none",
       "pause_requested": true,
       "pause_source": "游戏目标、所有游戏相关Agent及其GPU工作先暂停，之后由用户统一重启。",
-      "final_native_transition": "Explicit user pause maintained; no restart of full test Goal",
+      "final_native_transition": "Current supported get_goal returned null; no new Goal created or testing resumed",
       "threadId": "01a13763-999e-73e3-bb51-d52669c59d87",
       "tool_objective_private_evidence": ".local/play-session-20261008/core-functional-168/r58/round58-native-goal-active.json",
       "resume_source": "Direct current human 继续; native get_goal active verified",
-      "resumed_at": "2026-10-14T10:32:31.030498+00:00"
+      "resumed_at": "2026-10-14T10:32:31.030498+00:00",
+      "previous_observed_status": "paused"
     },
     "goal_resume_source": {
       "at": "2026-10-11T22:33:55.839554+00:00",
