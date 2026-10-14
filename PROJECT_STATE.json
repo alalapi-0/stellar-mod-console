@@ -1959,11 +1959,11 @@
       "original_unified_required_retained": 5129,
       "latest_specific_followup": "integration:sequential-outfit-material-recovery"
     },
-    "next_action": "Continue next pending original outfit/parameter/body/patch/NPC leaf gates across full5125; Ultimate100 finite controls are closed, appearance staysPARTIAL and ORSS schemaFAIL/globalGrayOPEN retained. Current loader ConsoleManager singleton/BeginPlay detour and cached-controller warnings remain for affected tool/integration gates; no same1052 missing-dependency repeat, no story/death gates without save isolation.",
-    "updated_at": "2026-10-14T11:23:12.121412+00:00",
+    "next_action": "User manual play; full tests remain paused. On later explicit resume use R59 original partial registration; verify current user settings and revision2 timing/cursor regressions first without rollback.",
+    "updated_at": "2026-10-14T13:13:21.313236+00:00",
     "blocked_audit": {
-      "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
-      "status": "PROGRESS_R58_57_FINITE_LEAVES_PASS_NO_CURRENT_IMPASSE",
+      "native_goal_status": "PAUSED_CONFIRMED_NATIVE_USER_REQUEST",
+      "status": "HISTORICAL_R58_COMPLETE_R59_INTERRUPTED; USER_MANUAL_PLAY_ONLY",
       "consecutive_goal_turns": 0,
       "consecutive_no_progress_turns": 0,
       "condition": null,
@@ -2045,16 +2045,16 @@
     },
     "round_closure_at": "2026-10-14T11:23:12.121412+00:00",
     "incidents": {
-      "confirmed_recorded_session_total": 12,
+      "confirmed_recorded_session_total": 13,
       "new_confirmed_this_round": 0,
-      "current_crash_id": "UE4CC-Windows-5511A79E465F920358E6D6A6C9407A3B_0000",
+      "current_crash_id": "UE4CC-Windows-017FBBB34C14128A05D8E3BEAE93C913_0000",
       "coverage": "Registered project play/audit ledger only; unrecorded earlier user history unknown; core83 unexplained exit not retroclassified",
-      "cause": "UNKNOWN; second distinct hair switch KasumiHair4930/PlatinumBlonde preceded game RVA 0x405663a write access violation at 0x11. Prior hair146 isolation did not establish stable hair switching.",
-      "evidence": "user-native-117/repair/hair-crash-analysis.json",
+      "cause": "UNKNOWN; fresh user manual game crash read access violation in UE4SS/Lua table lookup on FAsyncLoadingThread; final-log timing does not identify responsible MOD",
+      "evidence": "user-crash-20261014-2113/crash-summary.json",
       "current_segment_new_confirmed": 0,
-      "last_confirmed_segment": "user-native-117",
+      "last_confirmed_segment": "USER_MANUAL_20261014_2113",
       "observed_deaths": 42,
-      "latest_segment": "user-native-125",
+      "latest_segment": "USER_MANUAL_RECOVERY_20261014_V2",
       "new_observed_deaths_this_round": 0,
       "video_death_correction": "Second core94 YOU_DIED now confirmed by exported frame evidence; count updated once",
       "new_unconfirmed_exit_segments": [
@@ -2080,7 +2080,7 @@
       "evidence": ".local/play-session-20261008/core-functional-144/repair/private-display-route-evidence.json",
       "limit": "18completedvalidationjobs/57deferredchecks; originalmediaretained; fullqualityunaccepted;sourceexpiryguardwritten39tests butnewrecorderprocessnotactivated",
       "human_review": "Direct user confirms core91 selected green P1 natural, unaffected by later95 capture temporal defect",
-      "current_scope": "User161 foreground play; observer service inactive; no recorder launched or post-handoff gameplay capture",
+      "current_scope": "User manual play restart only; no observer or recorder running",
       "large_motion_preview": "core103-green14-body-motion-preview-1920-crf16.mp4",
       "large_visual_acceptance": "WAITING_HUMAN; normal91 human PASS applies only earlier selected profile",
       "historical_limit": "Core95 battle capture cadence failed and quality review remains partial; sealed original evidence retained. User96 had no valid continuous video due cancelled/rejected Portal;96 logs/stills/report preserved;97 video requires source authorization",
@@ -2207,14 +2207,14 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "core-functional-169",
+    "current_segment": "USER_MANUAL_RECOVERY_20261014_V2",
     "previous_goal_turn_classification": "PROGRESS: same interruptedR58 closed once after human resume,57 new finite leaves accepted with exact current-user cold recovery; original scope/failures/budgets preserved.",
-    "execution_status": "IN_PROGRESS_R58_CLOSED_PRIVATE169_READY_FULL_REMAINING_SCOPE",
-    "pause_at": "2026-10-14T01:57:39.597641+00:00",
-    "pause_source": "游戏目标、所有游戏相关Agent及其GPU工作先暂停，之后由用户统一重启。",
+    "execution_status": "PAUSED_USER_MANUAL_PLAY_REPAIR_AND_LOCAL_PACKAGE_DELIVERED",
+    "pause_at": "2026-10-14T12:52:49.483541+00:00",
+    "pause_source": "Current human: restart game, tests remain paused; subsequent black-screen repair does not resume tests",
     "user_play_handoff": {
-      "status": "HISTORICAL_USER161_ENDED_BY_EXPLICIT_RESUME",
-      "segment": "core-functional-152",
+      "status": "CURRENT_USER_MANUAL_PLAY_V2_THREE_ON",
+      "segment": "USER_MANUAL_RECOVERY_20261014_V2",
       "playset_evidence": ".local/play-session-20261008/user-native-115/playset-registration.json",
       "launch_evidence": ".local/play-session-20261008/core-functional-152/startup-result.json",
       "trash_evidence": ".local/play-session-20261008/user-native-115/trash-receipt.json",
@@ -2236,7 +2236,7 @@
       "observation_limit": "Initial agent reviewed only root repair images; new133 recording writes DATA, no sealed player segment yet reviewed. Input source user or enabledMOD automatic, not manually attributed.",
       "continuation_prompt": ".local/play-session-20261008/CONTINUE_MOD_TESTING_PROMPT_20261011.md",
       "local_data_index": ".local/play-session-20261008/local-data-index-20261011.json",
-      "current_chat": "Original MOD Goal resumed; private5only; formalConsole remains paused",
+      "current_chat": "TESTS_PAUSED; V2 user manual game camp entered, no root gameplay input",
       "clipping_repair": {
         "status": "PROFILE_SPILLOVER_REPAIRED_TWO_MODEL_NATIVE_PERSISTENCE_PASS",
         "lane": "DIRECT",
@@ -2334,11 +2334,16 @@
       "handoff_evidence": "/home/alalapi/Projects/stellar-mod-console/.local/play-session-20261008/core-functional-160/handoff/handoff-registration.json",
       "completed_at": "2026-10-13T12:54:58.426748+00:00",
       "control_owner": "USER_ONLY",
-      "current_game_pid": 317731,
-      "current_game_start_ticks": "49181191",
+      "current_game_pid": 3253270,
+      "current_game_start_ticks": "57911206",
       "assistant3ON_connected": true,
-      "usage_guide": ".local/play-session-20261008/FUNCTIONAL_MOD_KEYS_20261011.md",
-      "ended_by_resume": "Direct user resume: investigate repeated clothing changes causing black edges/gray on previously good outfits; remove confirmed incompatible clothes while preserving priority MODs"
+      "usage_guide": "/data/ProjectOutputs/stellar-mod-console/MOD打包/2026-10-14/MOD按键与操作清单.md",
+      "ended_by_resume": "Direct user resume: investigate repeated clothing changes causing black edges/gray on previously good outfits; remove confirmed incompatible clothes while preserving priority MODs",
+      "current_game": {
+        "pid": 3253270,
+        "start_ticks": "57911206",
+        "display": ":0"
+      }
     },
     "resume_source": "Direct current human 继续 resumes current full MOD testGoal only; other gameGoals/observation tasks not restarted",
     "resumed_at": "2026-10-14T10:32:31.030498+00:00",
@@ -2748,6 +2753,42 @@
           "automatic_fix": false
         },
         "limits": "Working dodge/blue response demonstrated in native training; guard acceptance unresolved, purple no opportunity observed. A green connected window alone is not acceptance."
+      },
+      "manual_20261014_crash_pointer": {
+        "lane": "REVIEWED",
+        "status": "GAME_ENTRY_RECOVERED_ASSISTANT_THREE_ON_PACKAGE_VERIFIED_CURSOR_PENDING",
+        "authority": "Direct human crash/pointer fix and restart; explicitly tests remain paused",
+        "evidence": ".local/play-session-20261008/user-crash-20261014-2113/repair/registration.json",
+        "v1_failure": ".local/play-session-20261008/user-crash-20261014-2113/repair/black-screen-failure.json",
+        "user_settings": "Fresh manual TunerOutfits and DekCNS selection preserved, no story save rollback",
+        "new_global_acceptance_credit": 0,
+        "source_publication": "Only sanitized state/report; third party source and assets remain private",
+        "candidate_revision": 2,
+        "result_evidence": ".local/play-session-20261008/user-crash-20261014-2113/repair/restart-result-v2.json",
+        "limits": "UNKNOWN cause; GameThread runner risk reduced, async notification VM entry remains; cursor/menu/frame-time acceptance not inferred from camp screenshot",
+        "game_identity": {
+          "pid": 3253270,
+          "start_ticks": "57911206",
+          "display": ":0"
+        },
+        "assistant": {
+          "mode": "Combined",
+          "guardEnabled": true,
+          "dodgeEnabled": true,
+          "specialEnabled": true,
+          "connected": true,
+          "bindingReady": true,
+          "service": "stellar-combat-assistant-user20261014.service",
+          "evidence": ".local/play-session-20261008/user-crash-20261014-2113/repair/assistant-user-handoff.json",
+          "actual_combat": "NOT_TESTED"
+        },
+        "package": {
+          "path": "/data/ProjectOutputs/stellar-mod-console/MOD打包/2026-10-14",
+          "snapshot_at": "2026-10-14T12:54:17.399706+00:00",
+          "result": "Both ZIP payloads fully read; all CRC and SHA256 matched",
+          "evidence": ".local/play-session-20261008/user-crash-20261014-2113/repair/package-result.json"
+        },
+        "key_guide": "/data/ProjectOutputs/stellar-mod-console/MOD打包/2026-10-14/MOD按键与操作清单.md"
       }
     },
     "active_body_control_selection": {
@@ -2759,7 +2800,7 @@
     "resumed_test_checkpoint": {
       "at": "2026-10-14T11:23:12.121412+00:00",
       "lane": "DIRECT",
-      "status": "R58_CLOSED_PRIVATE169_READY_NEXT_FULL_SCOPE",
+      "status": "R59_INTERRUPTED_PAUSED_NO_NEW_ACCEPTANCE",
       "root_owned_game_files": 6,
       "candidate_evidence": "/home/alalapi/Projects/stellar-mod-console/.local/play-session-20261008/core-functional-162/r53/r53-incompatible-retirement-candidate.json",
       "runtime_evidence": "core-functional-168/r58/round58-runtime-result.json",
@@ -3062,21 +3103,21 @@
           "Coldstart exact newcandidate with priority3ON and no new confirmedcrash; independent Judge reviews exact candidate/evidence"
         ]
       },
-      "continuation_registration": "/home/alalapi/Projects/stellar-mod-console/.local/play-session-20261008/core-functional-168/r58/round58-registration.json"
+      "continuation_registration": "/home/alalapi/Projects/stellar-mod-console/.local/play-session-20261008/core-functional-169/r59/round59-registration.json"
     },
     "native_goal": {
-      "status": "active",
+      "status": "paused",
       "source": "Replacement task native Goal explicitly started by user; existing MOD test scope and prior cumulative telemetry retained",
       "scope": "Same retained5125 leaves; formal Console remains paused",
       "tool_objective": "Replacement user Goal continues the prior full MOD tests and retires the failed prior Goal/task; full5125 test scope retained.",
-      "tokensUsed": 1787866,
-      "timeUsedSeconds": 15387,
-      "telemetry_at": "2026-10-14T11:23:12.121412+00:00",
-      "telemetry_coverage": "Fresh rootnativeget_goal atR58 closure; currentGoal cumulative only. Pause/resume and oldGoal usage/rebaselines retained; elapsed not active-only execution time.",
-      "last_observed_status": "active",
-      "pause_requested": false,
+      "tokensUsed": 1871150,
+      "timeUsedSeconds": 17402,
+      "telemetry_at": "2026-10-14T13:13:21.313236+00:00",
+      "telemetry_coverage": "Fresh supported native get_goal observed paused; cumulative Goal only, one-off repair turn not a new Goal round",
+      "last_observed_status": "paused",
+      "pause_requested": true,
       "pause_source": "游戏目标、所有游戏相关Agent及其GPU工作先暂停，之后由用户统一重启。",
-      "final_native_transition": "CurrentGoal active by human continue; required fullscope work unfinished. OldfailedGoal remains cleared/taskarchived.",
+      "final_native_transition": "Explicit user pause maintained; no restart of full test Goal",
       "threadId": "01a13763-999e-73e3-bb51-d52669c59d87",
       "tool_objective_private_evidence": ".local/play-session-20261008/core-functional-168/r58/round58-native-goal-active.json",
       "resume_source": "Direct current human 继续; native get_goal active verified",
@@ -3160,10 +3201,10 @@
       "power_save_mode": 3,
       "locked_hint": "yes",
       "input_route": "VerifiedprivateXvfb93 only; native0lockguardretained",
-      "current_status": "PRIVATE169_DISPLAY2; no foregroundinput/physicalpowerpolicychanges"
+      "current_status": "PRIVATE169_TEST_DISPLAY_STOPPED; USER_FOREGROUND_PLAY; NO_POWER_POLICY_CHANGES"
     },
     "input_window_result": {
-      "state": "R58_CLOSED_PRIVATE169_RETAINED_NEXT_BOUND_SEGMENT_ALLOWED",
+      "state": "CLOSED_PAUSED_NO_TEST_INPUT",
       "lane": "DIRECT",
       "started_at": "2026-10-13T16:58:51.100398+00:00",
       "deadline": "HISTORICAL_INTERNAL_SEGMENTS_CLOSED;NOT_HUMAN_AUTHORITY_EXPIRY",
@@ -3180,7 +3221,7 @@
         "expiry_observed_at": "2026-10-12T11:24:18.869386+00:00",
         "renewal_question": "Pending asynchronous question: extend10hours/1hour/offlineonly; no reply received"
       },
-      "action_authority": "Continuing full private testing authority; internal closure is not human authorization expiry",
+      "action_authority": "Full test authority paused by current human; only requested one-off repair and normal game restart authorized",
       "latest_human_steering": {
         "at": "2026-10-13T02:05:28.282332+00:00",
         "offline_only_revoked": true,
@@ -3204,8 +3245,8 @@
           "classification": "R49 segment2 PROGRESS tooltransitionpath rootcause repaired; actualowned157 coldreload mesh exact/all40tunederror0. PriorunitfailedbeforePopen, no gamecrash. Existinggoalbudget and human authority persist."
         }
       ],
-      "closed_at": "2026-10-14T11:23:12.121412+00:00",
-      "classification": "R58_CLOSED_GOAL_ACTIVE_ORIGINAL_FULL_SCOPE_CONTINUES"
+      "closed_at": "2026-10-14T12:52:49.483541+00:00",
+      "classification": "R59_INTERRUPTED_NO_NEW_ACCEPTANCE"
     },
     "virtual_desktop_skill_request": {
       "source": "User explicitly requests newAgent merge private-display workflow into existing linux-task-desktop, default newGUI tasks virtual and foreground only explicit request",
@@ -3260,7 +3301,7 @@
       "old_goal_receipt": ".local/play-session-20261008/core-functional-166/r56-recovery/old-goal-clear-receipt.json",
       "telemetry_coverage": "Old native thread/goal/get immediately before clear; new Goal telemetry is separate and additive, logical task/acceptance/health rebaseline unchanged.",
       "logical_round_closed_once": 56,
-      "new_goal_status": "active",
+      "new_goal_status": "paused",
       "new_goal_tokens_at_checkpoint": 1787866,
       "new_goal_seconds_at_checkpoint": 15387,
       "existing_health_rebaseline_and_watch_preserved": true,
