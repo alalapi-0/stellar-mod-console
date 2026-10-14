@@ -1959,18 +1959,20 @@
       "original_unified_required_retained": 5129,
       "latest_specific_followup": "integration:sequential-outfit-material-recovery"
     },
-    "next_action": "User can independently launch 剑星 自动防御辅助工具. Original native Niagara notification crash still unresolved; preserved new dump and current settings. Do not resume full tests or repeat unbounded dispatch/loader upgrades.",
-    "updated_at": "2026-10-14T14:16:53.527367+00:00",
+    "next_action": "Await human current-game normal-exit choice; keep offline preparation independent, then fresh current-user snapshots/private display and original R59 remaining leaf tests. No foreground test input or recording.",
+    "updated_at": "2026-10-14T16:35:16.764767+00:00",
     "blocked_audit": {
-      "native_goal_status": "PAUSED_CONFIRMED_NATIVE_USER_REQUEST",
-      "status": "HISTORICAL_R58_COMPLETE_R59_INTERRUPTED; USER_MANUAL_PLAY_ONLY",
+      "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
+      "status": "R59_OFFLINE_PROGRESS_CURRENT_USER_GAME_EXIT_DECISION_PENDING",
       "consecutive_goal_turns": 0,
       "consecutive_no_progress_turns": 0,
       "condition": null,
       "evidence": "core-functional-168/r58/round58-runtime-result.json",
       "next_action": "Continue next pending original outfit/parameter/body/patch/NPC leaf gates across full5125; Ultimate100 finite controls are closed, appearance staysPARTIAL and ORSS schemaFAIL/globalGrayOPEN retained. Current loader ConsoleManager singleton/BeginPlay detour and cached-controller warnings remain for affected tool/integration gates; no same1052 missing-dependency repeat, no story/death gates without save isolation.",
       "consecutive_no_progress_goal_turns": 0,
-      "next_allowed": "Continue next pending original outfit/parameter/body/patch/NPC leaf gates across full5125; Ultimate100 finite controls are closed, appearance staysPARTIAL and ORSS schemaFAIL/globalGrayOPEN retained. Current loader ConsoleManager singleton/BeginPlay detour and cached-controller warnings remain for affected tool/integration gates; no same1052 missing-dependency repeat, no story/death gates without save isolation."
+      "next_allowed": "Continue next pending original outfit/parameter/body/patch/NPC leaf gates across full5125; Ultimate100 finite controls are closed, appearance staysPARTIAL and ORSS schemaFAIL/globalGrayOPEN retained. Current loader ConsoleManager singleton/BeginPlay detour and cached-controller warnings remain for affected tool/integration gates; no same1052 missing-dependency repeat, no story/death gates without save isolation.",
+      "current_waiting_condition": "Foreground human game still alive; required current-game normal exit decision pending. First current Goal checkpoint, not native blocked.",
+      "current_waiting_goal_checkpoints": 1
     },
     "user_exit_authorization": {
       "source": "Direct user: 没保存也没关系，允许放弃未保存进度并正常退出。正常重启人物; followed by 重启任务",
@@ -2209,7 +2211,7 @@
     },
     "current_segment": "USER_MANUAL_RECOVERY_20261014_V2",
     "previous_goal_turn_classification": "PROGRESS: same interruptedR58 closed once after human resume,57 new finite leaves accepted with exact current-user cold recovery; original scope/failures/budgets preserved.",
-    "execution_status": "FULL_TESTS_SUSPENDED_USER_MANUAL_HELPER_THREE_ON",
+    "execution_status": "R59_RESUMED_OFFLINE_PREREQUISITES_FOREGROUND_GAME_TRANSITION_PENDING",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
     "pause_source": "Current human: restart game, tests remain paused; subsequent black-screen repair does not resume tests",
     "user_play_handoff": {
@@ -2345,8 +2347,8 @@
         "display": ":0"
       }
     },
-    "resume_source": "Direct current human 继续 resumes current full MOD testGoal only; other gameGoals/observation tasks not restarted",
-    "resumed_at": "2026-10-14T10:32:31.030498+00:00",
+    "resume_source": "Direct human 你继续帮我进行测试 then 重起目标任务",
+    "resumed_at": "2026-10-14T16:25:53.307369+00:00",
     "user_acceptance_clarification": {
       "at": "2026-10-10T20:01:19.680897+00:00",
       "combat": "Multi-enemy rear attacks, attack/hit-stun defensive limits are normal game constraints; prioritize feature functionality/compatibility, not full invulnerability",
@@ -2810,7 +2812,7 @@
     "resumed_test_checkpoint": {
       "at": "2026-10-14T11:23:12.121412+00:00",
       "lane": "DIRECT",
-      "status": "R59_INTERRUPTED_PAUSED_NO_NEW_ACCEPTANCE",
+      "status": "R59_RESUMED_PREREQUISITES_ORIGINAL_SCOPE_RETAINED",
       "root_owned_game_files": 6,
       "candidate_evidence": "/home/alalapi/Projects/stellar-mod-console/.local/play-session-20261008/core-functional-162/r53/r53-incompatible-retirement-candidate.json",
       "runtime_evidence": "core-functional-168/r58/round58-runtime-result.json",
@@ -3113,26 +3115,45 @@
           "Coldstart exact newcandidate with priority3ON and no new confirmedcrash; independent Judge reviews exact candidate/evidence"
         ]
       },
-      "continuation_registration": "/home/alalapi/Projects/stellar-mod-console/.local/play-session-20261008/core-functional-169/r59/round59-registration.json"
+      "continuation_registration": "/home/alalapi/Projects/stellar-mod-console/.local/play-session-20261008/core-functional-169/r59/round59-registration.json",
+      "resume_evidence": ".local/play-session-20261008/core-functional-170/r59/resume-prerequisites.json",
+      "private_display_resume": {
+        "pid": 3702467,
+        "start_ticks": "59194960",
+        "display": ":5",
+        "evidence": ".local/play-session-20261008/core-functional-170/private-display/display-registration.json",
+        "clients_started": false,
+        "hardware_game_acceptance": "NOT_STARTED"
+      }
     },
     "native_goal": {
-      "status": "NONE_OBSERVED_CURRENT_NATIVE_GET",
+      "status": "active",
       "source": "Replacement task native Goal explicitly started by user; existing MOD test scope and prior cumulative telemetry retained",
       "scope": "Same retained5125 leaves; formal Console remains paused",
       "tool_objective": "Replacement user Goal continues the prior full MOD tests and retires the failed prior Goal/task; full5125 test scope retained.",
-      "tokensUsed": 1871150,
-      "timeUsedSeconds": 17402,
-      "telemetry_at": "2026-10-14T13:13:21.313236+00:00",
-      "telemetry_coverage": "Fresh supported native get_goal observed paused; cumulative Goal only, one-off repair turn not a new Goal round",
-      "last_observed_status": "none",
-      "pause_requested": true,
+      "tokensUsed": 51712,
+      "timeUsedSeconds": 853,
+      "telemetry_at": "2026-10-14T16:35:16.764767+00:00",
+      "telemetry_coverage": "Fresh supported native get_goal after restart; current activation only. Prior replacement1,871,150tokens/17,402seconds retained in prior_activations; prior failedGoal retained in task_recovery. One-off non-Goal work not covered.",
+      "last_observed_status": "active",
+      "pause_requested": false,
       "pause_source": "游戏目标、所有游戏相关Agent及其GPU工作先暂停，之后由用户统一重启。",
-      "final_native_transition": "Current supported get_goal returned null; no new Goal created or testing resumed",
+      "final_native_transition": "Direct human 重起目标任务; supported create_goal active; no other task resumed",
       "threadId": "01a13763-999e-73e3-bb51-d52669c59d87",
-      "tool_objective_private_evidence": ".local/play-session-20261008/core-functional-168/r58/round58-native-goal-active.json",
-      "resume_source": "Direct current human 继续; native get_goal active verified",
-      "resumed_at": "2026-10-14T10:32:31.030498+00:00",
-      "previous_observed_status": "paused"
+      "tool_objective_private_evidence": ".local/play-session-20261008/core-functional-170/native-goal-restart.json",
+      "resume_source": "Direct current human 重起目标任务",
+      "resumed_at": "2026-10-14T16:25:53.307369+00:00",
+      "previous_observed_status": "paused",
+      "prior_activations": [
+        {
+          "status": "NONE_OBSERVED_CURRENT_NATIVE_GET",
+          "tokensUsed": 1871150,
+          "timeUsedSeconds": 17402,
+          "telemetry_at": "2026-10-14T13:13:21.313236+00:00",
+          "coverage": "Prior replacement Goal; counters not reset or erased; old failed Goal cumulative retained under task_recovery"
+        }
+      ],
+      "createdAt": 1791994794
     },
     "goal_resume_source": {
       "at": "2026-10-11T22:33:55.839554+00:00",
@@ -3215,7 +3236,7 @@
       "current_status": "PRIVATE169_TEST_DISPLAY_STOPPED; USER_FOREGROUND_PLAY; NO_POWER_POLICY_CHANGES"
     },
     "input_window_result": {
-      "state": "CLOSED_PAUSED_NO_TEST_INPUT",
+      "state": "RESUME_PREREQUISITES_NO_RUNTIME_INPUT_YET",
       "lane": "DIRECT",
       "started_at": "2026-10-13T16:58:51.100398+00:00",
       "deadline": "HISTORICAL_INTERNAL_SEGMENTS_CLOSED;NOT_HUMAN_AUTHORITY_EXPIRY",
@@ -3232,7 +3253,7 @@
         "expiry_observed_at": "2026-10-12T11:24:18.869386+00:00",
         "renewal_question": "Pending asynchronous question: extend10hours/1hour/offlineonly; no reply received"
       },
-      "action_authority": "Full test authority paused by current human; only requested one-off repair and normal game restart authorized",
+      "action_authority": "Direct human resumed tests; foreground game transition awaiting explicit normal exit choice; private test input begins only after fresh exact runtime registration",
       "latest_human_steering": {
         "at": "2026-10-13T02:05:28.282332+00:00",
         "offline_only_revoked": true,
@@ -3257,7 +3278,7 @@
         }
       ],
       "closed_at": "2026-10-14T12:52:49.483541+00:00",
-      "classification": "R59_INTERRUPTED_NO_NEW_ACCEPTANCE"
+      "classification": "SAME_R59_RESUME_NOT_CLOSED_NO_NEW_PASS"
     },
     "virtual_desktop_skill_request": {
       "source": "User explicitly requests newAgent merge private-display workflow into existing linux-task-desktop, default newGUI tasks virtual and foreground only explicit request",
@@ -3312,7 +3333,7 @@
       "old_goal_receipt": ".local/play-session-20261008/core-functional-166/r56-recovery/old-goal-clear-receipt.json",
       "telemetry_coverage": "Old native thread/goal/get immediately before clear; new Goal telemetry is separate and additive, logical task/acceptance/health rebaseline unchanged.",
       "logical_round_closed_once": 56,
-      "new_goal_status": "paused",
+      "new_goal_status": "active",
       "new_goal_tokens_at_checkpoint": 1787866,
       "new_goal_seconds_at_checkpoint": 15387,
       "existing_health_rebaseline_and_watch_preserved": true,
