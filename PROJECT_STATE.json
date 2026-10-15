@@ -1928,8 +1928,8 @@
       "original_unified_required_retained": 5129,
       "latest_specific_followup": "integration:sequential-outfit-material-recovery"
     },
-    "next_action": "Continue same R59 remaining18 gates: material18/BikiniP3 and21/BackP2 need geometry/occlusion diagnosis; seven piercing controls28-34 need source-appropriate exposed views; nine scalar controls need visible shader effects under valid source color/texture/visibility conditions. Preserve26 current PASS and original5125. Read current manifest SHA, not original round-start SHA. All test controls/material semantics restored; source camera fields/test outfit remain temporary and fresh CNS configuration restoration is required at final cold handback. Recording off.",
-    "updated_at": "2026-10-15T02:22:15.634434+00:00",
+    "next_action": "User manual foreground play with three CombatAssistant functions connected ON and EVEExperience disabled as startup workaround. Full5125 MOD tests/R59 remain paused at unchanged210 accepted. Do not auto-restart game, re-enable EVEExperience, or continue testing without explicit user continuation.",
+    "updated_at": "2026-10-15T13:05:17.813067+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2206,18 +2206,18 @@
     },
     "current_segment": "PRIVATE170_R59_SAME_ORIGINAL_TARGETS",
     "previous_goal_turn_classification": "PROGRESS: previous continuation added8 first visual gates, frozen5125 retained and remote ebc9833 verified",
-    "execution_status": "R59_PRIVATE170_26_PASS_18_PARTIAL_CONTINUING",
+    "execution_status": "USER_FOREGROUND_PLAY_READY_FULL_MOD_TESTS_PAUSED",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
     "pause_source": "Current human: restart game, tests remain paused; subsequent black-screen repair does not resume tests",
     "user_play_handoff": {
-      "status": "ENDED_BY_EXPLICIT_CURRENT_NORMAL_EXIT_AUTHORIZATION",
-      "segment": "USER_MANUAL_RECOVERY_20261014_V2",
+      "status": "USER_FOREGROUND_READY_THREE_ASSISTS_ON",
+      "segment": "USER_STARTUP_172",
       "playset_evidence": ".local/play-session-20261008/user-native-115/playset-registration.json",
       "launch_evidence": ".local/play-session-20261008/core-functional-152/startup-result.json",
       "trash_evidence": ".local/play-session-20261008/user-native-115/trash-receipt.json",
-      "input_owner": "ROOT_PRIVATE_DISPLAY_ONLY",
+      "input_owner": "USER_FOREGROUND",
       "automatic_relaunch": false,
-      "actual_tests": "ACTIVE",
+      "actual_tests": "PAUSED",
       "enabled_unaccepted_for_user_play": true,
       "npc_mods": "RESTORED_LATEST_USER_REQUEST_7_UNITS27_FILES",
       "excluded_units": [
@@ -2233,7 +2233,7 @@
       "observation_limit": "Initial agent reviewed only root repair images; new133 recording writes DATA, no sealed player segment yet reviewed. Input source user or enabledMOD automatic, not manually attributed.",
       "continuation_prompt": ".local/play-session-20261008/CONTINUE_MOD_TESTING_PROMPT_20261011.md",
       "local_data_index": ".local/play-session-20261008/local-data-index-20261011.json",
-      "current_chat": "Human manual play; helper GUI three ON and connected; tests remain suspended",
+      "current_chat": "Current desktop user play; native Steam game camp rendered; all3 author CombatAssistant switches connected ON; EVEExperience disabled startup workaround",
       "clipping_repair": {
         "status": "PROFILE_SPILLOVER_REPAIRED_TWO_MODEL_NATIVE_PERSISTENCE_PASS",
         "lane": "DIRECT",
@@ -2341,7 +2341,8 @@
         "start_ticks": "58254886",
         "display": ":0"
       },
-      "closure_evidence": ".local/play-session-20261008/core-functional-170/r59/current-user-normal-exit.json"
+      "closure_evidence": ".local/play-session-20261008/core-functional-170/r59/current-user-normal-exit.json",
+      "startup_recovery_evidence": ".local/play-session-20261008/user-startup-172/startup-acceptance.json"
     },
     "resume_source": "Human 可以正常退出当前游戏; continues prior explicit full test/Goal resume",
     "resumed_at": "2026-10-14T23:29:52.237336+00:00",
@@ -2797,6 +2798,54 @@
           "evidence": ".local/play-session-20261008/user-crash-20261014-2113/repair/package-result.json"
         },
         "key_guide": "/data/ProjectOutputs/stellar-mod-console/MOD打包/2026-10-14/MOD按键与操作清单.md"
+      },
+      "startup_20261015": {
+        "at": "2026-10-15T13:05:17.813067+00:00",
+        "status": "CURRENT_SAVE_CAMP_RENDERED_FOREGROUND_THREE_ASSISTS_CONNECTED_ON",
+        "lane": "DIRECT",
+        "authority": "Direct user requests current-desktop game restart with installed compatible MODs and all3 CombatAssistant functions ON; full MOD tests stay paused",
+        "evidence": ".local/play-session-20261008/user-startup-172/startup-acceptance.json",
+        "native_crash": {
+          "guid": "UE4CC-Windows-3908925B4CF8C97CD16C42BB0CC03FCF_0000",
+          "thread": "FAsyncLoadingThread",
+          "error": "Native read0xfe at UE4SS RVA0x9032a8 after59s; same known native notification entry, original corruption cause unproven"
+        },
+        "recovery": {
+          "EVEExperience_enabled": false,
+          "meaning": "Whole module disabled as observed startup workaround; not claimed source/root-cause repair",
+          "changed_enable_rows": 1,
+          "other_mod_rows_preserved": true,
+          "save_edit_or_rollback": false,
+          "game_quality_changed": false,
+          "licensed_launch": "Existing user Steam native App3489700 route; no new account/prefix"
+        },
+        "additional_failure": {
+          "first_foreground_attempt": "Game and supervisor gone without new native crash context; exact cause unknown",
+          "observed_system_oom": "Kernel killed ChatGPT and SteamWebHelper at2026-10-15T12:46Z; later attempt exit not attributed to OOM without evidence",
+          "second_foreground_attempt": "Main game gone while owned runtime remained; no new CrashContext; owned remaining launch stopped after main game absent",
+          "final_method": "Clean own residual runtime, existing native Steam launch, exact fresh game/window handoff verified"
+        },
+        "compatible_install": {
+          "containers": 12,
+          "files": 36,
+          "matching_file_hashes": 36,
+          "missing_or_changed": 0,
+          "dependencies_present": true,
+          "new_download_or_package_install": false,
+          "limit": "Existing documented selected install integrity only; no claim all5125 leaves or all clothing visuals compatible"
+        },
+        "combat_assistant": {
+          "version": "1.0.16",
+          "connected": true,
+          "bindingReady": true,
+          "guard": true,
+          "dodge": true,
+          "special": true,
+          "mode": "Combined",
+          "limit": "Switches and live binding verified; no new full combat regression"
+        },
+        "full_mod_tests": "PAUSED",
+        "recording": false
       }
     },
     "active_body_control_selection": {
@@ -3146,7 +3195,7 @@
       }
     },
     "native_goal": {
-      "status": "active",
+      "status": "paused",
       "source": "Replacement task native Goal explicitly started by user; existing MOD test scope and prior cumulative telemetry retained",
       "scope": "Same retained5125 leaves; formal Console remains paused",
       "tool_objective": "Replacement user Goal continues the prior full MOD tests and retires the failed prior Goal/task; full5125 test scope retained.",
@@ -3154,10 +3203,10 @@
       "timeUsedSeconds": 12165,
       "telemetry_at": "2026-10-15T02:28:42.970130+00:00",
       "telemetry_coverage": "Direct current native Goal checkpoint only; prior activations and completed health rebaseline retained. New18 accepted finite gates are material progress, not an overall completion claim.",
-      "last_observed_status": "active",
-      "pause_requested": false,
+      "last_observed_status": "paused",
+      "pause_requested": true,
       "pause_source": "游戏目标、所有游戏相关Agent及其GPU工作先暂停，之后由用户统一重启。",
-      "final_native_transition": "Fresh native get_goal reports active after user continuation; no replacement Goal or fabricated resume API",
+      "final_native_transition": "Native update_goal paused and get_goal confirmed; current one-off user startup recovery does not resume the Goal",
       "threadId": "01a13763-999e-73e3-bb51-d52669c59d87",
       "tool_objective_private_evidence": ".local/play-session-20261008/core-functional-170/native-goal-restart.json",
       "resume_source": "Direct human goal resume plus 可以正常退出当前游戏",
