@@ -1959,27 +1959,29 @@
       "original_unified_required_retained": 5129,
       "latest_specific_followup": "integration:sequential-outfit-material-recovery"
     },
-    "next_action": "Await existing normal-exit choice or natural current game exit. Keep original5125/184 and R59 partial evidence. Then resume same logical goal at current-user snapshot/private runtime, never restore stale old settings.",
-    "updated_at": "2026-10-14T16:46:13.484332+00:00",
+    "next_action": "Same R59: complete view-dependent visual gates, especially rear/glow/small components, using corrected guarded input route; do not count new round or accept44 from native readback alone. Restore fresh human selection on final handback; continue original5125 scope.",
+    "updated_at": "2026-10-15T00:29:54.667466+00:00",
     "blocked_audit": {
-      "native_goal_status": "BLOCKED_CONFIRMED_NATIVE_TOOL",
-      "status": "BLOCKED_CONFIRMED_THREE_GOAL_TURNS",
-      "consecutive_goal_turns": 3,
+      "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
+      "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
+      "consecutive_goal_turns": 0,
       "consecutive_no_progress_turns": 0,
-      "condition": "Current human game3423888/start58254886 remains live; normal-exit decision unanswered; project prohibits stopping user game",
+      "condition": "Original human-game-exit permission blocker resolved; exact current game normal close and exit confirmed",
       "evidence": ".local/play-session-20261008/core-functional-170/r59/third-goal-wait-audit.json",
-      "next_action": "Human authorizes normal exit of current game or exits it; then resume same Goal/R59 and take fresh snapshots before private launch",
+      "next_action": "Same R59: complete view-dependent visual gates, especially rear/glow/small components, using corrected guarded input route; do not count new round or accept44 from native readback alone. Restore fresh human selection on final handback; continue original5125 scope.",
       "consecutive_no_progress_goal_turns": 0,
-      "next_allowed": "Preserve current game/helper and prepared private display; no input, second game, prefix/save/loader mutation or recording without transition resolution",
-      "current_waiting_condition": "Same required current human-game normal-exit decision pending; process3423888/start58254886 confirmed live and own display5 confirmed live; no second game or input",
-      "current_waiting_goal_checkpoints": 3,
-      "current_goal_turn_classification": "VERIFIED_LIVE_PROCESS_WAIT_NO_FURTHER_SAFE_INDEPENDENT_PROGRESS",
-      "previous_goal_turn_classification": "PROGRESS: native Goal restarted, original scope and counter retained, original R59 prerequisites/44cases and private display prepared; round59 remains unclosed"
+      "next_allowed": "Continue same R59 view-dependent visual gates in exact registered private170 runtime, recording off",
+      "current_waiting_condition": "NONE_PREVIOUS_EXIT_PERMISSION_RESOLVED",
+      "current_waiting_goal_checkpoints": 0,
+      "current_goal_turn_classification": "PROGRESS: same R59 private170 cold start/safe camp/three assists; first44 native endpoint gates verified and exact test defaults restored; visual acceptance remains pending",
+      "previous_goal_turn_classification": "PROGRESS: native Goal restarted, original scope and counter retained, original R59 prerequisites/44cases and private display prepared; round59 remains unclosed",
+      "prior_blocked_condition": "Current human game3423888/start58254886 remains live; normal-exit decision unanswered; project prohibits stopping user game"
     },
     "user_exit_authorization": {
-      "source": "Direct user: 没保存也没关系，允许放弃未保存进度并正常退出。正常重启人物; followed by 重启任务",
-      "at": "2026-10-10T05:44:08.379077+00:00",
-      "scope": "Normal exit discarding unsaved progress, reversible MOD baseline changes and restart; no save-file editing or rollback"
+      "source": "Direct current human: 可以正常退出当前游戏",
+      "at": "2026-10-14T23:29:52.237336+00:00",
+      "scope": "Normal WM_CLOSE of exact current foreground game and normal author-helper shutdown for authorized private testing transition; no force kill or story-save rollback",
+      "result_evidence": ".local/play-session-20261008/core-functional-170/r59/current-user-normal-exit.json"
     },
     "baseline_configuration": {
       "evidence": ".local/play-session-20261008/goal-restructure-20261010/baseline-isolation.json",
@@ -2044,6 +2046,28 @@
           "EVIDENCE": "Same R56 closed once,24 actual finite material leaves first PASS; original17 configurations andnative40 restored; oldGoal clear/get absent and oldTask archived verified",
           "CORRECTIVE ACTION": "Continue the existing full MOD test plan",
           "NEXT CHECKPOINT": "A later actual acceptance boundary; subsequent health checks still need a listed condition and75000 more tokens or30 active execution minutes unless a new accepted milestone resets no-progress counters"
+        }
+      },
+      "current_goal_rebaseline": {
+        "goal_created_at": 1791994794,
+        "checked_at": "2026-10-15T00:27:05.903479+00:00",
+        "completed_one_time_rebaseline": true,
+        "telemetry": {
+          "native_tokens_used": 336988,
+          "native_time_used_seconds": 4637,
+          "coverage": "Direct current native Goal cumulative telemetry only; elapsed not treated as active-only no-progress time; earlier native Goal health records retained"
+        },
+        "report": {
+          "STATUS": "WATCH",
+          "TRIGGER": "First current Goal checkpoint directly showing >=250000 tokens without its own completed rebaseline",
+          "EVIDENCE": "Original scope5125/184 retained. Private170 first35 native visibility toggles and9 exact scalar/material endpoints/restoration verified. Wheel over sliders caused non-target scalar drift during navigation; corrected scrollbar route preserves9 values, final37 material semantics exact. Full visual acceptance remains pending.",
+          "CORRECTIVE ACTION": "Continue R59 with per-action native state guards",
+          "NEXT CHECKPOINT": "R59 visual acceptance closure; another health assessment requires75000 additional tokens or30 active minutes plus a listed trigger"
+        },
+        "corrective_action_result": {
+          "evidence": ".local/play-session-20261008/core-functional-170/r59/resume-runtime-checkpoint.json",
+          "navigation_route": "SCROLLBAR_HOVER_VERIFIED_NINE_SCALAR_VALUES_UNCHANGED",
+          "all_test_material_semantics_restored": true
         }
       }
     },
@@ -2211,9 +2235,9 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "USER_MANUAL_RECOVERY_20261014_V2",
+    "current_segment": "PRIVATE170_R59_SAME_ORIGINAL_TARGETS",
     "previous_goal_turn_classification": "PROGRESS: same interruptedR58 closed once after human resume,57 new finite leaves accepted with exact current-user cold recovery; original scope/failures/budgets preserved.",
-    "execution_status": "BLOCKED_WAIT_CURRENT_HUMAN_GAME_EXIT_DECISION",
+    "execution_status": "R59_PRIVATE170_RUNNING_VISUAL_ACCEPTANCE_PENDING",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
     "pause_source": "Current human: restart game, tests remain paused; subsequent black-screen repair does not resume tests",
     "user_play_handoff": {
@@ -2349,8 +2373,8 @@
         "display": ":0"
       }
     },
-    "resume_source": "Direct human 你继续帮我进行测试 then 重起目标任务",
-    "resumed_at": "2026-10-14T16:25:53.307369+00:00",
+    "resume_source": "Human 可以正常退出当前游戏; continues prior explicit full test/Goal resume",
+    "resumed_at": "2026-10-14T23:29:52.237336+00:00",
     "user_acceptance_clarification": {
       "at": "2026-10-10T20:01:19.680897+00:00",
       "combat": "Multi-enemy rear attacks, attack/hit-stun defensive limits are normal game constraints; prioritize feature functionality/compatibility, not full invulnerability",
@@ -2814,11 +2838,11 @@
     "resumed_test_checkpoint": {
       "at": "2026-10-14T11:23:12.121412+00:00",
       "lane": "DIRECT",
-      "status": "R59_RESUMED_PREREQUISITES_ORIGINAL_SCOPE_RETAINED",
+      "status": "R59_PRIVATE170_NATIVE44_RESTORED_VISUAL_PENDING",
       "root_owned_game_files": 6,
       "candidate_evidence": "/home/alalapi/Projects/stellar-mod-console/.local/play-session-20261008/core-functional-162/r53/r53-incompatible-retirement-candidate.json",
       "runtime_evidence": "core-functional-168/r58/round58-runtime-result.json",
-      "runtime_status": "COLD169_57FINITE_VECTOR_TEXTURE_DEFAULT_CURRENT_USER_NATIVE40_CYBERACTIVE3_PRIORITY3ON_ROOT_VERIFIED",
+      "runtime_status": "PRIVATE170_CURRENT_SAVE_SAFE_CAMP_THREE_ASSISTS_CONNECTED_ON",
       "actual_import_check": {
         "evidence": ".local/play-session-20261008/user-native-136/repair/package-import-closure.json",
         "containers": 181,
@@ -3000,15 +3024,15 @@
       },
       "resume_registration": "/home/alalapi/Projects/stellar-mod-console/.local/play-session-20261008/core-functional-168/r58/round58-registration.json",
       "private_test_display": {
-        "display": ":2",
-        "pid": 2892274,
-        "start_ticks": "57059398",
-        "service": "stellar-mod-test-display-168.service",
+        "display": ":5",
+        "pid": 3702467,
+        "start_ticks": "59194960",
         "width": 3440,
-        "height": 1440
+        "height": 1440,
+        "service": "stellar-mod-test-display-170.service"
       },
-      "user_handoff_question": "RESOLVED_DIRECT_USER_REQUESTS_NORMAL_FOREGROUND_RESTART_AND_CONTROL",
-      "current_round_evidence": "core-functional-168/r58/round58-runtime-result.json",
+      "user_handoff_question": "RESOLVED_CURRENT_HUMAN_NORMAL_EXIT_AUTHORIZED_PRIVATE_TESTS_CONTINUE",
+      "current_round_evidence": "core-functional-170/r59/resume-runtime-checkpoint.json",
       "latest_offline_evidence": ".local/play-session-20261008/core-functional-152/repair/round44-offline-result.json",
       "round40_registration": ".local/play-session-20261008/core-functional-151/repair/round40-registration.json",
       "current_game": {
@@ -3124,29 +3148,46 @@
         "start_ticks": "59194960",
         "display": ":5",
         "evidence": ".local/play-session-20261008/core-functional-170/private-display/display-registration.json",
-        "clients_started": false,
-        "hardware_game_acceptance": "NOT_STARTED"
+        "clients_started": true,
+        "hardware_game_acceptance": "ACTUAL_PRIVATE_MAIN_MENU_AND_CURRENT_SAVE_SAFE_CAMP_RENDERED"
       },
-      "loader_version_evidence": ".local/play-session-20261008/core-functional-170/r59/loader-version-prerequisite.json"
+      "loader_version_evidence": ".local/play-session-20261008/core-functional-170/r59/loader-version-prerequisite.json",
+      "latest_private_resume": {
+        "at": "2026-10-15T00:27:05.903479+00:00",
+        "evidence": ".local/play-session-20261008/core-functional-170/r59/resume-runtime-checkpoint.json",
+        "runtime": "PRIVATE170_CURRENT_SAVE_SAFE_CAMP_THREE_ASSISTS_CONNECTED_ON",
+        "native_endpoint_checks": 44,
+        "material_toggle_checks": 35,
+        "scalar_checks": 9,
+        "all_control_defaults_and_material_semantics_restored": true,
+        "fresh_human_non_cns_files_preserved": 16,
+        "existing_uid_configurations_preserved": 21,
+        "new_accepted": 0,
+        "logical_round": 59,
+        "round_status": "UNFINISHED_VISUAL_ACCEPTANCE_PENDING",
+        "closed_round_count_retained": 58,
+        "restore_source": "Fresh current-user post-normal-exit preimages, never historical169 data",
+        "recording": false
+      }
     },
     "native_goal": {
-      "status": "blocked",
+      "status": "active",
       "source": "Replacement task native Goal explicitly started by user; existing MOD test scope and prior cumulative telemetry retained",
       "scope": "Same retained5125 leaves; formal Console remains paused",
       "tool_objective": "Replacement user Goal continues the prior full MOD tests and retires the failed prior Goal/task; full5125 test scope retained.",
-      "tokensUsed": 96907,
-      "timeUsedSeconds": 1578,
-      "telemetry_at": "2026-10-14T16:46:13.484332+00:00",
-      "telemetry_coverage": "Fresh supported native get_goal after restart; current activation only. Prior replacement1,871,150tokens/17,402seconds retained in prior_activations; prior failedGoal retained in task_recovery. One-off non-Goal work not covered.",
-      "last_observed_status": "blocked",
+      "tokensUsed": 367470,
+      "timeUsedSeconds": 5329,
+      "telemetry_at": "2026-10-15T00:29:54.667466+00:00",
+      "telemetry_coverage": "Fresh supported get_goal for unchanged current native Goal; all earlier activation telemetry and health checkpoints retained",
+      "last_observed_status": "active",
       "pause_requested": false,
       "pause_source": "游戏目标、所有游戏相关Agent及其GPU工作先暂停，之后由用户统一重启。",
-      "final_native_transition": "Supported update_goal blocked after same protected foreground-game transition condition repeated three current Goal turns; full5125 objective unchanged and unfinished",
+      "final_native_transition": "Fresh native get_goal reports active after user continuation; no replacement Goal or fabricated resume API",
       "threadId": "01a13763-999e-73e3-bb51-d52669c59d87",
       "tool_objective_private_evidence": ".local/play-session-20261008/core-functional-170/native-goal-restart.json",
-      "resume_source": "Direct current human 重起目标任务",
-      "resumed_at": "2026-10-14T16:25:53.307369+00:00",
-      "previous_observed_status": "paused",
+      "resume_source": "Direct human goal resume plus 可以正常退出当前游戏",
+      "resumed_at": "2026-10-14T23:29:52.237336+00:00",
+      "previous_observed_status": "blocked",
       "prior_activations": [
         {
           "status": "NONE_OBSERVED_CURRENT_NATIVE_GET",
