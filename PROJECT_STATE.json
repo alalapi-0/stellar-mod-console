@@ -1928,8 +1928,8 @@
       "original_unified_required_retained": 5129,
       "latest_specific_followup": "integration:sequential-outfit-material-recovery"
     },
-    "next_action": "User manual play: three assists connected ON and current-pawn1.75 movement values verified; full EVEExperience disabled. Observe only this registered game for new crashes, preserve remote CLI and active PCH, do not auto-restart game. Level/respawn movement persistence remains unverified; full5125 tests stay paused.",
-    "updated_at": "2026-10-21T13:14:50.039510+00:00",
+    "next_action": "The registered20261021 game process ended; no new native crash evidence found, exit cause unknown. Own helper/observer services fully stopped and heartbeat paused. Preserve remote CLI/PCH; no automatic relaunch or unsupported repair. Await new direct owner instruction; full5125 tests remain paused.",
+    "updated_at": "2026-10-21T14:20:00.939178+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2206,7 +2206,7 @@
     },
     "current_segment": "PRIVATE170_R59_SAME_ORIGINAL_TARGETS",
     "previous_goal_turn_classification": "PROGRESS: previous continuation added8 first visual gates, frozen5125 retained and remote ebc9833 verified",
-    "execution_status": "USER_FOREGROUND_PLAY_RUNNING_CRASH_OBSERVATION_FULL_MOD_TESTS_PAUSED",
+    "execution_status": "USER_PLAY_SESSION_ENDED_FULL_MOD_TESTS_PAUSED",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
     "pause_source": "Current human: restart game, tests remain paused; subsequent black-screen repair does not resume tests",
     "user_play_handoff": {
@@ -3411,11 +3411,11 @@
     "manual_play_20261021": {
       "task_id": "STELLAR-MANUAL-PLAY-20261021",
       "owner_thread": "01a15e77-b8e5-7f91-93aa-5ec01d1d33a3",
-      "at": "2026-10-21T13:14:50.039510+00:00",
+      "at": "2026-10-21T14:20:00.939178+00:00",
       "lane": "DIRECT",
       "source": "Direct human game launch, movement acceleration, all3 assistance switches and crash observation; subsequent direct request to close unnecessary completed-task processes",
-      "status": "USER_PLAY_RUNNING_THREE_ASSISTS_READY_MOVEMENT_1P75_CURRENT_PAWN",
-      "private_evidence": ".local/play-session-20261021/handoff.json",
+      "status": "SESSION_ENDED_NO_NEW_CRASH_EVIDENCE",
+      "private_evidence": ".local/play-session-20261021/closure.json",
       "game_launch_attempted": true,
       "assistance_enabled_this_session": true,
       "movement_module_enabled": false,
@@ -3434,7 +3434,7 @@
       },
       "broad_mod_tests": "PAUSED",
       "previous_execution_status": "USER_FOREGROUND_PLAY_READY_FULL_MOD_TESTS_PAUSED",
-      "resume": "Continue user play with silent crash observation. If a new crash occurs, preserve exact evidence and diagnose related minimal repair; full5125 tests/Goal remain paused.",
+      "resume": "Await a direct owner request for any subsequent game launch. This process-specific monitor is finished; do not restart game or resume full MOD tests/Goal.",
       "game_process_movement_fields_changed": true,
       "on_disk_game_mod_changes": false,
       "agent_save_edits_or_rollback": false,
@@ -3454,7 +3454,8 @@
         "special": true,
         "Connected": true,
         "bindingReady": true,
-        "acceptance": "Live switches and actor binding; no new combat success-rate test"
+        "acceptance": "Live switches and actor binding; no new combat success-rate test",
+        "current_running": false
       },
       "movement": {
         "profile": 1.75,
@@ -3462,17 +3463,32 @@
         "full_EVEExperience_enabled": false,
         "persistence": "CURRENT_PAWN_ONLY_LEVEL_OR_RESPAWN_RESET_POSSIBLE",
         "evidence": ".local/play-session-20261021/movement-applied.json",
-        "limit": "Numerical runtime setting; no claim full visual, long-run, level-transition or combat acceptance"
+        "limit": "Numerical runtime setting; no claim full visual, long-run, level-transition or combat acceptance",
+        "current_session_active": false
       },
       "observation": {
         "service": "stellar-observer-20261021.service",
-        "status": "RUNNING",
+        "status": "SESSION_ENDED_NO_NEW_CRASH_EVIDENCE",
         "heartbeat_id": "2026-10-21",
-        "heartbeat_status": "ACTIVE",
+        "heartbeat_status": "PAUSED",
         "crashes_since_observer_start": 0,
         "recording": false,
         "input": "USER_ONLY",
-        "exit_behavior": "Capture new evidence and stop exact own helper service; no automatic game restart"
+        "exit_behavior": "Capture new evidence and stop exact own helper service; no automatic game restart",
+        "ended_evidence": ".local/play-session-20261021/closure.json"
+      },
+      "exit_result": {
+        "observation_record_at": "2026-10-21T14:17:43.873587+00:00",
+        "new_confirmed_crashes": 0,
+        "normal_or_abnormal_exit": "UNKNOWN",
+        "limit": "No new native crash XML/minidump was found by this observer; this does not establish normal exit or universal stability",
+        "own_helper_service": "STOPPED_VERIFIED",
+        "own_observer_service": "STOPPED_VERIFIED",
+        "own_registered_processes": "ALL_THREE_EXACT_IDENTITIES_GONE",
+        "remaining_service_cgroup_processes": 0,
+        "heartbeat": "PAUSED_VERIFIED",
+        "automatic_restart": false,
+        "repair_performed_at_exit": false
       }
     }
   }
