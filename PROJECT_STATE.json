@@ -1928,8 +1928,8 @@
       "original_unified_required_retained": 5129,
       "latest_specific_followup": "integration:sequential-outfit-material-recovery"
     },
-    "next_action": "Await user priority decision: preserve active PCH and defer game, or explicitly pause it before user client restart. No game launch or assist activation yet; EVEExperience remains disabled. Full5125 tests remain paused.",
-    "updated_at": "2026-10-21T12:46:55.268075+00:00",
+    "next_action": "User manual play: three assists connected ON and current-pawn1.75 movement values verified; full EVEExperience disabled. Observe only this registered game for new crashes, preserve remote CLI and active PCH, do not auto-restart game. Level/respawn movement persistence remains unverified; full5125 tests stay paused.",
+    "updated_at": "2026-10-21T13:14:50.039510+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2206,7 +2206,7 @@
     },
     "current_segment": "PRIVATE170_R59_SAME_ORIGINAL_TARGETS",
     "previous_goal_turn_classification": "PROGRESS: previous continuation added8 first visual gates, frozen5125 retained and remote ebc9833 verified",
-    "execution_status": "MANUAL_PLAY_LAUNCH_PENDING_MEMORY_FULL_MOD_TESTS_PAUSED",
+    "execution_status": "USER_FOREGROUND_PLAY_RUNNING_CRASH_OBSERVATION_FULL_MOD_TESTS_PAUSED",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
     "pause_source": "Current human: restart game, tests remain paused; subsequent black-screen repair does not resume tests",
     "user_play_handoff": {
@@ -3411,13 +3411,13 @@
     "manual_play_20261021": {
       "task_id": "STELLAR-MANUAL-PLAY-20261021",
       "owner_thread": "01a15e77-b8e5-7f91-93aa-5ec01d1d33a3",
-      "at": "2026-10-21T12:46:55.268075+00:00",
+      "at": "2026-10-21T13:14:50.039510+00:00",
       "lane": "DIRECT",
       "source": "Direct human game launch, movement acceleration, all3 assistance switches and crash observation; subsequent direct request to close unnecessary completed-task processes",
-      "status": "LAUNCH_BLOCKED_MEMORY_PENDING_ACTIVE_TASK_PRIORITY",
-      "private_evidence": ".local/play-session-20261021/preflight.json",
-      "game_launch_attempted": false,
-      "assistance_enabled_this_session": false,
+      "status": "USER_PLAY_RUNNING_THREE_ASSISTS_READY_MOVEMENT_1P75_CURRENT_PAWN",
+      "private_evidence": ".local/play-session-20261021/handoff.json",
+      "game_launch_attempted": true,
+      "assistance_enabled_this_session": true,
       "movement_module_enabled": false,
       "latest_historical_crash": {
         "record_date_jst": "2026-10-18",
@@ -3432,10 +3432,48 @@
         "shared_codex_runtime_stopped": false,
         "active_tasks_interrupted": false
       },
-      "game_mod_save_changes": false,
       "broad_mod_tests": "PAUSED",
       "previous_execution_status": "USER_FOREGROUND_PLAY_READY_FULL_MOD_TESTS_PAUSED",
-      "resume": "Resolve active task priority and restore enough memory; then native Steam launch, verify all3 live assistant bindings, restore movement acceleration with crash-specific checks, observe exact game identity without user-play input"
+      "resume": "Continue user play with silent crash observation. If a new crash occurs, preserve exact evidence and diagnose related minimal repair; full5125 tests/Goal remain paused.",
+      "game_process_movement_fields_changed": true,
+      "on_disk_game_mod_changes": false,
+      "agent_save_edits_or_rollback": false,
+      "remote_cli": "USER_EXPLICITLY_IDENTIFIED_REMOTE_CONTROL_KEEP_UNCHANGED",
+      "active_PCH": "PRESERVED_NOT_INTERRUPTED",
+      "memory_after_launch_bytes": 20346654720,
+      "resource_recheck": {
+        "previous_desktop_backend": "EXITED_BEFORE_CURRENT_RECHECK_NOT_STOPPED_BY_THIS_TASK",
+        "current_backend_pss_gib_at_diagnostic_sample": 16.12,
+        "sidebar_active_tasks": 2,
+        "meaning": "Tool process count differs from active task count; CWD groups do not prove exclusive ownership"
+      },
+      "assist": {
+        "version": "1.0.16",
+        "guard": true,
+        "dodge": true,
+        "special": true,
+        "Connected": true,
+        "bindingReady": true,
+        "acceptance": "Live switches and actor binding; no new combat success-rate test"
+      },
+      "movement": {
+        "profile": 1.75,
+        "current_pawn_fields_readback": "PASS_6_OF_6",
+        "full_EVEExperience_enabled": false,
+        "persistence": "CURRENT_PAWN_ONLY_LEVEL_OR_RESPAWN_RESET_POSSIBLE",
+        "evidence": ".local/play-session-20261021/movement-applied.json",
+        "limit": "Numerical runtime setting; no claim full visual, long-run, level-transition or combat acceptance"
+      },
+      "observation": {
+        "service": "stellar-observer-20261021.service",
+        "status": "RUNNING",
+        "heartbeat_id": "2026-10-21",
+        "heartbeat_status": "ACTIVE",
+        "crashes_since_observer_start": 0,
+        "recording": false,
+        "input": "USER_ONLY",
+        "exit_behavior": "Capture new evidence and stop exact own helper service; no automatic game restart"
+      }
     }
   }
 }
