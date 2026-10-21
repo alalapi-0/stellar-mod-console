@@ -1928,8 +1928,8 @@
       "original_unified_required_retained": 5129,
       "latest_specific_followup": "integration:sequential-outfit-material-recovery"
     },
-    "next_action": "User manual foreground play with three CombatAssistant functions connected ON and EVEExperience disabled as startup workaround. Full5125 MOD tests/R59 remain paused at unchanged210 accepted. Do not auto-restart game, re-enable EVEExperience, or continue testing without explicit user continuation.",
-    "updated_at": "2026-10-15T13:05:17.813067+00:00",
+    "next_action": "Await user priority decision: preserve active PCH and defer game, or explicitly pause it before user client restart. No game launch or assist activation yet; EVEExperience remains disabled. Full5125 tests remain paused.",
+    "updated_at": "2026-10-21T12:46:55.268075+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2206,7 +2206,7 @@
     },
     "current_segment": "PRIVATE170_R59_SAME_ORIGINAL_TARGETS",
     "previous_goal_turn_classification": "PROGRESS: previous continuation added8 first visual gates, frozen5125 retained and remote ebc9833 verified",
-    "execution_status": "USER_FOREGROUND_PLAY_READY_FULL_MOD_TESTS_PAUSED",
+    "execution_status": "MANUAL_PLAY_LAUNCH_PENDING_MEMORY_FULL_MOD_TESTS_PAUSED",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
     "pause_source": "Current human: restart game, tests remain paused; subsequent black-screen repair does not resume tests",
     "user_play_handoff": {
@@ -3407,6 +3407,35 @@
       "new_goal_seconds_at_checkpoint": 15387,
       "existing_health_rebaseline_and_watch_preserved": true,
       "old_goal_objective_private_evidence": ".local/play-session-20261008/core-functional-166/r56-recovery/old-goal-clear-receipt.json"
+    },
+    "manual_play_20261021": {
+      "task_id": "STELLAR-MANUAL-PLAY-20261021",
+      "owner_thread": "01a15e77-b8e5-7f91-93aa-5ec01d1d33a3",
+      "at": "2026-10-21T12:46:55.268075+00:00",
+      "lane": "DIRECT",
+      "source": "Direct human game launch, movement acceleration, all3 assistance switches and crash observation; subsequent direct request to close unnecessary completed-task processes",
+      "status": "LAUNCH_BLOCKED_MEMORY_PENDING_ACTIVE_TASK_PRIORITY",
+      "private_evidence": ".local/play-session-20261021/preflight.json",
+      "game_launch_attempted": false,
+      "assistance_enabled_this_session": false,
+      "movement_module_enabled": false,
+      "latest_historical_crash": {
+        "record_date_jst": "2026-10-18",
+        "seconds_since_start": 1245,
+        "error": "GameThread timed out waiting for RenderThread after 120 seconds",
+        "cause": "UNKNOWN; cannot equate with older Lua access violations"
+      },
+      "cleanup": {
+        "old_game_helper_service_stopped": true,
+        "exact_processes_verified_gone": 5,
+        "prior_service_memory_current_bytes": 178446336,
+        "shared_codex_runtime_stopped": false,
+        "active_tasks_interrupted": false
+      },
+      "game_mod_save_changes": false,
+      "broad_mod_tests": "PAUSED",
+      "previous_execution_status": "USER_FOREGROUND_PLAY_READY_FULL_MOD_TESTS_PAUSED",
+      "resume": "Resolve active task priority and restore enough memory; then native Steam launch, verify all3 live assistant bindings, restore movement acceleration with crash-specific checks, observe exact game identity without user-play input"
     }
   }
 }
