@@ -1928,8 +1928,8 @@
       "original_unified_required_retained": 5129,
       "latest_specific_followup": "integration:sequential-outfit-material-recovery"
     },
-    "next_action": "The registered20261021 game process ended; no new native crash evidence found, exit cause unknown. Own helper/observer services fully stopped and heartbeat paused. Preserve remote CLI/PCH; no automatic relaunch or unsupported repair. Await new direct owner instruction; full5125 tests remain paused.",
-    "updated_at": "2026-10-21T14:20:00.939178+00:00",
+    "next_action": "20261022 native launch exited during initial character load. No OOM evidence; matched NVIDIA Xid109 and a secondary Steam-network shutdown assertion preserved; original trigger and specific MOD cause remain unknown. One registered launch only; own helper stopped, remote CLI/PCH preserved. Next useful evidence is Proton/Vulkan diagnostic output with delayed helper attachment under a separate registered launch; no blind driver reset/update, cache purge, loader update, save rollback or automatic retry.",
+    "updated_at": "2026-10-22T14:57:27.700174+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2206,7 +2206,7 @@
     },
     "current_segment": "PRIVATE170_R59_SAME_ORIGINAL_TARGETS",
     "previous_goal_turn_classification": "PROGRESS: previous continuation added8 first visual gates, frozen5125 retained and remote ebc9833 verified",
-    "execution_status": "USER_PLAY_SESSION_ENDED_FULL_MOD_TESTS_PAUSED",
+    "execution_status": "USER_STARTUP_FAILED_DIAGNOSIS_SAVED_FULL_MOD_TESTS_PAUSED",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
     "pause_source": "Current human: restart game, tests remain paused; subsequent black-screen repair does not resume tests",
     "user_play_handoff": {
@@ -3490,6 +3490,54 @@
         "automatic_restart": false,
         "repair_performed_at_exit": false
       }
+    },
+    "manual_play_20261022": {
+      "task_id": "STELLAR-MANUAL-PLAY-20261022",
+      "owner_thread": "01a15e77-b8e5-7f91-93aa-5ec01d1d33a3",
+      "at": "2026-10-22T14:57:27.700174+00:00",
+      "lane": "DIRECT",
+      "source": "Direct human game launch plus functional assists, resource headroom check and subsequent immediate-exit diagnosis request",
+      "status": "STARTUP_EXIT_GPU_TIMEOUT_EVENT_ORIGINAL_CAUSE_UNKNOWN",
+      "launch_attempts": 1,
+      "private_evidence": ".local/play-session-20261022/startup-diagnosis.json",
+      "launch_route": "Existing native Steam3489700",
+      "game_build": "24463856",
+      "resources": {
+        "available_before_gib": 17.77,
+        "native_dump_game_peak_rss_gib": 7.32,
+        "OOM_evidence_in_failure_window": false,
+        "other_task_or_remote_CLI_cleanup": false
+      },
+      "failure": {
+        "user_reported_immediate_exit": true,
+        "confirmed_GPU_event": "NVIDIA Xid109 CTX SWITCH TIMEOUT matched to the exact game PID",
+        "driver": "595.91.07",
+        "event_at_jst": "2026-10-22T23:48:18+09:00",
+        "fresh_unreal_crash_context": false,
+        "native_Steam_dump": "Nonempty; networking shutdown assertion in crashhandler.so, not an original game fault call chain",
+        "original_trigger": "UNKNOWN; no specific MOD, Proton component, driver defect or hardware failure attribution",
+        "failure_fingerprint": "Steam3489700/build24463856/NVIDIA595.91.07/native-launch1/first-character-load/helper1.0.16: disconnect followed by Steam shutdown assertion and matched Xid109"
+      },
+      "assistance": {
+        "version": "1.0.16",
+        "three_switches_requested_ON": true,
+        "handoff_ready_verified": false,
+        "current_running": false,
+        "EVEExperience_enabled": false,
+        "movement_1p75_applied": false
+      },
+      "cleanup": {
+        "own_helper_service_stopped_and_empty": true,
+        "own_lifecycle_initialization_race": "Detected because game exited before lifecycle registration; private guard repaired and already-inactive-helper branch checked",
+        "game_crash_fix_claimed": false,
+        "game_or_mod_files_changed": false,
+        "agent_save_edit_or_rollback": false,
+        "driver_or_system_changes": false,
+        "automatic_relaunch": false
+      },
+      "broad_mod_tests": "PAUSED",
+      "observation_heartbeat": "PREVIOUS_SESSION_REMAINS_PAUSED; no new monitor created",
+      "next_evidence": "A separately registered launch with Proton/Vulkan diagnostic logging and delayed helper attachment; preserve original MOD configuration and save. No broad cache purge, driver switch, GPU reset or loader upgrade is justified by current evidence alone."
     }
   }
 }
