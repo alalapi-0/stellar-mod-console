@@ -1928,8 +1928,8 @@
       "original_unified_required_retained": 5129,
       "latest_specific_followup": "integration:sequential-outfit-material-recovery"
     },
-    "next_action": "Attempt2 native Steam launch remains alive with delayed helper attachment; guard/dodge/special switches ON but player.scene-pending in LOBBY. Wait for owner Continue, then verify Connected/bindingReady before guarded current-pawn movement. Preserve attempt1 matched Xid109 and secondary Steam shutdown dump; original cause unknown. Full MOD tests/Goal and old observation heartbeat stay paused.",
-    "updated_at": "2026-10-22T15:07:41.812166+00:00",
+    "next_action": "Attempt2 is in an active game scene with Connected/bindingReady and guard/dodge/special ON; current-pawn 1.75 movement profile applied and six fields independently reread. Owner play handoff; first-launch Xid109 plus secondary Steam shutdown assertion preserved, initiating cause still UNKNOWN. Movement can reset after level/respawn; long-term/visual/gameplay acceptance unverified. Full tests/Goal and Oct21 heartbeat remain paused; only own-helper exit cleanup active.",
+    "updated_at": "2026-10-22T15:12:11.356072+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2206,7 +2206,7 @@
     },
     "current_segment": "PRIVATE170_R59_SAME_ORIGINAL_TARGETS",
     "previous_goal_turn_classification": "PROGRESS: previous continuation added8 first visual gates, frozen5125 retained and remote ebc9833 verified",
-    "execution_status": "DIAGNOSTIC_TITLE_RUNNING_USER_SCENE_PENDING_FULL_MOD_TESTS_PAUSED",
+    "execution_status": "USER_PLAY_HANDOFF_THREE_ASSISTS_AND_1P75_VERIFIED_FULL_MOD_TESTS_PAUSED",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
     "pause_source": "Current human: restart game, tests remain paused; subsequent black-screen repair does not resume tests",
     "user_play_handoff": {
@@ -3494,10 +3494,10 @@
     "manual_play_20261022": {
       "task_id": "STELLAR-MANUAL-PLAY-20261022",
       "owner_thread": "01a15e77-b8e5-7f91-93aa-5ec01d1d33a3",
-      "at": "2026-10-22T15:07:41.812166+00:00",
+      "at": "2026-10-22T15:12:11.356072+00:00",
       "lane": "DIRECT",
       "source": "Direct human game launch plus functional assists, resource headroom check and subsequent immediate-exit diagnosis request",
-      "status": "DIAGNOSTIC_ATTEMPT2_TITLE_ALIVE_THREE_ASSIST_SWITCHES_ON_WAITING_USER_SCENE",
+      "status": "ATTEMPT2_ACTIVE_SCENE_THREE_ASSISTS_CONNECTED_1P75_MOVEMENT_READBACK",
       "launch_attempts": 2,
       "private_evidence": ".local/play-session-20261022/startup-diagnosis.json",
       "launch_route": "Existing native Steam3489700",
@@ -3540,25 +3540,28 @@
       },
       "broad_mod_tests": "PAUSED",
       "observation_heartbeat": "PREVIOUS_SESSION_REMAINS_PAUSED; no new monitor created",
-      "next_evidence": "Attempt2 waiting on owner scene load. Defer movement write until fresh active-scene binding; first-launch initiating fault remains unknown.",
+      "next_evidence": "Further failure evidence only if this exact game session fails; attempt2 survival with deferred helper attachment is not a causal proof or a complete crash fix.",
       "diagnostic_attempt2": {
-        "at": "2026-10-22T15:07:41.812166+00:00",
+        "at": "2026-10-22T15:12:11.356072+00:00",
         "private_evidence": ".local/play-session-20261022/diagnostic-attempt2/diagnostic-handoff.json",
         "game_identity": "Exact private PID/start_ticks registration; not inherited from Oct21 or attempt1",
         "controlled_difference": "Deferred CombatAssistant attachment after title scene became stable; no additional Proton/Vulkan logging enabled",
-        "status": "ALIVE_IN_LOBBY_TITLE",
+        "status": "ACTIVE_SCENE_ALIVE_HELPER_READY",
         "three_assist_switches_ON": true,
-        "connected": false,
-        "bindingReady": false,
-        "binding_code": "player.scene-pending",
-        "movement_1p75_applied": false,
+        "connected": true,
+        "bindingReady": true,
+        "binding_code": "features.ready",
+        "movement_1p75_applied": true,
         "fresh_GPU_Xid_or_OOM": false,
         "available_memory_after_attach_gib": 10.42,
         "own_helper_cleanup": "Exact helper lifecycle active; no game restart, recording or crash heartbeat",
         "game_mod_save_or_system_files_changed": false,
         "agent_input_or_gameplay": false,
-        "acceptance_limit": "Startup/title process and switches only; active scene, gameplay function, speed, visual result and long-term stability not accepted",
-        "next_action": "Owner selects Continue; then verify scene binding before applying the current-pawn-only 1.75 movement profile"
+        "acceptance_limit": "Native active scene, helper connected/bindingReady and three ON switches plus exact six movement field readback verified. No agent gameplay, visual acceptance, long-term stability or initiating crash cause proved.",
+        "next_action": "Owner play handoff; preserve any new exact-session failure evidence before related diagnosis; no automatic relaunch or broader MOD tests",
+        "movement_six_fields_fresh_readback": true,
+        "movement_scope": "Current pawn only; level change or respawn may reset the profile",
+        "available_memory_latest_gib": 8.39
       }
     }
   }
