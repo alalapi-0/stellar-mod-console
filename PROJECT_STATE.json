@@ -1928,8 +1928,8 @@
       "original_unified_required_retained": 5129,
       "latest_specific_followup": "integration:sequential-outfit-material-recovery"
     },
-    "next_action": "20261022 native launch exited during initial character load. No OOM evidence; matched NVIDIA Xid109 and a secondary Steam-network shutdown assertion preserved; original trigger and specific MOD cause remain unknown. One registered launch only; own helper stopped, remote CLI/PCH preserved. Next useful evidence is Proton/Vulkan diagnostic output with delayed helper attachment under a separate registered launch; no blind driver reset/update, cache purge, loader update, save rollback or automatic retry.",
-    "updated_at": "2026-10-22T14:57:27.700174+00:00",
+    "next_action": "Attempt2 native Steam launch remains alive with delayed helper attachment; guard/dodge/special switches ON but player.scene-pending in LOBBY. Wait for owner Continue, then verify Connected/bindingReady before guarded current-pawn movement. Preserve attempt1 matched Xid109 and secondary Steam shutdown dump; original cause unknown. Full MOD tests/Goal and old observation heartbeat stay paused.",
+    "updated_at": "2026-10-22T15:07:41.812166+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2206,7 +2206,7 @@
     },
     "current_segment": "PRIVATE170_R59_SAME_ORIGINAL_TARGETS",
     "previous_goal_turn_classification": "PROGRESS: previous continuation added8 first visual gates, frozen5125 retained and remote ebc9833 verified",
-    "execution_status": "USER_STARTUP_FAILED_DIAGNOSIS_SAVED_FULL_MOD_TESTS_PAUSED",
+    "execution_status": "DIAGNOSTIC_TITLE_RUNNING_USER_SCENE_PENDING_FULL_MOD_TESTS_PAUSED",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
     "pause_source": "Current human: restart game, tests remain paused; subsequent black-screen repair does not resume tests",
     "user_play_handoff": {
@@ -3494,11 +3494,11 @@
     "manual_play_20261022": {
       "task_id": "STELLAR-MANUAL-PLAY-20261022",
       "owner_thread": "01a15e77-b8e5-7f91-93aa-5ec01d1d33a3",
-      "at": "2026-10-22T14:57:27.700174+00:00",
+      "at": "2026-10-22T15:07:41.812166+00:00",
       "lane": "DIRECT",
       "source": "Direct human game launch plus functional assists, resource headroom check and subsequent immediate-exit diagnosis request",
-      "status": "STARTUP_EXIT_GPU_TIMEOUT_EVENT_ORIGINAL_CAUSE_UNKNOWN",
-      "launch_attempts": 1,
+      "status": "DIAGNOSTIC_ATTEMPT2_TITLE_ALIVE_THREE_ASSIST_SWITCHES_ON_WAITING_USER_SCENE",
+      "launch_attempts": 2,
       "private_evidence": ".local/play-session-20261022/startup-diagnosis.json",
       "launch_route": "Existing native Steam3489700",
       "game_build": "24463856",
@@ -3516,7 +3516,8 @@
         "fresh_unreal_crash_context": false,
         "native_Steam_dump": "Nonempty; networking shutdown assertion in crashhandler.so, not an original game fault call chain",
         "original_trigger": "UNKNOWN; no specific MOD, Proton component, driver defect or hardware failure attribution",
-        "failure_fingerprint": "Steam3489700/build24463856/NVIDIA595.91.07/native-launch1/first-character-load/helper1.0.16: disconnect followed by Steam shutdown assertion and matched Xid109"
+        "failure_fingerprint": "Steam3489700/build24463856/NVIDIA595.91.07/native-launch1/first-character-load/helper1.0.16: disconnect followed by Steam shutdown assertion and matched Xid109",
+        "applies_to": "Attempt1 only; exact evidence preserved; attempt2 title survival does not identify cause"
       },
       "assistance": {
         "version": "1.0.16",
@@ -3524,7 +3525,8 @@
         "handoff_ready_verified": false,
         "current_running": false,
         "EVEExperience_enabled": false,
-        "movement_1p75_applied": false
+        "movement_1p75_applied": false,
+        "applies_to": "Attempt1 historical results; current attempt2 reported separately below"
       },
       "cleanup": {
         "own_helper_service_stopped_and_empty": true,
@@ -3533,11 +3535,31 @@
         "game_or_mod_files_changed": false,
         "agent_save_edit_or_rollback": false,
         "driver_or_system_changes": false,
-        "automatic_relaunch": false
+        "automatic_relaunch": false,
+        "applies_to": "Attempt1 cleanup only; attempt2 owns a separate helper and lifecycle"
       },
       "broad_mod_tests": "PAUSED",
       "observation_heartbeat": "PREVIOUS_SESSION_REMAINS_PAUSED; no new monitor created",
-      "next_evidence": "A separately registered launch with Proton/Vulkan diagnostic logging and delayed helper attachment; preserve original MOD configuration and save. No broad cache purge, driver switch, GPU reset or loader upgrade is justified by current evidence alone."
+      "next_evidence": "Attempt2 waiting on owner scene load. Defer movement write until fresh active-scene binding; first-launch initiating fault remains unknown.",
+      "diagnostic_attempt2": {
+        "at": "2026-10-22T15:07:41.812166+00:00",
+        "private_evidence": ".local/play-session-20261022/diagnostic-attempt2/diagnostic-handoff.json",
+        "game_identity": "Exact private PID/start_ticks registration; not inherited from Oct21 or attempt1",
+        "controlled_difference": "Deferred CombatAssistant attachment after title scene became stable; no additional Proton/Vulkan logging enabled",
+        "status": "ALIVE_IN_LOBBY_TITLE",
+        "three_assist_switches_ON": true,
+        "connected": false,
+        "bindingReady": false,
+        "binding_code": "player.scene-pending",
+        "movement_1p75_applied": false,
+        "fresh_GPU_Xid_or_OOM": false,
+        "available_memory_after_attach_gib": 10.42,
+        "own_helper_cleanup": "Exact helper lifecycle active; no game restart, recording or crash heartbeat",
+        "game_mod_save_or_system_files_changed": false,
+        "agent_input_or_gameplay": false,
+        "acceptance_limit": "Startup/title process and switches only; active scene, gameplay function, speed, visual result and long-term stability not accepted",
+        "next_action": "Owner selects Continue; then verify scene binding before applying the current-pawn-only 1.75 movement profile"
+      }
     }
   }
 }
