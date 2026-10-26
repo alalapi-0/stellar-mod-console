@@ -1542,20 +1542,20 @@
       "manifest_sha256": "c96c961f0c3bf417e366d2206f2f8509bc1c6d5819b968763406a12adb9187c3",
       "target_identity_sha256": "955965cda7371a7ff208fdf736e19a1136e0628cf77a644ac49b5d4323aa9a92",
       "enumeration_validation": ".local/play-session-20261026/grouped-qa/risk-groups-r69/result.json",
-      "round_key": "cns-close-settled-camera-observation-r70-20261026",
-      "round_status": "INTERRUPTED_CLOSED_OWNER_PAUSE_MANUAL_RESTART_READY",
-      "count": 70,
+      "round_key": "cns-native-material-return-r71-20261026",
+      "round_status": "CLOSED_FINITE_EVIDENCE_GENERAL_RECURRENCE_OPEN",
+      "count": 71,
       "coverage": "since_baseline",
-      "last_seq": 70,
-      "last_key": "cns-close-settled-camera-observation-r70-20261026",
+      "last_seq": 71,
+      "last_key": "cns-native-material-return-r71-20261026",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": null,
       "evidence_change_percentage_points": 0,
-      "scope_change_percentage_points": null,
-      "change_rule": "R70testinterrupted bydirectowner; no oldleafstatus/PASS changes. Manualownerprofile adds3252UIonly; Goalstayspaused andcurrentcompletionUNKNOWN.",
-      "round_start_commit": "06f5a2ec8e2a536661da221955155d9a1d57d482",
+      "scope_change_percentage_points": 0,
+      "change_rule": "Two new distinct currentowner Body mesh selections plus native materialreturn evidence; no leafPASS/manifest/status/denominator changes.",
+      "round_start_commit": "7c243d84ca2a013ba27b51873cfbbe7bff8914c6",
       "scope_change": "Manualplay adds3252UItriplet; onfutureexplicitresume reconcile onlyrelevantUIdependencies. No reset of original5129/effective5125 inventory or inheritedcore/geometryevidence.",
-      "milestone_change": "NativeGoalpaused andnewcurrentusergame ready with3assist+guarded1.75; targetedUIpriority package installedandrecoverable. Clothingrecurrence/Lilyworldskin remainopen.",
+      "milestone_change": "Currentowner preferences exact CNSsave roundtrip; finite native returns match effective meshmaterials; owner recurrence/rootcause remainsOPEN.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1902,7 +1902,7 @@
         "appearance:Repacked ExtraMod333/choice-0"
       ],
       "remaining_rounds": "UNKNOWN",
-      "remaining_rounds_confidence": "UNKNOWN; Goalpaused and total structural scope unresolved",
+      "remaining_rounds_confidence": "UNKNOWN",
       "window": [],
       "prediction_reason": "Currentmergedcompatibility units notfrozen; oldparameter throughputnotapplicable.",
       "original_unified_required_retained": 5129,
@@ -1995,8 +1995,8 @@
         "evidence": ".local/play-session-20261026/grouped-qa/risk-groups-r69/result.json"
       }
     },
-    "next_action": "Ownerplays. NativeGoal/tests remainpaused. Resume/debug onlydirecthumaninstruction; clothingrecurrence/Lilyworldskin unresolved.",
-    "updated_at": "2026-10-26T13:28:43.489656+00:00",
+    "next_action": "Batch new unique remembered CNSBody mesh selections through existing original callbacks; reuse old accepted geometry/core and stop at actual mismatch/crash.",
+    "updated_at": "2026-10-26T15:16:22.005773+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2107,7 +2107,7 @@
         }
       }
     },
-    "round_closure_at": "2026-10-26T13:28:43.489656+00:00",
+    "round_closure_at": "2026-10-26T15:18:08.560686+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 14,
       "new_confirmed_this_round": 0,
@@ -2271,9 +2271,9 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "USER_PLAY_FOREGROUND_20261026_RESTART2_GOAL_PAUSED",
-    "previous_goal_turn_classification": "PROGRESS_INTERRUPTED_BY_OWNER_NATIVE_PAUSE_WITH_MANUAL_PRIORITY_FIX_AND_FUNCTIONAL_RESTART",
-    "execution_status": "PAUSED_BY_OWNER_USER_PLAY_READY",
+    "current_segment": "R71_FINITE_NATIVE_MATERIAL_RETURN_CLOSED",
+    "previous_goal_turn_classification": "PROGRESS_OWNER_RESUME_FINITE_NATIVE_MATERIAL_RETURN",
+    "execution_status": "ACTIVE_READY_NEXT_GROUPED_BATCH",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
     "pause_source": "Current human: restart game, tests remain paused; subsequent black-screen repair does not resume tests",
     "user_play_handoff": {
@@ -3282,11 +3282,11 @@
     },
     "native_goal": {
       "threadId": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
-      "status": "paused",
-      "tokensUsed": 8133083,
-      "timeUsedSeconds": 43860,
+      "status": "active",
+      "tokensUsed": 8293597,
+      "timeUsedSeconds": 45892,
       "createdAt": 1792972357,
-      "telemetry_at": "2026-10-26T12:25:57Z",
+      "telemetry_at": "2026-10-26T15:16:22.005773+00:00",
       "telemetry_coverage": "Directnative cumulative currentactivation; noquota set/increased; historical logical lifetimecostUNKNOWN.",
       "same_objective_verified": true
     },
@@ -3665,8 +3665,8 @@
       "task_id": "stellar-mod-compatibility-core-first-20261010",
       "execution_source": "Direct owner native Goal objective submitted in thread 01a1757a-f84c-72b0-97bd-44ab8c53eb53 on 2026-10-26; execute MOD_TEST_REPAIR_PLAN_20261025 grouped QA",
       "owner_thread": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
-      "lane": "REVIEWED",
-      "status": "PAUSED_BY_OWNER_USER_PLAY_RESTART2_READY",
+      "lane": "DIRECT",
+      "status": "ACTIVE_READY_NEXT_GROUPED_BATCH",
       "owned_scope": [
         "PROJECT_STATE.json#mod_compatibility_restructure current grouped execution/progress projection; old paused console and pre-existing manual-play deltas remain separate",
         ".local/play-session-20261026/grouped-qa",
@@ -3695,10 +3695,10 @@
         "remaining_scope_unchanged": true
       },
       "test_save_boundary": "No independent story-save isolation established; forbid death/story/reward/travel tests and save rollback. Initial private launch/menu checks only; inspect scene before safe reversible movement/outfit checks.",
-      "round_accounting": "R70entry observerfailure/readonlyentry, directownerpause,3252manualpriorityfix andtwoowner-authorized restarts areone interrupted/evolvedround; not countedperrestart/tool/review/usersteering.",
-      "next_action": "Ownerplays. NativeGoal/tests remainpaused. Resume/debug onlydirecthumaninstruction; clothingrecurrence/Lilyworldskin unresolved.",
+      "round_accounting": "R71 resumed target, finite mixed CNS/native test, inputdiagnosis andcleanup one closedround; no peroutfit/tool count.",
+      "next_action": "Batch new unique remembered CNSBody mesh selections through existing original callbacks; reuse old accepted geometry/core and stop at actual mismatch/crash.",
       "at": "2026-10-25T23:55:06.640620+00:00",
-      "lane_reason": "New ordered material/hidden-state compatibility evidence requires independent scoped judgement oncecoherent.",
+      "lane_reason": "R71 changes no persistent behavior/source; bounded original-callback selections and read-only scoped material checks, no new allgarment acceptance.",
       "findings": {
         "v3": "Confirmed Lua index13 reads native slot12; no successful native-body binding. Current fix readsLua14.",
         "v4": "Real native cold-load false positive and Actor-deselection invisible-body regressions; FAIL preserved.",
@@ -3710,7 +3710,7 @@
         "v8": "Fresh independent PASS for current BS_ alias transition/native-menu scope; full S1/Goal incomplete"
       },
       "candidate_sha256": "5679d28fe2e6719314c45e6709a99c4920c866a24b21953dd66e39a05dae4e12",
-      "updated_at": "2026-10-26T13:28:43.489656+00:00",
+      "updated_at": "2026-10-26T15:16:22.005773+00:00",
       "grouped_assertions": {
         "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
         "sha256": "a800adc5603d0edb2747f20dc335cc109dd88357033ddfcdadb856aac810b618",
@@ -3724,20 +3724,17 @@
       },
       "hair_original_context": "Exact BUG-HAIR-20261025-01 context recovered read-only from native crash directory; private pointer .local/play-session-20261026/grouped-qa/hair-incident-context-recovery.json; GameThread AV verified, cause unknown",
       "runtime_ownership": {
-        "evidence": ".local/manual-play-20261026/restart2/lifecycle-registration.json",
-        "private_test_game": "R70privategame/helper exited0; temporaryQA/suffixremoved afterexacthashcheck; camera cycleinterrupted.",
-        "current_game": "Userforeground nativeSteam game retained forowner; currentidentityprivate, USER_ONLY inputguardset.",
-        "helper": "Exactlyonecurrent CombatAssistant1.0.16 instance Connected/bindingReady and3ON; owner-requestedservice retained.",
-        "movement": "Unchangedv3 guarded1.75service bound tocurrentPawn,6freshfields match; retained forowner; no newmovementtest.",
-        "lifecycle": "Taskownedcleanup waits exactgameexit thenstops onlyits exacthelperunits, no recording/gameinput/relaunch.",
-        "private_display": "Previousprivate:2 retainedforpausedGoal, no privategame running.",
-        "children": "Alldispatchedread-onlyreviews completedandcollected; no activedescendants.",
-        "temporary_resources": "Sixpriorityreference symlinks removed; added3252threefiles retained asownerselectedassets."
+        "game": "R71exact1619601/start162296893 andruntime1619141 ended; nativewrapper0.",
+        "helper": "Explicit own shutdownCLI0; startwrapper143; no activeowntrainer.",
+        "movement": "Exact own session73660 stopped0 beforegameclosed.",
+        "bridge": "OwnQA2filesremovedafterhashcheck; only exact appendedsuffixtruncated to original2d4e87...",
+        "private_display": "Owned:2 retained for activeGoal; physicalforeground untouched.",
+        "children": "No new descendants dispatched in R71."
       },
       "candidate_source": "src/runtime/NativeOutfitOwnership.lua",
-      "latest_runtime_result": ".local/play-session-20261026/grouped-qa/sequence-material-r68/runtime-result.json",
-      "last_material_progress": "Ownerpause honored via nativepaused tool. Missing3252UItriplet installedpriority3; all27legacySHA1verified,26offlineUIprovidersselected, nativecontainer adoptionseen. Currentsecondnativegame/3assistbinding/1.75profile verified andUSER_ONLY; no compatibilityrootcausePASS.",
-      "round_key": "cns-close-settled-camera-observation-r70-20261026",
+      "latest_runtime_result": ".local/play-session-20261026/grouped-qa/native-return-r71/result.json",
+      "last_material_progress": "Two additional currentowner unique meshes plus native return effective material/hidden checks; exact CNSsave roundtrip, no new crash, generalrecurrence OPEN.",
+      "round_key": "cns-native-material-return-r71-20261026",
       "round_closed_once": true,
       "previous_current_projection_ref": ".local/play-session-20261026/grouped-qa/PROJECT_STATE.entry.json",
       "independent_review": {
@@ -3755,21 +3752,13 @@
         ]
       },
       "git_delivery": {
-        "status": "SOURCE_DELIVERED_TO_IMPLEMENTATION_BRANCH",
         "target": "codex/grouped-mod-qa-20261026",
-        "policy": "Onlysanitized ownedState summary; source/game/UIassets/logs/identity/auth remainlocal. No automaticmainmerge.",
-        "entry_verified_head": "06f5a2ec8e2a536661da221955155d9a1d57d482",
-        "previous_source_commit": "9efb8fc2ca09d7bc3e7dd28d016f7d70647c87a9",
-        "remote_verified": true,
-        "closure_evidence": ".local/manual-play-20261026/round-delivery.json",
-        "preserved_pre_existing": [
-          "Seven earlier handoff/manualplay/roundstatus groups",
-          "Two unrelated/privateplanningfiles and13researchfiles"
-        ],
-        "source_commit": "b4b96da5d201b9bf12c71c767035c3909c862bdd",
-        "verified_source_ref": "refs/heads/codex/grouped-mod-qa-20261026",
-        "main_unchanged": "aafc4b0fcf94bdc73b8e6810971281953f945fe9",
-        "metadata_note": "SameinterruptedR70/manualhandoffclose; exactfinalmetadataHEAD inignoredreceipt avoids self-reference."
+        "status": "READY_OWNED_STATE_ONLY",
+        "main_merge_authorized": false,
+        "retained_groups": "Seven older protectedState groups; docs/pch-rebuild-20261020 and research/p2s-resource-analysis remain outside ownedscope.",
+        "entry_verified_head": "7c243d84ca2a013ba27b51873cfbbe7bff8914c6",
+        "closure_evidence": ".local/play-session-20261026/grouped-qa/native-return-r71/round-delivery.json",
+        "policy": "Owner authorized implementation branch only; no mainmerge; raw game/log/identity/assets remain ignored. Exact delivered commit is in ignored receipt to avoid selfreference."
       },
       "entry_process_audit": "No SB.exe or SB-Win64-Shipping.exe live; previous hair session PID1913315 absent; lifecycle-end confirms own helper stopped. Steam provider retained, no input granted to foreground.",
       "entry_goal_turn_classification": "FIRST_ACTIVATION; no prior turn in this new native Goal",
@@ -3854,7 +3843,7 @@
           "read_only": true
         }
       },
-      "closed_at": "2026-10-26T13:28:43.489656+00:00",
+      "closed_at": "2026-10-26T15:16:22.005773+00:00",
       "wardrobe_semantic": {
         "round_key": "grouped-cns-body-semantic-20261026",
         "source": "Continuation of active nativeGoal plus owner REA/nonvisualoperation steering",
@@ -4043,7 +4032,7 @@
           "metadata_note": "Source commit identity is recorded here; exact final metadata HEAD verification is in the existing ignored receipt to avoid self-reference."
         }
       },
-      "current_result_ref": "camera_recovery_r70",
+      "current_result_ref": "native_return_r71",
       "piercing_delta": {
         "round_key": "aik-piercing-delta-20261026",
         "status": "CLOSED_SCOPED_PROGRESS_GOAL_CONTINUES",
@@ -5090,6 +5079,32 @@
           "main_unchanged": "aafc4b0fcf94bdc73b8e6810971281953f945fe9",
           "metadata_note": "SameinterruptedR70/manualhandoffclose; exactfinalmetadataHEAD inignoredreceipt avoids self-reference."
         }
+      },
+      "native_return_r71": {
+        "status": "PASS_FINITE_MATERIAL_RETURN_GENERAL_RECURRENCE_OPEN",
+        "at": "2026-10-26T14:52:14.366260+00:00",
+        "execution_source": "Direct owner continue previous goal after explicit pause; native Goal verified active; previous user game and helpers absent.",
+        "lane": "DIRECT",
+        "owned_scope": [
+          "PROJECT_STATE.json mod_compatibility_restructure current R71 fields",
+          ".local/play-session-20261026/grouped-qa/native-return-r71",
+          ".local/play-session-20261026/grouped-qa/semantic-17",
+          "Exact AgentSessionQA directory and appended mods suffix only",
+          "Private runtime/input/helpers exact newly bound identities"
+        ],
+        "entry_selection_sha256": "0ef54f650533d84ace32b44f3bb2c5bb292e0b9f71e68ffcff40247ee3361242",
+        "candidate": ".local/play-session-20261026/grouped-qa/native-return-r71/qa-candidate.json",
+        "acceptance": "Actual finite custom/native switch with active material/hidden/image readback; no exhaustive color/core reruns; preserve owner nonbody choices and story progress.",
+        "failure_open": "Owner recurring clothing incompatibility; no new crash context; root cause UNKNOWN",
+        "result_ref": ".local/play-session-20261026/grouped-qa/native-return-r71/result.json",
+        "closed_at": "2026-10-26T15:16:22.005773+00:00",
+        "material_snapshot_count": 4,
+        "cns_full_save_preserved": true,
+        "crash_contexts": 23,
+        "limitation": "No generalrecurrence reproduction or newrepair; finalnativecosmeticBS48 vs entryGreenSuit; exactCNS roundtrip.",
+        "runtime_exit": 0,
+        "helper_wrapper_exit": 143,
+        "movement_exit": 0
       }
     },
     "owner_acceptance_20261026": {
