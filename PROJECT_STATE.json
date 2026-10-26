@@ -1508,7 +1508,7 @@
     },
     "progress": {
       "scope_version": "compatibility-risk-groups-v6-owner-20261026",
-      "completion_scope": "RETAINED_INDEPENDENT_TESTS_AFTER_EXPLICIT_FAVOURITE_EDITION_SELECTION_WITH_SCOPE_GATES",
+      "completion_scope": "PLAYABLE_CORE_AND_GROUPED_COMPATIBILITY_WITH_ORDERED_SWITCH_CRASH_AND_RECOVERY",
       "effective_accepted": null,
       "effective_required": null,
       "completion_percent": null,
@@ -3654,7 +3654,7 @@
         "history": "Prior activation metadata retained at historical_native_goal_before_grouped_qa_20261026; logical task counters not reset"
       },
       "protected": "Old console/Flatpak/Loop/admin work remains paused; no foreground takeover, account/Cloud/global changes, story progression or save rollback; EVEExperience stays off. Existing unrelated pending work preserved.",
-      "acceptance": "Current exact versions: real movement+interaction persistence+native lock+new Pawn; native/CNS ownership restoration; shared input and current compatible core, then original 5125 leaves by valid assertion reuse and unique deltas.",
+      "acceptance": "Current owner compatibility-risk policy at owner_acceptance_20261026 controls: reusevalidsharedcore, mergegarment colors/options/animationconsumers, prioritize orderedoutfit failures andexplicit haircrashrepro. Original5125 inventory ishistory, notcurrent completion denominator.",
       "baseline_progress": {
         "required": 5125,
         "original": 5129,
@@ -3666,7 +3666,7 @@
       "round_accounting": "R67 garment observations, ownerrebase, crashA, recovery/exclusion andcounterfactual areone evolvedlogicalround; tools/subagents/restarts/commits are not additionalrounds.",
       "next_action": "Prioritize integration:sequential-outfit-material-recovery using distinct garment transitions and currentvalid sharedcore; capture ordered mesh/material/hidden-state deltas and minimize only actualfailures. Keep exact ExtraMod333Hair exclusion active; no exhaustive colors/options andno91min/fullhair claim.",
       "at": "2026-10-25T23:55:06.640620+00:00",
-      "lane_reason": "New visual endpoint acceptance on two exact meshes needs one fresh independent readonly Judge after coherent actual evidence.",
+      "lane_reason": "Current owner acceptance revision andexacthair exclusion/recovery afteractualcrash; independent scope/runtime reviews completed.",
       "findings": {
         "v3": "Confirmed Lua index13 reads native slot12; no successful native-body binding. Current fix readsLua14.",
         "v4": "Real native cold-load false positive and Actor-deselection invisible-body regressions; FAIL preserved.",
@@ -4750,43 +4750,19 @@
         "visual_review": "NOT_REQUESTED_AFTER_OWNER_REMOVED_EXHAUSTIVE_PARAMETER_ACCEPTANCE; observedframes retained, no independentPASS claimed",
         "resource_closure": ".local/play-session-20261026/grouped-qa/bunny-rabbit-visual-r67/lifecycle-end.json",
         "restoration": ".local/play-session-20261026/grouped-qa/bunny-rabbit-visual-r67/restoration.json",
-        "camera_delta": "CNSviewer preset11(Custom) became omitted/default0 after native presetcycle; allother originalconfigs/choices/indices exact, CustomCamPos differs. Restorepreset11 via nativeUI during next hair session; no rawsave rollback.",
+        "camera_delta": "Initial nativepreset11->default0 checkpoint retained; sameR67 hair session restoredpreset11. FinalonlytaskCustomCamPos differs.",
         "camera_preset_restored_later_in_same_round": {
           "value": 11,
           "evidence": ".local/play-session-20261026/grouped-qa/hair-switch-repro-r67/final-restoration.json"
         }
       },
       "owner_scope_hair_priority": {
-        "version": "compatibility-risk-groups-v6-owner-20261026",
-        "source": "Current direct owner: stop exhaustive same-clothing color/option/combinations and redundant checks; prioritize sequential outfit incompatibility cause/repair/exclusion; explicitly reproduce hairstyle-switch crashes and distinguish asset versus accumulated clothing/loading.",
-        "at": "2026-10-26T10:24:00.775851+00:00",
-        "required_focus": [
-          "integration:sequential-outfit-material-recovery",
-          "BUG-HAIR-20261025-01",
-          "Relevant native/CNS ownership, current functional core and playable configuration recovery"
-        ],
-        "merge": [
-          "Same garment color/texture/decorative endpoints/combinations into one compatibility result",
-          "Shared unchanged movement/input/menu/assistant consumers reused",
-          "Animations by actual skeleton/consumer/recovery risk; no list exhaustion"
-        ],
-        "do_not_merge": [
-          "Different unresolved skeleton/physics/global logic",
-          "Known failures/crashes/actual contradictory evidence"
-        ],
-        "evidence_rule": "No untested historical leaf promoted toPASS; failure history retained. No wholefamily inheritance from names. Current merged completion UNKNOWN until grouping and applicability frozen.",
-        "hair_reproduction_authorized": true,
-        "historical_denominator_only": {
-          "original": 5129,
-          "effective": 5125,
-          "accepted": 264,
-          "percent": 5.1512
-        },
-        "next_action": "Read exact prior hair-crash sequence and prepare controlled native hair A/B/C switching with per-action intent/readback and current owner resource identities; restore task viewer preset11 fromR67 in that session.",
+        "policy_ref": "mod_compatibility_restructure.owner_acceptance_20261026",
         "independent_review": {
           "decision": "PASS",
           "evidence": ".local/play-session-20261026/grouped-qa/bunny-rabbit-visual-r67/scope-independent-review.json"
-        }
+        },
+        "metadata_cleanup": "Obsolete plannednextaction removed afteractualrepro; accepted durablepolicy unchanged."
       },
       "hair_crash_repro": {
         "issue_id": "BUG-HAIR-20261025-01",
@@ -4867,14 +4843,21 @@
         "round_closed_once": true,
         "next_action": "Prioritize integration:sequential-outfit-material-recovery using distinct garment transitions and currentvalid sharedcore; capture ordered mesh/material/hidden-state deltas and minimize only actualfailures. Keep exact ExtraMod333Hair exclusion active; no exhaustive colors/options andno91min/fullhair claim.",
         "git_delivery": {
-          "status": "PENDING_NORMAL_IMPLEMENTATION_BRANCH_DELIVERY",
+          "status": "VERIFIED_IMPLEMENTATION_BRANCH_DELIVERY",
           "target": "codex/grouped-mod-qa-20261026",
           "scope": [
             "Owner acceptance State projection",
             "TEST_PLAN and updated compatibility plan/reusable Goal Prompt"
           ],
           "private_evidence": "All game config/save/logs/crash contexts/native inputs andobservers stayignoredlocal; publiconlysanitizedfacts/hash/evidencerefs.",
-          "closure_receipt": ".local/play-session-20261026/grouped-qa/hair-switch-repro-r67/round-delivery.json"
+          "closure_receipt": ".local/play-session-20261026/grouped-qa/hair-switch-repro-r67/round-delivery.json",
+          "source_commit": "c44eb13fd4dcd88232c7c18f30f1ad9dea1c0884",
+          "remote_verified": true,
+          "verified_at": "2026-10-26T11:23:34.103752+00:00",
+          "main_unchanged": "aafc4b0fcf94bdc73b8e6810971281953f945fe9",
+          "main_merge": false,
+          "preserved_pending": "SevenolderState groups andunrelatedprivate pch/research stayunstaged; formerlypendingplan/prompt docs nowupdated/reviewed anddelivered undercurrentowner request.",
+          "metadata_note": "SameR67 close; finalexactHEADinignoredreceipt avoids selfreference."
         },
         "current_round_descendants": "Two readonly Judges completed and collected; no currentwriterdescendants."
       }
@@ -4904,8 +4887,7 @@
         "effective": 5125,
         "accepted": 264,
         "percent": 5.1512
-      },
-      "next_action": "Read exact prior hair-crash sequence and prepare controlled native hair A/B/C switching with per-action intent/readback and current owner resource identities; restore task viewer preset11 fromR67 in that session."
+      }
     }
   }
 }
