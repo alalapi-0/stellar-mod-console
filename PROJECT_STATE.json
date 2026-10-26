@@ -3965,7 +3965,7 @@
         },
         "git_delivery": {
           "target": "codex/grouped-mod-qa-20261026",
-          "status": "PENDING_VERIFICATION",
+          "status": "SOURCE_COMMIT_VERIFIED_ON_AUTHORIZED_IMPLEMENTATION_BRANCH",
           "reviewed_scope": [
             "src/runtime/QAControl.lua",
             "tests/fixtures/qa_wardrobe.lua",
@@ -3974,7 +3974,17 @@
             "Owned PROJECT_STATE task projection"
           ],
           "local_only": "Raw evidence/manifest/save/proc identities remain .local; unrelated previous changes preserved.",
-          "receipt": ".local/play-session-20261026/grouped-qa/aik-material-delta/git-delivery.json"
+          "receipt": ".local/play-session-20261026/grouped-qa/aik-material-delta/git-delivery.json",
+          "source_commit": "cb1279c40980d46288d10ca1cd4a9e806fa58437",
+          "verified_remote_commit": "cb1279c40980d46288d10ca1cd4a9e806fa58437",
+          "remote_main": "aafc4b0fcf94bdc73b8e6810971281953f945fe9",
+          "main_policy": "Explicit implementation-branch delivery only; no merge to main.",
+          "checks": {
+            "local": "2 unittest tests / 36 scenarios exit0; independent Judge PASS; staged whitespace and secret-pattern checks PASS",
+            "github_reported_check_runs": 0
+          },
+          "verified_at": "2026-10-26T04:27:36.803743+00:00",
+          "metadata_note": "Source commit identity is recorded here; exact final metadata HEAD verification is in the existing ignored receipt to avoid self-reference."
         }
       },
       "current_result_ref": "material_delta"
