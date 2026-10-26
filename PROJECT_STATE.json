@@ -1542,20 +1542,20 @@
       "manifest_sha256": "e78a002bad506dae8dcbf090a59a90f1c8db06bfa744d5208891ee211db78c57",
       "target_identity_sha256": "955965cda7371a7ff208fdf736e19a1136e0628cf77a644ac49b5d4323aa9a92",
       "enumeration_validation": ".local/play-session-20261026/grouped-qa/risk-groups-r69/result.json",
-      "round_key": "first-cold-cns-body-pose-r73-20261027",
-      "round_status": "CLOSED_SCOPED_EVIDENCE_NEW_TRANSPORT_BUG_VERIFIED",
-      "count": 73,
+      "round_key": "qa-shortmove-first-submission-r74-20261027",
+      "round_status": "CLOSED_REVIEWED_QA422_CODE_AND_REAL_SHORTMOVE",
+      "count": 74,
       "coverage": "since_baseline",
-      "last_seq": 73,
-      "last_key": "first-cold-cns-body-pose-r73-20261027",
+      "last_seq": 74,
+      "last_key": "qa-shortmove-first-submission-r74-20261027",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": null,
       "evidence_change_percentage_points": 0,
       "scope_change_percentage_points": 0,
-      "change_rule": "Manifest andallleafstatusesunchanged; boundedposeattemptNOT_REPRODUCED, sameNewPawn checkduplicatesvalidoldassertionandearns0. Verified80ms transportemptycompletion +independentfixtureFAIL changesnextaction.",
-      "round_start_commit": "f5614141e7e8332127c6f9dc68473e87f7758327",
-      "scope_change": "None; preserve5129original/5125historicalinventory andcurrent1285knownunits/UNKNOWNtotal.",
-      "milestone_change": "No posecausefound; verifiedtimingbug preventsreliable shortcontrol. R72UIDraw overwrittenaccident flaggedunrecoverable; currentexactconfiguration revalidated withoutoldPID provenance claims.",
+      "change_rule": "QAinputtransport corrected andaccepted byRoot+Judge,72behaviorcasespassplusreal80msactuation. Inventory/leafstatuses/manifestunchanged; no garment orfullintegrationPASSadded.",
+      "round_start_commit": "23f83577e1ca16ad9ac634b63f40efe1a5a0dcb1",
+      "scope_change": "None; original5129/effectivehistorical5125 andcurrent1285knownunits retained.",
+      "milestone_change": "QA422 usesfirstactualsubmission inputwindow underunchangedlocks/deadlines/lease; zero-input80msfailurefixed andactual2calls45.3516cmmovement/stopverified.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1997,8 +1997,8 @@
         "owner_excluded_appearance_structures": 2
       }
     },
-    "next_action": "Repair QAControl shortmovement timing: start inputwindow onfirstactualsubmission, preservewall/lease/lock guards andexplicitlyverify nonemptyactuation; addlate-first-tick regression, oneboundedruntimecheck, reuseallunaffectedcore/garment proofs.",
-    "updated_at": "2026-10-26T16:34:31.897817+00:00",
+    "next_action": "Resume19remainingremembered uniqueEVEBody mesh deltas usingQA422; joinexactownerexclusions/knownfailures andexistingproofs beforequeueing. Reusecore/NewPawn/defense evidence; no color/parameter enumeration oroldgarment repeats.",
+    "updated_at": "2026-10-26T17:02:53.689876+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2127,7 +2127,7 @@
         }
       }
     },
-    "round_closure_at": "2026-10-26T16:34:31.897817+00:00",
+    "round_closure_at": "2026-10-26T17:02:53.689876+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 14,
       "new_confirmed_this_round": 0,
@@ -2291,9 +2291,9 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "R73_SCOPED_POSE_CHECK_AND_QA_TIMING_ROOTCAUSE_CLOSED",
-    "previous_goal_turn_classification": "PROGRESS_NEW_TRANSPORT_FAILURE_REPRO_NO_NEW_BODY_PASS_OR_DUPLICATE_CORE_CREDIT",
-    "execution_status": "ACTIVE_READY_QA_SHORTMOVE_REPAIR",
+    "current_segment": "R74_QA422_SHORTMOVEMENT_REPAIR_ACCEPTED",
+    "previous_goal_turn_classification": "PROGRESS_IMPLEMENTED_TESTED_REVIEWED_QA_TIMING_FIX",
+    "execution_status": "ACTIVE_READY_REMAINING_UNIQUE_MESH_BATCH",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
     "pause_source": "Current human: restart game, tests remain paused; subsequent black-screen repair does not resume tests",
     "user_play_handoff": {
@@ -3303,10 +3303,10 @@
     "native_goal": {
       "threadId": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
       "status": "active",
-      "tokensUsed": 9381340,
-      "timeUsedSeconds": 50548,
+      "tokensUsed": 9618758,
+      "timeUsedSeconds": 52377,
       "createdAt": 1792972357,
-      "telemetry_at": "2026-10-26T16:31:04Z",
+      "telemetry_at": "2026-10-26T17:02:53+00:00",
       "telemetry_coverage": "Directnative cumulative currentactivation; noquota set/increased; historical logical lifetimecostUNKNOWN.",
       "same_objective_verified": true
     },
@@ -3686,7 +3686,7 @@
       "execution_source": "Direct owner native Goal objective submitted in thread 01a1757a-f84c-72b0-97bd-44ab8c53eb53 on 2026-10-26; execute MOD_TEST_REPAIR_PLAN_20261025 grouped QA",
       "owner_thread": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
       "lane": "REVIEWED",
-      "status": "ACTIVE_READY_QA_SHORTMOVE_REPAIR",
+      "status": "ACTIVE_READY_REMAINING_UNIQUE_MESH_BATCH",
       "owned_scope": [
         "PROJECT_STATE.json#mod_compatibility_restructure current grouped execution/progress projection; old paused console and pre-existing manual-play deltas remain separate",
         ".local/play-session-20261026/grouped-qa",
@@ -3715,10 +3715,10 @@
         "remaining_scope_unchanged": true
       },
       "test_save_boundary": "No independent story-save isolation established; forbid death/story/reward/travel tests and save rollback. Initial private launch/menu checks only; inspect scene before safe reversible movement/outfit checks.",
-      "round_accounting": "R73poseobservation, duplicateNewPawnrecheck, shorttransportfailurediagnosis andevidenceintegrityrepair oneclosedround, no pertool/attempt/agent count.",
-      "next_action": "Repair QAControl shortmovement timing: start inputwindow onfirstactualsubmission, preservewall/lease/lock guards andexplicitlyverify nonemptyactuation; addlate-first-tick regression, oneboundedruntimecheck, reuseallunaffectedcore/garment proofs.",
+      "round_accounting": "R74baseline/4guardtests, exactsourcefix, oneprivategamecheck andfreshreview oneclosedround; no pertool/test/callbackincrement.",
+      "next_action": "Resume19remainingremembered uniqueEVEBody mesh deltas usingQA422; joinexactownerexclusions/knownfailures andexistingproofs beforequeueing. Reusecore/NewPawn/defense evidence; no color/parameter enumeration oroldgarment repeats.",
       "at": "2026-10-25T23:55:06.640620+00:00",
-      "lane_reason": "No runtimebehavior/source repairyet; review coherent scoped pose/lifecycle interpretation and transparent recoveryfromaccidental R72raw evidenceoverwrite.",
+      "lane_reason": "Temporarynativeinputtransport behaviorchanges; preserveidentity/locks/deadlines/nonce/lease/requestlimits; freshJudge aftercoherentstatic+runtimecandidate.",
       "findings": {
         "v3": "Confirmed Lua index13 reads native slot12; no successful native-body binding. Current fix readsLua14.",
         "v4": "Real native cold-load false positive and Actor-deselection invisible-body regressions; FAIL preserved.",
@@ -3730,7 +3730,7 @@
         "v8": "Fresh independent PASS for current BS_ alias transition/native-menu scope; full S1/Goal incomplete"
       },
       "candidate_sha256": "5679d28fe2e6719314c45e6709a99c4920c866a24b21953dd66e39a05dae4e12",
-      "updated_at": "2026-10-26T16:34:31.897817+00:00",
+      "updated_at": "2026-10-26T17:02:53.689876+00:00",
       "grouped_assertions": {
         "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
         "sha256": "a800adc5603d0edb2747f20dc335cc109dd88357033ddfcdadb856aac810b618",
@@ -3744,40 +3744,41 @@
       },
       "hair_original_context": "Exact BUG-HAIR-20261025-01 context recovered read-only from native crash directory; private pointer .local/play-session-20261026/grouped-qa/hair-incident-context-recovery.json; GameThread AV verified, cause unknown",
       "runtime_ownership": {
-        "game": "Exact2225085/start162688727 andnativewrapper45190 ended0.",
-        "helper": "Exactownedhelper wrapper57930 ended0 aftershutdownCLI0.",
-        "movement": "Ownsession65346 stopped0 andrestoredownedfields beforegameclose.",
-        "bridge": "UnchangedQA421exact2filesremoved; only ownappendedsuffixtruncated; no lease/requestquota increase.",
-        "private_display": "Owned:2 retainedforactiveGoal; physicalforeground untouched.",
-        "children": "R73read-onlyJudge completed/collected; noactiveownchild.",
-        "evidence": ".local/play-session-20261026/grouped-qa/first-switch-pose-r73/result.json"
+        "game": "Exact2315429/start162980330 andnativewrapper99998 ended0.",
+        "helper": "Ownwrapper49944 andshutdownCLI35733 exited0.",
+        "movement": "Own93638 stopped0 andrestoredownedfloats beforegameexit.",
+        "bridge": "QA422owned2filesremovedafterexacthashverification; onlyownappendedsuffix truncatedtomodsoriginal2d4e87...",
+        "private_display": "Ownedprivate:2 retainedforactiveGoal; physicalforeground untouched.",
+        "children": "R74Judgecompletedandcollected; noactiveownchildren.",
+        "evidence": ".local/play-session-20261026/grouped-qa/short-move-repair-r74/result.json"
       },
       "candidate_source": "src/runtime/NativeOutfitOwnership.lua",
-      "latest_runtime_result": ".local/play-session-20261026/grouped-qa/first-switch-pose-r73/result.json",
-      "last_material_progress": "Posefirst/reselect6timedframes normalthistrial only; no newPASS. RealQA80ms0submission issue reproducedindependently; nextrepaironlytransport.",
-      "round_key": "first-cold-cns-body-pose-r73-20261027",
+      "latest_runtime_result": ".local/play-session-20261026/grouped-qa/short-move-repair-r74/result.json",
+      "last_material_progress": "Enablingtransportrepair accepted; realbodygray/armsout diagnoses remainOPEN, existingcompatibilityevidence reused.",
+      "round_key": "qa-shortmove-first-submission-r74-20261027",
       "round_closed_once": true,
       "previous_current_projection_ref": ".local/play-session-20261026/grouped-qa/PROJECT_STATE.entry.json",
       "independent_review": {
-        "at": "2026-10-26T16:34:31.897817+00:00",
-        "reviewer": "/root/r73_pose_evidence_review",
+        "at": "2026-10-26T17:02:53.689876+00:00",
+        "reviewer": "/root/r74_shortmove_review",
         "verdict": "PASS_SCOPED",
-        "scope": "Timedpose NOT_REPRODUCED, existingNewPawn proofreusedwithoutcredit, independentlyreplayed QA421late-first-tickFAIL, evidenceoverwritetransparent/currentPIDrevalidationonly.",
-        "raw_r72_original_uid_list_recoverable": false,
-        "full_goal_complete": false,
-        "remaining": "No actualfresh875speed orallgarments/physics/posecause claim; native29physicsdifferencealone notdefect.",
+        "candidate": {
+          "src/runtime/QAControl.lua": "2287c54cc6afc70f70e171d30ebef168771d877e924b7e26d871fa16d3feaad2",
+          "tests/test_qa_control.py": "61da0e213a17f8254563a88a2b037f07c7f8d801cda3e7f3d4ffb21a3d65c6d8",
+          "tests/fixtures/qa_control.lua": "4349ef6d745cd96bd40b5f29ef4b580dd5891b712ee7ad1793ba645384504db8"
+        },
+        "scope": "Exact3files; oldlate-first-tickFAILindependentlyconfirmed,new4guardsandmovementpolicypass; real80ms2submissions45.3516cm/settled; unchangedwardrobe/controlpathsreusable.",
+        "limits": "Notprecise80msphysicalduration/distance/full875speed/allterrain orbodycompatibility.",
         "collected": true
       },
       "git_delivery": {
         "status": "RESULT_IN_REFERENCED_RECEIPT",
         "target": "codex/grouped-mod-qa-20261026",
-        "entry_verified_head": "f5614141e7e8332127c6f9dc68473e87f7758327",
-        "closure_evidence": ".local/play-session-20261026/grouped-qa/first-switch-pose-r73/round-delivery.json",
+        "entry_verified_head": "23f83577e1ca16ad9ac634b63f40efe1a5a0dcb1",
+        "closure_evidence": ".local/play-session-20261026/grouped-qa/short-move-repair-r74/round-delivery.json",
         "main_merge_authorized": false,
-        "policy": "OnlyownedStateprojection. Exactnormalpushoutcome andremoteHEAD/mainverificationinexistingignoredreceipt; no selfreference/redundantmetadatacommit.",
-        "retained": "SevenolderprotectedState groups and15unrelatedplanning/researchfiles; rawdata/configs/logs/assetslocal.",
-        "source_commit": "a742836",
-        "metadata_note": "SameR73 nextactionclarification; exactfinalmetadataHEAD in existingignoredreceipt."
+        "policy": "Stageonlyexact3ownedsource/testfiles andownedStateprojection. ExactfinalremoteHEAD/main result inexistingignoredreceipt; no selfreference or redundantmetadatacommit.",
+        "retained": "SevenolderprotectedState groups and15unrelatedplanning/researchfiles; rawgameassets/configs/logs/userdata remainlocal."
       },
       "entry_process_audit": "No SB.exe or SB-Win64-Shipping.exe live; previous hair session PID1913315 absent; lifecycle-end confirms own helper stopped. Steam provider retained, no input granted to foreground.",
       "entry_goal_turn_classification": "FIRST_ACTIVATION; no prior turn in this new native Goal",
@@ -3863,7 +3864,7 @@
         },
         "r73_reuse_correction": "Beforefuturecorechecks, consult actualmanifest grouped_assertions structuredremaining_delta andlaterrecords. MOVE-REBIND-SAMEPROCESS-NEWPAWN alreadyhasactual875proof andmustbereused absent relevantchange; older narrativegap sentences arehistorical."
       },
-      "closed_at": "2026-10-26T16:34:31.897817+00:00",
+      "closed_at": "2026-10-26T17:02:53.689876+00:00",
       "wardrobe_semantic": {
         "round_key": "grouped-cns-body-semantic-20261026",
         "source": "Continuation of active nativeGoal plus owner REA/nonvisualoperation steering",
@@ -4052,7 +4053,7 @@
           "metadata_note": "Source commit identity is recorded here; exact final metadata HEAD verification is in the existing ignored receipt to avoid self-reference."
         }
       },
-      "current_result_ref": "first_switch_pose_r73",
+      "current_result_ref": "short_move_repair_r74",
       "piercing_delta": {
         "round_key": "aik-piercing-delta-20261026",
         "status": "CLOSED_SCOPED_PROGRESS_GOAL_CONTINUES",
@@ -5196,6 +5197,49 @@
           "StellarBladeSave01.sav"
         ],
         "whole_save_rollback": false
+      },
+      "short_move_repair_r74": {
+        "status": "CLOSED_PASS_SCOPED_QA422_SHORTMOVEMENT_REPAIRED",
+        "at": "2026-10-26T16:42:42.146726+00:00",
+        "lane": "REVIEWED",
+        "execution_source": "NativeGoalcontinuation afterR73Root+Judge identicallate-first-tick baselineFAIL andreal80ms0submissions.",
+        "owned_scope": [
+          "src/runtime/QAControl.lua",
+          "tests/test_qa_control.py",
+          "tests/fixtures/qa_control.lua",
+          "PROJECT_STATE.json currentR74fields",
+          ".local/play-session-20261026/grouped-qa/short-move-repair-r74",
+          "ExacttemporaryQA2files andappendedmods suffix",
+          "Newexactprivategame/helper/input identities"
+        ],
+        "source_preimage": ".local/play-session-20261026/grouped-qa/short-move-repair-r74/source-entry.json",
+        "acceptance": "Oldlate-tickfailure becomes nonemptyactuation; deferredlock/deadline/lease refusals unchanged; freshactual80ms movement hasnativecalls andboundedobservedpositionchange. No completeallMOD acceptance.",
+        "protected": "No gameasset/loader/globalconfig/oldsave replacement, no pergarmentcore reruns, no quota/lease raises.",
+        "static_validation": ".local/play-session-20261026/grouped-qa/short-move-repair-r74/static-validation.json",
+        "runtime_candidate": ".local/play-session-20261026/grouped-qa/short-move-repair-r74/runtime-candidate.json",
+        "source_sha256": "2287c54cc6afc70f70e171d30ebef168771d877e924b7e26d871fa16d3feaad2",
+        "result_ref": ".local/play-session-20261026/grouped-qa/short-move-repair-r74/result.json",
+        "candidate_sha256": {
+          "src/runtime/QAControl.lua": "2287c54cc6afc70f70e171d30ebef168771d877e924b7e26d871fa16d3feaad2",
+          "tests/test_qa_control.py": "61da0e213a17f8254563a88a2b037f07c7f8d801cda3e7f3d4ffb21a3d65c6d8",
+          "tests/fixtures/qa_control.lua": "4349ef6d745cd96bd40b5f29ef4b580dd5891b712ee7ad1793ba645384504db8"
+        },
+        "runtime_submissions": 2,
+        "runtime_displacement_cm": 45.351602296376,
+        "qa_version": "4.2.2",
+        "runtime_cleanup_complete": true,
+        "closed_at": "2026-10-26T17:02:53.689876+00:00",
+        "next_action": "Resume19remainingremembered uniqueEVEBody mesh deltas usingQA422; joinexactownerexclusions/knownfailures andexistingproofs beforequeueing. Reusecore/NewPawn/defense evidence; no color/parameter enumeration oroldgarment repeats.",
+        "review": "PASS_SCOPED",
+        "review_ref": ".local/play-session-20261026/grouped-qa/short-move-repair-r74/independent-review.json",
+        "new_inventory_leaf_PASS": 0,
+        "source_files": {
+          "src/runtime/QAControl.lua": "2287c54cc6afc70f70e171d30ebef168771d877e924b7e26d871fa16d3feaad2",
+          "tests/test_qa_control.py": "61da0e213a17f8254563a88a2b037f07c7f8d801cda3e7f3d4ffb21a3d65c6d8",
+          "tests/fixtures/qa_control.lua": "4349ef6d745cd96bd40b5f29ef4b580dd5891b712ee7ad1793ba645384504db8"
+        },
+        "manifest_unchanged": true,
+        "crash_contexts": 23
       }
     },
     "owner_acceptance_20261026": {

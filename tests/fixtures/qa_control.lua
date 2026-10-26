@@ -88,6 +88,27 @@ assert(observed.pawn == "0xc8" and observed.world == "0x64" and tonumber(observe
 assert(#calls == 0)
 if SCENARIO == "observe" then
     assert(observed.mode == "1" and observed.blocked == "0" and observed.ignored == "false")
+elseif SCENARIO == "late-first-tick" then
+    request("move","move",{[5]=80})
+    real=real+0.12 -- The first game-thread callback can arrive after a short window.
+    steps(40)
+    local out=response("move")
+    assert(not(out.phase=="completed" and out.reason=="duration completed" and tonumber(out.submissions)==0),
+        "short request reported duration completed without any native input")
+    assert(tonumber(out.submissions)>0 and tonumber(out.horizontal_displacement)>0)
+    assert(out.input_submitted=="true" and out.movement_observed=="true")
+    assert(#calls<=4, "a delayed first callback must not increase the input budget")
+elseif SCENARIO == "first-tick-locked" then
+    request("move","move",{[5]=80}); locked=1
+    real=real+0.12; steps(40)
+    assert(#calls==0 and response("move").reason=="native movement locked or mode changed")
+    assert(response("move").input_submitted=="false" and response("move").movement_observed=="false")
+elseif SCENARIO == "first-tick-deadline" then
+    request("move","move",{[5]=80}); wall=wall+3; tick()
+    assert(#calls==0 and response("move").reason=="wall deadline expired")
+elseif SCENARIO == "first-tick-lease" then
+    request("move","move",{[5]=80}); wall=2200; tick()
+    assert(#calls==0 and cancelled and response("move").reason=="session lease expired")
 elseif SCENARIO == "move" then
     request("move","move"); assert(response("move","active").phase == "active")
     steps(40)

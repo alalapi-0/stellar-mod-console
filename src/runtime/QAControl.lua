@@ -6,7 +6,7 @@
 -- move requires addresses returned by observe; direction is one world cardinal.
 -- Replies are <id>.response.tsv, one key/value per line, atomically replaced.
 local M = {}
-local VERSION, INTERVAL, LEASE = "4.2.1", 20, 1200
+local VERSION, INTERVAL, LEASE = "4.2.2", 20, 1200
 local function finite(n) return type(n) == "number" and n == n and math.abs(n) < math.huge end
 local function live(o) return o ~= nil and o:IsValid() end
 local function address(o) return string.format("0x%x", o:GetAddress()) end
@@ -152,9 +152,11 @@ function M.start(options)
         out.before_x, out.before_y, out.before_z = a.before.x, a.before.y, a.before.z
         out.peak_speed, out.submissions = a.peak, a.submissions
         out.duration_ms = a.duration
+        out.input_submitted = a.submissions > 0
         if state then
             out.horizontal_displacement = math.sqrt((state.x-a.before.x)^2 + (state.y-a.before.y)^2)
             out.settled = state.speed <= 5
+            out.movement_observed = out.horizontal_displacement > 0
         end
         reply(a.id, out)
     end
@@ -341,7 +343,7 @@ function M.start(options)
             -- Record acceptance before authorizing the first input submission.
             reply(id, {op=op, phase="active", pawn=c.pawn_id, world=c.world_id})
             active = {kind="move", id=id, c=c, before=state, dx=dx, dy=dy, duration=duration,
-                start=t, previous=t, until_time=t+duration/1000, settle_until=t+duration/1000+0.25,
+                previous=t,
                 deadline=math.min(deadline, now+2), submissions=0, peak=state.speed}
         end)
         if not ok then
@@ -382,6 +384,14 @@ function M.start(options)
                     a.previous, a.peak = t, math.max(a.peak, state.speed)
                     if state.blocked ~= 0 or state.ignored or state.mode ~= 1 then
                         finish("native movement locked or mode changed", state); return
+                    end
+                    -- Acknowledgement I/O and a delayed first callback must not
+                    -- consume the input window before any input is submitted.
+                    -- The original wall deadline and session lease still bound it.
+                    if a.start == nil then
+                        a.start = t
+                        a.until_time = t + a.duration / 1000
+                        a.settle_until = a.until_time + 0.25
                     end
                     if t >= a.settle_until then finish("duration completed", state); return end
                     if t < a.until_time and a.submissions < a.duration / INTERVAL then

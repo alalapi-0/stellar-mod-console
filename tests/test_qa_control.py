@@ -32,7 +32,8 @@ class QAControlTests(unittest.TestCase):
     def test_session_input_policy(self):
         scenarios = ["observe", "move", "stop", "pawn-changed", "clock-reset", "lock-midmove", "nonce", "replay",
                      "locked", "controller-ignored", "pawn-ignored", "native-block", "falling", "expired", "future",
-                     "duration", "direction", "identity", "unknown", "cns-menu", "cns-midmove"]
+                     "duration", "direction", "identity", "unknown", "cns-menu", "cns-midmove",
+                     "late-first-tick", "first-tick-locked", "first-tick-deadline", "first-tick-lease"]
         self.run_scenarios(scenarios, self.fixture)
 
     def test_session_wardrobe_policy(self):
