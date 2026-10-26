@@ -1542,20 +1542,20 @@
       "manifest_sha256": "c96c961f0c3bf417e366d2206f2f8509bc1c6d5819b968763406a12adb9187c3",
       "target_identity_sha256": "955965cda7371a7ff208fdf736e19a1136e0628cf77a644ac49b5d4323aa9a92",
       "enumeration_validation": ".local/play-session-20261026/grouped-qa/risk-groups-r69/result.json",
-      "round_key": "owner-compatibility-inventory-grouping-r69-20261026",
-      "round_status": "CLOSED_REVIEW_PASS_CORRECTED_METADATA_INDEX_GOAL_OPEN",
-      "count": 69,
+      "round_key": "cns-close-settled-camera-observation-r70-20261026",
+      "round_status": "INTERRUPTED_CLOSED_OWNER_PAUSE_MANUAL_RESTART_READY",
+      "count": 70,
       "coverage": "since_baseline",
-      "last_seq": 69,
-      "last_key": "owner-compatibility-inventory-grouping-r69-20261026",
+      "last_seq": 70,
+      "last_key": "cns-close-settled-camera-observation-r70-20261026",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": null,
       "evidence_change_percentage_points": 0,
-      "scope_change_percentage_points": 0,
-      "change_rule": "Owner-v6 acceptance unchanged; exact metadata grouping refined, no oldleafstatus/PASS change. Rejected649denominator neveradopted; unresolvedanimationstructures keepcurrenttotal/percentageUNKNOWN.",
-      "round_start_commit": "cdd3b001dbd62cd03b93048e5a024e93db97dc44",
-      "scope_change": "No newowner scope change; remove false UID/animation equivalence from unadoptedcandidate.",
-      "milestone_change": "Corrected traceable source/structure/risk mapping nowinstalled; no exhaustive parameter/color/animation queue.",
+      "scope_change_percentage_points": null,
+      "change_rule": "R70testinterrupted bydirectowner; no oldleafstatus/PASS changes. Manualownerprofile adds3252UIonly; Goalstayspaused andcurrentcompletionUNKNOWN.",
+      "round_start_commit": "06f5a2ec8e2a536661da221955155d9a1d57d482",
+      "scope_change": "Manualplay adds3252UItriplet; onfutureexplicitresume reconcile onlyrelevantUIdependencies. No reset of original5129/effective5125 inventory or inheritedcore/geometryevidence.",
+      "milestone_change": "NativeGoalpaused andnewcurrentusergame ready with3assist+guarded1.75; targetedUIpriority package installedandrecoverable. Clothingrecurrence/Lilyworldskin remainopen.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1902,7 +1902,7 @@
         "appearance:Repacked ExtraMod333/choice-0"
       ],
       "remaining_rounds": "UNKNOWN",
-      "remaining_rounds_confidence": "UNKNOWN: current total units unresolved; no comparable throughput baseline",
+      "remaining_rounds_confidence": "UNKNOWN; Goalpaused and total structural scope unresolved",
       "window": [],
       "prediction_reason": "Currentmergedcompatibility units notfrozen; oldparameter throughputnotapplicable.",
       "original_unified_required_retained": 5129,
@@ -1995,8 +1995,8 @@
         "evidence": ".local/play-session-20261026/grouped-qa/risk-groups-r69/result.json"
       }
     },
-    "next_action": "Check R68 camera/body restoration after CNS close with settled native camera/menu state in one private session, and reuse applicable shared-core evidence. Keep exact ExtraMod333 Hair exclusion; no repeat good clothes, colors or parameter endpoints; unresolved animation indexes are not an exhaustive playback queue.",
-    "updated_at": "2026-10-26T12:17:30.252995+00:00",
+    "next_action": "Ownerplays. NativeGoal/tests remainpaused. Resume/debug onlydirecthumaninstruction; clothingrecurrence/Lilyworldskin unresolved.",
+    "updated_at": "2026-10-26T13:28:43.489656+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2107,7 +2107,7 @@
         }
       }
     },
-    "round_closure_at": "2026-10-26T12:17:30.252995+00:00",
+    "round_closure_at": "2026-10-26T13:28:43.489656+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 14,
       "new_confirmed_this_round": 0,
@@ -2271,20 +2271,20 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "R69_CORRECTED_COMPATIBILITY_STRUCTURE_INDEX_CLOSED",
-    "previous_goal_turn_classification": "PROGRESS_ADOPTED_EXACT_SOURCE_STRUCTURE_INDEX_WITHOUT_EXHAUSTIVE_OPTIONS_OR_FALSE_EQUIVALENCE",
-    "execution_status": "ROUND_COMPLETE_GOAL_CONTINUES",
+    "current_segment": "USER_PLAY_FOREGROUND_20261026_RESTART2_GOAL_PAUSED",
+    "previous_goal_turn_classification": "PROGRESS_INTERRUPTED_BY_OWNER_NATIVE_PAUSE_WITH_MANUAL_PRIORITY_FIX_AND_FUNCTIONAL_RESTART",
+    "execution_status": "PAUSED_BY_OWNER_USER_PLAY_READY",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
     "pause_source": "Current human: restart game, tests remain paused; subsequent black-screen repair does not resume tests",
     "user_play_handoff": {
-      "status": "USER_FOREGROUND_READY_THREE_ASSISTS_ON",
-      "segment": "USER_STARTUP_172",
-      "playset_evidence": ".local/play-session-20261008/user-native-115/playset-registration.json",
-      "launch_evidence": ".local/play-session-20261008/core-functional-152/startup-result.json",
+      "status": "USER_FOREGROUND_RESTART2_READY_THREE_ASSISTS_AND_1P75_GOAL_PAUSED",
+      "segment": "USER_PLAY_20261026_RESTART2",
+      "playset_evidence": ".local/manual-play-20261026/3252-installed-candidate.json",
+      "launch_evidence": ".local/manual-play-20261026/restart2/foreground-launch-registration.json",
       "trash_evidence": ".local/play-session-20261008/user-native-115/trash-receipt.json",
-      "input_owner": "USER_FOREGROUND",
+      "input_owner": "USER_ONLY",
       "automatic_relaunch": false,
-      "actual_tests": "PAUSED",
+      "actual_tests": "PAUSED_BY_OWNER",
       "enabled_unaccepted_for_user_play": true,
       "npc_mods": "RESTORED_LATEST_USER_REQUEST_7_UNITS27_FILES",
       "excluded_units": [
@@ -2300,7 +2300,7 @@
       "observation_limit": "Initial agent reviewed only root repair images; new133 recording writes DATA, no sealed player segment yet reviewed. Input source user or enabledMOD automatic, not manually attributed.",
       "continuation_prompt": ".local/play-session-20261008/CONTINUE_MOD_TESTING_PROMPT_20261011.md",
       "local_data_index": ".local/play-session-20261008/local-data-index-20261011.json",
-      "current_chat": "Current desktop user play; native Steam game camp rendered; all3 author CombatAssistant switches connected ON; EVEExperience disabled startup workaround",
+      "current_chat": "CurrentnativeforegroundSteam session;3authorassists ON/currentbindingready; guarded1.75movement; broadtests andGoalpaused",
       "clipping_repair": {
         "status": "PROFILE_SPILLOVER_REPAIRED_TWO_MODEL_NATIVE_PERSISTENCE_PASS",
         "lane": "DIRECT",
@@ -2317,11 +2317,11 @@
         "body_outfit_review": ".local/play-session-20261008/FUNCTIONAL_MOD_KEYS_20261011.md",
         "latest_crash": ".local/play-session-20261008/user-native-117/repair/hair-crash-analysis.json"
       },
-      "observation_status": "HISTORICAL_USERPLAY_OBSERVER_STOPPED; NO_RECORDING_THIS_RESUME",
+      "observation_status": "NO_CURRENT_AGENT_RECORDING_OR_PLAY_OBSERVER",
       "observation_stop_evidence": ".local/play-session-20261008/user-play-observation-20261011/observation-stop-20261011.json",
       "recording_evidence": "recording-session/stop-confirmation.json",
       "latest_repair_result": ".local/play-session-20261008/user-native-125/repair/result.json",
-      "current_visual": "OriginalNano2 restoredexactmesh/40transforms; bothPrototypeExtra1273 limited14parameter samples observed, fullappearancegatespending",
+      "current_visual": "Nativeforeground scene rendered; userselections untouched; no newgarment/camera/wholeNPCvisualacceptance",
       "input_repair": {
         "lane": "DIRECT",
         "evidence": ".local/play-session-20261008/user-native-119/repair/cursor-key-repair-registration.json",
@@ -2337,12 +2337,11 @@
         "acceptance_credit": 4
       },
       "body_binding_instructions": ".local/play-session-20261008/FUNCTIONAL_MOD_KEYS_20261011.md",
-      "control_returned_at": "2026-10-12T13:33:34.962297+00:00",
+      "control_returned_at": "2026-10-26T13:25:58.015727+00:00",
       "game_current": {
-        "pid": 3857813,
-        "start_ticks": "44684600",
-        "display": ":5",
-        "resolution": "3440x1440"
+        "evidence": ".local/manual-play-20261026/restart2/game-identity.json",
+        "display": "USER_GNOME_FOREGROUND",
+        "input_owner": "USER_ONLY"
       },
       "current_repair_evidence": ".local/play-session-20261008/core-functional-152/repair/round45-runtime-result.json",
       "active_body_controller": "EveProportions+Tuner/F9 only; UUEPBS intact outside loader",
@@ -2353,15 +2352,17 @@
         "reason": "Latest user asks no more checks today"
       },
       "assistant": {
-        "ownerPid": 1540,
-        "hostPid": 1764,
-        "gamePid": 364,
-        "hostStart": "2026-10-13T00:13:06.926246Z",
-        "gameStart": 639274470150515770,
-        "mode": "Combined",
-        "specialEnabled": true
+        "version": "1.0.16",
+        "gameBuild": "24463856",
+        "GamePid": 364,
+        "Connected": true,
+        "bindingReady": true,
+        "guard": true,
+        "dodge": true,
+        "special": true,
+        "mode": "Combined"
       },
-      "configuration_inventory": "Currentactual171threepiecegroups/125CNSconfigs; mutexandquarantine kept; no newinstallation required",
+      "configuration_inventory": "Existingselectedcore anduncertainMODs retained; exact3252UItripletaddedpriority3. No inventorywide compatibilityacceptance.",
       "latency": "Current150recoveryconfirmedbydirecthuman;causeandlongrunUNKNOWN",
       "historical_previous_native150_handoff": {
         "status": "USER_CONTROL_RETURNED_NATIVE150; TESTS_PAUSED; HUMAN_REPORTED_RECOVERED",
@@ -2386,20 +2387,18 @@
         "current_repair_evidence": ".local/play-session-20261008/user-native-150/repair/latency-handoff-result.json",
         "current_visual": "150worldsceneentered;humanrecoveryconfirmed; no clothingvisualPASS"
       },
-      "history_note": "Retained previoususerplay repair/observer references are historical; currentruntime identifiedby game_current andRound40evidence.",
-      "requested_at": "2026-10-13T11:57:56.888680+00:00",
-      "source": "这轮完成之后先停下来，退出后从主页重新打开游戏，交给用户；不记录、不录屏，暂停测试并再提供MOD使用方法。",
-      "stop_after_current_round": 52,
+      "history_note": "Otherretainedrepair/observerreferences arehistorical. Currentruntime identifiedonlyby game_current andcurrentmanualhandoff evidence.",
+      "requested_at": "2026-10-26T12:39:00.509071+00:00",
+      "source": "Current direct owner: pause testing, restartforpersonalplay,3252priority thensecondrestartaftercompatibilityrecurrence",
+      "stop_after_current_round": 70,
       "recording": false,
       "observation": false,
       "requested_launch_route": "STEAM_LIBRARY_GAME_PAGE_FOREGROUND_NORMAL_RESTART",
-      "future_test_dispatch": "STOP_AFTER_ROUND52_UNTIL_EXPLICIT_RESUME",
+      "future_test_dispatch": "PAUSED_UNTIL_DIRECT_OWNER_RESUME",
       "control_owner_after_handoff": "USER_ONLY",
-      "handoff_evidence": "/home/alalapi/Projects/stellar-mod-console/.local/play-session-20261008/core-functional-160/handoff/handoff-registration.json",
-      "completed_at": "2026-10-13T12:54:58.426748+00:00",
+      "handoff_evidence": ".local/manual-play-20261026/restart2/handoff.json",
+      "completed_at": "2026-10-26T13:28:43.489656+00:00",
       "control_owner": "USER_ONLY",
-      "current_game_pid": 3423888,
-      "current_game_start_ticks": "58254886",
       "assistant3ON_connected": true,
       "usage_guide": "/data/ProjectOutputs/stellar-mod-console/MOD打包/2026-10-14/MOD按键与操作清单.md",
       "ended_by_resume": "Direct user resume: investigate repeated clothing changes causing black edges/gray on previously good outfits; remove confirmed incompatible clothes while preserving priority MODs",
@@ -2409,7 +2408,27 @@
         "display": ":0"
       },
       "closure_evidence": ".local/play-session-20261008/core-functional-170/r59/current-user-normal-exit.json",
-      "startup_recovery_evidence": ".local/play-session-20261008/user-startup-172/startup-acceptance.json"
+      "startup_recovery_evidence": ".local/manual-play-20261026/restart2/handoff.json",
+      "known_problem_exclusions": "ExactExtra333Hairdeclaration,1052declaration,R48NPCMiscinactive andEVEExperiencewholemoduleoff retained; no unconfirmedwardrobe removed",
+      "mod3252": {
+        "title": "Naked Series Databank",
+        "downloaded_version": "3",
+        "scope": "26Album/UItextures only; no worldNPCmodels",
+        "created_files": 3,
+        "target_patch": "NSUI_3_P",
+        "overlap_with_AIO_UI": 26,
+        "different_UI_payloads": 21,
+        "same_UI_payloads": 5,
+        "offline_priority_selected_target_packages": 26,
+        "integrity_legacy_SHA1_chunks": 27,
+        "review": "PASS_SCOPED",
+        "native_mount_evidence": ".local/manual-play-20261026/3252-runtime-mount.json",
+        "native_UI_allimage_render": "UNVERIFIED; no UIinspection after ownercontrol",
+        "AIO_worldmesh_content": "PRESERVED",
+        "unrelated_or_uncertain_mods": "PRESERVED",
+        "evidence": ".local/manual-play-20261026/3252-installed-candidate.json"
+      },
+      "next_action": "Ownerplays. NativeGoal/tests remainpaused. Resume/debug onlydirecthumaninstruction; clothingrecurrence/Lilyworldskin unresolved."
     },
     "resume_source": "Current owner direct grouped MOD test/repair Goal Prompt; old console/Flatpak/Loop/admin and user foreground grants not resumed",
     "resumed_at": "2026-10-26T01:05:48.694134+00:00",
@@ -3263,11 +3282,11 @@
     },
     "native_goal": {
       "threadId": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
-      "status": "active",
-      "tokensUsed": 7980597,
-      "timeUsedSeconds": 43070,
+      "status": "paused",
+      "tokensUsed": 8133083,
+      "timeUsedSeconds": 43860,
       "createdAt": 1792972357,
-      "telemetry_at": "2026-10-26T12:12:47+00:00",
+      "telemetry_at": "2026-10-26T12:25:57Z",
       "telemetry_coverage": "Directnative cumulative currentactivation; noquota set/increased; historical logical lifetimecostUNKNOWN.",
       "same_objective_verified": true
     },
@@ -3647,7 +3666,7 @@
       "execution_source": "Direct owner native Goal objective submitted in thread 01a1757a-f84c-72b0-97bd-44ab8c53eb53 on 2026-10-26; execute MOD_TEST_REPAIR_PLAN_20261025 grouped QA",
       "owner_thread": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
       "lane": "REVIEWED",
-      "status": "R69_CORRECTED_STRUCTURE_INDEX_REVIEW_PASS_GOAL_OPEN",
+      "status": "PAUSED_BY_OWNER_USER_PLAY_RESTART2_READY",
       "owned_scope": [
         "PROJECT_STATE.json#mod_compatibility_restructure current grouped execution/progress projection; old paused console and pre-existing manual-play deltas remain separate",
         ".local/play-session-20261026/grouped-qa",
@@ -3662,8 +3681,9 @@
       "evidence": ".local/play-session-20261026/grouped-qa",
       "native_goal": {
         "threadId": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
-        "status": "active",
-        "history": "Prior activation metadata retained at historical_native_goal_before_grouped_qa_20261026; logical task counters not reset"
+        "status": "paused",
+        "history": "Prior activation metadata retained at historical_native_goal_before_grouped_qa_20261026; logical task counters not reset",
+        "pause_source": "Direct owner pause; native toolconfirmed, no automaticresume"
       },
       "protected": "Old console/Flatpak/Loop/admin work remains paused; no foreground takeover, account/Cloud/global changes, story progression or save rollback; EVEExperience stays off. Existing unrelated pending work preserved.",
       "acceptance": "Current owner compatibility-risk policy at owner_acceptance_20261026 controls: reusevalidsharedcore, mergegarment colors/options/animationconsumers, prioritize orderedoutfit failures andexplicit haircrashrepro. Original5125 inventory ishistory, notcurrent completion denominator.",
@@ -3675,8 +3695,8 @@
         "remaining_scope_unchanged": true
       },
       "test_save_boundary": "No independent story-save isolation established; forbid death/story/reward/travel tests and save rollback. Initial private launch/menu checks only; inspect scene before safe reversible movement/outfit checks.",
-      "round_accounting": "R69source audit, rejected candidate andrevision3, rootchecks, freshreview, metadataadoption andGit areone round; reviews/revisions/tools do not incrementcount.",
-      "next_action": "Check R68 camera/body restoration after CNS close with settled native camera/menu state in one private session, and reuse applicable shared-core evidence. Keep exact ExtraMod333 Hair exclusion; no repeat good clothes, colors or parameter endpoints; unresolved animation indexes are not an exhaustive playback queue.",
+      "round_accounting": "R70entry observerfailure/readonlyentry, directownerpause,3252manualpriorityfix andtwoowner-authorized restarts areone interrupted/evolvedround; not countedperrestart/tool/review/usersteering.",
+      "next_action": "Ownerplays. NativeGoal/tests remainpaused. Resume/debug onlydirecthumaninstruction; clothingrecurrence/Lilyworldskin unresolved.",
       "at": "2026-10-25T23:55:06.640620+00:00",
       "lane_reason": "New ordered material/hidden-state compatibility evidence requires independent scoped judgement oncecoherent.",
       "findings": {
@@ -3690,7 +3710,7 @@
         "v8": "Fresh independent PASS for current BS_ alias transition/native-menu scope; full S1/Goal incomplete"
       },
       "candidate_sha256": "5679d28fe2e6719314c45e6709a99c4920c866a24b21953dd66e39a05dae4e12",
-      "updated_at": "2026-10-26T12:17:30.252995+00:00",
+      "updated_at": "2026-10-26T13:28:43.489656+00:00",
       "grouped_assertions": {
         "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
         "sha256": "a800adc5603d0edb2747f20dc335cc109dd88357033ddfcdadb856aac810b618",
@@ -3704,18 +3724,20 @@
       },
       "hair_original_context": "Exact BUG-HAIR-20261025-01 context recovered read-only from native crash directory; private pointer .local/play-session-20261026/grouped-qa/hair-incident-context-recovery.json; GameThread AV verified, cause unknown",
       "runtime_ownership": {
-        "evidence": ".local/play-session-20261026/grouped-qa/resource-checkpoint.json",
-        "game": "Exact owned native game, runtime and launcher identities in the private lifecycle receipt are all absent after WM_CLOSE; wrapper/native exit code UNKNOWN because original handle was lost during compaction.",
-        "helper": "CombatAssistant shutdown CLI and original helper wrapper both exited 0; no owned helper left.",
-        "bridge": "UnchangedQA421 ownnewdirectory removedafterexacthashverification; only exactappendedsuffix truncated; modsoriginalSHA2d4e87bafbd499e877c654c8040415ac9a67ce7e5198bf82678f950b3117530e",
-        "private_display": "Existingprivate:2retained foractiveGoal; foregroundnotowned.",
-        "children": "Freshread-onlyJudge completedandcollected; noactiveR68descendants.",
-        "remaining": "Finalcamera observationunaccepted; noextra runtime keptsolelyforchecking. PlatformSteam/MCPnotcleanup targets."
+        "evidence": ".local/manual-play-20261026/restart2/lifecycle-registration.json",
+        "private_test_game": "R70privategame/helper exited0; temporaryQA/suffixremoved afterexacthashcheck; camera cycleinterrupted.",
+        "current_game": "Userforeground nativeSteam game retained forowner; currentidentityprivate, USER_ONLY inputguardset.",
+        "helper": "Exactlyonecurrent CombatAssistant1.0.16 instance Connected/bindingReady and3ON; owner-requestedservice retained.",
+        "movement": "Unchangedv3 guarded1.75service bound tocurrentPawn,6freshfields match; retained forowner; no newmovementtest.",
+        "lifecycle": "Taskownedcleanup waits exactgameexit thenstops onlyits exacthelperunits, no recording/gameinput/relaunch.",
+        "private_display": "Previousprivate:2 retainedforpausedGoal, no privategame running.",
+        "children": "Alldispatchedread-onlyreviews completedandcollected; no activedescendants.",
+        "temporary_resources": "Sixpriorityreference symlinks removed; added3252threefiles retained asownerselectedassets."
       },
       "candidate_source": "src/runtime/NativeOutfitOwnership.lua",
       "latest_runtime_result": ".local/play-session-20261026/grouped-qa/sequence-material-r68/runtime-result.json",
-      "last_material_progress": "All5125 inventory IDs mapped exactly once; failed UID/animation overmerge rejected before adoption. Exact asset/explicit physics grouping adopted; parameter/texture details attached, animation risk indexes unresolved/noncompletion. No oldPASS or runtime repeat.",
-      "round_key": "owner-compatibility-inventory-grouping-r69-20261026",
+      "last_material_progress": "Ownerpause honored via nativepaused tool. Missing3252UItriplet installedpriority3; all27legacySHA1verified,26offlineUIprovidersselected, nativecontainer adoptionseen. Currentsecondnativegame/3assistbinding/1.75profile verified andUSER_ONLY; no compatibilityrootcausePASS.",
+      "round_key": "cns-close-settled-camera-observation-r70-20261026",
       "round_closed_once": true,
       "previous_current_projection_ref": ".local/play-session-20261026/grouped-qa/PROJECT_STATE.entry.json",
       "independent_review": {
@@ -3733,21 +3755,17 @@
         ]
       },
       "git_delivery": {
-        "status": "SOURCE_DELIVERED_TO_IMPLEMENTATION_BRANCH",
+        "status": "VALIDATED_OWNED_STATE_PENDING_IMPLEMENTATION_BRANCH_SYNC",
         "target": "codex/grouped-mod-qa-20261026",
-        "policy": "Current noautomaticmainmerge; onlyownedState summary, all rawmanifest/source/game evidence remainignored local.",
+        "policy": "Onlysanitized ownedState summary; source/game/UIassets/logs/identity/auth remainlocal. No automaticmainmerge.",
+        "entry_verified_head": "06f5a2ec8e2a536661da221955155d9a1d57d482",
+        "previous_source_commit": "9efb8fc2ca09d7bc3e7dd28d016f7d70647c87a9",
+        "remote_verified": false,
+        "closure_evidence": ".local/manual-play-20261026/round-delivery.json",
         "preserved_pre_existing": [
-          "Seven earlier handoff/manualplay/roundstatus State groups",
-          "docs/pch-rebuild-20261020 two unrelated/privatefiles; research/p2s-resource-analysis thirteen unrelatedfiles"
-        ],
-        "entry_verified_head": "cdd3b001dbd62cd03b93048e5a024e93db97dc44",
-        "previous_source_commit": "9738ae350a8b7215913db9cf5e81367264238a52",
-        "remote_verified": true,
-        "closure_evidence": ".local/play-session-20261026/grouped-qa/risk-groups-r69/round-delivery.json",
-        "source_commit": "9efb8fc2ca09d7bc3e7dd28d016f7d70647c87a9",
-        "verified_source_ref": "refs/heads/codex/grouped-mod-qa-20261026",
-        "main_unchanged": "aafc4b0fcf94bdc73b8e6810971281953f945fe9",
-        "metadata_note": "Same R69 close; exact final metadata HEAD is verified in ignored receipt, no self-reference."
+          "Seven earlier handoff/manualplay/roundstatus groups",
+          "Two unrelated/privateplanningfiles and13researchfiles"
+        ]
       },
       "entry_process_audit": "No SB.exe or SB-Win64-Shipping.exe live; previous hair session PID1913315 absent; lifecycle-end confirms own helper stopped. Steam provider retained, no input granted to foreground.",
       "entry_goal_turn_classification": "FIRST_ACTIVATION; no prior turn in this new native Goal",
@@ -3832,7 +3850,7 @@
           "read_only": true
         }
       },
-      "closed_at": "2026-10-26T12:17:30.252995+00:00",
+      "closed_at": "2026-10-26T13:28:43.489656+00:00",
       "wardrobe_semantic": {
         "round_key": "grouped-cns-body-semantic-20261026",
         "source": "Continuation of active nativeGoal plus owner REA/nonvisualoperation steering",
@@ -4021,7 +4039,7 @@
           "metadata_note": "Source commit identity is recorded here; exact final metadata HEAD verification is in the existing ignored receipt to avoid self-reference."
         }
       },
-      "current_result_ref": "risk_grouping_r69",
+      "current_result_ref": "camera_recovery_r70",
       "piercing_delta": {
         "round_key": "aik-piercing-delta-20261026",
         "status": "CLOSED_SCOPED_PROGRESS_GOAL_CONTINUES",
@@ -5025,6 +5043,32 @@
           "main_unchanged": "aafc4b0fcf94bdc73b8e6810971281953f945fe9",
           "metadata_note": "Same R69 close; exact final metadata HEAD is verified in ignored receipt, no self-reference."
         }
+      },
+      "camera_recovery_r70": {
+        "round_key": "cns-close-settled-camera-observation-r70-20261026",
+        "status": "INTERRUPTED_CLOSED_BY_OWNER_PAUSE_MANUAL_RESTART_READY",
+        "lane": "DIRECT",
+        "source": "ActiveGoal and R68 finalframe gap; user wants efficient realcompatibility checks, no repeated goodgarments",
+        "at": "2026-10-26T12:22:16.455362+00:00",
+        "git_base": "06f5a2ec8e2a536661da221955155d9a1d57d482",
+        "entry_manifest_sha256": "c96c961f0c3bf417e366d2206f2f8509bc1c6d5819b968763406a12adb9187c3",
+        "entry_state_sha256": "a455d8c42004090cce8139787b62401ecba75c76a9d594e1003b34bcb300894b",
+        "owned_scope": [
+          "Unchanged temporaryQA421 module/suffix, observation only: no allowed outfit selection",
+          "One private currentgame+verifiedCombatAssistant; only open/close currentCNS menu",
+          "Ignored readonly reflected camera/pawn/menu snapshots and necessary actualframes; ownedState evidence"
+        ],
+        "acceptance": "Distinguish delayed camera interpolation/occlusion from actual body invisibility or persistent camera ownership failure. No outfit/hair/config changes, no story/travel/death/rewards, no repeats of old successful movement/core.",
+        "protected": "CNS all selection/config bytes exact; Extra333hair andknownconflicts remainexcluded; no global/network/loader/thirdpartyasset changes",
+        "evidence": ".local/play-session-20261026/grouped-qa/camera-recovery-r70",
+        "next_action": "Ownerplays. NativeGoal/tests remainpaused. Resume/debug onlydirecthumaninstruction; clothingrecurrence/Lilyworldskin unresolved.",
+        "stop_source": "Direct owner asks pause tests/restart/load functionalMODs andmovement, then3252priority adjustment",
+        "camera_cycle": "NOT_RUN",
+        "observer_failure": "OwnQAbootstrap jsondependency unavailable; independent readonly entry captured; no game/MOD failure inferred.",
+        "cleanup": ".local/play-session-20261026/grouped-qa/camera-recovery-r70/paused-test-lifecycle.json",
+        "closed_at": "2026-10-26T13:28:43.489656+00:00",
+        "result": ".local/manual-play-20261026/restart2/handoff.json",
+        "scope_change": "Ownerstoppedtestandrequestedmanualrestart,3252UIpriority andsecondrestart. No camera/appearance/GoalPASS."
       }
     },
     "owner_acceptance_20261026": {
@@ -5053,6 +5097,76 @@
         "accepted": 264,
         "percent": 5.1512
       }
+    },
+    "manual_play_20261026": {
+      "at": "2026-10-26T12:39:00.509071+00:00",
+      "task_id": "STELLAR-OWNER-PLAY-20261026-3252",
+      "lane": "REVIEWED_3252_PRIORITY_WITH_DIRECT_MANUAL_RESTART",
+      "source": "Direct owner pause/restart/loadfunctionalMODs, then3252priority request, Lily clarification, thenexplicitsecondrestart afterclothingcompatibility recurrence.",
+      "status": "RESTART2_FOREGROUND_READY_3ASSISTS_1P75_USER_ONLY",
+      "evidence": ".local/manual-play-20261026",
+      "broad_tests": "PAUSED_BY_OWNER",
+      "Goal": "nativepausedconfirmed",
+      "confirmed_scope": "Atentry standalone3252wasabsent. Exactdownloadedv3 nowinstalled asNSUI_3_P; its26UIpackages outrank embeddedAIOv2UI,21payloadsdiffer. Other172activeMODcontainers hadnooverlap; worldmodels preserved.",
+      "uncertain_mods": "PRESERVE",
+      "gameplay_input_after_handoff": "USER_ONLY",
+      "recording": false,
+      "automatic_game_restart": false,
+      "story_save_rollback": false,
+      "next_action": "Ownerplays. NativeGoal/tests remainpaused. Resume/debug onlydirecthumaninstruction; clothingrecurrence/Lilyworldskin unresolved.",
+      "completed_at": "2026-10-26T13:28:43.489656+00:00",
+      "native_goal": "paused",
+      "current_game_evidence": ".local/manual-play-20261026/restart2/game-identity.json",
+      "handoff": ".local/manual-play-20261026/restart2/handoff.json",
+      "restarts_this_owner_request": 2,
+      "mod3252": {
+        "title": "Naked Series Databank",
+        "downloaded_version": "3",
+        "scope": "26Album/UItextures only; no worldNPCmodels",
+        "created_files": 3,
+        "target_patch": "NSUI_3_P",
+        "overlap_with_AIO_UI": 26,
+        "different_UI_payloads": 21,
+        "same_UI_payloads": 5,
+        "offline_priority_selected_target_packages": 26,
+        "integrity_legacy_SHA1_chunks": 27,
+        "review": "PASS_SCOPED",
+        "native_mount_evidence": ".local/manual-play-20261026/3252-runtime-mount.json",
+        "native_UI_allimage_render": "UNVERIFIED; no UIinspection after ownercontrol",
+        "AIO_worldmesh_content": "PRESERVED",
+        "unrelated_or_uncertain_mods": "PRESERVED",
+        "evidence": ".local/manual-play-20261026/3252-installed-candidate.json"
+      },
+      "assist": {
+        "version": "1.0.16",
+        "gameBuild": "24463856",
+        "GamePid": 364,
+        "Connected": true,
+        "bindingReady": true,
+        "guard": true,
+        "dodge": true,
+        "special": true,
+        "mode": "Combined"
+      },
+      "movement": {
+        "profile": 1.75,
+        "six_fresh_fields_match": true,
+        "source_sha256": "2e5568102ddf0ba51648849e029816e0bfa5916721d7c9de7b979f34a7908e26",
+        "scope": "CurrentnativePawn, same testedguarded service; no new movement success/performance test"
+      },
+      "known_problem_exclusions": "ExactExtra333Hairdeclaration,1052declaration,R48NPCMiscinactive andEVEExperiencewholemoduleoff retained; no unconfirmedwardrobe removed",
+      "Lily": {
+        "owner_clarification": "Lily",
+        "finding": "3252downloadedbuild isUIonly; existing AIO has no Lily-namedasset paths, retainedConverted333 declarations explicitly targetEVE. No nativeLilyworldskin repairaccepted.",
+        "evidence": ".local/manual-play-20261026/lily-source-coverage.json",
+        "status": "WORLD_LILY_TARGET_REMAINS_UNRESOLVED_NO_NEW_ACTIVATION"
+      },
+      "clothing_recurrence": {
+        "status": "OWNER_REPORTED_AGAIN_UNRESOLVED",
+        "action": "Normal restart atownerrequest; preservechoices; no reproductionorrootcausePASS",
+        "evidence": ".local/manual-play-20261026/restart2/restart-authority.json"
+      },
+      "input_guard": "Task helper rejects focus/input/capture afterhandoff; no future test dispatch"
     }
   }
 }
