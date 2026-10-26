@@ -3769,14 +3769,17 @@
         "final_collected": true
       },
       "git_delivery": {
-        "status": "READY_OWNED_STATE_ONLY",
+        "status": "SOURCE_DELIVERED_TO_IMPLEMENTATION_BRANCH",
         "target": "codex/grouped-mod-qa-20261026",
         "entry_verified_head": "9a09edf4739310bc9d0049230306d4627fa03666",
         "main_merge_authorized": false,
         "main_unchanged": "aafc4b0fcf94bdc73b8e6810971281953f945fe9",
         "closure_evidence": ".local/play-session-20261026/grouped-qa/remembered-mesh-batch-r72/round-delivery.json",
         "retained_groups": "Seven older protectedState groups and15 unrelatedplanning/researchfiles preserved. Rawconfigs/assets/logs/privateevidence remainlocal.",
-        "policy": "Exactfinalcommit verified inignoredreceipt; no selfreference commit or automaticmainmerge."
+        "policy": "Exactfinalcommit verified inignoredreceipt; no selfreference commit or automaticmainmerge.",
+        "source_commit": "44ef24af98136a67c4e9141739a316715442546f",
+        "remote_verified": true,
+        "metadata_note": "SameR72 metadata closure; exactfinalHEAD in ignored round-delivery receipt, no selfreference."
       },
       "entry_process_audit": "No SB.exe or SB-Win64-Shipping.exe live; previous hair session PID1913315 absent; lifecycle-end confirms own helper stopped. Steam provider retained, no input granted to foreground.",
       "entry_goal_turn_classification": "FIRST_ACTIVATION; no prior turn in this new native Goal",
@@ -5128,7 +5131,7 @@
         "status": "CLOSED_PASS_SCOPED_GENERAL_CONFLICT_AND_POSE_OPEN",
         "at": "2026-10-26T15:21:05.677714+00:00",
         "execution_source": "Currentowner resume same nativeGoal; first batch after finite native-returnr71.",
-        "lane": "DIRECT",
+        "lane": "REVIEWED",
         "batch_ref": ".local/play-session-20261026/grouped-qa/remembered-mesh-batch-r72/batch.json",
         "count": 24,
         "unique_mesh_count": 24,
@@ -5145,7 +5148,7 @@
         "manifest_candidate": "e78a002bad506dae8dcbf090a59a90f1c8db06bfa744d5208891ee211db78c57",
         "quarantine_ref": ".local/play-session-20261026/grouped-qa/remembered-mesh-batch-r72/mod74-quarantine.json",
         "runtime_adoption": "VERIFIED_COLD_SCANNER_123_AND_372_LOADED_DATA",
-        "limitations": "Rearview/load/material checks only; one transientpose recovered; finalnativeworldframeblack so unaccepted; overallrecurrence remainsopen.",
+        "limitations": "Rearview/load/material checks only; initialarmsout absentafterlaterreselect, initialduration/reproducibilityUNKNOWN; finalnativeexitframeblackunaccepted, latercoldworldvisible; generalrecurrence remainsOPEN.",
         "closed_at": "2026-10-26T15:50:47.893023+00:00",
         "review_ref": ".local/play-session-20261026/grouped-qa/remembered-mesh-batch-r72/independent-review.json",
         "review": "PASS_SCOPED",
