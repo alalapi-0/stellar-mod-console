@@ -3236,14 +3236,12 @@
     "native_goal": {
       "threadId": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
       "status": "active",
-      "tokensUsed": 1752799,
-      "timeUsedSeconds": 4163,
+      "tokensUsed": 3000942,
+      "timeUsedSeconds": 7269,
       "createdAt": 1792972357,
       "telemetry_at": "2026-10-26T01:53:46+00:00",
       "telemetry_coverage": "Direct native tool cumulative current activation only; prior activations/logicaltask/history retained. Native elapsed is not active-only no-progress time. No quota set or increased; full logical lifetime cost remains unknown.",
-      "same_objective_verified": true,
-      "tokensUsed_checkpoint": 3000942,
-      "timeUsedSeconds_checkpoint": 7269
+      "same_objective_verified": true
     },
     "goal_resume_source": "Current native Goal reused; same logical compatibility task and original5129/effective5125 preserved",
     "historical_previous_goal_health_checkpoint": {
