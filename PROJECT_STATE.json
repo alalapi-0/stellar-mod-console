@@ -1537,25 +1537,25 @@
         "共享依赖": 4,
         "组合回归": 9
       },
-      "reason": "Twelve original Bunny/Rabbit parameter leaves gainPASS after64isolated original callbacks, direct permesh visual effects/exactrestoration andfreshJudgePASS. Eight uncleargeometry controls remainPARTIAL; original5129/effective5125 andallotherfailures retained.",
+      "reason": "R66 adds exact readonlysource applicability/bounds to8PARTIALleaves; no newPASS orstatus/denominator change.",
       "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
-      "manifest_sha256": "049f92f3078b0fc414cc221e58fd8a7138c9ec4ba0834f0719a02c8c73e7ab38",
+      "manifest_sha256": "5e4cc7c9d7214636d6a6f1b8939694a26d1fc221ca095250e2a2cf1bdc70ebcf",
       "target_identity_sha256": "955965cda7371a7ff208fdf736e19a1136e0628cf77a644ac49b5d4323aa9a92",
-      "enumeration_validation": ".local/play-session-20261026/grouped-qa/bunny-rabbit-delta/runtime-result.json",
-      "round_key": "aik-bunny-rabbit-parameter-delta-20261026",
+      "enumeration_validation": ".local/play-session-20261026/grouped-qa/mesh-section-analysis/source-binding-and-closure.json",
+      "round_key": "aik-bunny-rabbit-readonly-sections-20261026",
       "round_status": "CLOSED_SCOPED_PROGRESS_GOAL_CONTINUES",
-      "count": 65,
+      "count": 66,
       "coverage": "since_baseline",
-      "last_seq": 65,
-      "last_key": "aik-bunny-rabbit-parameter-delta-20261026",
+      "last_seq": 66,
+      "last_key": "aik-bunny-rabbit-readonly-sections-20261026",
       "historical_round_count": "UNKNOWN",
-      "execution_change_percentage_points": 0.234146,
+      "execution_change_percentage_points": 0,
       "evidence_change_percentage_points": 0,
       "scope_change_percentage_points": 0,
-      "change_rule": "12sameweight originalNOT_TESTED leaves becomePASS;8becomePARTIAL. No changedtarget, version, weight, denominator oraccepted-evidence correction. Numeric-only8 do notearnPASS.",
-      "round_start_commit": "e82a4009d8ab45c814130a169b29c9920250ff9e",
-      "scope_change": "None; original5129/effective5125 unchanged.",
-      "milestone_change": "Independent BunnyRS100/RabbitRS50 hood/tail/lace/nails/metallic/glow verified underexplicit sourceconditions. Eightvisibility-only numericgaps remain; no wholeoutfit/physics acceptance.",
+      "change_rule": "Evidence association only; accepted264/effective5125, all statuses, IDs, weights andoriginal5129 unchanged.",
+      "round_start_commit": "6061a7df6539fc5ebeb45f978813a670b0e5f4b7",
+      "scope_change": "None",
+      "milestone_change": "Exact source section proof and bounds found without game launch/screenshots; eight visual gaps remain.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1897,48 +1897,8 @@
       "new_failures_this_round": [],
       "remaining_rounds": "UNKNOWN",
       "remaining_rounds_confidence": "UNKNOWN",
-      "window": [
-        {
-          "seq": 60,
-          "key": "grouped-cns-body-semantic-20261026",
-          "effective_required": 5125,
-          "accepted_before": 210,
-          "accepted_after": 210,
-          "completion_percentage_point_delta": 0.0,
-          "execution_percentage_points": 0.0,
-          "scope_percentage_points": 0.0,
-          "evidence_correction_percentage_points": 0.0,
-          "scope_change": "No originaltargetID/version/weight/status/exclusion or denominator change",
-          "evidence_change": "Four unique scopedassertions: directCNSBodyselectionmechanism3variants; sameprocessnewPawnmovement; campMusicnativelock; actualmovementaftercampcancel. Sharedstructuralreferences observed only; no geometry/physics equivalence assumed.",
-          "source_review": "99e9a4f9a2007912573621bedef805685eb872b2a3a4ade86205046a06105f0e",
-          "completion": "Onecoherentphaseclosed; not peragent/tool/variant/commit; originalfullGoal remainsactive"
-        },
-        {
-          "seq": 61,
-          "key": "aik-material-delta-20261026",
-          "effective_required": 5125,
-          "accepted_before": 210,
-          "accepted_after": 213,
-          "completion_percentage_point_delta": 0.058536585365853655,
-          "execution_percentage_points": 0.058536585365853655,
-          "scope_percentage_points": 0,
-          "evidence_correction_percentage_points": 0,
-          "completion": "One coherent R61 close; not per tool, agent, parameter, commit or steering message."
-        },
-        {
-          "seq": 62,
-          "key": "aik-piercing-delta-20261026",
-          "effective_required": 5125,
-          "accepted_before": 213,
-          "accepted_after": 228,
-          "completion_percentage_point_delta": 0.2926829268292683,
-          "execution_percentage_points": 0.2926829268292683,
-          "scope_percentage_points": 0,
-          "evidence_correction_percentage_points": 0,
-          "completion": "One coherent R62 close across discovery, guards, actual parameter batch, failed review/repair and new review. No additional round per restart/tool/agent/case/commit."
-        }
-      ],
-      "prediction_reason": "Currentunit adds shared capability/evidence, not completeleafweight; heterogeneous appearance/material/physical/dialogue requirements andinsufficientpositive comparablethroughput prevent reliable roundestimate.",
+      "window": [],
+      "prediction_reason": "Heterogeneous remaining scope andzero newacceptedleafthisround; sourceprobe throughput cannot forecast visualacceptance.",
       "original_unified_required_retained": 5129,
       "latest_specific_followup": "integration:sequential-outfit-material-recovery",
       "grouped_assertion_audit": {
@@ -1995,10 +1955,10 @@
         "milestone_change": "R59 cumulative26 finite geometry/emitter/hardware gates PASS,18 visual gates PARTIAL; latest continuation added18 PASS with exact source-default restoration."
       },
       "remaining_round_estimate": "UNKNOWN",
-      "remaining_round_estimate_confidence": "UNKNOWN: heterogeneous remaining targets andno comparable global throughput window."
+      "remaining_round_estimate_confidence": "UNKNOWN"
     },
-    "next_action": "Read-only identify active LOD/mesh-section applicability for the8Bunny/Rabbit numeric-only controls before repeating anysameview toggles. Preserve7CH56visual gaps andallotherfailures; continue independent ready families withoutretesting sharedcore.",
-    "updated_at": "2026-10-26T08:35:32.987005+00:00",
+    "next_action": "Use one targeted private session for Hood2 with competing Hood1 isolated, and local BodyTP2/TP3/heel views based on exact source bounds; restore all original choices/parameters. Numeric source/runtime evidence does not close8visual gaps. Preserve independentCH56 gaps andallpriorfailures.",
+    "updated_at": "2026-10-26T09:27:25.491418+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2109,7 +2069,7 @@
         }
       }
     },
-    "round_closure_at": "2026-10-26T08:35:32.987005+00:00",
+    "round_closure_at": "2026-10-26T09:27:25.491418+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 14,
       "new_confirmed_this_round": 0,
@@ -2273,9 +2233,9 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "PRIVATE_BUNNY_RABBIT_DELTA_R65_CLOSED",
-    "previous_goal_turn_classification": "PROGRESS: R65accepted12originalparameter leaves withdirectpermesh evidence andfreshreview; fullGoalstillactive.",
-    "execution_status": "ACTIVE_GOAL_R65_CLOSED_NEXT_MATERIAL_SECTION_DIAGNOSIS",
+    "current_segment": "PRIVATE_BUNNY_RABBIT_READONLY_SECTIONS_R66_CLOSED",
+    "previous_goal_turn_classification": "PROGRESS_SOURCE_METADATA_APPLICABILITY_WITH_ZERO_NEW_LEAF_PASS",
+    "execution_status": "SCOPED_PROGRESS_GOAL_CONTINUES",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
     "pause_source": "Current human: restart game, tests remain paused; subsequent black-screen repair does not resume tests",
     "user_play_handoff": {
@@ -3266,11 +3226,11 @@
     "native_goal": {
       "threadId": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
       "status": "active",
-      "tokensUsed": 6156626,
-      "timeUsedSeconds": 31246,
+      "tokensUsed": 6358068,
+      "timeUsedSeconds": 33663,
       "createdAt": 1792972357,
-      "telemetry_at": "2026-10-26T08:33:23+00:00",
-      "telemetry_coverage": "Directnative tool cumulative currentactivation only; priorlogicaltask/activation/history retained; elapsednotactive-only no-progress time. No quota set or increased; full logical lifetimecost unknown.",
+      "telemetry_at": "2026-10-26T09:25:21.000Z",
+      "telemetry_coverage": "Direct native cumulative current activation; full logical historical cost UNKNOWN. No token/time/retry quota set or increased.",
       "same_objective_verified": true
     },
     "goal_resume_source": "Current native Goal reused; same logical compatibility task and original5129/effective5125 preserved",
@@ -3648,8 +3608,8 @@
       "task_id": "stellar-mod-compatibility-core-first-20261010",
       "execution_source": "Direct owner native Goal objective submitted in thread 01a1757a-f84c-72b0-97bd-44ab8c53eb53 on 2026-10-26; execute MOD_TEST_REPAIR_PLAN_20261025 grouped QA",
       "owner_thread": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
-      "lane": "REVIEWED",
-      "status": "SCOPED_REVIEW_PASS_DELIVERY_PENDING_FULL_S1_PARTIAL",
+      "lane": "DIRECT",
+      "status": "SCOPED_READONLY_PROGRESS_GOAL_CONTINUES",
       "owned_scope": [
         "PROJECT_STATE.json#mod_compatibility_restructure current grouped execution/progress projection; old paused console and pre-existing manual-play deltas remain separate",
         ".local/play-session-20261026/grouped-qa",
@@ -3677,10 +3637,10 @@
         "remaining_scope_unchanged": true
       },
       "test_save_boundary": "No independent story-save isolation established; forbid death/story/reward/travel tests and save rollback. Initial private launch/menu checks only; inspect scene before safe reversible movement/outfit checks.",
-      "round_accounting": "Initial groupedround59; currentbunny_rabbit_delta closed once assequence65. Canonicalprogress.count deduplicates; tools/review/source-metadatacommits addno rounds.",
-      "next_action": "Read-only identify active LOD/mesh-section applicability for the8Bunny/Rabbit numeric-only controls before repeating anysameview toggles. Preserve7CH56visual gaps andallotherfailures; continue independent ready families withoutretesting sharedcore.",
+      "round_accounting": "Current source-analysis round66 closed once; tools/metadata commits are not new rounds.",
+      "next_action": "Use one targeted private session for Hood2 with competing Hood1 isolated, and local BodyTP2/TP3/heel views based on exact source bounds; restore all original choices/parameters. Numeric source/runtime evidence does not close8visual gaps. Preserve independentCH56 gaps andallpriorfailures.",
       "at": "2026-10-25T23:55:06.640620+00:00",
-      "lane_reason": "Recovered native equipment lifecycle and CNS saved-selection integration; Root verifies coherent candidate, fresh independent Judge before acceptance.",
+      "lane_reason": "Read-only bounded source metadata and exact evidence association; no runtime/code/acceptance behavior change.",
       "findings": {
         "v3": "Confirmed Lua index13 reads native slot12; no successful native-body binding. Current fix readsLua14.",
         "v4": "Real native cold-load false positive and Actor-deselection invisible-body regressions; FAIL preserved.",
@@ -3692,7 +3652,7 @@
         "v8": "Fresh independent PASS for current BS_ alias transition/native-menu scope; full S1/Goal incomplete"
       },
       "candidate_sha256": "5679d28fe2e6719314c45e6709a99c4920c866a24b21953dd66e39a05dae4e12",
-      "updated_at": "2026-10-26T06:12:34.445113+00:00",
+      "updated_at": "2026-10-26T09:27:25.491418+00:00",
       "grouped_assertions": {
         "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
         "sha256": "a800adc5603d0edb2747f20dc335cc109dd88357033ddfcdadb856aac810b618",
@@ -3715,9 +3675,9 @@
         "remaining": "Wrapper143 observation retained; underlyinggameexitcodeunavailable. PlatformSteam/MCPservicesnotcleanup targets."
       },
       "candidate_source": "src/runtime/NativeOutfitOwnership.lua",
-      "latest_runtime_result": ".local/play-session-20261026/grouped-qa/v8-runtime-result.json",
-      "last_material_progress": "v7 current-source actual after-menu speed874.996 and3.295m displacement; native menu blocked1 speed/displacement0,49samples each. Native/CNS actual body selection visible after valid CNS baseline. New exact Body hidden marker counterexample drives v8.",
-      "round_key": "grouped-native-ownership-menu-20261026",
+      "latest_runtime_result": ".local/play-session-20261026/grouped-qa/bunny-rabbit-delta/runtime-result.json",
+      "last_material_progress": "Two exact source section/indices/positions validated in memory, mismatched package-name assumption resolved and small detail bounds identified;8visual leaves retainPARTIAL.",
+      "round_key": "aik-bunny-rabbit-readonly-sections-20261026",
       "round_closed_once": true,
       "previous_current_projection_ref": ".local/play-session-20261026/grouped-qa/PROJECT_STATE.entry.json",
       "independent_review": {
@@ -3806,13 +3766,24 @@
             "control"
           ],
           "control_scope": "Original CNS scalar/toggle native callbacks, frozen allowlisted target data; no pointer or direct save-map writes",
-          "latest_actual_result": ".local/play-session-20261026/grouped-qa/neurolink-delta/runtime-result.json",
+          "latest_actual_result": ".local/play-session-20261026/grouped-qa/bunny-rabbit-delta/runtime-result.json",
           "CH56_native_calls": 97,
           "wall_ms_median": 261.08,
-          "acceptance": "23 original leaves accepted this round, seven visual gaps kept partial; shared core unchanged/reused. REA bounded static evidence plus liveUEreflection, no deep game decompilation."
+          "acceptance": "Historical R63:23original leaves accepted, seven visual gaps keptpartial. Current sourceQA421unchanged; R65latestactual result referenced separately. REA bounded static evidence plus liveUEreflection, no deep game decompilation.",
+          "latest_actual_round": 65,
+          "latest_actual_native_calls": 64,
+          "latest_actual_wall_ms_median": 241.025,
+          "latest_nonvisual_analysis": ".local/play-session-20261026/grouped-qa/mesh-section-analysis/section-metadata.json",
+          "CH56_result_round": 63
+        },
+        "SOH_current_registry": {
+          "verified_entries": 10,
+          "matching_REA_game_operation": false,
+          "SOH_406": "FixedREAinstalled; actualtarget-related backendanalysis notyetpassed incurrentSOHstate",
+          "read_only": true
         }
       },
-      "closed_at": "2026-10-26T01:55:12.559894+00:00",
+      "closed_at": "2026-10-26T09:27:25.491418+00:00",
       "wardrobe_semantic": {
         "round_key": "grouped-cns-body-semantic-20261026",
         "source": "Continuation of active nativeGoal plus owner REA/nonvisualoperation steering",
@@ -4001,7 +3972,7 @@
           "metadata_note": "Source commit identity is recorded here; exact final metadata HEAD verification is in the existing ignored receipt to avoid self-reference."
         }
       },
-      "current_result_ref": "bunny_rabbit_delta",
+      "current_result_ref": "mesh_section_analysis",
       "piercing_delta": {
         "round_key": "aik-piercing-delta-20261026",
         "status": "CLOSED_SCOPED_PROGRESS_GOAL_CONTINUES",
@@ -4632,6 +4603,80 @@
           "preserved_pre_existing": "Seven prior State groups, TEST_PLAN/two20261025plan-prompt docs, unrelatedprivatepch/research retained unstaged.",
           "closure_receipt": ".local/play-session-20261026/grouped-qa/bunny-rabbit-delta/round-delivery.json",
           "metadata_note": "Same round65; final metadataHEAD verified in ignoredreceipt, no selfreferential hash."
+        }
+      },
+      "mesh_section_analysis": {
+        "round_key": "aik-bunny-rabbit-readonly-sections-20261026",
+        "status": "CLOSED_READONLY_SOURCE_APPLICABILITY_FOUND_8_VISUAL_PARTIAL",
+        "lane": "DIRECT",
+        "at": "2026-10-26T09:20:34.908137+00:00",
+        "git_base": "6061a7df6539fc5ebeb45f978813a670b0e5f4b7",
+        "entry_state_sha256": "ffa50a1de54d6052325db4823a5b45e0af3eb970fcab6d1c6011e254d60cc597",
+        "evidence": ".local/play-session-20261026/grouped-qa/mesh-section-analysis",
+        "owned_scope": [
+          "Owned current State/grouped read-only analysis result",
+          "Ignored derived section metadata only; raw asset bytes stay in memory"
+        ],
+        "acceptance": "Determine exact source-container/mesh mapping and bounded section metadata applicability; no visual PASS from numeric data or speculative parse. No game/package/save writes or launch.",
+        "protected": "All game/MOD files read-only. No third-party asset or binary copies retained. All prior5125targets/statuses/evidence remain.",
+        "baseline": {
+          "accepted": 264,
+          "required": 5125,
+          "rounds": 65
+        },
+        "next_action": "Use one targeted private session for Hood2 with competing Hood1 isolated, and local BodyTP2/TP3/heel views based on exact source bounds; restore all original choices/parameters. Numeric source/runtime evidence does not close8visual gaps. Preserve independentCH56 gaps andallpriorfailures.",
+        "closed_at": "2026-10-26T09:27:25.491418+00:00",
+        "sequence": 66,
+        "round_closed_once": true,
+        "source_binding": ".local/play-session-20261026/grouped-qa/mesh-section-analysis/source-binding-and-closure.json",
+        "result": ".local/play-session-20261026/grouped-qa/mesh-section-analysis/section-metadata.json",
+        "target_leaf_ids": [
+          "control:AiK_CH28_Bunny7504/MaterialToggles/1",
+          "control:AiK_CH28_Bunny7504/MaterialToggles/2",
+          "control:AiK_CH28_Bunny7504/MaterialToggles/3",
+          "control:AiK_CH28_Bunny7504/MaterialToggles/6",
+          "control:AiK_CH28_Rabbit7505/MaterialToggles/1",
+          "control:AiK_CH28_Rabbit7505/MaterialToggles/2",
+          "control:AiK_CH28_Rabbit7505/MaterialToggles/3",
+          "control:AiK_CH28_Rabbit7505/MaterialToggles/6"
+        ],
+        "findings": {
+          "actual_container_mapping": "Bunny andRabbit declarationmeshpaths resolve to opposite-named sourcecontainers; verified against R65actualmesh andretoclist. No config change.",
+          "serialized_source_lods": 1,
+          "section_count_per_mesh": 11,
+          "indices_per_mesh": 1507383,
+          "vertices_per_mesh": 261768,
+          "partial_material_triangle_counts": {
+            "3": 6967,
+            "4": 1280,
+            "5": 440,
+            "7": 360
+          },
+          "small_detail_z_extent_cm": {
+            "BodyTP3": 2.40075,
+            "HeelsAcc": 1.43551
+          },
+          "limit": "No currentGPU LOD or visual effect proof;8PARTIAL unchanged."
+        },
+        "validation": "Unique structural candidate per chunk; every triangle index inside exact section vertex range, independent vertex count and cooked singleLOD prefix match; config/utocunchanged. No game launched orasset copied to disk.",
+        "resources": {
+          "new_game_or_helper": 0,
+          "screenshots": 0,
+          "raw_asset_files_written": 0,
+          "retoc_children": "All exited0",
+          "peak_RSS": "UNKNOWN",
+          "private_display": "Existing sameGoal resource retained; notusedthisround"
+        },
+        "manifest_sha256": "5e4cc7c9d7214636d6a6f1b8939694a26d1fc221ca095250e2a2cf1bdc70ebcf",
+        "new_complete_leaf_PASS": 0,
+        "leaf_status_changes": 0,
+        "git_delivery": {
+          "status": "PENDING_NORMAL_IMPLEMENTATION_BRANCH_DELIVERY",
+          "target": "codex/grouped-mod-qa-20261026",
+          "scope": [
+            "OwnedStateprojection only; rawmetadata/observer/manifest remain ignored"
+          ],
+          "closure_receipt": ".local/play-session-20261026/grouped-qa/mesh-section-analysis/round-delivery.json"
         }
       }
     }
