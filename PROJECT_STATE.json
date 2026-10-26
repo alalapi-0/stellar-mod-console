@@ -1509,17 +1509,17 @@
     "progress": {
       "scope_version": "unified-leaves-v5-sequential-material-feedback-20261014",
       "completion_scope": "RETAINED_INDEPENDENT_TESTS_AFTER_EXPLICIT_FAVOURITE_EDITION_SELECTION_WITH_SCOPE_GATES",
-      "effective_accepted": 228,
+      "effective_accepted": 251,
       "effective_required": 5125,
-      "completion_percent": 4.4488,
-      "tested_with_complete_conclusion": 230,
-      "test_conclusion_percent": 4.4878,
+      "completion_percent": 4.8976,
+      "tested_with_complete_conclusion": 253,
+      "test_conclusion_percent": 4.9366,
       "statuses": {
-        "NOT_TESTED": 4824,
-        "PASS": 228,
+        "NOT_TESTED": 4795,
+        "PASS": 251,
         "REOPENED": 2,
         "WAITING_HUMAN": 1,
-        "PARTIAL": 40,
+        "PARTIAL": 46,
         "FAIL": 2,
         "BLOCKED_NOT_INSTALLED": 28
       },
@@ -1537,25 +1537,25 @@
         "共享依赖": 4,
         "组合回归": 9
       },
-      "reason": "Fifteen original RS50 parameter leaves accepted after actual isolated original callback/visual/restoration evidence and fresh repaired-candidate review. Original5129/effective5125 and all unrelated statuses/failures retained.",
+      "reason": "23 original parameter leaves accepted from direct isolated effects/restoration and exact independent accepted set. Proposed24 narrowed by Judge; seven visual gaps remain PARTIAL. Original5129/effective5125 and all unrelated failures/denominators retained.",
       "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
-      "manifest_sha256": "ec4edd708a3fd00390d85aaaf0121ba4c53ee53e5c72083de6ef2163c3ea1ebd",
+      "manifest_sha256": "ab9534c8926ce788ae8dd2cc49a1b1deaa2062d5185d3175bfd06f487137164e",
       "target_identity_sha256": "955965cda7371a7ff208fdf736e19a1136e0628cf77a644ac49b5d4323aa9a92",
-      "enumeration_validation": ".local/play-session-20261026/grouped-qa/piercing-delta/runtime-result.json",
-      "round_key": "aik-piercing-delta-20261026",
+      "enumeration_validation": ".local/play-session-20261026/grouped-qa/neurolink-delta/runtime-result.json",
+      "round_key": "aik-neurolink-and-bikini-rear-20261026",
       "round_status": "CLOSED_SCOPED_PROGRESS_GOAL_CONTINUES",
-      "count": 62,
+      "count": 63,
       "coverage": "since_baseline",
-      "last_seq": 62,
-      "last_key": "aik-piercing-delta-20261026",
+      "last_seq": 63,
+      "last_key": "aik-neurolink-and-bikini-rear-20261026",
       "historical_round_count": "UNKNOWN",
-      "execution_change_percentage_points": 0.292683,
+      "execution_change_percentage_points": 0.44878,
       "evidence_change_percentage_points": 0,
       "scope_change_percentage_points": 0,
-      "change_rule": "15 original weight1 PARTIAL leaves gain PASS from execution; no new target, version, gate, weight, denominator or accepted-evidence correction.",
-      "round_start_commit": "40a5f26cae127c97f62e760876c7ec7abad4da20",
+      "change_rule": "23 same-weight original leaves gainPASS from new direct runtime/visual evidence with shared core reuse. No target/version/weight/denominator or previous accepted-evidence correction.",
+      "round_start_commit": "0b45a7116f74c00c0da0994622327107e3521010",
       "scope_change": "None",
-      "milestone_change": "Original native scalar/toggle transport and explicit CNS movement ownership delivered; R59 scalar/toggle cohort43/44 scopedPASS, BikiniP3 partial. No whole outfit or fullS1 acceptance.",
+      "milestone_change": "All44originalR59scalar/toggle leaves now scopedPASS afterCH48P3rear. CH56index0 gets22scopedPASS and7visualPARTIAL; no whole-outfit acceptance.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1995,10 +1995,10 @@
         "milestone_change": "R59 cumulative26 finite geometry/emitter/hardware gates PASS,18 visual gates PARTIAL; latest continuation added18 PASS with exact source-default restoration."
       },
       "remaining_round_estimate": "UNKNOWN",
-      "remaining_round_estimate_confidence": "UNKNOWN: heterogeneous targets and recent comparable window includes zero leaf increment."
+      "remaining_round_estimate_confidence": "UNKNOWN: heterogeneous remaining animation/control/geometry/combination and real acceptance targets; recent batches cannot support comparable global throughput."
     },
-    "next_action": "Inspect remaining BikiniP3 material33 in rear view or actual mesh-section mapping using verified native controls; do not repeat front numeric/mask checks. Freeze the next ready R56/vector/material difference batch and reuse accepted core/parameter transport. Keep native wardrobe dialogue, physics, whole appearance, performance and personal-play delivery gates open.",
-    "updated_at": "2026-10-26T06:12:34.445113+00:00",
+    "next_action": "Keep seven CH56 visual gaps explicit; freeze the next installed ready parameter/mesh delta family and reuse reviewed movement, selection and original control transport, with no repeated shared-core startup/defense tests.",
+    "updated_at": "2026-10-26T06:53:19.390139+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2109,7 +2109,7 @@
         }
       }
     },
-    "round_closure_at": "2026-10-26T06:12:34.445113+00:00",
+    "round_closure_at": "2026-10-26T06:53:19.390139+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 14,
       "new_confirmed_this_round": 0,
@@ -2273,9 +2273,9 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "PRIVATE_AIK_PIERCING_DELTA_R62_CLOSED",
-    "previous_goal_turn_classification": "PROGRESS: R62 original native parameter transport, explicit CNS movement refusal and15 original RS50 leaves accepted; original scope/fullGoal active.",
-    "execution_status": "GROUPED_QA_ACTIVE_S1_PARTIAL",
+    "current_segment": "PRIVATE_PARAMETER_DELTA_R63_CLOSED",
+    "previous_goal_turn_classification": "Same authorized active Goal; R63closed once, no new round for user steering/tools/review/Gitmetadata.",
+    "execution_status": "ACTIVE_GOAL_R63_CLOSED_NEXT_READY_DELTA",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
     "pause_source": "Current human: restart game, tests remain paused; subsequent black-screen repair does not resume tests",
     "user_play_handoff": {
@@ -3266,10 +3266,10 @@
     "native_goal": {
       "threadId": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
       "status": "active",
-      "tokensUsed": 5129269,
-      "timeUsedSeconds": 22444,
+      "tokensUsed": 5724085,
+      "timeUsedSeconds": 25180,
       "createdAt": 1792972357,
-      "telemetry_at": "2026-10-26T06:10:29+00:00",
+      "telemetry_at": "2026-10-26T06:53:19+00:00",
       "telemetry_coverage": "Directnative tool cumulative currentactivation only; priorlogicaltask/activation/history retained; elapsednotactive-only no-progress time. No quota set or increased; full logical lifetimecost unknown.",
       "same_objective_verified": true
     },
@@ -3677,8 +3677,8 @@
         "remaining_scope_unchanged": true
       },
       "test_save_boundary": "No independent story-save isolation established; forbid death/story/reward/travel tests and save rollback. Initial private launch/menu checks only; inspect scene before safe reversible movement/outfit checks.",
-      "round_accounting": "Closed once as confirmed sequence59; original unfinished R56/R59 retained; no extra round for steering, tools, agents, source/metadata commits, or outfits.",
-      "next_action": "Inspect remaining BikiniP3 material33 in rear view or actual mesh-section mapping using verified native controls; do not repeat front numeric/mask checks. Freeze the next ready R56/vector/material difference batch and reuse accepted core/parameter transport. Keep native wardrobe dialogue, physics, whole appearance, performance and personal-play delivery gates open.",
+      "round_accounting": "Initial grouped round closed as sequence59; current result is neurolink_delta, closed once as sequence63. Canonical progress.count retains deduplicated cumulative closures; tools/review/metadata commits add no rounds.",
+      "next_action": "Keep seven CH56 visual gaps explicit; freeze the next installed ready parameter/mesh delta family and reuse reviewed movement, selection and original control transport, with no repeated shared-core startup/defense tests.",
       "at": "2026-10-25T23:55:06.640620+00:00",
       "lane_reason": "Recovered native equipment lifecycle and CNS saved-selection integration; Root verifies coherent candidate, fresh independent Judge before acceptance.",
       "findings": {
@@ -3792,6 +3792,24 @@
           "decision": "PASS_SCOPED",
           "evidence": ".local/play-session-20261026/grouped-qa/semantic-independent-review.json",
           "full_S1_or_goal_or_leaf_PASS": false
+        },
+        "historical_result_round": 59,
+        "current_transport": {
+          "version": "4.2.1",
+          "qa_source_sha256": "8d8b73ae34cb1212b2ce75bce0c12aa523b82617b8833a6740b3192f3fdf39d4",
+          "operations": [
+            "observe",
+            "move",
+            "stop",
+            "wardrobe",
+            "select",
+            "control"
+          ],
+          "control_scope": "Original CNS scalar/toggle native callbacks, frozen allowlisted target data; no pointer or direct save-map writes",
+          "latest_actual_result": ".local/play-session-20261026/grouped-qa/neurolink-delta/runtime-result.json",
+          "CH56_native_calls": 97,
+          "wall_ms_median": 261.08,
+          "acceptance": "23 original leaves accepted this round, seven visual gaps kept partial; shared core unchanged/reused. REA bounded static evidence plus liveUEreflection, no deep game decompilation."
         }
       },
       "closed_at": "2026-10-26T01:55:12.559894+00:00",
@@ -3983,7 +4001,7 @@
           "metadata_note": "Source commit identity is recorded here; exact final metadata HEAD verification is in the existing ignored receipt to avoid self-reference."
         }
       },
-      "current_result_ref": "piercing_delta",
+      "current_result_ref": "neurolink_delta",
       "piercing_delta": {
         "round_key": "aik-piercing-delta-20261026",
         "status": "CLOSED_SCOPED_PROGRESS_GOAL_CONTINUES",
@@ -4155,6 +4173,185 @@
           },
           "verified_at": "2026-10-26T06:14:38.250095+00:00",
           "metadata_note": "Exact final metadata HEAD recorded in existing ignored receipt to avoid self-reference."
+        }
+      },
+      "neurolink_delta": {
+        "round_key": "aik-neurolink-and-bikini-rear-20261026",
+        "status": "CLOSED_23_SCOPED_ACCEPTED_7_VISUAL_PARTIAL",
+        "at": "2026-10-26T06:25:08.694917+00:00",
+        "source": "Same active user-authorized Goal continuation after R62 verified progress",
+        "lane": "REVIEWED",
+        "git_base": "0b45a7116f74c00c0da0994622327107e3521010",
+        "entry_state_sha256": "dc44b585001f0bd3aefced4753752a7ca6cccf7753948e93cdff7e836481ef94",
+        "entry_manifest_sha256": "ec4edd708a3fd00390d85aaaf0121ba4c53ee53e5c72083de6ef2163c3ea1ebd",
+        "owned_scope": [
+          "Owned PROJECT_STATE task projection",
+          "Existing ignored manifest frozen target evidence/status only",
+          "Private neurolink-delta/frozen original declarations and actual runtime evidence",
+          "Temporary own QA4.2.1 module and appended enable line, frozen registered Body selections/parameters"
+        ],
+        "frozen_target_leaf_ids": [
+          "control:AiK_CH48_8866/MaterialToggles/18",
+          "control:AiK_CH56_7897/MaterialToggles/0",
+          "control:AiK_CH56_7897/MaterialToggles/1",
+          "control:AiK_CH56_7897/MaterialToggles/2",
+          "control:AiK_CH56_7897/MaterialToggles/3",
+          "control:AiK_CH56_7897/MaterialToggles/4",
+          "control:AiK_CH56_7897/MaterialToggles/5",
+          "control:AiK_CH56_7897/MaterialToggles/6",
+          "control:AiK_CH56_7897/MaterialToggles/7",
+          "control:AiK_CH56_7897/MaterialToggles/8",
+          "control:AiK_CH56_7897/MaterialToggles/9",
+          "control:AiK_CH56_7897/MaterialToggles/10",
+          "control:AiK_CH56_7897/MaterialToggles/11",
+          "control:AiK_CH56_7897/MaterialToggles/12",
+          "control:AiK_CH56_7897/MaterialToggles/13",
+          "control:AiK_CH56_7897/MaterialToggles/14",
+          "control:AiK_CH56_7897/MaterialToggles/15",
+          "control:AiK_CH56_7897/MaterialToggles/16",
+          "control:AiK_CH56_7897/MaterialToggles/17",
+          "control:AiK_CH56_7897/MaterialToggles/18",
+          "control:AiK_CH56_7897/MaterialToggles/19",
+          "control:AiK_CH56_7897/ScalarControls/0",
+          "control:AiK_CH56_7897/ScalarControls/1",
+          "control:AiK_CH56_7897/ScalarControls/2",
+          "control:AiK_CH56_7897/ScalarControls/3",
+          "control:AiK_CH56_7897/ScalarControls/4",
+          "control:AiK_CH56_7897/ScalarControls/5",
+          "control:AiK_CH56_7897/ScalarControls/6",
+          "control:AiK_CH56_7897/ScalarControls/7",
+          "control:AiK_CH56_7897/ScalarControls/8"
+        ],
+        "baseline": {
+          "accepted": 228,
+          "effective_required": 5125,
+          "original_required": 5129,
+          "closed_rounds": 62
+        },
+        "source_config_sha256": "68b9a9b84831b6b28b83bcf3fa461f75dff0106eb65687058ef978ea1646c2be",
+        "qa_source_sha256": "8d8b73ae34cb1212b2ce75bce0c12aa523b82617b8833a6740b3192f3fdf39d4",
+        "new_body_variant": "Original remembered CH56 index0; do not substitute RS50 or transfer CH48 geometry evidence",
+        "native_controls": 29,
+        "protected": "No story/reward/purchase/hair/global/account/loader/package changes or real-progress rollback. Preserve other active selections/indices/presets; CH56 config may initialize through original CNS UI; restore actual initial parameter semantics.",
+        "acceptance": "Original per-leaf endpoint/effect/restoration and actual material/geometry gates. Reuse unchanged code/core evidence; new mesh differences direct only.",
+        "next_action": "Keep seven CH56 visual gaps explicit; freeze the next installed ready parameter/mesh delta family and reuse reviewed movement, selection and original control transport, with no repeated shared-core startup/defense tests.",
+        "round_closed_once": true,
+        "closed_at": "2026-10-26T06:53:19.390139+00:00",
+        "sequence": 63,
+        "evidence": ".local/play-session-20261026/grouped-qa/neurolink-delta",
+        "actual_result": ".local/play-session-20261026/grouped-qa/neurolink-delta/runtime-result.json",
+        "proposed_pass_leaf_ids": [
+          "control:AiK_CH48_8866/MaterialToggles/18",
+          "control:AiK_CH56_7897/MaterialToggles/0",
+          "control:AiK_CH56_7897/MaterialToggles/1",
+          "control:AiK_CH56_7897/MaterialToggles/2",
+          "control:AiK_CH56_7897/MaterialToggles/3",
+          "control:AiK_CH56_7897/MaterialToggles/4",
+          "control:AiK_CH56_7897/MaterialToggles/6",
+          "control:AiK_CH56_7897/MaterialToggles/8",
+          "control:AiK_CH56_7897/MaterialToggles/9",
+          "control:AiK_CH56_7897/MaterialToggles/11",
+          "control:AiK_CH56_7897/MaterialToggles/12",
+          "control:AiK_CH56_7897/MaterialToggles/13",
+          "control:AiK_CH56_7897/MaterialToggles/14",
+          "control:AiK_CH56_7897/MaterialToggles/15",
+          "control:AiK_CH56_7897/MaterialToggles/16",
+          "control:AiK_CH56_7897/MaterialToggles/17",
+          "control:AiK_CH56_7897/MaterialToggles/18",
+          "control:AiK_CH56_7897/ScalarControls/1",
+          "control:AiK_CH56_7897/ScalarControls/2",
+          "control:AiK_CH56_7897/ScalarControls/3",
+          "control:AiK_CH56_7897/ScalarControls/4",
+          "control:AiK_CH56_7897/ScalarControls/5",
+          "control:AiK_CH56_7897/ScalarControls/6",
+          "control:AiK_CH56_7897/ScalarControls/7"
+        ],
+        "accepted_leaf_ids": [
+          "control:AiK_CH48_8866/MaterialToggles/18",
+          "control:AiK_CH56_7897/MaterialToggles/0",
+          "control:AiK_CH56_7897/MaterialToggles/1",
+          "control:AiK_CH56_7897/MaterialToggles/2",
+          "control:AiK_CH56_7897/MaterialToggles/4",
+          "control:AiK_CH56_7897/MaterialToggles/6",
+          "control:AiK_CH56_7897/MaterialToggles/8",
+          "control:AiK_CH56_7897/MaterialToggles/9",
+          "control:AiK_CH56_7897/MaterialToggles/11",
+          "control:AiK_CH56_7897/MaterialToggles/12",
+          "control:AiK_CH56_7897/MaterialToggles/13",
+          "control:AiK_CH56_7897/MaterialToggles/14",
+          "control:AiK_CH56_7897/MaterialToggles/15",
+          "control:AiK_CH56_7897/MaterialToggles/16",
+          "control:AiK_CH56_7897/MaterialToggles/17",
+          "control:AiK_CH56_7897/MaterialToggles/18",
+          "control:AiK_CH56_7897/ScalarControls/1",
+          "control:AiK_CH56_7897/ScalarControls/2",
+          "control:AiK_CH56_7897/ScalarControls/3",
+          "control:AiK_CH56_7897/ScalarControls/4",
+          "control:AiK_CH56_7897/ScalarControls/5",
+          "control:AiK_CH56_7897/ScalarControls/6",
+          "control:AiK_CH56_7897/ScalarControls/7"
+        ],
+        "partial_leaf_ids": {
+          "control:AiK_CH56_7897/MaterialToggles/5": "Body accessory visible delta not decisive in current views",
+          "control:AiK_CH56_7897/MaterialToggles/7": "Shoe detail change not decisive at captured scale",
+          "control:AiK_CH56_7897/MaterialToggles/10": "Strap P3 geometry not confidently identified",
+          "control:AiK_CH56_7897/MaterialToggles/19": "C1 is occluded by source torso/lacing geometry",
+          "control:AiK_CH56_7897/ScalarControls/0": "Black nail metallic difference not visually decisive",
+          "control:AiK_CH56_7897/ScalarControls/8": "C1 glow remains occluded by source torso/lacing geometry",
+          "control:AiK_CH56_7897/MaterialToggles/3": "Original callback and isolated hidden-material readback valid; rear baseline/changed images do not establish a confidently attributable visible difference."
+        },
+        "leaf_delta": {
+          "PASS": 23,
+          "PARTIAL": 6,
+          "effective_required": 5125,
+          "original_required": 5129,
+          "NOT_TESTED": -29,
+          "cohort_visual_partial": 7
+        },
+        "independent_review": {
+          "decision": "INCONCLUSIVE_ON_PROPOSED24_SET_EXPLICIT23_LEAVES_CONFIRMED",
+          "evidence": ".local/play-session-20261026/grouped-qa/neurolink-delta/independent-review.json",
+          "candidate_proposal_sha256": "e9d7b0f645969053785f57192ecaabf14a6defe93f13caaf9a4efae427b400b0",
+          "disposition": "Only exact23 confirmed leaves accepted; proposed24 retained with seventh visual gap."
+        },
+        "restoration": {
+          "all37_material_chains_parameters_equal_initial": true,
+          "all23_LOD_hidden_flags_equal_initial": true,
+          "all_active_choices_all_indexes_including_empty_key_removed_maps_equal_entry": true,
+          "other_saved_configuration_bytes_unchanged": true,
+          "new_default_CH56_configuration_added_by_original_CNS": true,
+          "other_saved_property_hashes_unchanged_except": [
+            "CustomCamPos",
+            "ConfigurationMap:newCH56defaultentry"
+          ],
+          "no_whole_save_rollback": true
+        },
+        "parameter_callbacks": {
+          "CH56_native_calls": 97,
+          "CH48_BikiniP3_calls": 2,
+          "CH56_wall_ms_min": 160.73,
+          "CH56_wall_ms_median": 261.08,
+          "CH56_wall_ms_max": 602.32,
+          "all_single_original_callback_data_verified_protected_maps_unchanged": true,
+          "evidence": ".local/play-session-20261026/grouped-qa/neurolink-delta/batch-results.json"
+        },
+        "resource_closure": ".local/play-session-20261026/grouped-qa/neurolink-delta/lifecycle-end.json",
+        "tests": {
+          "mode": "REUSED_UNCHANGED_REVIEWED_QA421",
+          "source_sha256": "8d8b73ae34cb1212b2ce75bce0c12aa523b82617b8833a6740b3192f3fdf39d4",
+          "prior_evidence": ".local/play-session-20261026/grouped-qa/piercing-delta/independent-review.json",
+          "tests": 3,
+          "scenarios": 68,
+          "new_direct_runtime_calls": 97
+        },
+        "git_delivery": {
+          "status": "ACCEPTED_LOCAL_DELIVERY_PENDING",
+          "target": "codex/grouped-mod-qa-20261026",
+          "main_merge": "PROHIBITED_BY_CURRENT_TASK",
+          "reviewed_scope": [
+            "Owned State R63/progress/currentGoal projection only; QA source unchanged"
+          ],
+          "raw_evidence": "Local ignored paths only"
         }
       }
     }
