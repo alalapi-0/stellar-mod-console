@@ -1537,23 +1537,23 @@
         "共享依赖": 4,
         "组合回归": 9
       },
-      "reason": "R59 cumulative26 independent AiK visibility/emitter gates Root-viewed PASS; remaining9 material controls and9 scalars PARTIAL. Fresh human settings preserved; original5125 and all failures retained.",
+      "reason": "Native ownership v8 and session control bridge independently reviewed within exact scopes; original leaf array/statuses untouched, 210/5125 retained. Earlier R56/R59 incomplete records remain open in original evidence and archived projection.",
       "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
       "manifest_sha256": "a800adc5603d0edb2747f20dc335cc109dd88357033ddfcdadb856aac810b618",
       "target_identity_sha256": "955965cda7371a7ff208fdf736e19a1136e0628cf77a644ac49b5d4323aa9a92",
       "enumeration_validation": ".local/play-session-20261008/core-functional-170/r59/visual-acceptance-result.json",
-      "round_key": "private169-aik-ocean-string-material-and-scalar-20261014",
-      "round_status": "UNFINISHED_26_PASS_18_PARTIAL",
-      "count": 58,
+      "round_key": "grouped-native-ownership-menu-20261026",
+      "round_status": "CLOSED_SCOPED_PARTIAL_GOAL_CONTINUES",
+      "count": 59,
       "coverage": "since_baseline",
-      "last_seq": 58,
-      "last_key": "private167-ultimate-vector-texture-endpoints-and-options-20261014",
+      "last_seq": 59,
+      "last_key": "grouped-native-ownership-menu-20261026",
       "historical_round_count": "UNKNOWN",
-      "execution_change_percentage_points": 0.5073171,
+      "execution_change_percentage_points": 0.0,
       "evidence_change_percentage_points": 0,
       "scope_change_percentage_points": 0,
       "change_rule": "Same IDs/versions/weights/gates; current continuation18 PARTIAL->PASS. R59 cumulative26 PASS,18 PARTIAL; prior184 PASS/2 FAIL,44 excluded history, original5129 and current5125 retained.",
-      "round_start_commit": "3b09aa2d29b2ab6d33cc70321fc044571ca8a4b8",
+      "round_start_commit": "60517327d58d58f14a6dd418bb20c0d6e5ff6351",
       "scope_change": "Same logicalR59 resumed across pause/private169->170 and checkpoints; original v5 targets unchanged, no new round for this continuation.",
       "milestone_change": "R59 cumulative26 finite geometry/emitter/hardware gates PASS,18 visual gates PARTIAL; latest continuation added18 PASS with exact source-default restoration.",
       "historical_functional_accounting": {
@@ -1893,39 +1893,29 @@
       "excluded_history_count": 44,
       "uncounted_parent_rollups": 12,
       "full_appearance_compatible_accepted": 10,
-      "new_function_evidence_this_round": [
-        "control:AiK_CH48_8866/MaterialToggles/0",
-        "control:AiK_CH48_8866/MaterialToggles/1",
-        "control:AiK_CH48_8866/MaterialToggles/2",
-        "control:AiK_CH48_8866/MaterialToggles/3",
-        "control:AiK_CH48_8866/MaterialToggles/4",
-        "control:AiK_CH48_8866/MaterialToggles/5",
-        "control:AiK_CH48_8866/MaterialToggles/6",
-        "control:AiK_CH48_8866/MaterialToggles/7",
-        "control:AiK_CH48_8866/MaterialToggles/8",
-        "control:AiK_CH48_8866/MaterialToggles/9",
-        "control:AiK_CH48_8866/MaterialToggles/10",
-        "control:AiK_CH48_8866/MaterialToggles/11",
-        "control:AiK_CH48_8866/MaterialToggles/12",
-        "control:AiK_CH48_8866/MaterialToggles/13",
-        "control:AiK_CH48_8866/MaterialToggles/14",
-        "control:AiK_CH48_8866/MaterialToggles/15",
-        "control:AiK_CH48_8866/MaterialToggles/16",
-        "control:AiK_CH48_8866/MaterialToggles/17",
-        "control:AiK_CH48_8866/MaterialToggles/19",
-        "control:AiK_CH48_8866/MaterialToggles/20",
-        "control:AiK_CH48_8866/MaterialToggles/22",
-        "control:AiK_CH48_8866/MaterialToggles/23",
-        "control:AiK_CH48_8866/MaterialToggles/24",
-        "control:AiK_CH48_8866/MaterialToggles/25",
-        "control:AiK_CH48_8866/MaterialToggles/26",
-        "control:AiK_CH48_8866/MaterialToggles/27"
-      ],
+      "new_function_evidence_this_round": [],
       "new_failures_this_round": [],
       "remaining_rounds": "UNKNOWN",
       "remaining_rounds_confidence": "UNKNOWN",
-      "window": [],
-      "prediction_reason": "R59 remains unclosed; heterogeneous remaining gates and missing full visual evidence prevent a comparable remaining-round estimate.",
+      "window": [
+        {
+          "seq": 59,
+          "key": "grouped-native-ownership-menu-20261026",
+          "effective_required": 5125,
+          "accepted_before": 210,
+          "accepted_after": 210,
+          "completion_percentage_point_delta": 0.0,
+          "scope_change": "No target IDs, weights, statuses, exclusion history or denominator changed",
+          "evidence_change": "Native ownership:5directscopedassertions plus2validmovementreuses; controlhelper:5newactualscopedassertions with19offlinebehaviors. No completeleafPASS inferred.",
+          "source_commits": [
+            "ed55733ced2685dd56498f472ee2d86ae2c93ada",
+            "be16fec058de442a4b56f95b5fb21b6e92840caf"
+          ],
+          "boundary": "SinglecoherentgroupedQA round; nochild/tool/outfit callback counted asround",
+          "completion": "Scoped technical unit accepted; fullGoal remains active"
+        }
+      ],
+      "prediction_reason": "One heterogeneous core/helper unit cannot predict remaining appearance/lifecycle/physical/delta workload; original failures and5125 scope retained.",
       "original_unified_required_retained": 5129,
       "latest_specific_followup": "integration:sequential-outfit-material-recovery",
       "grouped_assertion_audit": {
@@ -1938,10 +1928,47 @@
         "current_required": 5125,
         "leaf_identity_version_weight_status_unchanged": true,
         "note": "Prior210PASS andall failures retained in exact original scopes; no claim every prior appearance result was freshly re-audited in this bounded core unit."
+      },
+      "historical_unfinished_round_before_grouped_20261026": {
+        "round_key": "private169-aik-ocean-string-material-and-scalar-20261014",
+        "round_status": "UNFINISHED_26_PASS_18_PARTIAL",
+        "reason": "R59 cumulative26 independent AiK visibility/emitter gates Root-viewed PASS; remaining9 material controls and9 scalars PARTIAL. Fresh human settings preserved; original5125 and all failures retained.",
+        "round_start_commit": "3b09aa2d29b2ab6d33cc70321fc044571ca8a4b8",
+        "execution_change_percentage_points": 0.5073171,
+        "new_function_evidence_this_round": [
+          "control:AiK_CH48_8866/MaterialToggles/0",
+          "control:AiK_CH48_8866/MaterialToggles/1",
+          "control:AiK_CH48_8866/MaterialToggles/2",
+          "control:AiK_CH48_8866/MaterialToggles/3",
+          "control:AiK_CH48_8866/MaterialToggles/4",
+          "control:AiK_CH48_8866/MaterialToggles/5",
+          "control:AiK_CH48_8866/MaterialToggles/6",
+          "control:AiK_CH48_8866/MaterialToggles/7",
+          "control:AiK_CH48_8866/MaterialToggles/8",
+          "control:AiK_CH48_8866/MaterialToggles/9",
+          "control:AiK_CH48_8866/MaterialToggles/10",
+          "control:AiK_CH48_8866/MaterialToggles/11",
+          "control:AiK_CH48_8866/MaterialToggles/12",
+          "control:AiK_CH48_8866/MaterialToggles/13",
+          "control:AiK_CH48_8866/MaterialToggles/14",
+          "control:AiK_CH48_8866/MaterialToggles/15",
+          "control:AiK_CH48_8866/MaterialToggles/16",
+          "control:AiK_CH48_8866/MaterialToggles/17",
+          "control:AiK_CH48_8866/MaterialToggles/19",
+          "control:AiK_CH48_8866/MaterialToggles/20",
+          "control:AiK_CH48_8866/MaterialToggles/22",
+          "control:AiK_CH48_8866/MaterialToggles/23",
+          "control:AiK_CH48_8866/MaterialToggles/24",
+          "control:AiK_CH48_8866/MaterialToggles/25",
+          "control:AiK_CH48_8866/MaterialToggles/26",
+          "control:AiK_CH48_8866/MaterialToggles/27"
+        ],
+        "new_failures_this_round": [],
+        "prediction_reason": "R59 remains unclosed; heterogeneous remaining gates and missing full visual evidence prevent a comparable remaining-round estimate."
       }
     },
     "next_action": "Use current semantic observe/move/stop + read/action/postcondition batches for ready nonvisual gates; next narrow adapter unit is known loaded CNS fiveparameter selection call with savedselection/mesh readback andone necessaryvisualcheck. Keep dialogue/newPawn originalgapsopen.",
-    "updated_at": "2026-10-26T01:51:57.160243+00:00",
+    "updated_at": "2026-10-26T01:55:12.559894+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2217,7 +2244,7 @@
       }
     },
     "current_segment": "PRIVATE_GROUPED_QA_20261026_SEMANTIC_CONTROL",
-    "previous_goal_turn_classification": "PROGRESS: audited true failures; fixed native/CNS module; actual scoped menu/mesh/save andmovement lock/recovery evidence; originalleaf denominator unchanged",
+    "previous_goal_turn_classification": "PROGRESS: closed one scoped core repair/semantic control unit; actual native read/action/readback withoutper-action screenshots; independent reviews pass; no new complete leafPASS; fullGoal active.",
     "execution_status": "GROUPED_QA_ACTIVE_S1_PARTIAL",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
     "pause_source": "Current human: restart game, tests remain paused; subsequent black-screen repair does not resume tests",
@@ -3212,9 +3239,11 @@
       "tokensUsed": 1752799,
       "timeUsedSeconds": 4163,
       "createdAt": 1792972357,
-      "telemetry_at": "2026-10-26 01:05:48 UTC",
-      "telemetry_coverage": "Current native activation only; prior native Goal and stable logical task counters retained. No task quota created or increased.",
-      "same_objective_verified": true
+      "telemetry_at": "2026-10-26T01:53:46+00:00",
+      "telemetry_coverage": "Direct native tool cumulative current activation only; prior activations/logicaltask/history retained. Native elapsed is not active-only no-progress time. No quota set or increased; full logical lifetime cost remains unknown.",
+      "same_objective_verified": true,
+      "tokensUsed_checkpoint": 3000942,
+      "timeUsedSeconds_checkpoint": 7269
     },
     "goal_resume_source": "Current native Goal reused; same logical compatibility task and original5129/effective5125 preserved",
     "historical_previous_goal_health_checkpoint": {
@@ -3620,7 +3649,7 @@
         "remaining_scope_unchanged": true
       },
       "test_save_boundary": "No independent story-save isolation established; forbid death/story/reward/travel tests and save rollback. Initial private launch/menu checks only; inspect scene before safe reversible movement/outfit checks.",
-      "round_accounting": "R56/R59 unfinished retained; S0/S1 audit and current-core assertion unit closes once, no per-tool/per-outfit round.",
+      "round_accounting": "Closed once as confirmed sequence59; original unfinished R56/R59 retained; no extra round for steering, tools, agents, source/metadata commits, or outfits.",
       "next_action": "Use current semantic observe/move/stop + read/action/postcondition batches for ready nonvisual gates; next narrow adapter unit is known loaded CNS fiveparameter selection call with savedselection/mesh readback andone necessaryvisualcheck. Keep dialogue/newPawn originalgapsopen.",
       "at": "2026-10-25T23:55:06.640620+00:00",
       "lane_reason": "Recovered native equipment lifecycle and CNS saved-selection integration; Root verifies coherent candidate, fresh independent Judge before acceptance.",
@@ -3635,7 +3664,7 @@
         "v8": "Fresh independent PASS for current BS_ alias transition/native-menu scope; full S1/Goal incomplete"
       },
       "candidate_sha256": "5679d28fe2e6719314c45e6709a99c4920c866a24b21953dd66e39a05dae4e12",
-      "updated_at": "2026-10-26T01:51:57.160243+00:00",
+      "updated_at": "2026-10-26T01:55:12.559894+00:00",
       "grouped_assertions": {
         "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
         "sha256": "a800adc5603d0edb2747f20dc335cc109dd88357033ddfcdadb856aac810b618",
@@ -3660,7 +3689,7 @@
       "latest_runtime_result": ".local/play-session-20261026/grouped-qa/v8-runtime-result.json",
       "last_material_progress": "v7 current-source actual after-menu speed874.996 and3.295m displacement; native menu blocked1 speed/displacement0,49samples each. Native/CNS actual body selection visible after valid CNS baseline. New exact Body hidden marker counterexample drives v8.",
       "round_key": "grouped-native-ownership-menu-20261026",
-      "round_closed_once": false,
+      "round_closed_once": true,
       "previous_current_projection_ref": ".local/play-session-20261026/grouped-qa/PROJECT_STATE.entry.json",
       "independent_review": {
         "decision": "PASS_SCOPED_PARTIAL",
@@ -3668,16 +3697,19 @@
         "full_S1_or_goal_pass": false
       },
       "git_delivery": {
-        "status": "CURRENT_BRIDGE_VERIFIED_PENDING_SOURCE_DELIVERY",
+        "status": "SOURCE_DELIVERED_TO_IMPLEMENTATION_BRANCH",
         "target": "codex/grouped-mod-qa-20261026",
         "policy": "No automatic merge to main; publish only current reviewed source/test andowned State projection, never local raw evidence/auth/game assets.",
         "preserved_pre_existing": [
           "Earlier manual-play/repair State deltas anddocs/TEST_PLAN.md+two20261025 plan/prompt files remain unstaged under their prior deliverypause/ownership group.",
           "docs/pch-rebuild-20261020 contains unrelated/private planning; research/p2s-resource-analysis is separateworkspace research. Both retained."
         ],
-        "source_commit": "ed55733ced2685dd56498f472ee2d86ae2c93ada",
+        "source_commit": "be16fec058de442a4b56f95b5fb21b6e92840caf",
         "remote_verified": true,
-        "previous_source_commit": "ed55733ced2685dd56498f472ee2d86ae2c93ada"
+        "previous_source_commit": "ed55733ced2685dd56498f472ee2d86ae2c93ada",
+        "verified_source_ref": "refs/heads/codex/grouped-mod-qa-20261026",
+        "closure_evidence": ".local/play-session-20261026/grouped-qa/round-delivery.json",
+        "closure_metadata": "Recorded in this closing commit; exact final HEAD verification is retained in private closure evidence, avoiding a self-referential record hash."
       },
       "entry_process_audit": "No SB.exe or SB-Win64-Shipping.exe live; previous hair session PID1913315 absent; lifecycle-end confirms own helper stopped. Steam provider retained, no input granted to foreground.",
       "entry_goal_turn_classification": "FIRST_ACTIVATION; no prior turn in this new native Goal",
@@ -3732,7 +3764,8 @@
           "evidence": ".local/play-session-20261026/grouped-qa/semantic-independent-review.json",
           "full_S1_or_goal_or_leaf_PASS": false
         }
-      }
+      },
+      "closed_at": "2026-10-26T01:55:12.559894+00:00"
     }
   }
 }
