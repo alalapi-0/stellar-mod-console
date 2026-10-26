@@ -3733,7 +3733,7 @@
         ]
       },
       "git_delivery": {
-        "status": "VALIDATED_OWNED_STATE_PENDING_IMPLEMENTATION_BRANCH_SYNC",
+        "status": "SOURCE_DELIVERED_TO_IMPLEMENTATION_BRANCH",
         "target": "codex/grouped-mod-qa-20261026",
         "policy": "Current noautomaticmainmerge; onlyownedState summary, all rawmanifest/source/game evidence remainignored local.",
         "preserved_pre_existing": [
@@ -3742,8 +3742,12 @@
         ],
         "entry_verified_head": "cdd3b001dbd62cd03b93048e5a024e93db97dc44",
         "previous_source_commit": "9738ae350a8b7215913db9cf5e81367264238a52",
-        "remote_verified": false,
-        "closure_evidence": ".local/play-session-20261026/grouped-qa/risk-groups-r69/round-delivery.json"
+        "remote_verified": true,
+        "closure_evidence": ".local/play-session-20261026/grouped-qa/risk-groups-r69/round-delivery.json",
+        "source_commit": "9efb8fc2ca09d7bc3e7dd28d016f7d70647c87a9",
+        "verified_source_ref": "refs/heads/codex/grouped-mod-qa-20261026",
+        "main_unchanged": "aafc4b0fcf94bdc73b8e6810971281953f945fe9",
+        "metadata_note": "Same R69 close; exact final metadata HEAD is verified in ignored receipt, no self-reference."
       },
       "entry_process_audit": "No SB.exe or SB-Win64-Shipping.exe live; previous hair session PID1913315 absent; lifecycle-end confirms own helper stopped. Steam provider retained, no input granted to foreground.",
       "entry_goal_turn_classification": "FIRST_ACTIVATION; no prior turn in this new native Goal",
@@ -5003,6 +5007,23 @@
           "animation_assets_without_exhaustive_playback_requirement": 2897,
           "bug_links": 15,
           "unmapped_bug_refs": 0
+        },
+        "git_delivery": {
+          "status": "SOURCE_DELIVERED_TO_IMPLEMENTATION_BRANCH",
+          "target": "codex/grouped-mod-qa-20261026",
+          "policy": "Current noautomaticmainmerge; onlyownedState summary, all rawmanifest/source/game evidence remainignored local.",
+          "preserved_pre_existing": [
+            "Seven earlier handoff/manualplay/roundstatus State groups",
+            "docs/pch-rebuild-20261020 two unrelated/privatefiles; research/p2s-resource-analysis thirteen unrelatedfiles"
+          ],
+          "entry_verified_head": "cdd3b001dbd62cd03b93048e5a024e93db97dc44",
+          "previous_source_commit": "9738ae350a8b7215913db9cf5e81367264238a52",
+          "remote_verified": true,
+          "closure_evidence": ".local/play-session-20261026/grouped-qa/risk-groups-r69/round-delivery.json",
+          "source_commit": "9efb8fc2ca09d7bc3e7dd28d016f7d70647c87a9",
+          "verified_source_ref": "refs/heads/codex/grouped-mod-qa-20261026",
+          "main_unchanged": "aafc4b0fcf94bdc73b8e6810971281953f945fe9",
+          "metadata_note": "Same R69 close; exact final metadata HEAD is verified in ignored receipt, no self-reference."
         }
       }
     },
