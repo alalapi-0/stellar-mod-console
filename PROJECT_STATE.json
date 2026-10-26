@@ -3755,17 +3755,21 @@
         ]
       },
       "git_delivery": {
-        "status": "VALIDATED_OWNED_STATE_PENDING_IMPLEMENTATION_BRANCH_SYNC",
+        "status": "SOURCE_DELIVERED_TO_IMPLEMENTATION_BRANCH",
         "target": "codex/grouped-mod-qa-20261026",
         "policy": "Onlysanitized ownedState summary; source/game/UIassets/logs/identity/auth remainlocal. No automaticmainmerge.",
         "entry_verified_head": "06f5a2ec8e2a536661da221955155d9a1d57d482",
         "previous_source_commit": "9efb8fc2ca09d7bc3e7dd28d016f7d70647c87a9",
-        "remote_verified": false,
+        "remote_verified": true,
         "closure_evidence": ".local/manual-play-20261026/round-delivery.json",
         "preserved_pre_existing": [
           "Seven earlier handoff/manualplay/roundstatus groups",
           "Two unrelated/privateplanningfiles and13researchfiles"
-        ]
+        ],
+        "source_commit": "b4b96da5d201b9bf12c71c767035c3909c862bdd",
+        "verified_source_ref": "refs/heads/codex/grouped-mod-qa-20261026",
+        "main_unchanged": "aafc4b0fcf94bdc73b8e6810971281953f945fe9",
+        "metadata_note": "SameinterruptedR70/manualhandoffclose; exactfinalmetadataHEAD inignoredreceipt avoids self-reference."
       },
       "entry_process_audit": "No SB.exe or SB-Win64-Shipping.exe live; previous hair session PID1913315 absent; lifecycle-end confirms own helper stopped. Steam provider retained, no input granted to foreground.",
       "entry_goal_turn_classification": "FIRST_ACTIVATION; no prior turn in this new native Goal",
@@ -5068,7 +5072,24 @@
         "cleanup": ".local/play-session-20261026/grouped-qa/camera-recovery-r70/paused-test-lifecycle.json",
         "closed_at": "2026-10-26T13:28:43.489656+00:00",
         "result": ".local/manual-play-20261026/restart2/handoff.json",
-        "scope_change": "Ownerstoppedtestandrequestedmanualrestart,3252UIpriority andsecondrestart. No camera/appearance/GoalPASS."
+        "scope_change": "Ownerstoppedtestandrequestedmanualrestart,3252UIpriority andsecondrestart. No camera/appearance/GoalPASS.",
+        "git_delivery": {
+          "status": "SOURCE_DELIVERED_TO_IMPLEMENTATION_BRANCH",
+          "target": "codex/grouped-mod-qa-20261026",
+          "policy": "Onlysanitized ownedState summary; source/game/UIassets/logs/identity/auth remainlocal. No automaticmainmerge.",
+          "entry_verified_head": "06f5a2ec8e2a536661da221955155d9a1d57d482",
+          "previous_source_commit": "9efb8fc2ca09d7bc3e7dd28d016f7d70647c87a9",
+          "remote_verified": true,
+          "closure_evidence": ".local/manual-play-20261026/round-delivery.json",
+          "preserved_pre_existing": [
+            "Seven earlier handoff/manualplay/roundstatus groups",
+            "Two unrelated/privateplanningfiles and13researchfiles"
+          ],
+          "source_commit": "b4b96da5d201b9bf12c71c767035c3909c862bdd",
+          "verified_source_ref": "refs/heads/codex/grouped-mod-qa-20261026",
+          "main_unchanged": "aafc4b0fcf94bdc73b8e6810971281953f945fe9",
+          "metadata_note": "SameinterruptedR70/manualhandoffclose; exactfinalmetadataHEAD inignoredreceipt avoids self-reference."
+        }
       }
     },
     "owner_acceptance_20261026": {
@@ -5166,7 +5187,24 @@
         "action": "Normal restart atownerrequest; preservechoices; no reproductionorrootcausePASS",
         "evidence": ".local/manual-play-20261026/restart2/restart-authority.json"
       },
-      "input_guard": "Task helper rejects focus/input/capture afterhandoff; no future test dispatch"
+      "input_guard": "Task helper rejects focus/input/capture afterhandoff; no future test dispatch",
+      "Git_delivery": {
+        "status": "SOURCE_DELIVERED_TO_IMPLEMENTATION_BRANCH",
+        "target": "codex/grouped-mod-qa-20261026",
+        "policy": "Onlysanitized ownedState summary; source/game/UIassets/logs/identity/auth remainlocal. No automaticmainmerge.",
+        "entry_verified_head": "06f5a2ec8e2a536661da221955155d9a1d57d482",
+        "previous_source_commit": "9efb8fc2ca09d7bc3e7dd28d016f7d70647c87a9",
+        "remote_verified": true,
+        "closure_evidence": ".local/manual-play-20261026/round-delivery.json",
+        "preserved_pre_existing": [
+          "Seven earlier handoff/manualplay/roundstatus groups",
+          "Two unrelated/privateplanningfiles and13researchfiles"
+        ],
+        "source_commit": "b4b96da5d201b9bf12c71c767035c3909c862bdd",
+        "verified_source_ref": "refs/heads/codex/grouped-mod-qa-20261026",
+        "main_unchanged": "aafc4b0fcf94bdc73b8e6810971281953f945fe9",
+        "metadata_note": "SameinterruptedR70/manualhandoffclose; exactfinalmetadataHEAD inignoredreceipt avoids self-reference."
+      }
     }
   }
 }
