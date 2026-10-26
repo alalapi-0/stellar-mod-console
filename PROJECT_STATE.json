@@ -4467,14 +4467,22 @@
           "rollback": "After own game exit, verify exact installed candidate hash6eca... then restore only recorded original config preimageSHA840b... if authorized/needed. Never restore entire saves/mods/Steam prefix."
         },
         "git_delivery": {
-          "status": "REVIEWED_LOCAL_DELIVERY_PENDING",
+          "status": "VERIFIED_IMPLEMENTATION_BRANCH_DELIVERY",
           "target": "codex/grouped-mod-qa-20261026",
           "main_merge": "NO_AUTOMATIC_MAIN_MERGE_CURRENT_TASK",
           "scope": [
             "three reviewed owned source/test/doc files",
             "Owned State R64/currentprogress only"
           ],
-          "private_evidence": "Local ignored only; no original thirdparty config/assets/logs/auth data staged"
+          "private_evidence": "Local ignored only; no original thirdparty config/assets/logs/auth data staged",
+          "source_commit": "98273f1a1eed5ec6ed31a342cc55f316628ff5e3",
+          "remote_verified": true,
+          "verified_at": "2026-10-26T07:46:12.154223+00:00",
+          "main_commit": "aafc4b0fcf94bdc73b8e6810971281953f945fe9",
+          "main_note": "Unchanged; no automatic main merge under current task.",
+          "preserved_pre_existing": "Seven earlier State groups; TEST_PLAN/two20261025plan-prompt docs; unrelated privatepch/research groups retained unstaged.",
+          "closure_receipt": ".local/play-session-20261026/grouped-qa/ultimate-orss-repair/round-delivery.json",
+          "metadata_note": "Exact final metadata commit verified in ignored receipt; same round64, no self-referential commit hash."
         }
       }
     }
