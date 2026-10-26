@@ -1539,23 +1539,23 @@
       },
       "reason": "Owner explicitly removes exhaustive parameter/color/animation enumeration as completion requirement. Old264/5125 retained as history only; current merged applicability notfrozen, so no percentage orfakePASS.",
       "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
-      "manifest_sha256": "72355f0e933be5a45aec327c4344a788e5dc7feff002b3d7888147b884f8ab02",
+      "manifest_sha256": "b4b023a3a5d55f92fce423e24b01501f5ec5f937979f9ac108a2f6c228c2045e",
       "target_identity_sha256": "955965cda7371a7ff208fdf736e19a1136e0628cf77a644ac49b5d4323aa9a92",
       "enumeration_validation": ".local/play-session-20261026/grouped-qa/risk-groups-r69/result.json",
-      "round_key": "remaining-owner-mesh-deltas-r75-20261027",
-      "round_status": "CLOSED_REVIEWED_EXACT_TRIGGER_QUARANTINE",
-      "count": 75,
+      "round_key": "skeleton-binding-extra331-r76-20261027",
+      "round_status": "CLOSED_REVIEWED_EXACT_SKELETON_BINDING_REPAIR",
+      "count": 76,
       "coverage": "since_baseline",
-      "last_seq": 75,
-      "last_key": "remaining-owner-mesh-deltas-r75-20261027",
+      "last_seq": 76,
+      "last_key": "skeleton-binding-extra331-r76-20261027",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": null,
       "evidence_change_percentage_points": null,
       "scope_change_percentage_points": 0,
-      "change_rule": "One newly accepted scoped exclusion outcome;17directload-only PARTIAL +4historical PARTIAL +1newFAILED trigger. No fullgarmentPASS. Unknown currentGoal denominator prevents percentages.",
-      "round_start_commit": "1728f712f8c279a46349cc59f3acafa394177f7a",
-      "scope_change": "None in currentknown1285unit index/original5129/effective5125 inventory; exact quarantined UID remains a known failed target, allassets retained.",
-      "milestone_change": "Delayed CH59 material overwrite isolated by cold same-core control→trigger and actual3slot SetMaterial interception; exactUID quarantined, cold8chain clean; source attempts rolledback/profileexact restored. Distinct Punisher1 visual evidence not assigned to target0.",
+      "change_rule": "One exact binding subassertion repaired; no full garment PASS or historical leaf-status changes. Unknown currentGoal denominator prevents percentage.",
+      "round_start_commit": "990185a1d1c6a5000c7b9cc8b899fe873d3c9fad",
+      "scope_change": "No inventory/known1285 unit changes; old5129/effective5125 retained; no other136 inference.",
+      "milestone_change": "Extra331choice2 nativeSkeleton/mainAnimInstance restored with preserved rawimports/exportdata; coldload/reselect2/5/10s/shortmotion validated after new observer removed. Original137choices retained.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1991,10 +1991,12 @@
         "evidence": ".local/play-session-20261026/grouped-qa/material-output-repair-r75/runtime-result.json",
         "historical_appearance_structures_retained": 1035,
         "owner_excluded_appearance_structures": 2
-      }
+      },
+      "remaining_rounds_estimate": null,
+      "remaining_rounds_estimate_confidence": "UNKNOWN; heterogeneous unresolved scope and current denominator unknown"
     },
-    "next_action": "在当前精确隔离配置下，针对 ExtraMod331 首次换装 arms-out 做有界姿态/动画引用对照；复用共享核心和已接受排除证据，不重开坏333发型或WarDress，不穷举颜色/参数。",
-    "updated_at": "2026-10-26T18:42:41.462027+00:00",
+    "next_action": "先静态核查其余 ExtraMod331 网格的实际 Skeleton 导入；137项均有旧骨架包依赖，但依赖不等于错误绑定。按真实相同故障成小批修复并补网格差异；保留其他未知项，不重测配色和功能核心。",
+    "updated_at": "2026-10-26T20:41:56.755800+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2123,7 +2125,7 @@
         }
       }
     },
-    "round_closure_at": "2026-10-26T18:42:41.462027+00:00",
+    "round_closure_at": "2026-10-26T20:41:56.755800+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 14,
       "new_confirmed_this_round": 0,
@@ -2287,9 +2289,9 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "R75_REVIEWED_WARDRESS_TRIGGER_QUARANTINE_CLOSED",
-    "previous_goal_turn_classification": "R75meaningful increment: one exact trigger disposition accepted; no oldvalid core/garment proofs reopened globally.",
-    "execution_status": "READY_FOR_NEXT_ACTIVE_GOAL_DELTA",
+    "current_segment": "R76_REVIEWED_EXTRA331_BINDING_COMPLETE",
+    "previous_goal_turn_classification": "R76 meaningful increment: exact one-mesh Skeleton/mainAnimInstance repair independently accepted; fullgarment and other136 remain unaccepted; no global reopening of valid core evidence.",
+    "execution_status": "ACTIVE_GROUPED_COMPATIBILITY_NEXT_SKELETON_AUDIT",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
     "pause_source": "Current human: restart game, tests remain paused; subsequent black-screen repair does not resume tests",
     "user_play_handoff": {
@@ -2444,7 +2446,10 @@
         "unrelated_or_uncertain_mods": "PRESERVED",
         "evidence": ".local/manual-play-20261026/3252-installed-candidate.json"
       },
-      "next_action": "Ownerplays. NativeGoal/tests remainpaused. Resume/debug onlydirecthumaninstruction; clothingrecurrence/Lilyworldskin unresolved."
+      "next_action": "Current nativeGoal active; private test game closed and no foreground handoff requested. Continue bounded actual-Skeleton audit; future personal launch must bind helpers and1.75 movement again.",
+      "r76": "Exact one-mesh overlay retained; native Body restored through native UI and CNS profile exact. Test game closed; future personal launch must start/bind helpers and1.75 movement again.",
+      "helper_current_state": "Not running after collected test cleanup; no live assistance claim.",
+      "historical_next_action_before_r76": "Ownerplays. NativeGoal/tests remainpaused. Resume/debug onlydirecthumaninstruction; clothingrecurrence/Lilyworldskin unresolved."
     },
     "resume_source": "Current owner direct grouped MOD test/repair Goal Prompt; old console/Flatpak/Loop/admin and user foreground grants not resumed",
     "resumed_at": "2026-10-26T01:05:48.694134+00:00",
@@ -3299,13 +3304,14 @@
     "native_goal": {
       "threadId": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
       "status": "active",
-      "tokensUsed": 9618758,
-      "timeUsedSeconds": 52377,
+      "tokensUsed": 11252507,
+      "timeUsedSeconds": 65433,
       "createdAt": 1792972357,
-      "telemetry_at": "2026-10-26T17:02:53+00:00",
-      "telemetry_coverage": "Directnative cumulative currentactivation; noquota set/increased; historical logical lifetimecostUNKNOWN.",
+      "telemetry_at": "2026-10-26T20:41:56.755800+00:00",
+      "telemetry_coverage": "Directnative current activation; no quota set or increased; historical logical lifetimecost remains UNKNOWN.",
       "same_objective_verified": true,
-      "last_checkpoint": "R75reviewed scoped exclusion accepted; overallGoal unfinished, no native pause/complete request."
+      "last_checkpoint": "R76 reviewed exact one-mesh binding repair; Goal remains active/incomplete. No native status transition requested.",
+      "updatedAt": 1793047229
     },
     "goal_resume_source": "Current native Goal reused; same logical compatibility task and original5129/effective5125 preserved",
     "historical_previous_goal_health_checkpoint": {
@@ -3698,9 +3704,11 @@
       "evidence": ".local/play-session-20261026/grouped-qa",
       "native_goal": {
         "threadId": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
-        "status": "paused",
+        "status": "active",
         "history": "Prior activation metadata retained at historical_native_goal_before_grouped_qa_20261026; logical task counters not reset",
-        "pause_source": "Direct owner pause; native toolconfirmed, no automaticresume"
+        "previous_pause_source": "Direct owner pause; native toolconfirmed, no automaticresume",
+        "current_native_status_verified_at": "2026-10-26T20:41:56.755800+00:00",
+        "current_status_source": "Native get_goal on same thread; direct owner continuation; prior pause metadata is historical."
       },
       "protected": "Old console/Flatpak/Loop/admin work remains paused; no foreground takeover, account/Cloud/global changes, story progression or save rollback; EVEExperience stays off. Existing unrelated pending work preserved.",
       "acceptance": "Current owner compatibility-risk policy at owner_acceptance_20261026 controls: reusevalidsharedcore, mergegarment colors/options/animationconsumers, prioritize orderedoutfit failures andexplicit haircrashrepro. Original5125 inventory ishistory, notcurrent completion denominator.",
@@ -3712,8 +3720,8 @@
         "remaining_scope_unchanged": true
       },
       "test_save_boundary": "No independent story-save isolation established; forbid death/story/reward/travel tests and save rollback. Initial private launch/menu checks only; inspect scene before safe reversible movement/outfit checks.",
-      "round_accounting": "R74baseline/4guardtests, exactsourcefix, oneprivategamecheck andfreshreview oneclosedround; no pertool/test/callbackincrement.",
-      "next_action": "Test18source-matched newowner meshes withQA422 andpermesh material/animation/frame readback; deferMod770indexdriftforoldproofreuse, notreactivateexcludedoptions.",
+      "round_accounting": "R76 source skeleton proof, failed reconstruction/observer candidate, raw repair and observer-free cold/reselect/motion validation plus independent review count once; no perasset/tool/retry increments.",
+      "next_action": "先静态核查其余 ExtraMod331 网格的实际 Skeleton 导入；137项均有旧骨架包依赖，但依赖不等于错误绑定。按真实相同故障成小批修复并补网格差异；保留其他未知项，不重测配色和功能核心。",
       "at": "2026-10-25T23:55:06.640620+00:00",
       "lane_reason": "UnchangedacceptedQA422/currentcore; boundedoriginalCNSselections andread-onlyscoped observations; no runtimebehaviorrepair.",
       "findings": {
@@ -3727,7 +3735,7 @@
         "v8": "Fresh independent PASS for current BS_ alias transition/native-menu scope; full S1/Goal incomplete"
       },
       "candidate_sha256": "5679d28fe2e6719314c45e6709a99c4920c866a24b21953dd66e39a05dae4e12",
-      "updated_at": "2026-10-26T17:19:09.725396+00:00",
+      "updated_at": "2026-10-26T20:41:56.755800+00:00",
       "grouped_assertions": {
         "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
         "sha256": "a800adc5603d0edb2747f20dc335cc109dd88357033ddfcdadb856aac810b618",
@@ -3750,26 +3758,25 @@
         "evidence": ".local/play-session-20261026/grouped-qa/short-move-repair-r74/result.json"
       },
       "candidate_source": "src/runtime/NativeOutfitOwnership.lua",
-      "latest_runtime_result": ".local/play-session-20261026/grouped-qa/material-output-repair-r75/runtime-result.json",
-      "last_material_progress": "Cold helpers-on controlclean; originalWardress→Mod1508 lateSetMaterial3slot writes independently intercepted; exactUID quarantine and8coldorderedmaterial/finalframes clean. Current371UID scan removes onlythisentry; otherconfigs/assets preserved; failedC1/C2restored; CNSprofileexactroundtrip.",
-      "round_key": "remaining-owner-mesh-deltas-r75-20261027",
+      "latest_runtime_result": ".local/play-session-20261026/grouped-qa/skeleton-binding-r76/runtime-result.json",
+      "last_material_progress": "R76 exact Extra331 TypeC clonedSkeleton→native binding repaired; mainAnimInstance restored; scoped coldload/reselection/short movement; all137configchoices and assets retained, no blanketPASS.",
+      "round_key": "skeleton-binding-extra331-r76-20261027",
       "round_closed_once": true,
       "previous_current_projection_ref": ".local/play-session-20261026/grouped-qa/PROJECT_STATE.entry.json",
       "independent_review": {
-        "status": "PASS_SCOPED",
-        "reviewer": "/root/r75_material_quarantine_review",
-        "manifest_sha256": "72355f0e933be5a45aec327c4344a788e5dc7feff002b3d7888147b884f8ab02",
-        "receipt_ref": ".local/play-session-20261026/grouped-qa/material-output-repair-r75/independent-review.json"
+        "decision": "PASS_SCOPED",
+        "ref": ".local/play-session-20261026/grouped-qa/skeleton-binding-r76/independent-review.json",
+        "candidate_manifest_sha256": "b4b023a3a5d55f92fce423e24b01501f5ec5f937979f9ac108a2f6c228c2045e"
       },
       "git_delivery": {
         "status": "DELIVERY_RECEIPT_AUTHORITATIVE_FOR_REMOTE_VERIFICATION",
         "target": "codex/grouped-mod-qa-20261026",
-        "receipt_ref": ".local/play-session-20261026/grouped-qa/material-output-repair-r75/round-delivery.json",
+        "receipt_ref": ".local/play-session-20261026/grouped-qa/skeleton-binding-r76/round-delivery.json",
         "reviewed_paths": [
           "PROJECT_STATE.json ownedprojection",
           "docs/TEST_PLAN.md"
         ],
-        "previous_verified_commit": "1728f712f8c279a46349cc59f3acafa394177f7a",
+        "previous_verified_commit": "990185a1d1c6a5000c7b9cc8b899fe873d3c9fad",
         "main_merge_authorized": false
       },
       "entry_process_audit": "No SB.exe or SB-Win64-Shipping.exe live; previous hair session PID1913315 absent; lifecycle-end confirms own helper stopped. Steam provider retained, no input granted to foreground.",
@@ -3856,7 +3863,7 @@
         },
         "r73_reuse_correction": "Beforefuturecorechecks, consult actualmanifest grouped_assertions structuredremaining_delta andlaterrecords. MOVE-REBIND-SAMEPROCESS-NEWPAWN alreadyhasactual875proof andmustbereused absent relevantchange; older narrativegap sentences arehistorical."
       },
-      "closed_at": "2026-10-26T18:42:41.462027+00:00",
+      "closed_at": "2026-10-26T20:41:56.755800+00:00",
       "wardrobe_semantic": {
         "round_key": "grouped-cns-body-semantic-20261026",
         "source": "Continuation of active nativeGoal plus owner REA/nonvisualoperation steering",
@@ -4045,7 +4052,7 @@
           "metadata_note": "Source commit identity is recorded here; exact final metadata HEAD verification is in the existing ignored receipt to avoid self-reference."
         }
       },
-      "current_result_ref": "remembered_mesh_r75",
+      "current_result_ref": "skeleton_binding_r76",
       "piercing_delta": {
         "round_key": "aik-piercing-delta-20261026",
         "status": "CLOSED_SCOPED_PROGRESS_GOAL_CONTINUES",
@@ -5278,6 +5285,61 @@
         "round_closed_once": true,
         "current_game": "All task-owned game/helper/movement processes exited; private display retained for activeGoal.",
         "remaining": "Underlying loadercode cause OPEN, full body/physics/pose/longsession/hair/lifecycle and worldLily outside this accepted mitigation remain unaccepted."
+      },
+      "skeleton_binding_r76": {
+        "at": "2026-10-26T20:30:48.683453+00:00",
+        "status": "REVIEWED_SCOPED_BINDING_REPAIR_COMPLETE",
+        "lane": "REVIEWED",
+        "execution_source": "Native activeGoal continuation after acceptedR75 quarantine.",
+        "owned_scope": [
+          "PROJECT_STATE currentR76 fields",
+          ".local/play-session-20261026/grouped-qa/skeleton-binding-r76",
+          "Exact private QA/game/helper effects if live validation is needed; no current game live.",
+          "docs/TEST_PLAN.md two bounded validation paragraphs, previously clean; prior Root writer completed.",
+          "Exact one manifest target/group binding metadata and new scoped assertion after review; no status/identity/denominator changes."
+        ],
+        "target": "appearance:Repacked ExtraMod331/choice-2",
+        "current_source_sha256": "694e9f5d9c76c26ffbc1dda381eaaa6e2e200b38ae9b4dcb16d62d4af0c2e81d",
+        "evidence": "R75-b08 AnimScriptInstance=NULL and copied Skeleton namespace89a4...; adjacent bodies nativeSkeleton and valid mainAnimInstance.",
+        "acceptance": "Confirm exact skeletal binding compatibility and minimum actual pose/animation behavior; no all137variants/colors/core rerun, no blanket failure/compatibility.",
+        "protected": "WarDress and bad333Hair remain excluded; preserve136otheruncertainExtra331 variants and all assets/saves; no progression/whole-save rollback.",
+        "next_action": "先静态核查其余 ExtraMod331 网格的实际 Skeleton 导入；137项均有旧骨架包依赖，但依赖不等于错误绑定。按真实相同故障成小批修复并补网格差异；保留其他未知项，不重测配色和功能核心。",
+        "reference_bone_proof": ".local/play-session-20261026/grouped-qa/skeleton-binding-r76/reference-skeleton-comparison.json",
+        "repair_scope": "Exact mesh choice2 only; no configuration or choice-index changes, no modifications to original1.5GBcontainer.",
+        "resource_estimate": "Entry estimate under400MB; two owned game attempts completed, both helpers/movement/captures collected; regenerable rejected outputs removed, peak memory UNKNOWN. See resource_cleanup_ref.",
+        "failure_fingerprint": "Retained first-attempt UE4SS AV read0x70 (+24a801/+242d6a) before first socket-observer sample. Observer removed; same raw overlay coldload/reselect/motion passed. Observer-associated cause remainsOPEN; not a proven garment crash.",
+        "candidate_uninstalled": false,
+        "canonical_header_check": {
+          "source_sha256": "9cc11edb8010cfb6e6979abd62e6ef900836e22785e1c5141c5b413fb08ed9fc",
+          "candidate_sha256": "87b8ecd00f74d2f815d17c7ce871a376b9aeb8bccd6a04111290bca8ffae93a5",
+          "byte_difference": [
+            8821,
+            8822
+          ],
+          "scope": "Standard UAssetGUI serialization both before/after; only Skeleton package import differs; uexp unchanged.",
+          "status": "REJECTED_OFFLINE_NO_LIVE_INSTALL"
+        },
+        "raw_candidate_ref": ".local/play-session-20261026/grouped-qa/skeleton-binding-r76/raw-candidate-proof.json",
+        "deployment_ref": ".local/play-session-20261026/grouped-qa/skeleton-binding-r76/deployment.preimage.json",
+        "discarded_public_candidate": "Pinned legacy-header generator and tests moved into private rejected diagnostics; no public API is added for one local resource patch. Raw Zen candidate is generated by existing private build-raw-candidate.py.",
+        "crash_ref": ".local/play-session-20261026/grouped-qa/skeleton-binding-r76/crash-summary.json",
+        "runtime_result_ref": ".local/play-session-20261026/grouped-qa/skeleton-binding-r76/runtime-result.json",
+        "candidate_sha256": "b4b023a3a5d55f92fce423e24b01501f5ec5f937979f9ac108a2f6c228c2045e",
+        "candidate_manifest_ref": ".local/play-session-20261026/grouped-qa/skeleton-binding-r76/manifest.candidate.json",
+        "resources_closed": ".local/play-session-20261026/grouped-qa/skeleton-binding-r76/final-restoration.json",
+        "new_full_garment_PASS": 0,
+        "other136_preserved": true,
+        "protected_profile_restored_exact": true,
+        "remaining": "Full garment fit/physics/gait/long-session and other136choices remain unaccepted; observer-associated crash diagnostic cause OPEN.",
+        "candidate_doc_sha256": "7723832ac9f22b3b882e7b4801343cdd23d6eb4695a8fdc142bd7b3e66f91c89",
+        "round_closed_once": true,
+        "review_ref": ".local/play-session-20261026/grouped-qa/skeleton-binding-r76/independent-review.json",
+        "manifest_registered_sha256": "b4b023a3a5d55f92fce423e24b01501f5ec5f937979f9ac108a2f6c228c2045e",
+        "dependency_scan_ref": ".local/play-session-20261026/grouped-qa/skeleton-binding-r76/shared-skeleton-dependency-scan.json",
+        "rejected_legacy_header_patch_ref": ".local/play-session-20261026/grouped-qa/skeleton-binding-r76/direct-header-patch.json",
+        "header_patch_ref": ".local/play-session-20261026/grouped-qa/skeleton-binding-r76/raw-candidate-proof.json",
+        "current_game": "Both owned game/helper/movement sessions collected; first observer candidate exited5, accepted observer-free session normalexit0; temporaryQA removed; raw overlay retained.",
+        "resource_cleanup_ref": ".local/play-session-20261026/grouped-qa/skeleton-binding-r76/resource-closure.json"
       }
     },
     "owner_acceptance_20261026": {
