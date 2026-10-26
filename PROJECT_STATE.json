@@ -1542,20 +1542,20 @@
       "manifest_sha256": "e78a002bad506dae8dcbf090a59a90f1c8db06bfa744d5208891ee211db78c57",
       "target_identity_sha256": "955965cda7371a7ff208fdf736e19a1136e0628cf77a644ac49b5d4323aa9a92",
       "enumeration_validation": ".local/play-session-20261026/grouped-qa/risk-groups-r69/result.json",
-      "round_key": "remembered-unique-mesh-batch-r72-20261027",
-      "round_status": "CLOSED_REVIEWED_SCOPED_BATCH_AND_NATIVE_EXCLUSION_ADOPTION",
-      "count": 72,
+      "round_key": "first-cold-cns-body-pose-r73-20261027",
+      "round_status": "CLOSED_SCOPED_EVIDENCE_NEW_TRANSPORT_BUG_VERIFIED",
+      "count": 73,
       "coverage": "since_baseline",
-      "last_seq": 72,
-      "last_key": "remembered-unique-mesh-batch-r72-20261027",
+      "last_seq": 73,
+      "last_key": "first-cold-cns-body-pose-r73-20261027",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": null,
       "evidence_change_percentage_points": 0,
-      "scope_change_percentage_points": null,
-      "change_rule": "Actual24body selections,23eligibleNOT_TESTED→PARTIAL,0newPASS;1previouslyownerexcludedMod74 wronglytestedandnowexactlyexcluded; retainall5125historicalIDs. Exactsamecolor/core notexhausted.",
-      "round_start_commit": "9a09edf4739310bc9d0049230306d4627fa03666",
-      "scope_change": "Honor pre-existing collectionMod74 rejection through convertedalias: two groups1287→1285 knownunits, no newowner scope/denominatorreset. Currenttotal/percentage remainUNKNOWN.",
-      "milestone_change": "Batchfirst-to-last115sec;23newmesh material/rearload evidence, no newcrash; exactMod74 converteddeclarationquarantine adopted bycoldscannerand372dataobjects; CNSsaveexactroundtrip.",
+      "scope_change_percentage_points": 0,
+      "change_rule": "Manifest andallleafstatusesunchanged; boundedposeattemptNOT_REPRODUCED, sameNewPawn checkduplicatesvalidoldassertionandearns0. Verified80ms transportemptycompletion +independentfixtureFAIL changesnextaction.",
+      "round_start_commit": "f5614141e7e8332127c6f9dc68473e87f7758327",
+      "scope_change": "None; preserve5129original/5125historicalinventory andcurrent1285knownunits/UNKNOWNtotal.",
+      "milestone_change": "No posecausefound; verifiedtimingbug preventsreliable shortcontrol. R72UIDraw overwrittenaccident flaggedunrecoverable; currentexactconfiguration revalidated withoutoldPID provenance claims.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1997,8 +1997,8 @@
         "owner_excluded_appearance_structures": 2
       }
     },
-    "next_action": "Minimize firstcold CNS body selection armsout versus later sameasset reselection using timed2/5/10sec frames; reuse23 exactmesh deltas and priorcore, no allcolors/variants. Generalgray conflict rootcause remainsOPEN.",
-    "updated_at": "2026-10-26T15:50:47.893023+00:00",
+    "next_action": "Repair QAControl shortmovement timing: start inputwindow onfirstactualsubmission, preservewall/lease/lock guards andexplicitlyverify nonemptyactuation; addlate-first-tick regression, oneboundedruntimecheck, reuseallunaffectedcore/garment proofs.",
+    "updated_at": "2026-10-26T16:34:31.897817+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2127,7 +2127,7 @@
         }
       }
     },
-    "round_closure_at": "2026-10-26T15:50:47.893023+00:00",
+    "round_closure_at": "2026-10-26T16:34:31.897817+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 14,
       "new_confirmed_this_round": 0,
@@ -2291,9 +2291,9 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "R72_UNIQUE_MESH_BATCH_AND_OWNER_EXCLUSION_ADOPTED",
-    "previous_goal_turn_classification": "PROGRESS_23_NEW_PARTIAL_MESH_DELTAS_AND_PREVIOUS_OWNER_EXCLUSION_RESTORED",
-    "execution_status": "ACTIVE_READY_NARROW_POSE_REPRO",
+    "current_segment": "R73_SCOPED_POSE_CHECK_AND_QA_TIMING_ROOTCAUSE_CLOSED",
+    "previous_goal_turn_classification": "PROGRESS_NEW_TRANSPORT_FAILURE_REPRO_NO_NEW_BODY_PASS_OR_DUPLICATE_CORE_CREDIT",
+    "execution_status": "ACTIVE_READY_QA_SHORTMOVE_REPAIR",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
     "pause_source": "Current human: restart game, tests remain paused; subsequent black-screen repair does not resume tests",
     "user_play_handoff": {
@@ -3303,10 +3303,10 @@
     "native_goal": {
       "threadId": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
       "status": "active",
-      "tokensUsed": 8969433,
-      "timeUsedSeconds": 47811,
+      "tokensUsed": 9381340,
+      "timeUsedSeconds": 50548,
       "createdAt": 1792972357,
-      "telemetry_at": "2026-10-26T15:50:47.893023+00:00",
+      "telemetry_at": "2026-10-26T16:31:04Z",
       "telemetry_coverage": "Directnative cumulative currentactivation; noquota set/increased; historical logical lifetimecostUNKNOWN.",
       "same_objective_verified": true
     },
@@ -3686,7 +3686,7 @@
       "execution_source": "Direct owner native Goal objective submitted in thread 01a1757a-f84c-72b0-97bd-44ab8c53eb53 on 2026-10-26; execute MOD_TEST_REPAIR_PLAN_20261025 grouped QA",
       "owner_thread": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
       "lane": "REVIEWED",
-      "status": "ACTIVE_READY_NARROW_POSE_REPRO",
+      "status": "ACTIVE_READY_QA_SHORTMOVE_REPAIR",
       "owned_scope": [
         "PROJECT_STATE.json#mod_compatibility_restructure current grouped execution/progress projection; old paused console and pre-existing manual-play deltas remain separate",
         ".local/play-session-20261026/grouped-qa",
@@ -3715,10 +3715,10 @@
         "remaining_scope_unchanged": true
       },
       "test_save_boundary": "No independent story-save isolation established; forbid death/story/reward/travel tests and save rollback. Initial private launch/menu checks only; inspect scene before safe reversible movement/outfit checks.",
-      "round_accounting": "R72 batch, one mistakenlyselectedexcludedalias correction, metadatarepair andsame-roundcoldadoption areone reviewedclosedround; no pergarment/retry/Judge count.",
-      "next_action": "Minimize firstcold CNS body selection armsout versus later sameasset reselection using timed2/5/10sec frames; reuse23 exactmesh deltas and priorcore, no allcolors/variants. Generalgray conflict rootcause remainsOPEN.",
+      "round_accounting": "R73poseobservation, duplicateNewPawnrecheck, shorttransportfailurediagnosis andevidenceintegrityrepair oneclosedround, no pertool/attempt/agent count.",
+      "next_action": "Repair QAControl shortmovement timing: start inputwindow onfirstactualsubmission, preservewall/lease/lock guards andexplicitlyverify nonemptyactuation; addlate-first-tick regression, oneboundedruntimecheck, reuseallunaffectedcore/garment proofs.",
       "at": "2026-10-25T23:55:06.640620+00:00",
-      "lane_reason": "R72 actual batch revealed legacy owner-exclusion alias leakage; coherent narrow declaration quarantine plus manifest/source/group applicability correction requires fresh independent review.",
+      "lane_reason": "No runtimebehavior/source repairyet; review coherent scoped pose/lifecycle interpretation and transparent recoveryfromaccidental R72raw evidenceoverwrite.",
       "findings": {
         "v3": "Confirmed Lua index13 reads native slot12; no successful native-body binding. Current fix readsLua14.",
         "v4": "Real native cold-load false positive and Actor-deselection invisible-body regressions; FAIL preserved.",
@@ -3730,7 +3730,7 @@
         "v8": "Fresh independent PASS for current BS_ alias transition/native-menu scope; full S1/Goal incomplete"
       },
       "candidate_sha256": "5679d28fe2e6719314c45e6709a99c4920c866a24b21953dd66e39a05dae4e12",
-      "updated_at": "2026-10-26T15:50:47.893023+00:00",
+      "updated_at": "2026-10-26T16:34:31.897817+00:00",
       "grouped_assertions": {
         "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
         "sha256": "a800adc5603d0edb2747f20dc335cc109dd88357033ddfcdadb856aac810b618",
@@ -3744,42 +3744,38 @@
       },
       "hair_original_context": "Exact BUG-HAIR-20261025-01 context recovered read-only from native crash directory; private pointer .local/play-session-20261026/grouped-qa/hair-incident-context-recovery.json; GameThread AV verified, cause unknown",
       "runtime_ownership": {
-        "game": "R72 batch1885476/start162470008 andcold2031378/start162562656 absent; bothnativewrappers0.",
-        "helper": "Both exactownedhelper wrappers ended0 afterexplicitownshutdownCLI0.",
-        "movement": "Batchownedmovement72297 stopped0; no coldverification movementhelper started.",
-        "bridge": "TemporaryQAremovedafterexacthashcheck; modsoriginal2d4e87...; coldverifyusednoQA.",
-        "private_display": "Ownedprivate:2 retained foractiveGoal; ownerphysicalforeground untouched.",
-        "children": "FreshR72Judge completed/collected; no activeown descendants.",
-        "evidence": ".local/play-session-20261026/grouped-qa/remembered-mesh-batch-r72/closure.json"
+        "game": "Exact2225085/start162688727 andnativewrapper45190 ended0.",
+        "helper": "Exactownedhelper wrapper57930 ended0 aftershutdownCLI0.",
+        "movement": "Ownsession65346 stopped0 andrestoredownedfields beforegameclose.",
+        "bridge": "UnchangedQA421exact2filesremoved; only ownappendedsuffixtruncated; no lease/requestquota increase.",
+        "private_display": "Owned:2 retainedforactiveGoal; physicalforeground untouched.",
+        "children": "R73read-onlyJudge completed/collected; noactiveownchild.",
+        "evidence": ".local/play-session-20261026/grouped-qa/first-switch-pose-r73/result.json"
       },
       "candidate_source": "src/runtime/NativeOutfitOwnership.lua",
-      "latest_runtime_result": ".local/play-session-20261026/grouped-qa/remembered-mesh-batch-r72/result.json",
-      "last_material_progress": "23neweligibleexactmeshes PARTIALplus Mod74ownerrejectionadopted; no generalgray/rootcausePASS; firstCNS armsout observationOPEN.",
-      "round_key": "remembered-unique-mesh-batch-r72-20261027",
+      "latest_runtime_result": ".local/play-session-20261026/grouped-qa/first-switch-pose-r73/result.json",
+      "last_material_progress": "Posefirst/reselect6timedframes normalthistrial only; no newPASS. RealQA80ms0submission issue reproducedindependently; nextrepaironlytransport.",
+      "round_key": "first-cold-cns-body-pose-r73-20261027",
       "round_closed_once": true,
       "previous_current_projection_ref": ".local/play-session-20261026/grouped-qa/PROJECT_STATE.entry.json",
       "independent_review": {
-        "at": "2026-10-26T15:50:47.893023+00:00",
-        "reviewer": "/root/r72_batch_exclusion_review",
+        "at": "2026-10-26T16:34:31.897817+00:00",
+        "reviewer": "/root/r73_pose_evidence_review",
         "verdict": "PASS_SCOPED",
-        "candidate_manifest_sha256": "e78a002bad506dae8dcbf090a59a90f1c8db06bfa744d5208891ee211db78c57",
-        "initial_block": "Staleaggregate rowstatuses; corrected andindependently reread currente78a candidate.",
-        "scope": "23 exact newmeshes PARTIAL only,1 mistakenownerexcluded attemptnoacceptance; exactMod74 declarationquarantine plusfreshscanner124→123 and372runtime datareadback; protectedconfigs/knownbadHair/3252/CNSsave preserved.",
-        "limitations": "Open firstselection armsout vs laterreselection normal; nofullphysics/frontview/longrun/generalrootcause/completeGoal.",
-        "final_collected": true
+        "scope": "Timedpose NOT_REPRODUCED, existingNewPawn proofreusedwithoutcredit, independentlyreplayed QA421late-first-tickFAIL, evidenceoverwritetransparent/currentPIDrevalidationonly.",
+        "raw_r72_original_uid_list_recoverable": false,
+        "full_goal_complete": false,
+        "remaining": "No actualfresh875speed orallgarments/physics/posecause claim; native29physicsdifferencealone notdefect.",
+        "collected": true
       },
       "git_delivery": {
-        "status": "SOURCE_DELIVERED_TO_IMPLEMENTATION_BRANCH",
+        "status": "RESULT_IN_REFERENCED_RECEIPT",
         "target": "codex/grouped-mod-qa-20261026",
-        "entry_verified_head": "9a09edf4739310bc9d0049230306d4627fa03666",
+        "entry_verified_head": "f5614141e7e8332127c6f9dc68473e87f7758327",
+        "closure_evidence": ".local/play-session-20261026/grouped-qa/first-switch-pose-r73/round-delivery.json",
         "main_merge_authorized": false,
-        "main_unchanged": "aafc4b0fcf94bdc73b8e6810971281953f945fe9",
-        "closure_evidence": ".local/play-session-20261026/grouped-qa/remembered-mesh-batch-r72/round-delivery.json",
-        "retained_groups": "Seven older protectedState groups and15 unrelatedplanning/researchfiles preserved. Rawconfigs/assets/logs/privateevidence remainlocal.",
-        "policy": "Exactfinalcommit verified inignoredreceipt; no selfreference commit or automaticmainmerge.",
-        "source_commit": "44ef24af98136a67c4e9141739a316715442546f",
-        "remote_verified": true,
-        "metadata_note": "SameR72 metadata closure; exactfinalHEAD in ignored round-delivery receipt, no selfreference."
+        "policy": "OnlyownedStateprojection. Exactnormalpushoutcome andremoteHEAD/mainverificationinexistingignoredreceipt; no selfreference/redundantmetadatacommit.",
+        "retained": "SevenolderprotectedState groups and15unrelatedplanning/researchfiles; rawdata/configs/logs/assetslocal."
       },
       "entry_process_audit": "No SB.exe or SB-Win64-Shipping.exe live; previous hair session PID1913315 absent; lifecycle-end confirms own helper stopped. Steam provider retained, no input granted to foreground.",
       "entry_goal_turn_classification": "FIRST_ACTIVATION; no prior turn in this new native Goal",
@@ -3862,9 +3858,10 @@
           "matching_REA_game_operation": false,
           "SOH_406": "FixedREAinstalled; actualtarget-related backendanalysis notyetpassed incurrentSOHstate",
           "read_only": true
-        }
+        },
+        "r73_reuse_correction": "Beforefuturecorechecks, consult actualmanifest grouped_assertions structuredremaining_delta andlaterrecords. MOVE-REBIND-SAMEPROCESS-NEWPAWN alreadyhasactual875proof andmustbereused absent relevantchange; older narrativegap sentences arehistorical."
       },
-      "closed_at": "2026-10-26T15:50:47.893023+00:00",
+      "closed_at": "2026-10-26T16:34:31.897817+00:00",
       "wardrobe_semantic": {
         "round_key": "grouped-cns-body-semantic-20261026",
         "source": "Continuation of active nativeGoal plus owner REA/nonvisualoperation steering",
@@ -4053,7 +4050,7 @@
           "metadata_note": "Source commit identity is recorded here; exact final metadata HEAD verification is in the existing ignored receipt to avoid self-reference."
         }
       },
-      "current_result_ref": "remembered_mesh_r72",
+      "current_result_ref": "first_switch_pose_r73",
       "piercing_delta": {
         "round_key": "aik-piercing-delta-20261026",
         "status": "CLOSED_SCOPED_PROGRESS_GOAL_CONTINUES",
@@ -5157,7 +5154,46 @@
         "next_action": "Minimize firstcold CNS body selection armsout versus later sameasset reselection using timed2/5/10sec frames; reuse23 exactmesh deltas and priorcore, no allcolors/variants. Generalgray conflict rootcause remainsOPEN.",
         "batch_first_to_last_seconds": 114.520543,
         "known_current_units": 1285,
-        "pose_observation": "OPEN_FIRST_SELECTION_VS_RESELECTION_POSE"
+        "pose_observation": "OPEN_FIRST_SELECTION_VS_RESELECTION_POSE",
+        "evidence_integrity_notice": ".local/play-session-20261026/grouped-qa/first-switch-pose-r73/prior-evidence-overwrite-notice.json",
+        "runtime_uid_provenance": "OriginalPID2031378rawUIDfile overwrittenandunrecoverable. Originalcoldscan/summary remain; sameconfiguration revalidatedwithPID2225085, notfakedoldPID."
+      },
+      "first_switch_pose_r73": {
+        "status": "CLOSED_PASS_SCOPED_TOOL_TIMING_BUG_VERIFIED_POSE_OPEN",
+        "execution_source": "NativeGoal continuation; previousR72made23newpartialdeltas andadoptedownerexclusion; nextaction changed byopenb01pose evidence.",
+        "at": "2026-10-26T15:57:32.972973+00:00",
+        "lane": "REVIEWED",
+        "owned_scope": [
+          "PROJECT_STATE currentR73fields",
+          ".local/play-session-20261026/grouped-qa/first-switch-pose-r73",
+          ".local/play-session-20261026/grouped-qa/semantic-19",
+          "ExacttemporaryQA2files andappendedsuffix",
+          "Exactnewprivategame/helpers/input"
+        ],
+        "leaf": "appearance:Repacked PC Cybernetics Inner Suit Nude Textures 8K 4/choice-0",
+        "source": ".local/play-session-20261026/grouped-qa/first-switch-pose-r73/qa-candidate.json",
+        "acceptance": "Actualtimedframes + savedID/index/liveMesh + animation/physics objectreferences; distinguish initialAPose from laterreselect/normalidle; no generalcompatibilityPASS.",
+        "added_gap": "Sameprocess latestContinue newPawn recovery for currentCNS outfit andunchanged movementhelper; no death/story/reward/travel or whole-saverestore.",
+        "pose_direct": "First andsameasset repeated selection timed2/5/10frames show no persistentarmsout; exactaniminstance preserved. Originalintermittent observation remainsOPEN.",
+        "next_action": "Ownprivate game returns title thenContinue currentlatest save; verify oldPawn gone/newPawn bound/currentCNSmesh retained/guarded1.75 reapply; no manual storysaving.",
+        "result_ref": ".local/play-session-20261026/grouped-qa/first-switch-pose-r73/result.json",
+        "new_pawn_check": "Duplicatevalidexistingassertion;0newacceptancecredit",
+        "transport_issue": "QA42180mscompleted0submissions;400ms2submissions12.776cmdisplacement/velocityundersampled",
+        "prior_evidence_overwrite_notice": ".local/play-session-20261026/grouped-qa/first-switch-pose-r73/prior-evidence-overwrite-notice.json",
+        "closed_at": "2026-10-26T16:34:31.897817+00:00",
+        "review": "PASS_SCOPED",
+        "review_ref": ".local/play-session-20261026/grouped-qa/first-switch-pose-r73/independent-review.json",
+        "new_core_acceptance_credit": 0,
+        "new_leaf_pass": 0,
+        "manifest_unchanged": true,
+        "qa_timing_baseline": "FAIL_REPRODUCED_BY_ROOT_AND_INDEPENDENT_JUDGE",
+        "runtime_sessions_closed": true,
+        "crash_contexts": 23,
+        "other_save_bytes_changed": [
+          "XXTB_Config.sav",
+          "StellarBladeSave01.sav"
+        ],
+        "whole_save_rollback": false
       }
     },
     "owner_acceptance_20261026": {
