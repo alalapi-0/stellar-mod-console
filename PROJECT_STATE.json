@@ -3718,7 +3718,7 @@
         ]
       },
       "git_delivery": {
-        "status": "VALIDATED_OWNED_STATE_CANDIDATE_PENDING_IMPLEMENTATION_BRANCH_SYNC",
+        "status": "SOURCE_DELIVERED_TO_IMPLEMENTATION_BRANCH",
         "target": "codex/grouped-mod-qa-20261026",
         "policy": "Currentexplicitnoautomaticmainmerge controls; onlyownedStateprojection, no rawgame/config/save/log/evidence.",
         "preserved_pre_existing": [
@@ -3727,8 +3727,12 @@
         ],
         "previous_source_commit": "c44eb13fd4dcd88232c7c18f30f1ad9dea1c0884",
         "entry_verified_head": "aed4fb5a2591ba825a49df2879bbc4662332b6e2",
-        "remote_verified": false,
-        "closure_evidence": ".local/play-session-20261026/grouped-qa/sequence-material-r68/round-delivery.json"
+        "remote_verified": true,
+        "closure_evidence": ".local/play-session-20261026/grouped-qa/sequence-material-r68/round-delivery.json",
+        "source_commit": "9738ae350a8b7215913db9cf5e81367264238a52",
+        "verified_source_ref": "refs/heads/codex/grouped-mod-qa-20261026",
+        "main_unchanged": "aafc4b0fcf94bdc73b8e6810971281953f945fe9",
+        "metadata_note": "Same R68 closure; exact final metadata HEAD is verified in ignored round-delivery receipt to avoid self-reference."
       },
       "entry_process_audit": "No SB.exe or SB-Win64-Shipping.exe live; previous hair session PID1913315 absent; lifecycle-end confirms own helper stopped. Steam provider retained, no input granted to foreground.",
       "entry_goal_turn_classification": "FIRST_ACTIVATION; no prior turn in this new native Goal",
@@ -4919,7 +4923,24 @@
           "original_whole_gray": "OPEN_NOT_REPRODUCED",
           "final_camera_body_visibility": "NOT_ACCEPTED"
         },
-        "manifest_sha256": "858203cdc72c80aa427ec93d3c5186a96236fa31ee4020f959957bb68310afc4"
+        "manifest_sha256": "858203cdc72c80aa427ec93d3c5186a96236fa31ee4020f959957bb68310afc4",
+        "git_delivery": {
+          "status": "SOURCE_DELIVERED_TO_IMPLEMENTATION_BRANCH",
+          "target": "codex/grouped-mod-qa-20261026",
+          "policy": "Currentexplicitnoautomaticmainmerge controls; onlyownedStateprojection, no rawgame/config/save/log/evidence.",
+          "preserved_pre_existing": [
+            "Sevenearlier manualplay/handoff/roundstatus State groups retainedoutsideindex",
+            "docs/pch-rebuild-20261020 two private/unrelatedfiles; research/p2s-resource-analysis thirteen unrelatedfiles"
+          ],
+          "previous_source_commit": "c44eb13fd4dcd88232c7c18f30f1ad9dea1c0884",
+          "entry_verified_head": "aed4fb5a2591ba825a49df2879bbc4662332b6e2",
+          "remote_verified": true,
+          "closure_evidence": ".local/play-session-20261026/grouped-qa/sequence-material-r68/round-delivery.json",
+          "source_commit": "9738ae350a8b7215913db9cf5e81367264238a52",
+          "verified_source_ref": "refs/heads/codex/grouped-mod-qa-20261026",
+          "main_unchanged": "aafc4b0fcf94bdc73b8e6810971281953f945fe9",
+          "metadata_note": "Same R68 closure; exact final metadata HEAD is verified in ignored round-delivery receipt to avoid self-reference."
+        }
       }
     },
     "owner_acceptance_20261026": {
