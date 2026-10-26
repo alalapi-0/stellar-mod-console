@@ -4134,7 +4134,7 @@
         "dependency_fingerprint": ".local/play-session-20261026/grouped-qa/piercing-delta/dependency-fingerprint.json",
         "git_delivery": {
           "target": "codex/grouped-mod-qa-20261026",
-          "status": "PENDING_VERIFICATION",
+          "status": "SOURCE_COMMIT_VERIFIED_ON_AUTHORIZED_IMPLEMENTATION_BRANCH",
           "reviewed_scope": [
             "src/runtime/QAControl.lua",
             "src/runtime/README.md",
@@ -4144,7 +4144,17 @@
             "Owned PROJECT_STATE task projection"
           ],
           "local_only": "Raw screenshots/native saved-data/process/manifest evidence remain ignored. Prior planning/manual-play/paused-product/private-research groups retained.",
-          "receipt": ".local/play-session-20261026/grouped-qa/piercing-delta/git-delivery.json"
+          "receipt": ".local/play-session-20261026/grouped-qa/piercing-delta/git-delivery.json",
+          "source_commit": "afb94aa321a16d08b54e9164d244c294a826403d",
+          "verified_remote_commit": "afb94aa321a16d08b54e9164d244c294a826403d",
+          "remote_main": "aafc4b0fcf94bdc73b8e6810971281953f945fe9",
+          "main_policy": "Explicit implementation branch only; no main merge.",
+          "checks": {
+            "local": "3tests/68scenarios exit0, fresh repaired-candidate JudgePASS, actual original control/empty-key save restoration and CNS menu refusal evidence, staged whitespace/secret-pattern checks PASS",
+            "github_reported_check_runs": 0
+          },
+          "verified_at": "2026-10-26T06:14:38.250095+00:00",
+          "metadata_note": "Exact final metadata HEAD recorded in existing ignored receipt to avoid self-reference."
         }
       }
     }
