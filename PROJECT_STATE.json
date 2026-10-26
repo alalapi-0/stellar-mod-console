@@ -1940,8 +1940,8 @@
         "note": "Prior210PASS andall failures retained in exact original scopes; no claim every prior appearance result was freshly re-audited in this bounded core unit."
       }
     },
-    "next_action": "Reuse current task-private session; exact identities, scene and helper/movement stop handles are in .local/play-session-20261026/grouped-qa/resource-checkpoint.json. Next safe unit: sameprocess newPawn movement/body recovery withoutstory progression/rollback, then ready shared input/body/material families. Dialogue/trueRemovedBody/hook reload/samealias remain unverified.",
-    "updated_at": "2026-10-26T01:05:48.694134+00:00",
+    "next_action": "Use current semantic observe/move/stop + read/action/postcondition batches for ready nonvisual gates; next narrow adapter unit is known loaded CNS fiveparameter selection call with savedselection/mesh readback andone necessaryvisualcheck. Keep dialogue/newPawn originalgapsopen.",
+    "updated_at": "2026-10-26T01:51:57.160243+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2216,7 +2216,7 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "PRIVATE_GROUPED_QA_20261026_V8",
+    "current_segment": "PRIVATE_GROUPED_QA_20261026_SEMANTIC_CONTROL",
     "previous_goal_turn_classification": "PROGRESS: audited true failures; fixed native/CNS module; actual scoped menu/mesh/save andmovement lock/recovery evidence; originalleaf denominator unchanged",
     "execution_status": "GROUPED_QA_ACTIVE_S1_PARTIAL",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
@@ -3621,7 +3621,7 @@
       },
       "test_save_boundary": "No independent story-save isolation established; forbid death/story/reward/travel tests and save rollback. Initial private launch/menu checks only; inspect scene before safe reversible movement/outfit checks.",
       "round_accounting": "R56/R59 unfinished retained; S0/S1 audit and current-core assertion unit closes once, no per-tool/per-outfit round.",
-      "next_action": "Reuse current task-private session; exact identities, scene and helper/movement stop handles are in .local/play-session-20261026/grouped-qa/resource-checkpoint.json. Next safe unit: sameprocess newPawn movement/body recovery withoutstory progression/rollback, then ready shared input/body/material families. Dialogue/trueRemovedBody/hook reload/samealias remain unverified.",
+      "next_action": "Use current semantic observe/move/stop + read/action/postcondition batches for ready nonvisual gates; next narrow adapter unit is known loaded CNS fiveparameter selection call with savedselection/mesh readback andone necessaryvisualcheck. Keep dialogue/newPawn originalgapsopen.",
       "at": "2026-10-25T23:55:06.640620+00:00",
       "lane_reason": "Recovered native equipment lifecycle and CNS saved-selection integration; Root verifies coherent candidate, fresh independent Judge before acceptance.",
       "findings": {
@@ -3635,7 +3635,7 @@
         "v8": "Fresh independent PASS for current BS_ alias transition/native-menu scope; full S1/Goal incomplete"
       },
       "candidate_sha256": "5679d28fe2e6719314c45e6709a99c4920c866a24b21953dd66e39a05dae4e12",
-      "updated_at": "2026-10-26T01:05:48.694134+00:00",
+      "updated_at": "2026-10-26T01:51:57.160243+00:00",
       "grouped_assertions": {
         "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
         "sha256": "a800adc5603d0edb2747f20dc335cc109dd88357033ddfcdadb856aac810b618",
@@ -3649,11 +3649,12 @@
       "hair_original_context": "Exact BUG-HAIR-20261025-01 context recovered read-only from native crash directory; private pointer .local/play-session-20261026/grouped-qa/hair-incident-context-recovery.json; GameThread AV verified, cause unknown",
       "runtime_ownership": {
         "evidence": ".local/play-session-20261026/grouped-qa/resource-checkpoint.json",
-        "game": "Verified current task private display/game; intentionally retained for active Goal nextunit. Exact identities/auth metadata remain private.",
-        "helper": "CombatAssistant1.0.16 currentbinding andthreeflags on; private CLI shutdown/handle recorded",
-        "movement": "Existing unchanged six-float1.75 maintenance currentPawn fresh6/6 readback; exact PID/start+stop/preimage recorded privately",
+        "game": "Currentexactrootprivategame retained; livebinding/handles/auth metadata onlyatprivate resource-checkpoint.json",
+        "helper": "CurrentCombatAssistant1.0.16 Connected/bindingReady plusguard/dodge/special true; currentCLIshutdownhandleprivate",
+        "movement": "Currentunchanged sixfieldguardedservice withactual875speed andnative-lockrestore/reapply; exactPID/start/stophandleprivatelyregistered",
         "input": "Everybounded key/mouse down released; no foreground takeover",
-        "resources": "Prior own games/helpers/movement units normal exit0/cleanupgapnull; currentrootgame/helper/movement/display retained; all childwriters ended"
+        "resources": "Previous owned games exited normally; movement restore-on-exit0. Helper shutdown acknowledged; one wrapper exit143 preserved at pre-semantic-lifecycle-end.json. Current exact private game/helper/movement/display retained; all child writers ended.",
+        "bridge": "Sessiononlyobserve/move/stopactualproved; noheldkeys; autolease; exactnewmoduleenableline/preimage/stop private"
       },
       "candidate_source": "src/runtime/NativeOutfitOwnership.lua",
       "latest_runtime_result": ".local/play-session-20261026/grouped-qa/v8-runtime-result.json",
@@ -3667,16 +3668,71 @@
         "full_S1_or_goal_pass": false
       },
       "git_delivery": {
-        "status": "PENDING_CURRENT_UNIT_BRANCH_DELIVERY",
+        "status": "CURRENT_BRIDGE_VERIFIED_PENDING_SOURCE_DELIVERY",
         "target": "codex/grouped-mod-qa-20261026",
         "policy": "No automatic merge to main; publish only current reviewed source/test andowned State projection, never local raw evidence/auth/game assets.",
         "preserved_pre_existing": [
           "Earlier manual-play/repair State deltas anddocs/TEST_PLAN.md+two20261025 plan/prompt files remain unstaged under their prior deliverypause/ownership group.",
           "docs/pch-rebuild-20261020 contains unrelated/private planning; research/p2s-resource-analysis is separateworkspace research. Both retained."
-        ]
+        ],
+        "source_commit": "ed55733ced2685dd56498f472ee2d86ae2c93ada",
+        "remote_verified": true,
+        "previous_source_commit": "ed55733ced2685dd56498f472ee2d86ae2c93ada"
       },
       "entry_process_audit": "No SB.exe or SB-Win64-Shipping.exe live; previous hair session PID1913315 absent; lifecycle-end confirms own helper stopped. Steam provider retained, no input granted to foreground.",
-      "entry_goal_turn_classification": "FIRST_ACTIVATION; no prior turn in this new native Goal"
+      "entry_goal_turn_classification": "FIRST_ACTIVATION; no prior turn in this new native Goal",
+      "efficiency_steering": {
+        "source": "Owner asks 2026-10-26 to use SOH REA analysis and remove per-action screenshots for nonvisual movement/control checks",
+        "SOH_read_only": true,
+        "REA": {
+          "version": "rea-agents6.7.0",
+          "installation": "Task-local .local/rea-runtime; no global setup/registration/config changes",
+          "actual_evidence": ".local/play-session-20261026/grouped-qa/rea-game-file-headers.json",
+          "native_pe_headers": "Actual GNU objdump operation exit0, exact artifact unchanged",
+          "symbols": "No symbols; deep Ghidra backend not configured, not a completed decompilation"
+        },
+        "semantic_findings": "Live reflected Actor position/Vector velocity and guarded AddMovementInput are actually callable and verified by independent readback. CNS Set Custom Outfit exact five-parameter signature recovered read-only; CNS selection call remains unverified.",
+        "owned_files": [
+          "src/runtime/QAControl.lua",
+          "tests/test_qa_control.py",
+          "tests/fixtures/qa_control.lua",
+          "src/runtime/README.md"
+        ],
+        "deployment_scope": "One new own session-only Lua mod plus exact appended enable line after normal owned game exit; no loader upgrade, full mods.txt overwrite, third-party replacement, game asset or save-file edit during deployment.",
+        "acceptance": "Actual read-only game-thread observe compared with independent memory; short bounded semantic move with displacement and natural stop; refusal under native menu lock; no screenshots between state-based actions",
+        "status": "PASS_SCOPED_RUNTIME_AND_INDEPENDENT_REVIEW",
+        "evidence": ".local/play-session-20261026/grouped-qa",
+        "at": "2026-10-26T01:39:17.557740+00:00",
+        "candidate_sha256": "ddc2fa2461288d05d198b15fc0da571bcf04e8b77732fa9e453c8bb211d48812",
+        "runtime_result": ".local/play-session-20261026/grouped-qa/semantic-runtime-result.json",
+        "actual_assertions": 5,
+        "leaf_status_changes": 0,
+        "actual": {
+          "move400ms_displacement_cm": 194.4251717338,
+          "peak_speed_cm_s": 875.00772897849,
+          "move_wall_ms": 1024.07,
+          "menu_refused": true,
+          "continuous_stop_samples": 175,
+          "native_deceleration_stable_zero_seconds_after_stop_request": 1.1525,
+          "screenshots_during_semantic_actions": 0,
+          "independent_getter_comparison": "ActualnativeActorgettersmatchO_RDONLYposition/velocitywithin0.1"
+        },
+        "failures_preserved": [
+          "Firstlaunchmissingknownplatformarg; fixedwithoutNewGame action",
+          "Tooearly350msnaturalstopzeroassumptionfailed; nativecontinuousreadbackreplacedtimingassumption"
+        ],
+        "limits": [
+          "Currentexactbuild/Pawn/camp; nofullgamefunctiondecompilation",
+          "Bridge20min200requestlimit; renewalnotverified",
+          "CNS5paramsignaturefoundbutselectionnotyetcalled",
+          "Physicalkeyboard/controllerandvisualappearanceacceptanceseparate"
+        ],
+        "independent_review": {
+          "decision": "PASS_SCOPED",
+          "evidence": ".local/play-session-20261026/grouped-qa/semantic-independent-review.json",
+          "full_S1_or_goal_or_leaf_PASS": false
+        }
+      }
     }
   }
 }
