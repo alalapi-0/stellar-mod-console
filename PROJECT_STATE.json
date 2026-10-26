@@ -1507,20 +1507,20 @@
       }
     },
     "progress": {
-      "scope_version": "unified-leaves-v5-sequential-material-feedback-20261014",
+      "scope_version": "compatibility-risk-groups-v6-owner-20261026",
       "completion_scope": "RETAINED_INDEPENDENT_TESTS_AFTER_EXPLICIT_FAVOURITE_EDITION_SELECTION_WITH_SCOPE_GATES",
-      "effective_accepted": 264,
-      "effective_required": 5125,
-      "completion_percent": 5.1512,
-      "tested_with_complete_conclusion": 265,
-      "test_conclusion_percent": 5.1707,
+      "effective_accepted": null,
+      "effective_required": null,
+      "completion_percent": null,
+      "tested_with_complete_conclusion": null,
+      "test_conclusion_percent": null,
       "statuses": {
-        "NOT_TESTED": 4775,
+        "NOT_TESTED": 4774,
         "PASS": 264,
         "REOPENED": 2,
         "WAITING_HUMAN": 1,
         "PARTIAL": 54,
-        "FAIL": 1,
+        "FAIL": 2,
         "BLOCKED_NOT_INSTALLED": 28
       },
       "categories": {
@@ -1537,25 +1537,25 @@
         "共享依赖": 4,
         "组合回归": 9
       },
-      "reason": "R66 adds exact readonlysource applicability/bounds to8PARTIALleaves; no newPASS orstatus/denominator change.",
+      "reason": "Owner explicitly removes exhaustive parameter/color/animation enumeration as completion requirement. Old264/5125 retained as history only; current merged applicability notfrozen, so no percentage orfakePASS.",
       "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
-      "manifest_sha256": "5e4cc7c9d7214636d6a6f1b8939694a26d1fc221ca095250e2a2cf1bdc70ebcf",
+      "manifest_sha256": "290f0aa382a201eeddb776120c3c8e0070f60cf31feb8e518b044e6208bb507a",
       "target_identity_sha256": "955965cda7371a7ff208fdf736e19a1136e0628cf77a644ac49b5d4323aa9a92",
-      "enumeration_validation": ".local/play-session-20261026/grouped-qa/mesh-section-analysis/source-binding-and-closure.json",
-      "round_key": "aik-bunny-rabbit-readonly-sections-20261026",
-      "round_status": "CLOSED_SCOPED_PROGRESS_GOAL_CONTINUES",
-      "count": 66,
+      "enumeration_validation": ".local/play-session-20261026/grouped-qa/hair-switch-repro-r67/runtime-result.json",
+      "round_key": "owner-scope-and-hair-crash-exclusion-r67-20261026",
+      "round_status": "CLOSED_SCOPED_HAIR_MITIGATION_OWNER_SCOPE_CHANGED_GOAL_CONTINUES",
+      "count": 67,
       "coverage": "since_baseline",
-      "last_seq": 66,
-      "last_key": "aik-bunny-rabbit-readonly-sections-20261026",
+      "last_seq": 67,
+      "last_key": "owner-scope-and-hair-crash-exclusion-r67-20261026",
       "historical_round_count": "UNKNOWN",
-      "execution_change_percentage_points": 0,
+      "execution_change_percentage_points": null,
       "evidence_change_percentage_points": 0,
-      "scope_change_percentage_points": 0,
-      "change_rule": "Evidence association only; accepted264/effective5125, all statuses, IDs, weights andoriginal5129 unchanged.",
-      "round_start_commit": "6061a7df6539fc5ebeb45f978813a670b0e5f4b7",
-      "scope_change": "None",
-      "milestone_change": "Exact source section proof and bounds found without game launch/screenshots; eight visual gaps remain.",
+      "scope_change_percentage_points": null,
+      "change_rule": "Ownerchanges currentacceptance awayfrom5125parameterenumeration. Oneactual historicalNOT_TESTED becomesFAIL, noPASS increase; scope/percentage difference UNKNOWN untilmergedunitsfrozen.",
+      "round_start_commit": "b27117fd3db0dd2f1e7acbe5fc0f21060a0f258a",
+      "scope_change": "Direct owner acceptance revision; exhaustive details no longer required. Original inventory and all failures retained; no artificial PASS.",
+      "milestone_change": "Exacthairtrigger isolatedwithout priorclothingcycling andsafeexclusion verified; scope simplified bydirectowner.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1893,12 +1893,18 @@
       "excluded_history_count": 44,
       "uncounted_parent_rollups": 12,
       "full_appearance_compatible_accepted": 10,
-      "new_function_evidence_this_round": [],
-      "new_failures_this_round": [],
+      "new_function_evidence_this_round": [
+        "Cold directhaircrash triggerreproduced",
+        "One exactentry exclusion adopted; three retained",
+        "Six shortretainedhair controls andexactconfigrecovery"
+      ],
+      "new_failures_this_round": [
+        "appearance:Repacked ExtraMod333/choice-0"
+      ],
       "remaining_rounds": "UNKNOWN",
       "remaining_rounds_confidence": "UNKNOWN",
       "window": [],
-      "prediction_reason": "Heterogeneous remaining scope andzero newacceptedleafthisround; sourceprobe throughput cannot forecast visualacceptance.",
+      "prediction_reason": "Currentmergedcompatibility units notfrozen; oldparameter throughputnotapplicable.",
       "original_unified_required_retained": 5129,
       "latest_specific_followup": "integration:sequential-outfit-material-recovery",
       "grouped_assertion_audit": {
@@ -1955,10 +1961,30 @@
         "milestone_change": "R59 cumulative26 finite geometry/emitter/hardware gates PASS,18 visual gates PARTIAL; latest continuation added18 PASS with exact source-default restoration."
       },
       "remaining_round_estimate": "UNKNOWN",
-      "remaining_round_estimate_confidence": "UNKNOWN"
+      "remaining_round_estimate_confidence": "UNKNOWN",
+      "legacy_parameter_inventory": {
+        "scope_version": "unified-leaves-v5-sequential-material-feedback-20261014",
+        "accepted": 264,
+        "required": 5125,
+        "original": 5129,
+        "completion_percent": 5.1512,
+        "statuses": {
+          "NOT_TESTED": 4775,
+          "PASS": 264,
+          "REOPENED": 2,
+          "WAITING_HUMAN": 1,
+          "PARTIAL": 54,
+          "FAIL": 1,
+          "BLOCKED_NOT_INSTALLED": 28
+        },
+        "manifest_sha256": "5e4cc7c9d7214636d6a6f1b8939694a26d1fc221ca095250e2a2cf1bdc70ebcf",
+        "retained_at": "2026-10-26T10:24:00.775851+00:00"
+      },
+      "statuses_applicability": "Historical parameter inventory only; current compatibility progress notrepresented bythese leaf counts.",
+      "current_compatibility_completion": "UNKNOWN_UNTIL_GROUPING_AND_EVIDENCE_APPLICABILITY_FROZEN"
     },
-    "next_action": "Use one targeted private session for Hood2 with competing Hood1 isolated, and local BodyTP2/TP3/heel views based on exact source bounds; restore all original choices/parameters. Numeric source/runtime evidence does not close8visual gaps. Preserve independentCH56 gaps andallpriorfailures.",
-    "updated_at": "2026-10-26T09:27:25.491418+00:00",
+    "next_action": "Prioritize integration:sequential-outfit-material-recovery using distinct garment transitions and currentvalid sharedcore; capture ordered mesh/material/hidden-state deltas and minimize only actualfailures. Keep exact ExtraMod333Hair exclusion active; no exhaustive colors/options andno91min/fullhair claim.",
+    "updated_at": "2026-10-26T11:13:01.332803+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2069,7 +2095,7 @@
         }
       }
     },
-    "round_closure_at": "2026-10-26T09:27:25.491418+00:00",
+    "round_closure_at": "2026-10-26T11:13:01.332803+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 14,
       "new_confirmed_this_round": 0,
@@ -2233,9 +2259,9 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "PRIVATE_BUNNY_RABBIT_READONLY_SECTIONS_R66_CLOSED",
-    "previous_goal_turn_classification": "PROGRESS_SOURCE_METADATA_APPLICABILITY_WITH_ZERO_NEW_LEAF_PASS",
-    "execution_status": "SCOPED_PROGRESS_GOAL_CONTINUES",
+    "current_segment": "R67_OWNER_REBASE_HAIR_WORKAROUND_CLOSED",
+    "previous_goal_turn_classification": "PROGRESS_OWNER_ACCEPTANCE_REBASE_PLUS_REAL_HAIR_CRASH_REPRODUCTION_AND_EXACT_EXCLUSION",
+    "execution_status": "SCOPED_MITIGATION_PASS_FULL_GOAL_ACTIVE",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
     "pause_source": "Current human: restart game, tests remain paused; subsequent black-screen repair does not resume tests",
     "user_play_handoff": {
@@ -3226,11 +3252,11 @@
     "native_goal": {
       "threadId": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
       "status": "active",
-      "tokensUsed": 6358068,
-      "timeUsedSeconds": 33663,
+      "tokensUsed": 7182465,
+      "timeUsedSeconds": 39315,
       "createdAt": 1792972357,
-      "telemetry_at": "2026-10-26T09:25:21.000Z",
-      "telemetry_coverage": "Direct native cumulative current activation; full logical historical cost UNKNOWN. No token/time/retry quota set or increased.",
+      "telemetry_at": "2026-10-26T11:10:12.000Z",
+      "telemetry_coverage": "Direct native cumulative current activation; historical logical lifetime cost UNKNOWN; no token/time/retry quota set or increased.",
       "same_objective_verified": true
     },
     "goal_resume_source": "Current native Goal reused; same logical compatibility task and original5129/effective5125 preserved",
@@ -3608,8 +3634,8 @@
       "task_id": "stellar-mod-compatibility-core-first-20261010",
       "execution_source": "Direct owner native Goal objective submitted in thread 01a1757a-f84c-72b0-97bd-44ab8c53eb53 on 2026-10-26; execute MOD_TEST_REPAIR_PLAN_20261025 grouped QA",
       "owner_thread": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
-      "lane": "DIRECT",
-      "status": "SCOPED_READONLY_PROGRESS_GOAL_CONTINUES",
+      "lane": "REVIEWED",
+      "status": "R67_OWNER_REBASE_AND_SCOPED_HAIR_EXCLUSION_REVIEW_PASS",
       "owned_scope": [
         "PROJECT_STATE.json#mod_compatibility_restructure current grouped execution/progress projection; old paused console and pre-existing manual-play deltas remain separate",
         ".local/play-session-20261026/grouped-qa",
@@ -3637,10 +3663,10 @@
         "remaining_scope_unchanged": true
       },
       "test_save_boundary": "No independent story-save isolation established; forbid death/story/reward/travel tests and save rollback. Initial private launch/menu checks only; inspect scene before safe reversible movement/outfit checks.",
-      "round_accounting": "Current source-analysis round66 closed once; tools/metadata commits are not new rounds.",
-      "next_action": "Use one targeted private session for Hood2 with competing Hood1 isolated, and local BodyTP2/TP3/heel views based on exact source bounds; restore all original choices/parameters. Numeric source/runtime evidence does not close8visual gaps. Preserve independentCH56 gaps andallpriorfailures.",
+      "round_accounting": "R67 garment observations, ownerrebase, crashA, recovery/exclusion andcounterfactual areone evolvedlogicalround; tools/subagents/restarts/commits are not additionalrounds.",
+      "next_action": "Prioritize integration:sequential-outfit-material-recovery using distinct garment transitions and currentvalid sharedcore; capture ordered mesh/material/hidden-state deltas and minimize only actualfailures. Keep exact ExtraMod333Hair exclusion active; no exhaustive colors/options andno91min/fullhair claim.",
       "at": "2026-10-25T23:55:06.640620+00:00",
-      "lane_reason": "Read-only bounded source metadata and exact evidence association; no runtime/code/acceptance behavior change.",
+      "lane_reason": "New visual endpoint acceptance on two exact meshes needs one fresh independent readonly Judge after coherent actual evidence.",
       "findings": {
         "v3": "Confirmed Lua index13 reads native slot12; no successful native-body binding. Current fix readsLua14.",
         "v4": "Real native cold-load false positive and Actor-deselection invisible-body regressions; FAIL preserved.",
@@ -3652,7 +3678,7 @@
         "v8": "Fresh independent PASS for current BS_ alias transition/native-menu scope; full S1/Goal incomplete"
       },
       "candidate_sha256": "5679d28fe2e6719314c45e6709a99c4920c866a24b21953dd66e39a05dae4e12",
-      "updated_at": "2026-10-26T09:27:25.491418+00:00",
+      "updated_at": "2026-10-26T11:13:01.332803+00:00",
       "grouped_assertions": {
         "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
         "sha256": "a800adc5603d0edb2747f20dc335cc109dd88357033ddfcdadb856aac810b618",
@@ -3675,9 +3701,9 @@
         "remaining": "Wrapper143 observation retained; underlyinggameexitcodeunavailable. PlatformSteam/MCPservicesnotcleanup targets."
       },
       "candidate_source": "src/runtime/NativeOutfitOwnership.lua",
-      "latest_runtime_result": ".local/play-session-20261026/grouped-qa/bunny-rabbit-delta/runtime-result.json",
-      "last_material_progress": "Two exact source section/indices/positions validated in memory, mismatched package-name assumption resolved and small detail bounds identified;8visual leaves retainPARTIAL.",
-      "round_key": "aik-bunny-rabbit-readonly-sections-20261026",
+      "latest_runtime_result": ".local/play-session-20261026/grouped-qa/hair-switch-repro-r67/runtime-result.json",
+      "last_material_progress": "Ownerends exhaustiveparameter route. Direct hairtransition reproduces nativecrash;51stackframes matchold. One failingHair declaration excluded, other3retained; sixretainedhair actions passedshortcounterfactual withfullconfigrestoration.",
+      "round_key": "owner-scope-and-hair-crash-exclusion-r67-20261026",
       "round_closed_once": true,
       "previous_current_projection_ref": ".local/play-session-20261026/grouped-qa/PROJECT_STATE.entry.json",
       "independent_review": {
@@ -3783,7 +3809,7 @@
           "read_only": true
         }
       },
-      "closed_at": "2026-10-26T09:27:25.491418+00:00",
+      "closed_at": "2026-10-26T11:13:01.332803+00:00",
       "wardrobe_semantic": {
         "round_key": "grouped-cns-body-semantic-20261026",
         "source": "Continuation of active nativeGoal plus owner REA/nonvisualoperation steering",
@@ -3972,7 +3998,7 @@
           "metadata_note": "Source commit identity is recorded here; exact final metadata HEAD verification is in the existing ignored receipt to avoid self-reference."
         }
       },
-      "current_result_ref": "mesh_section_analysis",
+      "current_result_ref": "hair_crash_repro",
       "piercing_delta": {
         "round_key": "aik-piercing-delta-20261026",
         "status": "CLOSED_SCOPED_PROGRESS_GOAL_CONTINUES",
@@ -4685,7 +4711,201 @@
           "metadata_note": "SameR66 metadata close; final exact HEAD verification in ignored closure receipt avoids self-reference.",
           "preserved_pending": "Seven older State groups, TEST_PLAN/two20261025plan-prompt docs, unrelatedpch/research retained unstaged. No rawmetadata/assets/authdata published."
         }
+      },
+      "bunny_rabbit_visual": {
+        "round_key": "aik-bunny-rabbit-isolated-visual-r67-20261026",
+        "status": "R67_SUPPLEMENTAL_VISUAL_EVIDENCE_CLOSED_NO_LEAF_PROMOTION_OWNER_SCOPE_SUPERSEDES",
+        "lane": "REVIEWED",
+        "source": "Same active owner Goal; priorR66 exact source section metadata changes next views",
+        "at": "2026-10-26T09:33:45.343872+00:00",
+        "git_base": "b27117fd3db0dd2f1e7acbe5fc0f21060a0f258a",
+        "entry_state_sha256": "826489e2d816f83caac2f03a6f8de7bb1480247dfebe8d59711217cf1a6fa1aa",
+        "manifest_preimage_sha256": "5e4cc7c9d7214636d6a6f1b8939694a26d1fc221ca095250e2a2cf1bdc70ebcf",
+        "baseline": {
+          "accepted": 264,
+          "required": 5125,
+          "closed_rounds": 66
+        },
+        "owned_scope": [
+          "Ignored R67 freeze and actual target deltas",
+          "One own AgentSessionQA421 temporarymodule/enable suffix; exact nativeCNS selections/current originalparameters; camera vieweronly",
+          "OwnedState andexact8manifest evidence/status ifcomplete gates covered"
+        ],
+        "frozen_target_leaf_ids": [
+          "control:AiK_CH28_Bunny7504/MaterialToggles/1",
+          "control:AiK_CH28_Bunny7504/MaterialToggles/2",
+          "control:AiK_CH28_Bunny7504/MaterialToggles/3",
+          "control:AiK_CH28_Bunny7504/MaterialToggles/6",
+          "control:AiK_CH28_Rabbit7505/MaterialToggles/1",
+          "control:AiK_CH28_Rabbit7505/MaterialToggles/2",
+          "control:AiK_CH28_Rabbit7505/MaterialToggles/3",
+          "control:AiK_CH28_Rabbit7505/MaterialToggles/6"
+        ],
+        "acceptance": "Actual isolated visible difference for exact remembered meshes at declaredtoggle endpoints; independent hiddenbit and wholematerial isolation; exact original CNS choices/indices/config restored except declaredtaskviewer camera. No automatic visual PASS from numericdata.",
+        "protected": "No hair/story/reward/purchase/save rollback/loader/thirdparty asset change; shared core reused; only frozen existing loaded outfits and reversible parameters.",
+        "camera_scope": "Task-owned native CNS viewer position/orbit/zoom for local source bounds; only CustomCamPos may differ.",
+        "evidence": ".local/play-session-20261026/grouped-qa/bunny-rabbit-visual-r67",
+        "next_action": "Supplementalobservations closed; ownerremoved exhaustiveparameteracceptance. Currentcompatibilityrisks only.",
+        "new_complete_leaf_PASS": 0,
+        "visual_review": "NOT_REQUESTED_AFTER_OWNER_REMOVED_EXHAUSTIVE_PARAMETER_ACCEPTANCE; observedframes retained, no independentPASS claimed",
+        "resource_closure": ".local/play-session-20261026/grouped-qa/bunny-rabbit-visual-r67/lifecycle-end.json",
+        "restoration": ".local/play-session-20261026/grouped-qa/bunny-rabbit-visual-r67/restoration.json",
+        "camera_delta": "CNSviewer preset11(Custom) became omitted/default0 after native presetcycle; allother originalconfigs/choices/indices exact, CustomCamPos differs. Restorepreset11 via nativeUI during next hair session; no rawsave rollback.",
+        "camera_preset_restored_later_in_same_round": {
+          "value": 11,
+          "evidence": ".local/play-session-20261026/grouped-qa/hair-switch-repro-r67/final-restoration.json"
+        }
+      },
+      "owner_scope_hair_priority": {
+        "version": "compatibility-risk-groups-v6-owner-20261026",
+        "source": "Current direct owner: stop exhaustive same-clothing color/option/combinations and redundant checks; prioritize sequential outfit incompatibility cause/repair/exclusion; explicitly reproduce hairstyle-switch crashes and distinguish asset versus accumulated clothing/loading.",
+        "at": "2026-10-26T10:24:00.775851+00:00",
+        "required_focus": [
+          "integration:sequential-outfit-material-recovery",
+          "BUG-HAIR-20261025-01",
+          "Relevant native/CNS ownership, current functional core and playable configuration recovery"
+        ],
+        "merge": [
+          "Same garment color/texture/decorative endpoints/combinations into one compatibility result",
+          "Shared unchanged movement/input/menu/assistant consumers reused",
+          "Animations by actual skeleton/consumer/recovery risk; no list exhaustion"
+        ],
+        "do_not_merge": [
+          "Different unresolved skeleton/physics/global logic",
+          "Known failures/crashes/actual contradictory evidence"
+        ],
+        "evidence_rule": "No untested historical leaf promoted toPASS; failure history retained. No wholefamily inheritance from names. Current merged completion UNKNOWN until grouping and applicability frozen.",
+        "hair_reproduction_authorized": true,
+        "historical_denominator_only": {
+          "original": 5129,
+          "effective": 5125,
+          "accepted": 264,
+          "percent": 5.1512
+        },
+        "next_action": "Read exact prior hair-crash sequence and prepare controlled native hair A/B/C switching with per-action intent/readback and current owner resource identities; restore task viewer preset11 fromR67 in that session.",
+        "independent_review": {
+          "decision": "PASS",
+          "evidence": ".local/play-session-20261026/grouped-qa/bunny-rabbit-visual-r67/scope-independent-review.json"
+        }
+      },
+      "hair_crash_repro": {
+        "issue_id": "BUG-HAIR-20261025-01",
+        "source": "Owner current direct explicitly requests hairstyle crash tests and distinguishes specifichair versus clothing accumulation",
+        "status": "PASS_SCOPED_WORKAROUND_EXACT_ENTRY_DISABLED_GOAL_CONTINUES",
+        "lane": "REVIEWED",
+        "evidence": ".local/play-session-20261026/grouped-qa/hair-switch-repro-r67",
+        "owned_scope": [
+          "Ignored exact hair switch intentions/native log completion/currentcomponent observations",
+          "One owned private game/helper; existing nativeCNS UI hairselection only; frozenUIDs; restore originalhair/index andviewer preset11",
+          "No package/loader/global/storyfile edits; nofullsave rollback; exactfailedhairconfig recovery only ifnativecannotrecover"
+        ],
+        "acceptance": "Record actual A direct implicatedhair transition and B prior logged sequence; preserve nativefailure/evidence. No rootcause from last log alone; new crash stops further switchdispatch and drives diagnosis. C clothing-before-hair only afterA/Bstate resolved.",
+        "protected": "Story/progression and all other original choices/config retained. Native UI may initialize defaults for previouslyunused target hair. Exact priorCNSsettings retained for comparison, no whole-save rollback.",
+        "baseline": "Stable original Body RepackedMod688 index1; Hair AiK_AnotherHair1_6400 existing currentindex",
+        "frozen_targets": [
+          "appearance:AiK_AnotherHair1_6400/choice-0",
+          "appearance:AiK_AnotherHair1_6400/choice-1",
+          "appearance:AiK_AnotherHair2_6401/choice-0",
+          "appearance:AiK_AnotherHair3_6402/choice-0",
+          "appearance:Repacked ExtraMod333/choice-0"
+        ],
+        "planned_comparisons": [
+          "A: existing AiK1 baseline -> ExtraMod333 -> baseline, body held fixed",
+          "B: priorlogged AiK1 short/long -> AiK2 -> AiK3 -> ExtraMod333 -> baseline",
+          "C: samehair transition after distinct body switches; compare current binding/memory andcrash signature"
+        ],
+        "no_repeat_equal_failure": "On a newcrash inspect exactfirstfailurebefore anyrelaunch; no blind reboot/replay",
+        "camera_recovery": "Restore R67 prior nativeviewerpreset11(Custom) using original UI. CustomCamPos task delta mayremain.",
+        "new_crash": "UE4CC-Windows-E86312FE4CB155FC245BF1BAC2FBAF7C_0000",
+        "actual": "Coldprocess457sec, oneHair switch toExtraMod333/index0. NativeGameThreadAV,51initial normalizedframes matchpriorincident; clothingcyclingnotrequired for thisreproduction.",
+        "actual_evidence": ".local/play-session-20261026/grouped-qa/hair-switch-repro-r67/crash-comparison.json",
+        "recovery_authority": "Currentowner permits conflict exclusion; restore onlytask-createdHairchoice aftercrash, no realprogress orwholeCNSrollback.",
+        "candidate": {
+          "config_pre_sha256": "77ce34884b43d681121a9a6137a66dc01d710cfdf67797bb28a04e3b4f7f80fd",
+          "config_post_sha256": "199085f372b5d1e79e05d4513c57c24e1a00d570c7c57b822be8eb4713689c60",
+          "removed_declaration": "Repacked ExtraMod333 (EVE Hair/index0)",
+          "retained_declaration_ids": [
+            "Repacked ExtraMod333 2",
+            "Repacked ExtraMod333 4",
+            "Repacked ExtraMod333 5"
+          ],
+          "config_delta": "Byte slice removes first JSON array declaration and separator only; all following declaration bytes/content preserved.",
+          "save_pre_sha256": "249bd31f4d9a1657620d1bc8bb35a4113d802ae52750f5d948513df30521da7d",
+          "save_post_sha256": "08cf8f38f4ad95f2df401451bd29a863afe1e9158fab5fd33304008f97dd31a4",
+          "save_changed_field": "LastActiveOutfitMap[EVE-Hair-] ExtraMod333 -> originalAiK1 only; propertylength updates. All otherGVAS properties/mapentries/indexes/configuration/prefix/suffix exact.",
+          "assets": "All pak/ucas/utoc andotherfiles retained; no wholeMOD exclusion.",
+          "private_effect_record": ".local/play-session-20261026/grouped-qa/hair-switch-repro-r67/quarantine-and-recovery.json"
+        },
+        "counterfactual_validation": {
+          "native_UI_actions": 6,
+          "result": "PASS_SCOPED",
+          "crash_count_delta": 0,
+          "all_actual_mesh_selection_indexes_match": true,
+          "post_action_hold_seconds": 5,
+          "retained_other3_declarations_loaded": true,
+          "all_original_choices_config_restored": true
+        },
+        "runtime_result": ".local/play-session-20261026/grouped-qa/hair-switch-repro-r67/runtime-result.json",
+        "restoration": ".local/play-session-20261026/grouped-qa/hair-switch-repro-r67/final-restoration.json",
+        "lifecycle": ".local/play-session-20261026/grouped-qa/hair-switch-repro-r67/lifecycle-end.json",
+        "independent_review": {
+          "decision": "PASS_SCOPED",
+          "evidence": ".local/play-session-20261026/grouped-qa/hair-switch-repro-r67/independent-review.json"
+        },
+        "historical_manifest_delta": {
+          "new_FAIL": 1,
+          "new_PASS": 0,
+          "bridged_sibling_leaf_ids": [
+            "appearance:Repacked ExtraMod333 2/choice-0",
+            "appearance:Repacked ExtraMod333 2/choice-1",
+            "appearance:Repacked ExtraMod333 4/choice-0",
+            "appearance:Repacked ExtraMod333 5/choice-0"
+          ],
+          "IDs_weights_count_unchanged": true
+        },
+        "closed_at": "2026-10-26T11:13:01.332803+00:00",
+        "round_closed_once": true,
+        "next_action": "Prioritize integration:sequential-outfit-material-recovery using distinct garment transitions and currentvalid sharedcore; capture ordered mesh/material/hidden-state deltas and minimize only actualfailures. Keep exact ExtraMod333Hair exclusion active; no exhaustive colors/options andno91min/fullhair claim.",
+        "git_delivery": {
+          "status": "PENDING_NORMAL_IMPLEMENTATION_BRANCH_DELIVERY",
+          "target": "codex/grouped-mod-qa-20261026",
+          "scope": [
+            "Owner acceptance State projection",
+            "TEST_PLAN and updated compatibility plan/reusable Goal Prompt"
+          ],
+          "private_evidence": "All game config/save/logs/crash contexts/native inputs andobservers stayignoredlocal; publiconlysanitizedfacts/hash/evidencerefs.",
+          "closure_receipt": ".local/play-session-20261026/grouped-qa/hair-switch-repro-r67/round-delivery.json"
+        },
+        "current_round_descendants": "Two readonly Judges completed and collected; no currentwriterdescendants."
       }
+    },
+    "owner_acceptance_20261026": {
+      "version": "compatibility-risk-groups-v6-owner-20261026",
+      "source": "Current direct owner: stop exhaustive same-clothing color/option/combinations and redundant checks; prioritize sequential outfit incompatibility cause/repair/exclusion; explicitly reproduce hairstyle-switch crashes and distinguish asset versus accumulated clothing/loading.",
+      "at": "2026-10-26T10:24:00.775851+00:00",
+      "required_focus": [
+        "integration:sequential-outfit-material-recovery",
+        "BUG-HAIR-20261025-01",
+        "Relevant native/CNS ownership, current functional core and playable configuration recovery"
+      ],
+      "merge": [
+        "Same garment color/texture/decorative endpoints/combinations into one compatibility result",
+        "Shared unchanged movement/input/menu/assistant consumers reused",
+        "Animations by actual skeleton/consumer/recovery risk; no list exhaustion"
+      ],
+      "do_not_merge": [
+        "Different unresolved skeleton/physics/global logic",
+        "Known failures/crashes/actual contradictory evidence"
+      ],
+      "evidence_rule": "No untested historical leaf promoted toPASS; failure history retained. No wholefamily inheritance from names. Current merged completion UNKNOWN until grouping and applicability frozen.",
+      "hair_reproduction_authorized": true,
+      "historical_denominator_only": {
+        "original": 5129,
+        "effective": 5125,
+        "accepted": 264,
+        "percent": 5.1512
+      },
+      "next_action": "Read exact prior hair-crash sequence and prepare controlled native hair A/B/C switching with per-action intent/readback and current owner resource identities; restore task viewer preset11 fromR67 in that session."
     }
   }
 }
