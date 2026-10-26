@@ -1537,25 +1537,25 @@
         "共享依赖": 4,
         "组合回归": 9
       },
-      "reason": "Native ownership v8 and session control bridge independently reviewed within exact scopes; original leaf array/statuses untouched, 210/5125 retained. Earlier R56/R59 incomplete records remain open in original evidence and archived projection.",
+      "reason": "Current registered EVEBody selector/save/liveMesh/roundtrip independently reviewed; sameprocessnewPawn actualmovement andsafe campinteraction recovery proved. Original210/5125 andallleaf statuses unchanged; R56/R59 partials retained.",
       "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
-      "manifest_sha256": "a800adc5603d0edb2747f20dc335cc109dd88357033ddfcdadb856aac810b618",
+      "manifest_sha256": "004be3a4f819662d44066ae1dd4136e2d80482789d467550d411d37d8577f55e",
       "target_identity_sha256": "955965cda7371a7ff208fdf736e19a1136e0628cf77a644ac49b5d4323aa9a92",
       "enumeration_validation": ".local/play-session-20261008/core-functional-170/r59/visual-acceptance-result.json",
-      "round_key": "grouped-native-ownership-menu-20261026",
+      "round_key": "grouped-cns-body-semantic-20261026",
       "round_status": "CLOSED_SCOPED_PARTIAL_GOAL_CONTINUES",
-      "count": 59,
+      "count": 60,
       "coverage": "since_baseline",
-      "last_seq": 59,
-      "last_key": "grouped-native-ownership-menu-20261026",
+      "last_seq": 60,
+      "last_key": "grouped-cns-body-semantic-20261026",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": 0.0,
       "evidence_change_percentage_points": 0,
       "scope_change_percentage_points": 0,
-      "change_rule": "Same IDs/versions/weights/gates; current continuation18 PARTIAL->PASS. R59 cumulative26 PASS,18 PARTIAL; prior184 PASS/2 FAIL,44 excluded history, original5129 and current5125 retained.",
-      "round_start_commit": "60517327d58d58f14a6dd418bb20c0d6e5ff6351",
-      "scope_change": "Same logicalR59 resumed across pause/private169->170 and checkpoints; original v5 targets unchanged, no new round for this continuation.",
-      "milestone_change": "R59 cumulative26 finite geometry/emitter/hardware gates PASS,18 visual gates PARTIAL; latest continuation added18 PASS with exact source-default restoration.",
+      "change_rule": "CurrentR60: originalleafIDs,versions,weights,gates,statuses unchanged; fournew scopedmechanism assertions do notcount as completeleafPASS. PriorR59changes preserved inhistorical_unfinished_round_before_grouped_20261026.",
+      "round_start_commit": "ed5ec17b948f248752481be6d6b76fe9c9e58918",
+      "scope_change": "No targetscope change; currentround adds/extends sharedassertion evidence only.",
+      "milestone_change": "DirectCNSBodyselection threevariants/save/liveMesh/roundtrip andcurrentnewPawn/campmovement proved; completebodyappearance/physics andnativewardrobe dialogue remainopen.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1913,21 +1913,38 @@
           ],
           "boundary": "SinglecoherentgroupedQA round; nochild/tool/outfit callback counted asround",
           "completion": "Scoped technical unit accepted; fullGoal remains active"
+        },
+        {
+          "seq": 60,
+          "key": "grouped-cns-body-semantic-20261026",
+          "effective_required": 5125,
+          "accepted_before": 210,
+          "accepted_after": 210,
+          "completion_percentage_point_delta": 0.0,
+          "execution_percentage_points": 0.0,
+          "scope_percentage_points": 0.0,
+          "evidence_correction_percentage_points": 0.0,
+          "scope_change": "No originaltargetID/version/weight/status/exclusion or denominator change",
+          "evidence_change": "Four unique scopedassertions: directCNSBodyselectionmechanism3variants; sameprocessnewPawnmovement; campMusicnativelock; actualmovementaftercampcancel. Sharedstructuralreferences observed only; no geometry/physics equivalence assumed.",
+          "source_review": "99e9a4f9a2007912573621bedef805685eb872b2a3a4ade86205046a06105f0e",
+          "completion": "Onecoherentphaseclosed; not peragent/tool/variant/commit; originalfullGoal remainsactive"
         }
       ],
-      "prediction_reason": "One heterogeneous core/helper unit cannot predict remaining appearance/lifecycle/physical/delta workload; original failures and5125 scope retained.",
+      "prediction_reason": "Currentunit adds shared capability/evidence, not completeleafweight; heterogeneous appearance/material/physical/dialogue requirements andinsufficientpositive comparablethroughput prevent reliable roundestimate.",
       "original_unified_required_retained": 5129,
       "latest_specific_followup": "integration:sequential-outfit-material-recovery",
       "grouped_assertion_audit": {
-        "manifest_sha256": "a800adc5603d0edb2747f20dc335cc109dd88357033ddfcdadb856aac810b618",
-        "runtime_result": ".local/play-session-20261026/grouped-qa/v8-runtime-result.json",
-        "direct_scoped_assertions": 5,
-        "reused_movement_assertions": 2,
+        "manifest_sha256": "004be3a4f819662d44066ae1dd4136e2d80482789d467550d411d37d8577f55e",
+        "runtime_result": ".local/play-session-20261026/grouped-qa/wardrobe-semantic/runtime-result.json",
+        "source_reviewed_runtime_result": ".local/play-session-20261026/grouped-qa/wardrobe-semantic/independent-review.json",
+        "direct_unique_scoped_assertions": 4,
+        "valid_reused_prior_movement_assertions": 2,
+        "structural_reference_observations": 3,
         "new_complete_leaf_PASS": 0,
         "original_required": 5129,
         "current_required": 5125,
         "leaf_identity_version_weight_status_unchanged": true,
-        "note": "Prior210PASS andall failures retained in exact original scopes; no claim every prior appearance result was freshly re-audited in this bounded core unit."
+        "note": "ThreeMod688appearanceleaves remain PARTIAL/LIMITED_ADJUSTABLE withsame originalgates; nativewardrobe dialogue gap retained."
       },
       "historical_unfinished_round_before_grouped_20261026": {
         "round_key": "private169-aik-ocean-string-material-and-scalar-20261014",
@@ -1964,11 +1981,14 @@
           "control:AiK_CH48_8866/MaterialToggles/27"
         ],
         "new_failures_this_round": [],
-        "prediction_reason": "R59 remains unclosed; heterogeneous remaining gates and missing full visual evidence prevent a comparable remaining-round estimate."
+        "prediction_reason": "R59 remains unclosed; heterogeneous remaining gates and missing full visual evidence prevent a comparable remaining-round estimate.",
+        "change_rule": "Same IDs/versions/weights/gates; current continuation18 PARTIAL->PASS. R59 cumulative26 PASS,18 PARTIAL; prior184 PASS/2 FAIL,44 excluded history, original5129 and current5125 retained.",
+        "scope_change": "Same logicalR59 resumed across pause/private169->170 and checkpoints; original v5 targets unchanged, no new round for this continuation.",
+        "milestone_change": "R59 cumulative26 finite geometry/emitter/hardware gates PASS,18 visual gates PARTIAL; latest continuation added18 PASS with exact source-default restoration."
       }
     },
-    "next_action": "Use current semantic observe/move/stop + read/action/postcondition batches for ready nonvisual gates; next narrow adapter unit is known loaded CNS fiveparameter selection call with savedselection/mesh readback andone necessaryvisualcheck. Keep dialogue/newPawn originalgapsopen.",
-    "updated_at": "2026-10-26T01:55:12.559894+00:00",
+    "next_action": "Advance remaining native/CNS ownership recovery andready Body/material deltas usingverifiedselector andsameprocess/camp movementassertions; prepare one frozen nextbatch ofcurrentlyregistered BodyIDs before anynewprivate QAbootstrap. Keep dialogue,fullvisualphysics andoldR56/R59 gates explicit.",
+    "updated_at": "2026-10-26T03:00:18.603973+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2243,8 +2263,8 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "PRIVATE_GROUPED_QA_20261026_SEMANTIC_CONTROL",
-    "previous_goal_turn_classification": "PROGRESS: closed one scoped core repair/semantic control unit; actual native read/action/readback withoutper-action screenshots; independent reviews pass; no new complete leafPASS; fullGoal active.",
+    "current_segment": "PRIVATE_GROUPED_CNS_SEMANTIC_20261026",
+    "previous_goal_turn_classification": "PROGRESS: R60 delivered directCNS3variantselection andsameprocessnewPawn pluscampinteraction actualmovement recovery evidence; no completedleaf added; fullGoal active.",
     "execution_status": "GROUPED_QA_ACTIVE_S1_PARTIAL",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
     "pause_source": "Current human: restart game, tests remain paused; subsequent black-screen repair does not resume tests",
@@ -3236,11 +3256,11 @@
     "native_goal": {
       "threadId": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
       "status": "active",
-      "tokensUsed": 3000942,
-      "timeUsedSeconds": 7269,
+      "tokensUsed": 3490303,
+      "timeUsedSeconds": 11047,
       "createdAt": 1792972357,
-      "telemetry_at": "2026-10-26T01:53:46+00:00",
-      "telemetry_coverage": "Direct native tool cumulative current activation only; prior activations/logicaltask/history retained. Native elapsed is not active-only no-progress time. No quota set or increased; full logical lifetime cost remains unknown.",
+      "telemetry_at": "2026-10-26T02:56:44+00:00",
+      "telemetry_coverage": "Directnative tool cumulative currentactivation only; priorlogicaltask/activation/history retained; elapsednotactive-only no-progress time. No quota set or increased; full logical lifetimecost unknown.",
       "same_objective_verified": true
     },
     "goal_resume_source": "Current native Goal reused; same logical compatibility task and original5129/effective5125 preserved",
@@ -3676,12 +3696,13 @@
       "hair_original_context": "Exact BUG-HAIR-20261025-01 context recovered read-only from native crash directory; private pointer .local/play-session-20261026/grouped-qa/hair-incident-context-recovery.json; GameThread AV verified, cause unknown",
       "runtime_ownership": {
         "evidence": ".local/play-session-20261026/grouped-qa/resource-checkpoint.json",
-        "game": "Currentexactrootprivategame retained; livebinding/handles/auth metadata onlyatprivate resource-checkpoint.json",
-        "helper": "CurrentCombatAssistant1.0.16 Connected/bindingReady plusguard/dodge/special true; currentCLIshutdownhandleprivate",
-        "movement": "Currentunchanged sixfieldguardedservice withactual875speed andnative-lockrestore/reapply; exactPID/start/stophandleprivatelyregistered",
-        "input": "Everybounded key/mouse down released; no foreground takeover",
-        "resources": "Previous owned games exited normally; movement restore-on-exit0. Helper shutdown acknowledged; one wrapper exit143 preserved at pre-semantic-lifecycle-end.json. Current exact private game/helper/movement/display retained; all child writers ended.",
-        "bridge": "Sessiononlyobserve/move/stopactualproved; noheldkeys; autolease; exactnewmoduleenableline/preimage/stop private"
+        "game": "Exactownedprivategame receivedWM_CLOSE andtargetidentityabsent; launchwrapper143, nativegameexitunknown; nonewnativecrashcontext sincecurrentlaunch.",
+        "helper": "CurrentCombatAssistantshutdownacknowledged, wrapperexit0 andbindingended withgame.",
+        "movement": "ExactownedserviceSIGTERM/restoreexit0; independent sixbasefields500/280/150/300/100/500 verifiedbeforegameexit.",
+        "bridge": "Expiredsessiononlymodule andexactappendedenableline removedaftergameexit; mods.txt exactoriginalhash2d4e87b...; nativeownershipv8 retained.",
+        "private_display": "ExactownedXvfb:2retainedforactiveGoal; foregroundneverowned; rawauth/identities stayprivate.",
+        "children": "All dispatchedchildrencompleted; noactivechildwriters.",
+        "remaining": "Wrapper143 observation retained; underlyinggameexitcodeunavailable. PlatformSteam/MCPservicesnotcleanup targets."
       },
       "candidate_source": "src/runtime/NativeOutfitOwnership.lua",
       "latest_runtime_result": ".local/play-session-20261026/grouped-qa/v8-runtime-result.json",
@@ -3763,7 +3784,62 @@
           "full_S1_or_goal_or_leaf_PASS": false
         }
       },
-      "closed_at": "2026-10-26T01:55:12.559894+00:00"
+      "closed_at": "2026-10-26T01:55:12.559894+00:00",
+      "wardrobe_semantic": {
+        "round_key": "grouped-cns-body-semantic-20261026",
+        "source": "Continuation of active nativeGoal plus owner REA/nonvisualoperation steering",
+        "status": "PASS_SCOPED_RUNTIME_AND_INDEPENDENT_REVIEW",
+        "lane": "REVIEWED",
+        "owned_files": [
+          "src/runtime/QAControl.lua",
+          "tests/test_qa_control.py",
+          "tests/fixtures/qa_wardrobe.lua",
+          "src/runtime/README.md"
+        ],
+        "deployment": "Only currentown AgentSessionQA module/bootstrap after normalownedgameexit; exact currentmods.txt preserved byte-for-byte; no loader/global/thirdpartysource or asset modifications",
+        "acceptance": "Knownloaded EVEBody variant directselection0/1 andcurrentbaseline roundtrip; actualsavedselection andnative live mesh matchtarget; other saved selections/configurations preserved; native locks respected; one necessaryvisualperdistinctmesh",
+        "exclusions": "No haircrashreproduction, NPC/story/teleport/save rollback, unknownnewresource load or unvalidatedarbitrarycharacter selection",
+        "evidence": ".local/play-session-20261026/grouped-qa/wardrobe-semantic",
+        "preimage_control_sha256": "ddc2fa2461288d05d198b15fc0da571bcf04e8b77732fa9e453c8bb211d48812",
+        "config_sha256": "08483653b9468a794f7e8a7631df4cf3f047051bf7ac9f92e16e2ef5962b02c4",
+        "original_required": 5129,
+        "effective_required": 5125,
+        "leaf_status_changes": 0,
+        "round_closed_once": true,
+        "at": "2026-10-26T02:03:34.148828+00:00",
+        "next_action": "Advance remaining native/CNS ownership recovery andready Body/material deltas usingverifiedselector andsameprocess/camp movementassertions; prepare one frozen nextbatch ofcurrentlyregistered BodyIDs before anynewprivate QAbootstrap. Keep dialogue,fullvisualphysics andoldR56/R59 gates explicit.",
+        "candidate_sha256": "99e9a4f9a2007912573621bedef805685eb872b2a3a4ade86205046a06105f0e",
+        "runtime_result": ".local/play-session-20261026/grouped-qa/wardrobe-semantic/runtime-result.json",
+        "independent_review": {
+          "decision": "PASS_SCOPED",
+          "evidence": ".local/play-session-20261026/grouped-qa/wardrobe-semantic/independent-review.json"
+        },
+        "supplemental_camp_interaction": ".local/play-session-20261026/grouped-qa/wardrobe-semantic/camp-interaction-result.json",
+        "new_pawn_gap": "ClosedcurrentnormalTitle/Continue samePID scope; notdeath/travel/dialogue",
+        "manifest_sha256": "004be3a4f819662d44066ae1dd4136e2d80482789d467550d411d37d8577f55e",
+        "new_complete_leaf_PASS": 0,
+        "limitations": "No selectafternewPawn/expiredrequesttest/dialogue/death/travel/allfamily/completevisualphysics/longsession. Threeappearanceleavespartial; noadditional5125PASS/fullS1/Goal. Exactexec50361 isRoottoolhandle notindependentlycorroborated; separateprocidentitycapturedforlifecycle.",
+        "closed_at": "2026-10-26T03:00:18.603973+00:00",
+        "runtime_lifecycle": ".local/play-session-20261026/grouped-qa/wardrobe-semantic/lifecycle-end.json",
+        "runtime_status": "OWN_GAME_HELPER_MOVEMENT_CLOSED_QA_MODULE_REMOVED",
+        "wrapper_exit": 143,
+        "native_game_exit_code": "UNAVAILABLE",
+        "new_native_crash_contexts": 0,
+        "git_delivery": {
+          "status": "VERIFIED_LOCAL_CANDIDATE_PENDING_BRANCH_SYNC",
+          "target": "codex/grouped-mod-qa-20261026",
+          "reviewed_scope": [
+            "src/runtime/QAControl.lua",
+            "src/runtime/README.md",
+            "tests/test_qa_control.py",
+            "tests/fixtures/qa_wardrobe.lua",
+            "ownedPROJECT_STATEprojection"
+          ],
+          "policy": "No mainmerge; no private/raw/gameassets/unrelatedpendingcontent published",
+          "closure_evidence": ".local/play-session-20261026/grouped-qa/wardrobe-semantic/round-delivery.json"
+        },
+        "updated_at": "2026-10-26T03:00:18.603973+00:00"
+      }
     }
   }
 }

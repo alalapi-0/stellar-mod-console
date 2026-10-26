@@ -26,11 +26,20 @@ class QAControlTests(unittest.TestCase):
         cls.lua.lua_close.argtypes = [ctypes.c_void_p]
         cls.source = (ROOT / "src/runtime/QAControl.lua").read_bytes()
         cls.fixture = (ROOT / "tests/fixtures/qa_control.lua").read_bytes()
+        cls.wardrobe_fixture = (ROOT / "tests/fixtures/qa_wardrobe.lua").read_bytes()
 
     def test_session_input_policy(self):
         scenarios = ["observe", "move", "stop", "pawn-changed", "clock-reset", "lock-midmove", "nonce", "replay",
                      "locked", "controller-ignored", "pawn-ignored", "native-block", "falling", "expired", "future",
                      "duration", "direction", "identity", "unknown"]
+        self.run_scenarios(scenarios, self.fixture)
+
+    def test_session_wardrobe_policy(self):
+        self.run_scenarios(["wardrobe", "select", "wrong-mesh", "unrelated-change", "unknown-outfit", "index-oob",
+                            "not-registered", "wrong-character", "locked", "moving", "cns-menu", "identity",
+                            "native-error", "stop-pending"], self.wardrobe_fixture)
+
+    def run_scenarios(self, scenarios, fixture):
         for scenario in scenarios:
             with self.subTest(scenario=scenario):
                 state = self.lua.luaL_newstate()
@@ -40,7 +49,7 @@ class QAControlTests(unittest.TestCase):
                     for name, value in [(b"MODULE_SOURCE", self.source), (b"SCENARIO", scenario.encode())]:
                         self.lua.lua_pushlstring(state, value, len(value))
                         self.lua.lua_setglobal(state, name)
-                    code = self.lua.luaL_loadbufferx(state, self.fixture, len(self.fixture), b"@qa_control_fixture.lua", b"t")
+                    code = self.lua.luaL_loadbufferx(state, fixture, len(fixture), b"@qa_control_fixture.lua", b"t")
                     if code == 0:
                         code = self.lua.lua_pcallk(state, 0, 0, 0, 0, None)
                     error = self.lua.lua_tolstring(state, -1, None).decode() if code else None
