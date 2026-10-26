@@ -4355,11 +4355,11 @@
           "source_commit": "60b9c5ee694a7b64bdbab69ff47665a47ac6548a",
           "remote_verified": true,
           "verified_at": "2026-10-26T06:57:26.001209+00:00",
-          "main_sha256": "aafc4b0fcf94bdc73b8e6810971281953f945fe9",
           "main_note": "Unchanged; automatic main merge is outside current task authority.",
           "preserved_pre_existing_groups": "Seven prior State groups, docsTEST_PLAN+two20261025plan/prompt files and unrelated/private pch/research groups retained unstaged.",
           "closure_receipt": ".local/play-session-20261026/grouped-qa/neurolink-delta/round-delivery.json",
-          "metadata_note": "This same-round metadata commit is verified in the ignored closure receipt to avoid self-referential commit identity."
+          "metadata_note": "This same-round metadata commit is verified in the ignored closure receipt to avoid self-referential commit identity.",
+          "main_commit": "aafc4b0fcf94bdc73b8e6810971281953f945fe9"
         }
       }
     }
