@@ -1539,23 +1539,23 @@
       },
       "reason": "Owner explicitly removes exhaustive parameter/color/animation enumeration as completion requirement. Old264/5125 retained as history only; current merged applicability notfrozen, so no percentage orfakePASS.",
       "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
-      "manifest_sha256": "a9c0ee16692c74b7126c7efbeaa60e10819a504c2c4bf060884de3395999d4d8",
+      "manifest_sha256": "e2f6c048d0b9838d9c1fb58651e7c2896eeff62530980e2aabfc6f484f5f5234",
       "target_identity_sha256": "955965cda7371a7ff208fdf736e19a1136e0628cf77a644ac49b5d4323aa9a92",
       "enumeration_validation": ".local/play-session-20261026/grouped-qa/risk-groups-r69/result.json",
-      "round_key": "firstload-ordered-pose-r79-20261027",
-      "round_status": "CLOSED_DIRECT_ORDERED_LIFECYCLE_DIAGNOSIS",
-      "count": 79,
+      "round_key": "owned-linked-postprocess-lifecycle-r80-20261027",
+      "round_status": "CLOSED_REVIEWED_OWNED_LIFECYCLE_REPAIR",
+      "count": 80,
       "coverage": "since_baseline",
-      "last_seq": 79,
-      "last_key": "firstload-ordered-pose-r79-20261027",
+      "last_seq": 80,
+      "last_key": "owned-linked-postprocess-lifecycle-r80-20261027",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": null,
       "evidence_change_percentage_points": null,
       "scope_change_percentage_points": 0,
-      "change_rule": "No new leaf status/PASS; actual nativecounterexample +2orderedclips +linkedretention3→14 changes causalnextaction; denominator unresolved.",
-      "round_start_commit": "bef1f46afa3898e9a8baa730625f356bf067d01e",
-      "scope_change": "No5129/5125/known1285/identity change; no uncertainmod excluded.",
-      "milestone_change": "R79 exact original/alternate paths2x14s not reproduced; similar native-before-CNS pose; actual LinkedInstances3→14 retained. Current graphsameOneMillion in8samples; source/product unchanged; no newfullPASS.",
+      "change_rule": "One shared lifecycle assertion accepted, no oldleaf/group status changes; totalGoal denominator unknown.",
+      "round_start_commit": "abba89555594b7bcc03ada256bc14217870b81d7",
+      "scope_change": "No5129/5125/known1285/identity change; uncertainmods retained.",
+      "milestone_change": "Owned linked lifecycle fixed via guarded nativeclass rebuild: old3→14, candidatecold1 and16orderedreads1; movement/sixsprings/material/profile recovered; no fullgarment/crashcause acceptance.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1894,9 +1894,7 @@
       "uncounted_parent_rollups": 12,
       "full_appearance_compatible_accepted": 10,
       "new_function_evidence_this_round": 0,
-      "new_failures_this_round": [
-        "appearance:Aqeqqq_MoreClearlyWarDress/choice-0"
-      ],
+      "new_failures_this_round": [],
       "remaining_rounds": null,
       "remaining_rounds_confidence": "UNKNOWN",
       "window": [],
@@ -1993,10 +1991,11 @@
         "owner_excluded_appearance_structures": 2
       },
       "remaining_rounds_estimate": null,
-      "remaining_rounds_estimate_confidence": "UNKNOWN; heterogeneous unresolved scope and denominator unknown"
+      "remaining_rounds_estimate_confidence": "UNKNOWN; heterogeneous unresolved scope and denominator unknown",
+      "new_shared_scoped_assertions_this_round": 1
     },
-    "next_action": "定位 EveProportions 旧后处理链接实例的创建/解除链接机制与实际所有权；现有证据显示3→14累积，但未证明旧实例活动、泄漏危害或材质/崩溃因果。先用引擎支持路径形成有界候选，不清写 LinkedInstances 数组、不盲重跑服装或重新启用已排除项。",
-    "updated_at": "2026-10-26T22:53:22.579457+00:00",
+    "next_action": "复用已审查 R80 公共生命周期修复和有效核心证据，为 converted182 族尚无实际证据的独有网格执行一批有序换装差异；按真实结构选代表、合并颜色，不重测已覆盖网格或辅助成功率。已确认坏发型/Wardress继续排除，异常时只缩小受影响转换。",
+    "updated_at": "2026-10-26T23:54:34.218991+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2125,7 +2124,7 @@
         }
       }
     },
-    "round_closure_at": "2026-10-26T22:53:22.579457+00:00",
+    "round_closure_at": "2026-10-26T23:54:34.218991+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 14,
       "new_confirmed_this_round": 0,
@@ -2289,9 +2288,9 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "R79_ORDERED_POSE_DIAGNOSIS_CLOSED_NEXT_LINKED_LIFECYCLE",
-    "previous_goal_turn_classification": "PROGRESS: actual linkedretention3→14 and native-before-CNS counterexample narrow cause; exact2paths not reproduced, profile/source restored, no leafstatus inflation.",
-    "execution_status": "ACTIVE_NEXT_LINKED_LIFECYCLE_CAUSE",
+    "current_segment": "R80_OWNED_LINKED_POSTPROCESS_LIFECYCLE_ACCEPTED",
+    "previous_goal_turn_classification": "PROGRESS: R80 shared native lifecycle repair accepted, exactruntime/protection/restoration verified, freshJudge PASS_SCOPED; branchdelivery receipt owns remoteverification.",
+    "execution_status": "ACTIVE_GOAL_R80_CLOSED_NEXT_READY_DELTA",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
     "pause_source": "Current human: restart game, tests remain paused; subsequent black-screen repair does not resume tests",
     "user_play_handoff": {
@@ -3308,13 +3307,13 @@
     "native_goal": {
       "threadId": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
       "status": "active",
-      "tokensUsed": 12322599,
-      "timeUsedSeconds": 73244,
+      "tokensUsed": 13221902,
+      "timeUsedSeconds": 76969,
       "createdAt": 1792972357,
-      "telemetry_at": "2026-10-26T22:50:40+00:00",
+      "telemetry_at": "2026-10-26T23:54:34.218991+00:00",
       "telemetry_coverage": "Directnative current activation; no quota set or increased; historical logical lifetimecost remains UNKNOWN.",
       "same_objective_verified": true,
-      "last_checkpoint": "R79 bounded nativecounterexample/ordered2clips and actuallinkedretention3→14, causeOPEN; Goal active/incomplete, no quota change.",
+      "last_checkpoint": "R80 freshJudge PASS_SCOPED ownedlinked lifecycle repair; actualcount1 through16reads, movement/physics/profile restored; fullGoal active/incomplete.",
       "updatedAt": 1793055040
     },
     "goal_resume_source": "Current native Goal reused; same logical compatibility task and original5129/effective5125 preserved",
@@ -3692,8 +3691,8 @@
       "task_id": "stellar-mod-compatibility-core-first-20261010",
       "execution_source": "Direct owner native Goal objective submitted in thread 01a1757a-f84c-72b0-97bd-44ab8c53eb53 on 2026-10-26; execute MOD_TEST_REPAIR_PLAN_20261025 grouped QA",
       "owner_thread": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
-      "lane": "DIRECT",
-      "status": "ACTIVE_NEXT_LIFECYCLE_DELTA_R79_CLOSED",
+      "lane": "REVIEWED",
+      "status": "CLOSED_R80_REVIEWED_OWNED_LIFECYCLE_ACCEPTED",
       "owned_scope": [
         "PROJECT_STATE.json#mod_compatibility_restructure current grouped execution/progress projection; old paused console and pre-existing manual-play deltas remain separate",
         ".local/play-session-20261026/grouped-qa",
@@ -3711,8 +3710,8 @@
         "status": "active",
         "history": "Prior activation metadata retained at historical_native_goal_before_grouped_qa_20261026; logical task counters not reset",
         "previous_pause_source": "Direct owner pause; native toolconfirmed, no automaticresume",
-        "current_native_status_verified_at": "2026-10-26T22:50:40+00:00",
-        "current_status_source": "Native get_goal on same thread; direct owner continuation; prior pause metadata is historical."
+        "current_native_status_verified_at": "2026-10-26T23:54:34.218991+00:00",
+        "current_status_source": "Directnative get_goal same objective; active/incomplete, noquota set/increased."
       },
       "protected": "Old console/Flatpak/Loop/admin work remains paused; no foreground takeover, account/Cloud/global changes, story progression or save rollback; EVEExperience stays off. Existing unrelated pending work preserved.",
       "acceptance": "Current owner compatibility-risk policy at owner_acceptance_20261026 controls: reusevalidsharedcore, mergegarment colors/options/animationconsumers, prioritize orderedoutfit failures andexplicit haircrashrepro. Original5125 inventory ishistory, notcurrent completion denominator.",
@@ -3724,10 +3723,10 @@
         "remaining_scope_unchanged": true
       },
       "test_save_boundary": "No independent story-save isolation established; forbid death/story/reward/travel tests and save rollback. Initial private launch/menu checks only; inspect scene before safe reversible movement/outfit checks.",
-      "round_accounting": "R79 one exact ordered diagnosis/nativecounterexample/readonly retention trace and restoration countonce; no perchoice/clip/snapshot rounds.",
-      "next_action": "定位 EveProportions 旧后处理链接实例的创建/解除链接机制与实际所有权；现有证据显示3→14累积，但未证明旧实例活动、泄漏危害或材质/崩溃因果。先用引擎支持路径形成有界候选，不清写 LinkedInstances 数组、不盲重跑服装或重新启用已排除项。",
+      "round_accounting": "R80 one coherent nativeprobe/reverse/minimalrepair/8ordered-switch delta and restoration accepted once. Failed tag-null method preserved; no percall/choice/review rounds.",
+      "next_action": "复用已审查 R80 公共生命周期修复和有效核心证据，为 converted182 族尚无实际证据的独有网格执行一批有序换装差异；按真实结构选代表、合并颜色，不重测已覆盖网格或辅助成功率。已确认坏发型/Wardress继续排除，异常时只缩小受影响转换。",
       "at": "2026-10-25T23:55:06.640620+00:00",
-      "lane_reason": "No product/sourceasset repair or difficult fullgarment acceptance. Only verified static imports, actual readback/frame facts and exact profile/QA restoration. Initial pose cause staysOPEN.",
+      "lane_reason": "Recoverable owned animation lifecycle change using engineclear/restore; coherent actual delta and fresh independentJudge PASS_SCOPED.",
       "findings": {
         "v3": "Confirmed Lua index13 reads native slot12; no successful native-body binding. Current fix readsLua14.",
         "v4": "Real native cold-load false positive and Actor-deselection invisible-body regressions; FAIL preserved.",
@@ -3738,8 +3737,8 @@
         "v7": "Scoped actual native/CNS menu/save/mesh pass from visible CNS baseline; earlier RemovedBody=true poison remains a counterexample, not erased",
         "v8": "Fresh independent PASS for current BS_ alias transition/native-menu scope; full S1/Goal incomplete"
       },
-      "candidate_sha256": "5679d28fe2e6719314c45e6709a99c4920c866a24b21953dd66e39a05dae4e12",
-      "updated_at": "2026-10-26T22:53:22.579457+00:00",
+      "candidate_sha256": "bc2afbb862d01f2f556b66b8f55a31c1db55b3b5f6804afc9579c05cd965d2d1",
+      "updated_at": "2026-10-26T23:54:34.218991+00:00",
       "grouped_assertions": {
         "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
         "sha256": "a800adc5603d0edb2747f20dc335cc109dd88357033ddfcdadb856aac810b618",
@@ -3753,30 +3752,40 @@
       },
       "hair_original_context": "Exact BUG-HAIR-20261025-01 context recovered read-only from native crash directory; private pointer .local/play-session-20261026/grouped-qa/hair-incident-context-recovery.json; GameThread AV verified, cause unknown",
       "runtime_ownership": {
-        "status": "OWNED_GAME_HELPERS_CAPTURES_EXITED_0",
-        "evidence": ".local/play-session-20261026/grouped-qa/firstload-pose-r79/final-restoration.json",
-        "private_display": "Existing activeGoal private display retained; no foreground"
+        "status": "OWNED_TEST_GAME_HELPERS_CLOSED",
+        "input_owner": "ROOT_PRIVATE_GROUPED_QA",
+        "display": ":2",
+        "final_restoration_ref": ".local/play-session-20261026/grouped-qa/linked-lifecycle-validation-r80/final-restoration.json",
+        "sameprefix_residue_ref": ".local/play-session-20261026/grouped-qa/linked-lifecycle-validation-r80/postexit-prefix-processes.json",
+        "foreground_untouched": true,
+        "retained_resource": "Existing activeGoal private display only"
       },
-      "candidate_source": "src/runtime/NativeOutfitOwnership.lua",
-      "latest_runtime_result": ".local/play-session-20261026/grouped-qa/firstload-pose-r79/runtime-result.json",
-      "last_material_progress": "R79 exact original/alternate paths2x14s not reproduced; similar native-before-CNS pose; actual LinkedInstances3→14 retained. Current graphsameOneMillion in8samples; source/product unchanged; no newfullPASS.",
-      "round_key": "firstload-ordered-pose-r79-20261027",
+      "candidate_source": "src/runtime/OwnedLinkedPostProcess.lua",
+      "latest_runtime_result": ".local/play-session-20261026/grouped-qa/linked-lifecycle-validation-r80/root-verification.json",
+      "last_material_progress": "Owned linked lifecycle fixed via guarded nativeclass rebuild: old3→14, candidatecold1 and16orderedreads1; movement/sixsprings/material/profile recovered; no fullgarment/crashcause acceptance.",
+      "round_key": "owned-linked-postprocess-lifecycle-r80-20261027",
       "round_closed_once": true,
       "previous_current_projection_ref": ".local/play-session-20261026/grouped-qa/PROJECT_STATE.entry.json",
       "independent_review": {
-        "status": "NOT_REQUIRED_DIRECT",
-        "reason": "Read-only facts and explicit unproven cause only; no productrepair or fullcompatibility acceptance."
+        "status": "PASS_SCOPED",
+        "reviewer": "/root/r80_linked_lifecycle_review",
+        "evidence": ".local/play-session-20261026/grouped-qa/linked-lifecycle-validation-r80/independent-review.json",
+        "candidate_module_sha256": "bc2afbb862d01f2f556b66b8f55a31c1db55b3b5f6804afc9579c05cd965d2d1",
+        "candidate_main_sha256": "1232f9ab613078eb6298b1fe0d1071816e052a60e3c14538067abf8874656d63"
       },
       "git_delivery": {
         "status": "DELIVERY_RECEIPT_AUTHORITATIVE_FOR_REMOTE_VERIFICATION",
         "target": "codex/grouped-mod-qa-20261026",
-        "entry_verified_head": "bef1f46afa3898e9a8baa730625f356bf067d01e",
+        "entry_verified_head": "abba89555594b7bcc03ada256bc14217870b81d7",
         "main_unchanged": "aafc4b0fcf94bdc73b8e6810971281953f945fe9",
         "main_merge_authorized": false,
         "reviewed_paths": [
-          "PROJECT_STATE.json exact Root-owned projection"
+          "PROJECT_STATE.json exact Root-owned projection",
+          "src/runtime/OwnedLinkedPostProcess.lua",
+          "tests/test_owned_linked_postprocess.py",
+          "tests/fixtures/owned_linked_postprocess.lua"
         ],
-        "receipt_ref": ".local/play-session-20261026/grouped-qa/firstload-pose-r79/round-delivery.json"
+        "receipt_ref": ".local/play-session-20261026/grouped-qa/linked-lifecycle-validation-r80/round-delivery.json"
       },
       "entry_process_audit": "No SB.exe or SB-Win64-Shipping.exe live; previous hair session PID1913315 absent; lifecycle-end confirms own helper stopped. Steam provider retained, no input granted to foreground.",
       "entry_goal_turn_classification": "FIRST_ACTIVATION; no prior turn in this new native Goal",
@@ -3862,7 +3871,7 @@
         },
         "r73_reuse_correction": "Beforefuturecorechecks, consult actualmanifest grouped_assertions structuredremaining_delta andlaterrecords. MOVE-REBIND-SAMEPROCESS-NEWPAWN alreadyhasactual875proof andmustbereused absent relevantchange; older narrativegap sentences arehistorical."
       },
-      "closed_at": "2026-10-26T22:53:22.579457+00:00",
+      "closed_at": "2026-10-26T23:54:34.218991+00:00",
       "wardrobe_semantic": {
         "round_key": "grouped-cns-body-semantic-20261026",
         "source": "Continuation of active nativeGoal plus owner REA/nonvisualoperation steering",
@@ -4051,7 +4060,7 @@
           "metadata_note": "Source commit identity is recorded here; exact final metadata HEAD verification is in the existing ignored receipt to avoid self-reference."
         }
       },
-      "current_result_ref": "firstload_pose_r79",
+      "current_result_ref": "linked_lifecycle_r80",
       "piercing_delta": {
         "round_key": "aik-piercing-delta-20261026",
         "status": "CLOSED_SCOPED_PROGRESS_GOAL_CONTINUES",
@@ -5503,6 +5512,72 @@
         "profile_roundtrip_sha256": "0ef54f650533d84ace32b44f3bb2c5bb292e0b9f71e68ffcff40247ee3361242",
         "resources_closed_ref": ".local/play-session-20261026/grouped-qa/firstload-pose-r79/final-restoration.json",
         "cause": "OPEN; retention observed, activity/harm/causal relation unproven."
+      },
+      "linked_lifecycle_r80": {
+        "at": "2026-10-26T23:03:40.874193+00:00",
+        "status": "ACCEPTED_SCOPED_OWNED_LIFECYCLE_REPAIR",
+        "lane": "REVIEWED",
+        "execution_source": "Active nativeGoal continuation afterR79 actual retention3→14; previous goal turnPROGRESS. No budget set/increased.",
+        "owned_scope": [
+          "PROJECT_STATE currentR80/manifest scope",
+          ".local/play-session-20261026/grouped-qa/linked-lifecycle-r80",
+          "Temporary QA exact2files+suffix, semantic31 client, one ownedprivate game/helper/movement; exact own-tagged-graph probe only",
+          "Potential minimal EveProportions/Scripts/main.lua lifecycle integration with exact718566 preimage and ownindependent module; apply only after supported enginecall verified; freshJudge for coherent repair",
+          "src/runtime/OwnedLinkedPostProcess.lua",
+          "tests/test_owned_linked_postprocess.py",
+          "tests/fixtures/owned_linked_postprocess.lua",
+          ".local/play-session-20261026/grouped-qa/linked-lifecycle-validation-r80"
+        ],
+        "source_main_sha256": "7185667b4f0ca3a90033a3bc10d2a32050e3e5230d0ada8dfbf74c28b51a0632",
+        "exact_preimage_ref": ".local/play-session-20261008/goal-restructure-20261010/body-prerequisites/EveProportions-1.1.0-stage/SB/Binaries/Win64/ue4ss/Mods/EveProportions/Scripts/main.lua",
+        "acceptance": "Initial tag-null probe preserved original maininstance but failed registrycleanup and was rejected. Accepted repair may rebuild only the guarded current native main class through engine nil/original pairing, preserving owner/mesh/class and any unknown links by skipping. Ordered boundedregistry/main/PP/material/motion/physics/profile recovery checked; no garment/crashrootcause PASS.",
+        "protected": "Originalassets/saves/7oldStategroups/15olderfiles, R77overlay, badHair/Wardress/Mod74/1052exclusions, no story/rollback/foreground/globalconfig. Do not use new bone/socket getters or layer API as graph cleanup.",
+        "resource_estimate": "Under128MB evidence, one reusedprivate display/game+existing helpers; no binary/sourcepack copies; fixed liblua5.4 available for focused fixtures.",
+        "next_action": "复用已审查 R80 公共生命周期修复和有效核心证据，为 converted182 族尚无实际证据的独有网格执行一批有序换装差异；按真实结构选代表、合并颜色，不重测已覆盖网格或辅助成功率。已确认坏发型/Wardress继续排除，异常时只缩小受影响转换。",
+        "probe_result_ref": ".local/play-session-20261026/grouped-qa/linked-lifecycle-r80/engine-probe-result.json",
+        "rejected_method": "Nulltag clears target but count3→3; pairedrestore addschild4. Not a resourcecleanup.",
+        "native_api_ref": ".local/play-session-20261026/grouped-qa/linked-lifecycle-r80/actual-animation-api.json",
+        "native_implementation_refs": [
+          ".local/play-session-20261026/grouped-qa/linked-lifecycle-r80/SetAnimClass-clearcallee.disasm.txt",
+          ".local/play-session-20261026/grouped-qa/linked-lifecycle-r80/SetAnimClass-actual-vtable-target.disasm.txt"
+        ],
+        "candidate_rule": "Only clear via native SetAnimClass nil/restore after every linked target is proven created under this module tag, expected EVEbody/main class and no montage/sequence/custom pose. Unknown links prevent reset.",
+        "candidate_module_sha256": "bc2afbb862d01f2f556b66b8f55a31c1db55b3b5f6804afc9579c05cd965d2d1",
+        "candidate_main_sha256": "1232f9ab613078eb6298b1fe0d1071816e052a60e3c14538067abf8874656d63",
+        "integration_ref": ".local/play-session-20261026/grouped-qa/linked-lifecycle-r80/integration.installed.json",
+        "focused_tests": "python3 -m unittest discover -s tests -p test_owned_linked_postprocess.py -v:2methods/11positive policycases+negative omittedpolicy control PASS",
+        "validation_ref": ".local/play-session-20261026/grouped-qa/linked-lifecycle-validation-r80",
+        "closed_at": "2026-10-26T23:54:34.218991+00:00",
+        "root_verification_ref": ".local/play-session-20261026/grouped-qa/linked-lifecycle-validation-r80/root-verification.json",
+        "independent_review_ref": ".local/play-session-20261026/grouped-qa/linked-lifecycle-validation-r80/independent-review.json",
+        "freeze_ref": ".local/play-session-20261026/grouped-qa/linked-lifecycle-validation-r80/review-freeze.json",
+        "validation_result_ref": ".local/play-session-20261026/grouped-qa/linked-lifecycle-validation-r80/validation-results.json",
+        "final_restoration_ref": ".local/play-session-20261026/grouped-qa/linked-lifecycle-validation-r80/final-restoration.json",
+        "additional_observation_ref": ".local/play-session-20261026/grouped-qa/linked-lifecycle-validation-r80/additional-observation.json",
+        "manifest_sha256": "e2f6c048d0b9838d9c1fb58651e7c2896eeff62530980e2aabfc6f484f5f5234",
+        "linked_count_before": [
+          3,
+          14
+        ],
+        "linked_count_candidate": [
+          1
+        ],
+        "ordered_switches": 8,
+        "observations": 16,
+        "new_full_leaf_PASS": 0,
+        "new_partial_leaf": 0,
+        "new_native_crashes": 0,
+        "legacy_statuses_preserved": true,
+        "probe_cleanup_rejected": true,
+        "rollback": "CHECK_ONLY passed exactmain/module/source; no rollback applied",
+        "remaining": [
+          "No crash rootcause established",
+          "No new garment PASS/PARTIAL credit",
+          "Foreign links/montage/sequence/custompose protection fixture-only",
+          "No death/travel/story/long-session acceptance",
+          "Wardress and known badHair remain excluded"
+        ],
+        "candidate_source": "src/runtime/OwnedLinkedPostProcess.lua"
       }
     },
     "owner_acceptance_20261026": {
