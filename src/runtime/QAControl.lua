@@ -2,10 +2,11 @@
 -- Bootstrap owns directory/nonce. Requests are one atomic request.txt, nine TSV fields:
 -- nonce,id,expires_unix,op,duration_ms,world_dx,world_dy,pawn,world.
 -- select appends outfit_id,index; wardrobe reads the current EVE Body state.
+-- control appends outfit_id,bootstrap_control_key,value for original CNS UI callbacks.
 -- move requires addresses returned by observe; direction is one world cardinal.
 -- Replies are <id>.response.tsv, one key/value per line, atomically replaced.
 local M = {}
-local VERSION, INTERVAL, LEASE = "3", 20, 1200
+local VERSION, INTERVAL, LEASE = "4.2.1", 20, 1200
 local function finite(n) return type(n) == "number" and n == n and math.abs(n) < math.huge end
 local function live(o) return o ~= nil and o:IsValid() end
 local function address(o) return string.format("0x%x", o:GetAddress()) end
@@ -87,6 +88,17 @@ function M.start(options)
         if type(v) == "number" or type(v) == "boolean" then return tostring(v) end
         return v:ToString()
     end
+    local function cnsOwnsInput(c)
+        for _, actor in ipairs(FindAllOf("ModActor_C") or {}) do
+            if live(actor) and actor:GetClass():GetFullName():find("/Game/Mods/DekCNS_P/ModActor", 1, true) then
+                local world, menu = actor:GetWorld(), actor.TempMenuUI
+                if live(world) and address(world) == c.world_id and live(menu) and menu:IsInViewport() then
+                    return true -- CNS can capture camera/input without a native movement lock.
+                end
+            end
+        end
+        return false
+    end
     local function wardrobe(c)
         local cns
         for _, actor in ipairs(FindAllOf("ModActor_C") or {}) do
@@ -160,7 +172,7 @@ function M.start(options)
         if text:find("[\r\n]") then return end
         local parts = {}
         for part in (text .. "\t"):gmatch("([^\t]*)\t") do parts[#parts + 1] = part end
-        if (#parts ~= 9 and #parts ~= 11) or parts[1] ~= nonce or not parts[2]:match("^[a-zA-Z0-9_-]+$")
+        if (#parts ~= 9 and #parts ~= 11 and #parts ~= 12) or parts[1] ~= nonce or not parts[2]:match("^[a-zA-Z0-9_-]+$")
             or #parts[2] > 64 or seen[parts[2]] then return end
         local id, deadline, op = parts[2], tonumber(parts[3]), parts[4]
         seen[id], count = true, count + 1
@@ -175,18 +187,108 @@ function M.start(options)
             reply(id, {op=op, phase="completed", reason=selecting
                 and "tracking stopped; CNS call cannot be cancelled" or "input submissions stopped"}); return
         end
-        if op ~= "observe" and op ~= "move" and op ~= "wardrobe" and op ~= "select" then
+        if op ~= "observe" and op ~= "move" and op ~= "wardrobe" and op ~= "select" and op ~= "control" then
             reply(id, {op=op, phase="rejected", reason="unknown operation"}); return
         end
         if active then reply(id, {op=op, phase="rejected", reason="move busy"}); return end
+        local dispatchedControl
         local ok, reason = pcall(function()
             local c = resolve()
             local state = sample(c)
-            if op == "wardrobe" or op == "select" then
+            if op == "wardrobe" or op == "select" or op == "control" then
                 local cns, saved, body = wardrobe(c)
                 for k, v in pairs(body) do state[k] = v end
                 if op == "wardrobe" then
                     state.op, state.phase = op, "completed"
+                    reply(id, state); return
+                end
+                if op == "control" then
+                    assert(#parts == 12 and parts[5] == "0" and parts[6] == "0" and parts[7] == "0",
+                        "control requires outfit, control key and value")
+                    assert(parts[8] == c.pawn_id and parts[9] == c.world_id, "observed identity required")
+                    assert(state.mode == 1 and state.speed <= 5 and state.blocked == 0 and not state.ignored,
+                        "control requires stationary walking without another native movement lock")
+                    local target, key, value = parts[10], parts[11], tonumber(parts[12])
+                    local allowed = type(options.outfits) == "table" and options.outfits[target]
+                    assert(body.body_id == target and body.body_visible and type(allowed) == "table"
+                        and allowed[body.body_index + 1] == body.mesh_path, "control body outside allowlist")
+                    assert(cns.OutfitMap:Contains(target), "control outfit not registered")
+                    local registered = cns.OutfitMap:Find(target):get()
+                    assert(live(registered) and scalarText(registered.UniqueFitID) == target
+                        and scalarText(registered.CharacterID) == "EVE" and scalarText(registered.FitMeshType) == "Body"
+                        and scalarText(registered.MeshSubType) == "", "control registered metadata mismatch")
+                    local specs = type(options.controls) == "table" and options.controls[target]
+                    local spec = type(specs) == "table" and specs[key]
+                    assert(type(spec) == "table" and finite(value), "control outside bootstrap allowlist")
+                    local scalar = spec.kind == "scalar"
+                    assert(scalar or spec.kind == "toggle", "unsupported control kind")
+                    if scalar then
+                        assert(finite(spec.min) and finite(spec.max) and spec.min <= spec.max
+                            and value >= spec.min and value <= spec.max, "control outside declared range")
+                    else
+                        assert(value == 0 or value == 1, "toggle must be zero or one")
+                    end
+                    local menu = cns.TempMenuUI
+                    assert(live(menu) and menu:GetClass():GetFName():ToString() == "WB_CustomNanoSootUI_C"
+                        and menu:IsInViewport() and not menu.IsHiddenUI and live(menu.ModActor)
+                        and address(menu.ModActor) == address(cns), "current CNS menu required")
+                    assert(live(menu.ConfigurablesArea) and menu.ConfigurablesArea:IsVisible()
+                        and live(menu.LastClickedOutfitButton)
+                        and scalarText(menu.LastClickedOutfitButton.ButtonID) == target,
+                        "CNS is configuring a different outfit")
+                    local cls = scalar and "WB_SliderButton_C" or "WB_ToggleButton_C"
+                    local dataClass = scalar and "BP_CNS_UserConfigData_ScalarControls_C"
+                        or "BP_CNS_UserConfigData_MaterialToggle_C"
+                    local widget, data
+                    for _, candidate in ipairs(FindAllOf(cls) or {}) do
+                        if live(candidate) and candidate:GetClass():GetFName():ToString() == cls then
+                            local tree = candidate:GetOuter()
+                            local owner = live(tree) and tree:GetOuter()
+                            if live(owner) and address(owner) == address(menu) then
+                                local d = candidate.BaseConfigData
+                                if live(d) and d:GetClass():GetFName():ToString() == dataClass
+                                    and scalarText(d.DisplayName) == spec.display
+                                    and tonumber(d.MaterialIndex) == spec.material then
+                                    assert(not widget, "ambiguous control widget")
+                                    widget, data = candidate, d
+                                end
+                            end
+                        end
+                    end
+                    assert(widget and scalarText(data.ControlledBy) == "", "unavailable or dependent control")
+                    if scalar then
+                        assert(scalarText(data.ParamName) == spec.param and scalarText(data.Association) == "Global"
+                            and tonumber(data.LayerIndex) == -1 and math.abs(tonumber(data.Min)-spec.min) < 0.00001
+                            and math.abs(tonumber(data.Max)-spec.max) < 0.00001, "control metadata mismatch")
+                    end
+                    local before = scalarText(data.Value)
+                    local preserved = protected(saved, nil) -- every index key, including the real empty key
+                    local bodyRemoved = saved.RemovedOutfitMap:Contains("EVE-Body-")
+                        and scalarText(saved.RemovedOutfitMap:Find("EVE-Body-"):get()) or "absent"
+                    local method = scalar and "OnOutfitConfigurationScalarChanged"
+                        or "OnOutfitConfigurationMaterialToggleChanged"
+                    reply(id, {op=op, phase="active", control_key=key, native_calls=0, method=method})
+                    dispatchedControl = {key=key, method=method}
+                    -- Call the original UI consumer once. Never construct/write its configuration TMaps.
+                    local wanted = value
+                    if not scalar then wanted = value == 1 end
+                    menu[method](menu, widget, wanted)
+                    local cnsAfter, savedAfter, bodyAfter = wardrobe(c)
+                    local removedAfter = savedAfter.RemovedOutfitMap:Contains("EVE-Body-")
+                        and scalarText(savedAfter.RemovedOutfitMap:Find("EVE-Body-"):get()) or "absent"
+                    local mapsOK = address(cnsAfter) == address(cns) and address(savedAfter) == address(saved)
+                        and protected(savedAfter, nil) == preserved and removedAfter == bodyRemoved
+                        and bodyAfter.body_id == body.body_id and bodyAfter.body_index == body.body_index
+                        and bodyAfter.body_component == body.body_component and bodyAfter.mesh_path == body.mesh_path
+                        and bodyAfter.body_visible == body.body_visible
+                    local dataOK = scalar and math.abs(tonumber(data.Value)-value) < 0.00001
+                        or not scalar and data.Value == wanted
+                    state = sample(c)
+                    state.op, state.phase, state.native_calls = op, "completed", 1
+                    state.control_key, state.method = key, method
+                    state.value_before, state.value_after = before, scalarText(data.Value)
+                    state.control_data_verified, state.protected_maps_unchanged = dataOK, mapsOK
+                    state.material_verification = "independent actual material and visual checks required"
                     reply(id, state); return
                 end
                 assert(#parts == 11, "select requires explicit outfit and index")
@@ -234,6 +336,7 @@ function M.start(options)
                 or (dx == 0 and math.abs(dy) == 1)), "world cardinal required")
             assert(parts[8] == c.pawn_id and parts[9] == c.world_id, "observed identity required")
             assert(state.blocked == 0 and not state.ignored and state.mode == 1, "native movement locked or not walking")
+            assert(not cnsOwnsInput(c), "CNS menu owns movement")
             local t = clock(c)
             -- Record acceptance before authorizing the first input submission.
             reply(id, {op=op, phase="active", pawn=c.pawn_id, world=c.world_id})
@@ -242,7 +345,11 @@ function M.start(options)
                 deadline=math.min(deadline, now+2), submissions=0, peak=state.speed}
         end)
         if not ok then
-            if active and active.id == id then finish("uncertain native call: " .. tostring(reason))
+            if dispatchedControl then
+                reply(id, {op=op, phase="completed", native_calls=1, control_key=dispatchedControl.key,
+                    method=dispatchedControl.method, control_data_verified=false,
+                    reason="uncertain native control call: " .. tostring(reason)})
+            elseif active and active.id == id then finish("uncertain native call: " .. tostring(reason))
             else reply(id, {op=op, phase="rejected", reason=reason}) end
         end
     end
@@ -269,6 +376,7 @@ function M.start(options)
                     a.stable = matches and a.stable + 1 or 0
                     if a.stable >= 2 then finish("selection matched saved data and live mesh", state) end
                 else
+                    if cnsOwnsInput(a.c) then finish("CNS menu owns movement", state); return end
                     local t = clock(a.c)
                     assert(t >= a.previous, "real clock reset")
                     a.previous, a.peak = t, math.max(a.peak, state.speed)

@@ -4,7 +4,7 @@
 
 `NativeOutfitOwnership.lua` 观察原生装备菜单的实际换装事件，只清除 CNS 保存数据中两个 Body 覆盖标记。原生初始化、其他身体部位与预设保持原有归属。当前通过范围见 `PROJECT_STATE.json` 的分组测试结果。
 
-`QAControl.lua` 提供本次私有会话的 `observe`、`move`、`stop`、`wardrobe` 和 `select`，使位置、速度、输入锁与短时移动检查可以使用结构化读数。外观、材质和动作自然度仍需真实画面检查。这个入口验证语义移动，不能代替物理键盘、手柄或窗口焦点测试。
+`QAControl.lua` 提供本次私有会话的 `observe`、`move`、`stop`、`wardrobe`、`select` 和 `control`，使移动、选择及原始参数控件检查可以使用结构化读数。外观、材质和动作自然度仍需真实画面检查。这个入口不能代替物理键盘、手柄或窗口焦点测试。
 
 由本地启动文件调用：
 
@@ -33,7 +33,20 @@ nonce	id	expires_unix	op	duration_ms	world_dx	world_dy	observed_pawn	observed_wo
 
 `stop` 在选择期间仅停止跟踪，已经发出的 CNS 异步调用不能被这个入口取消；必须回读最终状态，不能假装撤销。未知调用结果或超时均不能盲目重发。
 
-所有 UObject 调用在游戏线程运行。移动只向原生输入累加器提交 `bForce=false` 的输入；原生锁定、非步行模式、Pawn/World 变化会停止提交。完成后读取自然减速，不改速度、位置、锁或存档。`stop` 仅停止后续提交，不能撤销已经发生的移动。模块有二十分钟会话期限和二百请求上限。加载它需要正常退出本任务的游戏并添加独立模块；不要开启整套 MOD 热重载。
+`control` 在九字段后追加服装 ID、启动白名单中的控件键和数值。例如启动选项可加入：
+
+```lua
+controls={['<已登记的服装ID>']={['scalar:2']={kind='scalar', display='Piercing A1 Glow',
+    material=18, param='EmissivePower', min=0, max=2}}}
+```
+
+这里只支持 `scalar` 和 `toggle`；开关数值为 0 或 1。白名单须从本轮冻结的原始声明生成。调用要求当前 Pawn/World 匹配、静止步行模式、没有其他原生移动锁，且 CNS 配置区正在编辑同一 EVE Body ID。CNS 自身的菜单输入归属以其当前可见菜单和配置区核实，不假设它会增加原生移动锁计数。实际网格必须匹配服装白名单。控件须属于该菜单，其数据类型、显示名、材质槽及标量范围/参数一致，且没有尚未解析的 `ControlledBy` 依赖。
+
+入口只调用一次 CNS 原有的 `OnOutfitConfigurationScalarChanged` 或 `OnOutfitConfigurationMaterialToggleChanged`，不构造或直接写入它的配置 TMap。返回的 `control_data_verified` 只说明控件数据回读；`protected_maps_unchanged` 核对选择与移除标记。实际材质、可见效果和完整配置隔离仍由独立读数及必要画面验证。调用后抛错会登记为结果不确定，不能按拒绝重试；已经改变的配置也不能由 `stop` 撤销。
+
+直接调用后，部分标签会保留调用前的显示值。关闭并重新打开配置区可刷新，不能用旧标签覆盖实际数据和材质回读。
+
+所有 UObject 调用在游戏线程运行。移动只向原生输入累加器提交 `bForce=false` 的输入；原生锁定、非步行模式、Pawn/World 变化会停止提交。CNS 菜单即使不增加原生移动锁计数，仍会在移动前及每次提交前阻止语义移动。完成后读取自然减速，不改速度、位置、锁或存档。`stop` 仅停止后续提交，不能撤销已经发生的移动。模块有二十分钟会话期限和二百请求上限。加载它需要正常退出本任务的游戏并添加独立模块；不要开启整套 MOD 热重载。
 
 离线行为验证：
 

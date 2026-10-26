@@ -27,11 +27,12 @@ class QAControlTests(unittest.TestCase):
         cls.source = (ROOT / "src/runtime/QAControl.lua").read_bytes()
         cls.fixture = (ROOT / "tests/fixtures/qa_control.lua").read_bytes()
         cls.wardrobe_fixture = (ROOT / "tests/fixtures/qa_wardrobe.lua").read_bytes()
+        cls.controls_fixture = (ROOT / "tests/fixtures/qa_controls.lua").read_bytes()
 
     def test_session_input_policy(self):
         scenarios = ["observe", "move", "stop", "pawn-changed", "clock-reset", "lock-midmove", "nonce", "replay",
                      "locked", "controller-ignored", "pawn-ignored", "native-block", "falling", "expired", "future",
-                     "duration", "direction", "identity", "unknown"]
+                     "duration", "direction", "identity", "unknown", "cns-menu", "cns-midmove"]
         self.run_scenarios(scenarios, self.fixture)
 
     def test_session_wardrobe_policy(self):
@@ -39,6 +40,14 @@ class QAControlTests(unittest.TestCase):
                             "not-registered", "wrong-character", "locked", "moving", "cns-menu", "identity",
                             "native-error", "stop-pending", "legacy-select", "legacy-path-mismatch",
                             "legacy-empty"], self.wardrobe_fixture)
+
+    def test_original_control_consumer_policy(self):
+        self.run_scenarios(["scalar", "toggle", "additional-lock", "moving", "closed-menu", "hidden-menu",
+                            "closed-config", "wrong-config", "wrong-widget-owner", "dependent", "metadata",
+                            "changed-bounds", "association", "wrong-menu-owner", "wrong-mesh", "unsupported",
+                            "missing-widget", "duplicate-widget", "unlisted", "identity", "range", "nan",
+                            "toggle-invalid", "native-error", "readback-mismatch", "unrelated-change",
+                            "body-removed", "wrong-registration", "native-ignored", "empty-index-change"], self.controls_fixture)
 
     def run_scenarios(self, scenarios, fixture):
         for scenario in scenarios:

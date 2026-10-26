@@ -1509,17 +1509,17 @@
     "progress": {
       "scope_version": "unified-leaves-v5-sequential-material-feedback-20261014",
       "completion_scope": "RETAINED_INDEPENDENT_TESTS_AFTER_EXPLICIT_FAVOURITE_EDITION_SELECTION_WITH_SCOPE_GATES",
-      "effective_accepted": 213,
+      "effective_accepted": 228,
       "effective_required": 5125,
-      "completion_percent": 4.1561,
-      "tested_with_complete_conclusion": 215,
-      "test_conclusion_percent": 4.1951,
+      "completion_percent": 4.4488,
+      "tested_with_complete_conclusion": 230,
+      "test_conclusion_percent": 4.4878,
       "statuses": {
         "NOT_TESTED": 4824,
-        "PASS": 213,
+        "PASS": 228,
         "REOPENED": 2,
         "WAITING_HUMAN": 1,
-        "PARTIAL": 55,
+        "PARTIAL": 40,
         "FAIL": 2,
         "BLOCKED_NOT_INSTALLED": 28
       },
@@ -1537,25 +1537,25 @@
         "共享依赖": 4,
         "组合回归": 9
       },
-      "reason": "Fresh independent review accepts actual RS50 Nails RGB, metallic and glow endpoint/effect/restoration evidence. Original5129/effective5125, all other statuses and historical failures retained.",
+      "reason": "Fifteen original RS50 parameter leaves accepted after actual isolated original callback/visual/restoration evidence and fresh repaired-candidate review. Original5129/effective5125 and all unrelated statuses/failures retained.",
       "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
-      "manifest_sha256": "c9028ac47ad862a53f7db5eb9843fc37be0d95644cd512e75cdfe5d2d07ac2d6",
+      "manifest_sha256": "ec4edd708a3fd00390d85aaaf0121ba4c53ee53e5c72083de6ef2163c3ea1ebd",
       "target_identity_sha256": "955965cda7371a7ff208fdf736e19a1136e0628cf77a644ac49b5d4323aa9a92",
-      "enumeration_validation": ".local/play-session-20261026/grouped-qa/aik-material-delta/runtime-result.json",
-      "round_key": "aik-material-delta-20261026",
+      "enumeration_validation": ".local/play-session-20261026/grouped-qa/piercing-delta/runtime-result.json",
+      "round_key": "aik-piercing-delta-20261026",
       "round_status": "CLOSED_SCOPED_PROGRESS_GOAL_CONTINUES",
-      "count": 61,
+      "count": 62,
       "coverage": "since_baseline",
-      "last_seq": 61,
-      "last_key": "aik-material-delta-20261026",
+      "last_seq": 62,
+      "last_key": "aik-piercing-delta-20261026",
       "historical_round_count": "UNKNOWN",
-      "execution_change_percentage_points": 0.058537,
+      "execution_change_percentage_points": 0.292683,
       "evidence_change_percentage_points": 0,
       "scope_change_percentage_points": 0,
-      "change_rule": "Three original weight1 leaves gain PASS from new direct visual/material evidence; no scope, version, weight, denominator or prior evidence correction.",
-      "round_start_commit": "37f283f09f665e8aa3021a69dfb629e09607f1c2",
+      "change_rule": "15 original weight1 PARTIAL leaves gain PASS from execution; no new target, version, gate, weight, denominator or accepted-evidence correction.",
+      "round_start_commit": "40a5f26cae127c97f62e760876c7ec7abad4da20",
       "scope_change": "None",
-      "milestone_change": "Direct selection now admits original OutfitPaths schema. Three scoped material controls accepted; whole outfit/other variants/physics and other R59 partials remain open.",
+      "milestone_change": "Original native scalar/toggle transport and explicit CNS movement ownership delivered; R59 scalar/toggle cohort43/44 scopedPASS, BikiniP3 partial. No whole outfit or fullS1 acceptance.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1899,22 +1899,6 @@
       "remaining_rounds_confidence": "UNKNOWN",
       "window": [
         {
-          "seq": 59,
-          "key": "grouped-native-ownership-menu-20261026",
-          "effective_required": 5125,
-          "accepted_before": 210,
-          "accepted_after": 210,
-          "completion_percentage_point_delta": 0.0,
-          "scope_change": "No target IDs, weights, statuses, exclusion history or denominator changed",
-          "evidence_change": "Native ownership:5directscopedassertions plus2validmovementreuses; controlhelper:5newactualscopedassertions with19offlinebehaviors. No completeleafPASS inferred.",
-          "source_commits": [
-            "ed55733ced2685dd56498f472ee2d86ae2c93ada",
-            "be16fec058de442a4b56f95b5fb21b6e92840caf"
-          ],
-          "boundary": "SinglecoherentgroupedQA round; nochild/tool/outfit callback counted asround",
-          "completion": "Scoped technical unit accepted; fullGoal remains active"
-        },
-        {
           "seq": 60,
           "key": "grouped-cns-body-semantic-20261026",
           "effective_required": 5125,
@@ -1940,6 +1924,18 @@
           "scope_percentage_points": 0,
           "evidence_correction_percentage_points": 0,
           "completion": "One coherent R61 close; not per tool, agent, parameter, commit or steering message."
+        },
+        {
+          "seq": 62,
+          "key": "aik-piercing-delta-20261026",
+          "effective_required": 5125,
+          "accepted_before": 213,
+          "accepted_after": 228,
+          "completion_percentage_point_delta": 0.2926829268292683,
+          "execution_percentage_points": 0.2926829268292683,
+          "scope_percentage_points": 0,
+          "evidence_correction_percentage_points": 0,
+          "completion": "One coherent R62 close across discovery, guards, actual parameter batch, failed review/repair and new review. No additional round per restart/tool/agent/case/commit."
         }
       ],
       "prediction_reason": "Currentunit adds shared capability/evidence, not completeleafweight; heterogeneous appearance/material/physical/dialogue requirements andinsufficientpositive comparablethroughput prevent reliable roundestimate.",
@@ -1999,10 +1995,10 @@
         "milestone_change": "R59 cumulative26 finite geometry/emitter/hardware gates PASS,18 visual gates PARTIAL; latest continuation added18 PASS with exact source-default restoration."
       },
       "remaining_round_estimate": "UNKNOWN",
-      "remaining_round_estimate_confidence": "UNKNOWN: heterogeneous targets and last two comparable rounds had zero complete-leaf increment."
+      "remaining_round_estimate_confidence": "UNKNOWN: heterogeneous targets and recent comparable window includes zero leaf increment."
     },
-    "next_action": "Continue ready R59 piercing/toggle and R56 material deltas with valid shared core/selector evidence. Before another runtime, freeze the smallest body/parameter batch and inspect original CNS control consumers for deterministic parameter operations; retain visual checks for actual shading/geometry. Do not repeat accepted Nails endpoints or common movement/assistant tests.",
-    "updated_at": "2026-10-26T04:25:08.000056+00:00",
+    "next_action": "Inspect remaining BikiniP3 material33 in rear view or actual mesh-section mapping using verified native controls; do not repeat front numeric/mask checks. Freeze the next ready R56/vector/material difference batch and reuse accepted core/parameter transport. Keep native wardrobe dialogue, physics, whole appearance, performance and personal-play delivery gates open.",
+    "updated_at": "2026-10-26T06:12:34.445113+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2113,7 +2109,7 @@
         }
       }
     },
-    "round_closure_at": "2026-10-26T04:25:08.000056+00:00",
+    "round_closure_at": "2026-10-26T06:12:34.445113+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 14,
       "new_confirmed_this_round": 0,
@@ -2277,8 +2273,8 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "PRIVATE_AIK_MATERIAL_DELTA_R61_CLOSED",
-    "previous_goal_turn_classification": "PROGRESS: R61 legacy CNS selector and three original RS50 parameter leaves accepted; full Goal remains active.",
+    "current_segment": "PRIVATE_AIK_PIERCING_DELTA_R62_CLOSED",
+    "previous_goal_turn_classification": "PROGRESS: R62 original native parameter transport, explicit CNS movement refusal and15 original RS50 leaves accepted; original scope/fullGoal active.",
     "execution_status": "GROUPED_QA_ACTIVE_S1_PARTIAL",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
     "pause_source": "Current human: restart game, tests remain paused; subsequent black-screen repair does not resume tests",
@@ -3270,10 +3266,10 @@
     "native_goal": {
       "threadId": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
       "status": "active",
-      "tokensUsed": 3959345,
-      "timeUsedSeconds": 16350,
+      "tokensUsed": 5129269,
+      "timeUsedSeconds": 22444,
       "createdAt": 1792972357,
-      "telemetry_at": "2026-10-26T04:26:04+00:00",
+      "telemetry_at": "2026-10-26T06:10:29+00:00",
       "telemetry_coverage": "Directnative tool cumulative currentactivation only; priorlogicaltask/activation/history retained; elapsednotactive-only no-progress time. No quota set or increased; full logical lifetimecost unknown.",
       "same_objective_verified": true
     },
@@ -3682,7 +3678,7 @@
       },
       "test_save_boundary": "No independent story-save isolation established; forbid death/story/reward/travel tests and save rollback. Initial private launch/menu checks only; inspect scene before safe reversible movement/outfit checks.",
       "round_accounting": "Closed once as confirmed sequence59; original unfinished R56/R59 retained; no extra round for steering, tools, agents, source/metadata commits, or outfits.",
-      "next_action": "Continue ready R59 piercing/toggle and R56 material deltas with valid shared core/selector evidence. Before another runtime, freeze the smallest body/parameter batch and inspect original CNS control consumers for deterministic parameter operations; retain visual checks for actual shading/geometry. Do not repeat accepted Nails endpoints or common movement/assistant tests.",
+      "next_action": "Inspect remaining BikiniP3 material33 in rear view or actual mesh-section mapping using verified native controls; do not repeat front numeric/mask checks. Freeze the next ready R56/vector/material difference batch and reuse accepted core/parameter transport. Keep native wardrobe dialogue, physics, whole appearance, performance and personal-play delivery gates open.",
       "at": "2026-10-25T23:55:06.640620+00:00",
       "lane_reason": "Recovered native equipment lifecycle and CNS saved-selection integration; Root verifies coherent candidate, fresh independent Judge before acceptance.",
       "findings": {
@@ -3696,7 +3692,7 @@
         "v8": "Fresh independent PASS for current BS_ alias transition/native-menu scope; full S1/Goal incomplete"
       },
       "candidate_sha256": "5679d28fe2e6719314c45e6709a99c4920c866a24b21953dd66e39a05dae4e12",
-      "updated_at": "2026-10-26T04:25:08.000056+00:00",
+      "updated_at": "2026-10-26T06:12:34.445113+00:00",
       "grouped_assertions": {
         "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
         "sha256": "a800adc5603d0edb2747f20dc335cc109dd88357033ddfcdadb856aac810b618",
@@ -3987,7 +3983,170 @@
           "metadata_note": "Source commit identity is recorded here; exact final metadata HEAD verification is in the existing ignored receipt to avoid self-reference."
         }
       },
-      "current_result_ref": "material_delta"
+      "current_result_ref": "piercing_delta",
+      "piercing_delta": {
+        "round_key": "aik-piercing-delta-20261026",
+        "status": "CLOSED_SCOPED_PROGRESS_GOAL_CONTINUES",
+        "source": "Same active user-authorized grouped MOD QA Goal; continuation after R61 technical/leaf progress.",
+        "lane": "REVIEWED",
+        "git_base": "40a5f26cae127c97f62e760876c7ec7abad4da20",
+        "at": "2026-10-26T04:35:01.978688+00:00",
+        "entry_state_sha256": "c9c378aaa39667d0693af2b53afdc5ddff596188d66270ecfb5a9b0898af0da4",
+        "entry_manifest_sha256": "c9028ac47ad862a53f7db5eb9843fc37be0d95644cd512e75cdfe5d2d07ac2d6",
+        "owned_scope": [
+          "Owned PROJECT_STATE task projection",
+          "Existing ignored manifest exact frozen target evidence/status only",
+          "Private piercing-delta evidence/native consumer discovery",
+          "Temporary own QAControl3 deployment/enable line and registered Body parameter controls in private game",
+          "src/runtime/QAControl.lua",
+          "tests/fixtures/qa_controls.lua",
+          "tests/test_qa_control.py",
+          "src/runtime/README.md",
+          "tests/fixtures/qa_control.lua"
+        ],
+        "frozen_target_leaf_ids": [
+          "control:AiK_CH48_8866/MaterialToggles/18",
+          "control:AiK_CH48_8866/MaterialToggles/21",
+          "control:AiK_CH48_8866/MaterialToggles/28",
+          "control:AiK_CH48_8866/MaterialToggles/29",
+          "control:AiK_CH48_8866/MaterialToggles/30",
+          "control:AiK_CH48_8866/MaterialToggles/31",
+          "control:AiK_CH48_8866/MaterialToggles/32",
+          "control:AiK_CH48_8866/MaterialToggles/33",
+          "control:AiK_CH48_8866/MaterialToggles/34",
+          "control:AiK_CH48_8866/ScalarControls/2",
+          "control:AiK_CH48_8866/ScalarControls/3",
+          "control:AiK_CH48_8866/ScalarControls/4",
+          "control:AiK_CH48_8866/ScalarControls/5",
+          "control:AiK_CH48_8866/ScalarControls/6",
+          "control:AiK_CH48_8866/ScalarControls/7",
+          "control:AiK_CH48_8866/ScalarControls/8"
+        ],
+        "baseline": {
+          "accepted": 213,
+          "required": 5125,
+          "original": 5129,
+          "closed_rounds": 61
+        },
+        "protected": "No story, purchases, rewards, real save rollback, hair changes, original assets, loader/global/account/network changes. Other pending file groups retained.",
+        "acceptance": "Original per-leaf endpoint/effect/restoration and geometry/material gates. Reuse unchanged R59 numeric and R60/R61 shared core; inspect current native widget callbacks read-only before any new semantic parameter mechanism.",
+        "next_action": "Inspect remaining BikiniP3 material33 in rear view or actual mesh-section mapping using verified native controls; do not repeat front numeric/mask checks. Freeze the next ready R56/vector/material difference batch and reuse accepted core/parameter transport. Keep native wardrobe dialogue, physics, whole appearance, performance and personal-play delivery gates open.",
+        "round_closed_once": true,
+        "consumer_discovery": "Actual current menu has OnOutfitConfigurationScalarChanged(TheButton,float) and OnOutfitConfigurationMaterialToggleChanged(TheButton,bool). Current ButtonID AiK matches selected Body;106 bounded config widgets, original callbacks and native bindings read-only reflected. No whole TMap marshalling needed.",
+        "evidence": [
+          ".local/play-session-20261026/grouped-qa/piercing-delta/native-consumers.json",
+          ".local/play-session-20261026/grouped-qa/piercing-delta/native-config-ownership.json"
+        ],
+        "candidate_sha256": "8d8b73ae34cb1212b2ce75bce0c12aa523b82617b8833a6740b3192f3fdf39d4",
+        "tests": {
+          "command": "python3 -m unittest discover -s tests -p test_qa_control.py -v",
+          "exit": 0,
+          "tests": 3,
+          "scenarios": 68
+        },
+        "failure_fingerprint": ".local/play-session-20261026/grouped-qa/piercing-delta/guard-failure.json",
+        "new_input_counterexample": "Actual CNS menu is visible while native MoveInputBlockCount0/ignoredfalse. Static QA4.1 move path checks native locks but omits CNS capture; add explicit same-world CNS menu ownership refusal before and during semantic movement. Existing native inventory/camp locks retain their evidence.",
+        "observed_leaf_candidates": 15,
+        "unresolved_original_R59_leaf": "control:AiK_CH48_8866/MaterialToggles/18",
+        "actual_result": ".local/play-session-20261026/grouped-qa/piercing-delta/runtime-result.json",
+        "resource_closure": ".local/play-session-20261026/grouped-qa/piercing-delta/lifecycle-end.json",
+        "proposed_pass_leaf_ids": [
+          "control:AiK_CH48_8866/MaterialToggles/28",
+          "control:AiK_CH48_8866/MaterialToggles/29",
+          "control:AiK_CH48_8866/MaterialToggles/30",
+          "control:AiK_CH48_8866/MaterialToggles/31",
+          "control:AiK_CH48_8866/MaterialToggles/32",
+          "control:AiK_CH48_8866/MaterialToggles/33",
+          "control:AiK_CH48_8866/MaterialToggles/34",
+          "control:AiK_CH48_8866/ScalarControls/2",
+          "control:AiK_CH48_8866/ScalarControls/3",
+          "control:AiK_CH48_8866/ScalarControls/4",
+          "control:AiK_CH48_8866/ScalarControls/5",
+          "control:AiK_CH48_8866/ScalarControls/6",
+          "control:AiK_CH48_8866/ScalarControls/7",
+          "control:AiK_CH48_8866/ScalarControls/8",
+          "control:AiK_CH48_8866/MaterialToggles/21"
+        ],
+        "first_independent_review": ".local/play-session-20261026/grouped-qa/piercing-delta/independent-review-first.json",
+        "empty_index_regression": ".local/play-session-20261026/grouped-qa/piercing-delta/empty-index-regression.json",
+        "repair_adoption": ".local/play-session-20261026/grouped-qa/piercing-delta/repair-reuse-proof.json",
+        "closed_at": "2026-10-26T06:12:34.445113+00:00",
+        "sequence": 62,
+        "independent_review": ".local/play-session-20261026/grouped-qa/piercing-delta/independent-review.json",
+        "accepted_leaf_ids": [
+          "control:AiK_CH48_8866/MaterialToggles/28",
+          "control:AiK_CH48_8866/MaterialToggles/29",
+          "control:AiK_CH48_8866/MaterialToggles/30",
+          "control:AiK_CH48_8866/MaterialToggles/31",
+          "control:AiK_CH48_8866/MaterialToggles/32",
+          "control:AiK_CH48_8866/MaterialToggles/33",
+          "control:AiK_CH48_8866/MaterialToggles/34",
+          "control:AiK_CH48_8866/ScalarControls/2",
+          "control:AiK_CH48_8866/ScalarControls/3",
+          "control:AiK_CH48_8866/ScalarControls/4",
+          "control:AiK_CH48_8866/ScalarControls/5",
+          "control:AiK_CH48_8866/ScalarControls/6",
+          "control:AiK_CH48_8866/ScalarControls/7",
+          "control:AiK_CH48_8866/ScalarControls/8",
+          "control:AiK_CH48_8866/MaterialToggles/21"
+        ],
+        "leaf_delta": 15,
+        "r59_original_parameter_cohort": {
+          "required": 44,
+          "accepted": 43,
+          "partial": 1,
+          "remaining": [
+            "control:AiK_CH48_8866/MaterialToggles/18"
+          ]
+        },
+        "shared_assertions": [
+          {
+            "id": "QA.CNS.scalar-original-consumer",
+            "status": "PASS_SCOPED",
+            "evidence": "semantic-08/client-results.jsonl plus individual actual MID snapshots; final semantic-09 independently repeats one scalar"
+          },
+          {
+            "id": "QA.CNS.toggle-original-consumer",
+            "status": "PASS_SCOPED",
+            "evidence": "semantic-08/client-results.jsonl plus individual actual hidden-material snapshots; final semantic-09 independently repeats one toggle"
+          },
+          {
+            "id": "QA.CNS.menu-move-refusal-native-lock-zero",
+            "status": "PASS_SCOPED",
+            "evidence": ".local/play-session-20261026/grouped-qa/piercing-delta/v42-cns-move-refusal.json",
+            "actual_samples": 36,
+            "speed": 0,
+            "displacement_cm": 0,
+            "native_blocked": 0,
+            "active_receipt": false
+          }
+        ],
+        "restoration": {
+          "all37_override_material_chains_and_parameters_equal_initial": true,
+          "all_hidden_material_lod_arrays_equal_initial": true,
+          "all_outfit_selections_indexes_and_removed_equal_original": true,
+          "all_saved_configuration_and_preset_property_hashes_equal_round_entry": true,
+          "changed_saved_properties": [
+            "CustomCamPos"
+          ],
+          "whole_CNS_file_equals_pre_final_runtime": true
+        },
+        "dependency_fingerprint": ".local/play-session-20261026/grouped-qa/piercing-delta/dependency-fingerprint.json",
+        "git_delivery": {
+          "target": "codex/grouped-mod-qa-20261026",
+          "status": "PENDING_VERIFICATION",
+          "reviewed_scope": [
+            "src/runtime/QAControl.lua",
+            "src/runtime/README.md",
+            "tests/fixtures/qa_control.lua",
+            "tests/fixtures/qa_controls.lua",
+            "tests/test_qa_control.py",
+            "Owned PROJECT_STATE task projection"
+          ],
+          "local_only": "Raw screenshots/native saved-data/process/manifest evidence remain ignored. Prior planning/manual-play/paused-product/private-research groups retained.",
+          "receipt": ".local/play-session-20261026/grouped-qa/piercing-delta/git-delivery.json"
+        }
+      }
     }
   }
 }

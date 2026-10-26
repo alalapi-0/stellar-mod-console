@@ -2,6 +2,7 @@
 local files, calls, tick, cancelled = {}, {}, nil, false
 local wall, real, locked, ignored, pawnIgnored, nativeBlock = 1000, 10, 0, false, false, false
 local x, vx, pending, pc, owner = 0, 0, false, nil, nil
+local cnsOpen = SCENARIO == "cns-menu"
 local nextHandle = 73
 local function fname(s) return {ToString=function() return s end} end
 local world = {IsValid=function() return true end, GetAddress=function() return 100 end}
@@ -30,7 +31,13 @@ pc = {IsValid=function() return true end, GetAddress=function() return 400 end,
     IsLocalPlayerController=function() return true end, GetWorld=function() return world end,
     IsMoveInputIgnored=function() return ignored end, Pawn=pawn}
 setmetatable(pawn, {__index=function(_, key) if key == "MoveInputBlockCount" then return locked end end})
-FindAllOf=function(name) assert(name == "SBNetworkPlayerController"); return {pc} end
+local cns = {IsValid=function() return true end, GetWorld=function() return world end,
+    GetClass=function() return {GetFullName=function() return "BlueprintGeneratedClass /Game/Mods/DekCNS_P/ModActor.ModActor_C" end} end,
+    TempMenuUI={IsValid=function() return true end, IsInViewport=function() return cnsOpen end}}
+FindAllOf=function(name)
+    if name == "ModActor_C" then return {cns} end
+    assert(name == "SBNetworkPlayerController"); return {pc}
+end
 StaticFindObject=function(path)
     assert(path == "/Script/Engine.Default__GameplayStatics")
     return {IsValid=function() return true end, GetRealTimeSeconds=function(_, w) assert(w == world); return real end}
@@ -108,6 +115,13 @@ elseif SCENARIO == "lock-midmove" then
     request("move","move"); steps(2); locked=1
     local n=#calls; steps(3)
     assert(#calls == n and response("move").reason == "native movement locked or mode changed")
+elseif SCENARIO == "cns-midmove" then
+    request("move","move");steps(2);cnsOpen=true
+    local n=#calls;steps(3)
+    assert(#calls == n and response("move").reason == "CNS menu owns movement")
+elseif SCENARIO == "cns-menu" then
+    request("move","move")
+    assert(#calls == 0 and response("move").phase == "rejected" and response("move").reason:find("CNS menu owns movement",1,true))
 elseif SCENARIO == "nonce" then
     request("bad","move",{[1]="old_session_nonce_0123456789"})
     assert(not files["owned/bad.response.tsv"] and #calls == 0)
