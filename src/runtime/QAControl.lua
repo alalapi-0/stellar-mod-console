@@ -5,7 +5,7 @@
 -- move requires addresses returned by observe; direction is one world cardinal.
 -- Replies are <id>.response.tsv, one key/value per line, atomically replaced.
 local M = {}
-local VERSION, INTERVAL, LEASE = "2", 20, 1200
+local VERSION, INTERVAL, LEASE = "3", 20, 1200
 local function finite(n) return type(n) == "number" and n == n and math.abs(n) < math.huge end
 local function live(o) return o ~= nil and o:IsValid() end
 local function address(o) return string.format("0x%x", o:GetAddress()) end
@@ -202,8 +202,16 @@ function M.start(options)
                 assert(cns.OutfitMap:Contains(id), "outfit not registered in current CNS")
                 local data = cns.OutfitMap:Find(id):get()
                 assert(live(data) and scalarText(data.UniqueFitID) == id and scalarText(data.CharacterID) == "EVE"
-                    and scalarText(data.FitMeshType) == "Body" and scalarText(data.MeshSubType) == ""
-                    and tonumber(data.NumFitDatas) > index, "registered outfit metadata mismatch")
+                    and scalarText(data.FitMeshType) == "Body" and scalarText(data.MeshSubType) == "",
+                    "registered outfit metadata mismatch")
+                local count = tonumber(data.NumFitDatas)
+                assert(finite(count) and count >= 0, "invalid outfit data count")
+                if count == 0 then -- original CNS schema uses direct paths rather than OutfitDatas
+                    count = data.OutfitPaths:GetArrayNum()
+                    assert(index < count and scalarText(data.OutfitPaths[index + 1]) == allowed[index + 1],
+                        "legacy outfit path/index mismatch")
+                end
+                assert(index < count, "registered outfit index unavailable")
                 local preserved = protected(saved, id)
                 reply(parts[2], {op=op, phase="active", pawn=c.pawn_id, world=c.world_id})
                 active = {kind="select", id=parts[2], c=c, cns=cns, saved=saved, target=id, index=index,

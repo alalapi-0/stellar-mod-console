@@ -37,7 +37,8 @@ class QAControlTests(unittest.TestCase):
     def test_session_wardrobe_policy(self):
         self.run_scenarios(["wardrobe", "select", "wrong-mesh", "unrelated-change", "unknown-outfit", "index-oob",
                             "not-registered", "wrong-character", "locked", "moving", "cns-menu", "identity",
-                            "native-error", "stop-pending"], self.wardrobe_fixture)
+                            "native-error", "stop-pending", "legacy-select", "legacy-path-mismatch",
+                            "legacy-empty"], self.wardrobe_fixture)
 
     def run_scenarios(self, scenarios, fixture):
         for scenario in scenarios:

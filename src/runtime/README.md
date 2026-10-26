@@ -27,6 +27,8 @@ nonce	id	expires_unix	op	duration_ms	world_dx	world_dy	observed_pawn	observed_wo
 
 `select` 在上述九字段后追加服装 ID、零起始变体索引。只允许本地启动文件明确提供的 ID/网格列表，且必须在当前 CNS `OutfitMap` 注册为 EVE/Body、子类型为空、索引有效。调用前要求身份匹配、角色静止且移动未锁定、CNS 菜单关闭。
 
+当前入口也支持原始 `OutfitPaths` 格式：仅在 `NumFitDatas` 为零时使用，并核对实际注册路径与启动白名单的对应变体。空数组、越界和路径不符都会在调用前拒绝。
+
 选择入口只调用一次 CNS 的五参数 `Set Custom Outfit`，然后等待保存选择、实际网格与可见标记连续匹配。无关的活动选择、变体索引及移除标记必须保持原样；完整配置和预设另以实际保存文件比较验证。只有 `selection_verified=true` 才表示这些回读条件已满足，仍需必要画面判断新网格、材质和动作。
 
 `stop` 在选择期间仅停止跟踪，已经发出的 CNS 异步调用不能被这个入口取消；必须回读最终状态，不能假装撤销。未知调用结果或超时均不能盲目重发。

@@ -28,6 +28,12 @@ saved.GetClass=function() return {GetFName=function() return name("BP_CNS_SaveDa
 saved.LastActiveOutfitMap=map({["EVE-Body-"]="Known",["EVE-Hair-"]="KeepHair"})
 saved.LastOutfitIndexMap=map({Known=1,KeepHair=4});saved.RemovedOutfitMap=map({["EVE-Face-"]=true})
 data.UniqueFitID, data.CharacterID, data.FitMeshType, data.MeshSubType, data.NumFitDatas = "Known", "EVE", "Body", "", 2
+if SCENARIO:match("^legacy") then
+    data.NumFitDatas=0
+    data.OutfitPaths={"/Game/Test/New.New","/Game/Test/Old.Old",GetArrayNum=function(self) return #self end}
+    if SCENARIO=="legacy-path-mismatch" then data.OutfitPaths[1]="/Game/Test/Wrong.Wrong" end
+    if SCENARIO=="legacy-empty" then data.OutfitPaths={GetArrayNum=function() return 0 end} end
+end
 if SCENARIO=="wrong-character" then data.CharacterID="ADAM" end
 cns.GetClass=function() return {GetFullName=function() return "BlueprintGeneratedClass /Game/Mods/DekCNS_P/ModActor.ModActor_C" end} end
 cns.GetWorld=function() return world end;cns.SavedModData=saved
@@ -79,7 +85,7 @@ if SCENARIO=="stop-pending" then request("stop","stop");assert(response("stop").
 steps(320)
 local out=response("change")
 local diagnostic="calls="..calls.." reason="..tostring(out.reason).." verified="..tostring(out.selection_verified)
-if SCENARIO=="select" then
+if SCENARIO=="select" or SCENARIO=="legacy-select" then
     assert(calls==1 and out.selection_verified=="true" and out.protected_maps_unchanged=="true",diagnostic)
     assert(out.mesh_path=="/Game/Test/New.New" and out.body_index=="0")
 elseif SCENARIO=="wrong-mesh" then assert(calls==1 and out.selection_verified=="false" and out.reason=="wall deadline expired",diagnostic)

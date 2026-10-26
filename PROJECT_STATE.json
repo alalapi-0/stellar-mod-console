@@ -1509,17 +1509,17 @@
     "progress": {
       "scope_version": "unified-leaves-v5-sequential-material-feedback-20261014",
       "completion_scope": "RETAINED_INDEPENDENT_TESTS_AFTER_EXPLICIT_FAVOURITE_EDITION_SELECTION_WITH_SCOPE_GATES",
-      "effective_accepted": 210,
+      "effective_accepted": 213,
       "effective_required": 5125,
-      "completion_percent": 4.0976,
-      "tested_with_complete_conclusion": 212,
-      "test_conclusion_percent": 4.1366,
+      "completion_percent": 4.1561,
+      "tested_with_complete_conclusion": 215,
+      "test_conclusion_percent": 4.1951,
       "statuses": {
-        "NOT_TESTED": 4825,
-        "PASS": 210,
+        "NOT_TESTED": 4824,
+        "PASS": 213,
         "REOPENED": 2,
         "WAITING_HUMAN": 1,
-        "PARTIAL": 57,
+        "PARTIAL": 55,
         "FAIL": 2,
         "BLOCKED_NOT_INSTALLED": 28
       },
@@ -1537,25 +1537,25 @@
         "共享依赖": 4,
         "组合回归": 9
       },
-      "reason": "Current registered EVEBody selector/save/liveMesh/roundtrip independently reviewed; sameprocessnewPawn actualmovement andsafe campinteraction recovery proved. Original210/5125 andallleaf statuses unchanged; R56/R59 partials retained.",
+      "reason": "Fresh independent review accepts actual RS50 Nails RGB, metallic and glow endpoint/effect/restoration evidence. Original5129/effective5125, all other statuses and historical failures retained.",
       "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
-      "manifest_sha256": "004be3a4f819662d44066ae1dd4136e2d80482789d467550d411d37d8577f55e",
+      "manifest_sha256": "c9028ac47ad862a53f7db5eb9843fc37be0d95644cd512e75cdfe5d2d07ac2d6",
       "target_identity_sha256": "955965cda7371a7ff208fdf736e19a1136e0628cf77a644ac49b5d4323aa9a92",
-      "enumeration_validation": ".local/play-session-20261008/core-functional-170/r59/visual-acceptance-result.json",
-      "round_key": "grouped-cns-body-semantic-20261026",
-      "round_status": "CLOSED_SCOPED_PARTIAL_GOAL_CONTINUES",
-      "count": 60,
+      "enumeration_validation": ".local/play-session-20261026/grouped-qa/aik-material-delta/runtime-result.json",
+      "round_key": "aik-material-delta-20261026",
+      "round_status": "CLOSED_SCOPED_PROGRESS_GOAL_CONTINUES",
+      "count": 61,
       "coverage": "since_baseline",
-      "last_seq": 60,
-      "last_key": "grouped-cns-body-semantic-20261026",
+      "last_seq": 61,
+      "last_key": "aik-material-delta-20261026",
       "historical_round_count": "UNKNOWN",
-      "execution_change_percentage_points": 0.0,
+      "execution_change_percentage_points": 0.058537,
       "evidence_change_percentage_points": 0,
       "scope_change_percentage_points": 0,
-      "change_rule": "CurrentR60: originalleafIDs,versions,weights,gates,statuses unchanged; fournew scopedmechanism assertions do notcount as completeleafPASS. PriorR59changes preserved inhistorical_unfinished_round_before_grouped_20261026.",
-      "round_start_commit": "ed5ec17b948f248752481be6d6b76fe9c9e58918",
-      "scope_change": "No targetscope change; currentround adds/extends sharedassertion evidence only.",
-      "milestone_change": "DirectCNSBodyselection threevariants/save/liveMesh/roundtrip andcurrentnewPawn/campmovement proved; completebodyappearance/physics andnativewardrobe dialogue remainopen.",
+      "change_rule": "Three original weight1 leaves gain PASS from new direct visual/material evidence; no scope, version, weight, denominator or prior evidence correction.",
+      "round_start_commit": "37f283f09f665e8aa3021a69dfb629e09607f1c2",
+      "scope_change": "None",
+      "milestone_change": "Direct selection now admits original OutfitPaths schema. Three scoped material controls accepted; whole outfit/other variants/physics and other R59 partials remain open.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1928,6 +1928,18 @@
           "evidence_change": "Four unique scopedassertions: directCNSBodyselectionmechanism3variants; sameprocessnewPawnmovement; campMusicnativelock; actualmovementaftercampcancel. Sharedstructuralreferences observed only; no geometry/physics equivalence assumed.",
           "source_review": "99e9a4f9a2007912573621bedef805685eb872b2a3a4ade86205046a06105f0e",
           "completion": "Onecoherentphaseclosed; not peragent/tool/variant/commit; originalfullGoal remainsactive"
+        },
+        {
+          "seq": 61,
+          "key": "aik-material-delta-20261026",
+          "effective_required": 5125,
+          "accepted_before": 210,
+          "accepted_after": 213,
+          "completion_percentage_point_delta": 0.058536585365853655,
+          "execution_percentage_points": 0.058536585365853655,
+          "scope_percentage_points": 0,
+          "evidence_correction_percentage_points": 0,
+          "completion": "One coherent R61 close; not per tool, agent, parameter, commit or steering message."
         }
       ],
       "prediction_reason": "Currentunit adds shared capability/evidence, not completeleafweight; heterogeneous appearance/material/physical/dialogue requirements andinsufficientpositive comparablethroughput prevent reliable roundestimate.",
@@ -1985,10 +1997,12 @@
         "change_rule": "Same IDs/versions/weights/gates; current continuation18 PARTIAL->PASS. R59 cumulative26 PASS,18 PARTIAL; prior184 PASS/2 FAIL,44 excluded history, original5129 and current5125 retained.",
         "scope_change": "Same logicalR59 resumed across pause/private169->170 and checkpoints; original v5 targets unchanged, no new round for this continuation.",
         "milestone_change": "R59 cumulative26 finite geometry/emitter/hardware gates PASS,18 visual gates PARTIAL; latest continuation added18 PASS with exact source-default restoration."
-      }
+      },
+      "remaining_round_estimate": "UNKNOWN",
+      "remaining_round_estimate_confidence": "UNKNOWN: heterogeneous targets and last two comparable rounds had zero complete-leaf increment."
     },
-    "next_action": "Advance remaining native/CNS ownership recovery andready Body/material deltas usingverifiedselector andsameprocess/camp movementassertions; prepare one frozen nextbatch ofcurrentlyregistered BodyIDs before anynewprivate QAbootstrap. Keep dialogue,fullvisualphysics andoldR56/R59 gates explicit.",
-    "updated_at": "2026-10-26T03:00:18.603973+00:00",
+    "next_action": "Continue ready R59 piercing/toggle and R56 material deltas with valid shared core/selector evidence. Before another runtime, freeze the smallest body/parameter batch and inspect original CNS control consumers for deterministic parameter operations; retain visual checks for actual shading/geometry. Do not repeat accepted Nails endpoints or common movement/assistant tests.",
+    "updated_at": "2026-10-26T04:25:08.000056+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2099,7 +2113,7 @@
         }
       }
     },
-    "round_closure_at": "2026-10-14T11:23:12.121412+00:00",
+    "round_closure_at": "2026-10-26T04:25:08.000056+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 14,
       "new_confirmed_this_round": 0,
@@ -2263,8 +2277,8 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "PRIVATE_GROUPED_CNS_SEMANTIC_20261026",
-    "previous_goal_turn_classification": "PROGRESS: R60 delivered directCNS3variantselection andsameprocessnewPawn pluscampinteraction actualmovement recovery evidence; no completedleaf added; fullGoal active.",
+    "current_segment": "PRIVATE_AIK_MATERIAL_DELTA_R61_CLOSED",
+    "previous_goal_turn_classification": "PROGRESS: R61 legacy CNS selector and three original RS50 parameter leaves accepted; full Goal remains active.",
     "execution_status": "GROUPED_QA_ACTIVE_S1_PARTIAL",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
     "pause_source": "Current human: restart game, tests remain paused; subsequent black-screen repair does not resume tests",
@@ -3256,10 +3270,10 @@
     "native_goal": {
       "threadId": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
       "status": "active",
-      "tokensUsed": 3490303,
-      "timeUsedSeconds": 11047,
+      "tokensUsed": 3959345,
+      "timeUsedSeconds": 16350,
       "createdAt": 1792972357,
-      "telemetry_at": "2026-10-26T02:56:44+00:00",
+      "telemetry_at": "2026-10-26T04:26:04+00:00",
       "telemetry_coverage": "Directnative tool cumulative currentactivation only; priorlogicaltask/activation/history retained; elapsednotactive-only no-progress time. No quota set or increased; full logical lifetimecost unknown.",
       "same_objective_verified": true
     },
@@ -3668,7 +3682,7 @@
       },
       "test_save_boundary": "No independent story-save isolation established; forbid death/story/reward/travel tests and save rollback. Initial private launch/menu checks only; inspect scene before safe reversible movement/outfit checks.",
       "round_accounting": "Closed once as confirmed sequence59; original unfinished R56/R59 retained; no extra round for steering, tools, agents, source/metadata commits, or outfits.",
-      "next_action": "Use current semantic observe/move/stop + read/action/postcondition batches for ready nonvisual gates; next narrow adapter unit is known loaded CNS fiveparameter selection call with savedselection/mesh readback andone necessaryvisualcheck. Keep dialogue/newPawn originalgapsopen.",
+      "next_action": "Continue ready R59 piercing/toggle and R56 material deltas with valid shared core/selector evidence. Before another runtime, freeze the smallest body/parameter batch and inspect original CNS control consumers for deterministic parameter operations; retain visual checks for actual shading/geometry. Do not repeat accepted Nails endpoints or common movement/assistant tests.",
       "at": "2026-10-25T23:55:06.640620+00:00",
       "lane_reason": "Recovered native equipment lifecycle and CNS saved-selection integration; Root verifies coherent candidate, fresh independent Judge before acceptance.",
       "findings": {
@@ -3682,7 +3696,7 @@
         "v8": "Fresh independent PASS for current BS_ alias transition/native-menu scope; full S1/Goal incomplete"
       },
       "candidate_sha256": "5679d28fe2e6719314c45e6709a99c4920c866a24b21953dd66e39a05dae4e12",
-      "updated_at": "2026-10-26T01:55:12.559894+00:00",
+      "updated_at": "2026-10-26T04:25:08.000056+00:00",
       "grouped_assertions": {
         "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
         "sha256": "a800adc5603d0edb2747f20dc335cc109dd88357033ddfcdadb856aac810b618",
@@ -3845,7 +3859,125 @@
           "metadata": "Thisclosurecommit recordsalreadyverifiedsourcedelivery; finalexactHEADremotecheck retained inprivateclosure evidence toavoidselfreferentialhash."
         },
         "updated_at": "2026-10-26T03:09:23.387505+00:00"
-      }
+      },
+      "material_delta": {
+        "round_key": "aik-material-delta-20261026",
+        "source": "ContinuationofsameactiveGoal; originalR59partialparameters andownerstatereadback/visualdelta approach",
+        "lane": "REVIEWED",
+        "status": "CLOSED_SCOPED_PROGRESS_GOAL_CONTINUES",
+        "owned_scope": [
+          "PROJECT_STATE ownedtaskprojection",
+          "existing ignored manifest targetevidence/status updates onlyafteractualacceptance",
+          "privateaik-material-delta/runtime evidence/session-onlyQAbootstrap",
+          "src/runtime/QAControl.lua",
+          "tests/fixtures/qa_wardrobe.lua",
+          "tests/test_qa_control.py",
+          "src/runtime/README.md"
+        ],
+        "git_base": "37f283f09f665e8aa3021a69dfb629e09607f1c2",
+        "entry_state_sha256": "c8f06ac2e2cb9bf3f036fe41d5490166cd234f02040084ad5597de84d9bba37b",
+        "entry_manifest_sha256": "004be3a4f819662d44066ae1dd4136e2d80482789d467550d411d37d8577f55e",
+        "baseline_progress": {
+          "PASS": 210,
+          "required": 5125,
+          "original": 5129,
+          "closed_rounds": 60
+        },
+        "frozen_target_leaf_ids": [
+          "control:AiK_CH48_8866/MaterialToggles/18",
+          "control:AiK_CH48_8866/MaterialToggles/21",
+          "control:AiK_CH48_8866/MaterialToggles/28",
+          "control:AiK_CH48_8866/MaterialToggles/29",
+          "control:AiK_CH48_8866/MaterialToggles/30",
+          "control:AiK_CH48_8866/MaterialToggles/31",
+          "control:AiK_CH48_8866/MaterialToggles/32",
+          "control:AiK_CH48_8866/MaterialToggles/33",
+          "control:AiK_CH48_8866/MaterialToggles/34",
+          "control:AiK_CH48_8866/ScalarControls/0",
+          "control:AiK_CH48_8866/ScalarControls/1",
+          "control:AiK_CH48_8866/ScalarControls/2",
+          "control:AiK_CH48_8866/ScalarControls/3",
+          "control:AiK_CH48_8866/ScalarControls/4",
+          "control:AiK_CH48_8866/ScalarControls/5",
+          "control:AiK_CH48_8866/ScalarControls/6",
+          "control:AiK_CH48_8866/ScalarControls/7",
+          "control:AiK_CH48_8866/ScalarControls/8",
+          "control:AiK_CH48_8866/VectorControls/0",
+          "control:AiK_CH48_8866/VectorControls/2",
+          "control:AiK_CH48_8866/VectorControls/28",
+          "control:AiK_CH48_8866/VectorControls/29",
+          "control:AiK_CH48_8866/VectorControls/30",
+          "control:AiK_CH48_8866/VectorControls/31",
+          "control:AiK_CH48_8866/VectorControls/32",
+          "control:AiK_CH48_8866/VectorControls/33",
+          "control:AiK_CH48_8866/VectorControls/34",
+          "control:AiK_CH48_8866/VectorControls/35",
+          "control:AiK_CH48_8866/VectorControls/36",
+          "control:AiK_CH48_8866/VectorControls/37",
+          "control:AiK_CH48_8866/VectorControls/38",
+          "control:AiK_CH48_8866/VectorControls/39",
+          "control:AiK_CH48_8866/VectorControls/40",
+          "control:AiK_CH48_8866/VectorControls/41",
+          "control:AiK_CH48_8866/VectorControls/42",
+          "control:AiK_CH48_8866/VectorControls/43"
+        ],
+        "source_config_sha256": "0be8a586fdb3456231fda9aefc69604b6311ccc6debf6bce16218a1a9bace55c",
+        "acceptance": "Perstableleaf: source endpoints/neutral restored via originalCNS consumer, actual correctmaterial/visible effect withoutunexplainedgray/brokengeometry; reuse validoldnumeric proof andcurrentcore. No newPASS fromnumbersorlabelalone.",
+        "protected": "No plot/purchase/reward/realprogressrollback, haircrash, loader/global/account/network modifications; onlynew own QAentry andknownregisteredBody selection inprivategame. Priorpendinggroups preserved.",
+        "reuse": "R60directselector99e9a4...; currentcore movement/nativeUIlock/newPawn/camp proofs, CombatAssistantlaunch/binding/threeflags standard only. OriginalR59sourcehash0be8... unchanged, old26PASS notrerun.",
+        "next_action": "Continue ready R59 piercing/toggle and R56 material deltas with valid shared core/selector evidence. Before another runtime, freeze the smallest body/parameter batch and inspect original CNS control consumers for deterministic parameter operations; retain visual checks for actual shading/geometry. Do not repeat accepted Nails endpoints or common movement/assistant tests.",
+        "round_closed_once": true,
+        "at": "2026-10-26T03:22:24.402416+00:00",
+        "discovery": "AiK uses original OutfitPaths array schema, not OutfitDatas. QA2 onlyadmits NumFitDatas>index; add boundedlegacyvariant admission, preserve strictmetadata/postconditions. No game mutation yet.",
+        "runtime_ownership": ".local/play-session-20261026/grouped-qa/resource-checkpoint.json",
+        "legacy_selector_sha256": "e275b59c5c82fe11997285652660197b251ccc11650a59a5f61018c11f90d60d",
+        "legacy_actual_selection": "semantic-05/currentraw result;AiK1expectedRS50confirmed; othermapsunchanged",
+        "closed_at": "2026-10-26T04:25:08.000056+00:00",
+        "sequence": 61,
+        "actual_result": ".local/play-session-20261026/grouped-qa/aik-material-delta/runtime-result.json",
+        "independent_review": ".local/play-session-20261026/grouped-qa/aik-material-delta/independent-review.json",
+        "accepted_leaf_ids": [
+          "control:AiK_CH48_8866/VectorControls/28",
+          "control:AiK_CH48_8866/ScalarControls/0",
+          "control:AiK_CH48_8866/ScalarControls/1"
+        ],
+        "accepted_scope": "Actual Reshape50 declared parameter endpoints, visible effect, isolation and restoration only; not whole outfit, other variant, family or physics.",
+        "leaf_delta": 3,
+        "remaining_original_R59_partials": 16,
+        "restoration": {
+          "all37_material_overrides_and_parameters_equal_initial": true,
+          "hidden_materials_lod_equal_initial": true,
+          "all_active_outfits_and_indexes_equal_original": true,
+          "removed_map_unchanged": true,
+          "unrelated_saved_properties_unchanged": true,
+          "saved_differences": [
+            "ConfigurationMap",
+            "CustomCamPos"
+          ],
+          "saved_note": "ConfigurationMap and task-owned CNS CustomCamPos hashes changed through native UI. Actual all-material restoration and original selection verified; no whole save restore and no byte-identical save claim."
+        },
+        "resource_closure": ".local/play-session-20261026/grouped-qa/aik-material-delta/lifecycle-end.json",
+        "test_result": {
+          "command": "python3 -m unittest discover -s tests -p test_qa_control.py -v",
+          "exit": 0,
+          "tests": 2,
+          "scenarios": 36
+        },
+        "git_delivery": {
+          "target": "codex/grouped-mod-qa-20261026",
+          "status": "PENDING_VERIFICATION",
+          "reviewed_scope": [
+            "src/runtime/QAControl.lua",
+            "tests/fixtures/qa_wardrobe.lua",
+            "tests/test_qa_control.py",
+            "src/runtime/README.md",
+            "Owned PROJECT_STATE task projection"
+          ],
+          "local_only": "Raw evidence/manifest/save/proc identities remain .local; unrelated previous changes preserved.",
+          "receipt": ".local/play-session-20261026/grouped-qa/aik-material-delta/git-delivery.json"
+        }
+      },
+      "current_result_ref": "material_delta"
     }
   }
 }
