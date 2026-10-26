@@ -1137,15 +1137,16 @@
   },
   "mod_compatibility_restructure": {
     "task_id": "stellar-mod-compatibility-core-first-20261010",
-    "source": "Direct current user /goal execution instruction; does not resume paused console development/Cursor R04-n",
-    "lane": "DIRECT",
-    "owner_thread": "01a13763-999e-73e3-bb51-d52669c59d87",
-    "objective": "Stable adjustable body + natural physics + user combat; then individually retest all clothing while progressing campaign and changing view every 15 seconds",
+    "source": "Direct owner native Goal objective submitted in thread 01a1757a-f84c-72b0-97bd-44ab8c53eb53 on 2026-10-26; execute MOD_TEST_REPAIR_PLAN_20261025 grouped QA",
+    "lane": "REVIEWED",
+    "owner_thread": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
+    "objective": "Complete the existing5125-leaf MOD test/repair scope with shared assertions andunique deltas under MOD_TEST_REPAIR_PLAN_20261025; deliver a traceable playable configuration. No campaign progression, old console/Flatpak/Loop/admin or release work.",
     "priority": [
-      "P0_BODY",
-      "P1_PHYSICS",
-      "P2_COMBAT",
-      "P3_OUTFITS"
+      "P0_MOVEMENT_AND_NATIVE_CNS_OWNERSHIP",
+      "P0_INPUT_MENU_HUD_LIFECYCLE",
+      "P1_BODY_PHYSICS_AND_R56_R59_MATERIALS",
+      "P2_FUNCTIONS_AND_APPEARANCE_DELTAS",
+      "P3_SUPPORTED_COMBINATIONS_RECOVERY_PERFORMANCE_HANDOFF"
     ],
     "private_evidence": ".local/play-session-20261008/goal-restructure-20261010",
     "legacy_result_policy": "LEGACY / REQUIRES_RETEST; current effective acceptance NOT_TESTED; historical results and counts preserved",
@@ -1538,7 +1539,7 @@
       },
       "reason": "R59 cumulative26 independent AiK visibility/emitter gates Root-viewed PASS; remaining9 material controls and9 scalars PARTIAL. Fresh human settings preserved; original5125 and all failures retained.",
       "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
-      "manifest_sha256": "bd5fb255c044c1298a3498b27ae2ffd9e3f18d198cce691eb8bb0a8cf7e1b8c3",
+      "manifest_sha256": "a800adc5603d0edb2747f20dc335cc109dd88357033ddfcdadb856aac810b618",
       "target_identity_sha256": "955965cda7371a7ff208fdf736e19a1136e0628cf77a644ac49b5d4323aa9a92",
       "enumeration_validation": ".local/play-session-20261008/core-functional-170/r59/visual-acceptance-result.json",
       "round_key": "private169-aik-ocean-string-material-and-scalar-20261014",
@@ -1926,10 +1927,21 @@
       "window": [],
       "prediction_reason": "R59 remains unclosed; heterogeneous remaining gates and missing full visual evidence prevent a comparable remaining-round estimate.",
       "original_unified_required_retained": 5129,
-      "latest_specific_followup": "integration:sequential-outfit-material-recovery"
+      "latest_specific_followup": "integration:sequential-outfit-material-recovery",
+      "grouped_assertion_audit": {
+        "manifest_sha256": "a800adc5603d0edb2747f20dc335cc109dd88357033ddfcdadb856aac810b618",
+        "runtime_result": ".local/play-session-20261026/grouped-qa/v8-runtime-result.json",
+        "direct_scoped_assertions": 5,
+        "reused_movement_assertions": 2,
+        "new_complete_leaf_PASS": 0,
+        "original_required": 5129,
+        "current_required": 5125,
+        "leaf_identity_version_weight_status_unchanged": true,
+        "note": "Prior210PASS andall failures retained in exact original scopes; no claim every prior appearance result was freshly re-audited in this bounded core unit."
+      }
     },
-    "next_action": "Attempt2 is in an active game scene with Connected/bindingReady and guard/dodge/special ON; current-pawn 1.75 movement profile applied and six fields independently reread. Owner play handoff; first-launch Xid109 plus secondary Steam shutdown assertion preserved, initiating cause still UNKNOWN. Movement can reset after level/respawn; long-term/visual/gameplay acceptance unverified. Full tests/Goal and Oct21 heartbeat remain paused; only own-helper exit cleanup active.",
-    "updated_at": "2026-10-22T15:12:11.356072+00:00",
+    "next_action": "Reuse current task-private session; exact identities, scene and helper/movement stop handles are in .local/play-session-20261026/grouped-qa/resource-checkpoint.json. Next safe unit: sameprocess newPawn movement/body recovery withoutstory progression/rollback, then ready shared input/body/material families. Dialogue/trueRemovedBody/hook reload/samealias remain unverified.",
+    "updated_at": "2026-10-26T01:05:48.694134+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2204,9 +2216,9 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "PRIVATE170_R59_SAME_ORIGINAL_TARGETS",
-    "previous_goal_turn_classification": "PROGRESS: previous continuation added8 first visual gates, frozen5125 retained and remote ebc9833 verified",
-    "execution_status": "USER_PLAY_HANDOFF_THREE_ASSISTS_AND_1P75_VERIFIED_FULL_MOD_TESTS_PAUSED",
+    "current_segment": "PRIVATE_GROUPED_QA_20261026_V8",
+    "previous_goal_turn_classification": "PROGRESS: audited true failures; fixed native/CNS module; actual scoped menu/mesh/save andmovement lock/recovery evidence; originalleaf denominator unchanged",
+    "execution_status": "GROUPED_QA_ACTIVE_S1_PARTIAL",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
     "pause_source": "Current human: restart game, tests remain paused; subsequent black-screen repair does not resume tests",
     "user_play_handoff": {
@@ -2344,8 +2356,8 @@
       "closure_evidence": ".local/play-session-20261008/core-functional-170/r59/current-user-normal-exit.json",
       "startup_recovery_evidence": ".local/play-session-20261008/user-startup-172/startup-acceptance.json"
     },
-    "resume_source": "Human 可以正常退出当前游戏; continues prior explicit full test/Goal resume",
-    "resumed_at": "2026-10-14T23:29:52.237336+00:00",
+    "resume_source": "Current owner direct grouped MOD test/repair Goal Prompt; old console/Flatpak/Loop/admin and user foreground grants not resumed",
+    "resumed_at": "2026-10-26T01:05:48.694134+00:00",
     "user_acceptance_clarification": {
       "at": "2026-10-10T20:01:19.680897+00:00",
       "combat": "Multi-enemy rear attacks, attack/hit-stun defensive limits are normal game constraints; prioritize feature functionality/compatibility, not full invulnerability",
@@ -3195,65 +3207,16 @@
       }
     },
     "native_goal": {
-      "status": "paused",
-      "source": "Replacement task native Goal explicitly started by user; existing MOD test scope and prior cumulative telemetry retained",
-      "scope": "Same retained5125 leaves; formal Console remains paused",
-      "tool_objective": "Replacement user Goal continues the prior full MOD tests and retires the failed prior Goal/task; full5125 test scope retained.",
-      "tokensUsed": 678831,
-      "timeUsedSeconds": 12165,
-      "telemetry_at": "2026-10-15T02:28:42.970130+00:00",
-      "telemetry_coverage": "Direct current native Goal checkpoint only; prior activations and completed health rebaseline retained. New18 accepted finite gates are material progress, not an overall completion claim.",
-      "last_observed_status": "paused",
-      "pause_requested": true,
-      "pause_source": "游戏目标、所有游戏相关Agent及其GPU工作先暂停，之后由用户统一重启。",
-      "final_native_transition": "Native update_goal paused and get_goal confirmed; current one-off user startup recovery does not resume the Goal",
-      "threadId": "01a13763-999e-73e3-bb51-d52669c59d87",
-      "tool_objective_private_evidence": ".local/play-session-20261008/core-functional-170/native-goal-restart.json",
-      "resume_source": "Direct human goal resume plus 可以正常退出当前游戏",
-      "resumed_at": "2026-10-14T23:29:52.237336+00:00",
-      "previous_observed_status": "blocked",
-      "prior_activations": [
-        {
-          "status": "NONE_OBSERVED_CURRENT_NATIVE_GET",
-          "tokensUsed": 1871150,
-          "timeUsedSeconds": 17402,
-          "telemetry_at": "2026-10-14T13:13:21.313236+00:00",
-          "coverage": "Prior replacement Goal; counters not reset or erased; old failed Goal cumulative retained under task_recovery"
-        }
-      ],
-      "createdAt": 1791994794,
-      "blocked_evidence": ".local/play-session-20261008/core-functional-170/native-goal-blocked.json"
+      "threadId": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
+      "status": "active",
+      "tokensUsed": 1752799,
+      "timeUsedSeconds": 4163,
+      "createdAt": 1792972357,
+      "telemetry_at": "2026-10-26 01:05:48 UTC",
+      "telemetry_coverage": "Current native activation only; prior native Goal and stable logical task counters retained. No task quota created or increased.",
+      "same_objective_verified": true
     },
-    "goal_resume_source": {
-      "at": "2026-10-11T22:33:55.839554+00:00",
-      "continuation_attachment_sha256": "8ed17e0aba3532cb5f68781342440d77613305b5fef9b008468b077f39681d06",
-      "attachment": "User supplied CONTINUE_MOD_TESTING_PROMPT_20261011.md",
-      "lane": "DIRECT",
-      "previous_turn_classification": "PROGRESS: previous authoritative5129 manifest, actual imports/API outcomes, two cursor candidates + Nano base installation and exact source commit d32a81a verified; no false visual acceptance.",
-      "current_round_key": "goal-resume-offline-prerequisites",
-      "pending_closure_seq": 24,
-      "same_task_id": "stellar-mod-compatibility-core-first-20261010",
-      "live_cursor_failure": "136 CNS+F9 visible, exact native mouse moved2540,660, GetCursorInfo flags0; bShowMouseCursor=true and zero virtual pointer did not yield a pointer. New single virtual owner candidate prepared; actual GUI acceptance0.",
-      "game_file_ownership": [
-        "DekCNS/Scripts/main.lua",
-        "EveProportions/Scripts/EveProportionsTuner.lua",
-        "shared/jsbProfiler/jsbProfi.lua"
-      ],
-      "new_effective_acceptances_this_round": [
-        "lua:jsbLuaProfilerMod/simpleBench",
-        "lua:jsbLuaProfilerMod/simpleBenchMulti",
-        "lua:jsbLuaProfilerMod/stop_trace"
-      ],
-      "recording_136_stop_failure": {
-        "source": "Exact unique systemd service journal verified timeout90s killed supervisor during queued segment validation; statusSTOPPING was stale afterhandleterminal",
-        "raw_files_retained": "DATA _capture-spool/root-mod-tests-20261012-session136",
-        "validation": "UNFINISHED_NOT_ACCEPTED",
-        "repair": "Next same service TimeoutStopSec1200; bounded validation recovery pending, no parallel recorder"
-      },
-      "last_closed_seq": 24,
-      "pointer_evidence": ".local/play-session-20261008/user-native-137/repair/shared-cursor-partial-result.json",
-      "source_delivery": "Exact owned state branch synchronization receipt: .local/play-session-20261008/user-native-136/repair/goal-resume-20261012/source-delivery.json"
-    },
+    "goal_resume_source": "Current native Goal reused; same logical compatibility task and original5129/effective5125 preserved",
     "historical_previous_goal_health_checkpoint": {
       "goal_created_at": 1791607374,
       "checked_at": "2026-10-10T07:11:43.974257+00:00",
@@ -3563,6 +3526,157 @@
         "movement_scope": "Current pawn only; level change or respawn may reset the profile",
         "available_memory_latest_gib": 8.39
       }
+    },
+    "historical_native_goal_before_grouped_qa_20261026": {
+      "status": "paused",
+      "source": "Replacement task native Goal explicitly started by user; existing MOD test scope and prior cumulative telemetry retained",
+      "scope": "Same retained5125 leaves; formal Console remains paused",
+      "tool_objective": "Replacement user Goal continues the prior full MOD tests and retires the failed prior Goal/task; full5125 test scope retained.",
+      "tokensUsed": 678831,
+      "timeUsedSeconds": 12165,
+      "telemetry_at": "2026-10-15T02:28:42.970130+00:00",
+      "telemetry_coverage": "Direct current native Goal checkpoint only; prior activations and completed health rebaseline retained. New18 accepted finite gates are material progress, not an overall completion claim.",
+      "last_observed_status": "paused",
+      "pause_requested": true,
+      "pause_source": "游戏目标、所有游戏相关Agent及其GPU工作先暂停，之后由用户统一重启。",
+      "final_native_transition": "Native update_goal paused and get_goal confirmed; current one-off user startup recovery does not resume the Goal",
+      "threadId": "01a13763-999e-73e3-bb51-d52669c59d87",
+      "tool_objective_private_evidence": ".local/play-session-20261008/core-functional-170/native-goal-restart.json",
+      "resume_source": "Direct human goal resume plus 可以正常退出当前游戏",
+      "resumed_at": "2026-10-14T23:29:52.237336+00:00",
+      "previous_observed_status": "blocked",
+      "prior_activations": [
+        {
+          "status": "NONE_OBSERVED_CURRENT_NATIVE_GET",
+          "tokensUsed": 1871150,
+          "timeUsedSeconds": 17402,
+          "telemetry_at": "2026-10-14T13:13:21.313236+00:00",
+          "coverage": "Prior replacement Goal; counters not reset or erased; old failed Goal cumulative retained under task_recovery"
+        }
+      ],
+      "createdAt": 1791994794,
+      "blocked_evidence": ".local/play-session-20261008/core-functional-170/native-goal-blocked.json"
+    },
+    "historical_goal_resume_source_before_grouped_qa_20261026": {
+      "at": "2026-10-11T22:33:55.839554+00:00",
+      "continuation_attachment_sha256": "8ed17e0aba3532cb5f68781342440d77613305b5fef9b008468b077f39681d06",
+      "attachment": "User supplied CONTINUE_MOD_TESTING_PROMPT_20261011.md",
+      "lane": "DIRECT",
+      "previous_turn_classification": "PROGRESS: previous authoritative5129 manifest, actual imports/API outcomes, two cursor candidates + Nano base installation and exact source commit d32a81a verified; no false visual acceptance.",
+      "current_round_key": "goal-resume-offline-prerequisites",
+      "pending_closure_seq": 24,
+      "same_task_id": "stellar-mod-compatibility-core-first-20261010",
+      "live_cursor_failure": "136 CNS+F9 visible, exact native mouse moved2540,660, GetCursorInfo flags0; bShowMouseCursor=true and zero virtual pointer did not yield a pointer. New single virtual owner candidate prepared; actual GUI acceptance0.",
+      "game_file_ownership": [
+        "DekCNS/Scripts/main.lua",
+        "EveProportions/Scripts/EveProportionsTuner.lua",
+        "shared/jsbProfiler/jsbProfi.lua"
+      ],
+      "new_effective_acceptances_this_round": [
+        "lua:jsbLuaProfilerMod/simpleBench",
+        "lua:jsbLuaProfilerMod/simpleBenchMulti",
+        "lua:jsbLuaProfilerMod/stop_trace"
+      ],
+      "recording_136_stop_failure": {
+        "source": "Exact unique systemd service journal verified timeout90s killed supervisor during queued segment validation; statusSTOPPING was stale afterhandleterminal",
+        "raw_files_retained": "DATA _capture-spool/root-mod-tests-20261012-session136",
+        "validation": "UNFINISHED_NOT_ACCEPTED",
+        "repair": "Next same service TimeoutStopSec1200; bounded validation recovery pending, no parallel recorder"
+      },
+      "last_closed_seq": 24,
+      "pointer_evidence": ".local/play-session-20261008/user-native-137/repair/shared-cursor-partial-result.json",
+      "source_delivery": "Exact owned state branch synchronization receipt: .local/play-session-20261008/user-native-136/repair/goal-resume-20261012/source-delivery.json"
+    },
+    "grouped_qa_20261026": {
+      "task_id": "stellar-mod-compatibility-core-first-20261010",
+      "execution_source": "Direct owner native Goal objective submitted in thread 01a1757a-f84c-72b0-97bd-44ab8c53eb53 on 2026-10-26; execute MOD_TEST_REPAIR_PLAN_20261025 grouped QA",
+      "owner_thread": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
+      "lane": "REVIEWED",
+      "status": "SCOPED_REVIEW_PASS_DELIVERY_PENDING_FULL_S1_PARTIAL",
+      "owned_scope": [
+        "PROJECT_STATE.json#mod_compatibility_restructure current grouped execution/progress projection; old paused console and pre-existing manual-play deltas remain separate",
+        ".local/play-session-20261026/grouped-qa",
+        ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json#grouped_assertions only; leaf changes require complete evidence",
+        "src/runtime/NativeOutfitOwnership.lua",
+        "tests/test_native_outfit_ownership.py",
+        "tests/fixtures/native_outfit_ownership.lua",
+        "Existing exact NativeOutfitOwnership.lua installed module only"
+      ],
+      "preimage_state_sha256": "c5e946399a03b00fe87e858456fa819a91c5143669f49ccfdcb23e21a4a5b5af",
+      "preimage_manifest_sha256": "bd5fb255c044c1298a3498b27ae2ffd9e3f18d198cce691eb8bb0a8cf7e1b8c3",
+      "evidence": ".local/play-session-20261026/grouped-qa",
+      "native_goal": {
+        "threadId": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
+        "status": "active",
+        "history": "Prior activation metadata retained at historical_native_goal_before_grouped_qa_20261026; logical task counters not reset"
+      },
+      "protected": "Old console/Flatpak/Loop/admin work remains paused; no foreground takeover, account/Cloud/global changes, story progression or save rollback; EVEExperience stays off. Existing unrelated pending work preserved.",
+      "acceptance": "Current exact versions: real movement+interaction persistence+native lock+new Pawn; native/CNS ownership restoration; shared input and current compatible core, then original 5125 leaves by valid assertion reuse and unique deltas.",
+      "baseline_progress": {
+        "required": 5125,
+        "original": 5129,
+        "PASS": 210,
+        "complete_conclusions": 212,
+        "remaining_scope_unchanged": true
+      },
+      "test_save_boundary": "No independent story-save isolation established; forbid death/story/reward/travel tests and save rollback. Initial private launch/menu checks only; inspect scene before safe reversible movement/outfit checks.",
+      "round_accounting": "R56/R59 unfinished retained; S0/S1 audit and current-core assertion unit closes once, no per-tool/per-outfit round.",
+      "next_action": "Reuse current task-private session; exact identities, scene and helper/movement stop handles are in .local/play-session-20261026/grouped-qa/resource-checkpoint.json. Next safe unit: sameprocess newPawn movement/body recovery withoutstory progression/rollback, then ready shared input/body/material families. Dialogue/trueRemovedBody/hook reload/samealias remain unverified.",
+      "at": "2026-10-25T23:55:06.640620+00:00",
+      "lane_reason": "Recovered native equipment lifecycle and CNS saved-selection integration; Root verifies coherent candidate, fresh independent Judge before acceptance.",
+      "findings": {
+        "v3": "Confirmed Lua index13 reads native slot12; no successful native-body binding. Current fix readsLua14.",
+        "v4": "Real native cold-load false positive and Actor-deselection invisible-body regressions; FAIL preserved.",
+        "v5": "FAIL: eager native UI hook attempted before UFunction load; preserved v5-runtime-fail",
+        "movement": "Current v3 actual874.996 aftermenu andnative-lock block1/speed0/displacement0 verified; dialogue/newPawn continuity remain missing.",
+        "hair": "Exact original native crash context recovered read-only; GameThread AV verified, cause andhair asset responsibility unknown.",
+        "v6": "FAIL: top-level native event does not cover actual later list equip; preserved v6-runtime-fail",
+        "v7": "Scoped actual native/CNS menu/save/mesh pass from visible CNS baseline; earlier RemovedBody=true poison remains a counterexample, not erased",
+        "v8": "Fresh independent PASS for current BS_ alias transition/native-menu scope; full S1/Goal incomplete"
+      },
+      "candidate_sha256": "5679d28fe2e6719314c45e6709a99c4920c866a24b21953dd66e39a05dae4e12",
+      "updated_at": "2026-10-26T01:05:48.694134+00:00",
+      "grouped_assertions": {
+        "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
+        "sha256": "a800adc5603d0edb2747f20dc335cc109dd88357033ddfcdadb856aac810b618",
+        "direct_scoped_assertions": 5,
+        "valid_reused_movement_assertions": 2,
+        "new_complete_leaf_PASS": 0,
+        "original_required": 5129,
+        "effective_required": 5125,
+        "leaf_statuses_changed": 0
+      },
+      "hair_original_context": "Exact BUG-HAIR-20261025-01 context recovered read-only from native crash directory; private pointer .local/play-session-20261026/grouped-qa/hair-incident-context-recovery.json; GameThread AV verified, cause unknown",
+      "runtime_ownership": {
+        "evidence": ".local/play-session-20261026/grouped-qa/resource-checkpoint.json",
+        "game": "Verified current task private display/game; intentionally retained for active Goal nextunit. Exact identities/auth metadata remain private.",
+        "helper": "CombatAssistant1.0.16 currentbinding andthreeflags on; private CLI shutdown/handle recorded",
+        "movement": "Existing unchanged six-float1.75 maintenance currentPawn fresh6/6 readback; exact PID/start+stop/preimage recorded privately",
+        "input": "Everybounded key/mouse down released; no foreground takeover",
+        "resources": "Prior own games/helpers/movement units normal exit0/cleanupgapnull; currentrootgame/helper/movement/display retained; all childwriters ended"
+      },
+      "candidate_source": "src/runtime/NativeOutfitOwnership.lua",
+      "latest_runtime_result": ".local/play-session-20261026/grouped-qa/v8-runtime-result.json",
+      "last_material_progress": "v7 current-source actual after-menu speed874.996 and3.295m displacement; native menu blocked1 speed/displacement0,49samples each. Native/CNS actual body selection visible after valid CNS baseline. New exact Body hidden marker counterexample drives v8.",
+      "round_key": "grouped-native-ownership-menu-20261026",
+      "round_closed_once": false,
+      "previous_current_projection_ref": ".local/play-session-20261026/grouped-qa/PROJECT_STATE.entry.json",
+      "independent_review": {
+        "decision": "PASS_SCOPED_PARTIAL",
+        "evidence": ".local/play-session-20261026/grouped-qa/independent-review.json",
+        "full_S1_or_goal_pass": false
+      },
+      "git_delivery": {
+        "status": "PENDING_CURRENT_UNIT_BRANCH_DELIVERY",
+        "target": "codex/grouped-mod-qa-20261026",
+        "policy": "No automatic merge to main; publish only current reviewed source/test andowned State projection, never local raw evidence/auth/game assets.",
+        "preserved_pre_existing": [
+          "Earlier manual-play/repair State deltas anddocs/TEST_PLAN.md+two20261025 plan/prompt files remain unstaged under their prior deliverypause/ownership group.",
+          "docs/pch-rebuild-20261020 contains unrelated/private planning; research/p2s-resource-analysis is separateworkspace research. Both retained."
+        ]
+      },
+      "entry_process_audit": "No SB.exe or SB-Win64-Shipping.exe live; previous hair session PID1913315 absent; lifecycle-end confirms own helper stopped. Steam provider retained, no input granted to foreground.",
+      "entry_goal_turn_classification": "FIRST_ACTIVATION; no prior turn in this new native Goal"
     }
   }
 }
