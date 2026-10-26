@@ -1,5 +1,13 @@
 # src/catalog
 
+`ultimate_orss_repair` 为一个固定摘要的 Ultimate 声明生成候选，只补齐 ORSS 列表中漏掉的作者名称，保留纹理、索引、值和其余字节。输入不符会拒绝，输出必须是新文件；命令不安装或覆盖游戏配置。
+
+```sh
+python3 -m src.catalog.ultimate_orss_repair SOURCE_JSON NEW_CANDIDATE_JSON
+```
+
+实际部署须先退出所属游戏、核对精确前像并登记拥有范围；运行验收和恢复结果仍以唯一项目状态引用的证据为准。
+
 规划职责：归档/散装输入、hash、版本、变体、运行组件和选项清单；只读发现优先，不在UI线程扫描大包。
 
 R01 提供只读调查工具，需 Python 3.10+；RAR/7Z 解码使用系统 libarchive。

@@ -1509,18 +1509,18 @@
     "progress": {
       "scope_version": "unified-leaves-v5-sequential-material-feedback-20261014",
       "completion_scope": "RETAINED_INDEPENDENT_TESTS_AFTER_EXPLICIT_FAVOURITE_EDITION_SELECTION_WITH_SCOPE_GATES",
-      "effective_accepted": 251,
+      "effective_accepted": 252,
       "effective_required": 5125,
-      "completion_percent": 4.8976,
+      "completion_percent": 4.9171,
       "tested_with_complete_conclusion": 253,
       "test_conclusion_percent": 4.9366,
       "statuses": {
         "NOT_TESTED": 4795,
-        "PASS": 251,
+        "PASS": 252,
         "REOPENED": 2,
         "WAITING_HUMAN": 1,
         "PARTIAL": 46,
-        "FAIL": 2,
+        "FAIL": 1,
         "BLOCKED_NOT_INSTALLED": 28
       },
       "categories": {
@@ -1537,25 +1537,25 @@
         "共享依赖": 4,
         "组合回归": 9
       },
-      "reason": "23 original parameter leaves accepted from direct isolated effects/restoration and exact independent accepted set. Proposed24 narrowed by Judge; seven visual gaps remain PARTIAL. Original5129/effective5125 and all unrelated failures/denominators retained.",
+      "reason": "One historical Ultimate ORSS schemaFAIL repaired by exact31byte author-label insertion; four new regressiontests, loaded6/6 declaration, allsixnative indices, exactsave restoration and freshJudgePASS. Originalfailure retained; other statuses/denominators unchanged.",
       "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
-      "manifest_sha256": "ab9534c8926ce788ae8dd2cc49a1b1deaa2062d5185d3175bfd06f487137164e",
+      "manifest_sha256": "cd451b52a4093fcb9b4d8ce6286386edc3a9f800e0a130bfe93ce856da2f98b2",
       "target_identity_sha256": "955965cda7371a7ff208fdf736e19a1136e0628cf77a644ac49b5d4323aa9a92",
-      "enumeration_validation": ".local/play-session-20261026/grouped-qa/neurolink-delta/runtime-result.json",
-      "round_key": "aik-neurolink-and-bikini-rear-20261026",
+      "enumeration_validation": ".local/play-session-20261026/grouped-qa/ultimate-orss-repair/runtime-result.json",
+      "round_key": "ultimate-orss-schema-repair-20261026",
       "round_status": "CLOSED_SCOPED_PROGRESS_GOAL_CONTINUES",
-      "count": 63,
+      "count": 64,
       "coverage": "since_baseline",
-      "last_seq": 63,
-      "last_key": "aik-neurolink-and-bikini-rear-20261026",
+      "last_seq": 64,
+      "last_key": "ultimate-orss-schema-repair-20261026",
       "historical_round_count": "UNKNOWN",
-      "execution_change_percentage_points": 0.44878,
+      "execution_change_percentage_points": 0.019512,
       "evidence_change_percentage_points": 0,
       "scope_change_percentage_points": 0,
-      "change_rule": "23 same-weight original leaves gainPASS from new direct runtime/visual evidence with shared core reuse. No target/version/weight/denominator or previous accepted-evidence correction.",
-      "round_start_commit": "0b45a7116f74c00c0da0994622327107e3521010",
-      "scope_change": "None",
-      "milestone_change": "All44originalR59scalar/toggle leaves now scopedPASS afterCH48P3rear. CH56index0 gets22scopedPASS and7visualPARTIAL; no whole-outfit acceptance.",
+      "change_rule": "Sameweight original schemaFAIL→PASS via repair/execution. Three existing texturePASS retained after newdirect checks and name3metadata correction; original sourcefailure retained. No newtarget, weight, denominator or other accepted-status correction.",
+      "round_start_commit": "15c439223fdc9a55079556526630234b9fbbf0d5",
+      "scope_change": "None; original5129/effective5125 unchanged, sixsameassetindices already inoriginal declaration.",
+      "milestone_change": "Fixed one known Ultimate source schema defect; exactpaired6labels/resources. Existing source subset bridged without reopening unrelated controls. WholeUltimateappearance remainsPARTIAL.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1997,8 +1997,8 @@
       "remaining_round_estimate": "UNKNOWN",
       "remaining_round_estimate_confidence": "UNKNOWN: heterogeneous remaining animation/control/geometry/combination and real acceptance targets; recent batches cannot support comparable global throughput."
     },
-    "next_action": "Keep seven CH56 visual gaps explicit; freeze the next installed ready parameter/mesh delta family and reuse reviewed movement, selection and original control transport, with no repeated shared-core startup/defense tests.",
-    "updated_at": "2026-10-26T06:53:19.390139+00:00",
+    "next_action": "Freeze installed AiKCH28 Bunny/Rabbit scalar-toggle parameter cohort and exact remembered variants; reuse reviewed core/selector/parameter consumer. Preserve sevenCH56visual gaps, YoRHa1052FAIL and Ultimate wholeappearance/physics gates.",
+    "updated_at": "2026-10-26T07:41:27.822397+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2109,7 +2109,7 @@
         }
       }
     },
-    "round_closure_at": "2026-10-26T06:53:19.390139+00:00",
+    "round_closure_at": "2026-10-26T07:41:27.822397+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 14,
       "new_confirmed_this_round": 0,
@@ -2273,9 +2273,9 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "PRIVATE_PARAMETER_DELTA_R63_CLOSED",
-    "previous_goal_turn_classification": "Same authorized active Goal; R63closed once, no new round for user steering/tools/review/Gitmetadata.",
-    "execution_status": "ACTIVE_GOAL_R63_CLOSED_NEXT_READY_DELTA",
+    "current_segment": "PRIVATE_ULTIMATE_ORSS_SCHEMA_R64_CLOSED",
+    "previous_goal_turn_classification": "PROGRESS: R64fixed one original schemaFAIL with actualgame and freshreview evidence; samefullGoal remainsactive.",
+    "execution_status": "ACTIVE_GOAL_R64_CLOSED_NEXT_READY_DELTA",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
     "pause_source": "Current human: restart game, tests remain paused; subsequent black-screen repair does not resume tests",
     "user_play_handoff": {
@@ -3266,10 +3266,10 @@
     "native_goal": {
       "threadId": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
       "status": "active",
-      "tokensUsed": 5724085,
-      "timeUsedSeconds": 25180,
+      "tokensUsed": 5931031,
+      "timeUsedSeconds": 28042,
       "createdAt": 1792972357,
-      "telemetry_at": "2026-10-26T06:53:19+00:00",
+      "telemetry_at": "2026-10-26T07:39:59+00:00",
       "telemetry_coverage": "Directnative tool cumulative currentactivation only; priorlogicaltask/activation/history retained; elapsednotactive-only no-progress time. No quota set or increased; full logical lifetimecost unknown.",
       "same_objective_verified": true
     },
@@ -3677,8 +3677,8 @@
         "remaining_scope_unchanged": true
       },
       "test_save_boundary": "No independent story-save isolation established; forbid death/story/reward/travel tests and save rollback. Initial private launch/menu checks only; inspect scene before safe reversible movement/outfit checks.",
-      "round_accounting": "Initial grouped round closed as sequence59; current result is neurolink_delta, closed once as sequence63. Canonical progress.count retains deduplicated cumulative closures; tools/review/metadata commits add no rounds.",
-      "next_action": "Keep seven CH56 visual gaps explicit; freeze the next installed ready parameter/mesh delta family and reuse reviewed movement, selection and original control transport, with no repeated shared-core startup/defense tests.",
+      "round_accounting": "Initial grouped round sequence59; currentultimate_orss_repair closed once as sequence64. Canonical progress.count deduplicates closures; source/metadata commits, tools/review add no rounds.",
+      "next_action": "Freeze installed AiKCH28 Bunny/Rabbit scalar-toggle parameter cohort and exact remembered variants; reuse reviewed core/selector/parameter consumer. Preserve sevenCH56visual gaps, YoRHa1052FAIL and Ultimate wholeappearance/physics gates.",
       "at": "2026-10-25T23:55:06.640620+00:00",
       "lane_reason": "Recovered native equipment lifecycle and CNS saved-selection integration; Root verifies coherent candidate, fresh independent Judge before acceptance.",
       "findings": {
@@ -4001,7 +4001,7 @@
           "metadata_note": "Source commit identity is recorded here; exact final metadata HEAD verification is in the existing ignored receipt to avoid self-reference."
         }
       },
-      "current_result_ref": "neurolink_delta",
+      "current_result_ref": "ultimate_orss_repair",
       "piercing_delta": {
         "round_key": "aik-piercing-delta-20261026",
         "status": "CLOSED_SCOPED_PROGRESS_GOAL_CONTINUES",
@@ -4360,6 +4360,121 @@
           "closure_receipt": ".local/play-session-20261026/grouped-qa/neurolink-delta/round-delivery.json",
           "metadata_note": "This same-round metadata commit is verified in the ignored closure receipt to avoid self-referential commit identity.",
           "main_commit": "aafc4b0fcf94bdc73b8e6810971281953f945fe9"
+        }
+      },
+      "ultimate_orss_repair": {
+        "round_key": "ultimate-orss-schema-repair-20261026",
+        "status": "CLOSED_SCHEMA_REPAIR_PASS_GOAL_CONTINUES",
+        "lane": "REVIEWED",
+        "source": "Same active explicitly authorized MOD-test Goal; previousR63 made23accepted-leaf progress",
+        "at": "2026-10-26T07:10:15.225830+00:00",
+        "git_base": "15c439223fdc9a55079556526630234b9fbbf0d5",
+        "entry_state_sha256": "4a5b8c412b9ff6dc248547faed327d4d39aa070fe2a8d067e34947d2871b98c8",
+        "entry_manifest_sha256": "ab9534c8926ce788ae8dd2cc49a1b1deaa2062d5185d3175bfd06f487137164e",
+        "owned_scope": [
+          "src/catalog/ultimate_orss_repair.py",
+          "tests/test_ultimate_orss_repair.py",
+          "src/catalog/README.md",
+          "Owned State/manifest current-task projection only",
+          ".local/play-session-20261026/grouped-qa/ultimate-orss-repair",
+          "Exact31byte insertion at Ultimate UserConfigs.TextureOptions[5].OptionNames[2], current fixed originaldeclaration only",
+          "One own temporary QA421module/append and registeredBodyselection; no other game package/loader/source configuration writes"
+        ],
+        "frozen_target_leaf_ids": [
+          "control:UltimateNudeEve/TextureOptions/5/schema"
+        ],
+        "regression_leaf_ids": [
+          "control:UltimateNudeEve/TextureOptions/5/option-0",
+          "control:UltimateNudeEve/TextureOptions/5/option-1",
+          "control:UltimateNudeEve/TextureOptions/5/option-3"
+        ],
+        "baseline": {
+          "accepted": 251,
+          "effective_required": 5125,
+          "original_required": 5129,
+          "closed_rounds": 63
+        },
+        "config_source_sha256": "840b767208397b987dc774492b7c4f65cc846bf9efc551650c1a72898f583ba3",
+        "expected_repaired_sha256": "6eca2812f760810e2926e9e89790ce819e5d01dbc36ff3be6b2dd0bdb4f64248",
+        "finding": "BodyORSS names5/textures6; missing MorePubicHair label atindex2 is explicitly present in same linkedauthorBodycolor/normal lists. Later labels shifted. Only insert existing label, retain all assets/indices/values/otherfields.",
+        "private_evidence": ".local/play-session-20261026/grouped-qa/ultimate-orss-repair",
+        "acceptance": "Exactbyteandstructural repair, reject other preimages, originalnative UI sixpairednames/resources and roundtrip/restoration readback. Existing same-resource PASS reused only after unaffected declaration proof; keep all visual/physics/wholeoutfit gates.",
+        "protected": "No story/reward/purchase/hair/global/account/loader/package changes or save rollback. Restore native user config/selections/indexes. Existing pendinggroups excluded fromGit.",
+        "next_action": "Freeze installed AiKCH28 Bunny/Rabbit scalar-toggle parameter cohort and exact remembered variants; reuse reviewed core/selector/parameter consumer. Preserve sevenCH56visual gaps, YoRHa1052FAIL and Ultimate wholeappearance/physics gates.",
+        "round_closed_once": true,
+        "actual_result": ".local/play-session-20261026/grouped-qa/ultimate-orss-repair/runtime-result.json",
+        "candidate_files_sha256": {
+          "src/catalog/ultimate_orss_repair.py": "77f5b3428a7e0958f61a7c8387d05b876d45744c686d9e18ba38e097b8bbb591",
+          "tests/test_ultimate_orss_repair.py": "5189a936601c9d6985252f569a06a0a56884435d877192bc36c9c16361c5d5c1",
+          "src/catalog/README.md": "4598d54f9e75e6037cf88b03ca3d09a20d1ed446230dd97671510090261c816d"
+        },
+        "tests": {
+          "command": "python3 -m unittest discover -s tests -p test_ultimate_orss_repair.py -v",
+          "tests": 4,
+          "exit": 0,
+          "mode": "FRESH_TARGETED_REPAIR_TESTS"
+        },
+        "runtime_loaded_pairing": {
+          "names": 6,
+          "textures": 6,
+          "all_six_native_indices_direct": true
+        },
+        "restoration": ".local/play-session-20261026/grouped-qa/ultimate-orss-repair/restoration.json",
+        "resource_closure": ".local/play-session-20261026/grouped-qa/ultimate-orss-repair/lifecycle-end.json",
+        "failure_fingerprint": {
+          "target": "Native postUI material comparisons",
+          "class": "OBSERVER_BASELINE_GENERATION_MISMATCH",
+          "attempts": 2,
+          "status": "RESOLVED_ONLY29_MID_PATHS_CHANGED",
+          "evidence": ".local/play-session-20261026/grouped-qa/ultimate-orss-repair/observer-baseline-failure.json",
+          "game_restarts": 0,
+          "uncertain_effect_retries": 0
+        },
+        "sequence": 64,
+        "closed_at": "2026-10-26T07:41:27.822397+00:00",
+        "accepted_leaf_ids": [
+          "control:UltimateNudeEve/TextureOptions/5/schema"
+        ],
+        "independent_review": {
+          "decision": "PASS",
+          "evidence": ".local/play-session-20261026/grouped-qa/ultimate-orss-repair/independent-review.json",
+          "reviewed_runtime_result_sha256": "a1c3f17e203bbe884d06854c8e6eb826a9c4e8a140e6ba91ad07fd15ede06a18",
+          "candidate_files_sha256": {
+            "src/catalog/ultimate_orss_repair.py": "77f5b3428a7e0958f61a7c8387d05b876d45744c686d9e18ba38e097b8bbb591",
+            "tests/test_ultimate_orss_repair.py": "5189a936601c9d6985252f569a06a0a56884435d877192bc36c9c16361c5d5c1",
+            "src/catalog/README.md": "4598d54f9e75e6037cf88b03ca3d09a20d1ed446230dd97671510090261c816d"
+          }
+        },
+        "leaf_delta": {
+          "PASS": 1,
+          "FAIL": -1,
+          "existing_PASS_retained": 3,
+          "denominator_change": 0
+        },
+        "source_reuse_bridge": {
+          "evidence": ".local/play-session-20261026/grouped-qa/ultimate-orss-repair/dependency-bridge.json",
+          "original_Ultimate_target_rows": 102,
+          "before_sha256": "840b767208397b987dc774492b7c4f65cc846bf9efc551650c1a72898f583ba3",
+          "after_sha256": "6eca2812f760810e2926e9e89790ce819e5d01dbc36ff3be6b2dd0bdb4f64248",
+          "original_asset_indices_unchanged": true,
+          "name3_corrected": "BlackNails→BigAreola",
+          "new_unique_targets": 0
+        },
+        "repaired_installation": {
+          "retained_sha256": "6eca2812f760810e2926e9e89790ce819e5d01dbc36ff3be6b2dd0bdb4f64248",
+          "changed_bytes": 31,
+          "scope": "One fixed declaration label array only; no binaries, resources, loader or other config changes",
+          "rollback": "After own game exit, verify exact installed candidate hash6eca... then restore only recorded original config preimageSHA840b... if authorized/needed. Never restore entire saves/mods/Steam prefix."
+        },
+        "git_delivery": {
+          "status": "REVIEWED_LOCAL_DELIVERY_PENDING",
+          "target": "codex/grouped-mod-qa-20261026",
+          "main_merge": "NO_AUTOMATIC_MAIN_MERGE_CURRENT_TASK",
+          "scope": [
+            "three reviewed owned source/test/doc files",
+            "Owned State R64/currentprogress only"
+          ],
+          "private_evidence": "Local ignored only; no original thirdparty config/assets/logs/auth data staged"
         }
       }
     }
