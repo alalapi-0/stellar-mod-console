@@ -1509,17 +1509,17 @@
     "progress": {
       "scope_version": "unified-leaves-v5-sequential-material-feedback-20261014",
       "completion_scope": "RETAINED_INDEPENDENT_TESTS_AFTER_EXPLICIT_FAVOURITE_EDITION_SELECTION_WITH_SCOPE_GATES",
-      "effective_accepted": 252,
+      "effective_accepted": 264,
       "effective_required": 5125,
-      "completion_percent": 4.9171,
-      "tested_with_complete_conclusion": 253,
-      "test_conclusion_percent": 4.9366,
+      "completion_percent": 5.1512,
+      "tested_with_complete_conclusion": 265,
+      "test_conclusion_percent": 5.1707,
       "statuses": {
-        "NOT_TESTED": 4795,
-        "PASS": 252,
+        "NOT_TESTED": 4775,
+        "PASS": 264,
         "REOPENED": 2,
         "WAITING_HUMAN": 1,
-        "PARTIAL": 46,
+        "PARTIAL": 54,
         "FAIL": 1,
         "BLOCKED_NOT_INSTALLED": 28
       },
@@ -1537,25 +1537,25 @@
         "共享依赖": 4,
         "组合回归": 9
       },
-      "reason": "One historical Ultimate ORSS schemaFAIL repaired by exact31byte author-label insertion; four new regressiontests, loaded6/6 declaration, allsixnative indices, exactsave restoration and freshJudgePASS. Originalfailure retained; other statuses/denominators unchanged.",
+      "reason": "Twelve original Bunny/Rabbit parameter leaves gainPASS after64isolated original callbacks, direct permesh visual effects/exactrestoration andfreshJudgePASS. Eight uncleargeometry controls remainPARTIAL; original5129/effective5125 andallotherfailures retained.",
       "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
-      "manifest_sha256": "cd451b52a4093fcb9b4d8ce6286386edc3a9f800e0a130bfe93ce856da2f98b2",
+      "manifest_sha256": "049f92f3078b0fc414cc221e58fd8a7138c9ec4ba0834f0719a02c8c73e7ab38",
       "target_identity_sha256": "955965cda7371a7ff208fdf736e19a1136e0628cf77a644ac49b5d4323aa9a92",
-      "enumeration_validation": ".local/play-session-20261026/grouped-qa/ultimate-orss-repair/runtime-result.json",
-      "round_key": "ultimate-orss-schema-repair-20261026",
+      "enumeration_validation": ".local/play-session-20261026/grouped-qa/bunny-rabbit-delta/runtime-result.json",
+      "round_key": "aik-bunny-rabbit-parameter-delta-20261026",
       "round_status": "CLOSED_SCOPED_PROGRESS_GOAL_CONTINUES",
-      "count": 64,
+      "count": 65,
       "coverage": "since_baseline",
-      "last_seq": 64,
-      "last_key": "ultimate-orss-schema-repair-20261026",
+      "last_seq": 65,
+      "last_key": "aik-bunny-rabbit-parameter-delta-20261026",
       "historical_round_count": "UNKNOWN",
-      "execution_change_percentage_points": 0.019512,
+      "execution_change_percentage_points": 0.234146,
       "evidence_change_percentage_points": 0,
       "scope_change_percentage_points": 0,
-      "change_rule": "Sameweight original schemaFAIL→PASS via repair/execution. Three existing texturePASS retained after newdirect checks and name3metadata correction; original sourcefailure retained. No newtarget, weight, denominator or other accepted-status correction.",
-      "round_start_commit": "15c439223fdc9a55079556526630234b9fbbf0d5",
-      "scope_change": "None; original5129/effective5125 unchanged, sixsameassetindices already inoriginal declaration.",
-      "milestone_change": "Fixed one known Ultimate source schema defect; exactpaired6labels/resources. Existing source subset bridged without reopening unrelated controls. WholeUltimateappearance remainsPARTIAL.",
+      "change_rule": "12sameweight originalNOT_TESTED leaves becomePASS;8becomePARTIAL. No changedtarget, version, weight, denominator oraccepted-evidence correction. Numeric-only8 do notearnPASS.",
+      "round_start_commit": "e82a4009d8ab45c814130a169b29c9920250ff9e",
+      "scope_change": "None; original5129/effective5125 unchanged.",
+      "milestone_change": "Independent BunnyRS100/RabbitRS50 hood/tail/lace/nails/metallic/glow verified underexplicit sourceconditions. Eightvisibility-only numericgaps remain; no wholeoutfit/physics acceptance.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1995,10 +1995,10 @@
         "milestone_change": "R59 cumulative26 finite geometry/emitter/hardware gates PASS,18 visual gates PARTIAL; latest continuation added18 PASS with exact source-default restoration."
       },
       "remaining_round_estimate": "UNKNOWN",
-      "remaining_round_estimate_confidence": "UNKNOWN: heterogeneous remaining animation/control/geometry/combination and real acceptance targets; recent batches cannot support comparable global throughput."
+      "remaining_round_estimate_confidence": "UNKNOWN: heterogeneous remaining targets andno comparable global throughput window."
     },
-    "next_action": "Freeze installed AiKCH28 Bunny/Rabbit scalar-toggle parameter cohort and exact remembered variants; reuse reviewed core/selector/parameter consumer. Preserve sevenCH56visual gaps, YoRHa1052FAIL and Ultimate wholeappearance/physics gates.",
-    "updated_at": "2026-10-26T07:41:27.822397+00:00",
+    "next_action": "Read-only identify active LOD/mesh-section applicability for the8Bunny/Rabbit numeric-only controls before repeating anysameview toggles. Preserve7CH56visual gaps andallotherfailures; continue independent ready families withoutretesting sharedcore.",
+    "updated_at": "2026-10-26T08:35:32.987005+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2109,7 +2109,7 @@
         }
       }
     },
-    "round_closure_at": "2026-10-26T07:41:27.822397+00:00",
+    "round_closure_at": "2026-10-26T08:35:32.987005+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 14,
       "new_confirmed_this_round": 0,
@@ -2273,9 +2273,9 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "PRIVATE_ULTIMATE_ORSS_SCHEMA_R64_CLOSED",
-    "previous_goal_turn_classification": "PROGRESS: R64fixed one original schemaFAIL with actualgame and freshreview evidence; samefullGoal remainsactive.",
-    "execution_status": "ACTIVE_GOAL_R64_CLOSED_NEXT_READY_DELTA",
+    "current_segment": "PRIVATE_BUNNY_RABBIT_DELTA_R65_CLOSED",
+    "previous_goal_turn_classification": "PROGRESS: R65accepted12originalparameter leaves withdirectpermesh evidence andfreshreview; fullGoalstillactive.",
+    "execution_status": "ACTIVE_GOAL_R65_CLOSED_NEXT_MATERIAL_SECTION_DIAGNOSIS",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
     "pause_source": "Current human: restart game, tests remain paused; subsequent black-screen repair does not resume tests",
     "user_play_handoff": {
@@ -3266,10 +3266,10 @@
     "native_goal": {
       "threadId": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
       "status": "active",
-      "tokensUsed": 5931031,
-      "timeUsedSeconds": 28042,
+      "tokensUsed": 6156626,
+      "timeUsedSeconds": 31246,
       "createdAt": 1792972357,
-      "telemetry_at": "2026-10-26T07:39:59+00:00",
+      "telemetry_at": "2026-10-26T08:33:23+00:00",
       "telemetry_coverage": "Directnative tool cumulative currentactivation only; priorlogicaltask/activation/history retained; elapsednotactive-only no-progress time. No quota set or increased; full logical lifetimecost unknown.",
       "same_objective_verified": true
     },
@@ -3677,8 +3677,8 @@
         "remaining_scope_unchanged": true
       },
       "test_save_boundary": "No independent story-save isolation established; forbid death/story/reward/travel tests and save rollback. Initial private launch/menu checks only; inspect scene before safe reversible movement/outfit checks.",
-      "round_accounting": "Initial grouped round sequence59; currentultimate_orss_repair closed once as sequence64. Canonical progress.count deduplicates closures; source/metadata commits, tools/review add no rounds.",
-      "next_action": "Freeze installed AiKCH28 Bunny/Rabbit scalar-toggle parameter cohort and exact remembered variants; reuse reviewed core/selector/parameter consumer. Preserve sevenCH56visual gaps, YoRHa1052FAIL and Ultimate wholeappearance/physics gates.",
+      "round_accounting": "Initial groupedround59; currentbunny_rabbit_delta closed once assequence65. Canonicalprogress.count deduplicates; tools/review/source-metadatacommits addno rounds.",
+      "next_action": "Read-only identify active LOD/mesh-section applicability for the8Bunny/Rabbit numeric-only controls before repeating anysameview toggles. Preserve7CH56visual gaps andallotherfailures; continue independent ready families withoutretesting sharedcore.",
       "at": "2026-10-25T23:55:06.640620+00:00",
       "lane_reason": "Recovered native equipment lifecycle and CNS saved-selection integration; Root verifies coherent candidate, fresh independent Judge before acceptance.",
       "findings": {
@@ -4001,7 +4001,7 @@
           "metadata_note": "Source commit identity is recorded here; exact final metadata HEAD verification is in the existing ignored receipt to avoid self-reference."
         }
       },
-      "current_result_ref": "ultimate_orss_repair",
+      "current_result_ref": "bunny_rabbit_delta",
       "piercing_delta": {
         "round_key": "aik-piercing-delta-20261026",
         "status": "CLOSED_SCOPED_PROGRESS_GOAL_CONTINUES",
@@ -4483,6 +4483,147 @@
           "preserved_pre_existing": "Seven earlier State groups; TEST_PLAN/two20261025plan-prompt docs; unrelated privatepch/research groups retained unstaged.",
           "closure_receipt": ".local/play-session-20261026/grouped-qa/ultimate-orss-repair/round-delivery.json",
           "metadata_note": "Exact final metadata commit verified in ignored receipt; same round64, no self-referential commit hash."
+        }
+      },
+      "bunny_rabbit_delta": {
+        "round_key": "aik-bunny-rabbit-parameter-delta-20261026",
+        "status": "CLOSED_12_SCOPED_PASS_8_VISUAL_PARTIAL_GOAL_CONTINUES",
+        "source": "Same active owner-authorized MOD-test Goal; R64 repaired one original schemaFAIL and verified branchdelivery",
+        "lane": "REVIEWED",
+        "at": "2026-10-26T07:55:09.630434+00:00",
+        "git_base": "e82a4009d8ab45c814130a169b29c9920250ff9e",
+        "entry_state_sha256": "472e8ff59b4b46d97da10cf891b147116c5c46aaa425c8396f3c08e48bc8cb5d",
+        "entry_manifest_sha256": "cd451b52a4093fcb9b4d8ce6286386edc3a9f800e0a130bfe93ce856da2f98b2",
+        "owned_scope": [
+          "Owned State/manifest exact20 target results",
+          "Ignored bunny-rabbit-delta frozen declarations/actual native parameter evidence",
+          "One own temporary QA421module/append and frozenBodyselections/parameters only; no publicsource changes expected"
+        ],
+        "frozen_target_leaf_ids": [
+          "control:AiK_CH28_Bunny7504/MaterialToggles/0",
+          "control:AiK_CH28_Bunny7504/MaterialToggles/1",
+          "control:AiK_CH28_Bunny7504/MaterialToggles/2",
+          "control:AiK_CH28_Bunny7504/MaterialToggles/3",
+          "control:AiK_CH28_Bunny7504/MaterialToggles/4",
+          "control:AiK_CH28_Bunny7504/MaterialToggles/5",
+          "control:AiK_CH28_Bunny7504/MaterialToggles/6",
+          "control:AiK_CH28_Bunny7504/MaterialToggles/7",
+          "control:AiK_CH28_Bunny7504/ScalarControls/0",
+          "control:AiK_CH28_Bunny7504/ScalarControls/1",
+          "control:AiK_CH28_Rabbit7505/MaterialToggles/0",
+          "control:AiK_CH28_Rabbit7505/MaterialToggles/1",
+          "control:AiK_CH28_Rabbit7505/MaterialToggles/2",
+          "control:AiK_CH28_Rabbit7505/MaterialToggles/3",
+          "control:AiK_CH28_Rabbit7505/MaterialToggles/4",
+          "control:AiK_CH28_Rabbit7505/MaterialToggles/5",
+          "control:AiK_CH28_Rabbit7505/MaterialToggles/6",
+          "control:AiK_CH28_Rabbit7505/MaterialToggles/7",
+          "control:AiK_CH28_Rabbit7505/ScalarControls/0",
+          "control:AiK_CH28_Rabbit7505/ScalarControls/1"
+        ],
+        "baseline": {
+          "accepted": 252,
+          "effective_required": 5125,
+          "original_required": 5129,
+          "closed_rounds": 64
+        },
+        "remembered_variants": {
+          "AiK_CH28_Bunny7504": 2,
+          "AiK_CH28_Rabbit7505": 1
+        },
+        "initial_configuration": {
+          "AiK_CH28_Bunny7504": {
+            "initial_config_present": true,
+            "config_entry_sha256": "5e4a3579f062b7aee0256a7bfa9155f21171b13ac22d6a8b0b2a440ee7121bcd"
+          },
+          "AiK_CH28_Rabbit7505": {
+            "initial_config_present": false,
+            "config_entry_sha256": null
+          }
+        },
+        "evidence": ".local/play-session-20261026/grouped-qa/bunny-rabbit-delta",
+        "acceptance": "Actual source endpoints/current restoration perleaf, independent isolated materials/hiddenbit reads and direct visual effects on each exact remembered mesh. Shared core/consumer reused; no geometry/physics result copied between meshes.",
+        "protected": "No story/reward/purchase/hair/global/account/loader/package/real-save rollback changes. Restore existing Bunnyuserconfig and all other choices/indices/config/presets; Rabbit may initialize original defaultconfig through nativeCNS. Only defaultblack nail color may provisionally use source palette neutralwhite and exactblack restoration for metallic viewing.",
+        "next_action": "Read-only identify active LOD/mesh-section applicability for the8Bunny/Rabbit numeric-only controls before repeating anysameview toggles. Preserve7CH56visual gaps andallotherfailures; continue independent ready families withoutretesting sharedcore.",
+        "round_closed_once": true,
+        "camera_scope": "Taskowned native CNS viewer camera position/orbit may change only for fullbody/nail/rear comparisons. Record CustomCamPos difference explicitly; no othercamera writer or gameplaycamera config change.",
+        "actual_result": ".local/play-session-20261026/grouped-qa/bunny-rabbit-delta/runtime-result.json",
+        "native_parameter_calls": 64,
+        "proposed_pass_leaf_ids": [
+          "control:AiK_CH28_Bunny7504/MaterialToggles/0",
+          "control:AiK_CH28_Bunny7504/MaterialToggles/4",
+          "control:AiK_CH28_Bunny7504/MaterialToggles/5",
+          "control:AiK_CH28_Bunny7504/MaterialToggles/7",
+          "control:AiK_CH28_Bunny7504/ScalarControls/0",
+          "control:AiK_CH28_Bunny7504/ScalarControls/1",
+          "control:AiK_CH28_Rabbit7505/MaterialToggles/0",
+          "control:AiK_CH28_Rabbit7505/MaterialToggles/4",
+          "control:AiK_CH28_Rabbit7505/MaterialToggles/5",
+          "control:AiK_CH28_Rabbit7505/MaterialToggles/7",
+          "control:AiK_CH28_Rabbit7505/ScalarControls/0",
+          "control:AiK_CH28_Rabbit7505/ScalarControls/1"
+        ],
+        "partial_leaf_ids": {
+          "control:AiK_CH28_Bunny7504/MaterialToggles/1": "Original callback/data/isolated hidden-material bit verified and restored; visible geometry delta remains unclear in actual front/rear or heel views. Need active LOD/mesh-section applicability evidence before repeating or accepting.",
+          "control:AiK_CH28_Bunny7504/MaterialToggles/2": "Original callback/data/isolated hidden-material bit verified and restored; visible geometry delta remains unclear in actual front/rear or heel views. Need active LOD/mesh-section applicability evidence before repeating or accepting.",
+          "control:AiK_CH28_Bunny7504/MaterialToggles/3": "Original callback/data/isolated hidden-material bit verified and restored; visible geometry delta remains unclear in actual front/rear or heel views. Need active LOD/mesh-section applicability evidence before repeating or accepting.",
+          "control:AiK_CH28_Bunny7504/MaterialToggles/6": "Original callback/data/isolated hidden-material bit verified and restored; visible geometry delta remains unclear in actual front/rear or heel views. Need active LOD/mesh-section applicability evidence before repeating or accepting.",
+          "control:AiK_CH28_Rabbit7505/MaterialToggles/1": "Original callback/data/isolated hidden-material bit verified and restored; visible geometry delta remains unclear in actual front/rear or heel views. Need active LOD/mesh-section applicability evidence before repeating or accepting.",
+          "control:AiK_CH28_Rabbit7505/MaterialToggles/2": "Original callback/data/isolated hidden-material bit verified and restored; visible geometry delta remains unclear in actual front/rear or heel views. Need active LOD/mesh-section applicability evidence before repeating or accepting.",
+          "control:AiK_CH28_Rabbit7505/MaterialToggles/3": "Original callback/data/isolated hidden-material bit verified and restored; visible geometry delta remains unclear in actual front/rear or heel views. Need active LOD/mesh-section applicability evidence before repeating or accepting.",
+          "control:AiK_CH28_Rabbit7505/MaterialToggles/6": "Original callback/data/isolated hidden-material bit verified and restored; visible geometry delta remains unclear in actual front/rear or heel views. Need active LOD/mesh-section applicability evidence before repeating or accepting."
+        },
+        "restoration": ".local/play-session-20261026/grouped-qa/bunny-rabbit-delta/restoration.json",
+        "resource_closure": ".local/play-session-20261026/grouped-qa/bunny-rabbit-delta/lifecycle-end.json",
+        "qa_source_unchanged_sha256": "8d8b73ae34cb1212b2ce75bce0c12aa523b82617b8833a6740b3192f3fdf39d4",
+        "tests": {
+          "mode": "REUSED_UNCHANGED_QA421",
+          "prior_command": "python3 -m unittest discover -s tests -p test_qa_control.py -v",
+          "prior_tests": 3,
+          "prior_scenarios": 68,
+          "prior_exit": 0,
+          "new_real_parameter_calls": 64
+        },
+        "closed_at": "2026-10-26T08:35:32.987005+00:00",
+        "sequence": 65,
+        "accepted_leaf_ids": [
+          "control:AiK_CH28_Bunny7504/MaterialToggles/0",
+          "control:AiK_CH28_Bunny7504/MaterialToggles/4",
+          "control:AiK_CH28_Bunny7504/MaterialToggles/5",
+          "control:AiK_CH28_Bunny7504/MaterialToggles/7",
+          "control:AiK_CH28_Bunny7504/ScalarControls/0",
+          "control:AiK_CH28_Bunny7504/ScalarControls/1",
+          "control:AiK_CH28_Rabbit7505/MaterialToggles/0",
+          "control:AiK_CH28_Rabbit7505/MaterialToggles/4",
+          "control:AiK_CH28_Rabbit7505/MaterialToggles/5",
+          "control:AiK_CH28_Rabbit7505/MaterialToggles/7",
+          "control:AiK_CH28_Rabbit7505/ScalarControls/0",
+          "control:AiK_CH28_Rabbit7505/ScalarControls/1"
+        ],
+        "independent_review": {
+          "decision": "PASS",
+          "evidence": ".local/play-session-20261026/grouped-qa/bunny-rabbit-delta/independent-review.json",
+          "reviewed_runtime_result_sha256": "6fb4648a5e31b9751cae9f2b2887c3246713a29136f2e03e1bfd223142cdaf1c"
+        },
+        "leaf_delta": {
+          "PASS": 12,
+          "PARTIAL": 8,
+          "NOT_TESTED": -20,
+          "denominator_change": 0
+        },
+        "wall_ms": {
+          "min": 160.76,
+          "median": 241.025,
+          "max": 623.04
+        },
+        "git_delivery": {
+          "status": "REVIEWED_LOCAL_DELIVERY_PENDING",
+          "target": "codex/grouped-mod-qa-20261026",
+          "main_merge": "NO_AUTOMATIC_MAIN_MERGE_CURRENT_TASK",
+          "scope": [
+            "Owned State R65/progress/currentGoal projection only; all publicsource unchanged"
+          ],
+          "private_evidence": "Ignored localpaths only; no rawgame/config/log/auth data staged"
         }
       }
     }
