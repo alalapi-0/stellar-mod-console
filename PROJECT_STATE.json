@@ -1539,23 +1539,23 @@
       },
       "reason": "Owner explicitly removes exhaustive parameter/color/animation enumeration as completion requirement. Old264/5125 retained as history only; current merged applicability notfrozen, so no percentage orfakePASS.",
       "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
-      "manifest_sha256": "290f0aa382a201eeddb776120c3c8e0070f60cf31feb8e518b044e6208bb507a",
+      "manifest_sha256": "858203cdc72c80aa427ec93d3c5186a96236fa31ee4020f959957bb68310afc4",
       "target_identity_sha256": "955965cda7371a7ff208fdf736e19a1136e0628cf77a644ac49b5d4323aa9a92",
-      "enumeration_validation": ".local/play-session-20261026/grouped-qa/hair-switch-repro-r67/runtime-result.json",
-      "round_key": "owner-scope-and-hair-crash-exclusion-r67-20261026",
-      "round_status": "CLOSED_SCOPED_HAIR_MITIGATION_OWNER_SCOPE_CHANGED_GOAL_CONTINUES",
-      "count": 67,
+      "enumeration_validation": ".local/play-session-20261026/grouped-qa/sequence-material-r68/runtime-result.json",
+      "round_key": "ordered-cross-outfit-material-residue-r68-20261026",
+      "round_status": "CLOSED_FINITE_SEQUENCE_REVIEW_PASS_FULL_GOAL_OPEN",
+      "count": 68,
       "coverage": "since_baseline",
-      "last_seq": 67,
-      "last_key": "owner-scope-and-hair-crash-exclusion-r67-20261026",
+      "last_seq": 68,
+      "last_key": "ordered-cross-outfit-material-residue-r68-20261026",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": null,
       "evidence_change_percentage_points": 0,
-      "scope_change_percentage_points": null,
-      "change_rule": "Ownerchanges currentacceptance awayfrom5125parameterenumeration. Oneactual historicalNOT_TESTED becomesFAIL, noPASS increase; scope/percentage difference UNKNOWN untilmergedunitsfrozen.",
-      "round_start_commit": "b27117fd3db0dd2f1e7acbe5fc0f21060a0f258a",
-      "scope_change": "Direct owner acceptance revision; exhaustive details no longer required. Original inventory and all failures retained; no artificial PASS.",
-      "milestone_change": "Exacthairtrigger isolatedwithout priorclothingcycling andsafeexclusion verified; scope simplified bydirectowner.",
+      "scope_change_percentage_points": 0,
+      "change_rule": "Currentowneracceptance v6 unchanged; finitecrossgarment evidence added toexistingPARTIALintegrationleaf, zero newinventoryPASS; currentmergeddenominator UNKNOWN.",
+      "round_start_commit": "aed4fb5a2591ba825a49df2879bbc4662332b6e2",
+      "scope_change": "No new scope change R68; priorownermergingpolicy retained.",
+      "milestone_change": "Finite ordered state/material/menu recovery across5garments verifiedandreviewed; no newnativecrash; originalgray/rootcause remainsopen.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1902,7 +1902,7 @@
         "appearance:Repacked ExtraMod333/choice-0"
       ],
       "remaining_rounds": "UNKNOWN",
-      "remaining_rounds_confidence": "UNKNOWN",
+      "remaining_rounds_confidence": "UNKNOWN: merged applicability notfrozen; no comparable throughput baseline",
       "window": [],
       "prediction_reason": "Currentmergedcompatibility units notfrozen; oldparameter throughputnotapplicable.",
       "original_unified_required_retained": 5129,
@@ -1983,8 +1983,8 @@
       "statuses_applicability": "Historical parameter inventory only; current compatibility progress notrepresented bythese leaf counts.",
       "current_compatibility_completion": "UNKNOWN_UNTIL_GROUPING_AND_EVIDENCE_APPLICABILITY_FROZEN"
     },
-    "next_action": "Prioritize integration:sequential-outfit-material-recovery using distinct garment transitions and currentvalid sharedcore; capture ordered mesh/material/hidden-state deltas and minimize only actualfailures. Keep exact ExtraMod333Hair exclusion active; no exhaustive colors/options andno91min/fullhair claim.",
-    "updated_at": "2026-10-26T11:13:01.332803+00:00",
+    "next_action": "Apply owner acceptance to existing inventory as merged garment/consumer risk groups; reuse valid R68 ordered/material and R67 hair evidence. Fill only missing risky consumers, and check final camera recovery with settled native state; do not repeat colors/endpoints/shared core or blindly retry untriggered gray.",
+    "updated_at": "2026-10-26T11:48:32.647132+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2095,7 +2095,7 @@
         }
       }
     },
-    "round_closure_at": "2026-10-26T11:13:01.332803+00:00",
+    "round_closure_at": "2026-10-26T11:48:32.647132+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 14,
       "new_confirmed_this_round": 0,
@@ -2259,9 +2259,9 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "R67_OWNER_REBASE_HAIR_WORKAROUND_CLOSED",
-    "previous_goal_turn_classification": "PROGRESS_OWNER_ACCEPTANCE_REBASE_PLUS_REAL_HAIR_CRASH_REPRODUCTION_AND_EXACT_EXCLUSION",
-    "execution_status": "SCOPED_MITIGATION_PASS_FULL_GOAL_ACTIVE",
+    "current_segment": "R68_ORDERED_MATERIAL_SEQUENCE_CLOSED",
+    "previous_goal_turn_classification": "PROGRESS_FINITE_ORDERED_MATERIAL_HIDDEN_RECOVERY_AND_EXACT_SETTINGS_PRESERVATION",
+    "execution_status": "ROUND_COMPLETE_GOAL_CONTINUES",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
     "pause_source": "Current human: restart game, tests remain paused; subsequent black-screen repair does not resume tests",
     "user_play_handoff": {
@@ -3252,11 +3252,11 @@
     "native_goal": {
       "threadId": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
       "status": "active",
-      "tokensUsed": 7182465,
-      "timeUsedSeconds": 39315,
+      "tokensUsed": 7491781,
+      "timeUsedSeconds": 41435,
       "createdAt": 1792972357,
-      "telemetry_at": "2026-10-26T11:10:12.000Z",
-      "telemetry_coverage": "Direct native cumulative current activation; historical logical lifetime cost UNKNOWN; no token/time/retry quota set or increased.",
+      "telemetry_at": "2026-10-26T11:45:32Z",
+      "telemetry_coverage": "Directnative cumulativecurrentactivation; historical lifetimecostUNKNOWN; noquota set/increased.",
       "same_objective_verified": true
     },
     "goal_resume_source": "Current native Goal reused; same logical compatibility task and original5129/effective5125 preserved",
@@ -3635,7 +3635,7 @@
       "execution_source": "Direct owner native Goal objective submitted in thread 01a1757a-f84c-72b0-97bd-44ab8c53eb53 on 2026-10-26; execute MOD_TEST_REPAIR_PLAN_20261025 grouped QA",
       "owner_thread": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
       "lane": "REVIEWED",
-      "status": "R67_OWNER_REBASE_AND_SCOPED_HAIR_EXCLUSION_REVIEW_PASS",
+      "status": "R68_ORDERED_MATERIAL_SEQUENCE_SCOPED_PASS_FULL_GOAL_OPEN",
       "owned_scope": [
         "PROJECT_STATE.json#mod_compatibility_restructure current grouped execution/progress projection; old paused console and pre-existing manual-play deltas remain separate",
         ".local/play-session-20261026/grouped-qa",
@@ -3663,10 +3663,10 @@
         "remaining_scope_unchanged": true
       },
       "test_save_boundary": "No independent story-save isolation established; forbid death/story/reward/travel tests and save rollback. Initial private launch/menu checks only; inspect scene before safe reversible movement/outfit checks.",
-      "round_accounting": "R67 garment observations, ownerrebase, crashA, recovery/exclusion andcounterfactual areone evolvedlogicalround; tools/subagents/restarts/commits are not additionalrounds.",
-      "next_action": "Prioritize integration:sequential-outfit-material-recovery using distinct garment transitions and currentvalid sharedcore; capture ordered mesh/material/hidden-state deltas and minimize only actualfailures. Keep exact ExtraMod333Hair exclusion active; no exhaustive colors/options andno91min/fullhair claim.",
+      "round_accounting": "R68initial16sequence, menu supplemental guardedrejection/correction, restoration/cleanup/review andGit areone logicalround. No countpergarment/tool/review/commit.",
+      "next_action": "Apply owner acceptance to existing inventory as merged garment/consumer risk groups; reuse valid R68 ordered/material and R67 hair evidence. Fill only missing risky consumers, and check final camera recovery with settled native state; do not repeat colors/endpoints/shared core or blindly retry untriggered gray.",
       "at": "2026-10-25T23:55:06.640620+00:00",
-      "lane_reason": "Current owner acceptance revision andexacthair exclusion/recovery afteractualcrash; independent scope/runtime reviews completed.",
+      "lane_reason": "New ordered material/hidden-state compatibility evidence requires independent scoped judgement oncecoherent.",
       "findings": {
         "v3": "Confirmed Lua index13 reads native slot12; no successful native-body binding. Current fix readsLua14.",
         "v4": "Real native cold-load false positive and Actor-deselection invisible-body regressions; FAIL preserved.",
@@ -3678,7 +3678,7 @@
         "v8": "Fresh independent PASS for current BS_ alias transition/native-menu scope; full S1/Goal incomplete"
       },
       "candidate_sha256": "5679d28fe2e6719314c45e6709a99c4920c866a24b21953dd66e39a05dae4e12",
-      "updated_at": "2026-10-26T11:13:01.332803+00:00",
+      "updated_at": "2026-10-26T11:48:32.647132+00:00",
       "grouped_assertions": {
         "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
         "sha256": "a800adc5603d0edb2747f20dc335cc109dd88357033ddfcdadb856aac810b618",
@@ -3687,44 +3687,48 @@
         "new_complete_leaf_PASS": 0,
         "original_required": 5129,
         "effective_required": 5125,
-        "leaf_statuses_changed": 0
+        "leaf_statuses_changed": 0,
+        "applicability": "Historical initial grouped-assertion evidence only; current owner v6 uses merged risk acceptance and R68 result. Old5125 is inventory, not current completion denominator."
       },
       "hair_original_context": "Exact BUG-HAIR-20261025-01 context recovered read-only from native crash directory; private pointer .local/play-session-20261026/grouped-qa/hair-incident-context-recovery.json; GameThread AV verified, cause unknown",
       "runtime_ownership": {
         "evidence": ".local/play-session-20261026/grouped-qa/resource-checkpoint.json",
-        "game": "Exactownedprivategame receivedWM_CLOSE andtargetidentityabsent; launchwrapper143, nativegameexitunknown; nonewnativecrashcontext sincecurrentlaunch.",
-        "helper": "CurrentCombatAssistantshutdownacknowledged, wrapperexit0 andbindingended withgame.",
-        "movement": "ExactownedserviceSIGTERM/restoreexit0; independent sixbasefields500/280/150/300/100/500 verifiedbeforegameexit.",
-        "bridge": "Expiredsessiononlymodule andexactappendedenableline removedaftergameexit; mods.txt exactoriginalhash2d4e87b...; nativeownershipv8 retained.",
-        "private_display": "ExactownedXvfb:2retainedforactiveGoal; foregroundneverowned; rawauth/identities stayprivate.",
-        "children": "All dispatchedchildrencompleted; noactivechildwriters.",
-        "remaining": "Wrapper143 observation retained; underlyinggameexitcodeunavailable. PlatformSteam/MCPservicesnotcleanup targets."
+        "game": "Exact owned native game, runtime and launcher identities in the private lifecycle receipt are all absent after WM_CLOSE; wrapper/native exit code UNKNOWN because original handle was lost during compaction.",
+        "helper": "CombatAssistant shutdown CLI and original helper wrapper both exited 0; no owned helper left.",
+        "bridge": "UnchangedQA421 ownnewdirectory removedafterexacthashverification; only exactappendedsuffix truncated; modsoriginalSHA2d4e87bafbd499e877c654c8040415ac9a67ce7e5198bf82678f950b3117530e",
+        "private_display": "Existingprivate:2retained foractiveGoal; foregroundnotowned.",
+        "children": "Freshread-onlyJudge completedandcollected; noactiveR68descendants.",
+        "remaining": "Finalcamera observationunaccepted; noextra runtime keptsolelyforchecking. PlatformSteam/MCPnotcleanup targets."
       },
       "candidate_source": "src/runtime/NativeOutfitOwnership.lua",
-      "latest_runtime_result": ".local/play-session-20261026/grouped-qa/hair-switch-repro-r67/runtime-result.json",
-      "last_material_progress": "Ownerends exhaustiveparameter route. Direct hairtransition reproduces nativecrash;51stackframes matchold. One failingHair declaration excluded, other3retained; sixretainedhair actions passedshortcounterfactual withfullconfigrestoration.",
-      "round_key": "owner-scope-and-hair-crash-exclusion-r67-20261026",
+      "latest_runtime_result": ".local/play-session-20261026/grouped-qa/sequence-material-r68/runtime-result.json",
+      "last_material_progress": "Five distinct garment/mesh materialslot structures3/37/30/23/11;16ordered transitions plusconfirmedmenus,21verified callbacks total, exactactive materials/hidden recovery. Originalgraynotreproduced; unknownfinalcamera notaccepted; noPASSleafpromotion.",
+      "round_key": "ordered-cross-outfit-material-residue-r68-20261026",
       "round_closed_once": true,
       "previous_current_projection_ref": ".local/play-session-20261026/grouped-qa/PROJECT_STATE.entry.json",
       "independent_review": {
-        "decision": "PASS_SCOPED_PARTIAL",
-        "evidence": ".local/play-session-20261026/grouped-qa/independent-review.json",
-        "full_S1_or_goal_pass": false
+        "at": "2026-10-26T11:48:32.647132+00:00",
+        "agent": "/root/ordered_material_r68_review",
+        "decision": "PASS_SCOPED",
+        "scope": "Five frozen Body choices;16 ordered and21total verified transitions;active material/hidden equality; six confirmed menu comparisons; exact settings/config restoration andtempcleanup",
+        "method": "Fresh readonlyJudge independently recomputed16material comparisons, mappeduniquecommands, reviewedframes/config/hashes/lifecycle withoutgame orfullsuite rerun",
+        "limits": [
+          "Originalwhole-gray cause NOT_REPRODUCED; no allgarment/color/hair/combinations/longrunPASS",
+          "Finalcamera/bodyvisibility NOT_ACCEPTED; wholeGoalOPEN"
+        ]
       },
       "git_delivery": {
-        "status": "SOURCE_DELIVERED_TO_IMPLEMENTATION_BRANCH",
+        "status": "VALIDATED_OWNED_STATE_CANDIDATE_PENDING_IMPLEMENTATION_BRANCH_SYNC",
         "target": "codex/grouped-mod-qa-20261026",
-        "policy": "No automatic merge to main; publish only current reviewed source/test andowned State projection, never local raw evidence/auth/game assets.",
+        "policy": "Currentexplicitnoautomaticmainmerge controls; onlyownedStateprojection, no rawgame/config/save/log/evidence.",
         "preserved_pre_existing": [
-          "Earlier manual-play/repair State deltas anddocs/TEST_PLAN.md+two20261025 plan/prompt files remain unstaged under their prior deliverypause/ownership group.",
-          "docs/pch-rebuild-20261020 contains unrelated/private planning; research/p2s-resource-analysis is separateworkspace research. Both retained."
+          "Sevenearlier manualplay/handoff/roundstatus State groups retainedoutsideindex",
+          "docs/pch-rebuild-20261020 two private/unrelatedfiles; research/p2s-resource-analysis thirteen unrelatedfiles"
         ],
-        "source_commit": "be16fec058de442a4b56f95b5fb21b6e92840caf",
-        "remote_verified": true,
-        "previous_source_commit": "ed55733ced2685dd56498f472ee2d86ae2c93ada",
-        "verified_source_ref": "refs/heads/codex/grouped-mod-qa-20261026",
-        "closure_evidence": ".local/play-session-20261026/grouped-qa/round-delivery.json",
-        "closure_metadata": "Recorded in this closing commit; exact final HEAD verification is retained in private closure evidence, avoiding a self-referential record hash."
+        "previous_source_commit": "c44eb13fd4dcd88232c7c18f30f1ad9dea1c0884",
+        "entry_verified_head": "aed4fb5a2591ba825a49df2879bbc4662332b6e2",
+        "remote_verified": false,
+        "closure_evidence": ".local/play-session-20261026/grouped-qa/sequence-material-r68/round-delivery.json"
       },
       "entry_process_audit": "No SB.exe or SB-Win64-Shipping.exe live; previous hair session PID1913315 absent; lifecycle-end confirms own helper stopped. Steam provider retained, no input granted to foreground.",
       "entry_goal_turn_classification": "FIRST_ACTIVATION; no prior turn in this new native Goal",
@@ -3809,7 +3813,7 @@
           "read_only": true
         }
       },
-      "closed_at": "2026-10-26T11:13:01.332803+00:00",
+      "closed_at": "2026-10-26T11:48:32.647132+00:00",
       "wardrobe_semantic": {
         "round_key": "grouped-cns-body-semantic-20261026",
         "source": "Continuation of active nativeGoal plus owner REA/nonvisualoperation steering",
@@ -3998,7 +4002,7 @@
           "metadata_note": "Source commit identity is recorded here; exact final metadata HEAD verification is in the existing ignored receipt to avoid self-reference."
         }
       },
-      "current_result_ref": "hair_crash_repro",
+      "current_result_ref": "sequential_material_r68",
       "piercing_delta": {
         "round_key": "aik-piercing-delta-20261026",
         "status": "CLOSED_SCOPED_PROGRESS_GOAL_CONTINUES",
@@ -4860,6 +4864,62 @@
           "metadata_note": "SameR67 close; finalexactHEADinignoredreceipt avoids selfreference."
         },
         "current_round_descendants": "Two readonly Judges completed and collected; no currentwriterdescendants."
+      },
+      "sequential_material_r68": {
+        "round_key": "ordered-cross-outfit-material-residue-r68-20261026",
+        "status": "PASS_SCOPED_FINITE_SEQUENCE_ORIGINAL_GRAY_OPEN",
+        "lane": "REVIEWED",
+        "source": "ActiveGoal/currentowner: prioritize sequential realcompatibility; no exhaustivecolors/options; reuseunchangedcore",
+        "at": "2026-10-26T11:32:59.284205+00:00",
+        "git_base": "aed4fb5a2591ba825a49df2879bbc4662332b6e2",
+        "entry_state_sha256": "057aa893e77acee27508dca8ecc9a03163e35ff79fe9ee131906cde186a9bd4e",
+        "entry_manifest_sha256": "290f0aa382a201eeddb776120c3c8e0070f60cf31feb8e518b044e6208bb507a",
+        "evidence": ".local/play-session-20261026/grouped-qa/sequence-material-r68",
+        "owned_scope": [
+          "One temporary unchangedQA421 module andverified enable suffix",
+          "Frozen five currentremembered Bodychoices only; no parameter/texture/hair changes",
+          "Ignored ordered active material/hidden readback andnecessary actualviews; owned State/manifest evidence"
+        ],
+        "acceptance": "Cross distinct mesh/materialslot counts thenreturn baselines; compare active materialchain/parameters andhidden masks with sameUID reference, distinguish unusedtrailing overrides. Preserveoriginal choices/config andexistingexclusions; no globalGrayrepairPASS withoutreproduction.",
+        "protected": "Story/account/global/loader/assets/realprogress nottouched; native/CNS originalchoices25configs restored; ExtraMod333 failingHair entry staysdisabled, other3retained; EVEExperienceoff.",
+        "baseline": {
+          "closed_rounds": 67,
+          "completion_scope": "compatibility-risk-groups-v6-owner-20261026",
+          "current_completion_percent": null
+        },
+        "frozen_uids": [
+          "Repacked Mod688",
+          "AiK_CH48_8866",
+          "UltimateNudeEve",
+          "AiK_CH56_7897",
+          "AiK_CH28_Rabbit7505"
+        ],
+        "next_action": "Apply owner acceptance to existing inventory as merged garment/consumer risk groups; reuse valid R68 ordered/material and R67 hair evidence. Fill only missing risky consumers, and check final camera recovery with settled native state; do not repeat colors/endpoints/shared core or blindly retry untriggered gray.",
+        "closed_at": "2026-10-26T11:48:32.647132+00:00",
+        "result": ".local/play-session-20261026/grouped-qa/sequence-material-r68/runtime-result.json",
+        "review": {
+          "at": "2026-10-26T11:48:32.647132+00:00",
+          "agent": "/root/ordered_material_r68_review",
+          "decision": "PASS_SCOPED",
+          "scope": "Five frozen Body choices;16 ordered and21total verified transitions;active material/hidden equality; six confirmed menu comparisons; exact settings/config restoration andtempcleanup",
+          "method": "Fresh readonlyJudge independently recomputed16material comparisons, mappeduniquecommands, reviewedframes/config/hashes/lifecycle withoutgame orfullsuite rerun",
+          "limits": [
+            "Originalwhole-gray cause NOT_REPRODUCED; no allgarment/color/hair/combinations/longrunPASS",
+            "Finalcamera/bodyvisibility NOT_ACCEPTED; wholeGoalOPEN"
+          ]
+        },
+        "evidence_summary": {
+          "distinct_choices": 5,
+          "ordered_steps": 16,
+          "total_verified_switches": 21,
+          "rejected_guarded_selects": 1,
+          "active_same_uid_differences": 0,
+          "confirmed_menu_comparisons": 6,
+          "new_native_crash_contexts": 0,
+          "original_whole_gray": "OPEN_NOT_REPRODUCED",
+          "final_camera_body_visibility": "NOT_ACCEPTED"
+        },
+        "manifest_sha256": "858203cdc72c80aa427ec93d3c5186a96236fa31ee4020f959957bb68310afc4"
       }
     },
     "owner_acceptance_20261026": {
