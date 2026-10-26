@@ -1515,11 +1515,11 @@
       "tested_with_complete_conclusion": null,
       "test_conclusion_percent": null,
       "statuses": {
-        "NOT_TESTED": 4720,
+        "NOT_TESTED": 4713,
         "PASS": 264,
         "REOPENED": 2,
         "WAITING_HUMAN": 1,
-        "PARTIAL": 107,
+        "PARTIAL": 114,
         "FAIL": 3,
         "BLOCKED_NOT_INSTALLED": 28
       },
@@ -1539,23 +1539,23 @@
       },
       "reason": "Owner explicitly removes exhaustive parameter/color/animation enumeration as completion requirement. Old264/5125 retained as history only; current merged applicability notfrozen, so no percentage orfakePASS.",
       "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
-      "manifest_sha256": "c03bd1163dfdc2f300f23bd2552267dcb8a32f2a000f7179387d58138b5928f4",
+      "manifest_sha256": "73ec49fbf64114e6e7efc752cdc528f9d2308afdf30088b3c168f8bdb6457f92",
       "target_identity_sha256": "955965cda7371a7ff208fdf736e19a1136e0628cf77a644ac49b5d4323aa9a92",
       "enumeration_validation": ".local/play-session-20261026/grouped-qa/risk-groups-r69/result.json",
-      "round_key": "extra331-skeleton-family-r77-20261027",
-      "round_status": "CLOSED_REVIEWED_SHARED_BINDING_REPAIR",
-      "count": 77,
+      "round_key": "converted-skeleton-cause-audit-r78-20261027",
+      "round_status": "CLOSED_DIRECT_SCOPED_AUDIT_AND_DELTA",
+      "count": 78,
       "coverage": "since_baseline",
-      "last_seq": 77,
-      "last_key": "extra331-skeleton-family-r77-20261027",
+      "last_seq": 78,
+      "last_key": "converted-skeleton-cause-audit-r78-20261027",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": null,
       "evidence_change_percentage_points": null,
       "scope_change_percentage_points": 0,
-      "change_rule": "136additional exact mesh headers normalized;1R76payload reused;9newPARTIAL +1revalidation. No fullgarmentPASS, unknown currentGoal denominator forbids percentage.",
-      "round_start_commit": "e809c9a794d084213b3296a5239eac55741c0258",
-      "scope_change": "No current scope/5129original/5125effective/1285knownunit/identity change; sourceUID remains attachment index, not completionunit.",
-      "milestone_change": "Shared copiedSkeleton mismatch normalized for137actual Body meshes with unchanged exports/bindpose and verified store arrays;10distinct hierarchy representative ordered checks/20rearviews valid;127runtime notaccepted.",
+      "change_rule": "182static correct refs,7newPARTIAL,0newfullPASS; no sourceasset change or scope shrink. Overall denominator unresolved; no percentage.",
+      "round_start_commit": "685e1389b6c28831139c62acb59be7f32ed78630",
+      "scope_change": "No5129/5125/known1285/target identity change. Mod1999 one hierarchy shared; no redundant color loop.",
+      "milestone_change": "R78 actual imports/bone parent subsets182native-correct; no unnecessaryassetpatch.7newPARTIAL/14orderedrearchecks, exact profile restore; firstloadMod1999 pose transient remainsOPEN.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1995,8 +1995,8 @@
       "remaining_rounds_estimate": null,
       "remaining_rounds_estimate_confidence": "UNKNOWN; heterogeneous unresolved scope and denominator unknown"
     },
-    "next_action": "先核查 Repacked Mod1032、Repacked Mod1999、Repacked ExtraMod2630 等多网格转换包的实际 Skeleton/动画消费者；有同类引用错误时按已验证机制批量修复，只补结构差异，不逐配色和公共功能复测。",
-    "updated_at": "2026-10-26T21:42:29.489704+00:00",
+    "next_action": "围绕 Mod1999 首次加载短暂双臂展开保留确切帧与原生绑定对照，只在实证复现后定位动画/缓存消费者；其余族继续按实际骨架/材质差异分组，不逐配色复测或套用 Extra331修复。",
+    "updated_at": "2026-10-26T22:23:37.173730+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2125,7 +2125,7 @@
         }
       }
     },
-    "round_closure_at": "2026-10-26T21:42:29.489704+00:00",
+    "round_closure_at": "2026-10-26T22:23:37.173730+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 14,
       "new_confirmed_this_round": 0,
@@ -2289,9 +2289,9 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "R77_REVIEWED_EXTRA331_SHARED_BINDING_COMPLETE",
-    "previous_goal_turn_classification": "PROGRESS:136newheader fixes withstaticpermesh proof,10runtime representatives and9newpartial leaves independentlyaccepted; sharedcore evidence reused, no fullgarmentPASS.",
-    "execution_status": "ACTIVE_GROUPED_COMPATIBILITY_NEXT_CONVERTED_SKELETON_AUDIT",
+    "current_segment": "R78_CONVERTED_SKELETON_CAUSE_AUDIT",
+    "previous_goal_turn_classification": "PROGRESS:182actual native refs exclude same copied-skeleton hypothesis for3sources;7newPARTIAL, exact profile and source/overlay integrity preserved; firstloadpose transientOPEN.",
+    "execution_status": "ACTIVE_GOAL_R78_SCOPED_UNIT_CLOSED",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
     "pause_source": "Current human: restart game, tests remain paused; subsequent black-screen repair does not resume tests",
     "user_play_handoff": {
@@ -2446,12 +2446,13 @@
         "unrelated_or_uncertain_mods": "PRESERVED",
         "evidence": ".local/manual-play-20261026/3252-installed-candidate.json"
       },
-      "next_action": "Current nativeGoal active; no foreground handoff requested. Continue next converted-skeleton audit; personal launch separately binds helpers/movement.",
+      "next_action": "围绕 Mod1999 首次加载短暂双臂展开保留确切帧与原生绑定对照，只在实证复现后定位动画/缓存消费者；其余族继续按实际骨架/材质差异分组，不逐配色复测或套用 Extra331修复。",
       "r76": "Exact one-mesh overlay retained; native Body restored through native UI and CNS profile exact. Test game closed; future personal launch must start/bind helpers and1.75 movement again.",
-      "helper_current_state": "Not running after collected test cleanup; no live assistance claim.",
+      "helper_current_state": "R78 owned test game/helpers closed. Future personal launch must freshly bind3assists/movement; no currently-live assistance claim.",
       "historical_next_action_before_r76": "Ownerplays. NativeGoal/tests remainpaused. Resume/debug onlydirecthumaninstruction; clothingrecurrence/Lilyworldskin unresolved.",
       "current_overlay": "R77family137overlay supersedesR76single withidenticalchoice2payload; exactR76preimage retained in skeleton-family-r77/overlay-preimage; alloriginalsourceassets/configs retained.",
-      "r77": "Test game/helpers closed normally; exactCNSprofile and mods restored; family overlay retained. Future personal launch must start/bind helpers and1.75 movement again."
+      "r77": "Test game/helpers closed normally; exactCNSprofile and mods restored; family overlay retained. Future personal launch must start/bind helpers and1.75 movement again.",
+      "r78": "No sourceasset changes; profile exactrestore; QA suffix/twofiles removed. Wrapper143 after WM_CLOSE, helper0/movement0, no new nativecrash directory."
     },
     "resume_source": "Current owner direct grouped MOD test/repair Goal Prompt; old console/Flatpak/Loop/admin and user foreground grants not resumed",
     "resumed_at": "2026-10-26T01:05:48.694134+00:00",
@@ -3306,14 +3307,14 @@
     "native_goal": {
       "threadId": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
       "status": "active",
-      "tokensUsed": 11678020,
-      "timeUsedSeconds": 69064,
+      "tokensUsed": 12187574,
+      "timeUsedSeconds": 71525,
       "createdAt": 1792972357,
-      "telemetry_at": "2026-10-26T21:42:29.460Z",
+      "telemetry_at": "2026-10-26T22:22:01+00:00",
       "telemetry_coverage": "Directnative current activation; no quota set or increased; historical logical lifetimecost remains UNKNOWN.",
       "same_objective_verified": true,
-      "last_checkpoint": "R77 independently reviewed shared137mesh binding repair,10runtime representatives and9newPARTIAL. OverallGoal active/incomplete; no native status transition.",
-      "updatedAt": 1793050860
+      "last_checkpoint": "R78 scoped182native-reference audit/7PARTIAL and exactrestoration. NativeGoal active/incomplete; no quota/status change.",
+      "updatedAt": 1793053321
     },
     "goal_resume_source": "Current native Goal reused; same logical compatibility task and original5129/effective5125 preserved",
     "historical_previous_goal_health_checkpoint": {
@@ -3691,7 +3692,7 @@
       "execution_source": "Direct owner native Goal objective submitted in thread 01a1757a-f84c-72b0-97bd-44ab8c53eb53 on 2026-10-26; execute MOD_TEST_REPAIR_PLAN_20261025 grouped QA",
       "owner_thread": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
       "lane": "DIRECT",
-      "status": "ACTIVE",
+      "status": "ACTIVE_NEXT_DELTA_R78_CLOSED",
       "owned_scope": [
         "PROJECT_STATE.json#mod_compatibility_restructure current grouped execution/progress projection; old paused console and pre-existing manual-play deltas remain separate",
         ".local/play-session-20261026/grouped-qa",
@@ -3709,7 +3710,7 @@
         "status": "active",
         "history": "Prior activation metadata retained at historical_native_goal_before_grouped_qa_20261026; logical task counters not reset",
         "previous_pause_source": "Direct owner pause; native toolconfirmed, no automaticresume",
-        "current_native_status_verified_at": "2026-10-26T21:42:29.460Z",
+        "current_native_status_verified_at": "2026-10-26T22:22:01+00:00",
         "current_status_source": "Native get_goal on same thread; direct owner continuation; prior pause metadata is historical."
       },
       "protected": "Old console/Flatpak/Loop/admin work remains paused; no foreground takeover, account/Cloud/global changes, story progression or save rollback; EVEExperience stays off. Existing unrelated pending work preserved.",
@@ -3722,10 +3723,10 @@
         "remaining_scope_unchanged": true
       },
       "test_save_boundary": "No independent story-save isolation established; forbid death/story/reward/travel tests and save rollback. Initial private launch/menu checks only; inspect scene before safe reversible movement/outfit checks.",
-      "round_accounting": "R77 static137/rawrepair136new+1reused, one10representative game batch, cleanup and independentreview countonce; not permesh/color/call.",
-      "next_action": "先核查 Repacked Mod1032、Repacked Mod1999、Repacked ExtraMod2630 等多网格转换包的实际 Skeleton/动画消费者；有同类引用错误时按已验证机制批量修复，只补结构差异，不逐配色和公共功能复测。",
+      "round_accounting": "R78 audit182 + one7representative batch + exact pose reselect delta + restoration counts once; no permesh/color/call rounds.",
+      "next_action": "围绕 Mod1999 首次加载短暂双臂展开保留确切帧与原生绑定对照，只在实证复现后定位动画/缓存消费者；其余族继续按实际骨架/材质差异分组，不逐配色复测或套用 Extra331修复。",
       "at": "2026-10-25T23:55:06.640620+00:00",
-      "lane_reason": "UnchangedacceptedQA422/currentcore; boundedoriginalCNSselections andread-onlyscoped observations; no runtimebehaviorrepair.",
+      "lane_reason": "No product/sourceasset repair or difficult fullgarment acceptance. Only verified static imports, actual readback/frame facts and exact profile/QA restoration. Initial pose cause staysOPEN.",
       "findings": {
         "v3": "Confirmed Lua index13 reads native slot12; no successful native-body binding. Current fix readsLua14.",
         "v4": "Real native cold-load false positive and Actor-deselection invisible-body regressions; FAIL preserved.",
@@ -3737,7 +3738,7 @@
         "v8": "Fresh independent PASS for current BS_ alias transition/native-menu scope; full S1/Goal incomplete"
       },
       "candidate_sha256": "5679d28fe2e6719314c45e6709a99c4920c866a24b21953dd66e39a05dae4e12",
-      "updated_at": "2026-10-26T21:42:29.489704+00:00",
+      "updated_at": "2026-10-26T22:23:37.173730+00:00",
       "grouped_assertions": {
         "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
         "sha256": "a800adc5603d0edb2747f20dc335cc109dd88357033ddfcdadb856aac810b618",
@@ -3751,34 +3752,37 @@
       },
       "hair_original_context": "Exact BUG-HAIR-20261025-01 context recovered read-only from native crash directory; private pointer .local/play-session-20261026/grouped-qa/hair-incident-context-recovery.json; GameThread AV verified, cause unknown",
       "runtime_ownership": {
-        "game": "Exact2315429/start162980330 andnativewrapper99998 ended0.",
-        "helper": "Ownwrapper49944 andshutdownCLI35733 exited0.",
-        "movement": "Own93638 stopped0 andrestoredownedfloats beforegameexit.",
-        "bridge": "QA422owned2filesremovedafterexacthashverification; onlyownappendedsuffix truncatedtomodsoriginal2d4e87...",
-        "private_display": "Ownedprivate:2 retainedforactiveGoal; physicalforeground untouched.",
-        "children": "R74Judgecompletedandcollected; noactiveownchildren.",
-        "evidence": ".local/play-session-20261026/grouped-qa/short-move-repair-r74/result.json"
+        "status": "OWNED_GAME_HELPERS_EXITED",
+        "evidence": ".local/play-session-20261026/grouped-qa/converted-skeleton-audit-r78/final-restoration.json",
+        "game_wrapper_exit": 143,
+        "helper_exits": [
+          0,
+          0
+        ],
+        "private_display": "Retained existing activeGoal task display; no foreground"
       },
       "candidate_source": "src/runtime/NativeOutfitOwnership.lua",
-      "latest_runtime_result": ".local/play-session-20261026/grouped-qa/skeleton-family-r77/runtime-result.json",
-      "last_material_progress": "R77 exact rawSkeleton binding normalization1→137, with136newheaders and1unchangedR76payload;137staticproofs,10distinct structural delayedchecks/20rearframes,9newPARTIAL, no fullgarmentPASS.",
-      "round_key": "extra331-skeleton-family-r77-20261027",
+      "latest_runtime_result": ".local/play-session-20261026/grouped-qa/converted-skeleton-audit-r78/runtime-result.json",
+      "last_material_progress": "R78 actual imports/bone parent subsets182native-correct; no unnecessaryassetpatch.7newPARTIAL/14orderedrearchecks, exact profile restore; firstloadMod1999 pose transient remainsOPEN.",
+      "round_key": "converted-skeleton-cause-audit-r78-20261027",
       "round_closed_once": true,
       "previous_current_projection_ref": ".local/play-session-20261026/grouped-qa/PROJECT_STATE.entry.json",
       "independent_review": {
-        "status": "PASS_SCOPED",
-        "reviewer": "/root/r77_skeleton_family_review",
-        "manifest_sha256": "c03bd1163dfdc2f300f23bd2552267dcb8a32f2a000f7179387d58138b5928f4",
-        "receipt_ref": ".local/play-session-20261026/grouped-qa/skeleton-family-r77/independent-review.json"
+        "status": "NOT_REQUIRED_DIRECT",
+        "reason": "No sourceasset/product repair; bounded observed facts only, unresolved visual cause explicit. R77review remains scoped to R77."
       },
       "git_delivery": {
         "status": "DELIVERY_RECEIPT_AUTHORITATIVE_FOR_REMOTE_VERIFICATION",
         "target": "codex/grouped-mod-qa-20261026",
-        "receipt_ref": ".local/play-session-20261026/grouped-qa/skeleton-family-r77/round-delivery.json",
+        "entry_verified_head": "685e1389b6c28831139c62acb59be7f32ed78630",
+        "main_unchanged": "aafc4b0fcf94bdc73b8e6810971281953f945fe9",
+        "policy": "Explicit implementation branch only, no mainmerge; sanitizedState only; rawassets/logs/paths/identities local.",
+        "closure_evidence": ".local/play-session-20261026/grouped-qa/converted-skeleton-audit-r78/round-delivery.json",
+        "receipt_ref": ".local/play-session-20261026/grouped-qa/converted-skeleton-audit-r78/round-delivery.json",
         "reviewed_paths": [
           "PROJECT_STATE.json exact Root-owned projection"
         ],
-        "previous_verified_commit": "e809c9a794d084213b3296a5239eac55741c0258",
+        "previous_verified_commit": "685e1389b6c28831139c62acb59be7f32ed78630",
         "main_merge_authorized": false
       },
       "entry_process_audit": "No SB.exe or SB-Win64-Shipping.exe live; previous hair session PID1913315 absent; lifecycle-end confirms own helper stopped. Steam provider retained, no input granted to foreground.",
@@ -3865,7 +3869,7 @@
         },
         "r73_reuse_correction": "Beforefuturecorechecks, consult actualmanifest grouped_assertions structuredremaining_delta andlaterrecords. MOVE-REBIND-SAMEPROCESS-NEWPAWN alreadyhasactual875proof andmustbereused absent relevantchange; older narrativegap sentences arehistorical."
       },
-      "closed_at": "2026-10-26T21:42:29.489704+00:00",
+      "closed_at": "2026-10-26T22:23:37.173730+00:00",
       "wardrobe_semantic": {
         "round_key": "grouped-cns-body-semantic-20261026",
         "source": "Continuation of active nativeGoal plus owner REA/nonvisualoperation steering",
@@ -4054,7 +4058,7 @@
           "metadata_note": "Source commit identity is recorded here; exact final metadata HEAD verification is in the existing ignored receipt to avoid self-reference."
         }
       },
-      "current_result_ref": "skeleton_family_r77",
+      "current_result_ref": "converted_skeleton_r78",
       "piercing_delta": {
         "round_key": "aik-piercing-delta-20261026",
         "status": "CLOSED_SCOPED_PROGRESS_GOAL_CONTINUES",
@@ -5401,6 +5405,79 @@
         "rollback_ref": ".local/play-session-20261026/grouped-qa/skeleton-family-r77/rollback-to-r76.py",
         "next_container_leads_ref": ".local/play-session-20261026/grouped-qa/skeleton-family-r77/next-container-leads.json",
         "remaining": "Other127runtime/render, allfrontfit/physics/gait/longsession and broaderGoal remain unaccepted. Do not infer fullgarment or all-mod compatibility from common binding repair."
+      },
+      "converted_skeleton_r78": {
+        "at": "2026-10-26T21:54:22.593118+00:00",
+        "status": "DIRECT_SCOPED_STATIC_AND_RUNTIME_EVIDENCE_REGISTERED",
+        "lane": "DIRECT",
+        "execution_source": "Active nativeGoal continuation after reviewed/delivered R77; full scope retained.",
+        "owned_scope": [
+          "PROJECT_STATE currentR78 fields",
+          ".local/play-session-20261026/grouped-qa/converted-skeleton-audit-r78",
+          "Initial read-only3sourcecontainers/configs via fixedlocalretoc; all originalassets retained. Runtime effects limited to temporaryQA and exact ownedprivate game/helper/movement.",
+          "Temporary AgentSessionQA exact2files and append-only mods.txt suffix; shared semantic29 control file, one privategame/helper/movement with exact identities;7newPARTIAL/static182metadata only; preserve all protected state and assets."
+        ],
+        "preimage_manifest_sha256": "c03bd1163dfdc2f300f23bd2552267dcb8a32f2a000f7179387d58138b5928f4",
+        "acceptance": "Exact existing CNS callback + read-only load/binding/material/frame observations for7 previously untested representatives; at mostPARTIAL. No repair or fullphysics/fit acceptance. Escalate if actual repair/difficult acceptance required.",
+        "source_uids": [
+          "Repacked Mod1032",
+          "Repacked Mod1999",
+          "Repacked ExtraMod2630"
+        ],
+        "resource_estimate": "Initial metadata/read-only audit output under256MB; one existing CLI/asset at a time. Stream large source/packet hashes; no fullassetpack copies.",
+        "protected": "R77familyoverlay, all originalsourceassets/configs/saves, knownhair/Wardress/Mod74exclusions and7unrelatedState groups/15olderfiles; no story/rollback/globalapp work.",
+        "next_action": "围绕 Mod1999 首次加载短暂双臂展开保留确切帧与原生绑定对照，只在实证复现后定位动画/缓存消费者；其余族继续按实际骨架/材质差异分组，不逐配色复测或套用 Extra331修复。",
+        "actual_reference_audit_ref": ".local/play-session-20261026/grouped-qa/converted-skeleton-audit-r78/actual-reference-audit.json",
+        "actual_findings": {
+          "native_skeleton_references": 182,
+          "bone_name_parent_native_subsets": 182,
+          "source_asset_changes": 0,
+          "Mod1999_distinct_bone_hierarchies": 1
+        },
+        "runtime_batch_ref": ".local/play-session-20261026/grouped-qa/converted-skeleton-audit-r78/runtime-batch.json",
+        "deployment_ref": ".local/play-session-20261026/grouped-qa/converted-skeleton-audit-r78/deployment.installed.json",
+        "game_binding_ref": ".local/play-session-20261026/grouped-qa/converted-skeleton-audit-r78/game-binding.json",
+        "runtime_result_ref": ".local/play-session-20261026/grouped-qa/converted-skeleton-audit-r78/runtime-result.json",
+        "manifest_sha256": "73ec49fbf64114e6e7efc752cdc528f9d2308afdf30088b3c168f8bdb6457f92",
+        "static_meshes": 182,
+        "native_reference_meshes": 182,
+        "source_assets_changed": 0,
+        "direct_runtime_choices": [
+          {
+            "uid": "Repacked Mod1032",
+            "choice_index": 20
+          },
+          {
+            "uid": "Repacked Mod1032",
+            "choice_index": 11
+          },
+          {
+            "uid": "Repacked Mod1032",
+            "choice_index": 3
+          },
+          {
+            "uid": "Repacked Mod1999",
+            "choice_index": 51
+          },
+          {
+            "uid": "Repacked ExtraMod2630",
+            "choice_index": 15
+          },
+          {
+            "uid": "Repacked ExtraMod2630",
+            "choice_index": 52
+          },
+          {
+            "uid": "Repacked ExtraMod2630",
+            "choice_index": 23
+          }
+        ],
+        "unobserved_runtime_meshes_this_round": 175,
+        "new_partial_leaf_count": 7,
+        "new_complete_leaf_PASS": 0,
+        "pose_counterexample": "Mod1999 index51 firstload armswide→lowering; exact reselect3frames armsdown. CauseOPEN, no exclusion.",
+        "resources_closed_ref": ".local/play-session-20261026/grouped-qa/converted-skeleton-audit-r78/final-restoration.json",
+        "profile_roundtrip_sha256": "0ef54f650533d84ace32b44f3bb2c5bb292e0b9f71e68ffcff40247ee3361242"
       }
     },
     "owner_acceptance_20261026": {
