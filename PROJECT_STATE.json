@@ -1542,20 +1542,20 @@
       "manifest_sha256": "3a180f170d726173b6fcf96200590a974d9d479a79b9f949ccf5e929f451dc01",
       "target_identity_sha256": "955965cda7371a7ff208fdf736e19a1136e0628cf77a644ac49b5d4323aa9a92",
       "enumeration_validation": ".local/play-session-20261026/grouped-qa/risk-groups-r69/result.json",
-      "round_key": "pony-character-native-readback-r86-20261027",
-      "round_status": "CLOSED_R86_ONE_PONY_NATIVE_FIELD_APPLY_RESTORE",
-      "count": 86,
+      "round_key": "hair-crash-native-asset-audit-r87-20261027",
+      "round_status": "CLOSED_R87_SAVED_HAIR_CRASH_DIAGNOSIS",
+      "count": 87,
       "coverage": "since_baseline",
-      "last_seq": 86,
-      "last_key": "pony-character-native-readback-r86-20261027",
+      "last_seq": 87,
+      "last_key": "hair-crash-native-asset-audit-r87-20261027",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": null,
       "evidence_change_percentage_points": null,
       "scope_change_percentage_points": 0,
-      "change_rule": "Oneexactnativebinding/recovery assertion closesoneexistingPARTIAL gap; no wholeleafPASS/status/target/group count change or denominator shrink.",
-      "round_start_commit": "18b1fe64daf50f9faa69171041f872b988cf4901",
-      "scope_change": "Original5129/effective5125/known1263units andfailures retained; no assetexclusions.",
-      "milestone_change": "OneactualPonycloth asset/nativefield transition verified+delayed+nativefallback restored; standardPhysicsAssetOverride unchanged as expected. R84choice4bindinggap closed; no newwholeleafPASS/PARTIAL, source/profile/processes recovered.",
+      "change_rule": "Diagnostic narrowing only; unchanged inventory, statuses, old failure and accepted exclusions; no new runtime/fullleaf acceptance.",
+      "round_start_commit": "3f59f691ed7d6fe017f39e3dfc8594132cf3cb47",
+      "scope_change": "Original5129/effective5125/known1263units unchanged; no aliases/exclusions.",
+      "milestone_change": "Saved fault operand/parent-remapping hypothesis tied to actual84-vs30 mesh/animation reference hierarchy difference;2matchingcontrols. Exact cause and typedbadSkeleton identity unresolved, Hair0 staysOFF.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1898,7 +1898,7 @@
       "remaining_rounds": null,
       "remaining_rounds_confidence": "UNKNOWN",
       "window": [],
-      "prediction_reason": "Heterogeneous compatibility/recovery gaps and unresolved totalGoal partition; known1285index is not remainingtest count.",
+      "prediction_reason": "Heterogeneous acceptance/applicability and completion denominator unresolved; no comparable throughput estimate.",
       "original_unified_required_retained": 5129,
       "latest_specific_followup": "integration:sequential-outfit-material-recovery",
       "grouped_assertion_audit": {
@@ -1993,13 +1993,13 @@
       },
       "remaining_rounds_estimate": null,
       "remaining_rounds_estimate_confidence": "UNKNOWN; heterogeneous unresolved scope and denominator unknown",
-      "new_shared_scoped_assertions_this_round": 1,
+      "new_shared_scoped_assertions_this_round": 0,
       "new_partial_leaf_this_round": 0,
       "new_shared_static_assertions_this_round": 0,
       "evidence_refinement_known_units_delta": 0
     },
-    "next_action": "回到R67已存发型崩溃样本：只读核对已隔离Hair0与相邻正常发型的骨架、动画及布料绑定，复用原崩溃上下文和R80/R86机制结论。没有新依据不重放旧崩溃，不新增排除不确定MOD，不重复本轮换装/移动/辅助。",
-    "updated_at": "2026-10-27T02:53:09.771946+00:00",
+    "next_action": "按原计划回到R56/R59灰色/未加载材质欠项，先核对已有证据和当前消费者版本，只补会影响正常换衣且尚无证据的独有材质差异。复用公共启动/输入/移动/辅助结论，保持Hair0禁用；其根因堆内存缺口不阻塞其他族，不重放原崩溃或穷举颜色。",
+    "updated_at": "2026-10-27T03:28:01.229229+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2128,7 +2128,7 @@
         }
       }
     },
-    "round_closure_at": "2026-10-27T02:53:09.771946+00:00",
+    "round_closure_at": "2026-10-27T03:28:01.229229+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 14,
       "new_confirmed_this_round": 0,
@@ -2292,9 +2292,9 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "R86_PONY_NATIVE_BINDING_CLOSED_RETURN_HAIR_INCIDENT",
-    "previous_goal_turn_classification": "PROGRESS:REA6.7.0 currentPE identity andnativeexec/currentUFunction mapping proveactualclothfield. Oneexactasset applies/delays/restoresdefault viaordinarynative menu, closingR84choice4bindinggap withoutadditionalclothes/core/move tests. No speculativefix/exclusion, exactprofile/source/process recovery.",
-    "execution_status": "ACTIVE_GOAL_R86_SCOPED_UNIT_CLOSED",
+    "current_segment": "R87_SAVED_HAIR_CRASH_DIAGNOSIS_CLOSED",
+    "previous_goal_turn_classification": "PROGRESS: verified saved nativeexception operand and narrowed concrete mesh/configured-animation hierarchy mismatch with2healthycontrols. No speculative repair, rerun, new exclusion or inheritedPASS. Missing heap/rootcause preserved; independent material gaps remain ready.",
+    "execution_status": "ACTIVE_R87_CLOSED_GOAL_INCOMPLETE",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
     "pause_source": "Current human: restart game, tests remain paused; subsequent black-screen repair does not resume tests",
     "user_play_handoff": {
@@ -3311,14 +3311,14 @@
     "native_goal": {
       "threadId": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
       "status": "active",
-      "tokensUsed": 14390974,
-      "timeUsedSeconds": 87794,
+      "tokensUsed": 14684115,
+      "timeUsedSeconds": 89898,
       "createdAt": 1792972357,
-      "telemetry_at": "2026-10-27T02:53:09+00:00",
+      "telemetry_at": "2026-10-27T03:28:35.297593+00:00",
       "telemetry_coverage": "Directnative current activation; no quota set or increased; historical logical lifetimecost remains UNKNOWN.",
       "same_objective_verified": true,
-      "last_checkpoint": "R86 currentREA PEidentity/nativeexec andtypedSBPonytail fieldmapping verified. Oneasset applies/delays/restoresnative default, closingR84choice4gap; no newwholeleafPASS/status/target reduction. Source/CNSprofile/gamehelpers restored/closed. FullGoal active/incomplete; returntooriginalhairincident readonly evidence.",
-      "updatedAt": 1793069589
+      "last_checkpoint": "R87 readonly native/asset diagnosis closed; Hair0 exclusion preserved, exact cause unresolved; remaining material applicability/differences next. FullGoal active/incomplete.",
+      "updatedAt": 1793071693
     },
     "goal_resume_source": "Current native Goal reused; same logical compatibility task and original5129/effective5125 preserved",
     "historical_previous_goal_health_checkpoint": {
@@ -3696,7 +3696,7 @@
       "execution_source": "Direct owner native Goal objective submitted in thread 01a1757a-f84c-72b0-97bd-44ab8c53eb53 on 2026-10-26; execute MOD_TEST_REPAIR_PLAN_20261025 grouped QA",
       "owner_thread": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
       "lane": "DIRECT",
-      "status": "CLOSED_R86_ONE_PONY_NATIVE_FIELD_APPLY_RESTORE",
+      "status": "R87_CLOSED_HAIR_CRASH_NATIVE_AND_ASSET_FACTS",
       "owned_scope": [
         "PROJECT_STATE.json#mod_compatibility_restructure current grouped execution/progress projection; old paused console and pre-existing manual-play deltas remain separate",
         ".local/play-session-20261026/grouped-qa",
@@ -3714,7 +3714,7 @@
         "status": "active",
         "history": "Prior activation metadata retained at historical_native_goal_before_grouped_qa_20261026; logical task counters not reset",
         "previous_pause_source": "Direct owner pause; native toolconfirmed, no automaticresume",
-        "current_native_status_verified_at": "2026-10-27T02:53:09+00:00",
+        "current_native_status_verified_at": "2026-10-27T03:28:01.229229+00:00",
         "current_status_source": "Directnative get_goal same objective; active/incomplete, noquota set/increased."
       },
       "protected": "Old console/Flatpak/Loop/admin work remains paused; no foreground takeover, account/Cloud/global changes, story progression or save rollback; EVEExperience stays off. Existing unrelated pending work preserved.",
@@ -3727,10 +3727,10 @@
         "remaining_scope_unchanged": true
       },
       "test_save_boundary": "No independent story-save isolation established; forbid death/story/reward/travel tests and save rollback. Initial private launch/menu checks only; inspect scene before safe reversible movement/outfit checks.",
-      "round_accounting": "Onefocusednativefield discovery andoneexistingtarget apply/delayed/native-return validation closes once; tools/readbacks/cleanup are notextra rounds.",
-      "next_action": "回到R67已存发型崩溃样本：只读核对已隔离Hair0与相邻正常发型的骨架、动画及布料绑定，复用原崩溃上下文和R80/R86机制结论。没有新依据不重放旧崩溃，不新增排除不确定MOD，不重复本轮换装/移动/辅助。",
+      "round_accounting": "One saved-incident native/asset audit closes once; no replay, new acceptance or denominator reduction. Individual tools/asset reads are not rounds.",
+      "next_action": "按原计划回到R56/R59灰色/未加载材质欠项，先核对已有证据和当前消费者版本，只补会影响正常换衣且尚无证据的独有材质差异。复用公共启动/输入/移动/辅助结论，保持Hair0禁用；其根因堆内存缺口不阻塞其他族，不重放原崩溃或穷举颜色。",
       "at": "2026-10-25T23:55:06.640620+00:00",
-      "lane_reason": "Unchanged source/product assets; exactnativecode/currentUFunction/typedcomponent O_RDONLY mapping andordinaryselection facts, scopedbinding only, no subjectivephysics orrepair.",
+      "lane_reason": "DIRECT read-only saved minidump/current pinned PE and six serialized packets; exact metadata facts only, no runtime/config/asset mutation or alias acceptance.",
       "findings": {
         "v3": "Confirmed Lua index13 reads native slot12; no successful native-body binding. Current fix readsLua14.",
         "v4": "Real native cold-load false positive and Actor-deselection invisible-body regressions; FAIL preserved.",
@@ -3742,7 +3742,7 @@
         "v8": "Fresh independent PASS for current BS_ alias transition/native-menu scope; full S1/Goal incomplete"
       },
       "candidate_sha256": "bc2afbb862d01f2f556b66b8f55a31c1db55b3b5f6804afc9579c05cd965d2d1",
-      "updated_at": "2026-10-27T02:53:09.771946+00:00",
+      "updated_at": "2026-10-27T03:28:01.229229+00:00",
       "grouped_assertions": {
         "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
         "sha256": "a800adc5603d0edb2747f20dc335cc109dd88357033ddfcdadb856aac810b618",
@@ -3763,8 +3763,8 @@
       },
       "candidate_source": "src/runtime/OwnedLinkedPostProcess.lua",
       "latest_runtime_result": ".local/play-session-20261026/grouped-qa/pony-character-r86/runtime-result.json",
-      "last_material_progress": "OneactualPonycloth asset/nativefield transition verified+delayed+nativefallback restored; standardPhysicsAssetOverride unchanged as expected. R84choice4bindinggap closed; no newwholeleafPASS/PARTIAL, source/profile/processes recovered.",
-      "round_key": "pony-character-native-readback-r86-20261027",
+      "last_material_progress": "Saved native fault operand verified; bad84-bone mesh differs from configured30-bone animation Skeleton with2healthy matching controls. Exact heap root cause unresolved; no speculative repair or runtime PASS.",
+      "round_key": "hair-crash-native-asset-audit-r87-20261027",
       "round_closed_once": true,
       "previous_current_projection_ref": ".local/play-session-20261026/grouped-qa/PROJECT_STATE.entry.json",
       "independent_review": {
@@ -3774,12 +3774,12 @@
       "git_delivery": {
         "status": "DELIVERY_RECEIPT_AUTHORITATIVE_FOR_REMOTE_VERIFICATION",
         "target": "codex/grouped-mod-qa-20261026",
-        "entry_verified_head": "18b1fe64daf50f9faa69171041f872b988cf4901",
+        "entry_verified_head": "3f59f691ed7d6fe017f39e3dfc8594132cf3cb47",
         "main_merge_authorized": false,
         "reviewed_paths": [
           "PROJECT_STATE.json exactRootownedprojection"
         ],
-        "receipt_ref": ".local/play-session-20261026/grouped-qa/pony-character-r86/round-delivery.json"
+        "receipt_ref": ".local/play-session-20261026/grouped-qa/hair-crash-native-r87/round-delivery.json"
       },
       "entry_process_audit": "No SB.exe or SB-Win64-Shipping.exe live; previous hair session PID1913315 absent; lifecycle-end confirms own helper stopped. Steam provider retained, no input granted to foreground.",
       "entry_goal_turn_classification": "FIRST_ACTIVATION; no prior turn in this new native Goal",
@@ -3865,7 +3865,7 @@
         },
         "r73_reuse_correction": "Beforefuturecorechecks, consult actualmanifest grouped_assertions structuredremaining_delta andlaterrecords. MOVE-REBIND-SAMEPROCESS-NEWPAWN alreadyhasactual875proof andmustbereused absent relevantchange; older narrativegap sentences arehistorical."
       },
-      "closed_at": "2026-10-27T02:53:09.771946+00:00",
+      "closed_at": "2026-10-27T03:28:01.229229+00:00",
       "wardrobe_semantic": {
         "round_key": "grouped-cns-body-semantic-20261026",
         "source": "Continuation of active nativeGoal plus owner REA/nonvisualoperation steering",
@@ -4054,7 +4054,7 @@
           "metadata_note": "Source commit identity is recorded here; exact final metadata HEAD verification is in the existing ignored receipt to avoid self-reference."
         }
       },
-      "current_result_ref": "pony_character_r86",
+      "current_result_ref": "hair_crash_native_r87",
       "piercing_delta": {
         "round_key": "aik-piercing-delta-20261026",
         "status": "CLOSED_SCOPED_PROGRESS_GOAL_CONTINUES",
@@ -5824,6 +5824,31 @@
         "new_exclusions": 0,
         "profile_roundtrip_sha256": "0ef54f650533d84ace32b44f3bb2c5bb292e0b9f71e68ffcff40247ee3361242",
         "resources_closed_ref": ".local/play-session-20261026/grouped-qa/pony-character-r86/final-restoration.json"
+      },
+      "hair_crash_native_r87": {
+        "at": "2026-10-27T03:07:01.468551+00:00",
+        "status": "READONLY_DIAGNOSIS_NARROWED_EXACT_ROOT_CAUSE_UNPROVEN",
+        "execution_source": "Active nativeGoal continuation; R86 actualpony pointer apply/delay/default restoration closesgap andreturnsnextpriority tosavedhaircrash, priorPROGRESS.",
+        "entry_commit": "3f59f691ed7d6fe017f39e3dfc8594132cf3cb47",
+        "preimage_manifest_sha256": "3a180f170d726173b6fcf96200590a974d9d479a79b9f949ccf5e929f451dc01",
+        "owned_scope": [
+          "PROJECT_STATE ownedgrouped/progress",
+          ".local/play-session-20261026/grouped-qa/hair-crash-native-r87",
+          "read-only exactR67minidump/context andcurrentnativePE/Extra333/AiK/nativehair resource metadata; no sourceasset copies orstartup"
+        ],
+        "acceptance": "Tie nativeexception/registers/moduleidentity toboundedfault instruction andrelevantserializedbone/animation/cloth evidence; narrowcause only whereproved. PreserveR67exactHair0exclusion andallotheruncertainmods; no oldcrash replay orvisual/runtimePASS.",
+        "resource_plan": "Existing1.3MBminidump+ROmmap359MBnativeimage, serialboundedassetpacketifneeded; no newgame/helper/browser/dependency. Current37GBavailable/1.2TBdisk; wholepeakUNKNOWN.",
+        "next_action": "按原计划回到R56/R59灰色/未加载材质欠项，先核对已有证据和当前消费者版本，只补会影响正常换衣且尚无证据的独有材质差异。复用公共启动/输入/移动/辅助结论，保持Hair0禁用；其根因堆内存缺口不阻塞其他族，不重放原崩溃或穷举颜色。",
+        "closed_at": "2026-10-27T03:28:01.229229+00:00",
+        "static_result_ref": ".local/play-session-20261026/grouped-qa/hair-crash-native-r87/static-result.json",
+        "manifest_sha256": "3a180f170d726173b6fcf96200590a974d9d479a79b9f949ccf5e929f451dc01",
+        "fault_operand_verified": true,
+        "hierarchy_mismatch_indicator": true,
+        "exact_root_cause_proven": false,
+        "heap_and_bad_import_identity_gap_retained": true,
+        "new_leafPASS": 0,
+        "new_PARTIAL": 0,
+        "new_exclusions": 0
       }
     },
     "owner_acceptance_20261026": {
