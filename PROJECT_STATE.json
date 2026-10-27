@@ -2000,8 +2000,8 @@
       "new_shared_static_assertions_this_round": 0,
       "evidence_refinement_known_units_delta": 0
     },
-    "next_action": "先只读归并R88/R89原生菜单前后Pawn、World、Body组件和LinkedInstances所有权证据，判断142至145个实例来自预览/原生图缓存还是实际玩家残留。优先现有文件，证据不足再准备单次必要对照；复用R89恢复和既有移动/辅助，不重跑颜色、参数及整批衣服。",
-    "updated_at": "2026-10-27T05:20:42.107491+00:00",
+    "next_action": "补一次当前配置下的冷启动原生衣柜对照：确认没有保存的CNS身体覆盖，不选择CNS衣服、不装备其他服装，只记录开菜单前、身体列表初始化和关闭后2/5秒的同一玩家组件LinkedInstances、原生alias/网格和输入锁。先判明菜单本身是否触发实例增长，再决定后续定位；不直接清空未知链接、不重复颜色或公共辅助成功率。",
+    "updated_at": "2026-10-27T05:35:21.832616+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -3313,14 +3313,14 @@
     "native_goal": {
       "threadId": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
       "status": "active",
-      "tokensUsed": 15585369,
-      "timeUsedSeconds": 96825,
+      "tokensUsed": 15659492,
+      "timeUsedSeconds": 97472,
       "createdAt": 1792972357,
-      "telemetry_at": "2026-10-27T05:23:49.881470+00:00",
+      "telemetry_at": "2026-10-27T05:35:21.832616+00:00",
       "telemetry_coverage": "Directnative current activation; no quota set or increased; historical logical lifetimecost remains UNKNOWN.",
       "same_objective_verified": true,
-      "last_checkpoint": "R89 reviewedNativeOwnershipv9 guardhardening adopted/tested; coldCNS/nativeother/sameoutfit/APIpriority paths andexactrestoration. Failedcandidate1/R88cause retained; fullGoal active/incomplete; classifyexistingnativeUIlinked evidence next.",
-      "updatedAt": 1793078621
+      "last_checkpoint": "R89 scoped native handoff repair delivered and read-only linked residency classified; no new round or acceptance. One cold native-menu-only comparison remains next; Goal active/incomplete.",
+      "updatedAt": 1793079268
     },
     "goal_resume_source": "Current native Goal reused; same logical compatibility task and original5129/effective5125 preserved",
     "historical_previous_goal_health_checkpoint": {
@@ -3730,7 +3730,7 @@
       },
       "test_save_boundary": "No independent story-save isolation established; forbid death/story/reward/travel tests and save rollback. Initial private launch/menu checks only; inspect scene before safe reversible movement/outfit checks.",
       "round_accounting": "Oneboundednativehandoffrepair witholdbaseline/failedcandidate1/finalcandidate2 andfreshreview closesonce. Games, tests, observercorrections andtoolcalls are notextra rounds.",
-      "next_action": "先只读归并R88/R89原生菜单前后Pawn、World、Body组件和LinkedInstances所有权证据，判断142至145个实例来自预览/原生图缓存还是实际玩家残留。优先现有文件，证据不足再准备单次必要对照；复用R89恢复和既有移动/辅助，不重跑颜色、参数及整批衣服。",
+      "next_action": "补一次当前配置下的冷启动原生衣柜对照：确认没有保存的CNS身体覆盖，不选择CNS衣服、不装备其他服装，只记录开菜单前、身体列表初始化和关闭后2/5秒的同一玩家组件LinkedInstances、原生alias/网格和输入锁。先判明菜单本身是否触发实例增长，再决定后续定位；不直接清空未知链接、不重复颜色或公共辅助成功率。",
       "at": "2026-10-25T23:55:06.640620+00:00",
       "lane_reason": "Recoveredguardpolicy andnewCNSAPIobserver, targetedLua regressions pluscurrentliveadoption andfreshindependentScopedPASS; nofullS1 orcausalclaims.",
       "findings": {
@@ -3744,7 +3744,7 @@
         "v8": "Fresh independent PASS for current BS_ alias transition/native-menu scope; full S1/Goal incomplete"
       },
       "candidate_sha256": "6cd2491c2f173a3fccb2f488a2acba1e4b1cc5d3ab130b676d867865dca15ed8",
-      "updated_at": "2026-10-27T05:20:42.107491+00:00",
+      "updated_at": "2026-10-27T05:35:21.832616+00:00",
       "grouped_assertions": {
         "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
         "sha256": "a800adc5603d0edb2747f20dc335cc109dd88357033ddfcdadb856aac810b618",
@@ -3782,7 +3782,7 @@
       "git_delivery": {
         "status": "DELIVERY_RECEIPT_AUTHORITATIVE_FOR_REMOTE_VERIFICATION",
         "target": "codex/grouped-mod-qa-20261026",
-        "entry_verified_head": "1847e98e3b72ff3af232f76f45d1f013a6bbcd60",
+        "entry_verified_head": "a12165d9172e6e3e17538fc2c6f26d855cee3854",
         "main_merge_authorized": false,
         "reviewed_paths": [
           "src/runtime/NativeOutfitOwnership.lua",
@@ -3791,7 +3791,8 @@
           "tests/test_native_outfit_ownership.py",
           "PROJECT_STATE.json exactRootownedprojection"
         ],
-        "receipt_ref": ".local/play-session-20261026/grouped-qa/native-same-alias-r89/round-delivery.json"
+        "receipt_ref": ".local/play-session-20261026/grouped-qa/native-same-alias-r89/round-delivery.followup.json",
+        "reason": "Same-round read-only diagnosis and next-action metadata; reviewed code/tests and manifest unchanged."
       },
       "entry_process_audit": "No SB.exe or SB-Win64-Shipping.exe live; previous hair session PID1913315 absent; lifecycle-end confirms own helper stopped. Steam provider retained, no input granted to foreground.",
       "entry_goal_turn_classification": "FIRST_ACTIVATION; no prior turn in this new native Goal",
@@ -5921,7 +5922,7 @@
         "manifest_preimage_sha256": "fbb732a33c2817063b83ddc2e36d973efd2f4145f883032eebfdd1a2fb04b6b4",
         "acceptance": "Exactnativealias/otherpublishedbodyidentity distinguishes explicitsameitem nativeunequip from unrelatedmenu/passiveload andnewerCNSchoice. Minimalrepair mustpreserve live mesh/otherselections/presets andoldchangedaliaspath, actualsameitem recovery +CNSreselect; no causalclaims onR88native linkedpopulation.",
         "resource_plan": "Atmostoneoldbaseline andonechangedmoduleprivategame fornewexactidentitygap+actualrepair validation. Reuseexistingdisplay2/runtime/helpers; serial boundedROsnapshots/stills, no dependencies/media/assetscopies.36GBavailable/1.2TBfree; wholepeakUNKNOWN.",
-        "next_action": "先只读归并R88/R89原生菜单前后Pawn、World、Body组件和LinkedInstances所有权证据，判断142至145个实例来自预览/原生图缓存还是实际玩家残留。优先现有文件，证据不足再准备单次必要对照；复用R89恢复和既有移动/辅助，不重跑颜色、参数及整批衣服。",
+        "next_action": "补一次当前配置下的冷启动原生衣柜对照：确认没有保存的CNS身体覆盖，不选择CNS衣服、不装备其他服装，只记录开菜单前、身体列表初始化和关闭后2/5秒的同一玩家组件LinkedInstances、原生alias/网格和输入锁。先判明菜单本身是否触发实例增长，再决定后续定位；不直接清空未知链接、不重复颜色或公共辅助成功率。",
         "candidate1_failure": "6cd3c8c0: actualotheraliasBS_Green_Suit/nativeCH09 withsavedBodyAiK stillpresent; preservedcandidate/failed-runtime.json. Sourcepanelvisibilityguard superseded; no failurePASS.",
         "resource_plan_revision": {
           "at": "2026-10-27T04:46:41.478470+00:00",
@@ -5949,7 +5950,19 @@
         "profile_roundtrip_sha256": "0ef54f650533d84ace32b44f3bb2c5bb292e0b9f71e68ffcff40247ee3361242",
         "resources_closed_ref": ".local/play-session-20261026/grouped-qa/native-same-alias-r89/final-restoration.json",
         "first_candidate_failure_preserved": true,
-        "original_R88_root_cause": "UNPROVEN; stablebugID/history andlimits retained"
+        "original_R88_root_cause": "UNPROVEN; stablebugID/history andlimits retained",
+        "linked_readonly_followup": {
+          "at": "2026-10-27T05:35:21.832616+00:00",
+          "lane": "DIRECT_READ_ONLY_EVIDENCE_CLASSIFICATION",
+          "evidence_ref": ".local/play-session-20261026/grouped-qa/native-same-alias-r89/linked-followup.json",
+          "evidence_sha256": "c7205808f288d1b65f8276691c13d878fbd8d3f32a648765fc90d59b09655bc4",
+          "input_files": 27,
+          "r88_snapshots": 13,
+          "r89_identity_only_snapshots": 6,
+          "conclusion": "同一玩家组件数组内142/143/145个唯一且原观察有效的对象，直接outer均为该组件；不是独立预览角色计数。活动执行、原生缓存意图、泄漏与崩溃因果仍未知。R89未采集该数组，不据换装恢复宣称实例数量修复。",
+          "no_new_game_or_acceptance": true,
+          "round_count_unchanged": 89
+        }
       }
     },
     "owner_acceptance_20261026": {
