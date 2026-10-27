@@ -1515,11 +1515,11 @@
       "tested_with_complete_conclusion": null,
       "test_conclusion_percent": null,
       "statuses": {
-        "NOT_TESTED": 4701,
+        "NOT_TESTED": 4695,
         "PASS": 264,
         "REOPENED": 2,
         "WAITING_HUMAN": 1,
-        "PARTIAL": 126,
+        "PARTIAL": 132,
         "FAIL": 3,
         "BLOCKED_NOT_INSTALLED": 28
       },
@@ -1539,23 +1539,23 @@
       },
       "reason": "Owner explicitly removes exhaustive parameter/color/animation enumeration as completion requirement. Old264/5125 retained as history only; current merged applicability notfrozen, so no percentage orfakePASS.",
       "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
-      "manifest_sha256": "2b273af2dc29d547d925d2e0ec24c1bbaba170737000f0c53909c87dfc221e20",
+      "manifest_sha256": "a67cd4e13a4b625056be9eec2575c4e3b958b1e74968359020dc5cb9bc458b0e",
       "target_identity_sha256": "955965cda7371a7ff208fdf736e19a1136e0628cf77a644ac49b5d4323aa9a92",
       "enumeration_validation": ".local/play-session-20261026/grouped-qa/risk-groups-r69/result.json",
-      "round_key": "converted-candidate-equivalence-r83-20261027",
-      "round_status": "CLOSED_R83_STATIC_ASSESSMENT_WITH_READER_LIMIT",
-      "count": 83,
+      "round_key": "converted-pony-delta-r84-20261027",
+      "round_status": "CLOSED_R84_DIRECT_6_BINDING_CANDIDATES",
+      "count": 84,
       "coverage": "since_baseline",
-      "last_seq": 83,
-      "last_key": "converted-candidate-equivalence-r83-20261027",
+      "last_seq": 84,
+      "last_key": "converted-pony-delta-r84-20261027",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": null,
       "evidence_change_percentage_points": null,
       "scope_change_percentage_points": 0,
-      "change_rule": "Static candidate eligibility and observer limitation only. No target/group/PASS/PARTIAL or runtime acceptance change.",
-      "round_start_commit": "239b843c522026f13ec86c67ec895a4bc70c75c2",
-      "scope_change": "Original5129/effective5125 and all1263known units preserved.",
-      "milestone_change": "69exact candidate reads:34parsed cannot merge under current explicitbinding/graph criteria;35parser unsupported preservedUNKNOWN.122choices screened; no runtime/status/alias changes.6unobservedPonyPhysics consumers selected for next real sequence.",
+      "change_rule": "6new NOT_TESTED→PARTIAL only.0newfullPASS; immutable IDs/payloads/weights/failures and1263knownunits retained. Unknown totalGoal denominator gives no completionpercentage.",
+      "round_start_commit": "1bb67ec20dd4c25f82291f0865e4bb4670f03838",
+      "scope_change": "No original5129/effective5125/known1263 identity/count changes; no newexclusions or uncertainmod removal.",
+      "milestone_change": "6previously NOT_TESTED exactmesh choices withdistinctPonyPhysics declarations becomePARTIAL;18native/main/PP/material reads links1;12stills+90motion samples no obviousstale/armsout; exactprofile/source restoration. Instantsettling/preview gaps preserved.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1994,12 +1994,12 @@
       "remaining_rounds_estimate": null,
       "remaining_rounds_estimate_confidence": "UNKNOWN; heterogeneous unresolved scope and denominator unknown",
       "new_shared_scoped_assertions_this_round": 0,
-      "new_partial_leaf_this_round": 0,
-      "new_shared_static_assertions_this_round": 1,
+      "new_partial_leaf_this_round": 6,
+      "new_shared_static_assertions_this_round": 0,
       "evidence_refinement_known_units_delta": 0
     },
-    "next_action": "已完成122配置的候选筛查；不再重跑同一等价检查或为Extra2630扩建解析器。下一轮按next-delta-batch的6个未观察PonyPhysics消费者做一次连续换装批次，只补延迟材质/联动与恢复差异；复用R80/R81公共核心，先核对游戏所有权。",
-    "updated_at": "2026-10-27T01:35:29.602284+00:00",
+    "next_action": "先只读定位CNS的OutPonyPA/SetPhysicsAsset实际消费者及短马尾条件，核实body保留原生CH29物理覆盖是否预期；有明确不兼容反例再修，不因引用不同禁用MOD。复用本批6项正常加载/延迟材质和短移动，不再重跑全部配置。",
+    "updated_at": "2026-10-27T01:54:55.725199+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2128,7 +2128,7 @@
         }
       }
     },
-    "round_closure_at": "2026-10-27T01:35:29.602284+00:00",
+    "round_closure_at": "2026-10-27T01:54:55.725199+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 14,
       "new_confirmed_this_round": 0,
@@ -2292,9 +2292,9 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "R83_STATIC_CANDIDATE_ASSESSMENT_CLOSED",
-    "previous_goal_turn_classification": "PROGRESS: exactread candidate assessment resolves why6samebody pairs cannot inherit PonyPhysics scope; unsupported reader cases retainedUNKNOWN, unchanged method not retried; next6distinctconsumer targets selected. No runtime/leaf acceptance gain.",
-    "execution_status": "ACTIVE_GOAL_R83_UNIT_CLOSED",
+    "current_segment": "R84_BINDING_DELTA_CLOSED_NEXT_LIVEPHYSICS_DIAGNOSIS",
+    "previous_goal_turn_classification": "PROGRESS:6newPARTIAL exactchoices/18native+material reads,12stills/90motion samples, no linkedgrowth/nativecrash orobviousstale material. All18shortpony refs unchanged andnativeCH29bodyoverride retained: focusedliveconsumer diagnosis next, no failure/exclusion inferred. Exactprofile/source/nativeoutfit restored; ownedresources exited0.",
+    "execution_status": "ACTIVE_GOAL_R84_SCOPED_UNIT_CLOSED",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
     "pause_source": "Current human: restart game, tests remain paused; subsequent black-screen repair does not resume tests",
     "user_play_handoff": {
@@ -3311,14 +3311,14 @@
     "native_goal": {
       "threadId": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
       "status": "active",
-      "tokensUsed": 14089957,
-      "timeUsedSeconds": 83133,
+      "tokensUsed": 14205216,
+      "timeUsedSeconds": 84299,
       "createdAt": 1792972357,
-      "telemetry_at": "2026-10-27T01:35:29+00:00",
+      "telemetry_at": "2026-10-27T01:54:55+00:00",
       "telemetry_coverage": "Directnative current activation; no quota set or increased; historical logical lifetimecost remains UNKNOWN.",
       "same_objective_verified": true,
-      "last_checkpoint": "R83:122choices screened/69actualbody reads;34parsed no eligible aliases,35readerunsupported UNKNOWN. No source/game/status change;6distinctPonyPhysics consumers next. Goal remainsactive/incomplete.",
-      "updatedAt": 1793064929
+      "last_checkpoint": "R84 observed6target choices/18native+materialstates and90sparsemotionframes, no obviousresidue/crashes. ExactCNSprofile/source/nativeCH29 restored andownedgame/helpers exited. Livephysics-declaration discrepancy remainsOPEN; Goal incomplete.",
+      "updatedAt": 1793066095
     },
     "goal_resume_source": "Current native Goal reused; same logical compatibility task and original5129/effective5125 preserved",
     "historical_previous_goal_health_checkpoint": {
@@ -3696,7 +3696,7 @@
       "execution_source": "Direct owner native Goal objective submitted in thread 01a1757a-f84c-72b0-97bd-44ab8c53eb53 on 2026-10-26; execute MOD_TEST_REPAIR_PLAN_20261025 grouped QA",
       "owner_thread": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
       "lane": "DIRECT",
-      "status": "CLOSED_R83_STATIC_ASSESSMENT_WITH_READER_LIMIT",
+      "status": "CLOSED_R84_DIRECT_6_BINDING_CANDIDATES",
       "owned_scope": [
         "PROJECT_STATE.json#mod_compatibility_restructure current grouped execution/progress projection; old paused console and pre-existing manual-play deltas remain separate",
         ".local/play-session-20261026/grouped-qa",
@@ -3714,7 +3714,7 @@
         "status": "active",
         "history": "Prior activation metadata retained at historical_native_goal_before_grouped_qa_20261026; logical task counters not reset",
         "previous_pause_source": "Direct owner pause; native toolconfirmed, no automaticresume",
-        "current_native_status_verified_at": "2026-10-27T01:35:29+00:00",
+        "current_native_status_verified_at": "2026-10-27T01:54:55+00:00",
         "current_status_source": "Directnative get_goal same objective; active/incomplete, noquota set/increased."
       },
       "protected": "Old console/Flatpak/Loop/admin work remains paused; no foreground takeover, account/Cloud/global changes, story progression or save rollback; EVEExperience stays off. Existing unrelated pending work preserved.",
@@ -3727,10 +3727,10 @@
         "remaining_scope_unchanged": true
       },
       "test_save_boundary": "No independent story-save isolation established; forbid death/story/reward/travel tests and save rollback. Initial private launch/menu checks only; inspect scene before safe reversible movement/outfit checks.",
-      "round_accounting": "One122-choice screening/69-body candidate audit and source-pin validation closes once; parser failures and toolcalls are not extra rounds.",
-      "next_action": "已完成122配置的候选筛查；不再重跑同一等价检查或为Extra2630扩建解析器。下一轮按next-delta-batch的6个未观察PonyPhysics消费者做一次连续换装批次，只补延迟材质/联动与恢复差异；复用R80/R81公共核心，先核对游戏所有权。",
+      "round_accounting": "One6target ordered batch with18readonlystates/6boundedmoves and exactnative/profile/resource restoration closes once. No permesh/frame/input/callback rounds or repeatedcore acceptance.",
+      "next_action": "先只读定位CNS的OutPonyPA/SetPhysicsAsset实际消费者及短马尾条件，核实body保留原生CH29物理覆盖是否预期；有明确不兼容反例再修，不因引用不同禁用MOD。复用本批6项正常加载/延迟材质和短移动，不再重跑全部配置。",
       "at": "2026-10-25T23:55:06.640620+00:00",
-      "lane_reason": "Actual output only records read-only candidate facts and parser limits; no alias, policy, compatibility acceptance or product changes. Planned REVIEWED alias route was not used.",
+      "lane_reason": "Unchanged product/sourceassets, existingguarded selector/readonly nativefields and sparseframefacts only, atmostPARTIAL. No difficultfullgarment/crashcause acceptance.",
       "findings": {
         "v3": "Confirmed Lua index13 reads native slot12; no successful native-body binding. Current fix readsLua14.",
         "v4": "Real native cold-load false positive and Actor-deselection invisible-body regressions; FAIL preserved.",
@@ -3742,7 +3742,7 @@
         "v8": "Fresh independent PASS for current BS_ alias transition/native-menu scope; full S1/Goal incomplete"
       },
       "candidate_sha256": "bc2afbb862d01f2f556b66b8f55a31c1db55b3b5f6804afc9579c05cd965d2d1",
-      "updated_at": "2026-10-27T01:35:29.602284+00:00",
+      "updated_at": "2026-10-27T01:54:55.725199+00:00",
       "grouped_assertions": {
         "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
         "sha256": "a800adc5603d0edb2747f20dc335cc109dd88357033ddfcdadb856aac810b618",
@@ -3756,28 +3756,31 @@
       },
       "hair_original_context": "Exact BUG-HAIR-20261025-01 context recovered read-only from native crash directory; private pointer .local/play-session-20261026/grouped-qa/hair-incident-context-recovery.json; GameThread AV verified, cause unknown",
       "runtime_ownership": {
-        "status": "NO_GAME_HELPER_BROWSER_STARTED; ALL82_REGISTERED_CLI_READERS_GONE",
-        "evidence": ".local/play-session-20261026/grouped-qa/variant-equivalence-r83/root-verification.json"
+        "status": "OWNED_GAME_HELPERS_6CAPTURES_EXITED_0",
+        "evidence": ".local/play-session-20261026/grouped-qa/converted-pony-delta-r84/final-restoration.json",
+        "sameprefix_residue_ref": ".local/play-session-20261026/grouped-qa/converted-pony-delta-r84/postexit-prefix-processes.json",
+        "private_display": "Existing exactactiveGoalprivate2 retained; foreground untouched."
       },
       "candidate_source": "src/runtime/OwnedLinkedPostProcess.lua",
-      "latest_runtime_result": ".local/play-session-20261026/grouped-qa/converted-mesh-delta-r81/runtime-result.json",
-      "last_material_progress": "69exact candidate reads:34parsed cannot merge under current explicitbinding/graph criteria;35parser unsupported preservedUNKNOWN.122choices screened; no runtime/status/alias changes.6unobservedPonyPhysics consumers selected for next real sequence.",
-      "round_key": "converted-candidate-equivalence-r83-20261027",
+      "latest_runtime_result": ".local/play-session-20261026/grouped-qa/converted-pony-delta-r84/runtime-result.json",
+      "last_material_progress": "6previously NOT_TESTED exactmesh choices withdistinctPonyPhysics declarations becomePARTIAL;18native/main/PP/material reads links1;12stills+90motion samples no obviousstale/armsout; exactprofile/source restoration. Instantsettling/preview gaps preserved.",
+      "round_key": "converted-pony-delta-r84-20261027",
       "round_closed_once": true,
       "previous_current_projection_ref": ".local/play-session-20261026/grouped-qa/PROJECT_STATE.entry.json",
       "independent_review": {
-        "status": "NOT_REQUIRED_DIRECT_STATIC_FACTS",
-        "reason": "Actual output only records read-only candidate facts and parser limits; no alias, policy, compatibility acceptance or product changes. Planned REVIEWED alias route was not used."
+        "status": "NOT_REQUIRED_DIRECT",
+        "reason": "No productrepair/fullgarment or subjectiveacceptance. R80freshJudge remainsapplicable to unchanged lifecycle source only."
       },
       "git_delivery": {
         "status": "DELIVERY_RECEIPT_AUTHORITATIVE_FOR_REMOTE_VERIFICATION",
         "target": "codex/grouped-mod-qa-20261026",
-        "entry_verified_head": "239b843c522026f13ec86c67ec895a4bc70c75c2",
+        "entry_verified_head": "1bb67ec20dd4c25f82291f0865e4bb4670f03838",
+        "main_unchanged": "aafc4b0fcf94bdc73b8e6810971281953f945fe9",
         "main_merge_authorized": false,
         "reviewed_paths": [
           "PROJECT_STATE.json exact Root-owned projection"
         ],
-        "receipt_ref": ".local/play-session-20261026/grouped-qa/variant-equivalence-r83/round-delivery.json"
+        "receipt_ref": ".local/play-session-20261026/grouped-qa/converted-pony-delta-r84/round-delivery.json"
       },
       "entry_process_audit": "No SB.exe or SB-Win64-Shipping.exe live; previous hair session PID1913315 absent; lifecycle-end confirms own helper stopped. Steam provider retained, no input granted to foreground.",
       "entry_goal_turn_classification": "FIRST_ACTIVATION; no prior turn in this new native Goal",
@@ -3863,7 +3866,7 @@
         },
         "r73_reuse_correction": "Beforefuturecorechecks, consult actualmanifest grouped_assertions structuredremaining_delta andlaterrecords. MOVE-REBIND-SAMEPROCESS-NEWPAWN alreadyhasactual875proof andmustbereused absent relevantchange; older narrativegap sentences arehistorical."
       },
-      "closed_at": "2026-10-27T01:35:29.602284+00:00",
+      "closed_at": "2026-10-27T01:54:55.725199+00:00",
       "wardrobe_semantic": {
         "round_key": "grouped-cns-body-semantic-20261026",
         "source": "Continuation of active nativeGoal plus owner REA/nonvisualoperation steering",
@@ -4052,7 +4055,7 @@
           "metadata_note": "Source commit identity is recorded here; exact final metadata HEAD verification is in the existing ignored receipt to avoid self-reference."
         }
       },
-      "current_result_ref": "variant_equivalence_r83",
+      "current_result_ref": "converted_pony_delta_r84",
       "piercing_delta": {
         "round_key": "aik-piercing-delta-20261026",
         "status": "CLOSED_SCOPED_PROGRESS_GOAL_CONTINUES",
@@ -5730,6 +5733,44 @@
         "remaining_rounds_estimate": null,
         "manifest_sha256": "2b273af2dc29d547d925d2e0ec24c1bbaba170737000f0c53909c87dfc221e20",
         "closed_at": "2026-10-27T01:35:29.602284+00:00"
+      },
+      "converted_pony_delta_r84": {
+        "at": "2026-10-27T01:42:02.970947+00:00",
+        "status": "DIRECT_SCOPED_6_BINDING_CANDIDATES_OBSERVED",
+        "execution_source": "Existing nativeGoal auto continuation; R83 sourcecandidate decision/readerlimits countPROGRESS. Exact queued6targets, priorsharedcore reused.",
+        "entry_commit": "1bb67ec20dd4c25f82291f0865e4bb4670f03838",
+        "preimage_manifest_sha256": "2b273af2dc29d547d925d2e0ec24c1bbaba170737000f0c53909c87dfc221e20",
+        "owned_scope": [
+          "PROJECT_STATE owned groupedtask/progress",
+          "manifest exact6leaf scoped evidence, after rootverification",
+          ".local/play-session-20261026/grouped-qa/converted-pony-delta-r84",
+          "temporaryAgentSessionQA exact2files andappendonlymods suffix",
+          "freshsemantic34/gameidentity/inputbinding andtaskruntime owned6speedfields",
+          "CNS selection onallowlist6+indexrestore/control only"
+        ],
+        "acceptance": "Actual6currentmesh delayedstates + sparsevisual andguardedshortmotion with exactsource/profile/QA/process restoration; no fullgarmentPASS, materialsemantic inheritance orcrashrootcause claim.",
+        "protected": "All priorfailures/exclusions/saves/otherprocesses/globalsettings,7protectedStategroups/15olderfiles; no foreground/story/death/travel/whole-save rollback.",
+        "resource_plan": "Reuse verified3440x1440 private2, currentnative dependencies andaccepted helpers. Onegame+onecombathelper+onespeedservice; serial6captures3s/2threads. No newdisplay/deps; currentMemAvailable~36GB; actual wholepeakUNKNOWN.",
+        "runtime_batch_ref": ".local/play-session-20261026/grouped-qa/converted-pony-delta-r84/runtime-batch.json",
+        "next_action": "先只读定位CNS的OutPonyPA/SetPhysicsAsset实际消费者及短马尾条件，核实body保留原生CH29物理覆盖是否预期；有明确不兼容反例再修，不因引用不同禁用MOD。复用本批6项正常加载/延迟材质和短移动，不再重跑全部配置。",
+        "binding_discrepancy_summary": "All18samples same shortpony assetphysics andnativeCH29 bodyoverride; actualuse ofsixdeclaredPonyPhysics unproven, no confirmedfault ormodexclusion.",
+        "closed_at": "2026-10-27T01:54:55.725199+00:00",
+        "runtime_result_ref": ".local/play-session-20261026/grouped-qa/converted-pony-delta-r84/runtime-result.json",
+        "manifest_sha256": "a67cd4e13a4b625056be9eec2575c4e3b958b1e74968359020dc5cb9bc458b0e",
+        "new_partial_leaf_count": 6,
+        "new_complete_leaf_PASS": 0,
+        "actual_observations": 18,
+        "linked_counts": [
+          1
+        ],
+        "material_parent_mismatch_count": 0,
+        "observed_motion_clips": 6,
+        "viewed_motion_sample_frames": 90,
+        "new_native_crashes": 0,
+        "observer_failure": "No runnerfailure; case2immediatesettledfalse preserved andfreshpostcapture0, no replay.",
+        "native_preview": "CurrentCH29 restored in nativeequipment; no CNSfront evidence andno pergarmentmenu loop.",
+        "resources_closed_ref": ".local/play-session-20261026/grouped-qa/converted-pony-delta-r84/final-restoration.json",
+        "profile_roundtrip_sha256": "0ef54f650533d84ace32b44f3bb2c5bb292e0b9f71e68ffcff40247ee3361242"
       }
     },
     "owner_acceptance_20261026": {
