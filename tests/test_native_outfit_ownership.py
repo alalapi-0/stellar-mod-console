@@ -61,11 +61,24 @@ class NativeOutfitOwnershipTests(unittest.TestCase):
             "child-set-event", "child-detail-event", "newer-cns-choice", "new-pawn",
             "invalid-saved-data", "unchanged-alias", "non-body-alias", "hidden-native-menu",
             "refresh-event", "show-detail-event",
+            "event-after-passive-change", "expired-no-event", "menu-entry-after-passive-change",
+            "closed-menu-baseline", "native-action-close-before-poll", "newer-cns-index",
+            "newer-cns-same-selection", "cns-other-slot",
+            "native-panel-rebuilt",
+            "invalid-native-input-lock",
         ]
         for scenario in scenarios:
             with self.subTest(scenario=scenario):
                 code, error = self.run_policy(self.source, scenario)
                 self.assertEqual(code, 0, error)
+
+    def test_without_menu_baseline_a_post_action_event_loses_the_handoff(self):
+        binding = b"alias=nativeMenuBaseline.alias"
+        self.assertEqual(self.source.count(binding), 1)
+        without_baseline = self.source.replace(binding, b"alias=lastAlias")
+        code, error = self.run_policy(without_baseline, "event-after-passive-change")
+        self.assertNotEqual(code, 0, "late native event must detect the lost handoff")
+        self.assertIn("explicit native change must remove Body override exactly once", error)
 
     def test_original_zero_based_index_fails_on_the_realistic_array_layout(self):
         source = self.source

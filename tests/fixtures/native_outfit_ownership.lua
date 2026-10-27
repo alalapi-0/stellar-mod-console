@@ -14,11 +14,16 @@ local function registrationCount()
     return count
 end
 local calls, removedCalls, order, messages = {}, {}, {}, {}
+local cnsSelectionCallback = nil
+local cnsSelectionPath = "/Game/Mods/DekCNS_P/ModActor.ModActor_C:Set Custom Outfit"
 local alias, address = "BS_Green_Suit", 10
 local cnsValid, savedValid, nativeMenuVisible, cnsMenuOpen = true, true, true, false
 local activeOutfits = {["EVE-Body-"]="CustomBody", ["EVE-Hair-"]="KeepHair", ["EVE-Ears-"]="KeepEars", ["LILY-Body-"]="KeepLily"}
 local removedOutfits = {["EVE-Body-"]=true, ["EVE-Hair-"]=true, ["EVE-Ears-"]=false, ["LILY-Body-"]=true}
 local outfitIndices = {["EVE-Body-"]=2, ["EVE-Hair-"]=3, ["LILY-Body-"]=4}
+outfitIndices.CustomBody = 2
+outfitIndices.Contains = function(self, key) return self[key] ~= nil end
+outfitIndices.Find = function(self, key) return {get=function() return self[key] end} end
 local presets = {Name="KeepPreset", Values={Body="SavedPresetBody", Hair="SavedPresetHair"}}
 local liveMesh = "NativeBodyMesh"
 local world = {IsValid=function() return true end, GetAddress=function() return 100 end}
@@ -38,6 +43,7 @@ local pawn = {
     GetAddress=function() return address end,
     GetClass=function() return cls("CH_P_EVE_01_Blueprint_C") end,
     EquipmentDataList=equipment,
+    MoveInputBlockCount=1,
 }
 local pc = {
     IsValid=function() return true end,
@@ -57,6 +63,7 @@ local saved = {
             activeOutfits[key] = nil -- absence, not the CNS explicit-removal value ""
         end,
         Contains=function(self, key) return activeOutfits[key] ~= nil end,
+        Find=function(self, key) return {get=function() return activeOutfits[key] end} end,
     },
     RemovedOutfitMap={
         Remove=function(self, key)
@@ -74,6 +81,7 @@ local saved = {
 }
 local cns = {
     IsValid=function() return cnsValid end,
+    GetAddress=function() return 80 end,
     GetWorld=function() return world end,
     GetClass=function()
         return cls("ModActor_C", "BlueprintGeneratedClass /Game/Mods/DekCNS_P/ModActor.ModActor_C")
@@ -133,10 +141,16 @@ FindAllOf=function(name)
     return {pc}
 end
 StaticFindObject=function(path)
+    if path == cnsSelectionPath then return {IsValid=function() return cnsValid end} end
     assert(nativeFunctionReady[path] ~= nil, "only the exact three equipment panel paths may be queried")
     return {IsValid=function() return nativeFunctionReady[path] end}
 end
 RegisterHook=function(path, callback)
+    if path == cnsSelectionPath then
+        assert(not cnsSelectionCallback, "only one explicit CNS selection observer")
+        cnsSelectionCallback = callback
+        return
+    end
     assert(nativeFunctionReady[path] ~= nil, "only an exact equipment panel may be hooked")
     registrationAttempts[path] = (registrationAttempts[path] or 0) + 1
     assert(nativeFunctionReady[path], "unloaded menu UFunction must not be hooked")
@@ -280,6 +294,70 @@ elseif SCENARIO == "hidden-native-menu" then
     alias = "BS_01"
     tick()
     successfulHandoffs(0)
+elseif SCENARIO == "event-after-passive-change" or SCENARIO == "expired-no-event" then
+    equipmentMenuEvent()
+    for _ = 1, 12 do tick() end
+    alias = "BS_01"
+    tick() -- equipment changes before its post-action notification
+    successfulHandoffs(0) -- the expired request must never grant ownership
+    if SCENARIO == "event-after-passive-change" then
+        equipmentMenuEvent("WB_Equip_SelectDetail")
+        tick()
+        successfulHandoffs(1)
+    end
+elseif SCENARIO == "menu-entry-after-passive-change" then
+    alias = "BS_01"
+    tick() -- passive initialization before the user opens the menu
+    equipmentMenuEvent()
+    tick()
+    successfulHandoffs(0)
+elseif SCENARIO == "closed-menu-baseline" then
+    equipmentMenuEvent()
+    for _ = 1, 12 do tick() end
+    nativeMenuVisible, pawn.MoveInputBlockCount = false, 0
+    tick()
+    alias = "BS_01"
+    tick()
+    nativeMenuVisible = true
+    equipmentMenuEvent()
+    tick()
+    successfulHandoffs(0)
+elseif SCENARIO == "native-action-close-before-poll" then
+    equipmentMenuEvent()
+    alias, nativeMenuVisible, pawn.MoveInputBlockCount = "BS_01", false, 0
+    tick()
+    successfulHandoffs(1)
+elseif SCENARIO == "native-panel-rebuilt" then
+    equipmentMenuEvent()
+    for _ = 1, 12 do tick() end
+    nativeMenuVisible = false -- the old child hides; native input remains locked
+    tick()
+    nativeWidget = {IsValid=function() return true end, IsVisible=function() return true end}
+    alias = "BS_01"
+    tick() -- alias becomes visible before the replacement panel's notification
+    successfulHandoffs(0)
+    equipmentMenuEvent("WB_Equip_SelectDetail")
+    tick()
+    successfulHandoffs(1)
+elseif SCENARIO == "newer-cns-index" then
+    equipmentMenuEvent()
+    alias, outfitIndices.CustomBody = "BS_01", 3
+    tick()
+    successfulHandoffs(0)
+elseif SCENARIO == "invalid-native-input-lock" then
+    equipmentMenuEvent()
+    alias, pawn.MoveInputBlockCount = "BS_01", -1
+    tick()
+    successfulHandoffs(0)
+elseif SCENARIO == "newer-cns-same-selection" or SCENARIO == "cns-other-slot" then
+    equipmentMenuEvent()
+    alias = "BS_01"
+    assert(type(cnsSelectionCallback) == "function", "explicit CNS API must have an observer")
+    local function param(value) return {get=function() return value end} end
+    cnsSelectionCallback(param(cns), param("EVE"),
+        param(SCENARIO == "cns-other-slot" and "Hair" or "Body"), param(""))
+    tick()
+    successfulHandoffs(SCENARIO == "cns-other-slot" and 1 or 0)
 else
     error("Unknown fixture scenario: " .. tostring(SCENARIO))
 end
