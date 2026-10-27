@@ -1542,20 +1542,20 @@
       "manifest_sha256": "3bb3673ebb1994275c885e9a81fb1f280792f83b6117655dae828d27984d7c0e",
       "target_identity_sha256": "955965cda7371a7ff208fdf736e19a1136e0628cf77a644ac49b5d4323aa9a92",
       "enumeration_validation": ".local/play-session-20261026/grouped-qa/risk-groups-r69/result.json",
-      "round_key": "xxtb-core-serialized-linked-graph-r91-20261027",
-      "round_status": "CLOSED_R91_EXACT_STATIC_GRAPH_AND_BINDING_PROOF",
-      "count": 91,
+      "round_key": "native-pp-initialization-boundary-trace-r92-20261027",
+      "round_status": "CLOSED_R92_CONFIRMED_SHARED_PP_INITIALIZATION_BOUNDARY",
+      "count": 92,
       "coverage": "since_baseline",
-      "last_seq": 91,
-      "last_key": "xxtb-core-serialized-linked-graph-r91-20261027",
+      "last_seq": 92,
+      "last_key": "native-pp-initialization-boundary-trace-r92-20261027",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": null,
       "evidence_change_percentage_points": null,
       "scope_change_percentage_points": 0,
-      "change_rule": "Exact source graph/binding proof refines causal candidate; no leaf/group/manifest status or denominator change, no runtime/garment PASS.",
-      "round_start_commit": "83f26e17cc1d57e1c86c3fad42b1ab137d7fcdb1",
-      "scope_change": "Original5129/effective5125/known1263 units preserved; no new exclusions, aliases or omitted targets.",
-      "milestone_change": "Exact Core CDO97 linked classes,2InnerSuit mesh PP imports andWuchang201→CH47 graph reference proved. R90 observed142 multiset equals a conditional two-copy model; construction order/winner/leak/crash remain unknown. No game, source mutation or compatibility acceptance.",
+      "change_rule": "New actual shared duplication/retention mechanism; no manifest/leaf/group status or denominator changes. Old crashes and R90 normal-close failure retained.",
+      "round_start_commit": "de74db9f5af85303010cd11e99cbc6a4ff2e86a8",
+      "scope_change": "Original5129/effective5125/known1263 units preserved; no exclusions, aliases or omitted targets.",
+      "milestone_change": "Actual full Core class namespace and71→72→142 temporal boundary observed; old71 plusnew matching70 survive, current native return143. Logging-only instrumentation fully removed, exact profile/core restored and native QuitGame/game/helper wrappers0. No full garment acceptance or general crash-cause claim.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1898,7 +1898,7 @@
       "remaining_rounds": null,
       "remaining_rounds_confidence": "UNKNOWN",
       "window": [],
-      "prediction_reason": "Heterogeneous remaining lifecycle/material/physics acceptance and current denominator unresolved; no comparable throughput estimate.",
+      "prediction_reason": "Actual shared lifecycle repair still required; heterogeneous remaining scope and completion denominator unresolved, no comparable throughput estimate.",
       "original_unified_required_retained": 5129,
       "latest_specific_followup": "integration:sequential-outfit-material-recovery",
       "grouped_assertion_audit": {
@@ -1998,8 +1998,8 @@
       "new_shared_static_assertions_this_round": 0,
       "evidence_refinement_known_units_delta": 0
     },
-    "next_action": "优先复用R80已存反汇编和R90时序，核对原生SetSkeletalMesh/原PP初始化与EveProportions后置stamp、refresh、link的执行边界。若现有记录仍缺创建顺序，只补一次精确私有跟踪，读取当前UClass完整包路径及每个边界的实例数；证实是否二次初始化后再做最小生命周期修复，保留物理/身体控制并阻止清理未知链接。R90退出残留继续单列原因未知，不因类数量或名称匹配卸MOD。",
-    "updated_at": "2026-10-27T06:33:38.483929+00:00",
+    "next_action": "基于R92已证实的71→72→142衔接，先核对现有Tuner已验证的图节点反射接口，再实现最小生命周期修复：统计当前即将替换的原PP闭包和自有tag后代；只有全部registered实例都被证明属于待退役/自有图且原有本地Pawn/World/Mesh/Main类及非活动动画门禁成立时才重建。未知或外来链接阻止清理，保留原PP物理与全部身体控制。用精确Core/原生/CNS切回和原配置恢复验证候选并按REVIEWED做新独立审查；不重复颜色或辅助成功率。",
+    "updated_at": "2026-10-27T07:14:11.502834+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2128,7 +2128,7 @@
         }
       }
     },
-    "round_closure_at": "2026-10-27T06:33:38.483929+00:00",
+    "round_closure_at": "2026-10-27T07:14:11.502834+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 14,
       "new_confirmed_this_round": 0,
@@ -2292,9 +2292,9 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "R91_STATIC_XXTB_GRAPH_BINDING_PROVED_ORDERING_NEXT",
-    "previous_goal_turn_classification": "PROGRESS: replaced name-string lead with97 exact serialized InstanceClass imports,2native mesh PP bindings andWuchang201→CH47 reference; R90 class multiset conditionally matches, next missing evidence is precise construction boundary. No runtime, causal accusation or garment acceptance.",
-    "execution_status": "ACTIVE_R91_CLOSED_GOAL_INCOMPLETE",
+    "current_segment": "R92_PP_DUPLICATION_BOUNDARY_CONFIRMED_REPAIR_NEXT",
+    "previous_goal_turn_classification": "PROGRESS: temporary inline trace converted conditional142 model to actual distinct native-Core/wrapped-Core and70+70 subgraph construction/retention evidence. Exact source/profile/runtime cleanup and native exit0; next action is scoped reviewed lifecycle implementation, not another baseline replay.",
+    "execution_status": "ACTIVE_R92_CLOSED_GOAL_INCOMPLETE",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
     "pause_source": "Current human: restart game, tests remain paused; subsequent black-screen repair does not resume tests",
     "user_play_handoff": {
@@ -3311,14 +3311,14 @@
     "native_goal": {
       "threadId": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
       "status": "active",
-      "tokensUsed": 15887890,
-      "timeUsedSeconds": 100957,
+      "tokensUsed": 15995222,
+      "timeUsedSeconds": 103335,
       "createdAt": 1792972357,
-      "telemetry_at": "2026-10-27T06:33:38.483929+00:00",
+      "telemetry_at": "2026-10-27T07:14:11.502834+00:00",
       "telemetry_coverage": "Directnative current activation; no quota set or increased; historical logical lifetimecost remains UNKNOWN.",
       "same_objective_verified": true,
-      "last_checkpoint": "R91 exact static graph/native-binding/nested-reference analysis closed; no runtime or source asset changes. Full Goal active; need native PP/wrapper initialization order before lifecycle repair. No quota changes.",
-      "updatedAt": 1793082753
+      "last_checkpoint": "R92 actual PP construction/retention boundary confirmed, original shim/profile/core restored; all game/helper wrappers0 via native QuitGame. Goal active/incomplete. Implement reviewed graph-closure lifecycle candidate next; no quotas changed.",
+      "updatedAt": 1793085130
     },
     "goal_resume_source": "Current native Goal reused; same logical compatibility task and original5129/effective5125 preserved",
     "historical_previous_goal_health_checkpoint": {
@@ -3696,7 +3696,7 @@
       "execution_source": "Direct owner native Goal objective submitted in thread 01a1757a-f84c-72b0-97bd-44ab8c53eb53 on 2026-10-26; execute MOD_TEST_REPAIR_PLAN_20261025 grouped QA",
       "owner_thread": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
       "lane": "DIRECT",
-      "status": "CLOSED_R91_STATIC_XXTB_GRAPH_BINDING_ORDERING_OPEN",
+      "status": "CLOSED_R92_PP_DUPLICATION_BOUNDARY_CONFIRMED",
       "owned_scope": [
         "PROJECT_STATE.json#mod_compatibility_restructure current grouped execution/progress projection; old paused console and pre-existing manual-play deltas remain separate",
         ".local/play-session-20261026/grouped-qa",
@@ -3727,10 +3727,10 @@
         "remaining_scope_unchanged": true
       },
       "test_save_boundary": "No independent story-save isolation established; forbid death/story/reward/travel tests and save rollback. Initial private launch/menu checks only; inspect scene before safe reversible movement/outfit checks.",
-      "round_accounting": "One bounded static graph/binding/nested-reference analysis with targeted source lookup and malformed-input controls closes once; parser revision/tool calls are not separate rounds.",
-      "next_action": "优先复用R80已存反汇编和R90时序，核对原生SetSkeletalMesh/原PP初始化与EveProportions后置stamp、refresh、link的执行边界。若现有记录仍缺创建顺序，只补一次精确私有跟踪，读取当前UClass完整包路径及每个边界的实例数；证实是否二次初始化后再做最小生命周期修复，保留物理/身体控制并阻止清理未知链接。R90退出残留继续单列原因未知，不因类数量或名称匹配卸MOD。",
+      "round_accounting": "One instrumented exact native unequip/re-equip trace, native exit and exact source/profile cleanup closes once; callbacks/frames/UI confirmations/analysis not separate rounds.",
+      "next_action": "基于R92已证实的71→72→142衔接，先核对现有Tuner已验证的图节点反射接口，再实现最小生命周期修复：统计当前即将替换的原PP闭包和自有tag后代；只有全部registered实例都被证明属于待退役/自有图且原有本地Pawn/World/Mesh/Main类及非活动动画门禁成立时才重建。未知或外来链接阻止清理，保留原PP物理与全部身体控制。用精确Core/原生/CNS切回和原配置恢复验证候选并按REVIEWED做新独立审查；不重复颜色或辅助成功率。",
       "at": "2026-10-25T23:55:06.640620+00:00",
-      "lane_reason": "Read-only current serialized graph/import facts with six malformed-input controls and prior independent R85 cross-check; no product/asset repair or causal compatibility judgment.",
+      "lane_reason": "Temporary read-only inline observations only; trace block removal recovers original operations byte-exactly and original shim restored. Actual lifecycle behavior repair remains REVIEWED.",
       "findings": {
         "v3": "Confirmed Lua index13 reads native slot12; no successful native-body binding. Current fix readsLua14.",
         "v4": "Real native cold-load false positive and Actor-deselection invisible-body regressions; FAIL preserved.",
@@ -3742,7 +3742,7 @@
         "v8": "Fresh independent PASS for current BS_ alias transition/native-menu scope; full S1/Goal incomplete"
       },
       "candidate_sha256": "6cd2491c2f173a3fccb2f488a2acba1e4b1cc5d3ab130b676d867865dca15ed8",
-      "updated_at": "2026-10-27T06:33:38.483929+00:00",
+      "updated_at": "2026-10-27T07:14:11.502834+00:00",
       "grouped_assertions": {
         "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
         "sha256": "a800adc5603d0edb2747f20dc335cc109dd88357033ddfcdadb856aac810b618",
@@ -3756,32 +3756,34 @@
       },
       "hair_original_context": "Exact BUG-HAIR-20261025-01 context recovered read-only from native crash directory; private pointer .local/play-session-20261026/grouped-qa/hair-incident-context-recovery.json; GameThread AV verified, cause unknown",
       "runtime_ownership": {
-        "status": "ALL_OWNED_RUNTIME_CLOSED_NORMAL_GAME_EXIT_FAILED",
-        "evidence": ".local/play-session-20261026/grouped-qa/native-ui-population-r90/final-restoration.json",
-        "game_wrapper_exit": 1,
+        "status": "ALL_OWNED_GAME_HELPERS_EXITED_0_NATIVE_QUIT_ROUTE",
+        "evidence": ".local/play-session-20261026/grouped-qa/pp-initialization-trace-r92/final-restoration.json",
+        "game_wrapper_exit": 0,
         "assistant_wrapper_exit": 0,
         "movement_wrapper_exit": 0,
-        "private_display": "Existing exact active Goal display2 retained"
+        "instrumented_shim_restored": true,
+        "private_display": "Existing exact Goal display2 retained",
+        "prior_R90_WM_CLOSE_failure": "Unresolved; do not transfer current exit0 to that path"
       },
       "candidate_source": "src/runtime/NativeOutfitOwnership.lua",
-      "latest_runtime_result": ".local/play-session-20261026/grouped-qa/native-ui-population-r90/runtime-result.json",
-      "last_material_progress": "Exact Core CDO97 linked classes,2InnerSuit mesh PP imports andWuchang201→CH47 graph reference proved. R90 observed142 multiset equals a conditional two-copy model; construction order/winner/leak/crash remain unknown. No game, source mutation or compatibility acceptance.",
-      "round_key": "xxtb-core-serialized-linked-graph-r91-20261027",
+      "latest_runtime_result": ".local/play-session-20261026/grouped-qa/pp-initialization-trace-r92/runtime-result.json",
+      "last_material_progress": "Actual full Core class namespace and71→72→142 temporal boundary observed; old71 plusnew matching70 survive, current native return143. Logging-only instrumentation fully removed, exact profile/core restored and native QuitGame/game/helper wrappers0. No full garment acceptance or general crash-cause claim.",
+      "round_key": "native-pp-initialization-boundary-trace-r92-20261027",
       "round_closed_once": true,
       "previous_current_projection_ref": ".local/play-session-20261026/grouped-qa/PROJECT_STATE.entry.json",
       "independent_review": {
-        "status": "NOT_REQUIRED_DIRECT_STATIC_FACTS",
-        "scope": "Exact serialized references and conditional multiset comparison only; any lifecycle behavior repair requires its own risk lane/current review."
+        "status": "NOT_REQUIRED_DIRECT_DIAGNOSTIC_TRACE",
+        "next_behavior_repair_requires": "REVIEWED fresh coherent-candidate independent Judge"
       },
       "git_delivery": {
         "status": "DELIVERY_RECEIPT_AUTHORITATIVE_FOR_REMOTE_VERIFICATION",
         "target": "codex/grouped-mod-qa-20261026",
-        "entry_verified_head": "83f26e17cc1d57e1c86c3fad42b1ab137d7fcdb1",
+        "entry_verified_head": "de74db9f5af85303010cd11e99cbc6a4ff2e86a8",
         "main_merge_authorized": false,
         "reviewed_paths": [
           "PROJECT_STATE.json exact Root owned projection"
         ],
-        "receipt_ref": ".local/play-session-20261026/grouped-qa/xxtb-linked-graph-r91/round-delivery.json"
+        "receipt_ref": ".local/play-session-20261026/grouped-qa/pp-initialization-trace-r92/round-delivery.json"
       },
       "entry_process_audit": "No SB.exe or SB-Win64-Shipping.exe live; previous hair session PID1913315 absent; lifecycle-end confirms own helper stopped. Steam provider retained, no input granted to foreground.",
       "entry_goal_turn_classification": "FIRST_ACTIVATION; no prior turn in this new native Goal",
@@ -3867,7 +3869,7 @@
         },
         "r73_reuse_correction": "Beforefuturecorechecks, consult actualmanifest grouped_assertions structuredremaining_delta andlaterrecords. MOVE-REBIND-SAMEPROCESS-NEWPAWN alreadyhasactual875proof andmustbereused absent relevantchange; older narrativegap sentences arehistorical."
       },
-      "closed_at": "2026-10-27T06:33:38.483929+00:00",
+      "closed_at": "2026-10-27T07:14:11.502834+00:00",
       "wardrobe_semantic": {
         "round_key": "grouped-cns-body-semantic-20261026",
         "source": "Continuation of active nativeGoal plus owner REA/nonvisualoperation steering",
@@ -4056,7 +4058,7 @@
           "metadata_note": "Source commit identity is recorded here; exact final metadata HEAD verification is in the existing ignored receipt to avoid self-reference."
         }
       },
-      "current_result_ref": "xxtb_linked_graph_r91",
+      "current_result_ref": "pp_initialization_trace_r92",
       "piercing_delta": {
         "round_key": "aik-piercing-delta-20261026",
         "status": "CLOSED_SCOPED_PROGRESS_GOAL_CONTINUES",
@@ -6064,6 +6066,74 @@
           "retained_evidence_bytes_before_final_projection": 1758326,
           "whole_task_peak_memory": "UNKNOWN",
           "retoc_child_lifecycle": "Every synchronous command completed0; no background service created"
+        }
+      },
+      "pp_initialization_trace_r92": {
+        "at": "2026-10-27T06:43:13.884281+00:00",
+        "round_key": "native-pp-initialization-boundary-trace-r92-20261027",
+        "status": "CLOSED_CONFIRMED_PP_DUPLICATION_BOUNDARY_ORIGINAL_SHIM_RESTORED",
+        "lane": "DIRECT",
+        "entry_commit": "de74db9f5af85303010cd11e99cbc6a4ff2e86a8",
+        "owned_scope": [
+          "PROJECT_STATE.json current grouped/progress projection",
+          ".local/play-session-20261026/grouped-qa/pp-initialization-trace-r92",
+          "Exact temporary instrumentation of owned EveProportions shim with preimage/CAS; AgentSessionQA 2files/modsuffix/semantic-client, one private game and exact two helpers"
+        ],
+        "acceptance": "Read actual original PP class/package and LinkedInstances at existing NotifyBP_SetMesh/stamp/policy/SetAnimationMode/link boundaries. No new native hooks or getters beyond previously validated owner/object methods, no cleanup behavior changes. One native original outfit unequip/re-equip; profile and source restored exactly. Preserve R90 exit failure separately.",
+        "resource_plan": "One serial game on existing exact private display2, existing assistant/movement; at most160 bounded read-only callback rows with512-child safety cap, no dependencies or asset copies. ~34GB available/1.2TB disk; output target below25MB, whole peak UNKNOWN.",
+        "previous_turn_classification": "PROGRESS: R91 actual97-node CDO,2mesh Core bindings andWuchang201->CH47 serial references verified; conditional142 model remains unproven temporally.",
+        "next_action": "基于R92已证实的71→72→142衔接，先核对现有Tuner已验证的图节点反射接口，再实现最小生命周期修复：统计当前即将替换的原PP闭包和自有tag后代；只有全部registered实例都被证明属于待退役/自有图且原有本地Pawn/World/Mesh/Main类及非活动动画门禁成立时才重建。未知或外来链接阻止清理，保留原PP物理与全部身体控制。用精确Core/原生/CNS切回和原配置恢复验证候选并按REVIEWED做新独立审查；不重复颜色或辅助成功率。",
+        "closed_at": "2026-10-27T07:14:11.502834+00:00",
+        "runtime_result_ref": ".local/play-session-20261026/grouped-qa/pp-initialization-trace-r92/runtime-result.json",
+        "runtime_result_sha256": "4d02124f8d4a84af77bd6d19dfa9b146ea3de1e633112f1875a155354f1f9db8",
+        "initialization_proof_ref": ".local/play-session-20261026/grouped-qa/pp-initialization-trace-r92/initialization-proof.json",
+        "restoration_ref": ".local/play-session-20261026/grouped-qa/pp-initialization-trace-r92/final-restoration.json",
+        "critical_trace_sequences": [
+          139,
+          148
+        ],
+        "critical_counts": [
+          71,
+          72,
+          142
+        ],
+        "old71_registry_addresses_preserved": true,
+        "old_and_new_disjoint_matching_child_groups": [
+          70,
+          70
+        ],
+        "actual_Core_full_class_path_confirmed": true,
+        "two_distinct_Core_instance_addresses": true,
+        "native_reequip_count": 143,
+        "trace_errors": 0,
+        "critical_window_before_trace_limit": true,
+        "trace_code_strips_byte_exactly_to_original": true,
+        "original_shim_restored_sha256": "1232f9ab613078eb6298b1fe0d1071816e052a60e3c14538067abf8874656d63",
+        "all_owned_wrappers_exit": [
+          0,
+          0,
+          0
+        ],
+        "exit_method": "Native Settings > Leave > Quit Game > confirmation; R90 WM_CLOSE retention remains open",
+        "new_complete_leafPASS": 0,
+        "new_exclusions": 0,
+        "source_assets_changed": false,
+        "next_repair_lane": "REVIEWED",
+        "shared_issue": {
+          "id": "PP_DUPLICATE_NATIVE_WRAPPER_LIFECYCLE_R92",
+          "status": "CONFIRMED_SPECIFIC_CONSTRUCTION_RETENTION_BOUNDARY_REPAIR_OPEN",
+          "fingerprint": "Native Core PP has70 subgraphs before own callback; existing SetAnimationMode retains71/adds passthrough; LinkAnimGraphByTag creates second distinct Core+70 whileold71 survive; returning native leaves143. Exact fixed core and single native unequip/re-equip, no prior CNS body cycle.",
+          "crash_gray_material_eval_or_unbounded_leak_cause": "UNPROVEN",
+          "evidence_ref": ".local/play-session-20261026/grouped-qa/pp-initialization-trace-r92/initialization-proof.json"
+        },
+        "resources_completed": {
+          "qa2files_suffix_client_restored": true,
+          "exact_original_shim_runtime_pins_restored": true,
+          "prefix_residue": [],
+          "new_native_crash_dirs": [],
+          "private_display": "Existing exact Goal display2 retained",
+          "retained_evidence_bytes_before_final_projection": 7032455,
+          "whole_task_peak_memory": "UNKNOWN"
         }
       }
     },
