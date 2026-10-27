@@ -1542,20 +1542,20 @@
       "manifest_sha256": "3bb3673ebb1994275c885e9a81fb1f280792f83b6117655dae828d27984d7c0e",
       "target_identity_sha256": "955965cda7371a7ff208fdf736e19a1136e0628cf77a644ac49b5d4323aa9a92",
       "enumeration_validation": ".local/play-session-20261026/grouped-qa/risk-groups-r69/result.json",
-      "round_key": "cold-native-menu-linked-population-r90-20261027",
-      "round_status": "CLOSED_R90_SCOPED_TRIGGER_OBSERVATION_WITH_EXIT_FAILURE",
-      "count": 90,
+      "round_key": "xxtb-core-serialized-linked-graph-r91-20261027",
+      "round_status": "CLOSED_R91_EXACT_STATIC_GRAPH_AND_BINDING_PROOF",
+      "count": 91,
       "coverage": "since_baseline",
-      "last_seq": 90,
-      "last_key": "cold-native-menu-linked-population-r90-20261027",
+      "last_seq": 91,
+      "last_key": "xxtb-core-serialized-linked-graph-r91-20261027",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": null,
       "evidence_change_percentage_points": null,
       "scope_change_percentage_points": 0,
-      "change_rule": "No manifest/leaf/group status or denominator changes. New current native-only trigger evidence and one scoped normal-close failure, no compatibility PASS.",
-      "round_start_commit": "4d50a7ce60a9bdc15446bf4460e47a7e6ab899c4",
-      "scope_change": "Original5129/effective5125/known1263 units preserved; no exclusions or aliases.",
-      "milestone_change": "Cold menu-only remained1; native BS01 unequip without prior CNS Body cycling changed same player component1→142 across70 classes; re-equip left143. Current PP linked XXTB_Core_ABP_C while InnerSuit. Original profile restored; normal exit retained process175.68s then exact SIGTERM/wrapper1, separate scoped failure. No garment acceptance/exclusions.",
+      "change_rule": "Exact source graph/binding proof refines causal candidate; no leaf/group/manifest status or denominator change, no runtime/garment PASS.",
+      "round_start_commit": "83f26e17cc1d57e1c86c3fad42b1ab137d7fcdb1",
+      "scope_change": "Original5129/effective5125/known1263 units preserved; no new exclusions, aliases or omitted targets.",
+      "milestone_change": "Exact Core CDO97 linked classes,2InnerSuit mesh PP imports andWuchang201→CH47 graph reference proved. R90 observed142 multiset equals a conditional two-copy model; construction order/winner/leak/crash remain unknown. No game, source mutation or compatibility acceptance.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1894,13 +1894,11 @@
       "uncounted_parent_rollups": 12,
       "full_appearance_compatible_accepted": 10,
       "new_function_evidence_this_round": 0,
-      "new_failures_this_round": [
-        "EXIT_RETAINED_NATIVE_UNEQUIP_R90: normal WM_CLOSE removes window but main process retains175.68s; exact SIGTERM; wrapper1; cause unknown"
-      ],
+      "new_failures_this_round": [],
       "remaining_rounds": null,
       "remaining_rounds_confidence": "UNKNOWN",
       "window": [],
-      "prediction_reason": "Current denominator and heterogeneous lifecycle/material/physics acceptance remain unresolved; no comparable throughput estimate.",
+      "prediction_reason": "Heterogeneous remaining lifecycle/material/physics acceptance and current denominator unresolved; no comparable throughput estimate.",
       "original_unified_required_retained": 5129,
       "latest_specific_followup": "integration:sequential-outfit-material-recovery",
       "grouped_assertion_audit": {
@@ -2000,8 +1998,8 @@
       "new_shared_static_assertions_this_round": 0,
       "evidence_refinement_known_units_delta": 0
     },
-    "next_action": "只读定位XXTB_Core_ABP对应的实际包、导入/绑定和原生脱衣时linked节点构建路径：复用R90已保存的1→142→143及OriginalPostProcess目标变化和现有解析器，先验证当前命中包与节点语义，再决定是否需要有界配置对照或修复。退出窗口消失而进程残留175.68秒单列FAIL，原因仍未知；不清空陌生链接、不直接卸整包、不重复颜色/公共辅助测试。",
-    "updated_at": "2026-10-27T06:06:50.938898+00:00",
+    "next_action": "优先复用R80已存反汇编和R90时序，核对原生SetSkeletalMesh/原PP初始化与EveProportions后置stamp、refresh、link的执行边界。若现有记录仍缺创建顺序，只补一次精确私有跟踪，读取当前UClass完整包路径及每个边界的实例数；证实是否二次初始化后再做最小生命周期修复，保留物理/身体控制并阻止清理未知链接。R90退出残留继续单列原因未知，不因类数量或名称匹配卸MOD。",
+    "updated_at": "2026-10-27T06:33:38.483929+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2130,7 +2128,7 @@
         }
       }
     },
-    "round_closure_at": "2026-10-27T06:06:50.938898+00:00",
+    "round_closure_at": "2026-10-27T06:33:38.483929+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 14,
       "new_confirmed_this_round": 0,
@@ -2294,9 +2292,9 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "R90_NATIVE_UNEQUIP_TRIGGER_AND_PACKAGE_LEAD_CLOSED",
-    "previous_goal_turn_classification": "PROGRESS: live cold no-CNS-body menu/equip comparison isolates native unequip as sufficient for1→142; saved graph target/package-name lead narrows next action. Real exit retention preserved, controlled cleanup and exact profile restoration; no leaf acceptance or speculative mod exclusion.",
-    "execution_status": "ACTIVE_R90_CLOSED_GOAL_INCOMPLETE",
+    "current_segment": "R91_STATIC_XXTB_GRAPH_BINDING_PROVED_ORDERING_NEXT",
+    "previous_goal_turn_classification": "PROGRESS: replaced name-string lead with97 exact serialized InstanceClass imports,2native mesh PP bindings andWuchang201→CH47 reference; R90 class multiset conditionally matches, next missing evidence is precise construction boundary. No runtime, causal accusation or garment acceptance.",
+    "execution_status": "ACTIVE_R91_CLOSED_GOAL_INCOMPLETE",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
     "pause_source": "Current human: restart game, tests remain paused; subsequent black-screen repair does not resume tests",
     "user_play_handoff": {
@@ -3313,14 +3311,14 @@
     "native_goal": {
       "threadId": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
       "status": "active",
-      "tokensUsed": 15792327,
-      "timeUsedSeconds": 99328,
+      "tokensUsed": 15887890,
+      "timeUsedSeconds": 100957,
       "createdAt": 1792972357,
-      "telemetry_at": "2026-10-27T06:06:50.938898+00:00",
+      "telemetry_at": "2026-10-27T06:33:38.483929+00:00",
       "telemetry_coverage": "Directnative current activation; no quota set or increased; historical logical lifetimecost remains UNKNOWN.",
       "same_objective_verified": true,
-      "last_checkpoint": "R90 cold native-only trigger/current XXTB graph target observation closed; controlled termination after actual process retention, not normal-exit PASS. Full Goal active; next read-only graph/package responsibility analysis. No quota changes.",
-      "updatedAt": 1793081124
+      "last_checkpoint": "R91 exact static graph/native-binding/nested-reference analysis closed; no runtime or source asset changes. Full Goal active; need native PP/wrapper initialization order before lifecycle repair. No quota changes.",
+      "updatedAt": 1793082753
     },
     "goal_resume_source": "Current native Goal reused; same logical compatibility task and original5129/effective5125 preserved",
     "historical_previous_goal_health_checkpoint": {
@@ -3698,7 +3696,7 @@
       "execution_source": "Direct owner native Goal objective submitted in thread 01a1757a-f84c-72b0-97bd-44ab8c53eb53 on 2026-10-26; execute MOD_TEST_REPAIR_PLAN_20261025 grouped QA",
       "owner_thread": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
       "lane": "DIRECT",
-      "status": "CLOSED_R90_NATIVE_UNEQUIP_TRIGGER_WITH_EXIT_FAILURE",
+      "status": "CLOSED_R91_STATIC_XXTB_GRAPH_BINDING_ORDERING_OPEN",
       "owned_scope": [
         "PROJECT_STATE.json#mod_compatibility_restructure current grouped execution/progress projection; old paused console and pre-existing manual-play deltas remain separate",
         ".local/play-session-20261026/grouped-qa",
@@ -3729,10 +3727,10 @@
         "remaining_scope_unchanged": true
       },
       "test_save_boundary": "No independent story-save isolation established; forbid death/story/reward/travel tests and save rollback. Initial private launch/menu checks only; inspect scene before safe reversible movement/outfit checks.",
-      "round_accounting": "One cold control plus one evidence-driven native unequip/re-equip trigger and read-only package lead closes once; samples/helpers/cleanup attempts are not separate rounds.",
-      "next_action": "只读定位XXTB_Core_ABP对应的实际包、导入/绑定和原生脱衣时linked节点构建路径：复用R90已保存的1→142→143及OriginalPostProcess目标变化和现有解析器，先验证当前命中包与节点语义，再决定是否需要有界配置对照或修复。退出窗口消失而进程残留175.68秒单列FAIL，原因仍未知；不清空陌生链接、不直接卸整包、不重复颜色/公共辅助测试。",
+      "round_accounting": "One bounded static graph/binding/nested-reference analysis with targeted source lookup and malformed-input controls closes once; parser revision/tool calls are not separate rounds.",
+      "next_action": "优先复用R80已存反汇编和R90时序，核对原生SetSkeletalMesh/原PP初始化与EveProportions后置stamp、refresh、link的执行边界。若现有记录仍缺创建顺序，只补一次精确私有跟踪，读取当前UClass完整包路径及每个边界的实例数；证实是否二次初始化后再做最小生命周期修复，保留物理/身体控制并阻止清理未知链接。R90退出残留继续单列原因未知，不因类数量或名称匹配卸MOD。",
       "at": "2026-10-25T23:55:06.640620+00:00",
-      "lane_reason": "One owned cold native-menu/equip comparison and read-only saved/static classification; no product code, asset repair, compatibility acceptance or culpability conclusion.",
+      "lane_reason": "Read-only current serialized graph/import facts with six malformed-input controls and prior independent R85 cross-check; no product/asset repair or causal compatibility judgment.",
       "findings": {
         "v3": "Confirmed Lua index13 reads native slot12; no successful native-body binding. Current fix readsLua14.",
         "v4": "Real native cold-load false positive and Actor-deselection invisible-body regressions; FAIL preserved.",
@@ -3744,7 +3742,7 @@
         "v8": "Fresh independent PASS for current BS_ alias transition/native-menu scope; full S1/Goal incomplete"
       },
       "candidate_sha256": "6cd2491c2f173a3fccb2f488a2acba1e4b1cc5d3ab130b676d867865dca15ed8",
-      "updated_at": "2026-10-27T06:06:50.938898+00:00",
+      "updated_at": "2026-10-27T06:33:38.483929+00:00",
       "grouped_assertions": {
         "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
         "sha256": "a800adc5603d0edb2747f20dc335cc109dd88357033ddfcdadb856aac810b618",
@@ -3767,24 +3765,23 @@
       },
       "candidate_source": "src/runtime/NativeOutfitOwnership.lua",
       "latest_runtime_result": ".local/play-session-20261026/grouped-qa/native-ui-population-r90/runtime-result.json",
-      "last_material_progress": "Cold menu-only remained1; native BS01 unequip without prior CNS Body cycling changed same player component1→142 across70 classes; re-equip left143. Current PP linked XXTB_Core_ABP_C while InnerSuit. Original profile restored; normal exit retained process175.68s then exact SIGTERM/wrapper1, separate scoped failure. No garment acceptance/exclusions.",
-      "round_key": "cold-native-menu-linked-population-r90-20261027",
+      "last_material_progress": "Exact Core CDO97 linked classes,2InnerSuit mesh PP imports andWuchang201→CH47 graph reference proved. R90 observed142 multiset equals a conditional two-copy model; construction order/winner/leak/crash remain unknown. No game, source mutation or compatibility acceptance.",
+      "round_key": "xxtb-core-serialized-linked-graph-r91-20261027",
       "round_closed_once": true,
       "previous_current_projection_ref": ".local/play-session-20261026/grouped-qa/PROJECT_STATE.entry.json",
       "independent_review": {
-        "status": "NOT_REQUIRED_FOR_DIRECT_OBSERVATION",
-        "prior_code_review_retained": ".local/play-session-20261026/grouped-qa/native-same-alias-r89/independent-review.json",
-        "scope": "No product code or compatibility statuses changed; conservative facts and causal limits only."
+        "status": "NOT_REQUIRED_DIRECT_STATIC_FACTS",
+        "scope": "Exact serialized references and conditional multiset comparison only; any lifecycle behavior repair requires its own risk lane/current review."
       },
       "git_delivery": {
         "status": "DELIVERY_RECEIPT_AUTHORITATIVE_FOR_REMOTE_VERIFICATION",
         "target": "codex/grouped-mod-qa-20261026",
-        "entry_verified_head": "4d50a7ce60a9bdc15446bf4460e47a7e6ab899c4",
+        "entry_verified_head": "83f26e17cc1d57e1c86c3fad42b1ab137d7fcdb1",
         "main_merge_authorized": false,
         "reviewed_paths": [
           "PROJECT_STATE.json exact Root owned projection"
         ],
-        "receipt_ref": ".local/play-session-20261026/grouped-qa/native-ui-population-r90/round-delivery.json"
+        "receipt_ref": ".local/play-session-20261026/grouped-qa/xxtb-linked-graph-r91/round-delivery.json"
       },
       "entry_process_audit": "No SB.exe or SB-Win64-Shipping.exe live; previous hair session PID1913315 absent; lifecycle-end confirms own helper stopped. Steam provider retained, no input granted to foreground.",
       "entry_goal_turn_classification": "FIRST_ACTIVATION; no prior turn in this new native Goal",
@@ -3870,7 +3867,7 @@
         },
         "r73_reuse_correction": "Beforefuturecorechecks, consult actualmanifest grouped_assertions structuredremaining_delta andlaterrecords. MOVE-REBIND-SAMEPROCESS-NEWPAWN alreadyhasactual875proof andmustbereused absent relevantchange; older narrativegap sentences arehistorical."
       },
-      "closed_at": "2026-10-27T06:06:50.938898+00:00",
+      "closed_at": "2026-10-27T06:33:38.483929+00:00",
       "wardrobe_semantic": {
         "round_key": "grouped-cns-body-semantic-20261026",
         "source": "Continuation of active nativeGoal plus owner REA/nonvisualoperation steering",
@@ -4059,7 +4056,7 @@
           "metadata_note": "Source commit identity is recorded here; exact final metadata HEAD verification is in the existing ignored receipt to avoid self-reference."
         }
       },
-      "current_result_ref": "native_ui_population_r90",
+      "current_result_ref": "xxtb_linked_graph_r91",
       "piercing_delta": {
         "round_key": "aik-piercing-delta-20261026",
         "status": "CLOSED_SCOPED_PROGRESS_GOAL_CONTINUES",
@@ -5684,7 +5681,7 @@
         "old22group_history_retained": true,
         "prior_actual_runtime_result_retained": ".local/play-session-20261026/grouped-qa/converted-mesh-delta-r81/runtime-result.json"
       },
-      "latest_static_result": ".local/play-session-20261026/grouped-qa/physics-consumer-r85/static-result.json",
+      "latest_static_result": ".local/play-session-20261026/grouped-qa/xxtb-linked-graph-r91/static-result.json",
       "variant_equivalence_r83": {
         "at": "2026-10-27T01:35:29.602284+00:00",
         "status": "STATIC_ASSESSMENT_WITH_READER_LIMIT_NO_MERGE",
@@ -6023,6 +6020,51 @@
         "source_assets_changed": false,
         "new_full_leafPASS": 0,
         "new_exclusions": 0
+      },
+      "xxtb_linked_graph_r91": {
+        "at": "2026-10-27T06:13:29.081024+00:00",
+        "round_key": "xxtb-core-serialized-linked-graph-r91-20261027",
+        "status": "CLOSED_EXACT_STATIC_GRAPH_BINDING_PROOF_ORDERING_OPEN",
+        "lane": "DIRECT",
+        "entry_commit": "83f26e17cc1d57e1c86c3fad42b1ab137d7fcdb1",
+        "owned_scope": [
+          "PROJECT_STATE.json current grouped/progress projection",
+          ".local/play-session-20261026/grouped-qa/xxtb-linked-graph-r91"
+        ],
+        "acceptance": "Resolve actual serialized Core graph linked-node class references and native InnerSuit binding with current source hashes, not name matches alone. Match only supported static facts to saved R90; no game/asset writes, no culprit/leak/compatibility acceptance without evidence.",
+        "resource_plan": "Reuse pinned native retoc and existing R77/R85 reader facts; bounded ~430KB Core export and targeted mesh header in memory, no binary asset copies/dependencies/private game. Available35GB/disk1.2TB, retained outputs target below10MB; whole task peak unknown.",
+        "previous_turn_classification": "PROGRESS: cold menu-only control vs one native unequip isolated1→142→143 without prior CNS Body cycling; exact original profile/resources restored; true exit retention recorded.",
+        "next_action": "优先复用R80已存反汇编和R90时序，核对原生SetSkeletalMesh/原PP初始化与EveProportions后置stamp、refresh、link的执行边界。若现有记录仍缺创建顺序，只补一次精确私有跟踪，读取当前UClass完整包路径及每个边界的实例数；证实是否二次初始化后再做最小生命周期修复，保留物理/身体控制并阻止清理未知链接。R90退出残留继续单列原因未知，不因类数量或名称匹配卸MOD。",
+        "closed_at": "2026-10-27T06:33:38.483929+00:00",
+        "static_result_ref": ".local/play-session-20261026/grouped-qa/xxtb-linked-graph-r91/static-result.json",
+        "static_result_sha256": "b45c94e4c19cdc768d76d326a225a12165feffe4e95022c737798ff8c29bdba8",
+        "core_linked_nodes": 97,
+        "core_unique_classes": 97,
+        "core_CDO_tagged_bytes_consumed": 157196,
+        "native_mesh_PP_bindings": 2,
+        "nested201_source": "Existing Mod2421 Wuchang package; current exact import and export public index verified",
+        "nested201_linked_child": "CH_P_EVE_47_AnimBP_C",
+        "runtime_direct_class_overlap": 69,
+        "declared_classes_not_seen_in_snapshot": 28,
+        "conditional_two_copy_multiset_match": true,
+        "two_initialization_events": "UNPROVEN; arithmetic/structure match only",
+        "active_namespace_winner": "UNPROVEN; actual runtime full UClass package still needed",
+        "negative_controls_passed": 6,
+        "prior_R85_export_order_crosscheck": 132,
+        "initial_checker_assumption_failure_ref": ".local/play-session-20261026/grouped-qa/xxtb-linked-graph-r91/structural-check-revision1.json",
+        "source_asset_changes": 0,
+        "new_runtime_launches": 0,
+        "new_complete_leafPASS": 0,
+        "new_exclusions": 0,
+        "resources_completed": {
+          "new_games_helpers_dependencies": 0,
+          "asset_disk_copies": 0,
+          "targeted_UTOC_metadata_bytes_read": 5398662,
+          "largest_target_mesh_bytes_in_memory": 6723015,
+          "retained_evidence_bytes_before_final_projection": 1758326,
+          "whole_task_peak_memory": "UNKNOWN",
+          "retoc_child_lifecycle": "Every synchronous command completed0; no background service created"
+        }
       }
     },
     "owner_acceptance_20261026": {
