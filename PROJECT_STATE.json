@@ -1542,20 +1542,20 @@
       "manifest_sha256": "3bb3673ebb1994275c885e9a81fb1f280792f83b6117655dae828d27984d7c0e",
       "target_identity_sha256": "955965cda7371a7ff208fdf736e19a1136e0628cf77a644ac49b5d4323aa9a92",
       "enumeration_validation": ".local/play-session-20261026/grouped-qa/risk-groups-r69/result.json",
-      "round_key": "native-same-alias-body-handoff-r89-20261027",
-      "round_status": "CLOSED_R89_SCOPED_NATIVE_EVENT_HANDOFF_FIX",
-      "count": 89,
+      "round_key": "cold-native-menu-linked-population-r90-20261027",
+      "round_status": "CLOSED_R90_SCOPED_TRIGGER_OBSERVATION_WITH_EXIT_FAILURE",
+      "count": 90,
       "coverage": "since_baseline",
-      "last_seq": 89,
-      "last_key": "native-same-alias-body-handoff-r89-20261027",
+      "last_seq": 90,
+      "last_key": "cold-native-menu-linked-population-r90-20261027",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": null,
       "evidence_change_percentage_points": null,
       "scope_change_percentage_points": 0,
-      "change_rule": "Onecurrentreviewedscopednativeguard assertion, noleafstatus/group/denominator changes; historicalfailures andR88intermittentcause retained.",
-      "round_start_commit": "1847e98e3b72ff3af232f76f45d1f013a6bbcd60",
-      "scope_change": "Original5129/effective5125/known1263 units unchanged; nocolor enumeration, exclusions oraliases.",
-      "milestone_change": "Nativehandoffguard retainsmenu baseline acrosspassivealias/panelrebuild; freshnativeevent andunchanged12pollexpiry, newerCNSpriority preserved. Actualnativeother/unequip/re-equip/API reselect passscoped; exactprofile/process/source recovery. Failedcandidate1 preserved; R88causeopen.",
+      "change_rule": "No manifest/leaf/group status or denominator changes. New current native-only trigger evidence and one scoped normal-close failure, no compatibility PASS.",
+      "round_start_commit": "4d50a7ce60a9bdc15446bf4460e47a7e6ab899c4",
+      "scope_change": "Original5129/effective5125/known1263 units preserved; no exclusions or aliases.",
+      "milestone_change": "Cold menu-only remained1; native BS01 unequip without prior CNS Body cycling changed same player component1→142 across70 classes; re-equip left143. Current PP linked XXTB_Core_ABP_C while InnerSuit. Original profile restored; normal exit retained process175.68s then exact SIGTERM/wrapper1, separate scoped failure. No garment acceptance/exclusions.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1895,12 +1895,12 @@
       "full_appearance_compatible_accepted": 10,
       "new_function_evidence_this_round": 0,
       "new_failures_this_round": [
-        "Candidate1actualnativehandofffailed, preserved andsuperseded; no newassetfailure"
+        "EXIT_RETAINED_NATIVE_UNEQUIP_R90: normal WM_CLOSE removes window but main process retains175.68s; exact SIGTERM; wrapper1; cause unknown"
       ],
       "remaining_rounds": null,
       "remaining_rounds_confidence": "UNKNOWN",
       "window": [],
-      "prediction_reason": "Heterogeneousremaininglifecycle/material/physics scope andcompletiondenominatorunresolved; no comparablethroughputestimate.",
+      "prediction_reason": "Current denominator and heterogeneous lifecycle/material/physics acceptance remain unresolved; no comparable throughput estimate.",
       "original_unified_required_retained": 5129,
       "latest_specific_followup": "integration:sequential-outfit-material-recovery",
       "grouped_assertion_audit": {
@@ -1995,13 +1995,13 @@
       },
       "remaining_rounds_estimate": null,
       "remaining_rounds_estimate_confidence": "UNKNOWN; heterogeneous unresolved scope and denominator unknown",
-      "new_shared_scoped_assertions_this_round": 1,
+      "new_shared_scoped_assertions_this_round": 0,
       "new_partial_leaf_this_round": 0,
       "new_shared_static_assertions_this_round": 0,
       "evidence_refinement_known_units_delta": 0
     },
-    "next_action": "补一次当前配置下的冷启动原生衣柜对照：确认没有保存的CNS身体覆盖，不选择CNS衣服、不装备其他服装，只记录开菜单前、身体列表初始化和关闭后2/5秒的同一玩家组件LinkedInstances、原生alias/网格和输入锁。先判明菜单本身是否触发实例增长，再决定后续定位；不直接清空未知链接、不重复颜色或公共辅助成功率。",
-    "updated_at": "2026-10-27T05:35:21.832616+00:00",
+    "next_action": "只读定位XXTB_Core_ABP对应的实际包、导入/绑定和原生脱衣时linked节点构建路径：复用R90已保存的1→142→143及OriginalPostProcess目标变化和现有解析器，先验证当前命中包与节点语义，再决定是否需要有界配置对照或修复。退出窗口消失而进程残留175.68秒单列FAIL，原因仍未知；不清空陌生链接、不直接卸整包、不重复颜色/公共辅助测试。",
+    "updated_at": "2026-10-27T06:06:50.938898+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2130,7 +2130,7 @@
         }
       }
     },
-    "round_closure_at": "2026-10-27T05:20:42.107491+00:00",
+    "round_closure_at": "2026-10-27T06:06:50.938898+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 14,
       "new_confirmed_this_round": 0,
@@ -2294,9 +2294,9 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "R89_NATIVE_EVENT_HANDOFF_GUARDS_CLOSED",
-    "previous_goal_turn_classification": "PROGRESS: actualold/candidatecontrast andcodeguardrepair, targeted24scenarios/3negativecontrols, finalcurrentnative/API/adoption/restoration proofs andfreshScopedPASS. No fullGoal/garmentPASS orR88causeassertion.",
-    "execution_status": "ACTIVE_R89_CLOSED_GOAL_INCOMPLETE",
+    "current_segment": "R90_NATIVE_UNEQUIP_TRIGGER_AND_PACKAGE_LEAD_CLOSED",
+    "previous_goal_turn_classification": "PROGRESS: live cold no-CNS-body menu/equip comparison isolates native unequip as sufficient for1→142; saved graph target/package-name lead narrows next action. Real exit retention preserved, controlled cleanup and exact profile restoration; no leaf acceptance or speculative mod exclusion.",
+    "execution_status": "ACTIVE_R90_CLOSED_GOAL_INCOMPLETE",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
     "pause_source": "Current human: restart game, tests remain paused; subsequent black-screen repair does not resume tests",
     "user_play_handoff": {
@@ -3313,14 +3313,14 @@
     "native_goal": {
       "threadId": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
       "status": "active",
-      "tokensUsed": 15659492,
-      "timeUsedSeconds": 97472,
+      "tokensUsed": 15792327,
+      "timeUsedSeconds": 99328,
       "createdAt": 1792972357,
-      "telemetry_at": "2026-10-27T05:35:21.832616+00:00",
+      "telemetry_at": "2026-10-27T06:06:50.938898+00:00",
       "telemetry_coverage": "Directnative current activation; no quota set or increased; historical logical lifetimecost remains UNKNOWN.",
       "same_objective_verified": true,
-      "last_checkpoint": "R89 scoped native handoff repair delivered and read-only linked residency classified; no new round or acceptance. One cold native-menu-only comparison remains next; Goal active/incomplete.",
-      "updatedAt": 1793079268
+      "last_checkpoint": "R90 cold native-only trigger/current XXTB graph target observation closed; controlled termination after actual process retention, not normal-exit PASS. Full Goal active; next read-only graph/package responsibility analysis. No quota changes.",
+      "updatedAt": 1793081124
     },
     "goal_resume_source": "Current native Goal reused; same logical compatibility task and original5129/effective5125 preserved",
     "historical_previous_goal_health_checkpoint": {
@@ -3697,8 +3697,8 @@
       "task_id": "stellar-mod-compatibility-core-first-20261010",
       "execution_source": "Direct owner native Goal objective submitted in thread 01a1757a-f84c-72b0-97bd-44ab8c53eb53 on 2026-10-26; execute MOD_TEST_REPAIR_PLAN_20261025 grouped QA",
       "owner_thread": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
-      "lane": "REVIEWED",
-      "status": "CLOSED_R89_NATIVE_EVENT_BASELINE_SCOPED_FIX",
+      "lane": "DIRECT",
+      "status": "CLOSED_R90_NATIVE_UNEQUIP_TRIGGER_WITH_EXIT_FAILURE",
       "owned_scope": [
         "PROJECT_STATE.json#mod_compatibility_restructure current grouped execution/progress projection; old paused console and pre-existing manual-play deltas remain separate",
         ".local/play-session-20261026/grouped-qa",
@@ -3729,10 +3729,10 @@
         "remaining_scope_unchanged": true
       },
       "test_save_boundary": "No independent story-save isolation established; forbid death/story/reward/travel tests and save rollback. Initial private launch/menu checks only; inspect scene before safe reversible movement/outfit checks.",
-      "round_accounting": "Oneboundednativehandoffrepair witholdbaseline/failedcandidate1/finalcandidate2 andfreshreview closesonce. Games, tests, observercorrections andtoolcalls are notextra rounds.",
-      "next_action": "补一次当前配置下的冷启动原生衣柜对照：确认没有保存的CNS身体覆盖，不选择CNS衣服、不装备其他服装，只记录开菜单前、身体列表初始化和关闭后2/5秒的同一玩家组件LinkedInstances、原生alias/网格和输入锁。先判明菜单本身是否触发实例增长，再决定后续定位；不直接清空未知链接、不重复颜色或公共辅助成功率。",
+      "round_accounting": "One cold control plus one evidence-driven native unequip/re-equip trigger and read-only package lead closes once; samples/helpers/cleanup attempts are not separate rounds.",
+      "next_action": "只读定位XXTB_Core_ABP对应的实际包、导入/绑定和原生脱衣时linked节点构建路径：复用R90已保存的1→142→143及OriginalPostProcess目标变化和现有解析器，先验证当前命中包与节点语义，再决定是否需要有界配置对照或修复。退出窗口消失而进程残留175.68秒单列FAIL，原因仍未知；不清空陌生链接、不直接卸整包、不重复颜色/公共辅助测试。",
       "at": "2026-10-25T23:55:06.640620+00:00",
-      "lane_reason": "Recoveredguardpolicy andnewCNSAPIobserver, targetedLua regressions pluscurrentliveadoption andfreshindependentScopedPASS; nofullS1 orcausalclaims.",
+      "lane_reason": "One owned cold native-menu/equip comparison and read-only saved/static classification; no product code, asset repair, compatibility acceptance or culpability conclusion.",
       "findings": {
         "v3": "Confirmed Lua index13 reads native slot12; no successful native-body binding. Current fix readsLua14.",
         "v4": "Real native cold-load false positive and Actor-deselection invisible-body regressions; FAIL preserved.",
@@ -3744,7 +3744,7 @@
         "v8": "Fresh independent PASS for current BS_ alias transition/native-menu scope; full S1/Goal incomplete"
       },
       "candidate_sha256": "6cd2491c2f173a3fccb2f488a2acba1e4b1cc5d3ab130b676d867865dca15ed8",
-      "updated_at": "2026-10-27T05:35:21.832616+00:00",
+      "updated_at": "2026-10-27T06:06:50.938898+00:00",
       "grouped_assertions": {
         "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
         "sha256": "a800adc5603d0edb2747f20dc335cc109dd88357033ddfcdadb856aac810b618",
@@ -3758,41 +3758,33 @@
       },
       "hair_original_context": "Exact BUG-HAIR-20261025-01 context recovered read-only from native crash directory; private pointer .local/play-session-20261026/grouped-qa/hair-incident-context-recovery.json; GameThread AV verified, cause unknown",
       "runtime_ownership": {
-        "status": "ALL_OWNED_GAMES_HELPERS_MOVEMENT_EXITED_0_FINAL_PREFIX_EMPTY",
-        "evidence": ".local/play-session-20261026/grouped-qa/native-same-alias-r89/final-restoration.json",
-        "private_display": "ExistingexactGoaldisplay2 retained",
-        "native_owner_identity": {
-          "source_version": "R89_v9_candidate2",
-          "sha256": "6cd2491c2f173a3fccb2f488a2acba1e4b1cc5d3ab130b676d867865dca15ed8"
-        },
-        "historical_launch_label_correction": ".local/play-session-20261026/grouped-qa/native-same-alias-r89/metadata-correction.json"
+        "status": "ALL_OWNED_RUNTIME_CLOSED_NORMAL_GAME_EXIT_FAILED",
+        "evidence": ".local/play-session-20261026/grouped-qa/native-ui-population-r90/final-restoration.json",
+        "game_wrapper_exit": 1,
+        "assistant_wrapper_exit": 0,
+        "movement_wrapper_exit": 0,
+        "private_display": "Existing exact active Goal display2 retained"
       },
       "candidate_source": "src/runtime/NativeOutfitOwnership.lua",
-      "latest_runtime_result": ".local/play-session-20261026/grouped-qa/native-same-alias-r89/runtime-result.json",
-      "last_material_progress": "Nativehandoffguard retainsmenu baseline acrosspassivealias/panelrebuild; freshnativeevent andunchanged12pollexpiry, newerCNSpriority preserved. Actualnativeother/unequip/re-equip/API reselect passscoped; exactprofile/process/source recovery. Failedcandidate1 preserved; R88causeopen.",
-      "round_key": "native-same-alias-body-handoff-r89-20261027",
+      "latest_runtime_result": ".local/play-session-20261026/grouped-qa/native-ui-population-r90/runtime-result.json",
+      "last_material_progress": "Cold menu-only remained1; native BS01 unequip without prior CNS Body cycling changed same player component1→142 across70 classes; re-equip left143. Current PP linked XXTB_Core_ABP_C while InnerSuit. Original profile restored; normal exit retained process175.68s then exact SIGTERM/wrapper1, separate scoped failure. No garment acceptance/exclusions.",
+      "round_key": "cold-native-menu-linked-population-r90-20261027",
       "round_closed_once": true,
       "previous_current_projection_ref": ".local/play-session-20261026/grouped-qa/PROJECT_STATE.entry.json",
       "independent_review": {
-        "status": "PASS_SCOPED",
-        "source_sha256": "6cd2491c2f173a3fccb2f488a2acba1e4b1cc5d3ab130b676d867865dca15ed8",
-        "candidate_manifest_sha256": "3bb3673ebb1994275c885e9a81fb1f280792f83b6117655dae828d27984d7c0e",
-        "evidence": ".local/play-session-20261026/grouped-qa/native-same-alias-r89/independent-review.json"
+        "status": "NOT_REQUIRED_FOR_DIRECT_OBSERVATION",
+        "prior_code_review_retained": ".local/play-session-20261026/grouped-qa/native-same-alias-r89/independent-review.json",
+        "scope": "No product code or compatibility statuses changed; conservative facts and causal limits only."
       },
       "git_delivery": {
         "status": "DELIVERY_RECEIPT_AUTHORITATIVE_FOR_REMOTE_VERIFICATION",
         "target": "codex/grouped-mod-qa-20261026",
-        "entry_verified_head": "a12165d9172e6e3e17538fc2c6f26d855cee3854",
+        "entry_verified_head": "4d50a7ce60a9bdc15446bf4460e47a7e6ab899c4",
         "main_merge_authorized": false,
         "reviewed_paths": [
-          "src/runtime/NativeOutfitOwnership.lua",
-          "src/runtime/README.md",
-          "tests/fixtures/native_outfit_ownership.lua",
-          "tests/test_native_outfit_ownership.py",
-          "PROJECT_STATE.json exactRootownedprojection"
+          "PROJECT_STATE.json exact Root owned projection"
         ],
-        "receipt_ref": ".local/play-session-20261026/grouped-qa/native-same-alias-r89/round-delivery.followup.json",
-        "reason": "Same-round read-only diagnosis and next-action metadata; reviewed code/tests and manifest unchanged."
+        "receipt_ref": ".local/play-session-20261026/grouped-qa/native-ui-population-r90/round-delivery.json"
       },
       "entry_process_audit": "No SB.exe or SB-Win64-Shipping.exe live; previous hair session PID1913315 absent; lifecycle-end confirms own helper stopped. Steam provider retained, no input granted to foreground.",
       "entry_goal_turn_classification": "FIRST_ACTIVATION; no prior turn in this new native Goal",
@@ -3878,7 +3870,7 @@
         },
         "r73_reuse_correction": "Beforefuturecorechecks, consult actualmanifest grouped_assertions structuredremaining_delta andlaterrecords. MOVE-REBIND-SAMEPROCESS-NEWPAWN alreadyhasactual875proof andmustbereused absent relevantchange; older narrativegap sentences arehistorical."
       },
-      "closed_at": "2026-10-27T05:20:42.107491+00:00",
+      "closed_at": "2026-10-27T06:06:50.938898+00:00",
       "wardrobe_semantic": {
         "round_key": "grouped-cns-body-semantic-20261026",
         "source": "Continuation of active nativeGoal plus owner REA/nonvisualoperation steering",
@@ -4067,7 +4059,7 @@
           "metadata_note": "Source commit identity is recorded here; exact final metadata HEAD verification is in the existing ignored receipt to avoid self-reference."
         }
       },
-      "current_result_ref": "native_same_alias_r89",
+      "current_result_ref": "native_ui_population_r90",
       "piercing_delta": {
         "round_key": "aik-piercing-delta-20261026",
         "status": "CLOSED_SCOPED_PROGRESS_GOAL_CONTINUES",
@@ -5963,6 +5955,74 @@
           "no_new_game_or_acceptance": true,
           "round_count_unchanged": 89
         }
+      },
+      "native_ui_population_r90": {
+        "at": "2026-10-27T05:39:00.143363+00:00",
+        "round_key": "cold-native-menu-linked-population-r90-20261027",
+        "status": "CLOSED_SCOPED_NATIVE_UNEQUIP_TRIGGER_WITH_EXIT_FAILURE",
+        "lane": "DIRECT",
+        "entry_commit": "4d50a7ce60a9bdc15446bf4460e47a7e6ab899c4",
+        "owned_scope": [
+          "PROJECT_STATE.json current grouped/progress projection",
+          ".local/play-session-20261026/grouped-qa/native-ui-population-r90",
+          "Exact temporary AgentSessionQA 2 files and appended mods suffix, semantic client/identity/cache, one private game and its CombatAssistant/movement helpers"
+        ],
+        "acceptance": "Same current playset, no saved CNS Body, no CNS selection/equip/variant cycling; compare actual same-player component linked population cold, native menu open, closed +2/+5s. All source assets and CNS profile exact; restore helper/profile/process state. Observation only, no leak/crash or whole garment acceptance.",
+        "resource_plan": "One serial private game; reuse exact display2, installed Proton/assistant/movement and own observers. Available memory ~34GB/disk1.2TB; no new dependencies or asset copies; bounded few JSON/stills, estimated additional disk below25MB. Whole task peak UNKNOWN.",
+        "previous_turn_classification": "PROGRESS: reviewed native handoff repair actually installed/tested/delivered; 27-input read-only classification changes next evidence to native-menu-only control.",
+        "source_version": "NativeOwnership v9 6cd2491c; OwnedLinkedPostProcess bc2afbb8; QAControl4.2.2 2287c54c; CombatAssistant1.0.16",
+        "next_action": "只读定位XXTB_Core_ABP对应的实际包、导入/绑定和原生脱衣时linked节点构建路径：复用R90已保存的1→142→143及OriginalPostProcess目标变化和现有解析器，先验证当前命中包与节点语义，再决定是否需要有界配置对照或修复。退出窗口消失而进程残留175.68秒单列FAIL，原因仍未知；不清空陌生链接、不直接卸整包、不重复颜色/公共辅助测试。",
+        "menu_only_result_ref": ".local/play-session-20261026/grouped-qa/native-ui-population-r90/menu-only-control.json",
+        "followup_trigger_intent": {
+          "at": "2026-10-27T05:50:29.550522+00:00",
+          "reason": "Cold no-CNS-body menu entry/body-list/close all remain1 linked instance. Existing R88 interval also contained native unequip/equip, so add exactly that missing trigger in same owned game, still no CNS Body selection.",
+          "actions": "One original BS_01 native unequip to BS_102, then re-equip original BS_01; observe same component after each. Native profile selection restored through game UI; no direct SAV write.",
+          "no_original_control_redefinition": true,
+          "additional_games": 0,
+          "not_general_regression_repeat": "New causal comparison excludes prior CNS Body cycling; not a repeat of R89 saved-selection handoff acceptance."
+        },
+        "closed_at": "2026-10-27T06:06:50.938898+00:00",
+        "runtime_result_ref": ".local/play-session-20261026/grouped-qa/native-ui-population-r90/runtime-result.json",
+        "runtime_result_sha256": "44129e5c31038f4cd8a80c13020fca07da4b49bef0c42fa4b4819737e612590a",
+        "restoration_ref": ".local/play-session-20261026/grouped-qa/native-ui-population-r90/final-restoration.json",
+        "cold_menu_only_counts": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "native_trigger_counts": [
+          142,
+          142,
+          142,
+          143,
+          143,
+          143
+        ],
+        "no_prior_CNS_Body_cycling": true,
+        "original_postprocess_target_transition": [
+          "CH_P_EVE_29_AnimBP_C",
+          "XXTB_Core_ABP_C",
+          "CH_P_EVE_29_AnimBP_C"
+        ],
+        "package_candidate_ref": ".local/play-session-20261026/grouped-qa/native-ui-population-r90/core-name-reference-probe.json",
+        "matching_name_references_only": 70,
+        "full_runtime_class_package_and_graph_semantics": "UNPROVEN",
+        "new_scoped_failure": {
+          "id": "EXIT_RETAINED_NATIVE_UNEQUIP_R90",
+          "status": "FAIL_SCOPED",
+          "fingerprint": "Current fixed game/NativeOwnershipv9/OwnedLinked1.0.0; native unequip/re-equip after cold no-CNS-body; WM_CLOSE window removed but same mainPID remains175.68s; exact SIGTERM; wrapper1",
+          "evidence_ref": ".local/play-session-20261026/grouped-qa/native-ui-population-r90/exit-retention.json",
+          "cause": "UNKNOWN; no crash or culprit claim"
+        },
+        "game_wrapper_exit": 1,
+        "new_native_crash_dirs": 0,
+        "source_assets_changed": false,
+        "new_full_leafPASS": 0,
+        "new_exclusions": 0
       }
     },
     "owner_acceptance_20261026": {
