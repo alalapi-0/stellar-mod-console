@@ -24,8 +24,9 @@ class OwnedLinkedPostProcessTests(unittest.TestCase):
         cls.lua.lua_tolstring.restype = ctypes.c_char_p
         cls.lua.lua_close.argtypes = [ctypes.c_void_p]
 
-    def run_case(self, scenario):
-        source = (ROOT / "src/runtime/OwnedLinkedPostProcess.lua").read_bytes()
+    def run_case(self, scenario, source=None):
+        if source is None:
+            source = (ROOT / "src/runtime/OwnedLinkedPostProcess.lua").read_bytes()
         fixture = (ROOT / "tests/fixtures/owned_linked_postprocess.lua").read_bytes()
         state = self.lua.luaL_newstate()
         self.assertTrue(state)
@@ -52,3 +53,12 @@ class OwnedLinkedPostProcessTests(unittest.TestCase):
         code, error = self.run_case("missing-policy-negative")
         self.assertNotEqual(code, 0)
         self.assertIn("owned linked registry must remain bounded", error)
+
+    def test_native_and_owned_nested_graph_lifecycle(self):
+        for scenario in ["graph-native", "graph-cycle", "graph-tag-replacement", "graph-foreign",
+                         "graph-wrong-original", "graph-bad-edge", "graph-cross-component",
+                         "graph-unrecognized-node", "graph-active", "graph-nonlocal",
+                         "graph-wrong-pawn", "graph-stale-active"]:
+            with self.subTest(scenario=scenario):
+                code, error = self.run_case(scenario)
+                self.assertEqual(code, 0, error)

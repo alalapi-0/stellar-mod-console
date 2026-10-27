@@ -1542,20 +1542,20 @@
       "manifest_sha256": "3bb3673ebb1994275c885e9a81fb1f280792f83b6117655dae828d27984d7c0e",
       "target_identity_sha256": "955965cda7371a7ff208fdf736e19a1136e0628cf77a644ac49b5d4323aa9a92",
       "enumeration_validation": ".local/play-session-20261026/grouped-qa/risk-groups-r69/result.json",
-      "round_key": "native-pp-initialization-boundary-trace-r92-20261027",
-      "round_status": "CLOSED_R92_CONFIRMED_SHARED_PP_INITIALIZATION_BOUNDARY",
-      "count": 92,
+      "round_key": "linked-graph-closure-lifecycle-repair-r93-20261027",
+      "round_status": "CLOSED_R93_REVIEWED_SHARED_LIFECYCLE_REPAIR",
+      "count": 93,
       "coverage": "since_baseline",
-      "last_seq": 92,
-      "last_key": "native-pp-initialization-boundary-trace-r92-20261027",
+      "last_seq": 93,
+      "last_key": "linked-graph-closure-lifecycle-repair-r93-20261027",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": null,
       "evidence_change_percentage_points": null,
       "scope_change_percentage_points": 0,
-      "change_rule": "New actual shared duplication/retention mechanism; no manifest/leaf/group status or denominator changes. Old crashes and R90 normal-close failure retained.",
-      "round_start_commit": "de74db9f5af85303010cd11e99cbc6a4ff2e86a8",
-      "scope_change": "Original5129/effective5125/known1263 units preserved; no exclusions, aliases or omitted targets.",
-      "milestone_change": "Actual full Core class namespace and71→72→142 temporal boundary observed; old71 plusnew matching70 survive, current native return143. Logging-only instrumentation fully removed, exact profile/core restored and native QuitGame/game/helper wrappers0. No full garment acceptance or general crash-cause claim.",
+      "change_rule": "One current-version scoped linked-lifecycle behavior acceptance; zero new complete leaf PASS, no manifest/leaf/group status change or denominator change. Historical PASS remains tied to its older exact source scope, not blanket acceptance of the new candidate.",
+      "round_start_commit": "acdc9237f082e96dc352cfd435d3fe7ca5e69809",
+      "scope_change": "Original5129/effective5125/known1263 units retained; no new exclusions or omitted targets.",
+      "milestone_change": "Scoped duplicate native/Core wrapper retention repaired: prior1→142→143 now1→71→1 with CNS transition and return; same current Pawn/World/body, exact71-instance Core tag closure, foreign/active safeguards only fixture checked. Profile original byte-exact, game/helpers native exit0. No gray/crash/full-garment/long-run acceptance.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1898,7 +1898,7 @@
       "remaining_rounds": null,
       "remaining_rounds_confidence": "UNKNOWN",
       "window": [],
-      "prediction_reason": "Actual shared lifecycle repair still required; heterogeneous remaining scope and completion denominator unresolved, no comparable throughput estimate.",
+      "prediction_reason": "Current completion denominator unknown; residual hair/crash/material/physics, recovery and final playable configuration differ in scope. No comparable remaining-round estimate.",
       "original_unified_required_retained": 5129,
       "latest_specific_followup": "integration:sequential-outfit-material-recovery",
       "grouped_assertion_audit": {
@@ -1993,13 +1993,13 @@
       },
       "remaining_rounds_estimate": null,
       "remaining_rounds_estimate_confidence": "UNKNOWN; heterogeneous unresolved scope and denominator unknown",
-      "new_shared_scoped_assertions_this_round": 0,
+      "new_shared_scoped_assertions_this_round": 1,
       "new_partial_leaf_this_round": 0,
       "new_shared_static_assertions_this_round": 0,
       "evidence_refinement_known_units_delta": 0
     },
-    "next_action": "基于R92已证实的71→72→142衔接，先核对现有Tuner已验证的图节点反射接口，再实现最小生命周期修复：统计当前即将替换的原PP闭包和自有tag后代；只有全部registered实例都被证明属于待退役/自有图且原有本地Pawn/World/Mesh/Main类及非活动动画门禁成立时才重建。未知或外来链接阻止清理，保留原PP物理与全部身体控制。用精确Core/原生/CNS切回和原配置恢复验证候选并按REVIEWED做新独立审查；不重复颜色或辅助成功率。",
-    "updated_at": "2026-10-27T07:14:11.502834+00:00",
+    "next_action": "原生目标控制状态显示blocked，原因未由接口提供；在目标恢复为可继续后，复用R88已有两网格/材质动作与R93共享图闭包证据，优先对原始连续换装后灰/黑材质残留做受影响的最小定向复核，并继续保留已确认有问题的Hair0排除。不得重复颜色、公共辅助成功率或全部组合；R90 WM_CLOSE残留和发型崩溃总体原因仍分别未解决。",
+    "updated_at": "2026-10-27T07:51:45.316953+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2128,7 +2128,7 @@
         }
       }
     },
-    "round_closure_at": "2026-10-27T07:14:11.502834+00:00",
+    "round_closure_at": "2026-10-27T07:51:45.316953+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 14,
       "new_confirmed_this_round": 0,
@@ -2292,9 +2292,9 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "R92_PP_DUPLICATION_BOUNDARY_CONFIRMED_REPAIR_NEXT",
-    "previous_goal_turn_classification": "PROGRESS: temporary inline trace converted conditional142 model to actual distinct native-Core/wrapped-Core and70+70 subgraph construction/retention evidence. Exact source/profile/runtime cleanup and native exit0; next action is scoped reviewed lifecycle implementation, not another baseline replay.",
-    "execution_status": "ACTIVE_R92_CLOSED_GOAL_INCOMPLETE",
+    "current_segment": "R93_REVIEWED_LINKED_CLOSURE_REPAIR_CLOSED",
+    "previous_goal_turn_classification": "PROGRESS: exact baseline failure fixed and tested in actual native/CNS/Core transitions; independent scoped review PASS, original profile and owned resources restored. Native Goal API now reports blocked without an explanatory reason; no invented cause or status override.",
+    "execution_status": "NATIVE_GOAL_BLOCKED_R93_CLOSED",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
     "pause_source": "Current human: restart game, tests remain paused; subsequent black-screen repair does not resume tests",
     "user_play_handoff": {
@@ -3310,15 +3310,16 @@
     },
     "native_goal": {
       "threadId": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
-      "status": "active",
-      "tokensUsed": 15995222,
-      "timeUsedSeconds": 103335,
+      "status": "blocked",
+      "tokensUsed": 16224259,
+      "timeUsedSeconds": 105269,
       "createdAt": 1792972357,
-      "telemetry_at": "2026-10-27T07:14:11.502834+00:00",
+      "telemetry_at": "2026-10-27T07:51:45.316953+00:00",
       "telemetry_coverage": "Directnative current activation; no quota set or increased; historical logical lifetimecost remains UNKNOWN.",
       "same_objective_verified": true,
-      "last_checkpoint": "R92 actual PP construction/retention boundary confirmed, original shim/profile/core restored; all game/helper wrappers0 via native QuitGame. Goal active/incomplete. Implement reviewed graph-closure lifecycle candidate next; no quotas changed.",
-      "updatedAt": 1793085130
+      "last_checkpoint": "R93 exact scoped repair independently reviewed and closed; direct native Goal API reports blocked with no reason field; no status override or quota changes.",
+      "updatedAt": 1793087065,
+      "blocked_reason": "UNKNOWN_NOT_RETURNED_BY_NATIVE_GOAL_API"
     },
     "goal_resume_source": "Current native Goal reused; same logical compatibility task and original5129/effective5125 preserved",
     "historical_previous_goal_health_checkpoint": {
@@ -3695,8 +3696,8 @@
       "task_id": "stellar-mod-compatibility-core-first-20261010",
       "execution_source": "Direct owner native Goal objective submitted in thread 01a1757a-f84c-72b0-97bd-44ab8c53eb53 on 2026-10-26; execute MOD_TEST_REPAIR_PLAN_20261025 grouped QA",
       "owner_thread": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
-      "lane": "DIRECT",
-      "status": "CLOSED_R92_PP_DUPLICATION_BOUNDARY_CONFIRMED",
+      "lane": "REVIEWED",
+      "status": "CLOSED_R93_REVIEWED_SHARED_LINKED_LIFECYCLE_REPAIR",
       "owned_scope": [
         "PROJECT_STATE.json#mod_compatibility_restructure current grouped execution/progress projection; old paused console and pre-existing manual-play deltas remain separate",
         ".local/play-session-20261026/grouped-qa",
@@ -3727,10 +3728,10 @@
         "remaining_scope_unchanged": true
       },
       "test_save_boundary": "No independent story-save isolation established; forbid death/story/reward/travel tests and save rollback. Initial private launch/menu checks only; inspect scene before safe reversible movement/outfit checks.",
-      "round_accounting": "One instrumented exact native unequip/re-equip trace, native exit and exact source/profile cleanup closes once; callbacks/frames/UI confirmations/analysis not separate rounds.",
-      "next_action": "基于R92已证实的71→72→142衔接，先核对现有Tuner已验证的图节点反射接口，再实现最小生命周期修复：统计当前即将替换的原PP闭包和自有tag后代；只有全部registered实例都被证明属于待退役/自有图且原有本地Pawn/World/Mesh/Main类及非活动动画门禁成立时才重建。未知或外来链接阻止清理，保留原PP物理与全部身体控制。用精确Core/原生/CNS切回和原配置恢复验证候选并按REVIEWED做新独立审查；不重复颜色或辅助成功率。",
+      "round_accounting": "One owned candidate plus original-failing fixture, targeted runtime six observations, exact recovery and independent review closes once; inputs, frames, callbacks, checks, reviewer and prior observer correction are not new rounds.",
+      "next_action": "原生目标控制状态显示blocked，原因未由接口提供；在目标恢复为可继续后，复用R88已有两网格/材质动作与R93共享图闭包证据，优先对原始连续换装后灰/黑材质残留做受影响的最小定向复核，并继续保留已确认有问题的Hair0排除。不得重复颜色、公共辅助成功率或全部组合；R90 WM_CLOSE残留和发型崩溃总体原因仍分别未解决。",
       "at": "2026-10-25T23:55:06.640620+00:00",
-      "lane_reason": "Temporary read-only inline observations only; trace block removal recovers original operations byte-exactly and original shim restored. Actual lifecycle behavior repair remains REVIEWED.",
+      "lane_reason": "Recoverable cross-module lifecycle behavior; coherent candidate validated in fixtures and actual native/CNS paths then fresh independent Judge PASS_SCOPED.",
       "findings": {
         "v3": "Confirmed Lua index13 reads native slot12; no successful native-body binding. Current fix readsLua14.",
         "v4": "Real native cold-load false positive and Actor-deselection invisible-body regressions; FAIL preserved.",
@@ -3741,8 +3742,8 @@
         "v7": "Scoped actual native/CNS menu/save/mesh pass from visible CNS baseline; earlier RemovedBody=true poison remains a counterexample, not erased",
         "v8": "Fresh independent PASS for current BS_ alias transition/native-menu scope; full S1/Goal incomplete"
       },
-      "candidate_sha256": "6cd2491c2f173a3fccb2f488a2acba1e4b1cc5d3ab130b676d867865dca15ed8",
-      "updated_at": "2026-10-27T07:14:11.502834+00:00",
+      "candidate_sha256": "21bb36fbf2ad22f6f93ff605af26961446998ceb2e36c63fd222d92c87ed6ca8",
+      "updated_at": "2026-10-27T07:51:45.316953+00:00",
       "grouped_assertions": {
         "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
         "sha256": "a800adc5603d0edb2747f20dc335cc109dd88357033ddfcdadb856aac810b618",
@@ -3756,34 +3757,42 @@
       },
       "hair_original_context": "Exact BUG-HAIR-20261025-01 context recovered read-only from native crash directory; private pointer .local/play-session-20261026/grouped-qa/hair-incident-context-recovery.json; GameThread AV verified, cause unknown",
       "runtime_ownership": {
-        "status": "ALL_OWNED_GAME_HELPERS_EXITED_0_NATIVE_QUIT_ROUTE",
-        "evidence": ".local/play-session-20261026/grouped-qa/pp-initialization-trace-r92/final-restoration.json",
+        "status": "ALL_OWNED_GAME_HELPERS_EXITED_0_CANDIDATE_RETAINED",
+        "evidence": ".local/play-session-20261026/grouped-qa/linked-closure-repair-r93/final-restoration.json",
         "game_wrapper_exit": 0,
         "assistant_wrapper_exit": 0,
         "movement_wrapper_exit": 0,
-        "instrumented_shim_restored": true,
-        "private_display": "Existing exact Goal display2 retained",
-        "prior_R90_WM_CLOSE_failure": "Unresolved; do not transfer current exit0 to that path"
+        "candidate_module_installed_sha256": "21bb36fbf2ad22f6f93ff605af26961446998ceb2e36c63fd222d92c87ed6ca8",
+        "candidate_shim_installed_sha256": "0026661abbc7dff36ccb6f7c9674684efd2be837df656f331e241fc23fa0de25",
+        "qa2files_suffix_client_restored": true,
+        "private_display": "Existing Goal display2 retained",
+        "prior_R90_WM_CLOSE_failure": "Unresolved; not cured by current native QuitGame path"
       },
-      "candidate_source": "src/runtime/NativeOutfitOwnership.lua",
-      "latest_runtime_result": ".local/play-session-20261026/grouped-qa/pp-initialization-trace-r92/runtime-result.json",
-      "last_material_progress": "Actual full Core class namespace and71→72→142 temporal boundary observed; old71 plusnew matching70 survive, current native return143. Logging-only instrumentation fully removed, exact profile/core restored and native QuitGame/game/helper wrappers0. No full garment acceptance or general crash-cause claim.",
-      "round_key": "native-pp-initialization-boundary-trace-r92-20261027",
+      "candidate_source": "src/runtime/OwnedLinkedPostProcess.lua",
+      "latest_runtime_result": ".local/play-session-20261026/grouped-qa/linked-closure-repair-r93/runtime-result.json",
+      "last_material_progress": "Scoped duplicate native/Core wrapper retention repaired: prior1→142→143 now1→71→1 with CNS transition and return; same current Pawn/World/body, exact71-instance Core tag closure, foreign/active safeguards only fixture checked. Profile original byte-exact, game/helpers native exit0. No gray/crash/full-garment/long-run acceptance.",
+      "round_key": "linked-graph-closure-lifecycle-repair-r93-20261027",
       "round_closed_once": true,
       "previous_current_projection_ref": ".local/play-session-20261026/grouped-qa/PROJECT_STATE.entry.json",
       "independent_review": {
-        "status": "NOT_REQUIRED_DIRECT_DIAGNOSTIC_TRACE",
-        "next_behavior_repair_requires": "REVIEWED fresh coherent-candidate independent Judge"
+        "status": "PASS_SCOPED",
+        "reviewer": "r93_linked_closure_review",
+        "evidence": ".local/play-session-20261026/grouped-qa/linked-closure-repair-r93/independent-review.json",
+        "candidate_sha256": "21bb36fbf2ad22f6f93ff605af26961446998ceb2e36c63fd222d92c87ed6ca8"
       },
       "git_delivery": {
         "status": "DELIVERY_RECEIPT_AUTHORITATIVE_FOR_REMOTE_VERIFICATION",
         "target": "codex/grouped-mod-qa-20261026",
-        "entry_verified_head": "de74db9f5af85303010cd11e99cbc6a4ff2e86a8",
+        "entry_verified_head": "acdc9237f082e96dc352cfd435d3fe7ca5e69809",
         "main_merge_authorized": false,
         "reviewed_paths": [
-          "PROJECT_STATE.json exact Root owned projection"
+          "PROJECT_STATE.json exact Root-owned projection",
+          "src/runtime/OwnedLinkedPostProcess.lua",
+          "src/runtime/README.md",
+          "tests/fixtures/owned_linked_postprocess.lua",
+          "tests/test_owned_linked_postprocess.py"
         ],
-        "receipt_ref": ".local/play-session-20261026/grouped-qa/pp-initialization-trace-r92/round-delivery.json"
+        "receipt_ref": ".local/play-session-20261026/grouped-qa/linked-closure-repair-r93/round-delivery.json"
       },
       "entry_process_audit": "No SB.exe or SB-Win64-Shipping.exe live; previous hair session PID1913315 absent; lifecycle-end confirms own helper stopped. Steam provider retained, no input granted to foreground.",
       "entry_goal_turn_classification": "FIRST_ACTIVATION; no prior turn in this new native Goal",
@@ -3869,7 +3878,7 @@
         },
         "r73_reuse_correction": "Beforefuturecorechecks, consult actualmanifest grouped_assertions structuredremaining_delta andlaterrecords. MOVE-REBIND-SAMEPROCESS-NEWPAWN alreadyhasactual875proof andmustbereused absent relevantchange; older narrativegap sentences arehistorical."
       },
-      "closed_at": "2026-10-27T07:14:11.502834+00:00",
+      "closed_at": "2026-10-27T07:51:45.316953+00:00",
       "wardrobe_semantic": {
         "round_key": "grouped-cns-body-semantic-20261026",
         "source": "Continuation of active nativeGoal plus owner REA/nonvisualoperation steering",
@@ -4058,7 +4067,7 @@
           "metadata_note": "Source commit identity is recorded here; exact final metadata HEAD verification is in the existing ignored receipt to avoid self-reference."
         }
       },
-      "current_result_ref": "pp_initialization_trace_r92",
+      "current_result_ref": "linked_closure_repair_r93",
       "piercing_delta": {
         "round_key": "aik-piercing-delta-20261026",
         "status": "CLOSED_SCOPED_PROGRESS_GOAL_CONTINUES",
@@ -6135,6 +6144,72 @@
           "retained_evidence_bytes_before_final_projection": 7032455,
           "whole_task_peak_memory": "UNKNOWN"
         }
+      },
+      "linked_closure_repair_r93": {
+        "at": "2026-10-27T07:22:10.903358+00:00",
+        "round_key": "linked-graph-closure-lifecycle-repair-r93-20261027",
+        "status": "CLOSED_PASS_SCOPED_REVIEWED",
+        "lane": "REVIEWED",
+        "entry_commit": "acdc9237f082e96dc352cfd435d3fe7ca5e69809",
+        "owned_scope": [
+          "src/runtime/OwnedLinkedPostProcess.lua",
+          "tests/test_owned_linked_postprocess.py",
+          "tests/fixtures/owned_linked_postprocess.lua",
+          "src/runtime/README.md",
+          "PROJECT_STATE.json current grouped/progress projection",
+          ".local/play-session-20261026/grouped-qa/linked-closure-repair-r93",
+          "exact installed own linked module plus one mesh-specific original-class argument in owned shim integration; temporary2QA files/modsuffix/client, one private game and exact assistant/movement helpers"
+        ],
+        "acceptance": "R92 nativeCore70 child graph closure proven by reflected exact AnimNode_LinkedAnimGraph.TargetInstance edges. Retire only current exact originalPP closure plus previously owned tag closure; preserve foreign/unreachable/unknown/active animation and exact current local identity. Native clearing always paired with originalclass restore. Actual Core/native/CNS switching must avoid duplicate graph retention while preserving original physics and proportions. Existing game/assets/save boundaries and owner reduced scope remain.",
+        "preimage_ref": ".local/play-session-20261026/grouped-qa/linked-closure-repair-r93/source-preimages.json",
+        "reused_evidence": [
+          "R92 actual71→72→142→143 failure and exact pins",
+          "R91 97Coregraph nodes/nested201→CH47 serialized edges",
+          "R80 native clear/restore and current ordinary CNS baseline",
+          "R89 NativeOwnershipv9 and prior movement/assistant independent results"
+        ],
+        "resource_plan": "Serial bounded unit/fixture checks and one private game; reuse existing display2/runtime/libs. ~33GB available memory,1.1TB disk; no installs/copies of assets, output target below25MB; whole peak UNKNOWN.",
+        "next_action": "原生目标控制状态显示blocked，原因未由接口提供；在目标恢复为可继续后，复用R88已有两网格/材质动作与R93共享图闭包证据，优先对原始连续换装后灰/黑材质残留做受影响的最小定向复核，并继续保留已确认有问题的Hair0排除。不得重复颜色、公共辅助成功率或全部组合；R90 WM_CLOSE残留和发型崩溃总体原因仍分别未解决。",
+        "candidate_source_sha256": "21bb36fbf2ad22f6f93ff605af26961446998ceb2e36c63fd222d92c87ed6ca8",
+        "candidate_shim_sha256": "0026661abbc7dff36ccb6f7c9674684efd2be837df656f331e241fc23fa0de25",
+        "unit_result_ref": ".local/play-session-20261026/grouped-qa/linked-closure-repair-r93/unit-result.json",
+        "candidate_ref": ".local/play-session-20261026/grouped-qa/linked-closure-repair-r93/review-candidate.json",
+        "root_verification_ref": ".local/play-session-20261026/grouped-qa/linked-closure-repair-r93/root-verification.json",
+        "resources_ref": ".local/play-session-20261026/grouped-qa/linked-closure-repair-r93/final-restoration.json",
+        "closed_at": "2026-10-27T07:51:45.316953+00:00",
+        "runtime_result_ref": ".local/play-session-20261026/grouped-qa/linked-closure-repair-r93/runtime-result.json",
+        "runtime_result_sha256": "1f6692052d0e2cb1ad3d8dce3140346e303d0822f0330a9c5ff9215f01283e35",
+        "independent_review_ref": ".local/play-session-20261026/grouped-qa/linked-closure-repair-r93/independent-review.json",
+        "review": "PASS_SCOPED",
+        "observed_registry_counts": [
+          1,
+          71,
+          1,
+          1,
+          71,
+          1
+        ],
+        "baseline_registry_counts": [
+          1,
+          142,
+          143
+        ],
+        "core_registry_equals_tag_closure": true,
+        "core_live_direct_targets": 69,
+        "core_nested201_to_CH47": true,
+        "foreign_or_unknown_guards": "PASS_FIXTURE_ONLY",
+        "original_profile_exact_restored": true,
+        "game_helper_wrapper_exits": [
+          0,
+          0,
+          0
+        ],
+        "installed_candidate_retained": true,
+        "source_assets_changed": false,
+        "new_complete_leafPASS": 0,
+        "new_exclusions": 0,
+        "manifest_unchanged": true,
+        "limits": "Root causes of hair crash and intermittent persistent gray contamination unproven; existing confirmed defective hair0 remains excluded. Prior WM_CLOSE process retention remains unresolved."
       }
     },
     "owner_acceptance_20261026": {

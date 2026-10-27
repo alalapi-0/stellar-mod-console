@@ -58,3 +58,24 @@ python3 -m unittest discover -s tests -p test_qa_control.py -v
 ```
 
 真实 UE4SS 绑定、运行结果与未覆盖项以唯一项目状态引用的本地证据为准。REA 的静态二进制检查与 UE 运行时反射分别记录，不把文件格式或签名发现称为可调用性验证。
+
+`OwnedLinkedPostProcess.lua` 1.1 负责身体后处理子图的生命周期。在自有
+`OriginalPostProcess` 链接建立后，它沿反射的 `AnimNode_LinkedAnimGraph.TargetInstance`
+记录实际子图及其后代。原生换装已先初始化原后处理时，调用者还须传入从当前网格
+覆盖前记住的原始类：
+
+```lua
+ownership:beforeRefresh(body, active, originalClassCapturedFromThisMesh)
+```
+
+只有当前本地 EVE 身体的全部注册子实例都属于既有租约或这个原后处理的实际后代，
+且主动画处于允许重建的状态时，才成对清空、恢复原主动画类。未知、外来或读取不完整
+的子图阻止清理；不会直接修改 `LinkedInstances`。保留当前图全部后代作为一个集合，
+避免把仍在使用的嵌套物理图误当成残留。大型图保留其实际所需的多个实例，不以数量为一
+作为所有服装的验收条件。仅安装策略模块而未传入网格对应的原始类，不会启用原生图退役。
+
+离线生命周期回归：
+
+```sh
+python3 -m unittest discover -s tests -p test_owned_linked_postprocess.py -v
+```
