@@ -1515,11 +1515,11 @@
       "tested_with_complete_conclusion": null,
       "test_conclusion_percent": null,
       "statuses": {
-        "NOT_TESTED": 4692,
+        "NOT_TESTED": 4688,
         "PASS": 264,
         "REOPENED": 2,
         "WAITING_HUMAN": 1,
-        "PARTIAL": 134,
+        "PARTIAL": 138,
         "FAIL": 4,
         "BLOCKED_NOT_INSTALLED": 28
       },
@@ -1539,23 +1539,23 @@
       },
       "reason": "Owner explicitly removes exhaustive parameter/color/animation enumeration as completion requirement. Old264/5125 retained as history only; current merged applicability notfrozen, so no percentage orfakePASS.",
       "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
-      "manifest_sha256": "4fcdd8734711e448e2ef810f1e32fd12f66b42420e41b88c38a65b7cd0edb6ff",
+      "manifest_sha256": "f48045a0e8fa9f20ccbe5b204ac084390b4d1608de2d49de017627002bc07d64",
       "target_identity_sha256": "955965cda7371a7ff208fdf736e19a1136e0628cf77a644ac49b5d4323aa9a92",
       "enumeration_validation": ".local/play-session-20261026/grouped-qa/risk-groups-r69/result.json",
-      "round_key": "camera-preimage-r108-20261029",
-      "round_status": "CLOSED_R108_SCOPED_ADOPTION_CAMERA_OPEN",
-      "count": 108,
+      "round_key": "distinct-body-batch-r109-20261029",
+      "round_status": "CLOSED_R109_FOUR_PARTIAL",
+      "count": 109,
       "coverage": "since_baseline",
-      "last_seq": 108,
-      "last_key": "camera-preimage-r108-20261029",
+      "last_seq": 109,
+      "last_key": "distinct-body-batch-r109-20261029",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": null,
       "evidence_change_percentage_points": null,
       "scope_change_percentage_points": 0,
-      "change_rule": "One independently scoped exact-exclusion group accepted after fresh adoption; no new historical leaf PASS or denominator change. Overall completion and percentage unknown.",
-      "round_start_commit": "07117513c69d70b7f2e2b0de1e7ecda034e4c204",
+      "change_rule": "Four previously untested exact leaves advanced to PARTIAL; no new complete PASS or denominator change. Overall percentage unknown.",
+      "round_start_commit": "9b61dffcea5dc8ec00740023b925d2edb4384c53",
       "scope_change": "Original5129/effective5125/known1263 unchanged; no exclusions added.",
-      "milestone_change": "Current user profile fresh adoption verified; saved camera remained unchanged this round; pre-R107 original camera remains unresolved.",
+      "milestone_change": "Four distinct meshes received 7s+ live selection/material/rear observation; exact entry profile restored.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1999,7 +1999,7 @@
       "evidence_refinement_known_units_delta": 0
     },
     "next_action": "Continue ready material/visibility or hair-related differential groups from existing evidence; preserve known exact exclusions and prioritize untested relevant consumers, not repeated colors or shared combat tests.",
-    "updated_at": "2026-10-28T19:56:59.619602+00:00",
+    "updated_at": "2026-10-28T20:23:37.395851+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2292,7 +2292,7 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "R108_CLOSED_FRESH_ADOPTION_CAMERA_OPEN",
+    "current_segment": "R109_CLOSED_FOUR_PARTIAL",
     "previous_goal_turn_classification": "PROGRESS: R94 captured 1→2→3→4 retained instances, still4 at idle and1 after existing CNS-open callback. User paused; all own resources closed. Now explicit resume; callback reason unknown.",
     "execution_status": "ACTIVE_GOAL_CONTINUES",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
@@ -6703,6 +6703,34 @@
         "manifest_before_sha256": "8e5cb0b3399c602f026616880cf6ce360892f40263d3bbdcd3891ab2c0580b88",
         "manifest_after_sha256": "4fcdd8734711e448e2ef810f1e32fd12f66b42420e41b88c38a65b7cd0edb6ff",
         "finding": "Current exact excluded item remains absent from candidate; survivor selected after fresh launch and native outfit restored, current entire CNS profile byte-identical to entry. Original pre-R107 CustomCamPos not recovered."
+      },
+      "distinct_body_batch_r109": {
+        "round_key": "distinct-body-batch-r109-20261029",
+        "status": "CLOSED_FOUR_PARTIAL_DIRECT_OBSERVATIONS",
+        "lane": "DIRECT",
+        "source": "Active user Goal: current remembered distinct clothes, grouped and non-exhaustive; R108 current camera preimage saved",
+        "targets": [
+          "appearance:LKE_FF7R_TifaPurpleDress/choice-0",
+          "appearance:Royalguard_cns_701/choice-0",
+          "appearance:Bodystocking_706/choice-0",
+          "appearance:belly_cns_632/choice-0"
+        ],
+        "target_pins": ".local/play-session-20261026/grouped-qa/distinct-body-batch-r109/frozen-targets.json",
+        "acceptance": "In one task-owned private game with current profile, select four exact remembered0 independent outfits; for each verify selected mesh and capture delayed rear view/material observation, stop on abnormal, return native body and preserve exact entry profile. Reuse shared core and do not reopen CNS UI or enumerate options. No full outfit PASS from distant back view.",
+        "owned_scope": [
+          "one private display/game and own functional helpers",
+          "exact AgentSessionQA session and appended mods entry",
+          "semantic client preimage",
+          "ignored evidence and current State"
+        ],
+        "profile_sha256": "c4edc35eccb1109ab66ad7dc334a3a050b6bb12418978a499b1938eb451fc822",
+        "next_action": "Investigate whether Tifa null slots are used or intentional, using exact asset/render evidence; retain uncertain MODs and continue distinct risk groups without colors.",
+        "closed_at": "2026-10-28T20:23:37.395851+00:00",
+        "result": ".local/play-session-20261026/grouped-qa/distinct-body-batch-r109/result.json",
+        "restoration": ".local/play-session-20261026/grouped-qa/distinct-body-batch-r109/restoration.json",
+        "manifest_before_sha256": "4fcdd8734711e448e2ef810f1e32fd12f66b42420e41b88c38a65b7cd0edb6ff",
+        "manifest_after_sha256": "f48045a0e8fa9f20ccbe5b204ac084390b4d1608de2d49de017627002bc07d64",
+        "finding": "Four distinct remembered meshes selected in one process; 7s+ rear views show no obvious whole-body gray. Tifa has four null effective material slots; actual section usage unknown. No full outfit PASS."
       }
     },
     "owner_acceptance_20261026": {
