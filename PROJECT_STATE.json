@@ -1542,20 +1542,20 @@
       "manifest_sha256": "3bb3673ebb1994275c885e9a81fb1f280792f83b6117655dae828d27984d7c0e",
       "target_identity_sha256": "955965cda7371a7ff208fdf736e19a1136e0628cf77a644ac49b5d4323aa9a92",
       "enumeration_validation": ".local/play-session-20261026/grouped-qa/risk-groups-r69/result.json",
-      "round_key": "ordered-material-after-pp-fix-r94-20261027",
-      "round_status": "CLOSED_R94_SCOPED_REVIEWED_DEFERRED_LINKED_RECHECK",
-      "count": 94,
+      "round_key": "ordered-material-delay-after-linked-fix-r95-20261029",
+      "round_status": "CLOSED_R95_SCOPED_DELAYED_MATERIAL_OBSERVATION",
+      "count": 95,
       "coverage": "since_baseline",
-      "last_seq": 94,
-      "last_key": "ordered-material-after-pp-fix-r94-20261027",
+      "last_seq": 95,
+      "last_key": "ordered-material-delay-after-linked-fix-r95-20261029",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": null,
       "evidence_change_percentage_points": null,
       "scope_change_percentage_points": 0,
-      "change_rule": "One bounded lifecycle improvement accepted; zero new garment leaf PASS, no manifest or status/denominator changes. Overall current completion remains unknown.",
-      "round_start_commit": "13e953caf87cdc9a75de313a0c489649fc9e0749",
-      "scope_change": "Original5129/effective5125/known1263 units unchanged; no new exclusions.",
-      "milestone_change": "Current native EVE/CNS scoped lifecycle: preserve verified native graph lease during active transition, identity-bound game-thread retries up to three; synthetic deferred+retry succeeds, one uninstrumented native Core/AiK/Mod688 sequence 71→1→1. Unknown graphs remain protected; grey and hair causes remain open.",
+      "change_rule": "One scoped delayed material observation; no new garment leaf PASS or denominator changes. Current total completion remains unknown.",
+      "round_start_commit": "37eaff080b6b4a30a696dafb24f303cc67e7e9e4",
+      "scope_change": "Original5129/effective5125/known1263 unchanged; no exclusions added.",
+      "milestone_change": "Current reviewed runtime: AiK→Mod688→Ultimate→Mod688; Mod688 same-process parent/parameter/hidden state unchanged at short and ≥7s delayed samples; distant rear view no obvious whole-gray. Not general compatibility or crash acceptance.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1998,7 +1998,7 @@
       "new_shared_static_assertions_this_round": 0,
       "evidence_refinement_known_units_delta": 0
     },
-    "next_action": "Continue original grouped sequential-material and crash objective using existing scoped lifecycle evidence; retain exact known bad Hair0 exclusion and unresolved uncertain mods; do not repeat colors or public helper tests.",
+    "next_action": "Continue ready material/visibility or hair-related differential groups from existing evidence; preserve known exact exclusions and prioritize untested relevant consumers, not repeated colors or shared combat tests.",
     "updated_at": "2026-10-28T07:38:39.427758+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
@@ -2128,7 +2128,7 @@
         }
       }
     },
-    "round_closure_at": "2026-10-28T10:05:52.054129+00:00",
+    "round_closure_at": "2026-10-28T15:45:08.383548+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 14,
       "new_confirmed_this_round": 0,
@@ -2292,7 +2292,7 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "R94_CLOSED_SCOPED_FIX",
+    "current_segment": "R95_CLOSED_SCOPED_MATERIAL",
     "previous_goal_turn_classification": "PROGRESS: R94 captured 1→2→3→4 retained instances, still4 at idle and1 after existing CNS-open callback. User paused; all own resources closed. Now explicit resume; callback reason unknown.",
     "execution_status": "ACTIVE_GOAL_CONTINUES",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
@@ -3311,13 +3311,13 @@
     "native_goal": {
       "threadId": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
       "status": "active",
-      "tokensUsed": 16318666,
-      "timeUsedSeconds": 106388,
+      "tokensUsed": 18887487,
+      "timeUsedSeconds": 122661,
       "createdAt": 1792972357,
-      "telemetry_at": "2026-10-28T10:05:52.054129+00:00",
-      "telemetry_coverage": "Directnative current activation; no quota set or increased; historical logical lifetimecost remains UNKNOWN.",
+      "telemetry_at": "2026-10-28T15:45:08.383548+00:00",
+      "telemetry_coverage": "Direct native status read; no budget set; coverage current Goal only",
       "same_objective_verified": true,
-      "last_checkpoint": "R94 scoped lifecycle improvement reviewed and installed; broader grouped compatibility and playable handoff remain open.",
+      "last_checkpoint": "R95 scoped delayed material observation closed; further grouped tests and final handoff open.",
       "updatedAt": 1793103717,
       "blocked_reason": "UNKNOWN_NOT_RETURNED_BY_NATIVE_GOAL_API"
     },
@@ -6317,6 +6317,45 @@
           "main_merge": false,
           "private_evidence": "Local only; sanitized State and first-party source/tests only.",
           "preserved_pending": "Seven unrelated State groups and prior docs/research remain unstaged."
+        }
+      },
+      "material_recovery_r95": {
+        "at": "2026-10-28T15:22:44.445898+00:00",
+        "round_key": "ordered-material-delay-after-linked-fix-r95-20261029",
+        "status": "CLOSED_SCOPED_DELAYED_MATERIAL_OBSERVATION",
+        "entry_commit": "37eaff080b6b4a30a696dafb24f303cc67e7e9e4",
+        "prior_round": "native_material_r94",
+        "source": "Native Goal resumed; previous R94 scoped lifecycle fix installed and valid",
+        "lane": "DIRECT",
+        "owned_scope": [
+          "PROJECT_STATE current grouped/progress projection",
+          ".local/play-session-20261026/grouped-qa/material-recovery-r95",
+          "one registered private display and owned game",
+          "temporary AgentSessionQA two files/mods suffix/semantic client; exact preimages",
+          "owned assistant and movement helper"
+        ],
+        "acceptance": "Reuse prior R94 sequence and current candidate7 Mod688 snapshot. In one current exact configuration, select AiK→Mod688 then Ultimate→Mod688; compare each Mod688 active parent/texture/scalar/vector and hidden slots at short and delayed samples within same process, capture final visible frames; preserve original user CNS profile, baseline movement, and cleanup. Stop at first actual mismatch. No color/combo sweep or broad gray/crash cure claim.",
+        "targets": [
+          "appearance:AiK_CH48_8866/choice-1",
+          "appearance:Repacked Mod688/choice-1",
+          "appearance:UltimateNudeEve/choice-0",
+          "integration:sequential-outfit-material-recovery"
+        ],
+        "resource_plan": "One private display and game; two exact owned helpers, small local logs and JSON; current memory available 36GiB, disk available 1.1TiB; peak unknown.",
+        "reuse": "R94 installed fix exact hashes verified; R94 earlier within-process normalized material returns and candidate7 exact same Mod688 material chains except case-only FName display across sessions; no current separate visual endpoint conclusion.",
+        "limits": "No visual close-up, front view, all variants, wide wardrobe combinations, long session, combat or grey/hair crash causal acceptance.",
+        "next_action": "Continue ready material/visibility or hair-related differential groups from existing evidence; preserve known exact exclusions and prioritize untested relevant consumers, not repeated colors or shared combat tests.",
+        "closed_at": "2026-10-28T15:45:08.383548+00:00",
+        "result_ref": ".local/play-session-20261026/grouped-qa/material-recovery-r95/result.json",
+        "restoration_ref": ".local/play-session-20261026/grouped-qa/material-recovery-r95/final-restoration.json",
+        "new_complete_leafPASS": 0,
+        "new_exclusions": 0,
+        "git_delivery": {
+          "target": "codex/grouped-mod-qa-20261026",
+          "status": "IMPLEMENTATION_BRANCH_ROUND_DELIVERY",
+          "receipt": ".local/play-session-20261026/grouped-qa/material-recovery-r95/round-delivery.json",
+          "main_merge": false,
+          "scope": "Sanitized task-owned State projection; raw evidence local"
         }
       }
     },
