@@ -1,7 +1,7 @@
 -- Session-only test transport. It never executes request text as Lua.
 -- Bootstrap owns directory/nonce. Requests are one atomic request.txt, nine TSV fields:
 -- nonce,id,expires_unix,op,duration_ms,world_dx,world_dy,pawn,world.
--- select appends outfit_id,index; wardrobe reads the current EVE Body state.
+-- select/selecthair append outfit_id,index; wardrobe reads the current EVE Body state.
 -- control appends outfit_id,bootstrap_control_key,value for original CNS UI callbacks.
 -- move requires addresses returned by observe; direction is one world cardinal.
 -- Replies are <id>.response.tsv, one key/value per line, atomically replaced.
@@ -122,13 +122,27 @@ function M.start(options)
             mesh_address=address(mesh), mesh_path=assert(mesh:GetFullName():match("^%S+ (.+)$")),
             body_visible=component:IsVisible() and not component.bHiddenInGame}
     end
-    local function protected(saved, target)
+    local function hair(c, saved)
+        local key = "EVE-Hair-"
+        local id = saved.LastActiveOutfitMap:Contains(key) and scalarText(saved.LastActiveOutfitMap:Find(key):get()) or ""
+        local index = id ~= "" and saved.LastOutfitIndexMap:Contains(id)
+            and tonumber(saved.LastOutfitIndexMap:Find(id):get()) or -1
+        local component = c.pawn.SBHair
+        assert(live(component) and address(component:GetOwner()) == c.pawn_id, "current Hair component unavailable")
+        local mesh = component.SkeletalMesh
+        assert(live(mesh), "current Hair mesh unavailable")
+        return {hair_id=id, hair_index=index, hair_component=address(component),
+            hair_mesh_address=address(mesh), hair_mesh_path=assert(mesh:GetFullName():match("^%S+ (.+)$")),
+            hair_visible=component:IsVisible() and not component.bHiddenInGame}
+    end
+    local function protected(saved, target, selectionKey)
+        selectionKey = selectionKey or "EVE-Body-"
         local out = {}
         for _, name in ipairs({"LastActiveOutfitMap", "LastOutfitIndexMap", "RemovedOutfitMap"}) do
             saved[name]:ForEach(function(k, v)
                 local key = scalarText(k:get())
                 if not (name == "LastOutfitIndexMap" and key == target)
-                    and not (name ~= "LastOutfitIndexMap" and key == "EVE-Body-") then
+                    and not (name ~= "LastOutfitIndexMap" and key == selectionKey) then
                     out[#out + 1] = name .. "\0" .. key .. "\0" .. scalarText(v:get())
                 end
             end)
@@ -140,10 +154,13 @@ function M.start(options)
         local a = active
         active = nil -- no more submissions even if response I/O fails
         local out = state or {}
-        if a.kind == "select" then
-            out.op, out.phase, out.reason = "select", "completed", reason
+        if a.kind == "select" or a.kind == "selecthair" then
+            out.op, out.phase, out.reason = a.kind, "completed", reason
             out.requested_outfit, out.requested_index, out.native_calls = a.target, a.index, a.calls
             out.before_body_id, out.before_body_index = a.body_before.body_id, a.body_before.body_index
+            if a.hair_before then
+                out.before_hair_id, out.before_hair_index = a.hair_before.hair_id, a.hair_before.hair_index
+            end
             out.selection_verified = reason == "selection matched saved data and live mesh"
             reply(a.id, out)
             return
@@ -184,12 +201,12 @@ function M.start(options)
             reply(id, {op=op, phase="rejected", reason="expired or excessive deadline"}); return
         end
         if op == "stop" then
-            local selecting = active and active.kind == "select"
+            local selecting = active and (active.kind == "select" or active.kind == "selecthair")
             if active then finish(selecting and "tracking stopped; dispatched CNS call may finish" or "stopped") end
             reply(id, {op=op, phase="completed", reason=selecting
                 and "tracking stopped; CNS call cannot be cancelled" or "input submissions stopped"}); return
         end
-        if op ~= "observe" and op ~= "move" and op ~= "wardrobe" and op ~= "select" and op ~= "control" then
+        if op ~= "observe" and op ~= "move" and op ~= "wardrobe" and op ~= "select" and op ~= "selecthair" and op ~= "control" then
             reply(id, {op=op, phase="rejected", reason="unknown operation"}); return
         end
         if active then reply(id, {op=op, phase="rejected", reason="move busy"}); return end
@@ -197,7 +214,7 @@ function M.start(options)
         local ok, reason = pcall(function()
             local c = resolve()
             local state = sample(c)
-            if op == "wardrobe" or op == "select" or op == "control" then
+            if op == "wardrobe" or op == "select" or op == "selecthair" or op == "control" then
                 local cns, saved, body = wardrobe(c)
                 for k, v in pairs(body) do state[k] = v end
                 if op == "wardrobe" then
@@ -300,13 +317,23 @@ function M.start(options)
                 local menu = cns.TempMenuUI
                 assert(not (live(menu) and menu:IsInViewport()), "CNS menu owns selection")
                 local id, index = parts[10], tonumber(parts[11])
-                local allowed = type(options.outfits) == "table" and options.outfits[id]
+                local isHair = op == "selecthair"
+                local hairSpec = isHair and type(options.hairs) == "table" and options.hairs[id] or nil
+                local allowed = isHair and type(hairSpec) == "table" and hairSpec.paths
+                    or not isHair and type(options.outfits) == "table" and options.outfits[id]
                 assert(type(allowed) == "table" and finite(index) and index % 1 == 0
                     and index >= 0 and type(allowed[index + 1]) == "string", "outfit/index outside bootstrap allowlist")
                 assert(cns.OutfitMap:Contains(id), "outfit not registered in current CNS")
                 local data = cns.OutfitMap:Find(id):get()
+                local registeredSubtype, callSubtype = "", ""
+                if isHair then
+                    assert(type(hairSpec.registered_subtype) == "string" and hairSpec.call_subtype == "",
+                        "explicit hair registration and empty call subtype required")
+                    registeredSubtype, callSubtype = hairSpec.registered_subtype, hairSpec.call_subtype
+                end
                 assert(live(data) and scalarText(data.UniqueFitID) == id and scalarText(data.CharacterID) == "EVE"
-                    and scalarText(data.FitMeshType) == "Body" and scalarText(data.MeshSubType) == "",
+                    and scalarText(data.FitMeshType) == (isHair and "Hair" or "Body")
+                    and scalarText(data.MeshSubType) == registeredSubtype,
                     "registered outfit metadata mismatch")
                 local count = tonumber(data.NumFitDatas)
                 assert(finite(count) and count >= 0, "invalid outfit data count")
@@ -316,14 +343,22 @@ function M.start(options)
                         "legacy outfit path/index mismatch")
                 end
                 assert(index < count, "registered outfit index unavailable")
-                local preserved = protected(saved, id)
+                local key = isHair and "EVE-Hair-" or "EVE-Body-"
+                if isHair then
+                    local mapsBefore = protected(saved, nil, "__none__")
+                    local formatted = scalarText(saved:FormatOutfitMeshSubTypeKey("EVE", "Hair", callSubtype))
+                    assert(formatted == key and protected(saved, nil, "__none__") == mapsBefore,
+                        "hair call subtype does not resolve to protected selection key")
+                end
+                local preserved = protected(saved, id, key)
+                local beforeHair = isHair and hair(c, saved) or nil
                 reply(parts[2], {op=op, phase="active", pawn=c.pawn_id, world=c.world_id})
-                active = {kind="select", id=parts[2], c=c, cns=cns, saved=saved, target=id, index=index,
-                    mesh=allowed[index + 1], body_before=body, protected=preserved, calls=1,
+                active = {kind=op, id=parts[2], c=c, cns=cns, saved=saved, target=id, index=index,
+                    mesh=allowed[index + 1], body_before=body, hair_before=beforeHair, protected=preserved, selection_key=key, calls=1,
                     deadline=deadline, stable=0}
                 -- Const reference flags on OutfitID/Index are inputs, not output placeholders.
                 -- Only this exact five-parameter function is called, once; never retry uncertain effects.
-                cns["Set Custom Outfit"](cns, "EVE", "Body", "", id, index)
+                cns["Set Custom Outfit"](cns, "EVE", isHair and "Hair" or "Body", callSubtype, id, index)
                 return
             end
             assert(#parts == 9, "unexpected trailing fields")
@@ -367,14 +402,30 @@ function M.start(options)
                 local a = active
                 if now > a.deadline then finish("wall deadline expired"); return end
                 local state = sample(a.c)
-                if a.kind == "select" then
+                if a.kind == "select" or a.kind == "selecthair" then
                     local cns, saved, body = wardrobe(a.c)
                     assert(address(cns) == address(a.cns) and address(saved) == address(a.saved), "CNS owner changed")
                     for k, v in pairs(body) do state[k] = v end
-                    state.protected_maps_unchanged = protected(saved, a.target) == a.protected
+                    state.protected_maps_unchanged = protected(saved, a.target, a.selection_key) == a.protected
                     assert(state.protected_maps_unchanged, "unrelated saved selection changed")
-                    local matches = body.body_id == a.target and body.body_index == a.index
-                        and body.mesh_path == a.mesh and body.body_visible
+                    local matches
+                    if a.kind == "selecthair" then
+                        assert(body.body_component == a.body_before.body_component
+                            and body.body_id == a.body_before.body_id and body.body_index == a.body_before.body_index
+                            and body.mesh_address == a.body_before.mesh_address
+                            and body.mesh_path == a.body_before.mesh_path
+                            and body.body_visible == a.body_before.body_visible, "Body changed during hair selection")
+                        local h = hair(a.c, saved)
+                        assert(h.hair_component == a.hair_before.hair_component, "Hair component changed")
+                        for k, v in pairs(h) do state[k] = v end
+                        matches = h.hair_id == a.target and h.hair_index == a.index
+                            and h.hair_mesh_path == a.mesh and h.hair_visible
+                        if matches and a.last_hair_mesh ~= h.hair_mesh_address then a.stable = 0 end
+                        a.last_hair_mesh = h.hair_mesh_address
+                    else
+                        matches = body.body_id == a.target and body.body_index == a.index
+                            and body.mesh_path == a.mesh and body.body_visible
+                    end
                     a.stable = matches and a.stable + 1 or 0
                     if a.stable >= 2 then finish("selection matched saved data and live mesh", state) end
                 else

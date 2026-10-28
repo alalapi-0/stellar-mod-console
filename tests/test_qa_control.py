@@ -50,6 +50,13 @@ class QAControlTests(unittest.TestCase):
                             "toggle-invalid", "native-error", "readback-mismatch", "unrelated-change",
                             "body-removed", "wrong-registration", "native-ignored", "empty-index-change"], self.controls_fixture)
 
+    def test_hair_selection_policy(self):
+        self.run_scenarios(["hair-select", "hair-wrong-mesh", "hair-unrelated-change", "hair-body-changed",
+                            "hair-native-error", "hair-unknown", "hair-index", "hair-identity",
+                            "hair-wrong-type", "hair-missing-allowlist", "hair-kitana", "hair-subtype-mismatch",
+                            "hair-invalid-route", "hair-formatter-wrong", "hair-formatter-mutates",
+                            "hair-component-changed"], self.wardrobe_fixture)
+
     def run_scenarios(self, scenarios, fixture):
         for scenario in scenarios:
             with self.subTest(scenario=scenario):
