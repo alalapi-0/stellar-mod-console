@@ -1539,23 +1539,23 @@
       },
       "reason": "Owner explicitly removes exhaustive parameter/color/animation enumeration as completion requirement. Old264/5125 retained as history only; current merged applicability notfrozen, so no percentage orfakePASS.",
       "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
-      "manifest_sha256": "0bf478a30495d9fe4932d6e8bffc172a7983c276915913cdbf3cbc6aeffa4c8c",
+      "manifest_sha256": "a95c7a2cf1f6ee59b154e69c404fff984645ba92d59f7c3b8cbafd26ff93f2fd",
       "target_identity_sha256": "955965cda7371a7ff208fdf736e19a1136e0628cf77a644ac49b5d4323aa9a92",
       "enumeration_validation": ".local/play-session-20261026/grouped-qa/risk-groups-r69/result.json",
-      "round_key": "tifa-material-r110-20261029",
-      "round_status": "CLOSED_R110_REVIEWED_STATIC_PROXY",
-      "count": 110,
+      "round_key": "distinct-motion-r111-20261029",
+      "round_status": "CLOSED_R111_PARTIAL_FRONT_MOTION",
+      "count": 111,
       "coverage": "since_baseline",
-      "last_seq": 110,
-      "last_key": "tifa-material-r110-20261029",
+      "last_seq": 111,
+      "last_key": "distinct-motion-r111-20261029",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": null,
       "evidence_change_percentage_points": null,
       "scope_change_percentage_points": 0,
-      "change_rule": "One scoped static subassertion independently reviewed; no full leaf PASS, exclusion, denominator or historical status change. Overall percentage unknown.",
-      "round_start_commit": "c4566e8950734a8d8167e4738a2ba4fabdf9c352",
+      "change_rule": "Four scoped front stills and short displacements; no complete leaf PASS, exclusion or denominator change. Overall completion unknown.",
+      "round_start_commit": "4d3b9a828bb14a30ce0258ba43ea0caa99297ab8",
       "scope_change": "Original5129/effective5125/known1263 unchanged; no exclusions added.",
-      "milestone_change": "Confirmed four empty material slots belong to disabled proxy sections of exact Tifa mesh; no false exclusion.",
+      "milestone_change": "Four distinct selected meshes show no obvious whole-body gray in post-move front stills; movement observed in each.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1998,8 +1998,8 @@
       "new_shared_static_assertions_this_round": 0,
       "evidence_refinement_known_units_delta": 0
     },
-    "next_action": "Continue ready material/visibility or hair-related differential groups from existing evidence; preserve known exact exclusions and prioritize untested relevant consumers, not repeated colors or shared combat tests.",
-    "updated_at": "2026-10-28T20:48:04.403752+00:00",
+    "next_action": "Continue relevant hair crash and outfit compatibility differential groups, reusing scoped evidence and preserving current profile.",
+    "updated_at": "2026-10-28T21:12:35.871289+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2292,7 +2292,7 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "R110_CLOSED_REVIEWED_PROXY",
+    "current_segment": "R111_CLOSED_FRONT_MOTION",
     "previous_goal_turn_classification": "PROGRESS: R94 captured 1→2→3→4 retained instances, still4 at idle and1 after existing CNS-open callback. User paused; all own resources closed. Now explicit resume; callback reason unknown.",
     "execution_status": "ACTIVE_GOAL_CONTINUES",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
@@ -6749,6 +6749,30 @@
         "manifest_before_sha256": "f48045a0e8fa9f20ccbe5b204ac084390b4d1608de2d49de017627002bc07d64",
         "manifest_after_sha256": "0bf478a30495d9fe4932d6e8bffc172a7983c276915913cdbf3cbc6aeffa4c8c",
         "resource_cleanup": "Task-owned derived legacy asset and JSON intermediates removed after hash/reproduction metadata and independent review; original source unchanged; task private display exited."
+      },
+      "distinct_motion_r111": {
+        "round_key": "distinct-motion-r111-20261029",
+        "status": "CLOSED_SCOPED_FOUR_FRONT_MOTION",
+        "lane": "DIRECT",
+        "source": "R109 four distinct partial garments need motion and front view; R110 independently scoped proxy result reused",
+        "targets": [
+          "appearance:LKE_FF7R_TifaPurpleDress/choice-0",
+          "appearance:Royalguard_cns_701/choice-0",
+          "appearance:Bodystocking_706/choice-0",
+          "appearance:belly_cns_632/choice-0"
+        ],
+        "acceptance": "In one private game, each exact remembered body choice: select, short80ms safe movement toward prior verified front direction, then view actual player front if obtainable and read material state. Stop on actual failure or uncertain input. Restore native outfit and byte-exact current entry profile. Reuse unchanged shared core and R109 rear checks; no CNS menu, parameter/colour enumeration, travel/story. No full long-play claim.",
+        "owned_scope": [
+          "one private display and game plus exact own functional helpers",
+          "temporary AgentSessionQA and append-only mods entry",
+          "existing semantic client exact preimage",
+          "ignored evidence and task state"
+        ],
+        "profile_sha256": "c4edc35eccb1109ab66ad7dc334a3a050b6bb12418978a499b1938eb451fc822",
+        "next_action": "Continue remaining relevant crash and compatibility groups without repeating covered colors or shared core.",
+        "result": ".local/play-session-20261026/grouped-qa/distinct-motion-r111/result.json",
+        "restoration": ".local/play-session-20261026/grouped-qa/distinct-motion-r111/restoration.json",
+        "closed_at": "2026-10-28T21:12:35.871289+00:00"
       }
     },
     "owner_acceptance_20261026": {
