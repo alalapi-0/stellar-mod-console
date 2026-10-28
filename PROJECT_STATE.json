@@ -1539,23 +1539,23 @@
       },
       "reason": "Owner explicitly removes exhaustive parameter/color/animation enumeration as completion requirement. Old264/5125 retained as history only; current merged applicability notfrozen, so no percentage orfakePASS.",
       "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
-      "manifest_sha256": "44c8dc281936fcd6ec61c28df7dde81adf17d4982b4aa92717f6219ba6eddd68",
+      "manifest_sha256": "aa17ca1b831af64cfc9977c18b411d8644de6b0fddbc6be0a0e841e6ba61812b",
       "target_identity_sha256": "955965cda7371a7ff208fdf736e19a1136e0628cf77a644ac49b5d4323aa9a92",
       "enumeration_validation": ".local/play-session-20261026/grouped-qa/risk-groups-r69/result.json",
-      "round_key": "hair-semantic-r112-20261029",
-      "round_status": "CLOSED_R112_REVIEWED_ORDERED_SWITCH",
-      "count": 112,
+      "round_key": "outfit-physics-r113-20261029",
+      "round_status": "CLOSED_R113_SCOPED_SPRING_READBACK",
+      "count": 113,
       "coverage": "since_baseline",
-      "last_seq": 112,
-      "last_key": "hair-semantic-r112-20261029",
+      "last_seq": 113,
+      "last_key": "outfit-physics-r113-20261029",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": null,
       "evidence_change_percentage_points": null,
       "scope_change_percentage_points": 0,
-      "change_rule": "Four hair leaves NOT_TESTED to PARTIAL for one ordered sequence; no complete leaf PASS or denominator change. Overall completion unknown.",
-      "round_start_commit": "5d4e2560140e5f26cafc0a746457a5bbb01e8ce1",
+      "change_rule": "One scoped six-node readback assertion added; no complete leaf PASS, exclusion or denominator change. Overall completion unknown.",
+      "round_start_commit": "52974b7a8c667cc970c226dc2619dd538383253b",
       "scope_change": "Original5129/effective5125/known1263 unchanged; no exclusions added.",
-      "milestone_change": "Four distinct bodies followed by three allowed hairs and original Kitana completed without crash in one private process; byte-exact profile restored.",
+      "milestone_change": "Six active spring-node parameter sets matched native baseline after two distinct body selections and return.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1994,12 +1994,12 @@
       "remaining_rounds_estimate": null,
       "remaining_rounds_estimate_confidence": "UNKNOWN; heterogeneous unresolved scope and denominator unknown",
       "new_shared_scoped_assertions_this_round": 1,
-      "new_partial_leaf_this_round": 4,
+      "new_partial_leaf_this_round": 0,
       "new_shared_static_assertions_this_round": 0,
       "evidence_refinement_known_units_delta": 0
     },
-    "next_action": "Continue targeted compatibility and lifecycle risks without repeating covered sequences; preserve excluded hair and exact current profile.",
-    "updated_at": "2026-10-28T21:33:17.624558+00:00",
+    "next_action": "Continue remaining meaningful compatibility/lifecycle risk groups and playable configuration; reuse new-pawn movement and R113 node readbacks.",
+    "updated_at": "2026-10-28T21:47:32.693827+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2292,7 +2292,7 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "R112_CLOSED_REVIEWED_HAIR_ORDER",
+    "current_segment": "R113_CLOSED_SCOPED_OUTFIT_PHYSICS",
     "previous_goal_turn_classification": "PROGRESS: R94 captured 1→2→3→4 retained instances, still4 at idle and1 after existing CNS-open callback. User paused; all own resources closed. Now explicit resume; callback reason unknown.",
     "execution_status": "ACTIVE_GOAL_CONTINUES",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
@@ -6796,6 +6796,25 @@
         "candidate_sha256": "d8c0a0f2072a2bc9f91892484d3eb5dd2fdd929265708dc03c05f178f066c6fb",
         "finding": "Original Kitana registration subtype and saved selection route independently verified; bounded clothing-before-hair sequence completed; original profile exact.",
         "limits": "No all-hair, combination, long-session or pre-R107 camera recovery claim."
+      },
+      "outfit_physics_r113": {
+        "round_key": "outfit-physics-r113-20261029",
+        "status": "CLOSED_SCOPED_SIX_NODE_READBACK",
+        "lane": "DIRECT",
+        "source": "R112 showed JiggleControl watch_identity reacquisition logs after different outfit switches; actual spring-node state after those switches not measured. Existing MOVE-REBIND-SAMEPROCESS-NEWPAWN evidence remains applicable and is reused.",
+        "acceptance": "In one private game sample actual six native spring nodes/profile baseline, after switching exact Tifa and Royal body meshes with differing PhysicsAsset metadata, and after return to native outfit; compare finite node fields and alpha, profile settings and actual animation instance. Restore exact entry profile; no all-clothes, visual naturalness or long-session claim.",
+        "owned_scope": [
+          "task-private game, display and exact helper instances",
+          "temporary AgentSessionQA and append-only mods entry",
+          "read-only node evidence and task state"
+        ],
+        "next_action": "Continue unresolved actual material/animation lifecycle differences and final playable delivery without repeating covered shared checks.",
+        "entry_state_sha256": "339ac14cbf91ecbc218fe8f9ceba31e18c54e51adb5fadd8ec99eb9a87deaf6f",
+        "closed_at": "2026-10-28T21:47:32.693827+00:00",
+        "result": ".local/play-session-20261026/grouped-qa/outfit-physics-r113/result.json",
+        "restoration": ".local/play-session-20261026/grouped-qa/outfit-physics-r113/restoration.json",
+        "finding": "Six actual enabled spring nodes had finite histories and matching six numeric fields at native baseline, Tifa, Royalguard and native return. Exact entry profile restored.",
+        "limits": "Point-in-time data only; visual naturalness, general outfit coverage and long-session remain open."
       }
     },
     "owner_acceptance_20261026": {
