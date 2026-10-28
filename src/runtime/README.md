@@ -90,3 +90,13 @@ ownership:beforeRefresh(body, active, originalClassCapturedFromThisMesh)
 ```sh
 python3 -m unittest discover -s tests -p test_owned_linked_postprocess.py -v
 ```
+
+`DancePhysicsRecovery.lua` 针对 Van 的 `StopAnimation` 事件请求 JiggleControl
+重新获取物理节点。调用方注入 JiggleControl 已有的游戏线程任务接口及游戏 API；模块
+只在精确的 Van 角色、本地玩家、非加载/非菜单、物理状态为 LOST 时处理事件。
+动画模式尚未回到原生模式时，每次事件最多复核 16 次；玩家改变或条件不再满足时停止。
+模块不改用户预设、动画或存档。运行时能否注册该事件和真实恢复效果需要单独实测。
+
+```sh
+python3 -m unittest discover -s tests -p test_dance_physics_recovery.py -v
+```
