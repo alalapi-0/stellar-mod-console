@@ -1542,20 +1542,20 @@
       "manifest_sha256": "3bb3673ebb1994275c885e9a81fb1f280792f83b6117655dae828d27984d7c0e",
       "target_identity_sha256": "955965cda7371a7ff208fdf736e19a1136e0628cf77a644ac49b5d4323aa9a92",
       "enumeration_validation": ".local/play-session-20261026/grouped-qa/risk-groups-r69/result.json",
-      "round_key": "body-overlap-index-r100-20261029",
-      "round_status": "CLOSED_R100_SCOPED_STATIC_OVERLAPS",
-      "count": 100,
+      "round_key": "jiggle-reacquire-r101-20261029",
+      "round_status": "CLOSED_R101_SCOPED_PHYSICS_READBACK",
+      "count": 101,
       "coverage": "since_baseline",
-      "last_seq": 100,
-      "last_key": "body-overlap-index-r100-20261029",
+      "last_seq": 101,
+      "last_key": "jiggle-reacquire-r101-20261029",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": null,
       "evidence_change_percentage_points": null,
       "scope_change_percentage_points": 0,
-      "change_rule": "One bounded static cross-container overlap investigation; no new leaf PASS, denominator change or mod exclusion. Total completion remains unknown.",
-      "round_start_commit": "58be54479d03de9ee2a62a2d1cb33f769a5ed361",
+      "change_rule": "One bounded cold and two-outfit physics readback; no blanket PASS, denominator change or mod exclusion. Total completion unknown.",
+      "round_start_commit": "740361c4cb722f65994e8565c3d7ce146428ee85",
       "scope_change": "Original5129/effective5125/known1263 unchanged; no exclusions added.",
-      "milestone_change": "Verified intended 137-resource repair overlay and isolated two shared AiK version overlaps; live effects remain unknown.",
+      "milestone_change": "Independent six-node parameter readback matches saved profile after cold start and two outfit selections; dance and subjective naturalness remain unverified.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1999,7 +1999,7 @@
       "evidence_refinement_known_units_delta": 0
     },
     "next_action": "Continue ready material/visibility or hair-related differential groups from existing evidence; preserve known exact exclusions and prioritize untested relevant consumers, not repeated colors or shared combat tests.",
-    "updated_at": "2026-10-28T16:25:46.250072+00:00",
+    "updated_at": "2026-10-28T16:43:29.421170+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2292,7 +2292,7 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "R100_CLOSED_SCOPED_OVERLAP",
+    "current_segment": "R101_CLOSED_SCOPED_PHYSICS_READBACK",
     "previous_goal_turn_classification": "PROGRESS: R94 captured 1→2→3→4 retained instances, still4 at idle and1 after existing CNS-open callback. User paused; all own resources closed. Now explicit resume; callback reason unknown.",
     "execution_status": "ACTIVE_GOAL_CONTINUES",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
@@ -6468,6 +6468,39 @@
         "next_action": "Compare actual shared resource contents and consumer applicability only if prior runtime provides a specific symptom; prioritize known owner-reported failures, not all overlaps.",
         "new_complete_leafPASS": 0,
         "new_exclusions": 0
+      },
+      "jiggle_reacquire_r101": {
+        "at": "2026-10-28T16:29:18.334314+00:00",
+        "round_key": "jiggle-reacquire-r101-20261029",
+        "status": "CLOSED_SCOPED_COLD_AND_TWO_OUTFIT_PHYSICS_READBACKS",
+        "source": "User Goal shared lifecycle and outfit compatibility; reopened JiggleControl automatic reacquisition; R99 log-only lead",
+        "lane": "DIRECT",
+        "owned_scope": [
+          "PROJECT_STATE owned task projection",
+          ".local/play-session-20261026/grouped-qa/jiggle-reacquire-r101",
+          "one registered private game, existing owned display/Steam",
+          "temporary AgentSessionQA and semantic-58 session exact preimages"
+        ],
+        "acceptance": "On one fresh process, observe current profile startup and read actual reflected spring node parameters after two distinct previously partly observed outfit selections. Compare values and node identity with current selected profile, correlate module log and restore original native choice/profile. No F1, profile changes, exhaustive color or repeated helper checks.",
+        "targets": [
+          "appearance:Punisher_P/choice-0",
+          "appearance:Repacked ExtraMod2618/choice-0",
+          "appearance:Repacked Mod688/choice-1"
+        ],
+        "limitations": "Profile persistence, body matching, application timing and stationary reflected values only. Does not establish dance transition, subjective physics, all outfits or long-session acceptance.",
+        "next_action": "Continue exact relevant unresolved dance/animation ownership and other real compatibility risks, preserving scoped results and no exhaustive color checks.",
+        "closed_at": "2026-10-28T16:43:29.421170+00:00",
+        "result": ".local/play-session-20261026/grouped-qa/jiggle-reacquire-r101/result.json",
+        "restoration": ".local/play-session-20261026/grouped-qa/jiggle-reacquire-r101/final-restoration.json",
+        "finding": "Selected My_Default profile was loaded cold; read-only live fields on six named breast/hip/thigh nodes matched three configured spring values, alpha1 and finite histories at baseline and after two selected bodies. No F1 used. Historical broad assertions remain reopened.",
+        "new_complete_leafPASS": 0,
+        "new_exclusions": 0,
+        "git_delivery": {
+          "target": "codex/grouped-mod-qa-20261026",
+          "status": "IMPLEMENTATION_BRANCH_ROUND_DELIVERY",
+          "main_merge": false,
+          "scope": "Sanitized owned state only"
+        }
       }
     },
     "owner_acceptance_20261026": {
