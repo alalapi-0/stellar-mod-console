@@ -1542,20 +1542,20 @@
       "manifest_sha256": "3bb3673ebb1994275c885e9a81fb1f280792f83b6117655dae828d27984d7c0e",
       "target_identity_sha256": "955965cda7371a7ff208fdf736e19a1136e0628cf77a644ac49b5d4323aa9a92",
       "enumeration_validation": ".local/play-session-20261026/grouped-qa/risk-groups-r69/result.json",
-      "round_key": "dance-reacquire-repair-r103-20261029",
-      "round_status": "CLOSED_R103_REVIEWED_SCOPED_DANCE_FIX",
-      "count": 103,
+      "round_key": "playable-core-r104-20261029",
+      "round_status": "CLOSED_R104_SCOPED_CORE_INTEGRATION",
+      "count": 104,
       "coverage": "since_baseline",
-      "last_seq": 103,
-      "last_key": "dance-reacquire-repair-r103-20261029",
+      "last_seq": 104,
+      "last_key": "playable-core-r104-20261029",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": null,
       "evidence_change_percentage_points": null,
       "scope_change_percentage_points": 0,
-      "change_rule": "One reviewed, live-verified scoped dance recovery repair. Existing broad physics assertions remain reopened; no garment PASS or denominator/exclusion change. Total completion unknown.",
-      "round_start_commit": "473323f032d76036e69cbefd1d73097ab5cdf400",
+      "change_rule": "One fresh process shared integration verification; no garment PASS, denominator change or mod exclusion. Total completion unknown.",
+      "round_start_commit": "060079f9bae3d5c596697c4bd8ee776fdc42497a",
       "scope_change": "Original5129/effective5125/known1263 unchanged; no exclusions added.",
-      "milestone_change": "After reproduced Hip Swing physics loss, guarded StopAnimation hook restores six actual spring nodes without F1 in one real test; short post-stop movement works.",
+      "milestone_change": "Reviewed dance fix loaded with requested assistant connectivity/three flags and movement 1.75/lock/restore; tests completed with own game and helpers exited.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1999,7 +1999,7 @@
       "evidence_refinement_known_units_delta": 0
     },
     "next_action": "Continue ready material/visibility or hair-related differential groups from existing evidence; preserve known exact exclusions and prioritize untested relevant consumers, not repeated colors or shared combat tests.",
-    "updated_at": "2026-10-28T18:06:48.722266+00:00",
+    "updated_at": "2026-10-28T18:35:32.722564+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2292,7 +2292,7 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "R103_CLOSED_REVIEWED_DANCE_FIX",
+    "current_segment": "R104_CLOSED_CORE_INTEGRATION",
     "previous_goal_turn_classification": "PROGRESS: R94 captured 1→2→3→4 retained instances, still4 at idle and1 after existing CNS-open callback. User paused; all own resources closed. Now explicit resume; callback reason unknown.",
     "execution_status": "ACTIVE_GOAL_CONTINUES",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
@@ -6578,6 +6578,35 @@
           "status": "IMPLEMENTATION_BRANCH_ROUND_DELIVERY",
           "main_merge": false,
           "scope": "Owned source/tests/docs and sanitized state only; third-party preimage/runtime evidence local"
+        }
+      },
+      "playable_core_r104": {
+        "at": "2026-10-28T18:11:48.506811+00:00",
+        "round_key": "playable-core-r104-20261029",
+        "status": "CLOSED_SCOPED_FRESH_CORE_INTEGRATION",
+        "lane": "DIRECT",
+        "source": "Active Goal, owner explicitly wants auto-defense/dodge and movement speed in playable configuration; newly reviewed dance repair retained",
+        "owned_scope": [
+          "PROJECT_STATE task projection",
+          ".local/play-session-20261026/grouped-qa/playable-core-r104",
+          "one exact private game and existing task display/Steam",
+          "own temporary AgentSessionQA semantic-62, one bound headless assistant and one exact movement writer"
+        ],
+        "acceptance": "In a fresh process verify retained exact R103 module actually loads, exact CombatAssistant version connects/binds and three flags are on, movement service applies current1.75 values only to owned pawn and respects locks, and one short safe movement works; then restore six baseline fields, stop own helpers and normal-exit private game. Reuse combat performance and existing costume evidence; no repeated defense-rate tests, damage, story, travel or purchases.",
+        "protected": "No user foreground, passwords, story, whole saves, unverified mods or blanket enable/disable changes. Stop at conflicting owner/identity/failure.",
+        "limits": "One current private process, no encounter/combat success rate, all body families or long session. Game and helper processes have stopped; they need launching for future play.",
+        "next_action": "Continue unresolved Lily appearance choice and targeted garment compatibility, reusing core evidence; do not repeat success rates or combinations.",
+        "closed_at": "2026-10-28T18:35:32.722564+00:00",
+        "result": ".local/play-session-20261026/grouped-qa/playable-core-r104/result.json",
+        "restoration": ".local/play-session-20261026/grouped-qa/playable-core-r104/restoration.json",
+        "finding": "Retained exact dance recovery loaded on fresh process; assistant1.0.16 connected/bindingReady with three requested switches on. 1.75 movement speed fields apply, restore under native menu lock, reapply after close, restore on writer stop. One safe short movement observed. All owned processes exited and original profile retained.",
+        "new_complete_leafPASS": 0,
+        "new_exclusions": 0,
+        "git_delivery": {
+          "target": "codex/grouped-mod-qa-20261026",
+          "status": "IMPLEMENTATION_BRANCH_ROUND_DELIVERY",
+          "main_merge": false,
+          "scope": "Sanitized owned state only"
         }
       }
     },
