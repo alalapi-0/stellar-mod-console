@@ -1539,23 +1539,23 @@
       },
       "reason": "Owner explicitly removes exhaustive parameter/color/animation enumeration as completion requirement. Old264/5125 retained as history only; current merged applicability notfrozen, so no percentage orfakePASS.",
       "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
-      "manifest_sha256": "aa17ca1b831af64cfc9977c18b411d8644de6b0fddbc6be0a0e841e6ba61812b",
+      "manifest_sha256": "e6f2957444a5aec17efcc640608bf408d5013eacee880638a9b81df23dbcb75e",
       "target_identity_sha256": "955965cda7371a7ff208fdf736e19a1136e0628cf77a644ac49b5d4323aa9a92",
       "enumeration_validation": ".local/play-session-20261026/grouped-qa/risk-groups-r69/result.json",
-      "round_key": "outfit-physics-r113-20261029",
-      "round_status": "CLOSED_R113_SCOPED_SPRING_READBACK",
-      "count": 113,
+      "round_key": "dialogue-lily-discovery-r114-20261029",
+      "round_status": "CLOSED_R114_SCOPED_PREVIEW_AND_DEPENDENCY",
+      "count": 114,
       "coverage": "since_baseline",
-      "last_seq": 113,
-      "last_key": "outfit-physics-r113-20261029",
+      "last_seq": 114,
+      "last_key": "dialogue-lily-discovery-r114-20261029",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": null,
       "evidence_change_percentage_points": null,
       "scope_change_percentage_points": 0,
-      "change_rule": "One scoped six-node readback assertion added; no complete leaf PASS, exclusion or denominator change. Overall completion unknown.",
-      "round_start_commit": "52974b7a8c667cc970c226dc2619dd538383253b",
+      "change_rule": "Scoped native preview and offline package overlap evidence; no full leaf PASS, exclusions or denominator change. Dialogue remains untested; overall completion unknown.",
+      "round_start_commit": "35193ed13cfbbe483d6684090a90efe95217d684",
       "scope_change": "Original5129/effective5125/known1263 unchanged; no exclusions added.",
-      "milestone_change": "Six active spring-node parameter sets matched native baseline after two distinct body selections and return.",
+      "milestone_change": "Actual Lily menu preview mesh and 20 direct assets identified; 3252 container confirmed album-only; one potential eye dependency overlap retained pending runtime proof.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1995,11 +1995,11 @@
       "remaining_rounds_estimate_confidence": "UNKNOWN; heterogeneous unresolved scope and denominator unknown",
       "new_shared_scoped_assertions_this_round": 1,
       "new_partial_leaf_this_round": 0,
-      "new_shared_static_assertions_this_round": 0,
+      "new_shared_static_assertions_this_round": 1,
       "evidence_refinement_known_units_delta": 0
     },
-    "next_action": "Continue remaining meaningful compatibility/lifecycle risk groups and playable configuration; reuse new-pawn movement and R113 node readbacks.",
-    "updated_at": "2026-10-28T21:47:32.693827+00:00",
+    "next_action": "Continue safe lifecycle and compatibility risks; retain uncertain Lily eye overlap pending direct runtime proof.",
+    "updated_at": "2026-10-28T22:07:24.269026+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2292,7 +2292,7 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "R113_CLOSED_SCOPED_OUTFIT_PHYSICS",
+    "current_segment": "R114_CLOSED_PREVIEW_DIALOGUE_OPEN",
     "previous_goal_turn_classification": "PROGRESS: R94 captured 1→2→3→4 retained instances, still4 at idle and1 after existing CNS-open callback. User paused; all own resources closed. Now explicit resume; callback reason unknown.",
     "execution_status": "ACTIVE_GOAL_CONTINUES",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
@@ -6815,6 +6815,24 @@
         "restoration": ".local/play-session-20261026/grouped-qa/outfit-physics-r113/restoration.json",
         "finding": "Six actual enabled spring nodes had finite histories and matching six numeric fields at native baseline, Tifa, Royalguard and native return. Exact entry profile restored.",
         "limits": "Point-in-time data only; visual naturalness, general outfit coverage and long-session remain open."
+      },
+      "dialogue_lily_discovery_r114": {
+        "round_key": "dialogue-lily-discovery-r114-20261029",
+        "status": "CLOSED_SCOPED_PREVIEW_DIALOGUE_OPEN",
+        "lane": "DIRECT",
+        "source": "Dialogue lifecycle and live Lily asset binding remain open. R96-R98 offline scans show 3252 downloaded package only contains album assets and do not establish live Lily appearance.",
+        "acceptance": "In one task-private game at existing safe location, read-only discover actual world NPC/interaction and Lily actor/mesh identities without moving, travel, story, or save modifications. If and only if a safe repeatable interaction is evidenced, evaluate dialogue and native outfit retention; otherwise record exact absence/uncertainty and continue independent work.",
+        "owned_scope": [
+          "task-private display/game and exact helper processes",
+          "read-only game-object and location evidence",
+          "task state"
+        ],
+        "next_action": "Continue other safe lifecycle checks and final playable configuration; preserve uncertain P124 and all unaffected mods.",
+        "entry_state_sha256": "8a847e75462bd9fc63d0b07f93d0ab65881f981c96d644a31f092bc9ed4a8621",
+        "closed_at": "2026-10-28T22:07:24.269026+00:00",
+        "result": ".local/play-session-20261026/grouped-qa/dialogue-lily-discovery-r114/result.json",
+        "finding": "Lily native menu preview rendered with CH_NPC_01 body and face. Current 3252 installed container has 26 album-only texture exports. One P124 eye texture matches direct dependency of preview face; mounting and runtime winner unknown, so mod retained.",
+        "limits": "Native dialogue and in-world Lily remain untested; album runtime priority and eye texture winner not proven. Profile exact and task-owned processes closed."
       }
     },
     "owner_acceptance_20261026": {
