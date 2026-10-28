@@ -1542,20 +1542,20 @@
       "manifest_sha256": "3bb3673ebb1994275c885e9a81fb1f280792f83b6117655dae828d27984d7c0e",
       "target_identity_sha256": "955965cda7371a7ff208fdf736e19a1136e0628cf77a644ac49b5d4323aa9a92",
       "enumeration_validation": ".local/play-session-20261026/grouped-qa/risk-groups-r69/result.json",
-      "round_key": "lily-overlap-candidate-r97-20261029",
-      "round_status": "CLOSED_R97_SCOPED_OFFLINE_SCAN",
-      "count": 97,
+      "round_key": "lily-parser-actual-r98-20261029",
+      "round_status": "CLOSED_R98_INSTALLED_PARSER_CHECK",
+      "count": 98,
       "coverage": "since_baseline",
-      "last_seq": 97,
-      "last_key": "lily-overlap-candidate-r97-20261029",
+      "last_seq": 98,
+      "last_key": "lily-parser-actual-r98-20261029",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": null,
       "evidence_change_percentage_points": null,
       "scope_change_percentage_points": 0,
-      "change_rule": "One offline container scan and bounded existing candidate investigation; no new leaf PASS, denominator change or mod exclusion. Total completion remains unknown.",
-      "round_start_commit": "61d1bc6a8a802a5f617ab69a274b6273f923ea03",
+      "change_rule": "One exact installed parser check; no new leaf PASS, denominator change or MOD exclusion. Total completion remains unknown.",
+      "round_start_commit": "4d47972f6ffaaef344a781307959dd8b3f3a37df",
       "scope_change": "Original5129/effective5125/known1263 unchanged; no exclusions added.",
-      "milestone_change": "Current exact Lily body chunk has no indexed direct MOD override. Separate Lily-native CNS candidate identified, not yet loaded or runtime validated.",
+      "milestone_change": "Installed CNS decoder accepts exact original Ultimate Lily declaration; candidate remains uninstalled and gameplay not verified.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1999,7 +1999,7 @@
       "evidence_refinement_known_units_delta": 0
     },
     "next_action": "Continue ready material/visibility or hair-related differential groups from existing evidence; preserve known exact exclusions and prioritize untested relevant consumers, not repeated colors or shared combat tests.",
-    "updated_at": "2026-10-28T16:04:14.839522+00:00",
+    "updated_at": "2026-10-28T16:05:39.330277+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2292,7 +2292,7 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "R97_CLOSED_SCOPED_LILY_CANDIDATE",
+    "current_segment": "R98_CLOSED_INSTALLED_PARSER_CHECK",
     "previous_goal_turn_classification": "PROGRESS: R94 captured 1→2→3→4 retained instances, still4 at idle and1 after existing CNS-open callback. User paused; all own resources closed. Now explicit resume; callback reason unknown.",
     "execution_status": "ACTIVE_GOAL_CONTINUES",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
@@ -6401,6 +6401,18 @@
           "main_merge": false,
           "scope": "Sanitized state; private paths and raw third-party evidence retained locally"
         }
+      },
+      "lily_parser_r98": {
+        "at": "2026-10-28T16:05:39.330277+00:00",
+        "round_key": "lily-parser-actual-r98-20261029",
+        "status": "CLOSED_SCOPED_INSTALLED_PARSER_CHECK",
+        "lane": "DIRECT",
+        "evidence": ".local/play-session-20261026/grouped-qa/lily-resource-r96/parser-check.json",
+        "finding": "Exact original downloaded declaration was passed in-memory to the current installed DekCNS json.lua using liblua5.4; decode succeeded with UltimateLily, Lily, Body, and expected mesh path. The four trailing commas are accepted by this specific parser; strict JSON failure does not prove loader failure.",
+        "limits": "Only parser function tested outside game. No archive activation, live file discovery, model mount, character presence, physics, visuals or crash acceptance. The candidate is distinct from mod3252.",
+        "next_action": "Continue independent affected material consumers. Seek live Lily observation and exact owner appearance choice only when available without story or saved progress changes.",
+        "new_complete_leafPASS": 0,
+        "new_exclusions": 0
       }
     },
     "owner_acceptance_20261026": {
