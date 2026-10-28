@@ -1542,20 +1542,20 @@
       "manifest_sha256": "3bb3673ebb1994275c885e9a81fb1f280792f83b6117655dae828d27984d7c0e",
       "target_identity_sha256": "955965cda7371a7ff208fdf736e19a1136e0628cf77a644ac49b5d4323aa9a92",
       "enumeration_validation": ".local/play-session-20261026/grouped-qa/risk-groups-r69/result.json",
-      "round_key": "body-continuity-r99-20261029",
-      "round_status": "CLOSED_R99_SCOPED_RETURN_MATERIAL",
-      "count": 99,
+      "round_key": "body-overlap-index-r100-20261029",
+      "round_status": "CLOSED_R100_SCOPED_STATIC_OVERLAPS",
+      "count": 100,
       "coverage": "since_baseline",
-      "last_seq": 99,
-      "last_key": "body-continuity-r99-20261029",
+      "last_seq": 100,
+      "last_key": "body-overlap-index-r100-20261029",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": null,
       "evidence_change_percentage_points": null,
       "scope_change_percentage_points": 0,
-      "change_rule": "One bounded cross-body continuity observation, no new leaf PASS or exclusion; total completion unknown.",
-      "round_start_commit": "ebe04e0a5f117ef8f3aa7adcb33af8f4bf16fb76",
+      "change_rule": "One bounded static cross-container overlap investigation; no new leaf PASS, denominator change or mod exclusion. Total completion remains unknown.",
+      "round_start_commit": "58be54479d03de9ee2a62a2d1cb33f769a5ed361",
       "scope_change": "Original5129/effective5125/known1263 unchanged; no exclusions added.",
-      "milestone_change": "CH56 return after retained crash-package body has matching observed material chain and hidden state; no obvious full gray in rear captures, not full compatibility.",
+      "milestone_change": "Verified intended 137-resource repair overlay and isolated two shared AiK version overlaps; live effects remain unknown.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1999,7 +1999,7 @@
       "evidence_refinement_known_units_delta": 0
     },
     "next_action": "Continue ready material/visibility or hair-related differential groups from existing evidence; preserve known exact exclusions and prioritize untested relevant consumers, not repeated colors or shared combat tests.",
-    "updated_at": "2026-10-28T16:17:55.619570+00:00",
+    "updated_at": "2026-10-28T16:22:25.181436+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2292,7 +2292,7 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "R99_CLOSED_SCOPED_BODY_CONTINUITY",
+    "current_segment": "R100_CLOSED_SCOPED_OVERLAP",
     "previous_goal_turn_classification": "PROGRESS: R94 captured 1→2→3→4 retained instances, still4 at idle and1 after existing CNS-open callback. User paused; all own resources closed. Now explicit resume; callback reason unknown.",
     "execution_status": "ACTIVE_GOAL_CONTINUES",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
@@ -6447,6 +6447,21 @@
           "main_merge": false,
           "scope": "Sanitized current task State only"
         }
+      },
+      "body_overlap_r100": {
+        "at": "2026-10-28T16:22:25.181436+00:00",
+        "round_key": "body-overlap-index-r100-20261029",
+        "status": "CLOSED_SCOPED_STATIC_OVERLAP_INVESTIGATION",
+        "lane": "DIRECT",
+        "source": "Active grouped Goal; investigate actual shared resource collisions after scoped body continuity observations",
+        "result": ".local/play-session-20261026/grouped-qa/body-conflict-index-r100/result.json",
+        "aik_raw_comparison": ".local/play-session-20261026/grouped-qa/body-conflict-index-r100/aik-raw-diff.json",
+        "aik_offline_resolver": ".local/play-session-20261026/grouped-qa/body-conflict-index-r100/aik-flat-resolver.json",
+        "finding": "175 current mod/logic container indexes read with no errors; 150 different-stored-hash overlaps on exact character/outfit chunk IDs. 137 are reviewed intentional Extra331 skeleton fix overlays. Two shared AiK resources differ between CH56/CH48 and Bunny/Rabbit; exact decoded bytes differ, and four-provider offline resolver selects CH56. Eleven remaining overlaps include deliberate-style override candidates; not yet live compatibility findings.",
+        "limit": "Current file indexes not runtime mount or effect; stored hash and bytes differ does not establish semantic defect. Four-provider offline resolution does not prove engine winner. Global skeleton/physics/dynamic/material interactions beyond selected paths remain open. No mod removed or disabled.",
+        "next_action": "Compare actual shared resource contents and consumer applicability only if prior runtime provides a specific symptom; prioritize known owner-reported failures, not all overlaps.",
+        "new_complete_leafPASS": 0,
+        "new_exclusions": 0
       }
     },
     "owner_acceptance_20261026": {
