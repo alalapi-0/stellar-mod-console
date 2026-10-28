@@ -1542,20 +1542,20 @@
       "manifest_sha256": "3bb3673ebb1994275c885e9a81fb1f280792f83b6117655dae828d27984d7c0e",
       "target_identity_sha256": "955965cda7371a7ff208fdf736e19a1136e0628cf77a644ac49b5d4323aa9a92",
       "enumeration_validation": ".local/play-session-20261026/grouped-qa/risk-groups-r69/result.json",
-      "round_key": "lily-parser-actual-r98-20261029",
-      "round_status": "CLOSED_R98_INSTALLED_PARSER_CHECK",
-      "count": 98,
+      "round_key": "body-continuity-r99-20261029",
+      "round_status": "CLOSED_R99_SCOPED_RETURN_MATERIAL",
+      "count": 99,
       "coverage": "since_baseline",
-      "last_seq": 98,
-      "last_key": "lily-parser-actual-r98-20261029",
+      "last_seq": 99,
+      "last_key": "body-continuity-r99-20261029",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": null,
       "evidence_change_percentage_points": null,
       "scope_change_percentage_points": 0,
-      "change_rule": "One exact installed parser check; no new leaf PASS, denominator change or MOD exclusion. Total completion remains unknown.",
-      "round_start_commit": "4d47972f6ffaaef344a781307959dd8b3f3a37df",
+      "change_rule": "One bounded cross-body continuity observation, no new leaf PASS or exclusion; total completion unknown.",
+      "round_start_commit": "ebe04e0a5f117ef8f3aa7adcb33af8f4bf16fb76",
       "scope_change": "Original5129/effective5125/known1263 unchanged; no exclusions added.",
-      "milestone_change": "Installed CNS decoder accepts exact original Ultimate Lily declaration; candidate remains uninstalled and gameplay not verified.",
+      "milestone_change": "CH56 return after retained crash-package body has matching observed material chain and hidden state; no obvious full gray in rear captures, not full compatibility.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1999,7 +1999,7 @@
       "evidence_refinement_known_units_delta": 0
     },
     "next_action": "Continue ready material/visibility or hair-related differential groups from existing evidence; preserve known exact exclusions and prioritize untested relevant consumers, not repeated colors or shared combat tests.",
-    "updated_at": "2026-10-28T16:05:39.330277+00:00",
+    "updated_at": "2026-10-28T16:17:55.619570+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2292,7 +2292,7 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "R98_CLOSED_INSTALLED_PARSER_CHECK",
+    "current_segment": "R99_CLOSED_SCOPED_BODY_CONTINUITY",
     "previous_goal_turn_classification": "PROGRESS: R94 captured 1→2→3→4 retained instances, still4 at idle and1 after existing CNS-open callback. User paused; all own resources closed. Now explicit resume; callback reason unknown.",
     "execution_status": "ACTIVE_GOAL_CONTINUES",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
@@ -6413,6 +6413,40 @@
         "next_action": "Continue independent affected material consumers. Seek live Lily observation and exact owner appearance choice only when available without story or saved progress changes.",
         "new_complete_leafPASS": 0,
         "new_exclusions": 0
+      },
+      "body_continuity_r99": {
+        "at": "2026-10-28T16:07:48.795603+00:00",
+        "round_key": "body-continuity-r99-20261029",
+        "status": "CLOSED_SCOPED_RETURN_MATERIAL_OBSERVATION",
+        "source": "Active native Goal; direct owner requests grouped crash/compatibility diagnosis without variant exhaustion",
+        "lane": "DIRECT",
+        "owned_scope": [
+          "PROJECT_STATE owned task projection",
+          ".local/play-session-20261026/grouped-qa/body-continuity-r99",
+          "one registered private game and prior registered display/Steam",
+          "temporary AgentSessionQA files, append-only mods entry and semantic-57 client with verified exact preimages"
+        ],
+        "acceptance": "In one private process with safe original hair, switch remembered CH56/0 → ExtraMod333 body/0 → CH56/0 and compare exact current material parents/parameters/hidden slots; collect gameplay frames and restore original profile and baseline; stop on crash or identity mismatch. Do not retest failing hair or all variants.",
+        "limits": "No all-mod, long-duration, fine-visual or universal crash/gray conclusion. Prior shared helper/combat tests reused.",
+        "targets": [
+          "appearance:AiK_CH56_7897/choice-0",
+          "appearance:Repacked ExtraMod333 2/choice-0",
+          "appearance:Repacked Mod688/choice-1"
+        ],
+        "profile_preimage_sha256": "0ef54f650533d84ace32b44f3bb2c5bb292e0b9f71e68ffcff40247ee3361242",
+        "next_action": "Continue unique pending body-compatibility differences, retain known exact hair exclusion; do not redo common helpers or variant permutations.",
+        "closed_at": "2026-10-28T16:17:55.619570+00:00",
+        "result": ".local/play-session-20261026/grouped-qa/body-continuity-r99/result.json",
+        "restoration": ".local/play-session-20261026/grouped-qa/body-continuity-r99/final-restoration.json",
+        "finding": "CH56 first/return after ExtraMod333 body: material parent/parameters/hidden state match at early and ~7.6s samples; rear distant views no obvious whole-gray. Middle body selection acknowledged only, no middle visual acceptance. One transitional native menu frame showed duplication, later settled clean; origin unresolved.",
+        "new_complete_leafPASS": 0,
+        "new_exclusions": 0,
+        "git_delivery": {
+          "target": "codex/grouped-mod-qa-20261026",
+          "status": "IMPLEMENTATION_BRANCH_ROUND_DELIVERY",
+          "main_merge": false,
+          "scope": "Sanitized current task State only"
+        }
       }
     },
     "owner_acceptance_20261026": {
