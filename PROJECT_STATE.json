@@ -1999,7 +1999,7 @@
       "evidence_refinement_known_units_delta": 0
     },
     "next_action": "Continue ready material/visibility or hair-related differential groups from existing evidence; preserve known exact exclusions and prioritize untested relevant consumers, not repeated colors or shared combat tests.",
-    "updated_at": "2026-10-28T17:57:28.975965+00:00",
+    "updated_at": "2026-10-28T18:06:48.722266+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -6400,6 +6400,13 @@
           "status": "IMPLEMENTATION_BRANCH_ROUND_DELIVERY",
           "main_merge": false,
           "scope": "Sanitized state; private paths and raw third-party evidence retained locally"
+        },
+        "supplemental_index_overlap": {
+          "status": "NO_EXACT_EXPORT_ID_OVERLAP_STATIC_ONLY",
+          "evidence": ".local/play-session-20261026/grouped-qa/lily-resource-r96/ultimate-lily-overlap.json",
+          "finding": "Candidate 41 export chunk IDs were compared with 175 current mod/logic container indexes; none matched. Candidate remains uninstalled; this is not runtime compatibility or stylistic equivalence.",
+          "temporary_extraction_removed": true,
+          "new_round": false
         }
       },
       "lily_parser_r98": {
