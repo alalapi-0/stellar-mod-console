@@ -1539,23 +1539,23 @@
       },
       "reason": "Owner explicitly removes exhaustive parameter/color/animation enumeration as completion requirement. Old264/5125 retained as history only; current merged applicability notfrozen, so no percentage orfakePASS.",
       "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
-      "manifest_sha256": "c7e3986a7f366e2d275c8a3837f996e83dc57c01a43073ea0b7eb3ea9e774374",
+      "manifest_sha256": "d18c6f4a9ef62fc452bc604970941ab171f1331df8ad0c876d9ac054af2217c0",
       "target_identity_sha256": "955965cda7371a7ff208fdf736e19a1136e0628cf77a644ac49b5d4323aa9a92",
       "enumeration_validation": ".local/play-session-20261026/grouped-qa/risk-groups-r69/result.json",
-      "round_key": "album-overlap-r115-20261029",
-      "round_status": "CLOSED_R115_REVIEWED_SCOPED_RENDER",
-      "count": 115,
+      "round_key": "album-remaining-r116-20261029",
+      "round_status": "CLOSED_R116_REVIEWED_SCOPED_APPLICABILITY",
+      "count": 116,
       "coverage": "since_baseline",
-      "last_seq": 115,
-      "last_key": "album-overlap-r115-20261029",
+      "last_seq": 116,
+      "last_key": "album-remaining-r116-20261029",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": null,
       "evidence_change_percentage_points": null,
       "scope_change_percentage_points": 0,
-      "change_rule": "One independently reviewed scoped actual image comparison and bounded source comparison; no complete leaf PASS, exclusions or denominator change. Overall completion unknown.",
-      "round_start_commit": "6f78ba8f788fb7ad4a9cff05c7da0c522372f3d8",
-      "scope_change": "Original5129/effective5125/known1263 unchanged; no exclusions added.",
-      "milestone_change": "Actual Lily image matches both source versions; Roxane screenshot quantitatively favors the 3252 source. The five different source images remain distinct; only Roxane checked live.",
+      "change_rule": "One independently reviewed scoped applicability observation; no completed leaf PASS, no exclusions, unchanged denominator; overall completion unknown.",
+      "round_start_commit": "b608a0bd520d78c3f1e452408d68705bc6a2db31",
+      "scope_change": "Original5129/effective5125/known1263 retained; no exclusions added.",
+      "milestone_change": "Current Enya detail binds Enya_A which installed 3252 does not supply; exact applicable target images remain unverified.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1998,8 +1998,8 @@
       "new_shared_static_assertions_this_round": 0,
       "evidence_refinement_known_units_delta": 0
     },
-    "next_action": "Continue remaining meaningful lifecycle and playable configuration; reuse scoped 3252 visual evidence and retain uncertain mods.",
-    "updated_at": "2026-10-28T22:42:08.771148+00:00",
+    "next_action": "Continue safe lifecycle and playable configuration evidence, retaining unproven mods and reusing existing shared tests.",
+    "updated_at": "2026-10-28T23:02:35.646130+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2128,7 +2128,7 @@
         }
       }
     },
-    "round_closure_at": "2026-10-28T15:45:08.383548+00:00",
+    "round_closure_at": "2026-10-28T23:02:35.646130+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 14,
       "new_confirmed_this_round": 0,
@@ -2292,7 +2292,7 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "R115_CLOSED_SCOPED_ALBUM_RENDER",
+    "current_segment": "R116_CLOSED_ENYA_ASSET_APPLICABILITY",
     "previous_goal_turn_classification": "PROGRESS: R94 captured 1→2→3→4 retained instances, still4 at idle and1 after existing CNS-open callback. User paused; all own resources closed. Now explicit resume; callback reason unknown.",
     "execution_status": "ACTIVE_GOAL_CONTINUES",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
@@ -3729,7 +3729,7 @@
       },
       "test_save_boundary": "No independent story-save isolation established; forbid death/story/reward/travel tests and save rollback. Initial private launch/menu checks only; inspect scene before safe reversible movement/outfit checks.",
       "round_accounting": "One owned candidate plus original-failing fixture, targeted runtime six observations, exact recovery and independent review closes once; inputs, frames, callbacks, checks, reviewer and prior observer correction are not new rounds.",
-      "next_action": "Log exact candidate1 policy and link call order in one targeted Core→AiK→Mod688 sequence; infer why initial Core71 survives and preserve active/foreign safeguards before revising.",
+      "next_action": "Continue safe lifecycle and playable configuration evidence, retaining unproven mods and reusing existing shared tests.",
       "at": "2026-10-25T23:55:06.640620+00:00",
       "lane_reason": "Recoverable cross-module lifecycle behavior; coherent candidate validated in fixtures and actual native/CNS paths then fresh independent Judge PASS_SCOPED.",
       "findings": {
@@ -3743,7 +3743,7 @@
         "v8": "Fresh independent PASS for current BS_ alias transition/native-menu scope; full S1/Goal incomplete"
       },
       "candidate_sha256": "21bb36fbf2ad22f6f93ff605af26961446998ceb2e36c63fd222d92c87ed6ca8",
-      "updated_at": "2026-10-28T07:38:39.427758+00:00",
+      "updated_at": "2026-10-28T23:02:35.646130+00:00",
       "grouped_assertions": {
         "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
         "sha256": "a800adc5603d0edb2747f20dc335cc109dd88357033ddfcdadb856aac810b618",
@@ -3764,17 +3764,12 @@
         "candidate1_unreviewed_installed": true
       },
       "candidate_source": "src/runtime/OwnedLinkedPostProcess.lua",
-      "latest_runtime_result": ".local/play-session-20261026/grouped-qa/linked-closure-repair-r93/runtime-result.json",
-      "last_material_progress": "R94 bounded sequence captured retained instances after CNS changes; idle alone4 and CNS-open1. No root cause/general acceptance yet; user explicitly paused.",
+      "latest_runtime_result": ".local/play-session-20261026/grouped-qa/album-remaining-r116/runtime-result.json",
+      "last_material_progress": "Identified Enya current UI asset and verified target package does not contain it; no mod excluded.",
       "round_key": "ordered-material-after-pp-fix-r94-20261027",
       "round_closed_once": true,
       "previous_current_projection_ref": ".local/play-session-20261026/grouped-qa/PROJECT_STATE.entry.json",
-      "independent_review": {
-        "status": "PASS_SCOPED",
-        "reviewer": "r93_linked_closure_review",
-        "evidence": ".local/play-session-20261026/grouped-qa/linked-closure-repair-r93/independent-review.json",
-        "candidate_sha256": "21bb36fbf2ad22f6f93ff605af26961446998ceb2e36c63fd222d92c87ed6ca8"
-      },
+      "independent_review": ".local/play-session-20261026/grouped-qa/album-remaining-r116/independent-review.json",
       "git_delivery": {
         "status": "DELIVERY_RECEIPT_AUTHORITATIVE_FOR_REMOTE_VERIFICATION",
         "target": "codex/grouped-mod-qa-20261026",
@@ -6856,6 +6851,26 @@
         "finding": "26 shared source chunks: five byte-identical, 16 differ only within one 16-byte span, and five differ beyond it. Lily top-mip pixels equal; native Roxane screenshot better matches 3252 than AIO.",
         "limits": "Actual IO winner not directly proven; four other visually different images and world Lily not validated. CNS profile exact; databank read indicators may have changed during session and persistence was not verified.",
         "evidence_hygiene": "Executed display/binding scripts retain stale historical scope labels; actual PID and screenshot binding reviewed. Fix copied labels before future sessions, preserve executed originals."
+      },
+      "album_remaining_r116": {
+        "round_key": "album-remaining-r116-20261029",
+        "status": "CLOSED_REVIEWED_SCOPED_APPLICABILITY",
+        "lane": "REVIEWED",
+        "source": "R115 confirmed exact five differing DXT5 images, one actual Roxane matched 3252. Owner requests 3252 priority; four distinct remaining image entries may be available in current databank.",
+        "acceptance": "In one private game inspect only available unlocked remaining differing character images and compare screenshots to the exact already decoded source versions; no exhaustive color/combinations, no gameplay or story progression. Restore CNS entry profile exactly, report locked/inapplicable entries honestly and never disable an uncertain MOD.",
+        "owned_scope": [
+          "private display/game and own functional helpers",
+          "existing native databank UI screenshots and bounded in-memory comparison",
+          "task state and existing manifest"
+        ],
+        "next_action": "Continue safe lifecycle and playable configuration evidence, retaining unproven mods and reusing existing shared tests.",
+        "entry_state_sha256": "49e720f36951de1314326e3415d8088cdcedd8e77e0c00464cdc0e11afe19ab9",
+        "lane_reason": "Live UI widget object interpretation and exact package applicability require independent judgment.",
+        "closed_at": "2026-10-28T23:02:35.646130+00:00",
+        "result": ".local/play-session-20261026/grouped-qa/album-remaining-r116/runtime-result.json",
+        "independent_review": ".local/play-session-20261026/grouped-qa/album-remaining-r116/independent-review.json",
+        "finding": "Current Enya detail binds Enya_A; exact Enya_A package absent from installed 3252 and present only in base among 180 indexed UTOCs. No confirmed collision or reason to remove an uncertain mod.",
+        "limits": "Loose/runtime replacements not covered. Actual Enya, Enya_B, Raven, Scarlet target images and world Lily remain unverified; profile equality is to session entry only; read indicator persistence unknown."
       }
     },
     "owner_acceptance_20261026": {
