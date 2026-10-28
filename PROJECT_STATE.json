@@ -1519,8 +1519,8 @@
         "PASS": 264,
         "REOPENED": 2,
         "WAITING_HUMAN": 1,
-        "PARTIAL": 134,
-        "FAIL": 3,
+        "PARTIAL": 133,
+        "FAIL": 4,
         "BLOCKED_NOT_INSTALLED": 28
       },
       "categories": {
@@ -1539,23 +1539,23 @@
       },
       "reason": "Owner explicitly removes exhaustive parameter/color/animation enumeration as completion requirement. Old264/5125 retained as history only; current merged applicability notfrozen, so no percentage orfakePASS.",
       "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
-      "manifest_sha256": "164c974e55b0df17ba7cc11e176ec36db507e8b62ea679886fdd74b433650e81",
+      "manifest_sha256": "d1a60069cf9c7baf0dc3d3e6815c81eefc850c05730421c954b8cef6c338c42d",
       "target_identity_sha256": "955965cda7371a7ff208fdf736e19a1136e0628cf77a644ac49b5d4323aa9a92",
       "enumeration_validation": ".local/play-session-20261026/grouped-qa/risk-groups-r69/result.json",
-      "round_key": "evidence-reuse-r105-20261029",
-      "round_status": "CLOSED_R105_EVIDENCE_REUSE_MAPPING",
-      "count": 105,
+      "round_key": "extra333-body-visual-r106-20261029",
+      "round_status": "CLOSED_R106_CONFIRMED_GRAY_FAILURE",
+      "count": 106,
       "coverage": "since_baseline",
-      "last_seq": 105,
-      "last_key": "evidence-reuse-r105-20261029",
+      "last_seq": 106,
+      "last_key": "extra333-body-visual-r106-20261029",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": null,
       "evidence_change_percentage_points": null,
       "scope_change_percentage_points": 0,
-      "change_rule": "Existing evidence mapped with scope and invalidation; no leaf acceptance or denominator change.",
-      "round_start_commit": "ae4977592797ce50084737b1fce3d3492b0ce2ec",
+      "change_rule": "One real formerly partial exact leaf fails; no new PASS or denominator change. Total completion remains unknown.",
+      "round_start_commit": "98d61eabcb48df2ac0b097143fb3b2f518aa4045",
       "scope_change": "Original5129/effective5125/known1263 unchanged; no exclusions added.",
-      "milestone_change": "Four exact R95/R99/R103/R104 evidence records plus two core links added; old failure and REOPENED statuses retained.",
+      "milestone_change": "Persistent gray reproduced for exact Extra333 body index0; null material slot observed; sibling preserved and targeted fix/exclusion pending.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1999,7 +1999,7 @@
       "evidence_refinement_known_units_delta": 0
     },
     "next_action": "Continue ready material/visibility or hair-related differential groups from existing evidence; preserve known exact exclusions and prioritize untested relevant consumers, not repeated colors or shared combat tests.",
-    "updated_at": "2026-10-28T18:40:57.582503+00:00",
+    "updated_at": "2026-10-28T18:56:34.075665+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2292,7 +2292,7 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "R105_CLOSED_EVIDENCE_REUSE_MAPPING",
+    "current_segment": "R106_CLOSED_EXTRA333_BODY_FAILURE",
     "previous_goal_turn_classification": "PROGRESS: R94 captured 1→2→3→4 retained instances, still4 at idle and1 after existing CNS-open callback. User paused; all own resources closed. Now explicit resume; callback reason unknown.",
     "execution_status": "ACTIVE_GOAL_CONTINUES",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
@@ -6627,6 +6627,30 @@
         ],
         "limits": "No target leaf status, denominator, eligibility, exclusion or acceptance changed; same-garment colors not enumerated; broader user-play, crash and long-session acceptance remain open.",
         "next_action": "Continue unmet actual costume/physics and lifecycle risk evidence; retain Lily appearance pending user choice; reuse exact scoped records."
+      },
+      "extra333_visual_r106": {
+        "round_key": "extra333-body-visual-r106-20261029",
+        "status": "CLOSED_CONFIRMED_SCOPED_GRAY_FAILURE",
+        "lane": "DIRECT",
+        "source": "Active Goal; R99 retained ExtraMod333 body selection has no visual observation; owner prioritizes real garment compatibility over exhaustive colors",
+        "acceptance": "In one exact owned private process and remembered safe hair: select retained ExtraMod333 body index0, read mesh and delayed materials, capture clear actual gameplay view; return original body via native CNS and verify original profile, game and temporary helper cleanup. Preserve original hair exclusion. Reuse shared core checks; no combat success-rate or option sweep.",
+        "owned_scope": [
+          "one task private display and game",
+          "temporary exact AgentSessionQA files and append-only mods entry",
+          "existing semantic client exact preimage",
+          "current grouped/progress state",
+          "ignored evidence directory"
+        ],
+        "preimage_profile_sha256": "0ef54f650533d84ace32b44f3bb2c5bb292e0b9f71e68ffcff40247ee3361242",
+        "frozen_targets_ref": ".local/play-session-20261026/grouped-qa/extra333-visual-r106/frozen-targets.json",
+        "next_action": "Investigate original intended material or exact variant-specific exclusion; preserve index1 and previously excluded hair; validate any fix live.",
+        "closed_at": "2026-10-28T18:56:34.075665+00:00",
+        "result": ".local/play-session-20261026/grouped-qa/extra333-visual-r106/result.json",
+        "restoration": ".local/play-session-20261026/grouped-qa/extra333-visual-r106/restoration.json",
+        "manifest_before_sha256": "164c974e55b0df17ba7cc11e176ec36db507e8b62ea679886fdd74b433650e81",
+        "manifest_after_sha256": "d1a60069cf9c7baf0dc3d3e6815c81eefc850c05730421c954b8cef6c338c42d",
+        "failure": "Exact ExtraMod333 body/0 persists gray in delayed frame; slot1 default and override null, intended material unknown. Arms-out was transient.",
+        "exclusion": "Not yet applied; same declaration contains untested index1, so preserve sibling while finding exact safe repair or exclusion."
       }
     },
     "owner_acceptance_20261026": {
