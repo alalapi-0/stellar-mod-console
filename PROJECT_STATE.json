@@ -1542,20 +1542,20 @@
       "manifest_sha256": "3bb3673ebb1994275c885e9a81fb1f280792f83b6117655dae828d27984d7c0e",
       "target_identity_sha256": "955965cda7371a7ff208fdf736e19a1136e0628cf77a644ac49b5d4323aa9a92",
       "enumeration_validation": ".local/play-session-20261026/grouped-qa/risk-groups-r69/result.json",
-      "round_key": "lily-resource-identity-r96-20261029",
-      "round_status": "CLOSED_R96_SCOPED_STATIC_RESOURCE_IDENTITY",
-      "count": 96,
+      "round_key": "lily-overlap-candidate-r97-20261029",
+      "round_status": "CLOSED_R97_SCOPED_OFFLINE_SCAN",
+      "count": 97,
       "coverage": "since_baseline",
-      "last_seq": 96,
-      "last_key": "lily-resource-identity-r96-20261029",
+      "last_seq": 97,
+      "last_key": "lily-overlap-candidate-r97-20261029",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": null,
       "evidence_change_percentage_points": null,
       "scope_change_percentage_points": 0,
-      "change_rule": "One scoped resource identity finding; no new leaf PASS, denominator change or mod exclusion. Total completion remains unknown.",
-      "round_start_commit": "f9f5a17b83104012bcb92a99779d87826cb207ec",
+      "change_rule": "One offline container scan and bounded existing candidate investigation; no new leaf PASS, denominator change or mod exclusion. Total completion remains unknown.",
+      "round_start_commit": "61d1bc6a8a802a5f617ab69a274b6273f923ea03",
       "scope_change": "Original5129/effective5125/known1263 unchanged; no exclusions added.",
-      "milestone_change": "3252 UI override and distinct Lily candidate identifiers verified statically; world replacement and runtime remain unverified.",
+      "milestone_change": "Current exact Lily body chunk has no indexed direct MOD override. Separate Lily-native CNS candidate identified, not yet loaded or runtime validated.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1999,7 +1999,7 @@
       "evidence_refinement_known_units_delta": 0
     },
     "next_action": "Continue ready material/visibility or hair-related differential groups from existing evidence; preserve known exact exclusions and prioritize untested relevant consumers, not repeated colors or shared combat tests.",
-    "updated_at": "2026-10-28T16:01:45.069089+00:00",
+    "updated_at": "2026-10-28T16:04:14.839522+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2292,7 +2292,7 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "R96_CLOSED_SCOPED_LILY_IDENTITY",
+    "current_segment": "R97_CLOSED_SCOPED_LILY_CANDIDATE",
     "previous_goal_turn_classification": "PROGRESS: R94 captured 1→2→3→4 retained instances, still4 at idle and1 after existing CNS-open callback. User paused; all own resources closed. Now explicit resume; callback reason unknown.",
     "execution_status": "ACTIVE_GOAL_CONTINUES",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
@@ -6376,6 +6376,30 @@
           "status": "IMPLEMENTATION_BRANCH_ROUND_DELIVERY",
           "main_merge": false,
           "scope": "Sanitized state; raw data stays local"
+        }
+      },
+      "lily_candidate_r97": {
+        "at": "2026-10-28T16:04:14.839522+00:00",
+        "round_key": "lily-overlap-candidate-r97-20261029",
+        "status": "CLOSED_SCOPED_OFFLINE_CONFLICT_AND_CANDIDATE_SCAN",
+        "lane": "DIRECT",
+        "source": "Owner Lily world appearance request; no user configuration changes",
+        "prior_round": "lily_resource_r96",
+        "evidence": [
+          ".local/play-session-20261026/grouped-qa/lily-resource-r96/container-overlap-scan.json",
+          ".local/play-session-20261026/grouped-qa/lily-resource-r96/ultimate-lily-candidate.json",
+          ".local/play-session-20261026/grouped-qa/lily-resource-r96/candidate-index-inspection.json"
+        ],
+        "finding": "All 180 current game-directory utoc indexes returned exit0; only base contains exact default Lily body chunk. Base, AIO, and 3252 share album chunk. Existing separate user-downloaded Ultimate Lily CNS archive declares Lily body and its indexed mesh imports stock Lily skeleton. Original declaration contains four trailing commas rejected by strict JSON; actual loader behavior unknown. Candidate not activated.",
+        "limits": "Current file presence not engine mount; dynamic replacements, material overrides, other Lily outfits, actual runtime and subjective visual quality not tested. Candidate is not 3252 and is not established as stylistically matching it. No MOD disabled, installed or removed.",
+        "next_action": "Find safe Lily actor observation and evaluate candidate parsing/dependency in isolation; do not move story or alter user save.",
+        "new_complete_leafPASS": 0,
+        "new_exclusions": 0,
+        "git_delivery": {
+          "target": "codex/grouped-mod-qa-20261026",
+          "status": "IMPLEMENTATION_BRANCH_ROUND_DELIVERY",
+          "main_merge": false,
+          "scope": "Sanitized state; private paths and raw third-party evidence retained locally"
         }
       }
     },
