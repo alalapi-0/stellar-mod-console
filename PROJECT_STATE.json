@@ -1539,23 +1539,23 @@
       },
       "reason": "Owner explicitly removes exhaustive parameter/color/animation enumeration as completion requirement. Old264/5125 retained as history only; current merged applicability notfrozen, so no percentage orfakePASS.",
       "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
-      "manifest_sha256": "3bb3673ebb1994275c885e9a81fb1f280792f83b6117655dae828d27984d7c0e",
+      "manifest_sha256": "164c974e55b0df17ba7cc11e176ec36db507e8b62ea679886fdd74b433650e81",
       "target_identity_sha256": "955965cda7371a7ff208fdf736e19a1136e0628cf77a644ac49b5d4323aa9a92",
       "enumeration_validation": ".local/play-session-20261026/grouped-qa/risk-groups-r69/result.json",
-      "round_key": "playable-core-r104-20261029",
-      "round_status": "CLOSED_R104_SCOPED_CORE_INTEGRATION",
-      "count": 104,
+      "round_key": "evidence-reuse-r105-20261029",
+      "round_status": "CLOSED_R105_EVIDENCE_REUSE_MAPPING",
+      "count": 105,
       "coverage": "since_baseline",
-      "last_seq": 104,
-      "last_key": "playable-core-r104-20261029",
+      "last_seq": 105,
+      "last_key": "evidence-reuse-r105-20261029",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": null,
       "evidence_change_percentage_points": null,
       "scope_change_percentage_points": 0,
-      "change_rule": "One fresh process shared integration verification; no garment PASS, denominator change or mod exclusion. Total completion unknown.",
-      "round_start_commit": "060079f9bae3d5c596697c4bd8ee776fdc42497a",
+      "change_rule": "Existing evidence mapped with scope and invalidation; no leaf acceptance or denominator change.",
+      "round_start_commit": "ae4977592797ce50084737b1fce3d3492b0ce2ec",
       "scope_change": "Original5129/effective5125/known1263 unchanged; no exclusions added.",
-      "milestone_change": "Reviewed dance fix loaded with requested assistant connectivity/three flags and movement 1.75/lock/restore; tests completed with own game and helpers exited.",
+      "milestone_change": "Four exact R95/R99/R103/R104 evidence records plus two core links added; old failure and REOPENED statuses retained.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1999,7 +1999,7 @@
       "evidence_refinement_known_units_delta": 0
     },
     "next_action": "Continue ready material/visibility or hair-related differential groups from existing evidence; preserve known exact exclusions and prioritize untested relevant consumers, not repeated colors or shared combat tests.",
-    "updated_at": "2026-10-28T18:35:32.722564+00:00",
+    "updated_at": "2026-10-28T18:40:57.582503+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2292,7 +2292,7 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "R104_CLOSED_CORE_INTEGRATION",
+    "current_segment": "R105_CLOSED_EVIDENCE_REUSE_MAPPING",
     "previous_goal_turn_classification": "PROGRESS: R94 captured 1→2→3→4 retained instances, still4 at idle and1 after existing CNS-open callback. User paused; all own resources closed. Now explicit resume; callback reason unknown.",
     "execution_status": "ACTIVE_GOAL_CONTINUES",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
@@ -6608,6 +6608,25 @@
           "main_merge": false,
           "scope": "Sanitized owned state only"
         }
+      },
+      "evidence_reuse_r105": {
+        "at": "2026-10-28T18:40:57.582503+00:00",
+        "round_key": "evidence-reuse-r105-20261029",
+        "status": "CLOSED_SCOPED_EVIDENCE_REUSE_MAPPING",
+        "lane": "DIRECT",
+        "source": "Active Goal; reuse original observed R95/R99/R102-R104 outcomes without repeated game tests",
+        "scope": "Append four precisely bounded assertion records and cross-reference two existing core records in existing ignored manifest; no game or asset changes",
+        "manifest_before_sha256": "3bb3673ebb1994275c885e9a81fb1f280792f83b6117655dae828d27984d7c0e",
+        "manifest_after_sha256": "164c974e55b0df17ba7cc11e176ec36db507e8b62ea679886fdd74b433650e81",
+        "result": ".local/play-session-20261026/grouped-qa/evidence-reuse-r105/result.json",
+        "new_assertion_ids": [
+          "CNS-ORDERED-RETURN-MATERIAL-MOD688-R95",
+          "CNS-ORDERED-RETURN-MATERIAL-CH56-EXTRA333-R99",
+          "JIGGLE-VAN-STOP-RECOVERY-R102-R103",
+          "PLAYABLE-CORE-FRESH-INTEGRATION-R104"
+        ],
+        "limits": "No target leaf status, denominator, eligibility, exclusion or acceptance changed; same-garment colors not enumerated; broader user-play, crash and long-session acceptance remain open.",
+        "next_action": "Continue unmet actual costume/physics and lifecycle risk evidence; retain Lily appearance pending user choice; reuse exact scoped records."
       }
     },
     "owner_acceptance_20261026": {
