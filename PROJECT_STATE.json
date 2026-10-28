@@ -1539,23 +1539,23 @@
       },
       "reason": "Owner explicitly removes exhaustive parameter/color/animation enumeration as completion requirement. Old264/5125 retained as history only; current merged applicability notfrozen, so no percentage orfakePASS.",
       "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
-      "manifest_sha256": "f260c0a90b27a476001092d419ef6b62b2590d50d293ca2616711b01a3cf1c39",
+      "manifest_sha256": "10722d13fb9735dfd713fe0f189751098437ea4d282fa6a8971ab01d79e89b96",
       "target_identity_sha256": "955965cda7371a7ff208fdf736e19a1136e0628cf77a644ac49b5d4323aa9a92",
       "enumeration_validation": ".local/play-session-20261026/grouped-qa/risk-groups-r69/result.json",
-      "round_key": "physics-profile-reuse-r117-20261029",
-      "round_status": "CLOSED_R117_DIRECT_SCOPED_REUSE",
-      "count": 117,
+      "round_key": "custom-dance-recovery-r118-20261029",
+      "round_status": "CLOSED_R118_REVIEWED_SCOPED_RUNTIME",
+      "count": 118,
       "coverage": "since_baseline",
-      "last_seq": 117,
-      "last_key": "physics-profile-reuse-r117-20261029",
+      "last_seq": 118,
+      "last_key": "custom-dance-recovery-r118-20261029",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": null,
       "evidence_change_percentage_points": null,
       "scope_change_percentage_points": 0,
-      "change_rule": "One reused cross-process scoped physics evidence comparison; no complete leaf PASS, exclusion or denominator change; overall completion unknown.",
-      "round_start_commit": "f60bec5b4ae0d4f5c0aabe7e74981c75bf05a400",
+      "change_rule": "One independently reviewed direct runtime combination assertion; no complete leaf PASS or exclusion and unchanged denominator; overall completion unknown.",
+      "round_start_commit": "48c946ea1cf27448618c56c283e0858fc7fcb3e8",
       "scope_change": "Original5129/effective5125/known1263 retained; no exclusions added.",
-      "milestone_change": "Six node values in four R113 states match the earlier validated selected profile; later process continuity established for these sampled values only.",
+      "milestone_change": "First actual custom garment dance stop and subsequent distinct garment switch: six selected spring nodes automatically recovered and remained at prior values.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1998,8 +1998,8 @@
       "new_shared_static_assertions_this_round": 0,
       "evidence_refinement_known_units_delta": 0
     },
-    "next_action": "Continue remaining safe material/animation lifecycle and playable configuration; reuse physics evidence.",
-    "updated_at": "2026-10-28T23:06:25.897775+00:00",
+    "next_action": "Continue safe unverified lifecycle and practical playable configuration, preserving prior excluded choices and scoped evidence.",
+    "updated_at": "2026-10-28T23:28:26.241757+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2128,7 +2128,7 @@
         }
       }
     },
-    "round_closure_at": "2026-10-28T23:06:25.897775+00:00",
+    "round_closure_at": "2026-10-28T23:28:26.241757+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 14,
       "new_confirmed_this_round": 0,
@@ -2292,7 +2292,7 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "R117_CLOSED_PHYSICS_PROFILE_REUSE",
+    "current_segment": "R118_CLOSED_CUSTOM_DANCE_RECOVERY",
     "previous_goal_turn_classification": "PROGRESS: R94 captured 1→2→3→4 retained instances, still4 at idle and1 after existing CNS-open callback. User paused; all own resources closed. Now explicit resume; callback reason unknown.",
     "execution_status": "ACTIVE_GOAL_CONTINUES",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
@@ -3729,7 +3729,7 @@
       },
       "test_save_boundary": "No independent story-save isolation established; forbid death/story/reward/travel tests and save rollback. Initial private launch/menu checks only; inspect scene before safe reversible movement/outfit checks.",
       "round_accounting": "One owned candidate plus original-failing fixture, targeted runtime six observations, exact recovery and independent review closes once; inputs, frames, callbacks, checks, reviewer and prior observer correction are not new rounds.",
-      "next_action": "Continue remaining safe material/animation lifecycle and playable configuration; reuse physics evidence.",
+      "next_action": "Continue safe unverified lifecycle and practical playable configuration, preserving prior excluded choices and scoped evidence.",
       "at": "2026-10-25T23:55:06.640620+00:00",
       "lane_reason": "Recoverable cross-module lifecycle behavior; coherent candidate validated in fixtures and actual native/CNS paths then fresh independent Judge PASS_SCOPED.",
       "findings": {
@@ -3743,7 +3743,7 @@
         "v8": "Fresh independent PASS for current BS_ alias transition/native-menu scope; full S1/Goal incomplete"
       },
       "candidate_sha256": "21bb36fbf2ad22f6f93ff605af26961446998ceb2e36c63fd222d92c87ed6ca8",
-      "updated_at": "2026-10-28T23:06:25.897775+00:00",
+      "updated_at": "2026-10-28T23:28:26.241757+00:00",
       "grouped_assertions": {
         "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
         "sha256": "a800adc5603d0edb2747f20dc335cc109dd88357033ddfcdadb856aac810b618",
@@ -3764,12 +3764,12 @@
         "candidate1_unreviewed_installed": true
       },
       "candidate_source": "src/runtime/OwnedLinkedPostProcess.lua",
-      "latest_runtime_result": ".local/play-session-20261026/grouped-qa/album-remaining-r116/runtime-result.json",
-      "last_material_progress": "Compared source snapshots: exact six named spring bones in four R113 views match the earlier R101 validated profile-controlled values and enabled alpha; earlier profile and source pins match current files.",
+      "latest_runtime_result": ".local/play-session-20261026/grouped-qa/custom-dance-recovery-r118/runtime-result.json",
+      "last_material_progress": "In one private game Tifa -> 126s Hip Swing -> Royalguard -> native; guarded stop hook reacquired after watch_identity exhausted; six sampled nodes matched pre-dance values with active finite histories at all four recorded states; no F1.",
       "round_key": "ordered-material-after-pp-fix-r94-20261027",
       "round_closed_once": true,
       "previous_current_projection_ref": ".local/play-session-20261026/grouped-qa/PROJECT_STATE.entry.json",
-      "independent_review": ".local/play-session-20261026/grouped-qa/album-remaining-r116/independent-review.json",
+      "independent_review": ".local/play-session-20261026/grouped-qa/custom-dance-recovery-r118/independent-review.json",
       "git_delivery": {
         "status": "DELIVERY_RECEIPT_AUTHORITATIVE_FOR_REMOTE_VERIFICATION",
         "target": "codex/grouped-mod-qa-20261026",
@@ -6888,6 +6888,28 @@
         "result": ".local/play-session-20261026/grouped-qa/physics-profile-reuse-r117/result.json",
         "finding": "Compared source snapshots: exact six named spring bones in four R113 views match the earlier R101 validated profile-controlled values and enabled alpha; earlier profile and source pins match current files.",
         "limits": "R113 profile file was not independently pinned then; equality is of observed values. No claim for all nodes, visual naturalness, all garments, long play or all session recovery. Existing broad leaf statuses remain REOPENED."
+      },
+      "custom_dance_recovery_r118": {
+        "round_key": "custom-dance-recovery-r118-20261029",
+        "status": "CLOSED_REVIEWED_SCOPED_CUSTOM_DANCE_OUTFIT_RECOVERY",
+        "lane": "REVIEWED",
+        "source": "R103 proved one native dance stop recovery; R113 measured physics after Tifa and Royalguard outfit transitions. Their combined custom-outfit dance and subsequent switch remains unobserved.",
+        "acceptance": "One task-private game: select existing Tifa choice, sample six physics nodes, play one already checked Hip Swing, stop and verify six nodes after automatic recovery, switch to Royalguard and verify nodes and final visible state, then restore original native choice and exact entry CNS profile; restore dance camera preference; normal exit and cleanup owned helpers/display/temporary QA. No story, travel, purchase, exhaustive colors, additional combat or other user processes. Stop at uncertain identity or first real mismatch.",
+        "owned_scope": [
+          "task-private display, Steam, game and own functional helpers",
+          "temporary AgentSessionQA and exact mods.txt suffix and session-specific semantic client",
+          "CNS current configuration with entry preimage and normal game controls",
+          "existing ignored evidence, manifest and task state"
+        ],
+        "reuse": "R103 event/failure and R113/117 spring/profile snapshots, R104 functional checks; fresh interaction only.",
+        "next_action": "Continue safe unverified lifecycle and practical playable configuration, preserving prior excluded choices and scoped evidence.",
+        "entry_state_sha256": "5450fbe8ce7f2ff1329f02eb612222d184c7818f55b67d0ef655878ddb248c18",
+        "closed_at": "2026-10-28T23:28:26.241757+00:00",
+        "result": ".local/play-session-20261026/grouped-qa/custom-dance-recovery-r118/runtime-result.json",
+        "independent_review": ".local/play-session-20261026/grouped-qa/custom-dance-recovery-r118/independent-review.json",
+        "restoration": ".local/play-session-20261026/grouped-qa/custom-dance-recovery-r118/restoration.json",
+        "finding": "In one private game Tifa -> 126s Hip Swing -> Royalguard -> native; guarded stop hook reacquired after watch_identity exhausted; six sampled nodes matched pre-dance values with active finite histories at all four recorded states; no F1.",
+        "limits": "Single animation, two exact outfits, one process; no naturalness/audio/combat/long-session/other outfits or full save byte equality. Original pre-R107 camera remains unknown."
       }
     },
     "owner_acceptance_20261026": {
