@@ -1999,7 +1999,7 @@
       "evidence_refinement_known_units_delta": 0
     },
     "next_action": "Continue ready material/visibility or hair-related differential groups from existing evidence; preserve known exact exclusions and prioritize untested relevant consumers, not repeated colors or shared combat tests.",
-    "updated_at": "2026-10-28T16:22:25.181436+00:00",
+    "updated_at": "2026-10-28T16:25:46.250072+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -6446,6 +6446,12 @@
           "status": "IMPLEMENTATION_BRANCH_ROUND_DELIVERY",
           "main_merge": false,
           "scope": "Sanitized current task State only"
+        },
+        "supplemental_jiggle_log": {
+          "status": "REUSED_LOG_ONLY_NOT_ACCEPTANCE",
+          "evidence": ".local/play-session-20261026/grouped-qa/body-continuity-r99/jiggle-log-correlation.json",
+          "finding": "Current JiggleControl reported automatic ACTIVE with 27 nodes, 6 matches, 338 writes after first and return CH56 selections. Intermediate Extra333 lasted ~1.1s and lacks an independent ACTIVE observation. No manual F1 in owned inputs.",
+          "limits": "Self-reported log only, no independent parameter/physics/long-session or dance proof. Existing reacquire/session-restore assertions remain REOPENED; no new round or PASS."
         }
       },
       "body_overlap_r100": {
