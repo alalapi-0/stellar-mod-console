@@ -1542,20 +1542,20 @@
       "manifest_sha256": "3bb3673ebb1994275c885e9a81fb1f280792f83b6117655dae828d27984d7c0e",
       "target_identity_sha256": "955965cda7371a7ff208fdf736e19a1136e0628cf77a644ac49b5d4323aa9a92",
       "enumeration_validation": ".local/play-session-20261026/grouped-qa/risk-groups-r69/result.json",
-      "round_key": "jiggle-reacquire-r101-20261029",
-      "round_status": "CLOSED_R101_SCOPED_PHYSICS_READBACK",
-      "count": 101,
+      "round_key": "dance-recovery-r102-20261029",
+      "round_status": "CLOSED_R102_REPRODUCED_FAILURE_WORKAROUND",
+      "count": 102,
       "coverage": "since_baseline",
-      "last_seq": 101,
-      "last_key": "jiggle-reacquire-r101-20261029",
+      "last_seq": 102,
+      "last_key": "dance-recovery-r102-20261029",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": null,
       "evidence_change_percentage_points": null,
       "scope_change_percentage_points": 0,
-      "change_rule": "One bounded cold and two-outfit physics readback; no blanket PASS, denominator change or mod exclusion. Total completion unknown.",
-      "round_start_commit": "740361c4cb722f65994e8565c3d7ce146428ee85",
+      "change_rule": "One actual dance reproduction and manual scoped recovery; prior REOPENED retained, no blanket PASS or mod exclusion. Total completion unknown.",
+      "round_start_commit": "095fab630c37ae64ca786bd1930d59e44c9aa5a8",
       "scope_change": "Original5129/effective5125/known1263 unchanged; no exclusions added.",
-      "milestone_change": "Independent six-node parameter readback matches saved profile after cold start and two outfit selections; dance and subjective naturalness remain unverified.",
+      "milestone_change": "Six independently read spring nodes revert to defaults after dance; one F1 restores prior values. Automatic recovery remains broken.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1999,7 +1999,7 @@
       "evidence_refinement_known_units_delta": 0
     },
     "next_action": "Continue ready material/visibility or hair-related differential groups from existing evidence; preserve known exact exclusions and prioritize untested relevant consumers, not repeated colors or shared combat tests.",
-    "updated_at": "2026-10-28T16:43:29.421170+00:00",
+    "updated_at": "2026-10-28T17:05:17.163884+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2292,7 +2292,7 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "R101_CLOSED_SCOPED_PHYSICS_READBACK",
+    "current_segment": "R102_CLOSED_DANCE_FAILURE",
     "previous_goal_turn_classification": "PROGRESS: R94 captured 1→2→3→4 retained instances, still4 at idle and1 after existing CNS-open callback. User paused; all own resources closed. Now explicit resume; callback reason unknown.",
     "execution_status": "ACTIVE_GOAL_CONTINUES",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
@@ -6493,6 +6493,36 @@
         "result": ".local/play-session-20261026/grouped-qa/jiggle-reacquire-r101/result.json",
         "restoration": ".local/play-session-20261026/grouped-qa/jiggle-reacquire-r101/final-restoration.json",
         "finding": "Selected My_Default profile was loaded cold; read-only live fields on six named breast/hip/thigh nodes matched three configured spring values, alpha1 and finite histories at baseline and after two selected bodies. No F1 used. Historical broad assertions remain reopened.",
+        "new_complete_leafPASS": 0,
+        "new_exclusions": 0,
+        "git_delivery": {
+          "target": "codex/grouped-mod-qa-20261026",
+          "status": "IMPLEMENTATION_BRANCH_ROUND_DELIVERY",
+          "main_merge": false,
+          "scope": "Sanitized owned state only"
+        }
+      },
+      "dance_recovery_r102": {
+        "at": "2026-10-28T16:45:42.158637+00:00",
+        "round_key": "dance-recovery-r102-20261029",
+        "status": "CLOSED_ACTUAL_DANCE_REACQUIRE_FAILURE_AND_MANUAL_WORKAROUND",
+        "source": "Active Goal; past native dance-to-physics reacquire failure and new R101 cold/body readback evidence",
+        "lane": "DIRECT",
+        "owned_scope": [
+          "PROJECT_STATE task projection",
+          ".local/play-session-20261026/grouped-qa/dance-recovery-r102",
+          "temporary dance input wrapper and AgentSessionQA semantic-59 with exact preimages",
+          "one private game and existing task display/Steam"
+        ],
+        "acceptance": "Read six current named spring nodes; use original visible dance UI to start and stop one previously demonstrated dance in safe stationary game context; read same named nodes after stop, verify original profile and native motion/camera/input recovery without F1; restore exact user preferences and original outfit. Record first real failure without blind repeat.",
+        "protected": "Do not advance story, travel, purchase, reward, deaths or restore real save. Preserve original song/camera preferences. No combat, exhaustive dance/color, unrelated helper or user foreground.",
+        "limits": "One dance and one game context only, no long-term or subjective motion/audio acceptance.",
+        "next_action": "Inspect exact player animation lifecycle and current JiggleControl bounded reacquire implementation; design one owner-safe automatic recovery candidate with guards for travel, menu, user preferences, and non-dance animations.",
+        "closed_at": "2026-10-28T17:05:17.163884+00:00",
+        "result": ".local/play-session-20261026/grouped-qa/dance-recovery-r102/result.json",
+        "restoration": ".local/play-session-20261026/grouped-qa/dance-recovery-r102/final-restoration.json",
+        "finding": "Hip Swing start/stop changes live animation instance; all six measured spring nodes revert from selected profile to defaults without F1. Actual current log reports reacquire attempts exhausted during dance; no automatic ACTIVE recorded after stop. One F1 restores exact prior fields. Existing broad REOPENED assertions remain open.",
+        "failure_fingerprint": "Current JiggleControl 3.1.0, user My_Default, Van Hip Swing, native CH29, current reviewed linked-runtime; dance→stop, spring defaults remain until F1; first current counterexample, no blind repeat.",
         "new_complete_leafPASS": 0,
         "new_exclusions": 0,
         "git_delivery": {
