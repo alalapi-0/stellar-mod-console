@@ -57,8 +57,14 @@ class OwnedLinkedPostProcessTests(unittest.TestCase):
     def test_native_and_owned_nested_graph_lifecycle(self):
         for scenario in ["graph-native", "graph-cycle", "graph-tag-replacement", "graph-foreign",
                          "graph-wrong-original", "graph-bad-edge", "graph-cross-component",
-                         "graph-unrecognized-node", "graph-active", "graph-nonlocal",
+                         "graph-unrecognized-node", "graph-active", "graph-deferred-original", "graph-nonlocal",
                          "graph-wrong-pawn", "graph-stale-active"]:
+            with self.subTest(scenario=scenario):
+                code, error = self.run_case(scenario)
+                self.assertEqual(code, 0, error)
+
+    def test_post_initialization_rechecks_only_the_missing_identity(self):
+        for scenario in ["post-init-safe", "post-init-foreign", "post-init-active", "post-init-not-deferred"]:
             with self.subTest(scenario=scenario):
                 code, error = self.run_case(scenario)
                 self.assertEqual(code, 0, error)

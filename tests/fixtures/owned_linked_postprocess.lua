@@ -140,6 +140,32 @@ elseif SCENARIO == "clear-error" or SCENARIO == "read-error" then
     local ok=pcall(function() policy:beforeRefresh(body, body.PostProcessAnimInstance) end)
     assert(not ok and #body.calls==2 and body.calls[1]=="clear" and body.calls[2]=="restore")
     assert(body.AnimClass==MAIN and body.AnimScriptInstance:IsValid(), "paired restoration required after failure")
+elseif SCENARIO:find("post-init-",1,true)==1 then
+    -- CNS can notify while the new mesh has no live PP instance. Its later
+    -- mode initialization creates the private default but sends no new hook.
+    body.PostProcessAnimInstance=nil
+    local changed,reason=policy:beforeRefresh(body,nil)
+    assert(not changed and reason=="postprocess_identity_changed")
+    body.PostProcessAnimInstance=parent()
+    local default=parent(PASS);array[#array+1]=default;body.PostProcessAnimInstance.child=default
+    if SCENARIO=="post-init-foreign" then array[#array+1]=parent(class("Foreign")) end
+    if SCENARIO=="post-init-active" then body.AnimScriptInstance.CustomAnimAlpha=1 end
+    if SCENARIO=="post-init-not-deferred" then reason="unowned_link_preserved" end
+    if policy.afterInitialize then
+        changed,reason=policy:afterInitialize(body,body.PostProcessAnimInstance,nil,reason)
+    else
+        changed,reason=false,"legacy_no_recheck"
+    end
+    if SCENARIO=="post-init-safe" then
+        assert(changed and #array==0 and #body.calls==2,
+            "post-initialization must retire the previously owned stale link")
+    else
+        local reasons={['post-init-foreign']='unowned_link_preserved',
+            ['post-init-active']='active_or_unknown_animation_preserved',
+            ['post-init-not-deferred']='not_deferred'}
+        assert(not changed and reason==reasons[SCENARIO] and #body.calls==0,
+            "foreign, active, or non-deferred graphs must not be cleared")
+    end
 elseif SCENARIO:find("graph-",1,true)==1 then
     -- R92: old owned graph remains while native Core creates 69 direct
     -- children plus one nested child. Wrapping it must retire that first set.
@@ -160,7 +186,7 @@ elseif SCENARIO:find("graph-",1,true)==1 then
         -- An authored name is insufficient: only exact reflected node type counts.
         edges(core,direct,"ScriptStruct /Script/Other.AnimNode_LinkedAnimGraph")
     end
-    if SCENARIO=="graph-active" then body.AnimScriptInstance.montage=true end
+    if SCENARIO=="graph-active" or SCENARIO=="graph-deferred-original" then body.AnimScriptInstance.montage=true end
     if SCENARIO=="graph-nonlocal" then function controller:IsLocalPlayerController() return false end end
     if SCENARIO=="graph-wrong-pawn" then controller.Pawn=object("OtherPawn",CHAR) end
     if SCENARIO=="graph-stale-active" then body.PostProcessAnimInstance=parent(class("NewPP")) end
@@ -168,11 +194,22 @@ elseif SCENARIO:find("graph-",1,true)==1 then
     local reasons={['graph-foreign']='unowned_link_preserved',['graph-wrong-original']='unowned_link_preserved',
         ['graph-bad-edge']='outgoing_graph_unresolved',['graph-cross-component']='outgoing_graph_unresolved',
         ['graph-unrecognized-node']='unowned_link_preserved',['graph-active']='active_or_unknown_animation_preserved',
+        ['graph-deferred-original']='active_or_unknown_animation_preserved',
         ['graph-nonlocal']='not_current_local_eve_body',['graph-wrong-pawn']='not_current_local_eve_body',
         ['graph-stale-active']='postprocess_identity_changed'}
     if reasons[SCENARIO] then
         assert(not changed and reason==reasons[SCENARIO], tostring(reason))
         assert(#body.calls==0 and nested.valid and core.valid, "foreign/uncertain/active graph must survive")
+        if SCENARIO=="graph-deferred-original" then
+            -- The exact native graph was validated while active. After the PP
+            -- is replaced, its children must still be recognized as leased.
+            body.AnimScriptInstance.montage=false
+            body.PostProcessAnimInstance=parent()
+            local default=parent(PASS); array[#array+1]=default; body.PostProcessAnimInstance.child=default
+            changed,reason=policy:beforeRefresh(body,body.PostProcessAnimInstance,nil)
+            assert(changed and reason=="owned_native_rebuild" and #array==0,
+                "previously validated native graph must retain ownership across a deferred refresh: "..tostring(reason))
+        end
     else
         assert(changed and #array==0,"native Core descendants must retire before wrapping")
         -- Now the new Core and all70 descendants are created by our own tag.

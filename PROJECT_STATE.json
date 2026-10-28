@@ -1542,20 +1542,20 @@
       "manifest_sha256": "3bb3673ebb1994275c885e9a81fb1f280792f83b6117655dae828d27984d7c0e",
       "target_identity_sha256": "955965cda7371a7ff208fdf736e19a1136e0628cf77a644ac49b5d4323aa9a92",
       "enumeration_validation": ".local/play-session-20261026/grouped-qa/risk-groups-r69/result.json",
-      "round_key": "linked-graph-closure-lifecycle-repair-r93-20261027",
-      "round_status": "CLOSED_R93_REVIEWED_SHARED_LIFECYCLE_REPAIR",
-      "count": 93,
+      "round_key": "ordered-material-after-pp-fix-r94-20261027",
+      "round_status": "CLOSED_R94_SCOPED_REVIEWED_DEFERRED_LINKED_RECHECK",
+      "count": 94,
       "coverage": "since_baseline",
-      "last_seq": 93,
-      "last_key": "linked-graph-closure-lifecycle-repair-r93-20261027",
+      "last_seq": 94,
+      "last_key": "ordered-material-after-pp-fix-r94-20261027",
       "historical_round_count": "UNKNOWN",
       "execution_change_percentage_points": null,
       "evidence_change_percentage_points": null,
       "scope_change_percentage_points": 0,
-      "change_rule": "One current-version scoped linked-lifecycle behavior acceptance; zero new complete leaf PASS, no manifest/leaf/group status change or denominator change. Historical PASS remains tied to its older exact source scope, not blanket acceptance of the new candidate.",
-      "round_start_commit": "acdc9237f082e96dc352cfd435d3fe7ca5e69809",
-      "scope_change": "Original5129/effective5125/known1263 units retained; no new exclusions or omitted targets.",
-      "milestone_change": "Scoped duplicate native/Core wrapper retention repaired: prior1→142→143 now1→71→1 with CNS transition and return; same current Pawn/World/body, exact71-instance Core tag closure, foreign/active safeguards only fixture checked. Profile original byte-exact, game/helpers native exit0. No gray/crash/full-garment/long-run acceptance.",
+      "change_rule": "One bounded lifecycle improvement accepted; zero new garment leaf PASS, no manifest or status/denominator changes. Overall current completion remains unknown.",
+      "round_start_commit": "13e953caf87cdc9a75de313a0c489649fc9e0749",
+      "scope_change": "Original5129/effective5125/known1263 units unchanged; no new exclusions.",
+      "milestone_change": "Current native EVE/CNS scoped lifecycle: preserve verified native graph lease during active transition, identity-bound game-thread retries up to three; synthetic deferred+retry succeeds, one uninstrumented native Core/AiK/Mod688 sequence 71→1→1. Unknown graphs remain protected; grey and hair causes remain open.",
       "historical_functional_accounting": {
         "scope_version": "functional-capabilities-v5-userplay-doro-audio",
         "at": "2026-10-11T09:16:20.176415+00:00",
@@ -1998,8 +1998,8 @@
       "new_shared_static_assertions_this_round": 0,
       "evidence_refinement_known_units_delta": 0
     },
-    "next_action": "原生目标控制状态显示blocked，原因未由接口提供；在目标恢复为可继续后，复用R88已有两网格/材质动作与R93共享图闭包证据，优先对原始连续换装后灰/黑材质残留做受影响的最小定向复核，并继续保留已确认有问题的Hair0排除。不得重复颜色、公共辅助成功率或全部组合；R90 WM_CLOSE残留和发型崩溃总体原因仍分别未解决。",
-    "updated_at": "2026-10-27T07:51:45.316953+00:00",
+    "next_action": "Continue original grouped sequential-material and crash objective using existing scoped lifecycle evidence; retain exact known bad Hair0 exclusion and unresolved uncertain mods; do not repeat colors or public helper tests.",
+    "updated_at": "2026-10-28T07:38:39.427758+00:00",
     "blocked_audit": {
       "native_goal_status": "ACTIVE_CONFIRMED_NATIVE_TOOL",
       "status": "RESOLVED_BY_HUMAN_AUTHORIZED_NORMAL_EXIT_PRIVATE_TESTS_RUNNING",
@@ -2128,7 +2128,7 @@
         }
       }
     },
-    "round_closure_at": "2026-10-27T07:51:45.316953+00:00",
+    "round_closure_at": "2026-10-28T10:05:52.054129+00:00",
     "incidents": {
       "confirmed_recorded_session_total": 14,
       "new_confirmed_this_round": 0,
@@ -2292,9 +2292,9 @@
         "incidental_cache": "r37-governor-incidental-cache-disposition.json"
       }
     },
-    "current_segment": "R93_REVIEWED_LINKED_CLOSURE_REPAIR_CLOSED",
-    "previous_goal_turn_classification": "PROGRESS: exact baseline failure fixed and tested in actual native/CNS/Core transitions; independent scoped review PASS, original profile and owned resources restored. Native Goal API now reports blocked without an explanatory reason; no invented cause or status override.",
-    "execution_status": "NATIVE_GOAL_BLOCKED_R93_CLOSED",
+    "current_segment": "R94_CLOSED_SCOPED_FIX",
+    "previous_goal_turn_classification": "PROGRESS: R94 captured 1→2→3→4 retained instances, still4 at idle and1 after existing CNS-open callback. User paused; all own resources closed. Now explicit resume; callback reason unknown.",
+    "execution_status": "ACTIVE_GOAL_CONTINUES",
     "pause_at": "2026-10-14T12:52:49.483541+00:00",
     "pause_source": "Current human: restart game, tests remain paused; subsequent black-screen repair does not resume tests",
     "user_play_handoff": {
@@ -3310,15 +3310,15 @@
     },
     "native_goal": {
       "threadId": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
-      "status": "blocked",
-      "tokensUsed": 16224259,
-      "timeUsedSeconds": 105269,
+      "status": "active",
+      "tokensUsed": 16318666,
+      "timeUsedSeconds": 106388,
       "createdAt": 1792972357,
-      "telemetry_at": "2026-10-27T07:51:45.316953+00:00",
+      "telemetry_at": "2026-10-28T10:05:52.054129+00:00",
       "telemetry_coverage": "Directnative current activation; no quota set or increased; historical logical lifetimecost remains UNKNOWN.",
       "same_objective_verified": true,
-      "last_checkpoint": "R93 exact scoped repair independently reviewed and closed; direct native Goal API reports blocked with no reason field; no status override or quota changes.",
-      "updatedAt": 1793087065,
+      "last_checkpoint": "R94 scoped lifecycle improvement reviewed and installed; broader grouped compatibility and playable handoff remain open.",
+      "updatedAt": 1793103717,
       "blocked_reason": "UNKNOWN_NOT_RETURNED_BY_NATIVE_GOAL_API"
     },
     "goal_resume_source": "Current native Goal reused; same logical compatibility task and original5129/effective5125 preserved",
@@ -3697,7 +3697,7 @@
       "execution_source": "Direct owner native Goal objective submitted in thread 01a1757a-f84c-72b0-97bd-44ab8c53eb53 on 2026-10-26; execute MOD_TEST_REPAIR_PLAN_20261025 grouped QA",
       "owner_thread": "01a1757a-f84c-72b0-97bd-44ab8c53eb53",
       "lane": "REVIEWED",
-      "status": "CLOSED_R93_REVIEWED_SHARED_LINKED_LIFECYCLE_REPAIR",
+      "status": "ACTIVE_R94_REVIEWED_CALLBACK_TIMING_FIX",
       "owned_scope": [
         "PROJECT_STATE.json#mod_compatibility_restructure current grouped execution/progress projection; old paused console and pre-existing manual-play deltas remain separate",
         ".local/play-session-20261026/grouped-qa",
@@ -3729,7 +3729,7 @@
       },
       "test_save_boundary": "No independent story-save isolation established; forbid death/story/reward/travel tests and save rollback. Initial private launch/menu checks only; inspect scene before safe reversible movement/outfit checks.",
       "round_accounting": "One owned candidate plus original-failing fixture, targeted runtime six observations, exact recovery and independent review closes once; inputs, frames, callbacks, checks, reviewer and prior observer correction are not new rounds.",
-      "next_action": "原生目标控制状态显示blocked，原因未由接口提供；在目标恢复为可继续后，复用R88已有两网格/材质动作与R93共享图闭包证据，优先对原始连续换装后灰/黑材质残留做受影响的最小定向复核，并继续保留已确认有问题的Hair0排除。不得重复颜色、公共辅助成功率或全部组合；R90 WM_CLOSE残留和发型崩溃总体原因仍分别未解决。",
+      "next_action": "Log exact candidate1 policy and link call order in one targeted Core→AiK→Mod688 sequence; infer why initial Core71 survives and preserve active/foreign safeguards before revising.",
       "at": "2026-10-25T23:55:06.640620+00:00",
       "lane_reason": "Recoverable cross-module lifecycle behavior; coherent candidate validated in fixtures and actual native/CNS paths then fresh independent Judge PASS_SCOPED.",
       "findings": {
@@ -3743,7 +3743,7 @@
         "v8": "Fresh independent PASS for current BS_ alias transition/native-menu scope; full S1/Goal incomplete"
       },
       "candidate_sha256": "21bb36fbf2ad22f6f93ff605af26961446998ceb2e36c63fd222d92c87ed6ca8",
-      "updated_at": "2026-10-27T07:51:45.316953+00:00",
+      "updated_at": "2026-10-28T07:38:39.427758+00:00",
       "grouped_assertions": {
         "manifest": ".local/play-session-20261008/goal-restructure-20261010/individual-test-manifest.json",
         "sha256": "a800adc5603d0edb2747f20dc335cc109dd88357033ddfcdadb856aac810b618",
@@ -3757,21 +3757,16 @@
       },
       "hair_original_context": "Exact BUG-HAIR-20261025-01 context recovered read-only from native crash directory; private pointer .local/play-session-20261026/grouped-qa/hair-incident-context-recovery.json; GameThread AV verified, cause unknown",
       "runtime_ownership": {
-        "status": "ALL_OWNED_GAME_HELPERS_EXITED_0_CANDIDATE_RETAINED",
-        "evidence": ".local/play-session-20261026/grouped-qa/linked-closure-repair-r93/final-restoration.json",
-        "game_wrapper_exit": 0,
-        "assistant_wrapper_exit": 0,
-        "movement_wrapper_exit": 0,
-        "candidate_module_installed_sha256": "21bb36fbf2ad22f6f93ff605af26961446998ceb2e36c63fd222d92c87ed6ca8",
-        "candidate_shim_installed_sha256": "0026661abbc7dff36ccb6f7c9674684efd2be837df656f331e241fc23fa0de25",
-        "qa2files_suffix_client_restored": true,
-        "private_display": "Existing Goal display2 retained",
-        "prior_R90_WM_CLOSE_failure": "Unresolved; not cured by current native QuitGame path"
+        "status": "CANDIDATE1_GAME_HELPERS_EXITED_QA_RESTORED_STEAM_DISPLAY_RETAINED",
+        "evidence": ".local/play-session-20261026/grouped-qa/native-material-r94/resume-trace/candidate-live/final-restoration.json",
+        "steam_registration_ref": ".local/play-session-20261026/grouped-qa/native-material-r94/resume-trace/steam-start-registration.json",
+        "display_registration_ref": ".local/play-session-20261026/grouped-qa/native-material-r94/resume-trace/display-registration.json",
+        "candidate1_unreviewed_installed": true
       },
       "candidate_source": "src/runtime/OwnedLinkedPostProcess.lua",
       "latest_runtime_result": ".local/play-session-20261026/grouped-qa/linked-closure-repair-r93/runtime-result.json",
-      "last_material_progress": "Scoped duplicate native/Core wrapper retention repaired: prior1→142→143 now1→71→1 with CNS transition and return; same current Pawn/World/body, exact71-instance Core tag closure, foreign/active safeguards only fixture checked. Profile original byte-exact, game/helpers native exit0. No gray/crash/full-garment/long-run acceptance.",
-      "round_key": "linked-graph-closure-lifecycle-repair-r93-20261027",
+      "last_material_progress": "R94 bounded sequence captured retained instances after CNS changes; idle alone4 and CNS-open1. No root cause/general acceptance yet; user explicitly paused.",
+      "round_key": "ordered-material-after-pp-fix-r94-20261027",
       "round_closed_once": true,
       "previous_current_projection_ref": ".local/play-session-20261026/grouped-qa/PROJECT_STATE.entry.json",
       "independent_review": {
@@ -4067,7 +4062,7 @@
           "metadata_note": "Source commit identity is recorded here; exact final metadata HEAD verification is in the existing ignored receipt to avoid self-reference."
         }
       },
-      "current_result_ref": "linked_closure_repair_r93",
+      "current_result_ref": "native_material_r94",
       "piercing_delta": {
         "round_key": "aik-piercing-delta-20261026",
         "status": "CLOSED_SCOPED_PROGRESS_GOAL_CONTINUES",
@@ -6210,6 +6205,119 @@
         "new_exclusions": 0,
         "manifest_unchanged": true,
         "limits": "Root causes of hair crash and intermittent persistent gray contamination unproven; existing confirmed defective hair0 remains excluded. Prior WM_CLOSE process retention remains unresolved."
+      },
+      "native_material_r94": {
+        "at": "2026-10-27T08:00:09.553696+00:00",
+        "round_key": "ordered-material-after-pp-fix-r94-20261027",
+        "status": "CLOSED_SCOPED_REVIEWED_LINKED_RECHECK_GRAY_AND_HAIR_OPEN",
+        "lane": "REVIEWED",
+        "entry_commit": "13e953caf87cdc9a75de313a0c489649fc9e0749",
+        "owned_scope": [
+          "PROJECT_STATE.json current grouped/progress projection",
+          ".local/play-session-20261026/grouped-qa/native-material-r94",
+          "AgentSessionQA exact two files and mods suffix and semantic client; one private game and exact assistant/movement helpers",
+          "src/runtime/OwnedLinkedPostProcess.lua",
+          "tests/fixtures/owned_linked_postprocess.lua",
+          "tests/test_owned_linked_postprocess.py",
+          "src/runtime/README.md",
+          "src/runtime/patch_eve_proportions_post_init.py",
+          "tests/test_postprocess_integration_patch.py",
+          "src/runtime/DeferredOwnedRecheck.lua",
+          "src/runtime/patch_eve_proportions_deferred.py",
+          "tests/test_deferred_owned_recheck.py"
+        ],
+        "acceptance": "Under reviewed linked lifecycle1.1, same private scene and current saved baseline: native original→Core; existing AiK48/Mod688/Ultimate saved indices; compare Mod688 effective material parent/scalar/vector/texture and hidden masks on first and later returns including native/Core transitions; preserve initial profile byte-exact on return. Record actual visible appearance and any anomalies without claiming original gray issue cured or all colors tested.",
+        "target_leaf_ids": [
+          "integration:sequential-outfit-material-recovery",
+          "appearance:Repacked Mod688/choice-1",
+          "appearance:AiK_CH48_8866/choice-1",
+          "appearance:UltimateNudeEve/choice-0"
+        ],
+        "frozen_targets_ref": ".local/play-session-20261026/grouped-qa/native-material-r94/frozen-targets.json",
+        "profile_preimage_ref": ".local/play-session-20261026/grouped-qa/native-material-r94/profile.entry.json",
+        "reused_evidence": [
+          "R68 same specific material normalization and first-visit frames, known unused tail37 vs3",
+          "R88 exact AiK mesh family and prior material outcomes",
+          "R93 graphclosure native/CNS safety and assistant/movement baselines"
+        ],
+        "resource_plan": "One serial game + existing two helpers and private display2; small JSON/screenshot evidence only; no assets/dependencies copied or installed. Current available memory ~33GB, disk1.1TB, peak unknown.",
+        "next_action": "Continue original grouped sequential-material and crash objective using existing scoped lifecycle evidence; retain exact known bad Hair0 exclusion and unresolved uncertain mods; do not repeat colors or public helper tests.",
+        "paused_at": "2026-10-27T12:25:56.028711+00:00",
+        "ordered_observations_ref": ".local/play-session-20261026/grouped-qa/native-material-r94/ordered-observations.json",
+        "pause_cleanup_ref": ".local/play-session-20261026/grouped-qa/native-material-r94/pause-cleanup.json",
+        "actual_cns_link_counts": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "after_idle_link_count": 4,
+        "after_cns_open_link_count": 1,
+        "original_profile_exact_restored": true,
+        "game_wrapper_exit": 130,
+        "normal_game_exit": "UNVERIFIED_INTERRUPTED_WRAPPER",
+        "helper_wrapper_exits": [
+          0,
+          0
+        ],
+        "private_display_terminated": true,
+        "review": "PASS_SCOPED_EXACT_FREEZE",
+        "new_complete_leafPASS": 0,
+        "new_exclusions": 0,
+        "limits": "Controlled synthetic deferred branch and uninstrumented 71→1→1 prove bounded specific lifecycle behavior; natural delayed branch attribution, grey material/hair crash causality, long-play and animations beyond retry limit remain unproven.",
+        "resume_at": "2026-10-28T07:03:10.113905+00:00",
+        "resume_source": "User explicit continue 2026-10-28, native Goal active",
+        "resume_scope": [
+          "existing R94 State/current evidence",
+          "one new task-private display and one exact private game with two helpers",
+          "temporary logging-only patch to owned EveProportions integration shim with byte-exact preimage",
+          "exact QA2files/modsuffix/client; no asset, story or source behavior changes"
+        ],
+        "resume_acceptance": "Fix exact missed cleanup after transient PP identity with one immediate guarded recheck after successful native mode initialization; demonstrate original failing fixture and bounded actual native/CNS switching, retain foreign/active guards, no background poll, source/profile/helpers restore, fresh Judge.",
+        "resume_ref": ".local/play-session-20261026/grouped-qa/native-material-r94/resume-trace",
+        "diagnosis_ref": ".local/play-session-20261026/grouped-qa/native-material-r94/resume-trace/diagnosis.json",
+        "candidate1_status": "FAILED_SCOPED_ACCEPTANCE_NOT_INSTALLED",
+        "candidate1_failure_ref": ".local/play-session-20261026/grouped-qa/native-material-r94/resume-trace/candidate-live/candidate1-failure.json",
+        "candidate1_restoration_ref": ".local/play-session-20261026/grouped-qa/native-material-r94/resume-trace/candidate-live/final-restoration.json",
+        "candidate1_exit_misclick_ref": ".local/play-session-20261026/grouped-qa/native-material-r94/resume-trace/candidate-live/exit-transition-misclick.json",
+        "candidate1_trace_ref": ".local/play-session-20261026/grouped-qa/native-material-r94/resume-trace/candidate1-trace/diagnosis.json",
+        "candidate1_latest_restoration_ref": ".local/play-session-20261026/grouped-qa/native-material-r94/resume-trace/candidate1-trace/final-restoration.json",
+        "runtime_ownership": {
+          "private_display_registration": ".local/play-session-20261026/grouped-qa/native-material-r94/resume-trace/display-registration.entry.json",
+          "private_display_current_pid": 550244,
+          "private_display_start_ticks": "176765322",
+          "steam_registration": ".local/play-session-20261026/grouped-qa/native-material-r94/resume-trace/steam-start-registration.json",
+          "game_and_helpers": "stopped and wrappers exited 0; runtime restored"
+        },
+        "minimal_trace_ref": ".local/play-session-20261026/grouped-qa/native-material-r94/resume-trace/candidate1-mintrace/diagnosis.json",
+        "minimal_trace_restoration_ref": ".local/play-session-20261026/grouped-qa/native-material-r94/resume-trace/candidate1-mintrace/final-restoration.json",
+        "candidate2_status": "FAILED_RUNTIME_ACCEPTANCE_NOT_INSTALLED",
+        "candidate2_failure_ref": ".local/play-session-20261026/grouped-qa/native-material-r94/resume-trace/candidate2-deferred/failure.json",
+        "candidate2_restoration_ref": ".local/play-session-20261026/grouped-qa/native-material-r94/resume-trace/candidate2-deferred/final-restoration.json",
+        "candidate2_eventtrace_ref": ".local/play-session-20261026/grouped-qa/native-material-r94/resume-trace/candidate2-eventtrace/diagnosis.json",
+        "candidate3_result_ref": ".local/play-session-20261026/grouped-qa/native-material-r94/resume-trace/candidate3-deferred/result.json",
+        "candidate3_status": "PARTIAL_RUNTIME_OBSERVATION_UNREVIEWED_NOT_INSTALLED",
+        "candidate3_restoration_ref": ".local/play-session-20261026/grouped-qa/native-material-r94/resume-trace/candidate3-deferred/final-restoration.json",
+        "candidate4_controlled_ref": ".local/play-session-20261026/grouped-qa/native-material-r94/resume-trace/candidate4-controlled/result.json",
+        "candidate4_status": "SYNTHETIC_PATH_PROVEN_NATURAL_STILL_ACTIVE_AFTER_3_SECONDS_NOT_INSTALLED",
+        "candidate5_failure_ref": ".local/play-session-20261026/grouped-qa/native-material-r94/resume-trace/candidate5-retry-controlled/failure.json",
+        "candidate5_status": "FAILED_CONTROLLED_TEST_UNOWNED_LINKS_NOT_INSTALLED",
+        "candidate6_controlled_ref": ".local/play-session-20261026/grouped-qa/native-material-r94/resume-trace/candidate6-lease-controlled/result.json",
+        "candidate6_status": "CONTROLLED_LEASE_RETRY_BRANCH_PROVEN_NOT_INSTALLED",
+        "candidate7_result_ref": ".local/play-session-20261026/grouped-qa/native-material-r94/resume-trace/candidate7-native/result.json",
+        "candidate7_freeze_ref": ".local/play-session-20261026/grouped-qa/native-material-r94/resume-trace/candidate7-native/review-candidate.json",
+        "candidate7_status": "PASS_SCOPED_REVIEWED_INSTALLED_GAME_STOPPED",
+        "closed_at": "2026-10-28T10:05:52.054129+00:00",
+        "candidate7_review_ref": ".local/play-session-20261026/grouped-qa/native-material-r94/resume-trace/candidate7-native/independent-review.json",
+        "candidate7_installed_ref": ".local/play-session-20261026/grouped-qa/native-material-r94/resume-trace/candidate7-native/installed-after-review.json",
+        "git_delivery": {
+          "status": "IMPLEMENTATION_BRANCH_ROUND_DELIVERY",
+          "target": "codex/grouped-mod-qa-20261026",
+          "closure_receipt": ".local/play-session-20261026/grouped-qa/native-material-r94/resume-trace/candidate7-native/round-delivery.json",
+          "main_merge": false,
+          "private_evidence": "Local only; sanitized State and first-party source/tests only.",
+          "preserved_pending": "Seven unrelated State groups and prior docs/research remain unstaged."
+        }
       }
     },
     "owner_acceptance_20261026": {

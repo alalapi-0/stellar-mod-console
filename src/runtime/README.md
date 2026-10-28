@@ -59,7 +59,7 @@ python3 -m unittest discover -s tests -p test_qa_control.py -v
 
 真实 UE4SS 绑定、运行结果与未覆盖项以唯一项目状态引用的本地证据为准。REA 的静态二进制检查与 UE 运行时反射分别记录，不把文件格式或签名发现称为可调用性验证。
 
-`OwnedLinkedPostProcess.lua` 1.1 负责身体后处理子图的生命周期。在自有
+`OwnedLinkedPostProcess.lua` 1.1.1 负责身体后处理子图的生命周期。在自有
 `OriginalPostProcess` 链接建立后，它沿反射的 `AnimNode_LinkedAnimGraph.TargetInstance`
 记录实际子图及其后代。原生换装已先初始化原后处理时，调用者还须传入从当前网格
 覆盖前记住的原始类：
@@ -73,6 +73,17 @@ ownership:beforeRefresh(body, active, originalClassCapturedFromThisMesh)
 的子图阻止清理；不会直接修改 `LinkedInstances`。保留当前图全部后代作为一个集合，
 避免把仍在使用的嵌套物理图误当成残留。大型图保留其实际所需的多个实例，不以数量为一
 作为所有服装的验收条件。仅安装策略模块而未传入网格对应的原始类，不会启用原生图退役。
+
+如果切换时 `beforeRefresh` 返回 `postprocess_identity_changed`，调用方在原生
+`SetAnimationMode` 成功并取得新后处理实例后，调用一次
+`ownership:afterInitialize(body, active, originalClassCapturedFromThisMesh, reason)`，
+再继续原有链接和身体设置。该方法重新执行完整所有权、当前角色和动画状态门禁；
+其他原因不会触发补检。它不启动循环或周期任务。
+
+对于 `active_or_unknown_animation_preserved`，`DeferredOwnedRecheck.lua` 在游戏线程
+最多复核三次、每次间隔三秒。同一身体和网格的重复通知保留复核；目标改变时旧复核
+失效。每次均重新核对目标并复用所有权和动画门禁。达到上限仍不安全时保留现状；
+因此不能保证所有动画时长都能自动清理。
 
 离线生命周期回归：
 

@@ -2,7 +2,7 @@
 -- linked nodes. Also retire the current mesh's exact original PP graph before
 -- replacing it. Every registered child must have one of these proven owners.
 -- The component's LinkedInstances array is read, never edited by this module.
-local M = { VERSION = "1.1.0" }
+local M = { VERSION = "1.1.1" }
 local OWNER_CLASS = "ABP_EveProportions_C"
 local OWNER_PATH = "AnimBlueprintGeneratedClass /Game/Mods/EveProportions/ABP_EveProportions.ABP_EveProportions_C"
 local DEFAULT_PATH = "AnimBlueprintGeneratedClass /Game/Mods/EveProportions/ABP_EvePhysicsPassthrough.ABP_EvePhysicsPassthrough_C"
@@ -149,6 +149,12 @@ function M.new(options)
             end
             if current[address] ~= name then stale = true end
         end
+        -- The exact original PP graph is now fully validated against this
+        -- local component's registered children. Preserve that ownership even
+        -- when active animation defers the rebuild and the PP is later swapped.
+        for address,name in pairs(outgoing) do
+            if registered[address] == name then state.owned[address] = name end
+        end
         for address in pairs(state.owned) do
             if registered[address] == nil then state.owned[address] = nil end
         end
@@ -194,6 +200,13 @@ function M.new(options)
         self:observe(body, body.PostProcessAnimInstance)
         report("native owned rebuild " .. count .. " old links; class/mesh/owner restored")
         return true, "owned_native_rebuild"
+    end
+    -- A CNS callback can arrive after its mesh changes but before the new PP
+    -- instance exists. The caller may recheck once after mode initialization;
+    -- all ownership, locality and animation gates are evaluated again.
+    function policy:afterInitialize(body, active, expectedOriginalClass, priorReason)
+        if priorReason ~= "postprocess_identity_changed" then return false, "not_deferred" end
+        return self:beforeRefresh(body, active, expectedOriginalClass)
     end
     return policy
 end
