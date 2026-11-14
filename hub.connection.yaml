@@ -1,0 +1,103 @@
+schema_version: '2.0'
+project_id: stellar-mod-console
+source_refs:
+- id: state
+  path: PROJECT_STATE.json
+  format: json
+  role: current_state
+mapping:
+  current_work.objective:
+    source_ref: state
+    selector:
+      path:
+      - mod_compatibility_restructure
+      - objective
+    value_map: null
+  current_work.round:
+    source_ref: state
+    selector:
+      path:
+      - mod_compatibility_restructure
+      - current_segment
+    value_map: null
+  current_work.next_action:
+    source_ref: state
+    selector:
+      path:
+      - mod_compatibility_restructure
+      - next_action
+    value_map: null
+  current_work.status:
+    source_ref: state
+    selector:
+      path:
+      - mod_compatibility_restructure
+      - execution_status
+    value_map:
+      ACTIVE_GOAL_CONTINUES: active
+unknown_fields:
+  current_work.objective: Not published for the current compatibility restructuring
+    scope. Historical console totals, prior pause records and sampled native Goal
+    values are not current acceptance or runtime telemetry.
+  current_work.phase: Not published for the current compatibility restructuring scope.
+    Historical console totals, prior pause records and sampled native Goal values
+    are not current acceptance or runtime telemetry.
+  current_work.round: Not published for the current compatibility restructuring scope.
+    Historical console totals, prior pause records and sampled native Goal values
+    are not current acceptance or runtime telemetry.
+  current_work.status: Not published for the current compatibility restructuring scope.
+    Historical console totals, prior pause records and sampled native Goal values
+    are not current acceptance or runtime telemetry.
+  current_work.completed: Not published for the current compatibility restructuring
+    scope. Historical console totals, prior pause records and sampled native Goal
+    values are not current acceptance or runtime telemetry.
+  current_work.accepted: Not published for the current compatibility restructuring
+    scope. Historical console totals, prior pause records and sampled native Goal
+    values are not current acceptance or runtime telemetry.
+  current_work.next_action: Not published for the current compatibility restructuring
+    scope. Historical console totals, prior pause records and sampled native Goal
+    values are not current acceptance or runtime telemetry.
+  current_work.owner_role: Not published for the current compatibility restructuring
+    scope. Historical console totals, prior pause records and sampled native Goal
+    values are not current acceptance or runtime telemetry.
+  progress.completed: Not published for the current compatibility restructuring scope.
+    Historical console totals, prior pause records and sampled native Goal values
+    are not current acceptance or runtime telemetry.
+  progress.total: Not published for the current compatibility restructuring scope.
+    Historical console totals, prior pause records and sampled native Goal values
+    are not current acceptance or runtime telemetry.
+  progress.counting_basis: Not published for the current compatibility restructuring
+    scope. Historical console totals, prior pause records and sampled native Goal
+    values are not current acceptance or runtime telemetry.
+  progress.milestones: Not published for the current compatibility restructuring scope.
+    Historical console totals, prior pause records and sampled native Goal values
+    are not current acceptance or runtime telemetry.
+  blockers: Not published for the current compatibility restructuring scope. Historical
+    console totals, prior pause records and sampled native Goal values are not current
+    acceptance or runtime telemetry.
+  verification.status: Not published for the current compatibility restructuring scope.
+    Historical console totals, prior pause records and sampled native Goal values
+    are not current acceptance or runtime telemetry.
+  verification.evidence_refs: Not published for the current compatibility restructuring
+    scope. Historical console totals, prior pause records and sampled native Goal
+    values are not current acceptance or runtime telemetry.
+  verification.accepted_basis: Not published for the current compatibility restructuring
+    scope. Historical console totals, prior pause records and sampled native Goal
+    values are not current acceptance or runtime telemetry.
+  delivery.status: Not published for the current compatibility restructuring scope.
+    Historical console totals, prior pause records and sampled native Goal values
+    are not current acceptance or runtime telemetry.
+  delivery.remote: Not published for the current compatibility restructuring scope.
+    Historical console totals, prior pause records and sampled native Goal values
+    are not current acceptance or runtime telemetry.
+  delivery.branch: Not published for the current compatibility restructuring scope.
+    Historical console totals, prior pause records and sampled native Goal values
+    are not current acceptance or runtime telemetry.
+  delivery.commit: Not published for the current compatibility restructuring scope.
+    Historical console totals, prior pause records and sampled native Goal values
+    are not current acceptance or runtime telemetry.
+  delivery.receipt_ref: Not published for the current compatibility restructuring
+    scope. Historical console totals, prior pause records and sampled native Goal
+    values are not current acceptance or runtime telemetry.
+validation_entry: []
+max_read_age_seconds: 86400
