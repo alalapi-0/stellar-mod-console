@@ -193,5 +193,12 @@
     }
   ],
   "next_action": "Stop after R00. On the subsequent explicit execution instruction, activate Goal in this Projects repository and start R01 full input/compatibility inventory.",
-  "updated_on": "2026-10-07"
+  "updated_on": "2026-10-07",
+  "mod_compatibility_restructure": {
+    "objective": "Complete the existing5125-leaf MOD test/repair scope with shared assertions andunique deltas under MOD_TEST_REPAIR_PLAN_20261025; deliver a traceable playable configuration. No campaign progression, old console/Flatpak/Loop/admin or release work.",
+    "current_segment": "R119_PREPARED_ASSISTED_ENTRY",
+    "execution_status": "PAUSED_BY_OWNER",
+    "next_action": "Owner business task remains paused. Preserve deduplication/group applicability and unresolved tests; resume only on explicit owner business instruction. PCH metadata/source governance does not resume game,MOD,Flatpak,Steam,Cloud,admin or release work.",
+    "publication": "Minimal governance snapshot only. Full owner State and grouped evidence remain local; unknown current completion/acceptance is not inherited from old totals or runtime telemetry."
+  }
 }
